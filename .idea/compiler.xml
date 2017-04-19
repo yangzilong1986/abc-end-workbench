@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="abc.workbrench.main" />
+        <module name="com.abc.framework.integration" />
+        <module name="core.framework.crypto" />
+        <module name="core.framework.data" />
+        <module name="core.framework.datamining" />
+        <module name="core.framework.integration" />
+        <module name="core.framework.media" />
+        <module name="core.lambda.batch" />
+        <module name="core.lambda.messmage" />
+        <module name="core.lambda.speed" />
+        <module name="mahout-buildtools" />
+        <module name="mahout-core" />
+        <module name="mahout-eclipse-support" />
+        <module name="mahout-examples" />
+        <module name="mahout-math" />
+        <module name="mahout-taste-webapp" />
+        <module name="mahout-utils" />
+        <module name="runtime.framework.server" />
+        <module name="runtime.framework.util" />
+        <module name="sample.framework.cloud.client" />
+        <module name="sample.framework.cloud.cluster" />
+        <module name="sample.framework.cloud.cluster.provider.a" />
+        <module name="sample.framework.cloud.cluster.provider.hello" />
+        <module name="sample.framework.cloud.cluster.register" />
+        <module name="sample.framework.cloud.gateway" />
+        <module name="sample.framework.cloud.provider.bs.order" />
+        <module name="sample.framework.cloud.provider.bs.product" />
+        <module name="sample.framework.cloud.server" />
+        <module name="sample.framework.cloud.server.replicas.a" />
+        <module name="sample.framework.cloud.server.replicas.b" />
+        <module name="sample.lambda.openstdb" />
+        <module name="simple.framework.cloud.customer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="abc-end-workbench" target="1.8" />
+      <module name="abc.workbrench.main" target="1.8" />
+      <module name="core.base.parent" target="1.5" />
+      <module name="core.framework.crypto" target="1.8" />
+      <module name="core.framework.data" target="1.8" />
+      <module name="core.framework.datamining" target="1.8" />
+      <module name="core.framework.integration" target="1.8" />
+      <module name="core.framework.media" target="1.8" />
+      <module name="core.lambda.batch" target="1.8" />
+      <module name="core.lambda.messmage" target="1.8" />
+      <module name="core.lambda.speed" target="1.8" />
+      <module name="mahout" target="1.5" />
+      <module name="mahout-buildtools" target="1.6" />
+      <module name="mahout-core" target="1.6" />
+      <module name="mahout-distribution" target="1.5" />
+      <module name="mahout-eclipse-support" target="1.6" />
+      <module name="mahout-examples" target="1.6" />
+      <module name="mahout-math" target="1.6" />
+      <module name="mahout-taste-webapp" target="1.6" />
+      <module name="mahout-utils" target="1.6" />
+      <module name="runtime.framework.server" target="1.8" />
+      <module name="runtime.framework.util" target="1.8" />
+      <module name="sample.framework.cloud.client" target="1.8" />
+      <module name="sample.framework.cloud.cluster" target="1.8" />
+      <module name="sample.framework.cloud.cluster.provider.a" target="1.8" />
+      <module name="sample.framework.cloud.cluster.provider.hello" target="1.8" />
+      <module name="sample.framework.cloud.cluster.register" target="1.8" />
+      <module name="sample.framework.cloud.gateway" target="1.8" />
+      <module name="sample.framework.cloud.provider.bs.order" target="1.8" />
+      <module name="sample.framework.cloud.provider.bs.product" target="1.8" />
+      <module name="sample.framework.cloud.server" target="1.8" />
+      <module name="sample.framework.cloud.server.replicas.a" target="1.8" />
+      <module name="sample.framework.cloud.server.replicas.b" target="1.8" />
+      <module name="sample.lambda.openstdb" target="1.8" />
+      <module name="simple.framework.cloud.customer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

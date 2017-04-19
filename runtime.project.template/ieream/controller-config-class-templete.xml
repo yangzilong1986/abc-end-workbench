@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleAtomTemplate>
+    <moduleName>ieream</moduleName>
+    <frontTemplates>
+        <frontTemplate>
+            <comment>Controller Type:LocationsGetListBean
+ 获 获取位置列表</comment>
+            <className>LocationsGetListBeanBeanController</className>
+            <componentCategory>POST</componentCategory>
+            <includeClasses>
+                <includeClass>LocationsGetListBean</includeClass>
+                <includeClass>LocationsGetListBeanBeanBusinessService</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@RequestMapping("http://www.ieream.com/mapi/1/")</headerAnnotation>
+                <headerAnnotation>@Controller("locationsGetListBeanBeanController")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations/>
+            <methodDescripterMap>
+                <entry>
+                    <key>public  LocationsGetListBean getlist(  Integer  p ,   Integer  psize ,   String  loc_type ,   String  loc_order ,   String  data_type)</key>
+                    <value>
+                        <methodReturnAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue> LocationsGetListBean </annoteValue>
+                            <annoteType>LocationsGetListBean</annoteType>
+                        </methodReturnAnnotation>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>locations.php?action=getlist</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+获 获取位置列表
+**/</comment>
+                        <signatureEntirety>public  LocationsGetListBean getlist(  Integer  p ,   Integer  psize ,   String  loc_type ,   String  loc_order ,   String  data_type)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>p</fieldName>
+<fieldNameSetter>P</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>psize</fieldName>
+<fieldNameSetter>Psize</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>loc_type</fieldName>
+<fieldNameSetter>Loc_type</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>ream</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>loc_order</fieldName>
+<fieldNameSetter>loc_order</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>asc</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>data_type</fieldName>
+<fieldNameSetter>Data_type</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>exact</defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+            </methodDescripterMap>
+        </frontTemplate>
+    </frontTemplates>
+</moduleAtomTemplate>

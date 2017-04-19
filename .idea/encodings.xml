@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/core.framework.data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.framework.datamining" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.framework.media" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.framework.security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.lambda.batch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.lambda.messmage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core.lambda.speed" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/buildtools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/distribution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/eclipse" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/math" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/taste-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mahout-mahout-0.5/utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/runtime.framework.server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/runtime.framework.util" charset="UTF-8" />
+  </component>
+</project>

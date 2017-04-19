@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+	<!-- Activity -->
+	<resultMap id="userMap"
+		type="com.abc.core.data.sample.domain.User">
+		<id column="id" property="id" jdbcType="BIGINT" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="accountNonExpired" property="accountNonExpired" jdbcType="BIT" />
+		<result column="accountNonLocked" property="accountNonLocked" jdbcType="BIT" />
+		<result column="credentialsNonExpired" property="credentialsNonExpired" jdbcType="BIT" />
+		<result column="enabled" property="enabled" jdbcType="BIT" />
+	</resultMap>
+
+	<select id="loadAll" resultMap="userMap">
+		select * from user 
+	</select>
+	
+	<select id="loadOne" parameterType="java.lang.Long" 
+	    resultType="com.abc.core.data.sample.domain.User">
+		select * from user where id=#{id, jdbcType=BIGINT}
+	</select>
+	
+	<select id="loadByUserName" parameterType="java.lang.String" resultMap="userMap">
+		select * from user order by id limit #{page},#{rows}
+	</select>
+	<insert id="insertUser" parameterType="com.abc.core.data.sample.domain.User"
+		keyProperty="id" useGeneratedKeys="true">
+		insert into user(
+			id,
+			username,
+			accountNonExpired,
+			accountNonLocked,
+			credentialsNonExpired,
+			enabled,
+			password
+		) 
+		values(
+			#{id, jdbcType=BIGINT},
+			#{username, jdbcType=VARCHAR},
+			#{accountNonExpired, jdbcType=BIT},
+			#{accountNonLocked, jdbcType=BIT},
+			#{credentialsNonExpired, jdbcType=BIT},
+			#{enabled, jdbcType=BIT},
+			#{password, jdbcType=BIT}
+		
+		)
+	</insert>
+	
+	
+</mapper>

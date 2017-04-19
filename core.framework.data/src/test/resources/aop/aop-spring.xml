@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+	">
+	<context:annotation-config />
+	<aop:aspectj-autoproxy proxy-target-class="true" />  
+	<context:component-scan base-package="com.abc.core.data.datasource"/>
+	<!-- 数据源配置1 -->  
+	 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" 
+		lazy-init="false">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mapperLocations" value="classpath*:/mapper/*/*Mapper.xml" />
+		<property name="failFast" value="true" />
+	</bean>
+
+	 <bean id="sqlSession"     class="org.mybatis.spring.SqlSessionTemplate">  
+           <constructor-arg index="0" ref="sqlSessionFactory" />  
+    </bean>
+    <bean id="dataSourceInterceptor" class="com.abc.core.data.datasource.DataSourceInterceptor" />
+
+     <!-- 第1步： AOP的配置 -->
+	  <aop:config>  
+	    <!-- 第2步：配置一个切面 -->
+        <aop:aspect id="dataSourceAspect" ref="dataSourceInterceptor">  
+             <!-- 第3步：定义切入点,指定切入点表达式 -->  
+            <aop:pointcut id="daoOne" 
+                expression="*execution(* com.abc.core.data.datasource.sample.service.*.*(..))" />  
+              <!-- 第4步：应用前置通知 -->      
+            <aop:before pointcut-ref="daoOne" method="setdataSourceOne" />  
+            
+        </aop:aspect>  
+    </aop:config>  
+	 
+</beans>

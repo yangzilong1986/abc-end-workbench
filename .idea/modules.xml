@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/abc-end-workbench.iml" filepath="$PROJECT_DIR$/abc-end-workbench.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" filepath="$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.base.parent/core.base.parent.iml" filepath="$PROJECT_DIR$/core.base.parent/core.base.parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" filepath="$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.data/core.framework.data.iml" filepath="$PROJECT_DIR$/core.framework.data/core.framework.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" filepath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" filepath="$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.media/core.framework.media.iml" filepath="$PROJECT_DIR$/core.framework.media/core.framework.media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" filepath="$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.lambda.messmage/core.lambda.messmage.iml" filepath="$PROJECT_DIR$/core.lambda.messmage/core.lambda.messmage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.lambda.speed/core.lambda.speed.iml" filepath="$PROJECT_DIR$/core.lambda.speed/core.lambda.speed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/mahout.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/mahout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/buildtools/mahout-buildtools.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/buildtools/mahout-buildtools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/core/mahout-core.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/core/mahout-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/distribution/mahout-distribution.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/distribution/mahout-distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/eclipse/mahout-eclipse-support.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/eclipse/mahout-eclipse-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/examples/mahout-examples.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/examples/mahout-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/math/mahout-math.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/math/mahout-math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/taste-web/mahout-taste-webapp.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/taste-web/mahout-taste-webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mahout-mahout-0.5/utils/mahout-utils.iml" filepath="$PROJECT_DIR$/mahout-mahout-0.5/utils/mahout-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtime.framework.server/runtime.framework.server.iml" filepath="$PROJECT_DIR$/runtime.framework.server/runtime.framework.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtime.framework.util/runtime.framework.util.iml" filepath="$PROJECT_DIR$/runtime.framework.util/runtime.framework.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.client/sample.framework.cloud.client.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.client/sample.framework.cloud.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.cluster/sample.framework.cloud.cluster.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.cluster/sample.framework.cloud.cluster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.cluster.provider.a/sample.framework.cloud.cluster.provider.a.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.a/sample.framework.cloud.cluster.provider.a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.cluster.provider.hello/sample.framework.cloud.cluster.provider.hello.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.hello/sample.framework.cloud.cluster.provider.hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.cluster.register/sample.framework.cloud.cluster.register.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.cluster.register/sample.framework.cloud.cluster.register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.gateway/sample.framework.cloud.gateway.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.gateway/sample.framework.cloud.gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.provider.bs.order/sample.framework.cloud.provider.bs.order.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.order/sample.framework.cloud.provider.bs.order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.provider.bs.product/sample.framework.cloud.provider.bs.product.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.product/sample.framework.cloud.provider.bs.product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.server/sample.framework.cloud.server.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.server/sample.framework.cloud.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.server.replicas.a/sample.framework.cloud.server.replicas.a.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.a/sample.framework.cloud.server.replicas.a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.framework.cloud.server.replicas.b/sample.framework.cloud.server.replicas.b.iml" filepath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.b/sample.framework.cloud.server.replicas.b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample.lambda.openstdb/sample.lambda.openstdb.iml" filepath="$PROJECT_DIR$/sample.lambda.openstdb/sample.lambda.openstdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple.framework.cloud.customer/simple.framework.cloud.customer.iml" filepath="$PROJECT_DIR$/simple.framework.cloud.customer/simple.framework.cloud.customer.iml" />
+    </modules>
+  </component>
+</project>

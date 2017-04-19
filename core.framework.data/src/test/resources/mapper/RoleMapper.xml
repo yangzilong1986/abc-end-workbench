@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Role">
+	<!-- bankBusinessMap -->
+	<resultMap id="roleMap"
+		type="com.abc.core.data.sample.domain.Role">
+		<id column="id" property="id" jdbcType="BIGINT" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+	
+	</resultMap>
+
+	<select id="loadByNames" parameterType="java.lang.String"
+	     resultMap="roleMap">
+			SELECT	id , name FROM role
+			where name=#{name, jdbcType=VARCHAR}
+	</select>
+ 
+	<select id="loadByName" parameterType="java.lang.String"
+	    resultType="com.abc.core.data.sample.domain.Role">
+			SELECT	id , name FROM role
+			where name=#{name, jdbcType=VARCHAR}
+	</select>
+	
+	<select id="loadOne" parameterType="java.lang.Long" 
+	    resultType="com.abc.core.data.sample.domain.Role">
+		select * from role where name=#{id, jdbcType=BIGINT}
+	</select>
+	
+	<insert id="insertOrder" parameterType="com.abc.core.data.sample.domain.Role"
+		keyProperty="id" useGeneratedKeys="true">
+		insert into role(
+			id,
+			name
+		) 
+		values(
+			#{id, jdbcType=VARCHAR},
+			#{name, jdbcType=VARCHAR}
+		
+		)
+		<selectKey resultType="Long" keyProperty="id">
+			select @@identity as inserted
+		</selectKey>
+	</insert>
+
+	
+</mapper>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	http://code.alibabatech.com/schema/dubbo
+	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="demo-provider" owner="programmer" organization="dubbox"/>
+
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <!-- 使用注解方式暴露接口 -->
+    <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
+    <dubbo:annotation package="com.abc.core.provide" />
+    <!-- 加入spring注解扫描 -->
+
+    <!--uncomment this if you want to test dubbo's monitor-->
+    <!--<dubbo:monitor protocol="registry"/>-->
+
+    <!-- here we demonstrate both annotation-based and xml-based configs -->
+    <dubbo:annotation package="com.alibaba.dubbo.demo.user.facade"/>
+
+    <dubbo:protocol name="dubbo" serialization="kryo"
+                    optimizer="com.abc.dubbo.demo.api.SerializationOptimizerImpl"/>
+    <!--<dubbo:protocol name="dubbo" serialization="fst" optimizer="com.alibaba.dubbo.demo.SerializationOptimizerImpl"/>-->
+
+    <!--<dubbo:protocol name="dubbo" serialization="nativejava"/>-->
+    <!--<dubbo:protocol name="dubbo" serialization="hessian2"/>-->
+    <!--<dubbo:protocol name="dubbo" serialization="fastjson"/>-->
+    <!--<dubbo:protocol name="dubbo" serialization="dubbo"/>-->
+
+
+    <!--TODO according to the spring convention, we should use something like keep-alive-->
+    <!-- use netty server -->
+    <!--<dubbo:protocol name="rest" port="8888" keepalive="true" server="netty" iothreads="5" threads="100" contextpath="services"/>-->
+
+    <!-- use tjws server -->
+    <!--<dubbo:protocol name="rest" port="8888" server="tjws" contextpath="services"/>-->
+
+    <!-- use tomcat server -->
+     <dubbo:protocol name="rest" port="8888" threads="500"
+                     contextpath="services" server="tomcat" accepts="500"
+                     extension="com.abc.dubbo.demo.api.extension.TraceInterceptor,
+                     com.abc.dubbo.demo.api.extension.TraceFilter,
+                     com.abc.dubbo.demo.api.extension.ClientTraceFilter,
+                     com.abc.dubbo.demo.api.extension.DynamicTraceBinding,
+                     com.abc.dubbo.demo.api.extension.CustomExceptionMapper"/>
+
+     <!-- use the external tomcat or other server with the servlet approach; the port and contextpath must be exactly the same as those in external server -->
+    <!--<dubbo:protocol name="rest" port="8080" contextpath="services" server="servlet"/>-->
+
+    <dubbo:protocol name="http" port="8889"/>
+    <dubbo:protocol name="hessian" port="8890"/>
+    <dubbo:protocol name="webservice" port="8892"/>
+
+
+    <dubbo:service interface="com.abc.dubbo.demo.api.bid.BidService"
+                   ref="bidService" protocol="dubbo"/>
+
+    <!-- we add the group property since there's another annotation-configured service impl: com.alibaba.dubbo.demo.user.facade.AnnotationDrivenUserRestServiceImpl -->
+    <dubbo:service interface="com.abc.dubbo.demo.api.user.UserService"
+                   ref="userService" protocol="dubbo" group="xmlConfig"/>
+
+    <dubbo:service interface="com.abc.dubbo.demo.api.user.facade.UserRestService"
+                   ref="userRestService" protocol="rest" validation="true"/>
+    <dubbo:service interface="com.abc.dubbo.demo.api.user.facade.AnotherUserRestService"
+                   ref="anotherUserRestService" protocol="rest"
+                   timeout="2000" connections="100" validation="true"/>
+
+    <bean id="bidService" class="com.abc.dubbo.provider.demo.bid.BidServiceImpl"/>
+
+    <bean id="userService" class="com.abc.dubbo.provider.demo.user.UserServiceImpl"/>
+
+    <bean id="userRestService" class="com.abc.dubbo.provider.demo.user.facade.UserRestServiceImpl">
+        <property name="userService" ref="userService"/>
+    </bean>
+
+    <bean id="anotherUserRestService" class="com.abc.dubbo.provider.demo.user.facade.AnotherUserRestServiceImpl">
+        <property name="userService" ref="userService"/>
+    </bean>
+</beans>
