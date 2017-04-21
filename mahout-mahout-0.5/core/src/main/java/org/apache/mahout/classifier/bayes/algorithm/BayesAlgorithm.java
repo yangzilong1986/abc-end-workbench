@@ -34,7 +34,7 @@ import org.apache.mahout.math.map.OpenObjectIntHashMap;
 
 /**
  * Class implementing the Naive Bayes Classifier Algorithm
- * 
+ * 朴素贝叶斯，按照朴素贝叶斯概率计算
  */
 public class BayesAlgorithm implements Algorithm {
   

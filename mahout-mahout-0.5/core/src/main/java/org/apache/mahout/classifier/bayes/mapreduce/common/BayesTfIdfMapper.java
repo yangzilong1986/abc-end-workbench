@@ -68,6 +68,7 @@ public class BayesTfIdfMapper extends MapReduceBase implements
       } else if (key.stringAt(0).equals(BayesConstants.DOCUMENT_FREQUENCY)) {
         String label = key.stringAt(1);
         Double labelDocumentCount = labelDocumentCounts.get(label);
+        //DoubleWritable f = new DoubleWritable(Math.log(1.0 + dKJ) / lengthNormalisation);
         double logIdf = Math.log(labelDocumentCount / value.get());
         key.replaceAt(0, BayesConstants.WEIGHT);
         output.collect(key, new DoubleWritable(logIdf));

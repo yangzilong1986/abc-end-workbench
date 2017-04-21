@@ -41,6 +41,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Reads the input train set(preprocessed using the {@link org.apache.mahout.classifier.BayesFileFormatter}).
+ * 贝叶斯Mapper
  */
 public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Text,StringTuple,DoubleWritable> {
   
@@ -53,9 +54,11 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
 
   /**
    * We need to count the number of times we've seen a term with a given label and we need to output that. But
-   * this Mapper does more than just outputing the count. It first does weight normalisation. Secondly, it
-   * outputs for each unique word in a document value 1 for summing up as the Term Document Frequency. Which
-   * later is used to calculate the Idf Thirdly, it outputs for each label the number of times a document was
+   * this Mapper does more than just outputing the count.
+   * It first does weight normalisation. 度量正则化
+   * Secondly, it outputs for each unique word in a document value 1 for summing up as the Term Document Frequency. Which
+   * later is used to calculate the Idf
+   * Thirdly, it outputs for each label the number of times a document was
    * seen(Also used in Idf Calculation)
    * 
    * @param key
@@ -75,7 +78,7 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
     final String label = key.toString();
     String[] tokens = SPACE_PATTERN.split(value.toString());
     OpenObjectIntHashMap<String> wordList = new OpenObjectIntHashMap<String>(tokens.length * gramSize);
-    
+    //每个单词出现的数量，单独计数
     if (gramSize > 1) {
       ShingleFilter sf = new ShingleFilter(new IteratorTokenStream(Iterators.forArray(tokens)), gramSize);
       do {
@@ -98,6 +101,7 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
       }
     }
     final MutableDouble lengthNormalisationMut = new MutableDouble(0.0);
+    //文档中每个元素出现的次数平方和
     wordList.forEachPair(new ObjectIntProcedure<String>() {
       @Override
       public boolean apply(String word, int dKJ) {
@@ -105,19 +109,22 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
         return true;
       }
     });
-    
+    //根方，每个标签的一行的元素个数乘方和之后
     final double lengthNormalisation = Math.sqrt(lengthNormalisationMut.doubleValue());
-    
+    //Sigma, 表示数学中的求和，是数学中常用的符号，用于求多项数之和
     // Output Length Normalized + TF Transformed Frequency per Word per Class
     // Log(1 + D_ij)/SQRT( SIGMA(k, D_kj) )
     wordList.forEachPair(new ObjectIntProcedure<String>() {
       @Override
       public boolean apply(String token, int dKJ) {
         try {
+          // [__WT, comp.graphics, address]，
+          // [__WT, comp.graphics, gmt]，a
+          // [__WT, comp.graphics, applications]
           StringTuple tuple = new StringTuple();
-          tuple.add(BayesConstants.WEIGHT);
-          tuple.add(label);
-          tuple.add(token);
+          tuple.add(BayesConstants.WEIGHT);//TF,单词在一个文档中出现的频率，__WT
+          tuple.add(label);//向量标签，lt.atheism不变
+          tuple.add(token);//计算内容，IDF，
           DoubleWritable f = new DoubleWritable(Math.log(1.0 + dKJ) / lengthNormalisation);
           output.collect(tuple, f);
         } catch (IOException e) {
@@ -136,18 +143,18 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
       public boolean apply(String token, int dKJ) {
         try {
           StringTuple dfTuple = new StringTuple();
-          dfTuple.add(BayesConstants.DOCUMENT_FREQUENCY);
-          dfTuple.add(label);
-          dfTuple.add(token);
+          dfTuple.add(BayesConstants.DOCUMENT_FREQUENCY);//__DF
+          dfTuple.add(label);//标签
+          dfTuple.add(token);//单词
           output.collect(dfTuple, ONE);
           
           StringTuple tokenCountTuple = new StringTuple();
-          tokenCountTuple.add(BayesConstants.FEATURE_COUNT);
+          tokenCountTuple.add(BayesConstants.FEATURE_COUNT);//__FC
           tokenCountTuple.add(token);
           output.collect(tokenCountTuple, ONE);
           
           StringTuple tokenTfTuple = new StringTuple();
-          tokenTfTuple.add(BayesConstants.FEATURE_TF);
+          tokenTfTuple.add(BayesConstants.FEATURE_TF);//__FF
           tokenTfTuple.add(token);
           output.collect(tokenTfTuple, new DoubleWritable(dKJ));
         } catch (IOException e) {
@@ -160,7 +167,7 @@ public class BayesFeatureMapper extends MapReduceBase implements Mapper<Text,Tex
     // output that we have seen the label to calculate the Count of Document per
     // class
     StringTuple labelCountTuple = new StringTuple();
-    labelCountTuple.add(BayesConstants.LABEL_COUNT);
+    labelCountTuple.add(BayesConstants.LABEL_COUNT);//__LC
     labelCountTuple.add(label);
     output.collect(labelCountTuple, ONE);
   }

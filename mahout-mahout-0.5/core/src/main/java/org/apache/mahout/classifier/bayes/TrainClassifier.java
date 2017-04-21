@@ -42,6 +42,8 @@ import org.slf4j.LoggerFactory;
  * with the first entry as the label and the rest as evidence.
  *
  * @see org.apache.mahout.classifier.BayesFileFormatter
+ *
+ * 贝叶斯分离器
  */
 public final class TrainClassifier {
   

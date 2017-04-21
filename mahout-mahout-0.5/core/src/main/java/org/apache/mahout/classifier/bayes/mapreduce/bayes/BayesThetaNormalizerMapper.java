@@ -67,7 +67,7 @@ public class BayesThetaNormalizerMapper extends MapReduceBase implements
     String label = key.stringAt(1);
     
     reporter.setStatus("Bayes Theta Normalizer Mapper: " + label);
-    
+    //朴素贝叶斯算法
     double weight = Math.log((value.get() + alphaI) / (labelWeightSum.get(label) + vocabCount));
     StringTuple thetaNormalizerTuple = new StringTuple(BayesConstants.LABEL_THETA_NORMALIZER);
     thetaNormalizerTuple.add(label);
