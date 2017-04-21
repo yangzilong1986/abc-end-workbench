@@ -46,23 +46,36 @@ def splitDataSet(dataSet, axis, value):
     return retDataSet
     
 def chooseBestFeatureToSplit(dataSet):
-    numFeatures = len(dataSet[0]) - 1      #the last column is used for the labels
+    #dataSet:<type 'list'>: [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
+    numFeatures = len(dataSet[0]) - 1      #the last column is used for the labels,numFeatures为2
     baseEntropy = calcShannonEnt(dataSet)
     bestInfoGain = 0.0; bestFeature = -1
-    for i in range(numFeatures):        #iterate over all the features
+    for i in range(numFeatures): #iterate over all the features
+        #example:<type 'list'>: [0, 1, 'no']        <type 'list'>: [0, 1, 'no']
+        #featList:<type 'list'>: [1, 1, 1, 0, 0]    <type 'list'>: [1, 1, 0, 1, 1]
+        #类似还有生成表达式
+        #如featList = (example[i] for example in dataSet)
+        #生成表达式一般可省略两端原括号，写成
+        #featList = example[i] for example in dataSet
+        #生成表达式和 for + yield 相似，
+        #遍历数据集dataSet,获取dataSet的第1和第二列
         featList = [example[i] for example in dataSet]#create a list of all the examples of this feature
         uniqueVals = set(featList)       #get a set of unique values
         newEntropy = 0.0
         for value in uniqueVals:
-            subDataSet = splitDataSet(dataSet, i, value)
+            subDataSet = splitDataSet(dataSet, i, value)#subDataSet:<type 'list'>: [[1, 'no'], [1, 'no']]
             prob = len(subDataSet)/float(len(dataSet))
             newEntropy += prob * calcShannonEnt(subDataSet)     
         infoGain = baseEntropy - newEntropy     #calculate the info gain; ie reduction in entropy
         if (infoGain > bestInfoGain):       #compare this to the best gain so far
             bestInfoGain = infoGain         #if better than current best, set to best
             bestFeature = i
-    return bestFeature                      #returns an integer
+    return bestFeature                      #returns an integer，bestFeature为0
 
+'''
+多数表决
+类标签不唯一时，如何确定叶子节点的方法
+'''
 def majorityCnt(classList):
     classCount={}
     for vote in classList:
@@ -72,7 +85,7 @@ def majorityCnt(classList):
     return sortedClassCount[0][0]
 
 '''
-创建树的代码
+创建决策树
 '''
 def createTree(dataSet,labels):
     classList = [example[-1] for example in dataSet]
@@ -80,14 +93,20 @@ def createTree(dataSet,labels):
         return classList[0]#stop splitting when all of the classes are equal
     if len(dataSet[0]) == 1: #stop splitting when there are no more features in dataSet
         return majorityCnt(classList)
+    #遍历完所有特征时返回出现次数最多的类别
     bestFeat = chooseBestFeatureToSplit(dataSet)
     bestFeatLabel = labels[bestFeat]
     myTree = {bestFeatLabel:{}}
+    #del删除第bestFeat个元素
     del(labels[bestFeat])
+    #得到列表包含的所有属性值
     featValues = [example[bestFeat] for example in dataSet]
-    uniqueVals = set(featValues)
+    uniqueVals = set(featValues)#set唯一化
     for value in uniqueVals:
-        subLabels = labels[:]       #copy all of labels, so trees don't mess up existing labels
+        #复制类标签，并将其存储在新的列表遍历subLabels
+        #在PYTHON中函数参数是列表时，参数是按照引用方式传递的。
+        #为了保证每次调用createTree时不改变原始列表的内容，因此使用新的变量代替原始列表
+        subLabels = labels[:]  #copy all of labels, so trees don't mess up existing labels
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value),subLabels)
     return myTree                            
 

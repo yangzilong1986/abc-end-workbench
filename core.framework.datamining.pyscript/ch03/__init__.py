@@ -2,6 +2,6 @@ import trees
 import treePlotter
 dataSet, labels=trees.createDataSet()
 
-trees.calcShannonEnt(dataSet)
+id3tree=trees.createTree(dataSet,labels)
 
-treePlotter.createPlot()
+print(id3tree)
