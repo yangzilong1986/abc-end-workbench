@@ -3,20 +3,13 @@
 from math import log
 import operator
 
-def createDataSet():
-    dataSet = [[1, 1, 'yes'],
-               [1, 1, 'yes'],
-               [1, 0, 'no'],
-               [0, 1, 'no'],
-               [0, 1, 'no']]
-    labels = ['no surfacing','flippers']
-    #change to discrete values
-    return dataSet, labels
 
 '''
 给定数据的香农熵，信息增益
 '''
 def calcShannonEnt(dataSet):
+    #dataSet:<type 'list'>: [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
+    #numEntries:5
     numEntries = len(dataSet)
     labelCounts = {}#{'yes': 2, 'no': 3}
     for featVec in dataSet: #the the number of unique elements and their occurance
@@ -39,14 +32,17 @@ value:需要返回的数据值
 def splitDataSet(dataSet, axis, value):
     retDataSet = []#创建新的list对象
     for featVec in dataSet:
-        if featVec[axis] == value:
+        if featVec[axis] == value:#计算每列值：<type 'list'>: [['myope', 'no', 'reduced', 'no lenses']]
+            #axis位置之后的值
             reducedFeatVec = featVec[:axis]     #chop out axis used for splitting
+            #之前的数据
             reducedFeatVec.extend(featVec[axis+1:])
             retDataSet.append(reducedFeatVec)
     return retDataSet
     
 def chooseBestFeatureToSplit(dataSet):
     #dataSet:<type 'list'>: [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
+    #列数
     numFeatures = len(dataSet[0]) - 1      #the last column is used for the labels,numFeatures为2
     baseEntropy = calcShannonEnt(dataSet)
     bestInfoGain = 0.0; bestFeature = -1
@@ -59,17 +55,20 @@ def chooseBestFeatureToSplit(dataSet):
         #featList = example[i] for example in dataSet
         #生成表达式和 for + yield 相似，
         #遍历数据集dataSet,获取dataSet的第1和第二列
+        #第i列的数据
         featList = [example[i] for example in dataSet]#create a list of all the examples of this feature
+        #去重
         uniqueVals = set(featList)       #get a set of unique values
         newEntropy = 0.0
         for value in uniqueVals:
+            #获取第i列并且值为value一节（行数）段数据
             subDataSet = splitDataSet(dataSet, i, value)#subDataSet:<type 'list'>: [[1, 'no'], [1, 'no']]
             prob = len(subDataSet)/float(len(dataSet))
             newEntropy += prob * calcShannonEnt(subDataSet)     
         infoGain = baseEntropy - newEntropy     #calculate the info gain; ie reduction in entropy
         if (infoGain > bestInfoGain):       #compare this to the best gain so far
             bestInfoGain = infoGain         #if better than current best, set to best
-            bestFeature = i
+            bestFeature = i#新增获得增广，位置后移
     return bestFeature                      #returns an integer，bestFeature为0
 
 '''
@@ -89,7 +88,7 @@ def majorityCnt(classList):
 '''
 def createTree(dataSet,labels):
     classList = [example[-1] for example in dataSet]
-    if classList.count(classList[0]) == len(classList): 
+    if classList.count(classList[0]) == len(classList): #当列表中包含第一个元素的个数等于List的长度时，则为同一个元素
         return classList[0]#stop splitting when all of the classes are equal
     if len(dataSet[0]) == 1: #stop splitting when there are no more features in dataSet
         return majorityCnt(classList)

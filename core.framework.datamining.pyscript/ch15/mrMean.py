@@ -1,8 +1,5 @@
-'''
-Created on Feb 28, 2011
+#coding=utf-8
 
-@author: Peter
-'''
 from mrjob.job import MRJob
 
 class MRmean(MRJob):

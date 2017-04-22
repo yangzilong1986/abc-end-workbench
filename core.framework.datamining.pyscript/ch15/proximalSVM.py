@@ -1,8 +1,5 @@
-'''
-Created on Feb 25, 2011
+#coding=utf-8
 
-@author: Peter
-'''
 import numpy
 
 def map(key, value):

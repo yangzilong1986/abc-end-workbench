@@ -1,8 +1,5 @@
-'''
-Created on Jun 1, 2011
+#coding=utf-8
 
-@author: Peter Harrington
-'''
 from numpy import *
 
 def loadDataSet(fileName, delim='\t'):

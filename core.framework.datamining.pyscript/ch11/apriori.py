@@ -1,8 +1,5 @@
-'''
-Created on Mar 24, 2011
-Ch 11 code
-@author: Peter
-'''
+#coding=utf-8
+
 from numpy import *
 
 def loadDataSet():

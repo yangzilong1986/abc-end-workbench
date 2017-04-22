@@ -1,8 +1,5 @@
-'''
-Created on Feb 16, 2011
-k Means Clustering for Ch10 of Machine Learning in Action
-@author: Peter Harrington
-'''
+#coding=utf-8
+
 from numpy import *
 
 def loadDataSet(fileName):      #general function to parse tab -delimited floats

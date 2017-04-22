@@ -1,10 +1,5 @@
-'''
-Created on Feb 21, 2011
-Machine Learning in Action Chapter 18
-Map Reduce Job for Hadoop Streaming 
-mrMeanMapper.py
-@author: Peter Harrington
-'''
+#coding=utf-8
+
 import sys
 from numpy import mat, mean, power
 

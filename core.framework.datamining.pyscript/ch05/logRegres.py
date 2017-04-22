@@ -1,8 +1,5 @@
-'''
-Created on Oct 27, 2010
-Logistic Regression Working Module
-@author: Peter
-'''
+#coding=utf-8
+
 from numpy import *
 
 def loadDataSet():

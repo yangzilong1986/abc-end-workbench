@@ -1,9 +1,5 @@
-'''
-Created on Feb 24, 2011
-Sequential Pegasos 
-the input T is k*T in Batch Pegasos
-@author: Peter Harrington
-'''
+#coding=utf-8
+
 from numpy import *
 
 def loadDataSet(fileName):
