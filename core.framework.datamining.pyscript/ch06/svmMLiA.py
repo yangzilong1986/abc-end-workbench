@@ -80,17 +80,29 @@ def kernelTrans(X, A, kTup): #calc the kernel or transform data to a higher dime
     return K
 
 class optStruct:
-    def __init__(self,dataMatIn, classLabels, C, toler, kTup):  # Initialize the structure with the parameters 
-        self.X = dataMatIn
-        self.labelMat = classLabels
-        self.C = C
-        self.tol = toler
-        self.m = shape(dataMatIn)[0]
+    # Initialize the structure with the parameters
+    def __init__(self,dataMatIn, classLabels, C, toler, kTup):
+        self.X = dataMatIn  #数据矩阵
+        self.labelMat = classLabels #分类矩阵
+        self.C = C  #常数C
+        self.tol = toler    #容错率
+        #shape返回为元组
+        #结果返回一个tuple元组 (100L, 2L)
+        self.m = shape(dataMatIn)[0]    #m:100 第一列
+        #alphas为[100*1]矩阵
         self.alphas = mat(zeros((self.m,1)))
         self.b = 0
         self.eCache = mat(zeros((self.m,2))) #first column is valid flag
+        #K[100*100]
         self.K = mat(zeros((self.m,self.m)))
         for i in range(self.m):
+            #s[i : j : k]代表的意思是列表 s 中的第 i 个元素(包含), 到第 j 个元素(不包含)，
+            #每隔 k 个数取一个 形成的列表，即取[j , k)，步长为 k取出的列表子集。
+            #[:,i]取i列
+
+            #X[i,:]取第i行
+            #3.542485	1.977398
+            #3.018896	2.556416
             self.K[:,i] = kernelTrans(self.X, self.X[i,:], kTup)
         
 def calcEk(oS, k):
