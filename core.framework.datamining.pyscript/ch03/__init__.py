@@ -3,20 +3,20 @@
 import trees
 import treePlotter
 
-# def createDataSet():
-#     dataSet = [[1,              1,          'yes'],
-#                [1,              1,          'yes'],
-#                [1,              0,          'no'],
-#                [2,              0,          'maybe'],
-#                [0,              1,           'no'],
-#                [0,              1,           'no']]
-#     labels = ['no surfacing','flippers']
-#     #change to discrete values
-#     return dataSet, labels
+def createDataSet():
+    dataSet = [[1,              1,          'yes'],
+               [1,              1,          'yes'],
+               [1,              0,          'no'],
+               [2,              0,          'maybe'],
+               [0,              1,           'no'],
+               [0,              1,           'no']]
+    labels = ['no surfacing','flippers']
+    #change to discrete values
+    return dataSet, labels
 
-#dataSet, labels=createDataSet()
-#fishMyTree=trees.createTree(dataSet,labels)
-
+dataSet, labels=createDataSet()
+fishMyTree=trees.createTree(dataSet,labels)
+treePlotter.createPlot(trees)
 #print(fishMyTree)
 # labels = ['no surfacing','flippers']
 #fishClass=trees.classify(fishMyTree,labels,[0,2])

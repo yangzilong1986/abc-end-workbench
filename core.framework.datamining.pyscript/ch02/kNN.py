@@ -11,24 +11,59 @@ dataSet:样本数据
 k:最近邻居的数目
 '''
 def classify0(inX, dataSet, labels, k):
+    #数据集行数即数据集记录数
     dataSetSize = dataSet.shape[0]#数组的维度
     #在列方向上重复inX[0,0]1次，行dataSetSize次
     #获取矩阵的差值
-    diffMat = tile(inX, (dataSetSize,1)) - dataSet
+    '''距离计算'''
+    # dataSet结构
+    # [[ 1.   1.1]
+    #  [ 1.   1. ]
+    # [ 0.   0. ]
+    # [ 0.   0.1]]
+    #样本与原先所有样本的差值矩阵
+    #初始化List[]
+    datTile=tile(inX, (dataSetSize,1))
+    # datTile结构
+    # [[0 0]
+    #  [0 0]
+    # [0 0]
+    # [0 0]]
+    diffMat = datTile - dataSet
+    # diffMat结果
+    # [[-1.  -1.1]
+    #  [-1.  -1. ]
+    #  [ 0.   0. ]
+    # [ 0.  -0.1]]
+    # diffMat = tile(inX, (dataSetSize,1)) - dataSet
     #差值取平方
+
     sqDiffMat = diffMat**2
-    sqDistances = sqDiffMat.sum(axis=1)#row加，行加到一起
+    #sqDiffMat结果
+    # [[ 1.    1.21]
+    #  [ 1.    1.  ]
+    # [ 0.    0.  ]
+    # [ 0.    0.01]]
+    #行加到一起，
+    #计算每一行上元素的和， 1.  +  1.21，1.  +  1.
+    sqDistances = sqDiffMat.sum(axis=1)
     distances = sqDistances**0.5
-    #按照值，返回排序索引
+    #按照值，返回排序索引,即 对距离大小进行排序
     sortedDistIndicies = distances.argsort()     
     classCount={}#{'A':1,'B':1 },
     # 注：tuple（元祖） 用小括号，Dictionary (字典) : 用{}来定义，list（列表） 用方括号
     #投票表决
+    #即选择距离最小的 K 个点
     for i in range(k):
         voteIlabel = labels[sortedDistIndicies[i]]#B
         classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1
-    sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
+
+    # 按照类别的数量多少进行排序
+    sortedClassCount = sorted(classCount.iteritems(),
+                              key=operator.itemgetter(1),
+                              reverse=True)
     sortedRow=sortedClassCount[0]
+    # 返回类别数最多的类别名称
     return sortedClassCount[0][0]
 
 def createDataSet():
@@ -87,6 +122,7 @@ def img2vector(filename):
     return returnVect
 
 def handwritingClassTest():
+    # 导入数据
     hwLabels = []
     #load the training set
     trainingFileList = listdir('trainingDigits')

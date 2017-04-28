@@ -16,7 +16,9 @@ def loadDataSet(fileName):      #general function to parse tab -delimited floats
     return dataMat,labelMat
 
 def standRegres(xArr,yArr):
-    xMat = mat(xArr); yMat = mat(yArr).T
+    xMat = mat(xArr);
+    yMat = mat(yArr).T
+
     xTx = xMat.T*xMat
     if linalg.det(xTx) == 0.0:
         print "This matrix is singular, cannot do inverse"
@@ -24,12 +26,16 @@ def standRegres(xArr,yArr):
     ws = xTx.I * (xMat.T*yMat)
     return ws
 
+#局部加权线性回归行数
 def lwlr(testPoint,xArr,yArr,k=1.0):
     xMat = mat(xArr); yMat = mat(yArr).T
     m = shape(xMat)[0]
+    #创建对角矩阵
     weights = mat(eye((m)))
-    for j in range(m):                      #next 2 lines create weights matrix
-        diffMat = testPoint - xMat[j,:]     #
+    #next 2 lines create weights matrix
+    for j in range(m):
+        diffMat = testPoint - xMat[j,:] #
+        #权重值大小以指数级衰竭
         weights[j,j] = exp(diffMat*diffMat.T/(-2.0*k**2))
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
@@ -38,24 +44,28 @@ def lwlr(testPoint,xArr,yArr,k=1.0):
     ws = xTx.I * (xMat.T * (weights * yMat))
     return testPoint * ws
 
-def lwlrTest(testArr,xArr,yArr,k=1.0):  #loops over all the data points and applies lwlr to each one
+#loops over all the data points and applies lwlr to each one
+def lwlrTest(testArr,xArr,yArr,k=1.0):
     m = shape(testArr)[0]
     yHat = zeros(m)
     for i in range(m):
         yHat[i] = lwlr(testArr[i],xArr,yArr,k)
     return yHat
 
-def lwlrTestPlot(xArr,yArr,k=1.0):  #same thing as lwlrTest except it sorts X first
-    yHat = zeros(shape(yArr))       #easier for plotting
+#same thing as lwlrTest except it sorts X first
+def lwlrTestPlot(xArr,yArr,k=1.0):
+    yHat = zeros(shape(yArr))#easier for plotting
     xCopy = mat(xArr)
     xCopy.sort(0)
     for i in range(shape(xArr)[0]):
         yHat[i] = lwlr(xCopy[i],xArr,yArr,k)
     return yHat,xCopy
 
-def rssError(yArr,yHatArr): #yArr and yHatArr both need to be arrays
+#yArr and yHatArr both need to be arrays
+def rssError(yArr,yHatArr):
     return ((yArr-yHatArr)**2).sum()
 
+#岭回归
 def ridgeRegres(xMat,yMat,lam=0.2):
     xTx = xMat.T*xMat
     denom = xTx + eye(shape(xMat)[1])*lam
@@ -68,10 +78,13 @@ def ridgeRegres(xMat,yMat,lam=0.2):
 def ridgeTest(xArr,yArr):
     xMat = mat(xArr); yMat=mat(yArr).T
     yMean = mean(yMat,0)
-    yMat = yMat - yMean     #to eliminate X0 take mean off of Y
+    #to eliminate X0 take mean off of Y
+    yMat = yMat - yMean
     #regularize X's
-    xMeans = mean(xMat,0)   #calc mean then subtract it off
-    xVar = var(xMat,0)      #calc variance of Xi then divide by it
+    #calc mean then subtract it off
+    xMeans = mean(xMat,0)
+    #calc variance of Xi then divide by it
+    xVar = var(xMat,0)
     xMat = (xMat - xMeans)/xVar
     numTestPts = 30
     wMat = zeros((numTestPts,shape(xMat)[1]))
@@ -82,19 +95,27 @@ def ridgeTest(xArr,yArr):
 
 def regularize(xMat):#regularize by columns
     inMat = xMat.copy()
-    inMeans = mean(inMat,0)   #calc mean then subtract it off
-    inVar = var(inMat,0)      #calc variance of Xi then divide by it
+    #calc mean then subtract it off
+    inMeans = mean(inMat,0)
+    #calc variance of Xi then divide by it
+    inVar = var(inMat,0)
     inMat = (inMat - inMeans)/inVar
     return inMat
 
+#向前逐步线性回归
 def stageWise(xArr,yArr,eps=0.01,numIt=100):
-    xMat = mat(xArr); yMat=mat(yArr).T
+    xMat = mat(xArr);
+    yMat=mat(yArr).T
     yMean = mean(yMat,0)
-    yMat = yMat - yMean     #can also regularize ys but will get smaller coef
+    #can also regularize ys but will get smaller coef
+    yMat = yMat - yMean
     xMat = regularize(xMat)
     m,n=shape(xMat)
     #returnMat = zeros((numIt,n)) #testing code remove
-    ws = zeros((n,1)); wsTest = ws.copy(); wsMax = ws.copy()
+    ws = zeros((n,1));
+    wsTest = ws.copy();
+    wsMax = ws.copy()
+
     for i in range(numIt):
         print ws.T
         lowestError = inf; 
@@ -146,7 +167,9 @@ import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
     myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
-    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/' \
+                'public/products?' \
+                'key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
     for i in range(len(retDict['items'])):
@@ -171,32 +194,41 @@ def setDataCollect(retX, retY):
     searchForSet(retX, retY, 10181, 2007, 3428, 199.99)
     searchForSet(retX, retY, 10189, 2008, 5922, 299.99)
     searchForSet(retX, retY, 10196, 2009, 3263, 249.99)
-    
+
+#交叉验证岭回归
 def crossValidation(xArr,yArr,numVal=10):
     m = len(yArr)                           
     indexList = range(m)
-    errorMat = zeros((numVal,30))#create error mat 30columns numVal rows
+    #create error mat 30columns numVal rows
+    errorMat = zeros((numVal,30))
     for i in range(numVal):
         trainX=[]; trainY=[]
         testX = []; testY = []
         random.shuffle(indexList)
-        for j in range(m):#create training set based on first 90% of values in indexList
+        #create training set based on first 90% of values in indexList
+        for j in range(m):
             if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
-        wMat = ridgeTest(trainX,trainY)    #get 30 weight vectors from ridge
-        for k in range(30):#loop over all of the ridge estimates
+        #get 30 weight vectors from ridge
+        wMat = ridgeTest(trainX,trainY)
+        #loop over all of the ridge estimates
+        for k in range(30):
             matTestX = mat(testX); matTrainX=mat(trainX)
             meanTrain = mean(matTrainX,0)
             varTrain = var(matTrainX,0)
-            matTestX = (matTestX-meanTrain)/varTrain #regularize test with training params
-            yEst = matTestX * mat(wMat[k,:]).T + mean(trainY)#test ridge results and store
+            #regularize test with training params
+            matTestX = (matTestX-meanTrain)/varTrain
+            #test ridge results and store
+            yEst = matTestX * mat(wMat[k,:]).T + mean(trainY)
             errorMat[i,k]=rssError(yEst.T.A,array(testY))
             #print errorMat[i,k]
-    meanErrors = mean(errorMat,0)#calc avg performance of the different ridge weight vectors
+
+    #calc avg performance of the different ridge weight vectors
+    meanErrors = mean(errorMat,0)
     minMean = float(min(meanErrors))
     bestWeights = wMat[nonzero(meanErrors==minMean)]
     #can unregularize to get model

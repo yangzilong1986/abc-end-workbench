@@ -20,7 +20,10 @@ def calcShannonEnt(dataSet):
     for key in labelCounts:
         #获取标签的概率
         prob = float(labelCounts[key])/numEntries
-        shannonEnt -= prob * log(prob,2) #log base 2
+        #log base 2
+        #香农熵
+        #prob小于1，则shannonEnt为负值
+        shannonEnt -= prob * log(prob,2)
     return shannonEnt
 
 '''
@@ -31,7 +34,7 @@ value:需要返回的数据值
 '''
 def splitDataSet(dataSet, axis, value):
     retDataSet = []#创建新的list对象
-    for featVec in dataSet:
+    for featVec in dataSet:#每行数据
         if featVec[axis] == value:#计算每列值：<type 'list'>: [['myope', 'no', 'reduced', 'no lenses']]
             #axis位置之后的值
             reducedFeatVec = featVec[:axis]     #chop out axis used for splitting
@@ -42,8 +45,9 @@ def splitDataSet(dataSet, axis, value):
     
 def chooseBestFeatureToSplit(dataSet):
     #dataSet:<type 'list'>: [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
-    #列数
-    numFeatures = len(dataSet[0]) - 1      #the last column is used for the labels,numFeatures为2
+    #第一行
+    ds=dataSet[0]
+    numFeatures = len(ds) - 1      #the last column is used for the labels,numFeatures为2
     baseEntropy = calcShannonEnt(dataSet)
     bestInfoGain = 0.0; bestFeature = -1
     for i in range(numFeatures): #iterate over all the features
@@ -56,20 +60,37 @@ def chooseBestFeatureToSplit(dataSet):
         #生成表达式和 for + yield 相似，
         #遍历数据集dataSet,获取dataSet的第1和第二列
         #第i列的数据
-        featList = [example[i] for example in dataSet]#create a list of all the examples of this feature
+        #create a list of all the examples of this feature
+
+        #遍历dataSet每行数据，每次遍历获取第i个，即获取一列数据
+        # dataSet = [[1,              1,          'yes'],
+        #            [1,              1,          'yes'],
+        #            [1,              0,          'no'],
+        #            [2,              0,          'maybe'],
+        #            [0,              1,           'no'],
+        #            [0,              1,           'no']]
+        #第一次遍历，i为0，获取第一列
+        #<type 'list'>: [1, 1, 1, 2, 0, 0]
+        #第二次遍历，i为0，获取第二列
+        #<type 'list'>: [1, 1, 0, 0, 1, 1]
+        featList = [example[i] for example in dataSet]
         #去重
         uniqueVals = set(featList)       #get a set of unique values
-        newEntropy = 0.0
+        newEntropy = 0.0#
         for value in uniqueVals:
             #获取第i列并且值为value一节（行数）段数据
-            subDataSet = splitDataSet(dataSet, i, value)#subDataSet:<type 'list'>: [[1, 'no'], [1, 'no']]
-            prob = len(subDataSet)/float(len(dataSet))
-            newEntropy += prob * calcShannonEnt(subDataSet)     
-        infoGain = baseEntropy - newEntropy     #calculate the info gain; ie reduction in entropy
-        if (infoGain > bestInfoGain):       #compare this to the best gain so far
-            bestInfoGain = infoGain         #if better than current best, set to best
+            #subDataSet:<type 'list'>: [[1, 'no'], [1, 'no']]
+            subDataSet = splitDataSet(dataSet, i, value)
+            prob = len(subDataSet)/float(len(dataSet))#prob:2/6
+            newEntropy += prob * calcShannonEnt(subDataSet)
+        #calculate the info gain; ie reduction in entropy
+        infoGain = baseEntropy - newEntropy
+        #compare this to the best gain so far
+        if (infoGain > bestInfoGain):
+            #if better than current best, set to best
+            bestInfoGain = infoGain
             bestFeature = i#新增获得增广，位置后移
-    return bestFeature                      #returns an integer，bestFeature为0
+    return bestFeature #returns an integer，bestFeature为0
 
 '''
 多数表决

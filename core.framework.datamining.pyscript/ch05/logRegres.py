@@ -3,22 +3,6 @@
 from numpy import *
 
 '''
-    X1        X2      分类
--0.017612	14.053064	  0
--1.395634	4.662541	  1
-
-loadDataSet读取信息
-'''
-def loadDataSet():
-    dataMat = []; labelMat = []
-    fr = open('testSet.txt')
-    for line in fr.readlines():
-        lineArr = line.strip().split()
-        dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])
-        labelMat.append(int(lineArr[2]))
-    return dataMat,labelMat
-
-'''
 Logistic回归的计算
 '''
 def sigmoid(inX):
@@ -48,9 +32,9 @@ def gradAscent(dataMatIn, classLabels):
     labelMat = mat(classLabels).transpose() #convert to NumPy matrix
 
     m,n = shape(dataMatrix)#矩阵的行、列
-    alpha = 0.001
+    alpha = 0.001#可以设置
     maxCycles = 500
-    #weights[3*1]
+    #weights[3*1]，表达式中θ
     weights = ones((n,1))
     # [[ 1.]
     #  [ 1.]
@@ -65,7 +49,7 @@ def gradAscent(dataMatIn, classLabels):
     #[1.40530640e+01,   4.66254100e+00,   6.53862000e+00, 7.15285300e+00,     1.10546770e+01,...]
 
     #计算次数
-    for k in range(maxCycles):              #heavy on matrix operations
+    for k in range(maxCycles):  #heavy on matrix operations
         #dataMatrix为100 3的矩阵
         #dataMatrix[100*3] weights[3*1]
         #sigmoidParam[100*1]
@@ -82,28 +66,6 @@ def gradAscent(dataMatIn, classLabels):
         weights = weights + alpha *dataTranpose * error #matrix mult
         print('weights is\t',weights)
     return weights
-
-def plotBestFit(weights):
-    import matplotlib.pyplot as plt
-    dataMat,labelMat=loadDataSet()
-    dataArr = array(dataMat)
-    n = shape(dataArr)[0] 
-    xcord1 = []; ycord1 = []
-    xcord2 = []; ycord2 = []
-    for i in range(n):
-        if int(labelMat[i])== 1:
-            xcord1.append(dataArr[i,1]); ycord1.append(dataArr[i,2])
-        else:
-            xcord2.append(dataArr[i,1]); ycord2.append(dataArr[i,2])
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ax.scatter(xcord1, ycord1, s=30, c='red', marker='s')
-    ax.scatter(xcord2, ycord2, s=30, c='green')
-    x = arange(-3.0, 3.0, 0.1)
-    y = (-weights[0]-weights[1]*x)/weights[2]
-    ax.plot(x, y)
-    plt.xlabel('X1'); plt.ylabel('X2');
-    plt.show()
 
 '''
 改进的随机梯度算法
@@ -128,6 +90,44 @@ def classifyVector(inX, weights):
     prob = sigmoid(sum(inX*weights))
     if prob > 0.5: return 1.0
     else: return 0.0
+
+'''
+    X1        X2      分类
+-0.017612	14.053064	  0
+-1.395634	4.662541	  1
+
+loadDataSet读取信息
+'''
+def loadDataSet():
+    dataMat = []; labelMat = []
+    fr = open('testSet.txt')
+    for line in fr.readlines():
+        lineArr = line.strip().split()
+        dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])
+        labelMat.append(int(lineArr[2]))
+    return dataMat,labelMat
+
+def plotBestFit(weights):
+    import matplotlib.pyplot as plt
+    dataMat,labelMat=loadDataSet()
+    dataArr = array(dataMat)
+    n = shape(dataArr)[0]
+    xcord1 = []; ycord1 = []
+    xcord2 = []; ycord2 = []
+    for i in range(n):
+        if int(labelMat[i])== 1:
+            xcord1.append(dataArr[i,1]); ycord1.append(dataArr[i,2])
+        else:
+            xcord2.append(dataArr[i,1]); ycord2.append(dataArr[i,2])
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ax.scatter(xcord1, ycord1, s=30, c='red', marker='s')
+    ax.scatter(xcord2, ycord2, s=30, c='green')
+    x = arange(-3.0, 3.0, 0.1)
+    y = (-weights[0]-weights[1]*x)/weights[2]
+    ax.plot(x, y)
+    plt.xlabel('X1'); plt.ylabel('X2');
+    plt.show()
 
 def colicTest():
     frTrain = open('horseColicTraining.txt');
