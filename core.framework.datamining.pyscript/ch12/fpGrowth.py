@@ -5,7 +5,8 @@ class treeNode:
         self.name = nameValue
         self.count = numOccur
         self.nodeLink = None
-        self.parent = parentNode      #needs to be updated
+        #needs to be updated
+        self.parent = parentNode
         self.children = {} 
     
     def inc(self, numOccur):
@@ -16,55 +17,77 @@ class treeNode:
         for child in self.children.values():
             child.disp(ind+1)
 
-def createTree(dataSet, minSup=1): #create FP-tree from dataset but don't mine
+#create FP-tree from dataset but don't mine
+def createTree(dataSet, minSup=1):
     headerTable = {}
-    #go over dataSet twice
-    for trans in dataSet:#first pass counts frequency of occurance
+    #go over dataSet twice\
+    #first pass counts frequency of occurance
+    for trans in dataSet:
         for item in trans:
             headerTable[item] = headerTable.get(item, 0) + dataSet[trans]
-    for k in headerTable.keys():  #remove items not meeting minSup
+
+    #remove items not meeting minSup
+    for k in headerTable.keys():
         if headerTable[k] < minSup: 
             del(headerTable[k])
     freqItemSet = set(headerTable.keys())
     #print 'freqItemSet: ',freqItemSet
-    if len(freqItemSet) == 0: return None, None  #if no items meet min support -->get out
+    #if no items meet min support -->get out
+    if len(freqItemSet) == 0:
+        return None, None
     for k in headerTable:
-        headerTable[k] = [headerTable[k], None] #reformat headerTable to use Node link 
+        #reformat headerTable to use Node link
+        headerTable[k] = [headerTable[k], None]
+
     #print 'headerTable: ',headerTable
-    retTree = treeNode('Null Set', 1, None) #create tree
-    for tranSet, count in dataSet.items():  #go through dataset 2nd time
+    #create tree
+    retTree = treeNode('Null Set', 1, None)
+
+    #go through dataset 2nd time
+    for tranSet, count in dataSet.items():
         localD = {}
         for item in tranSet:  #put transaction items in order
             if item in freqItemSet:
                 localD[item] = headerTable[item][0]
         if len(localD) > 0:
-            orderedItems = [v[0] for v in sorted(localD.items(), key=lambda p: p[1], reverse=True)]
-            updateTree(orderedItems, retTree, headerTable, count)#populate tree with ordered freq itemset
+            orderedItems = [v[0] for v in sorted(localD.items(),
+                                                 key=lambda p: p[1],
+                                                 reverse=True)]
+            #populate tree with ordered freq itemset
+            updateTree(orderedItems, retTree, headerTable, count)
     return retTree, headerTable #return tree and header table
 
 def updateTree(items, inTree, headerTable, count):
-    if items[0] in inTree.children:#check if orderedItems[0] in retTree.children
-        inTree.children[items[0]].inc(count) #incrament count
+    #check if orderedItems[0] in retTree.children
+    if items[0] in inTree.children:
+        #incrament count
+        inTree.children[items[0]].inc(count)
     else:   #add items[0] to inTree.children
         inTree.children[items[0]] = treeNode(items[0], count, inTree)
-        if headerTable[items[0]][1] == None: #update header table 
+        #update header table
+        if headerTable[items[0]][1] == None:
             headerTable[items[0]][1] = inTree.children[items[0]]
         else:
             updateHeader(headerTable[items[0]][1], inTree.children[items[0]])
-    if len(items) > 1:#call updateTree() with remaining ordered items
+    #call updateTree() with remaining ordered items
+    if len(items) > 1:
         updateTree(items[1::], inTree.children[items[0]], headerTable, count)
-        
-def updateHeader(nodeToTest, targetNode):   #this version does not use recursion
-    while (nodeToTest.nodeLink != None):    #Do not use recursion to traverse a linked list!
+
+#this version does not use recursion
+def updateHeader(nodeToTest, targetNode):
+    #Do not use recursion to traverse a linked list!
+    while (nodeToTest.nodeLink != None):
         nodeToTest = nodeToTest.nodeLink
     nodeToTest.nodeLink = targetNode
-        
-def ascendTree(leafNode, prefixPath): #ascends from leaf node to root
+
+#ascends from leaf node to root
+def ascendTree(leafNode, prefixPath):
     if leafNode.parent != None:
         prefixPath.append(leafNode.name)
         ascendTree(leafNode.parent, prefixPath)
-    
-def findPrefixPath(basePat, treeNode): #treeNode comes from header table
+
+#treeNode comes from header table
+def findPrefixPath(basePat, treeNode):
     condPats = {}
     while treeNode != None:
         prefixPath = []
@@ -75,7 +98,8 @@ def findPrefixPath(basePat, treeNode): #treeNode comes from header table
     return condPats
 
 def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
-    bigL = [v[0] for v in sorted(headerTable.items(), key=lambda p: p[1])]#(sort header table)
+    bigL = [v[0] for v in sorted(headerTable.items(),
+                                 key=lambda p: p[1])]#(sort header table)
     for basePat in bigL:  #start from bottom of header table
         newFreqSet = preFix.copy()
         newFreqSet.add(basePat)

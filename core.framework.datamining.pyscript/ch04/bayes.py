@@ -56,13 +56,18 @@ def trainNB0(trainMatrix,trainCategory):
 
     #numWords（32）是一个List
     #change to ones()
+    #<type 'list'>: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+    # 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+    #  1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+    # 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
     p1Num = ones(numWords)
 
     p0Denom = 2.0;
     p1Denom = 2.0  #change to 2.0
     #对每篇训练文章
     for i in range(numTrainDocs):#行
-        #分类
+        #分类，pos值：[0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1]-32个单词
+        #             [0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 1 1 0 1 0 1 0 1 0 0 0]
         pos=trainMatrix[i]
         if trainCategory[i] == 1:#训练级
             #同一个元素的个数，p1Num为一行32个元素，
@@ -71,9 +76,9 @@ def trainNB0(trainMatrix,trainCategory):
             # 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0,
             #  1.0, 1.0, 1.0, 1.0, 2.0]
             p1Num +=pos#列相同
-            p1Denom += sum(pos)#总和
+            p1Denom += sum(pos)#总和，每行的数据和
         else:
-            p0Num += pos#行加
+            p0Num += pos#行加，32
             p0Denom += sum(pos)
     #用对数，是容错机制
     #将结果取自然对数，避免下溢出，即太多很小的数相乘造成的影响
@@ -113,13 +118,13 @@ def textParse(bigString):    #input is big string, #output is word list
 def loadDataSet():
     #postingList: 进行词条切分后的文档集合
     #classVec:类别标签
-    postingList=[['my',    'dog',       'has',      'flea',          'problems',    'help',  'please'],#0-0
-                 ['maybe', 'not',       'take',      'him',          'to',           'dog',     'park',      'stupid'],#1-1
-                 ['my',    'dalmation',  'is',       'so',           'cute',         'I',       'love',     'him'],#2-0
-                 ['stop',    'posting',  'stupid',   'worthless',   'garbage'],#3-1
+    postingList=[['my',    'dog',       'has',  'flea',    'problems',    'help',  'please'],#0-0
+                 ['maybe', 'not',   'take',   'him',   'to',   'dog',     'park',   'stupid'],#1-1
+                 ['my',  'dalmation',  'is',    'so', 'cute',    'I',    'love',     'him'],#2-0
+                 ['stop',  'posting',  'stupid',   'worthless',   'garbage'],#3-1
                  ['mr',      'licks',       'ate',       'my',         'steak',
                   'how',   'to',        'stop',     'him'],#4-0
-                 ['quit',   'buying',    'worthless', 'dog',         'food',             'stupid'],#5-1
+                 ['quit',   'buying',    'worthless', 'dog',         'food',   'stupid'],#5-1
          ]#6
     classVec = [0,1,0,1,0,1]    #1 is abusive, 0 not.7行
     return postingList,classVec
@@ -128,9 +133,10 @@ def testingNB():
     #样本数据
     listOPosts,listClasses = loadDataSet()
 
-    #非重复单词列表,32
+    #非重复单词列表,即样本数据中单词总量32
     myVocabList = createVocabList(listOPosts)
     trainMat=[]
+    #32个单词，样本
     for postinDoc in listOPosts:#listOPosts原文档相邻
         trainMat.append(setOfWords2Vec(myVocabList, postinDoc))
 
