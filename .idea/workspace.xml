@@ -17,36 +17,20 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/color/RandomGreedyColoring.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/color/SmallestDegreeLastColoring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/MaximalCliqueEnumerationAlgorithm.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/TSPAlgorithm.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/VertexColoringAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/isomorphism/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/scoring/ClosenessCentrality.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/scoring/Coreness.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/scoring/HarmonicCentrality.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/scoring/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/JohnsonShortestPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/tour/TwoApproxMetricTSP.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/vertexcover/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/vertexcover/util/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/event/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/experimental/BrownBacktrackColoring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/experimental/alg/color/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/experimental/alg/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/experimental/dag/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/experimental/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/generate/BarabasiAlbertGraphGenerator.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/generate/KleinbergSmallWorldGraphGenerator.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/generate/LinearizedChordDiagramGraphGenerator.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/generate/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/AsGraphUnion.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/AsSubgraph.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/AsUnmodifiableGraph.java" afterPath="" />
@@ -58,60 +42,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/WeightedIntrusiveEdgesSpecifics.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/builder/GraphBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/specifics/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/DegeneracyOrderingIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/util/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/BreadthFirstIteratorTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/Graph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/Graphs.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/Graphs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/CliqueMinimalSeparatorDecomposition.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/CliqueMinimalSeparatorDecomposition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/EulerianCircuit.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/EulerianCircuit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/TarjanLowestCommonAncestor.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/TarjanLowestCommonAncestor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/TransitiveClosure.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/TransitiveClosure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/TarjanSimpleCycles.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/TarjanSimpleCycles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/SpanningTreeAlgorithm.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/SpanningTreeAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/BaseShortestPathAlgorithm.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/BaseShortestPathAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/BellmanFordIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/BellmanFordIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraClosestFirstIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraClosestFirstIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraShortestPath.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraShortestPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/KShortestPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/KShortestPaths.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/KShortestPathsIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/KShortestPathsIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/ListSingleSourcePathsImpl.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/ListSingleSourcePathsImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/TreeSingleSourcePathsImpl.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/TreeSingleSourcePathsImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/BoruvkaMinimumSpanningTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/BoruvkaMinimumSpanningTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/KruskalMinimumSpanningTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/KruskalMinimumSpanningTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/UnionFind.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/UnionFind.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/DefaultDirectedGraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/DefaultDirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/GraphWalk.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/GraphWalk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/AbstractGraphIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/AbstractGraphIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/BreadthFirstIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/BreadthFirstIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/DepthFirstIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/DepthFirstIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/GraphIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/GraphIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/TopologicalOrderIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/TopologicalOrderIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/util/FibonacciHeap.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/util/FibonacciHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/graph/BreadthFirstIteratorTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/graph/BreadthFirstIteratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/graph/DepthFirstIteratorTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/graph/DepthFirstIteratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/ChromaticNumberTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/ChromaticNumberTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/EulerianCircuitTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/EulerianCircuitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/BellmanFordShortestPathTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/BellmanFordShortestPathTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/DijkstraShortestPathTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/DijkstraShortestPathTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/KShortestPathCostTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/KShortestPathCostTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/KShortestPathKValuesTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/KShortestPathKValuesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/ShortestPathTestCase.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/shortestpath/ShortestPathTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/spanning/MinimumSpanningTreeTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/spanning/MinimumSpanningTreeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/AllTraverseTests.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/AllTraverseTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/DepthFirstIteratorTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/DepthFirstIteratorTest.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -195,7 +126,54 @@
     <favorites_list name="abc-end-workbench" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="DijkstraClosestFirstIterator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraClosestFirstIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BTreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <element signature="e#176#187#0" expanded="true" />
+                <element signature="e#241#250#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1750">
+              <caret line="158" column="37" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2917#2926#0" expanded="true" />
+                <element signature="e#3128#3137#0" expanded="true" />
+                <element signature="e#3952#3963#0" expanded="true" />
+                <element signature="e#4020#4031#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -220,8 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/DepthFirstIterator.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/AllTraverseTests.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/graph/BreadthFirstIteratorTest.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/TopologicalOrderIterator.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/TarjanSimpleCycles.java" />
@@ -271,6 +247,8 @@
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ST.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RedBlackBST.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FenwickTree.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTreeNode.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTree.java" />
       </list>
     </option>
   </component>
@@ -847,10 +825,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -878,227 +852,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spanning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shortestpath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="isomorphism" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jgrapht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cycle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1910,7 +1664,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1039" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1926,7 +1680,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276644" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27435064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27435064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15476191" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -2448,22 +2202,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpannerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -2665,14 +2403,6 @@
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#553#554#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraClosestFirstIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2891,10 +2621,10 @@
         <state relative-caret-position="15000">
           <caret line="610" column="0" selection-start-line="610" selection-start-column="0" selection-end-line="610" selection-end-column="0" />
           <folding>
-            <element signature="e#18888#18889#0" expanded="true" />
-            <element signature="e#18933#18934#0" expanded="true" />
-            <element signature="e#19626#19627#0" expanded="true" />
-            <element signature="e#19659#19660#0" expanded="true" />
+            <element signature="e#18888#18889#0" expanded="false" />
+            <element signature="e#18933#18934#0" expanded="false" />
+            <element signature="e#19626#19627#0" expanded="false" />
+            <element signature="e#19659#19660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2904,6 +2634,46 @@
         <state relative-caret-position="215">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/shortestpath/DijkstraClosestFirstIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#176#187#0" expanded="true" />
+            <element signature="e#241#250#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1750">
+          <caret line="158" column="37" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2917#2926#0" expanded="true" />
+            <element signature="e#3128#3137#0" expanded="true" />
+            <element signature="e#3952#3963#0" expanded="true" />
+            <element signature="e#4020#4031#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
