@@ -32,14 +32,6 @@ import org.jgrapht.util.*;
  * diameter. Note that during construction time, no computations are performed! All computations are
  * performed the first time one of the member methods of this class is invoked. The results are
  * stored, so all subsequent calls to the same method are computationally efficient.
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Tom Larkworthy
- * @author Soren Davidsen (soren@tanesha.net)
- * @author Joris Kinable
- * @author Dimitrios Michail
  */
 public class FloydWarshallShortestPaths<V, E>
     extends BaseShortestPathAlgorithm<V, E>

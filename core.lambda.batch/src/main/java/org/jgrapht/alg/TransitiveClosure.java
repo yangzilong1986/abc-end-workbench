@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2007-2017, by Vinayak R Borkar and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg;
 
 import org.jgrapht.Graphs;
@@ -28,10 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Constructs the transitive closure of the input graph.
- *
- * @author Vinayak R. Borkar
- * @since May 5, 2007
+ * 传递闭包
  */
 public class TransitiveClosure
 {

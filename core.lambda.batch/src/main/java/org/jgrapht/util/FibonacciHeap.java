@@ -34,15 +34,6 @@ import java.util.*;
  * externally. This is typically accomplished by synchronizing on some object that naturally
  * encapsulates the set.
  * </p>
- *
- * <p>
- * This class was originally developed by Nathan Fiedler for the GraphMaker project. It was imported
- * to JGraphT with permission, courtesy of Nathan Fiedler.
- * </p>
- * 
- * @param <T> node data type
- *
- * @author Nathan Fiedler
  */
 public class FibonacciHeap<T>
 {

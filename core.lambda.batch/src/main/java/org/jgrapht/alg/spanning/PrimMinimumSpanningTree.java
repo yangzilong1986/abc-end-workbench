@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2013-2017, by Alexey Kudinkin and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.spanning;
 
 import java.util.*;
@@ -28,11 +11,6 @@ import org.jgrapht.alg.interfaces.*;
  * weighted undirected graph. The algorithm was developed by Czech mathematician V. Jarník and later
  * independently by computer scientist Robert C. Prim and rediscovered by E. Dijkstra.
  *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Alexey Kudinkin
- * @since Mar 5, 2013
  */
 public class PrimMinimumSpanningTree<V, E>
     implements SpanningTreeAlgorithm<E>
@@ -57,7 +35,16 @@ public class PrimMinimumSpanningTree<V, E>
     {
         Set<E> minimumSpanningTreeEdgeSet = new HashSet<>(g.vertexSet().size());
         double spanningTreeWeight = 0d;
+        //g，
+        //([A, B, C, D, E], [{A,B}, {A,C}, {B,D}, {C,D}, {D,E}, {A,E}])
 
+        /**
+        0 = "A"
+        1 = "B"
+        2 = "C"
+        3 = "D"
+        4 = "E"
+         **/
         Set<V> unspanned = new HashSet<>(g.vertexSet());
 
         while (!unspanned.isEmpty()) {
@@ -71,34 +58,42 @@ public class PrimMinimumSpanningTree<V, E>
             // already spanned vertices
 
             PriorityQueue<E> dangling = new PriorityQueue<>(
-                g.edgeSet().size(),
+                g.edgeSet().size(),//使用指定的初始容量创建一个 PriorityQueue，并根据指定的比较器对元素进行排序。
                 (lop, rop) -> Double.valueOf(g.getEdgeWeight(lop)).compareTo(g.getEdgeWeight(rop)));
-
+            //添加根节点相关边
+            /**
+            0 = {DefaultWeightedEdge@807} "(A : B)"
+            1 = {DefaultWeightedEdge@809} "(A : C)"
+            2 = {DefaultWeightedEdge@1007} "(A : E)"
+            */
             dangling.addAll(g.edgesOf(root));
-
+            //获取并移除此队列的头，如果此队列为空，则返回 null。
             for (E next; (next = dangling.poll()) != null;) {
-                V s, t = unspanned.contains(s = g.getEdgeSource(next)) ? s : g.getEdgeTarget(next);
+                V currentV=g.getEdgeSource(next);
+                //t为目标顶点
+                V s, t = unspanned.contains(s = currentV) ? s : g.getEdgeTarget(next);
 
                 // Decayed edges aren't removed from priority-queue so that
                 // having them just ignored being encountered through min-max
                 // traversal
-                if (!unspanned.contains(t)) {
+                if (!unspanned.contains(t)) {//不包括则继续
                     continue;
                 }
-
+                //添加得边Set
                 minimumSpanningTreeEdgeSet.add(next);
                 spanningTreeWeight += g.getEdgeWeight(next);
-
+                //此队列的头 是按指定排序方式确定的最小 元素。如果多个元素都是最小值，则头是其中一个元素——选择方法是任意的。
+                // 队列获取操作 poll、remove、peek 和 element 访问处于队列头的元素。
                 unspanned.remove(t);
 
                 for (E e : g.edgesOf(t)) {
                     if (unspanned.contains(
                         g.getEdgeSource(e).equals(t) ? g.getEdgeTarget(e) : g.getEdgeSource(e)))
-                    {
+                    {   //添加
                         dangling.add(e);
                     }
                 }
-            }
+            }//
         }
 
         return new SpanningTreeImpl<>(minimumSpanningTreeEdgeSet, spanningTreeWeight);

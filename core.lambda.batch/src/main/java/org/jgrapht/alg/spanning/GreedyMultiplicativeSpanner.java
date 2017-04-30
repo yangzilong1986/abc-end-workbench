@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2016-2017, by Dimitrios Michail and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.spanning;
 
 import java.util.*;
@@ -47,12 +30,6 @@ import org.jgrapht.util.*;
  * <p>
  * If the graph is weighted the algorithm runs in O(m (n^{1+1/k} + nlogn)) time by using Dijkstra's
  * algorithm. Edge weights must be non-negative.
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Dimitrios Michail
- * @since July 15, 2016
  */
 public class GreedyMultiplicativeSpanner<V, E>
     implements SpannerAlgorithm<E>

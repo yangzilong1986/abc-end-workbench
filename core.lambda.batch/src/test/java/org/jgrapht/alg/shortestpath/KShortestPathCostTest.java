@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2007-2017, by France Telecom and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.shortestpath;
 
 import java.io.*;
@@ -105,22 +88,22 @@ public class KShortestPathCostTest
         verifyShortestPathsInIncreasingOrderOfWeight(biconnectedGraph);
 
         KShortestPathCompleteGraph4 kSPCompleteGraph4 = new KShortestPathCompleteGraph4();
-//        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph4);
+        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph4);
 
         KShortestPathCompleteGraph5 kSPCompleteGraph5 = new KShortestPathCompleteGraph5();
-//        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph5);
+        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph5);
 
         KShortestPathCompleteGraph6 kSPCompleteGraph6 = new KShortestPathCompleteGraph6();
-//        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph6);
+        verifyShortestPathsInIncreasingOrderOfWeight(kSPCompleteGraph6);
 
         KSPExampleGraph kSPExampleGraph = new KSPExampleGraph();
-//        verifyShortestPathsInIncreasingOrderOfWeight(kSPExampleGraph);
+        verifyShortestPathsInIncreasingOrderOfWeight(kSPExampleGraph);
 
         NotBiconnectedGraph notBiconnectedGraph = new NotBiconnectedGraph();
         verifyShortestPathsInIncreasingOrderOfWeight(notBiconnectedGraph);
 
         Picture1Graph picture1Graph = new Picture1Graph();
-//        verifyShortestPathsInIncreasingOrderOfWeight(picture1Graph);
+        verifyShortestPathsInIncreasingOrderOfWeight(picture1Graph);
     }
 
     public void testShortestPathsWeightsWithMaxSizeIncreases()
@@ -129,22 +112,22 @@ public class KShortestPathCostTest
         verifyShortestPathsWeightsWithMaxSizeIncreases(biconnectedGraph);
 
         KShortestPathCompleteGraph4 kSPCompleteGraph4 = new KShortestPathCompleteGraph4();
-//        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph4);
+        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph4);
 
         KShortestPathCompleteGraph5 kSPCompleteGraph5 = new KShortestPathCompleteGraph5();
-//        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph5);
+        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph5);
 
         KShortestPathCompleteGraph6 kSPCompleteGraph6 = new KShortestPathCompleteGraph6();
-//        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph6);
+        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPCompleteGraph6);
 
         KSPExampleGraph kSPExampleGraph = new KSPExampleGraph();
-//        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPExampleGraph);
+        verifyShortestPathsWeightsWithMaxSizeIncreases(kSPExampleGraph);
 
         NotBiconnectedGraph notBiconnectedGraph = new NotBiconnectedGraph();
         verifyShortestPathsWeightsWithMaxSizeIncreases(notBiconnectedGraph);
 
         Picture1Graph picture1Graph = new Picture1Graph();
-//        verifyShortestPathsWeightsWithMaxSizeIncreases(picture1Graph);
+        verifyShortestPathsWeightsWithMaxSizeIncreases(picture1Graph);
     }
 
     private <E extends DefaultEdge> void verifyShortestPathsInIncreasingOrderOfWeight(
@@ -227,14 +210,6 @@ public class KShortestPathCostTest
         }
     }
 
-    /**
-     * Currently disabled since it takes more than a few seconds to run. Also need to actually check
-     * the output instead of printing.
-     *
-     * @see <a href=
-     *      "http://jgrapht-users.107614.n3.nabble.com/quot-graph-must-contain-the-start-vertex-quot-when-running-KShortestPaths-td4024797.html">bug
-     *      description</a>.
-     */
     public void _testIllegalArgumentExceptionGraphNotThrown()
         throws Exception
     {

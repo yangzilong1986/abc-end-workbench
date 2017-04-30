@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2008-2017, by Andrew Newell and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg;
 
 import java.util.*;
@@ -26,9 +9,11 @@ import org.jgrapht.graph.*;
 import junit.framework.*;
 
 /**
- * .
  *
- * @author Andrew Newell
+ * 完全图
+ *
+ *若一个图的每一对不同顶点恰有一条边相连，则称为完全图。完全图是每对顶点之间都恰连有一条边的简单图。
+ * n个端点的完全图有n个端点及n(n − 1) / 2条边，以Kn表示。它是(k − 1)-正则图。所有完全图都是它本身的团（clique）。
  */
 public class ChromaticNumberTest
     extends TestCase

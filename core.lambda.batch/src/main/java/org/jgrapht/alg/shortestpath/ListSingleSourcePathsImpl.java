@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2016-2017, by Dimitrios Michail and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.shortestpath;
 
 import java.io.*;
@@ -24,18 +7,6 @@ import org.jgrapht.*;
 import org.jgrapht.alg.interfaces.ShortestPathAlgorithm.*;
 import org.jgrapht.graph.*;
 
-/**
- * An implementation of {@link SingleSourcePaths} which stores one path per vertex.
- * 
- * <p>
- * This is an explicit representation which stores all paths. For a more compact representation see
- * {@link TreeSingleSourcePathsImpl}.
- * 
- * @author Dimitrios Michail
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- */
 public class ListSingleSourcePathsImpl<V, E>
     implements SingleSourcePaths<V, E>, Serializable
 {

@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2016-2017, by Dimitrios Michail and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.spanning;
 
 import java.util.*;
@@ -36,12 +19,6 @@ import org.jgrapht.alg.util.*;
  * heuristic) in order to track components. In graphs where edges have identical weights, edges with
  * equal weights are ordered lexicographically. The running time is O((E+V) logV) under the
  * assumption that the union-find uses path-compression.
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Dimitrios Michail
- * @since November 2016
  */
 public class BoruvkaMinimumSpanningTree<V, E>
     implements SpanningTreeAlgorithm<E>

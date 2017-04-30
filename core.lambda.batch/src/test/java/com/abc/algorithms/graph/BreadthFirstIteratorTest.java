@@ -13,34 +13,37 @@ import java.util.Iterator;
  * 广度优先遍历
  */
 public class BreadthFirstIteratorTest
-        extends AbstractGraphIteratorTest
+//        extends AbstractGraphIteratorTest
 {
     // ~ Methods ----------------------------------------------------------------
 
-    @Override
-    String getExpectedStr1()
-    {
-        return "1,2,3,4,5,6,7,8,9";
+//    @Override
+//    String getExpectedStr1()
+//    {
+//        return "1,2,3,4,5,6,7,8,9";
+//    }
+//
+//    @Override
+//    String getExpectedStr2()
+//    {
+//        return "1,2,3,4,5,6,7,8,9,orphan";
+//    }
+//
+//    @Override
+//    AbstractGraphIterator<String, DefaultWeightedEdge> createIterator(
+//            Graph<String, DefaultWeightedEdge> g, String vertex)
+//    {
+//        AbstractGraphIterator<String, DefaultWeightedEdge> i =
+//                new BreadthFirstIterator<>(g, vertex);
+//        i.setCrossComponentTraversal(true);
+//
+//        return i;
+//    }
+
+    public static void main(String[] args){
+        breadthFirst();
     }
-
-    @Override
-    String getExpectedStr2()
-    {
-        return "1,2,3,4,5,6,7,8,9,orphan";
-    }
-
-    @Override
-    AbstractGraphIterator<String, DefaultWeightedEdge> createIterator(
-            Graph<String, DefaultWeightedEdge> g, String vertex)
-    {
-        AbstractGraphIterator<String, DefaultWeightedEdge> i =
-                new BreadthFirstIterator<>(g, vertex);
-        i.setCrossComponentTraversal(true);
-
-        return i;
-    }
-
-    public void testBreadthFirst(){
+    public static void breadthFirst(){
         Graph<String, DefaultEdge> dg = new DefaultDirectedGraph<>(DefaultEdge.class);
 
         String a = "A";
@@ -92,6 +95,9 @@ public class BreadthFirstIteratorTest
             actual += v;
         }
         System.out.println("广度优先遍历");
+                          //ABCJDEFGKHIL
+        //深度优先
+        String expected = "ABCGIFEHJKLD";
         System.out.println(actual);
     }
 }

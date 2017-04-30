@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2003-2017, by Barak Naveh and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.traverse;
 
 import java.util.*;
@@ -22,16 +5,6 @@ import java.util.*;
 import org.jgrapht.*;
 import org.jgrapht.event.*;
 
-/**
- * Provides a cross-connected-component traversal functionality for iterator subclasses.
- *
- * @param <V> vertex type
- * @param <E> edge type
- * @param <D> type of data associated to seen vertices
- *
- * @author Barak Naveh
- * @since Jan 31, 2004
- */
 public abstract class CrossComponentIterator<V, E, D>
     extends AbstractGraphIterator<V, E>
 {
@@ -84,17 +57,6 @@ public abstract class CrossComponentIterator<V, E, D>
      */
     private int state = CCS_BEFORE_COMPONENT;
 
-    /**
-     * Creates a new iterator for the specified graph. Iteration will start at the specified start
-     * vertex. If the specified start vertex is <code>
-     * null</code>, Iteration will start at an arbitrary graph vertex.
-     *
-     * @param g the graph to be iterated.
-     * @param startVertex the vertex iteration to be started.
-     *
-     * @throws IllegalArgumentException if <code>g==null</code> or does not contain
-     *         <code>startVertex</code>
-     */
     public CrossComponentIterator(Graph<V, E> g, V startVertex)
     {
         super();
@@ -139,11 +101,11 @@ public abstract class CrossComponentIterator<V, E, D>
     @Override
     public boolean hasNext()
     {
-        if (startVertex != null) {
-            encounterStartVertex();
+        if (startVertex != null) {//构造方法构造的图的第一个节点
+            encounterStartVertex();//调用私有方法，进而调用子类，获取第一个顶点
         }
-
-        if (isConnectedComponentExhausted()) {
+        //子类方法，是否有顶点
+        if (isConnectedComponentExhausted()) {//没有元素时则执行
             if (state == CCS_WITHIN_COMPONENT) {
                 state = CCS_AFTER_COMPONENT;
                 if (nListeners != 0) {
@@ -152,7 +114,7 @@ public abstract class CrossComponentIterator<V, E, D>
             }
 
             if (isCrossComponentTraversal()) {
-                while (vertexIterator.hasNext()) {
+                while (vertexIterator.hasNext()) {//Graph的节点向下一个移动
                     V v = vertexIterator.next();
 
                     if (!isSeenVertex(v)) {
@@ -179,22 +141,23 @@ public abstract class CrossComponentIterator<V, E, D>
     public V next()
     {
         if (startVertex != null) {
+            //调用私有方法，进而调用子类，获取第一个顶点
             encounterStartVertex();
         }
 
-        if (hasNext()) {
+        if (hasNext()) {//是否有下一个节点
             if (state == CCS_BEFORE_COMPONENT) {
                 state = CCS_WITHIN_COMPONENT;
                 if (nListeners != 0) {
                     fireConnectedComponentStarted(ccStartedEvent);
                 }
             }
-
+            //子类方法，获取下一个边
             V nextVertex = provideNextVertex();
             if (nListeners != 0) {
                 fireVertexTraversed(createVertexTraversalEvent(nextVertex));
             }
-
+            //私有方法
             addUnseenChildrenOf(nextVertex);
 
             return nextVertex;
@@ -203,89 +166,31 @@ public abstract class CrossComponentIterator<V, E, D>
         }
     }
 
-    /**
-     * Returns <tt>true</tt> if there are no more uniterated vertices in the currently iterated
-     * connected component; <tt>false</tt> otherwise.
-     *
-     * @return <tt>true</tt> if there are no more uniterated vertices in the currently iterated
-     *         connected component; <tt>false</tt> otherwise.
-     */
     protected abstract boolean isConnectedComponentExhausted();
 
-    /**
-     * Update data structures the first time we see a vertex.
-     *
-     * @param vertex the vertex encountered
-     * @param edge the edge via which the vertex was encountered, or null if the vertex is a
-     *        starting point
-     */
     protected abstract void encounterVertex(V vertex, E edge);
 
-    /**
-     * Returns the vertex to be returned in the following call to the iterator <code>next</code>
-     * method.
-     *
-     * @return the next vertex to be returned by this iterator.
-     */
     protected abstract V provideNextVertex();
 
-    /**
-     * Access the data stored for a seen vertex.
-     *
-     * @param vertex a vertex which has already been seen.
-     *
-     * @return data associated with the seen vertex or <code>null</code> if no data was associated
-     *         with the vertex. A <code>null</code> return can also indicate that the vertex was
-     *         explicitly associated with <code>
-     * null</code>.
-     */
+
     protected D getSeenData(V vertex)
     {
         return seen.get(vertex);
     }
 
-    /**
-     * Determines whether a vertex has been seen yet by this traversal.
-     *
-     * @param vertex vertex in question
-     *
-     * @return <tt>true</tt> if vertex has already been seen
-     */
+
     protected boolean isSeenVertex(V vertex)
     {
         return seen.containsKey(vertex);
     }
 
-    /**
-     * Called whenever we re-encounter a vertex. The default implementation does nothing.
-     *
-     * @param vertex the vertex re-encountered
-     * @param edge the edge via which the vertex was re-encountered
-     */
     protected abstract void encounterVertexAgain(V vertex, E edge);
 
-    /**
-     * Stores iterator-dependent data for a vertex that has been seen.
-     *
-     * @param vertex a vertex which has been seen.
-     * @param data data to be associated with the seen vertex.
-     *
-     * @return previous value associated with specified vertex or <code>
-     * null</code> if no data was associated with the vertex. A <code>
-     * null</code> return can also indicate that the vertex was explicitly associated with
-     *         <code>null</code>.
-     */
     protected D putSeenData(V vertex, D data)
     {
         return seen.put(vertex, data);
     }
 
-    /**
-     * Called when a vertex has been finished (meaning is dependent on traversal represented by
-     * subclass).
-     *
-     * @param vertex vertex which has been finished
-     */
     protected void finishVertex(V vertex)
     {
         if (nListeners != 0) {
@@ -295,16 +200,19 @@ public abstract class CrossComponentIterator<V, E, D>
 
     private void addUnseenChildrenOf(V vertex)
     {
+        //从顶点中获取边
         for (E edge : specifics.edgesOf(vertex)) {
             if (nListeners != 0) {
                 fireEdgeTraversed(createEdgeTraversalEvent(edge));
             }
 
             V oppositeV = Graphs.getOppositeVertex(graph, edge, vertex);
-
+            //是否添加到已经方法的Map
             if (isSeenVertex(oppositeV)) {
+                //调用子类方法
                 encounterVertexAgain(oppositeV, edge);
             } else {
+                //调用子类方法
                 encounterVertex(oppositeV, edge);
             }
         }
@@ -334,31 +242,17 @@ public abstract class CrossComponentIterator<V, E, D>
 
     private void encounterStartVertex()
     {
+        //子类实现
         encounterVertex(startVertex, null);
         startVertex = null;
     }
 
     static interface SimpleContainer<T>
     {
-        /**
-         * Tests if this container is empty.
-         *
-         * @return <code>true</code> if empty, otherwise <code>false</code>.
-         */
         public boolean isEmpty();
 
-        /**
-         * Adds the specified object to this container.
-         *
-         * @param o the object to be added.
-         */
         public void add(T o);
 
-        /**
-         * Remove an object from this container and return it.
-         *
-         * @return the object removed from this container.
-         */
         public T remove();
     }
 

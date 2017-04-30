@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2010-2017, by Tom Conerly and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.spanning;
 
 import java.util.*;
@@ -28,31 +11,19 @@ import org.jgrapht.alg.util.*;
  * spanning tree algorithm</a>. If the given graph is connected it computes the minimum spanning
  * tree, otherwise it computes the minimum spanning forest. The algorithm runs in time O(E log E).
  * This implementation uses the hashCode and equals method of the vertices.
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Tom Conerly
- * @since Feb 10, 2010
+ * 最小生成树
+ * 并集计算方法，即从图，总是找找到最小的边，加入集合
  */
 public class KruskalMinimumSpanningTree<V, E>
     implements SpanningTreeAlgorithm<E>
 {
     private final Graph<V, E> graph;
 
-    /**
-     * Construct a new instance of the algorithm.
-     * 
-     * @param graph the input graph
-     */
     public KruskalMinimumSpanningTree(Graph<V, E> graph)
     {
         this.graph = Objects.requireNonNull(graph, "Graph cannot be null");
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public SpanningTree<E> getSpanningTree()
     {

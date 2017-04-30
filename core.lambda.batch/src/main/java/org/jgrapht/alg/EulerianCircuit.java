@@ -24,14 +24,7 @@ import org.jgrapht.alg.cycle.*;
 import org.jgrapht.graph.*;
 
 /**
- * This algorithm will check whether a graph is Eulerian (hence it contains an
- * <a href="http://mathworld.wolfram.com/EulerianCircuit.html">Eulerian circuit</a>). Also, if a
- * graph is Eulerian, the caller can obtain a list of vertices making up the Eulerian circuit. An
- * Eulerian circuit is a circuit which traverses each edge exactly once.
- *
- * @author Andrew Newell
- * @since Dec 21, 2008
- * @deprecated use {@link HierholzerEulerianCycle} instead
+ * 欧拉回路与欧拉道路
  */
 @Deprecated
 public abstract class EulerianCircuit

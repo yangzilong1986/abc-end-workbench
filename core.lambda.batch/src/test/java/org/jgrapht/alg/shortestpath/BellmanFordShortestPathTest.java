@@ -44,15 +44,15 @@ public class BellmanFordShortestPathTest
         tree = new BellmanFordShortestPath<>(g).getPaths(V3);
 
         // find best path with no constraint on number of hops
-//        assertEquals(
-//            Arrays.asList(new DefaultEdge[] { e13, e12, e24, e45 }),
-//            tree.getPath(V5).getEdgeList());
-//        assertEquals(15.0, tree.getPath(V5).getWeight(), 0);
+        assertEquals(
+            Arrays.asList(new DefaultEdge[] { e13, e12, e24, e45 }),
+            tree.getPath(V5).getEdgeList());
+        assertEquals(15.0, tree.getPath(V5).getWeight(), 0);
 
         // find best path within 2 hops (less than optimal)
         tree = new BellmanFordShortestPath<>(g, 2).getPaths(V3);
-//        assertEquals(Arrays.asList(new DefaultEdge[] { e34, e45 }), tree.getPath(V5).getEdgeList());
-//        assertEquals(25.0, tree.getPath(V5).getWeight(), 0);
+        assertEquals(Arrays.asList(new DefaultEdge[] { e34, e45 }), tree.getPath(V5).getEdgeList());
+        assertEquals(25.0, tree.getPath(V5).getWeight(), 0);
 
         // find best path within 1 hop (doesn't exist!)
         tree = new BellmanFordShortestPath<>(g, 1).getPaths(V3);
@@ -73,10 +73,10 @@ public class BellmanFordShortestPathTest
         List<DefaultWeightedEdge> path;
 
         path = findPathBetween(g, V1, V4);
-//        assertEquals(Arrays.asList(new DefaultEdge[] { e13, e34 }), path);
+        assertEquals(Arrays.asList(new DefaultEdge[] { e13, e34 }), path);
 
         path = findPathBetween(g, V1, V5);
-//        assertEquals(Arrays.asList(new DefaultEdge[] { e15 }), path);
+        assertEquals(Arrays.asList(new DefaultEdge[] { e15 }), path);
     }
 }
 

@@ -9,53 +9,12 @@ import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.traverse.AbstractGraphIterator;
 import org.jgrapht.traverse.DepthFirstIterator;
 
-/**
- * Tests for the {@link DepthFirstIteratorTest} class.
- *
- * <p>
- * NOTE: This test uses hard-coded expected ordering isn't really guaranteed by the specification of
- * the algorithm. This could cause false failures if the traversal implementation changes.
- * </p>
- *
- * @author Liviu Rau
- * @since Jul 30, 2003
- */
-public class DepthFirstIteratorTest
-        //extends AbstractGraphIteratorTest
-{
-//    // ~ Methods ----------------------------------------------------------------
-//
-//    @Override
-//    String getExpectedStr1()
-//    {
-//        return "1,3,6,5,7,9,4,8,2";
-//    }
-//
-//    @Override
-//    String getExpectedStr2()
-//    {
-//        return "1,3,6,5,7,9,4,8,2,orphan";
-//    }
-//
-//    @Override
-//    String getExpectedFinishString()
-//    {
-//        return "6:4:9:2:8:7:5:3:1:orphan:";
-//    }
-//
-//    @Override
-//    AbstractGraphIterator<String, DefaultWeightedEdge> createIterator(
-//            Graph<String, DefaultWeightedEdge> g, String vertex)
-//    {
-//        AbstractGraphIterator<String, DefaultWeightedEdge> i = new DepthFirstIterator<>(g, vertex);
-//        i.setCrossComponentTraversal(true);
-//
-//        return i;
-//    }
+public class DepthFirstIteratorTest {
 
     public static void main(String[] args){
         depthFirstIterator();
     }
+
     public static void depthFirstIterator()
     {
         Graph<String, DefaultEdge> dg = new DefaultDirectedGraph<>(DefaultEdge.class);
@@ -110,7 +69,6 @@ public class DepthFirstIteratorTest
         }
 
         String expected = "ABCGIFEHJKLD";
-//        assertEquals(expected, actual);
     }
 }
 

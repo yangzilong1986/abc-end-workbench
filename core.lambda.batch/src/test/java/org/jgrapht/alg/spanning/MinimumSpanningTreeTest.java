@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2010-2017, by Tom Conerly and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.spanning;
 
 import java.util.*;
@@ -56,35 +39,49 @@ public class MinimumSpanningTreeTest
     public void testKruskal()
     {
 
-        testMinimumSpanningTreeBuilding(
-            new KruskalMinimumSpanningTree<String, DefaultWeightedEdge>(
-                createSimpleConnectedWeightedGraph()).getSpanningTree(),
+        KruskalMinimumSpanningTree<String, DefaultWeightedEdge> km= new KruskalMinimumSpanningTree<String, DefaultWeightedEdge>(
+                createSimpleConnectedWeightedGraph());
+        SpanningTree spTree=km.getSpanningTree();
+        testMinimumSpanningTreeBuilding(spTree,
             Arrays.asList(AB, AC, BD, DE), 15.0);
+        //Spanning-Tree [weight=15.0, edges=[(A : C), (D : E), (B : D), (A : B)]]
 
-        testMinimumSpanningTreeBuilding(
-            new KruskalMinimumSpanningTree<String, DefaultWeightedEdge>(
-                createSimpleDisconnectedWeightedGraph()).getSpanningTree(),
+        km=new KruskalMinimumSpanningTree<String, DefaultWeightedEdge>(
+            createSimpleDisconnectedWeightedGraph());
+        spTree=km.getSpanningTree();
+        //Spanning-Tree [weight=60.0, edges=[(G : H), (E : G), (A : C), (B : D), (A : B), (F : H)]]
+        testMinimumSpanningTreeBuilding(spTree,
             Arrays.asList(AB, AC, BD, EG, GH, FH), 60.0);
     }
 
     public void testPrim()
     {
-        testMinimumSpanningTreeBuilding(
-            new PrimMinimumSpanningTree<String, DefaultWeightedEdge>(
-                createSimpleConnectedWeightedGraph()).getSpanningTree(),
+        PrimMinimumSpanningTree<String, DefaultWeightedEdge> prim=
+                new PrimMinimumSpanningTree<String, DefaultWeightedEdge>(
+                createSimpleConnectedWeightedGraph());
+        SpanningTree spanningTree=prim.getSpanningTree();
+        //Spanning-Tree [weight=15.0, edges=[(A : C), (D : E), (A : B), (B : D)]]
+
+        testMinimumSpanningTreeBuilding(spanningTree,
             Arrays.asList(AB, AC, BD, DE), 15.0);
 
-        testMinimumSpanningTreeBuilding(
-            new PrimMinimumSpanningTree<String, DefaultWeightedEdge>(
-                createSimpleDisconnectedWeightedGraph()).getSpanningTree(),
+
+        prim=new PrimMinimumSpanningTree<String, DefaultWeightedEdge>(
+                createSimpleDisconnectedWeightedGraph());
+        spanningTree=prim.getSpanningTree();
+        //Spanning-Tree [weight=60.0, edges=[(B : D), (E : G), (A : C), (F : H), (A : B), (G : H)]]
+        testMinimumSpanningTreeBuilding(spanningTree,
             Arrays.asList(AB, AC, BD, EG, GH, FH), 60.0);
     }
 
     public void testBoruvska()
     {
-        testMinimumSpanningTreeBuilding(
-            new BoruvkaMinimumSpanningTree<String, DefaultWeightedEdge>(
-                createSimpleConnectedWeightedGraph()).getSpanningTree(),
+        BoruvkaMinimumSpanningTree<String, DefaultWeightedEdge> bm=
+                new BoruvkaMinimumSpanningTree<String, DefaultWeightedEdge>(
+                createSimpleConnectedWeightedGraph());
+        SpanningTree spanningTree=bm.getSpanningTree();
+        //Spanning-Tree [weight=15.0, edges=[(A : B), (A : C), (B : D), (D : E)]]
+        testMinimumSpanningTreeBuilding(spanningTree,
             Arrays.asList(AB, AC, BD, DE), 15.0);
 
         testMinimumSpanningTreeBuilding(
@@ -178,7 +175,7 @@ public class MinimumSpanningTreeTest
         g.addVertex(C);
         g.addVertex(D);
         g.addVertex(E);
-
+        //([A, B, C, D, E], [{A,B}, {A,C}, {B,D}, {C,D}, {D,E}, {A,E}])
         AB = Graphs.addEdge(g, A, B, bias * 2);
         AC = Graphs.addEdge(g, A, C, bias * 3);
         BD = Graphs.addEdge(g, B, D, bias * 5);

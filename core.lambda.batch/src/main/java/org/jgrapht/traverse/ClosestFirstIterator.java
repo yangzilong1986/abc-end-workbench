@@ -24,18 +24,6 @@ import org.jgrapht.util.*;
  * A closest-first iterator for a directed or undirected graph. For this iterator to work correctly
  * the graph must not be modified during iteration. Currently there are no means to ensure that, nor
  * to fail-fast. The results of such modifications are undefined.
- *
- * <p>
- * The metric for <i>closest</i> here is the weighted path length from a start vertex, i.e.
- * Graph.getEdgeWeight(Edge) is summed to calculate path length. Negative edge weights will result
- * in an IllegalArgumentException. Optionally, path length may be bounded by a finite radius.
- * </p>
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author John V. Sichi
- * @since Sep 2, 2003
  */
 public class ClosestFirstIterator<V, E>
     extends CrossComponentIterator<V, E, FibonacciHeapNode<ClosestFirstIterator.QueueEntry<V, E>>>
@@ -67,9 +55,6 @@ public class ClosestFirstIterator<V, E>
      * specified start vertex and will be limited to the connected component that includes that
      * vertex. If the specified start vertex is <code>null</code>, iteration will start at an
      * arbitrary vertex and will not be limited, that is, will be able to traverse all the graph.
-     *
-     * @param g the graph to be iterated.
-     * @param startVertex the vertex iteration to be started.
      */
     public ClosestFirstIterator(Graph<V, E> g, V startVertex)
     {
@@ -82,11 +67,6 @@ public class ClosestFirstIterator<V, E>
      * component which includes that vertex and is reachable via paths of weighted length less than
      * or equal to the specified radius. The specified start vertex may not be <code>
      * null</code>.
-     *
-     * @param g the graph to be iterated.
-     * @param startVertex the vertex iteration to be started.
-     * @param radius limit on weighted path length, or Double.POSITIVE_INFINITY for unbounded
-     *        search.
      */
     public ClosestFirstIterator(Graph<V, E> g, V startVertex, double radius)
     {

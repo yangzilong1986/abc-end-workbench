@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2003-2017, by Barak Naveh and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.graph;
 
 import java.io.*;
@@ -37,9 +20,6 @@ import org.jgrapht.util.*;
  *
  * @param <V> the graph vertex type
  * @param <E> the graph edge type
- *
- * @author Barak Naveh
- * @since Jul 24, 2003
  */
 public abstract class AbstractBaseGraph<V, E>
     extends AbstractGraph<V, E>
@@ -59,17 +39,6 @@ public abstract class AbstractBaseGraph<V, E>
     private Specifics<V, E> specifics;
     private boolean allowingMultipleEdges;
 
-    /**
-     * Construct a new graph. The graph can either be directed or undirected, depending on the
-     * specified edge factory.
-     *
-     * @param ef the edge factory of the new graph.
-     * @param allowMultipleEdges whether to allow multiple edges or not.
-     * @param allowLoops whether to allow edges that are self-loops or not.
-     *
-     * @throws NullPointerException if the specified edge factory is <code>
-     * null</code>.
-     */
     protected AbstractBaseGraph(
         EdgeFactory<V, E> ef, boolean allowMultipleEdges, boolean allowLoops)
     {
@@ -91,49 +60,31 @@ public abstract class AbstractBaseGraph<V, E>
         return specifics.getAllEdges(sourceVertex, targetVertex);
     }
 
-    /**
-     * Returns <code>true</code> if and only if self-loops are allowed in this graph. A self loop is
-     * an edge that its source and target vertices are the same.
-     *
-     * @return <code>true</code> if and only if graph loops are allowed.
-     */
+
     public boolean isAllowingLoops()
     {
         return allowingLoops;
     }
 
-    /**
-     * Returns <code>true</code> if and only if multiple edges are allowed in this graph. The
-     * meaning of multiple edges is that there can be many edges going from vertex v1 to vertex v2.
-     *
-     * @return <code>true</code> if and only if multiple edges are allowed.
-     */
+
     public boolean isAllowingMultipleEdges()
     {
         return allowingMultipleEdges;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public E getEdge(V sourceVertex, V targetVertex)
     {
         return specifics.getEdge(sourceVertex, targetVertex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public EdgeFactory<V, E> getEdgeFactory()
     {
         return edgeFactory;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public E addEdge(V sourceVertex, V targetVertex)
     {
@@ -163,9 +114,6 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean addEdge(V sourceVertex, V targetVertex, E e)
     {
@@ -233,9 +181,6 @@ public abstract class AbstractBaseGraph<V, E>
         return TypeUtil.uncheckedCast(getIntrusiveEdge(e).source, null);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public V getEdgeTarget(E e)
     {
@@ -251,15 +196,6 @@ public abstract class AbstractBaseGraph<V, E>
         return edgeMap.get(e);
     }
 
-    /**
-     * Returns a shallow copy of this graph instance. Neither edges nor vertices are cloned.
-     *
-     * @return a shallow copy of this set.
-     *
-     * @throws RuntimeException in case the clone is not supported
-     *
-     * @see java.lang.Object#clone()
-     */
     @Override
     public Object clone()
     {
@@ -286,39 +222,25 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean containsEdge(E e)
     {
         return edgeMap.containsKey(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public boolean containsVertex(V v)
     {
         return specifics.getVertexSet().contains(v);
     }
 
-    /**
-     * Returns the degree of the specified vertex.
-     *
-     * @param vertex vertex whose degree is to be calculated.
-     * @return the degree of the specified vertex.
-     * @see UndirectedGraph#degreeOf(Object)
-     */
+
     public int degreeOf(V vertex)
     {
         return specifics.degreeOf(vertex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Set<E> edgeSet()
     {
@@ -329,9 +251,6 @@ public abstract class AbstractBaseGraph<V, E>
         return unmodifiableEdgeSet;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Set<E> edgesOf(V vertex)
     {
@@ -339,62 +258,34 @@ public abstract class AbstractBaseGraph<V, E>
         return specifics.edgesOf(vertex);
     }
 
-    /**
-     * Returns the "in degree" of the specified vertex.
-     *
-     * @param vertex vertex whose in degree is to be calculated.
-     * @return the in degree of the specified vertex.
-     * 
-     * @see DirectedGraph#inDegreeOf(Object)
-     */
+
     public int inDegreeOf(V vertex)
     {
         assertVertexExist(vertex);
         return specifics.inDegreeOf(vertex);
     }
 
-    /**
-     * Returns a set of all edges incoming into the specified vertex.
-     *
-     * @param vertex the vertex for which the list of incoming edges to be returned
-     * @return a set of all edges incoming into the specified vertex
-     * @see DirectedGraph#incomingEdgesOf(Object)
-     */
+
     public Set<E> incomingEdgesOf(V vertex)
     {
         assertVertexExist(vertex);
         return specifics.incomingEdgesOf(vertex);
     }
 
-    /**
-     * Returns the "out degree" of the specified vertex.
-     *
-     * @param vertex vertex whose out degree is to be calculated
-     * @return the out degree of the specified vertex
-     * @see DirectedGraph#outDegreeOf(Object)
-     */
+
     public int outDegreeOf(V vertex)
     {
         assertVertexExist(vertex);
         return specifics.outDegreeOf(vertex);
     }
 
-    /**
-     * Returns a set of all edges outgoing from the specified vertex.
-     *
-     * @param vertex the vertex for which the list of outgoing edges to be returned
-     * @return a set of all edges outgoing from the specified vertex
-     * @see DirectedGraph#outgoingEdgesOf(Object)
-     */
+
     public Set<E> outgoingEdgesOf(V vertex)
     {
         assertVertexExist(vertex);
         return specifics.outgoingEdgesOf(vertex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public E removeEdge(V sourceVertex, V targetVertex)
     {
@@ -408,9 +299,6 @@ public abstract class AbstractBaseGraph<V, E>
         return e;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean removeEdge(E e)
     {
@@ -424,9 +312,6 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean removeVertex(V v)
     {
@@ -445,9 +330,6 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Set<V> vertexSet()
     {
@@ -458,9 +340,6 @@ public abstract class AbstractBaseGraph<V, E>
         return unmodifiableVertexSet;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public double getEdgeWeight(E e)
     {
@@ -473,25 +352,14 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * Assigns a weight to an edge.
-     *
-     * @param e edge on which to set weight
-     * @param weight new weight for edge
-     * @see WeightedGraph#setEdgeWeight(Object, double)
-     */
+
     public void setEdgeWeight(E e, double weight)
     {
         assert (e instanceof DefaultWeightedEdge) : e.getClass();
         ((DefaultWeightedEdge) e).weight = weight;
     }
 
-    /**
-     * Create the specifics for this graph. Subclasses can override this method in order to adjust
-     * the specifics and thus the space-time tradeoffs of the graph implementation.
-     * 
-     * @return the specifics used by this graph
-     */
+
     protected Specifics<V, E> createSpecifics()
     {
         if (this instanceof DirectedGraph<?, ?>) {
@@ -504,24 +372,14 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * Create undirected specifics for the graph
-     * 
-     * @return undirected specifics for the graph
-     * @deprecated specifics can be changed by overriding directly {@link #createSpecifics()}.
-     */
+
     @Deprecated
     protected Specifics<V, E> createUndirectedSpecifics()
     {
         return new FastLookupUndirectedSpecifics<>(this);
     }
 
-    /**
-     * Create directed specifics for the graph
-     * 
-     * @return directed specifics for the graph
-     * @deprecated specifics can be changed by overriding directly {@link #createSpecifics()}.
-     */
+
     @Deprecated
     protected Specifics<V, E> createDirectedSpecifics()
     {

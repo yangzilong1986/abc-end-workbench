@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2016-2017, by Leo Crawford and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg;
 
 import java.util.*;
@@ -23,12 +6,9 @@ import org.jgrapht.*;
 import org.jgrapht.alg.util.*;
 
 /**
- * Used to calculate Tarjan's Lowest Common Ancestors Algorithm
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Leo Crawford
+ * 一种由Robert Tarjan提出的求解有向图强连通分量的线性时间的算法。
+ * @param <V>
+ * @param <E>
  */
 public class TarjanLowestCommonAncestor<V, E>
 {
@@ -44,15 +24,6 @@ public class TarjanLowestCommonAncestor<V, E>
         this.g = g;
     }
 
-    /**
-     * Calculate the LCM between <code>a</code> and <code>b</code> treating <code>start</code> as
-     * the root we want to search from.
-     * 
-     * @param start the root of subtree
-     * @param a the first vertex
-     * @param b the second vertex
-     * @return the least common ancestor
-     */
     public V calculate(V start, V a, V b)
     {
         List<LcaRequestResponse<V>> list = new LinkedList<>();
@@ -60,16 +31,6 @@ public class TarjanLowestCommonAncestor<V, E>
         return calculate(start, list).get(0);
     }
 
-    /**
-     * Calculate the LCMs between a set of pairs (<code>a</code> and <code>
-     * b</code>) treating <code>start</code> as the root we want to search from, and setting the LCA
-     * of each pair in its LCA field
-     * 
-     * @param start the root of the subtree
-     * @param lrr a list of requests-response objects. The answer if stored on these objects at the
-     *        LCA field.
-     * @return the LCMs
-     */
     public List<V> calculate(V start, List<LcaRequestResponse<V>> lrr)
     {
         return new Worker(lrr).calculate(start);
@@ -78,12 +39,7 @@ public class TarjanLowestCommonAncestor<V, E>
     /* The worker class keeps the state whilst doing calculations. */
     private class Worker
     {
-        // The implementation of makeFind as referred to by <block>It uses the
-        // MakeSet, Find, and Union functions of a disjoint-set forest.
-        // MakeSet(u) removes u to a singleton set, Find(u) returns the standard
-        // representative of the set containing u, and Union(u,v) merges the set
-        // containing u with the set containing v. </block>
-        // (http://en.wikipedia.org/wiki/Tarjan's_off-line_lowest_common_ancestors_algorithm)
+
         private UnionFind<V> uf = new UnionFind<>(Collections.<V> emptySet());
 
         // the ancestors. instead of <code>u.ancestor = x</code> we do
@@ -110,19 +66,6 @@ public class TarjanLowestCommonAncestor<V, E>
             }
         }
 
-        /**
-         * Calculates the LCM as described by
-         * http://en.wikipedia.org/wiki/Tarjan's_off-line_lowest_common_ancestors_algorithm
-         * <code>function TarjanOLCA(u) MakeSet(u); u.ancestor := u; for each v
-         * in u.children do TarjanOLCA(v); Union(u,v); Find(u).ancestor := u;
-         * u.colour := black; for each v such that {u,v} in P do if v.colour ==
-         * black print "Tarjan's Lowest Common Ancestor of " + u + " and " + v +
-         * " is " + Find(v).ancestor + ".";</code>
-         *
-         * @param u the starting node (called recursively)
-         *
-         * @return the LCM if found, if not null
-         */
         private List<V> calculate(final V u)
         {
             uf.addElement(u);

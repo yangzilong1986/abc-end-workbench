@@ -1,37 +1,7 @@
-/*
- * (C) Copyright 2010-2017, by Tom Conerly and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.util;
 
 import java.util.*;
 
-/**
- * An implementation of <a href="http://en.wikipedia.org/wiki/Disjoint-set_data_structure">Union
- * Find</a> data structure. Union Find is a disjoint-set data structure. It supports two operations:
- * finding the set a specific element is in, and merging two sets. The implementation uses union by
- * rank and path compression to achieve an amortized cost of O(a(n)) per operation where a is the
- * inverse Ackermann function. UnionFind uses the hashCode and equals method of the elements it
- * operates on.
- *
- * @param <T> element type
- *
- * @author Tom Conerly
- * @since Feb 10, 2010
- */
 public class UnionFind<T>
 {
     private Map<T, T> parentMap;
@@ -124,7 +94,7 @@ public class UnionFind<T>
 
         int rank1 = rankMap.get(parent1);
         int rank2 = rankMap.get(parent2);
-        if (rank1 > rank2) {
+        if (rank1 > rank2) {//
             parentMap.put(parent2, parent1);
         } else if (rank1 < rank2) {
             parentMap.put(parent1, parent2);

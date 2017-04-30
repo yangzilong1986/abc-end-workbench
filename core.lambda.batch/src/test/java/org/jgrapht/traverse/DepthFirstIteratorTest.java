@@ -22,17 +22,6 @@ import java.util.*;
 import org.jgrapht.*;
 import org.jgrapht.graph.*;
 
-/**
- * Tests for the {@link DepthFirstIteratorTest} class.
- *
- * <p>
- * NOTE: This test uses hard-coded expected ordering isn't really guaranteed by the specification of
- * the algorithm. This could cause false failures if the traversal implementation changes.
- * </p>
- *
- * @author Liviu Rau
- * @since Jul 30, 2003
- */
 public class DepthFirstIteratorTest
     extends AbstractGraphIteratorTest
 {

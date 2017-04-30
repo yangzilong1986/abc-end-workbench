@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2015-2017, by Florian Buenzli and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg;
 
 import java.util.*;
@@ -23,24 +6,29 @@ import java.util.Map.*;
 import org.jgrapht.*;
 import org.jgrapht.graph.*;
 
+
 /**
- * Clique Minimal Separator Decomposition using MCS-M+ and Atoms algorithm as described in Berry et
- * al. An Introduction to Clique Minimal Separator Decomposition (2010), DOI:10.3390/a3020197,
- * <a href="http://www.mdpi.com/1999-4893/3/2/197"> http://www.mdpi.com/1999-4893/3/2/197</a>
- *
- * <p>
- * The Clique Minimal Separator (CMS) Decomposition is a procedure that splits a graph into a set of
- * subgraphs separated by minimal clique separators, adding the separating clique to each component
- * produced by the separation. At the end we have a set of atoms. The CMS decomposition is unique
- * and yields the set of the atoms independent of the order of the decomposition.
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Florian Buenzli (fbuenzli@student.ethz.ch)
- * @author Thomas Tschager (thomas.tschager@inf.ethz.ch)
- * @author Tomas Hruz (tomas.hruz@inf.ethz.ch)
- * @author Philipp Hoppen
+ * 团最小
+ * CLIQUE（Clustering In QUEst)是一种简单的基于网格的聚类方法，用于发现子空间中基于密度的簇。
+ * CLIQUE把每个维划分成不重叠的区间，从而把数据对象的整个嵌入空间划分成单元。
+ * 它使用一个密度阈值识别稠密单元和稀疏单元。一个单元是稠密的，如果映射到它的对象数超过该密度阈值。
+
+ CLIQUE识别候选搜索空间的主要策略是使用稠密单元关于维度的单调性。这基于频繁模式和关联规则挖掘使用的先验性质。在子空间聚类的背景下，单调性陈述如下：
+
+ 一个k-维（>1）单元c至少有I个点，仅当c的每个（k-1）-维投影（它是（k-1）-维单元）至少有1个点。
+    考虑下图，其中嵌人数据空间包含3个维：age,salary,vacation. 例如，子空间age和salary中的一个二维单元包含l个点，
+    仅当该单元在每个维（即分别在age和salary上的投影都至少包含l个点).
+
+ CLIQUE通过两个阶段进行聚类。在第一阶段，CLIQUE把d-维数据空间划分若干互不重叠的矩形单元，并且从中识别出稠密单元。
+ CLIQUE在所有的子空间中发现稠密单元。为了做到这一点，CLIQUE把每个维都划分成区间，并识别至少包含l个点的区间，其中l是密度阈值。
+ 然后，CLIQUE迭代地连接子空间.CLIQUE检查中的点数是否满足密度阈值。当没有候选产生或候选都不稠密时，迭代终止。
+ 在第二阶段中，CLIQUE使用每个子空间中的稠密单元来装配可能具有任意形状的簇。其思想是利用最小描述长度（MDL)原理,使用最大区域来覆盖连接的稠密单元，
+ 其中最大区域是一个超矩形，落人该区域中的每个单元都是稠密的，并且该区域在该子空间的任何维上都不能再扩展。
+ 一般地找出簇的最佳描述是NP一困难的。因此，CLIQUE采用了一种简单的贪心方法。它从一个任意稠密单元开始，找出覆盖该单元的最大区域，
+ 然后在尚未被覆盖的剩余的稠密单元上继续这一过程。当所有稠密单元都被覆盖时，贪心方法终止。
+
+ * @param <V>
+ * @param <E>
  */
 public class CliqueMinimalSeparatorDecomposition<V, E>
 {
@@ -98,11 +86,6 @@ public class CliqueMinimalSeparatorDecomposition<V, E>
         this.fillEdges = new HashSet<>();
     }
 
-    /**
-     * Compute the minimal triangulation of the graph. Implementation of Algorithm MCS-M+ as
-     * described in Berry et al. (2010), DOI:10.3390/a3020197
-     * <a href="http://www.mdpi.com/1999-4893/3/2/197"> http://www.mdpi.com/1999-4893/3/2/197</a>
-     */
     private void computeMinimalTriangulation()
     {
         // initialize chordGraph with same vertices as graph
