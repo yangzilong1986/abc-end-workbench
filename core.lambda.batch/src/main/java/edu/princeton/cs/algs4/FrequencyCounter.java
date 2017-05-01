@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.tree.ST;
+
 public class FrequencyCounter {
 
     // Do not instantiate.

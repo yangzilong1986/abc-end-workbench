@@ -1,38 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac GaussJordanElimination.java
- *  Execution:    java GaussJordanElimination n
- *  Dependencies: StdOut.java
- * 
- *  Finds a solutions to Ax = b using Gauss-Jordan elimination with partial
- *  pivoting. If no solution exists, find a solution to yA = 0, yb != 0,
- *  which serves as a certificate of infeasibility.
- *
- *  % java GaussJordanElimination
- *  -1.000000
- *  2.000000
- *  2.000000
- *
- *  3.000000
- *  -1.000000
- *  -2.000000
- * 
- *  System is infeasible
- *
- *  -6.250000
- *  -4.500000
- *  0.000000
- *  0.000000
- *  1.000000
- *
- *  System is infeasible
- *
- *  -1.375000
- *  1.625000
- *  0.000000
- *
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -49,13 +14,6 @@ package edu.princeton.cs.algs4;
  *  Gaussian elimination (but does not provide the certificate of infeasibility).
  *  For an industrial-strength numerical linear algebra library,
  *  see <a href = "http://math.nist.gov/javanumerics/jama/">JAMA</a>. 
- *  <p>
- *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/99scientific">Section 9.9</a>
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class GaussJordanElimination {
     private static final double EPSILON = 1e-8;

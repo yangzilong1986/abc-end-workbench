@@ -1,35 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac BoyerMoore.java
- *  Execution:    java BoyerMoore pattern text
- *  Dependencies: StdOut.java
- *
- *  Reads in two strings, the pattern and the input text, and
- *  searches for the pattern in the input text using the
- *  bad-character rule part of the Boyer-Moore algorithm.
- *  (does not implement the strong good suffix rule)
- *
- *  % java BoyerMoore abracadabra abacadabrabracabracadabrabrabracad
- *  text:    abacadabrabracabracadabrabrabracad 
- *  pattern:               abracadabra
- *
- *  % java BoyerMoore rab abacadabrabracabracadabrabrabracad
- *  text:    abacadabrabracabracadabrabrabracad 
- *  pattern:         rab
- *
- *  % java BoyerMoore bcara abacadabrabracabracadabrabrabracad
- *  text:    abacadabrabracabracadabrabrabracad 
- *  pattern:                                   bcara
- *
- *  % java BoyerMoore rabrabracad abacadabrabracabracadabrabrabracad
- *  text:    abacadabrabracabracadabrabrabracad
- *  pattern:                        rabrabracad
- *
- *  % java BoyerMoore abacad abacadabrabracabracadabrabrabracad
- *  text:    abacadabrabracabracadabrabrabracad
- *  pattern: abacad
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -38,10 +6,6 @@ package edu.princeton.cs.algs4;
  *  <p>
  *  This implementation uses the Boyer-Moore algorithm (with the bad-character
  *  rule, but not the strong good suffix rule).
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/53substring">Section 5.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class BoyerMoore {
     private final int R;     // the radix

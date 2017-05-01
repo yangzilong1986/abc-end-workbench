@@ -11,6 +11,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.tree.ST;
+
 /**
  *  The {@code SparseVector} class represents a <em>d</em>-dimensional mathematical vector.
  *  Vectors are mutable: their values can be changed after they are created.
@@ -20,14 +22,6 @@ package edu.princeton.cs.algs4;
  *  The implementation is a symbol table of indices and values for which the vector
  *  coordinates are nonzero. This makes it efficient when most of the vector coordindates
   * are zero.
- *  <p>
- *  For additional documentation,    
- *  see <a href="http://algs4.cs.princeton.edu/35applications">Section 3.5</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *  See also {@link Vector} for an immutable (dense) vector data type.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class SparseVector {
     private int d;                   // dimension

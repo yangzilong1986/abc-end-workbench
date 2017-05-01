@@ -23,11 +23,6 @@ import java.util.NoSuchElementException;
  *  <em>isEmpty</em>, and <em>size</em> operations
  *  take constant time. Iteration takes time proportional to the number of items.
  *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class ResizingArrayBag<Item> implements Iterable<Item> {
     private Item[] a;         // array of items

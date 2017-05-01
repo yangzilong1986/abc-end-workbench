@@ -1,17 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac TrieSET.java
- *  Execution:    java TrieSET < words.txt
- *  Dependencies: StdIn.java
- *  Data files:   http://algs4.cs.princeton.edu/52trie/shellsST.txt
- *
- *  An set for extended ASCII strings, implemented  using a 256-way trie.
- *
- *  Sample client reads in a list of words from standard input and
- *  prints out each word, removing any duplicates.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.col.Queue;
 
 import java.util.Iterator;
 
@@ -28,13 +17,6 @@ import java.util.Iterator;
  *  The <em>add</em>, <em>contains</em>, <em>delete</em>, and
  *  <em>longest prefix</em> methods take time proportional to the length
  *  of the key (in the worst case). Construction takes constant time.
- *  <p>
- *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
- *  <i>Algorithms in Java, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class TrieSET implements Iterable<String> {
     private static final int R = 256;        // extended ASCII

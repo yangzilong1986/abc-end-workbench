@@ -1,32 +1,9 @@
-/******************************************************************************
- *  Compilation:  javac QuickX.java
- *  Execution:    java QuickX < input.txt
- *  Dependencies: StdOut.java StdIn.java
- *  Data files:   http://algs4.cs.princeton.edu/23quicksort/tiny.txt
- *                http://algs4.cs.princeton.edu/23quicksort/words3.txt
- *  
- *  Uses the Bentley-McIlroy 3-way partitioning scheme,
- *  chooses the partitioning element using Tukey's ninther,
- *  and cuts off to insertion sort.
- *
- *  Reference: Engineering a Sort Function by Jon L. Bentley
- *  and M. Douglas McIlroy. Softwae-Practice and Experience,
- *  Vol. 23 (11), 1249-1265 (November 1993).
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
  *  The {@code QuickX} class provides static methods for sorting an
  *  array using an optimized version of quicksort (using Bentley-McIlroy
  *  3-way partitioning, Tukey's ninther, and cutoff to insertion sort).
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/21elementary">Section 2.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class QuickX {
 
@@ -173,27 +150,3 @@ public class QuickX {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

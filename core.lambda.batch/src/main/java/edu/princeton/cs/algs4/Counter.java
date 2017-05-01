@@ -1,34 +1,7 @@
-/******************************************************************************
- *  Compilation:  javac Counter.java
- *  Execution:    java Counter n trials
- *  Dependencies: StdRandom.java StdOut.java
- *
- *  A mutable data type for an integer counter.
- *
- *  The test clients create n counters and performs trials increment
- *  operations on random counters.
- *
- * java Counter 6 600000
- *  100140 counter0
- *  100273 counter1
- *  99848 counter2
- *  100129 counter3
- *  99973 counter4
- *  99637 counter5
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
  *  The {@code Counter} class is a mutable data type to encapsulate a counter.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/12oop">Section 1.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class Counter implements Comparable<Counter> {
 
@@ -114,28 +87,4 @@ public class Counter implements Comparable<Counter> {
             StdOut.println(hits[i]);
         }
     } 
-} 
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/
+}

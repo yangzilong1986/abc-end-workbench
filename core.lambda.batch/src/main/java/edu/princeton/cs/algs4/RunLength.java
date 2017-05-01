@@ -24,6 +24,9 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.BinaryStdIn;
+import edu.princeton.cs.algs4.utils.BinaryStdOut;
+
 /**
  *  The {@code RunLength} class provides static methods for compressing
  *  and expanding a binary input using run-length coding with 8-bit

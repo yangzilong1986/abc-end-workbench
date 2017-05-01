@@ -1,4 +1,5 @@
 package edu.princeton.cs.algs4;
+
 public class Accumulator {
     private int n = 0;          // number of data values
     private double sum = 0.0;   // sample variance * (n-1)

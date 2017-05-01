@@ -1,22 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac FarthestPair.java
- *  Execution:    java FarthestPair < input.txt
- *  Dependencies: GrahamScan.java Point2D.java
- *  Data files:   http://algs4.cs.princeton.edu/99hull/rs1423.txt
- *                http://algs4.cs.princeton.edu/99hull/kw1260.txt
- *  
- *  Given a set of n points in the plane, find the farthest pair
- *  (equivalently, compute the diameter of the set of points).
- *
- *  Computes the convex hull of the set of points and using the
- *  rotating calipers method to find all antipodal point pairs
- *  and the farthest pair.
- *
- *  % java FarthestPair < input100.txt
- *  42697.98170874122 from (32011.0, 3140.0) to (822.0, 32301.0)
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -30,13 +11,6 @@ package edu.princeton.cs.algs4;
  *  and the farthest pair.
  *  It runs in O(<em>n</em> log <em>n</em>) time in the worst case and uses
  *  O(<em>N</em>) extra space.
- *  See also {@link ClosestPair} and {@link GrahamScan}.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/99hull">Section 9.9</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class FarthestPair {
 

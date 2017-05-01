@@ -1,21 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac TwoPersonZeroSumGame.java
- *  Execution:    java TwoPersonZeroSumGame m n
- *  Dependencies: LinearProgramming.java StdOut.java
- *
- *  Solve an m-by-n two-person zero-sum game by reducing it to
- *  linear programming. Assuming A is a strictly positive payoff
- *  matrix, the optimal row and column player strategies are x* an y*,
- *  scaled to be probability distributions.
- *
- *  (P)  max  y^T 1         (D)  min   1^T x
- *       s.t  A^T y <= 1         s.t   A x >= 1
- *                y >= 0                 x >= 0
- *
- *  Row player is x, column player is y.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -43,12 +25,6 @@ package edu.princeton.cs.algs4;
  *  a bare-bones linear programming solver that is neither fast nor
  *  robust with respect to floating-point roundoff error.
  *  <p>
- *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/65reductions">Section 6.5</a>
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class TwoPersonZeroSumGame {
     private static final double EPSILON = 1E-8;

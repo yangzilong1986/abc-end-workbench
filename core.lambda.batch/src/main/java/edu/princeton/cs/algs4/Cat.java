@@ -1,5 +1,8 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.Out;
+
 public class Cat {
 
     // this class should not be instantiated

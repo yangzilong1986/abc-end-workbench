@@ -26,6 +26,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.col.Queue;
+
 import java.util.Iterator;
 
 /**
@@ -83,12 +85,6 @@ import java.util.Iterator;
  *  bit-testing loops are well tuned. Consider using the source code as a guide,
  *  should you need to produce an optimized implementation, for anther key type,
  *  or in another programming language.
- *  <p>
- *  Other resources for PATRICIA:<br>
- *  Sedgewick, R. (1990) <i>Algorithms in C</i>, Addison-Wesley<br>
- *  Knuth, D. (1973) <i>The Art of Computer Programming</i>, Addison-Wesley<br>
- *
- *  @author John Hentosh (based on an implementation by Robert Sedgewick)
  */
 public class PatriciaSET implements Iterable<String> {
     private Node head;

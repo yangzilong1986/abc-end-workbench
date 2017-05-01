@@ -1,27 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac BinaryInsertion.java
- *  Execution:    java BinaryInsertion < input.txt
- *  Dependencies: StdOut.java StdIn.java
- *  Data files:   http://algs4.cs.princeton.edu/21elementary/tiny.txt
- *                http://algs4.cs.princeton.edu/21elementary/words3.txt
- *  
- *  Sorts a sequence of strings from standard input using 
- *  binary insertion sort with half exchanges.
- *
- *  % more tiny.txt
- *  S O R T E X A M P L E
- *
- *  % java BinaryInsertion < tiny.txt
- *  A E E L M O P R S T X                 [ one string per line ]
- *
- *  % more words3.txt
- *  bed bug dad yes zoo ... all bad yet
- *
- *  % java BinaryInsertion < words3.txt
- *  all bad bed bug dad ... yes yet zoo   [ one string per line ]
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -33,15 +9,6 @@ package edu.princeton.cs.algs4;
  *  number of array accesses can be proportional to n^2 (e.g, if the array
  *  is reverse sorted). As such, it is not suitable for sorting large
  *  arrays (unless the number of inversions is small).
- *  <p>
- *  The sorting algorithm is stable and uses O(1) extra memory.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/21elementary">Section 2.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Ivan Pesin
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class BinaryInsertion {
 

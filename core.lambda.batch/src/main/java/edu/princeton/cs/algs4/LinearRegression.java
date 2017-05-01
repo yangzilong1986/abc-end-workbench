@@ -1,13 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac LinearRegression.java
- *  Execution:    java  LinearRegression
- *  Dependencies: none
- *  
- *  Compute least squares solution to y = beta * x + alpha.
- *  Simple linear regression.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 
@@ -21,9 +11,6 @@ package edu.princeton.cs.algs4;
  *  It also computes associated statistics, including the coefficient of
  *  determination <em>R</em><sup>2</sup> and the standard deviation of the
  *  estimates for the slope and <em>y</em>-intercept.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class LinearRegression {
     private final double intercept, slope;

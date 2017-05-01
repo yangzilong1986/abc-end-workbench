@@ -1,18 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac LinearProgramming.java
- *  Execution:    java LinearProgramming m n
- *  Dependencies: StdOut.java
- *
- *  Given an m-by-n matrix A, an m-length vector b, and an
- *  n-length vector c, solve the  LP { max cx : Ax <= b, x >= 0 }.
- *  Assumes that b >= 0 so that x = 0 is a basic feasible solution.
- *
- *  Creates an (m+1)-by-(n+m+1) simplex tableaux with the 
- *  RHS in column m+n, the objective function in row m, and
- *  slack variables in columns m through m+n-1.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -29,13 +14,6 @@ package edu.princeton.cs.algs4;
  *  It uses Bland's rule to determing the entering and leaving variables.
  *  It is not suitable for use on large inputs. It is also not robust
  *  in the presence of floating-point roundoff error.
- *  <p>
- *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/65reductions">Section 6.5</a>
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class LinearProgramming {
     private static final double EPSILON = 1.0E-10;

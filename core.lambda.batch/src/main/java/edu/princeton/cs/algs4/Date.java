@@ -1,24 +1,8 @@
-/******************************************************************************
- *  Compilation:  javac Date.java
- *  Execution:    java Date
- *  Dependencies: StdOut.java
- *
- *  An immutable data type for dates.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
  *  The {@code Date} class is an immutable data type to encapsulate a
  *  date (day, month, and year).
- *  <p>
- *  For additional documentation, 
- *  see <a href="http://algs4.cs.princeton.edu/12oop">Section 1.2</a> of 
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class Date implements Comparable<Date> {
     private static final int[] DAYS = { 0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };

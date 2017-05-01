@@ -7,20 +7,6 @@ import org.jgrapht.*;
 import org.jgrapht.graph.specifics.*;
 import org.jgrapht.util.*;
 
-/**
- * The most general implementation of the {@link org.jgrapht.Graph} interface. Its subclasses add
- * various restrictions to get more specific graphs. The decision whether it is directed or
- * undirected is decided at construction time and cannot be later modified (see constructor for
- * details).
- *
- * <p>
- * This graph implementation guarantees deterministic vertex and edge set ordering (via
- * {@link LinkedHashMap} and {@link LinkedHashSet}).
- * </p>
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- */
 public abstract class AbstractBaseGraph<V, E>
     extends AbstractGraph<V, E>
     implements Graph<V, E>, Cloneable, Serializable
@@ -155,9 +141,6 @@ public abstract class AbstractBaseGraph<V, E>
         return intrusiveEdge;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean addVertex(V v)
     {
@@ -172,9 +155,6 @@ public abstract class AbstractBaseGraph<V, E>
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public V getEdgeSource(E e)
     {

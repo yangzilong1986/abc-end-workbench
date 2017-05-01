@@ -20,13 +20,6 @@ import java.util.Comparator;
  *  Note: in order to deal with the difference behavior of double and 
  *  Double with respect to -0.0 and +0.0, the Point2D constructor converts
  *  any coordinates that are -0.0 to +0.0.
- *  <p>
- *  For additional documentation, 
- *  see <a href="http://algs4.cs.princeton.edu/12oop">Section 1.2</a> of 
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public final class Point2D implements Comparable<Point2D> {
 

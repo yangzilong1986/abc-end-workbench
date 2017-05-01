@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2009-2017, by Ilya Razenshteyn and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.graph;
 
 import java.io.*;
@@ -23,24 +6,6 @@ import java.util.*;
 import org.jgrapht.*;
 import org.jgrapht.util.*;
 
-/**
- * <p>
- * Read-only union of two graphs: G<sub>1</sub> and G<sub>2</sub>. If G<sub>1</sub> =
- * (V<sub>1</sub>, E<sub>1</sub>) and G<sub>2</sub> = (V<sub>2</sub>, E<sub>2</sub>) then their
- * union G = (V, E), where V is the union of V<sub>1</sub> and V<sub>2</sub>, and E is the union of
- * E<sub>1</sub> and E<sub>1</sub>.
- * </p>
- *
- * <p>
- * <tt>GraphUnion</tt> implements <tt>Graph</tt> interface. <tt>
- * GraphUnion</tt> uses <tt>WeightCombiner</tt> to choose policy for calculating edge weight.
- * </p>
- * 
- * @param <V> the vertex type
- * @param <E> the edge type
- * @param <G> the graph type of the two graphs that are combined
- * 
- */
 public class GraphUnion<V, E, G extends Graph<V, E>>
     extends AbstractGraph<V, E>
     implements Serializable

@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.In;
+
 import java.util.Arrays;
 
 public class BinarySearch {

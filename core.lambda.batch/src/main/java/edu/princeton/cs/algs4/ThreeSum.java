@@ -27,6 +27,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.In;
+
 /**
  *  The {@code ThreeSum} class provides static methods for counting
  *  and printing the number of triples in an array of integers that sum to 0
@@ -34,12 +36,6 @@ package edu.princeton.cs.algs4;
  *  <p>
  *  This implementation uses a triply nested loop and takes proportional to n^3,
  *  where n is the number of integers.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/14analysis">Section 1.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class ThreeSum {
 

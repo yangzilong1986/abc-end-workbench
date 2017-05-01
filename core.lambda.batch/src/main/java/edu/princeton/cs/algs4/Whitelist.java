@@ -29,6 +29,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.In;
+
 /**
  *  The {@code Whitelist} class provides a client for reading in
  *  a set of integers from a file; reading in a sequence of integers

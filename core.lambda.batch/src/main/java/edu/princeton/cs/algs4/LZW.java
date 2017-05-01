@@ -1,36 +1,13 @@
-/******************************************************************************
- *  Compilation:  javac LZW.java
- *  Execution:    java LZW - < input.txt   (compress)
- *  Execution:    java LZW + < input.txt   (expand)
- *  Dependencies: BinaryIn.java BinaryOut.java
- *  Data files:   http://algs4.cs.princeton.edu/55compression/abraLZW.txt
- *                http://algs4.cs.princeton.edu/55compression/ababLZW.txt
- *
- *  Compress or expand binary input from standard input using LZW.
- *
- *  WARNING: STARTING WITH ORACLE JAVA 6, UPDATE 7 the SUBSTRING
- *  METHOD TAKES TIME AND SPACE LINEAR IN THE SIZE OF THE EXTRACTED
- *  SUBSTRING (INSTEAD OF CONSTANT SPACE AND TIME AS IN EARLIER
- *  IMPLEMENTATIONS).
- *
- *  See <a href = "http://java-performance.info/changes-to-string-java-1-7-0_06/">this article</a>
- *  for more details.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.utils.BinaryStdIn;
+import edu.princeton.cs.algs4.utils.BinaryStdOut;
 
 /**
  *  The {@code LZW} class provides static methods for compressing
  *  and expanding a binary input using LZW compression over the 8-bit extended
  *  ASCII alphabet with 12-bit codewords.
  *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/55compress">Section 5.5</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick  
- *  @author Kevin Wayne
  */
 public class LZW {
     private static final int R = 256;        // number of input chars

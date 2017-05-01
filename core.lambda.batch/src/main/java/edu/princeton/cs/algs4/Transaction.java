@@ -15,13 +15,6 @@ import java.util.Comparator;
 /**
  *  The {@code Transaction} class is an immutable data type to encapsulate a
  *  commercial transaction with a customer name, date, and amount.
- *  <p>
- *  For additional documentation, 
- *  see <a href="http://algs4.cs.princeton.edu/12oop">Section 1.2</a> of 
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class Transaction implements Comparable<Transaction> {
     private final String  who;      // customer

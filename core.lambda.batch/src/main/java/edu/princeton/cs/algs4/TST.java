@@ -1,42 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac TST.java
- *  Execution:    java TST < words.txt
- *  Dependencies: StdIn.java
- *  Data files:   http://algs4.cs.princeton.edu/52trie/shellsST.txt
- *
- *  Symbol table with string keys, implemented using a ternary search
- *  trie (TST).
- *
- *
- *  % java TST < shellsST.txt
- *  keys(""):
- *  by 4
- *  sea 6
- *  sells 1
- *  she 0
- *  shells 3
- *  shore 7
- *  the 5
- *
- *  longestPrefixOf("shellsort"):
- *  shells
- *
- *  keysWithPrefix("shor"):
- *  shore
- *
- *  keysThatMatch(".he.l."):
- *  shells
- *
- *  % java TST
- *  theory the now is the time for all good men
- *
- *  Remarks
- *  --------
- *    - can't use a key that is the empty string ""
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.col.Queue;
 
 /**
  *  The {@code TST} class represents an symbol table of key-value
@@ -54,11 +18,6 @@ package edu.princeton.cs.algs4;
  *  values cannot be {@code null}—setting the
  *  value associated with a key to {@code null} is equivalent to deleting the key
  *  from the symbol table.
- *  <p>
- *  This implementation uses a ternary search trie.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class TST<Value> {
     private int n;              // size

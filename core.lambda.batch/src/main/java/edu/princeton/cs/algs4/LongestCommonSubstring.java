@@ -1,19 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac LongestCommonSubstring.java
- *  Execution:    java  LongestCommonSubstring file1.txt file2.txt
- *  Dependencies: SuffixArray.java In.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/63suffix/tale.txt
- *                http://algs4.cs.princeton.edu/63suffix/mobydick.txt
- *  
- *  Read in two text files and find the longest substring that
- *  appears in both texts.
- * 
- *  % java LongestCommonSubstring tale.txt mobydick.txt
- *  ' seemed on the point of being '
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.utils.In;
 
 /**
  *  The {@code LongestCommonSubstring} class provides a {@link SuffixArray}
@@ -22,16 +9,6 @@ package edu.princeton.cs.algs4;
  *  <p>
  *  This implementation computes the suffix array of each string and applies a
  *  merging operation to determine the longest common substring.
- *  For an alternate implementation, see
- *  <a href = "http://algs4.cs.princeton.edu/63suffix/LongestCommonSubstringConcatenate.java.html">LongestCommonSubstringConcatenate.java</a>.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/63suffix">Section 6.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  <p>
- *     
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class LongestCommonSubstring {
 

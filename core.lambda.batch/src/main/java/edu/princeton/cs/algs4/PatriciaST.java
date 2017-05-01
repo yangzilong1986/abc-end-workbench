@@ -26,6 +26,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.col.Queue;
+
 /**
  *  The {@code PatriciaST} class provides an implementation of an unordered
  *  symbol table of key-value pairs, with the restriction that the key is of
@@ -86,12 +88,6 @@ package edu.princeton.cs.algs4;
  *  bit-testing loops are well tuned. Consider using the source code as a guide,
  *  should you need to produce an optimized implementation, for anther key type,
  *  or in another programming language.
- *  <p>
- *  Other resources for PATRICIA:<br>
- *  Sedgewick, R. (1990) <i>Algorithms in C</i>, Addison-Wesley<br>
- *  Knuth, D. (1973) <i>The Art of Computer Programming</i>, Addison-Wesley<br>
- *
- *  @author John Hentosh (based on an implementation by Robert Sedgewick)
  */
 public class PatriciaST<Value> {
     private Node head;

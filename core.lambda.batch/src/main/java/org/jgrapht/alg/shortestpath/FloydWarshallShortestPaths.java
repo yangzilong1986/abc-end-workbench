@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2009-2017, by Tom Larkworthy and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.alg.shortestpath;
 
 import java.util.*;
@@ -32,6 +15,8 @@ import org.jgrapht.util.*;
  * diameter. Note that during construction time, no computations are performed! All computations are
  * performed the first time one of the member methods of this class is invoked. The results are
  * stored, so all subsequent calls to the same method are computationally efficient.
+ *
+ * 动态规划所有结点对的最短路径
  */
 public class FloydWarshallShortestPaths<V, E>
     extends BaseShortestPathAlgorithm<V, E>

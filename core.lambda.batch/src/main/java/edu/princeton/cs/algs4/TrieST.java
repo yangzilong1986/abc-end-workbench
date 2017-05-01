@@ -1,24 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac TrieST.java
- *  Execution:    java TrieST < words.txt
- *  Dependencies: StdIn.java
- *  Data files:   http://algs4.cs.princeton.edu/52trie/shellsST.txt
- *
- *  A string symbol table for extended ASCII strings, implemented
- *  using a 256-way trie.
- *
- *  % java TrieST < shellsST.txt 
- *  by 4
- *  sea 6
- *  sells 1
- *  she 0
- *  shells 3
- *  shore 7
- *  the 5
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.col.Queue;
 
 /**
  *  The {@code TrieST} class represents an symbol table of key-value
@@ -43,9 +25,6 @@ package edu.princeton.cs.algs4;
  *  of the key (in the worst case). Construction takes constant time.
  *  The <em>size</em>, and <em>is-empty</em> operations take constant time.
  *  Construction takes constant time.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class TrieST<Value> {
     private static final int R = 256;        // extended ASCII

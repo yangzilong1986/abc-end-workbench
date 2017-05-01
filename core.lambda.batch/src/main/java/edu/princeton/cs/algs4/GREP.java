@@ -1,42 +1,11 @@
-/******************************************************************************
- *  Compilation:  javac GREP.java
- *  Execution:    java GREP regexp < input.txt
- *  Dependencies: NFA.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/54regexp/tinyL.txt
- *
- *  This program takes an RE as a command-line argument and prints
- *  the lines from standard input having some substring that
- *  is in the language described by the RE. 
- *
- *  % more tinyL.txt
- *  AC
- *  AD
- *  AAA
- *  ABD
- *  ADD
- *  BCD
- *  ABCCBD
- *  BABAAA
- *  BABBAAA
- *
- *  %  java GREP "(A*B|AC)D" < tinyL.txt
- *  ABD
- *  ABCCBD
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.digraph.NFA;
 
 /**
  *  The {@code GREP} class provides a client for reading in a sequence of
  *  lines from standard input and printing to standard output those lines
  *  that contain a substring matching a specified regular expression.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/31elementary">Section 3.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class GREP {
 

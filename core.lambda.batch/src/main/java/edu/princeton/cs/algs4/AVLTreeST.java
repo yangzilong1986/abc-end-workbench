@@ -25,6 +25,12 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.col.Queue;
+import edu.princeton.cs.algs4.tree.BST;
+import edu.princeton.cs.algs4.tree.LinearProbingHashST;
+import edu.princeton.cs.algs4.tree.RedBlackBST;
+import edu.princeton.cs.algs4.tree.ST;
+
 import java.util.NoSuchElementException;
 
 /**

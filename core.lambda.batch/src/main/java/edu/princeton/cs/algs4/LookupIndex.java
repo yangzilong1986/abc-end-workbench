@@ -1,39 +1,8 @@
-/******************************************************************************
- *  Compilation:  javac LookupIndex.java
- *  Execution:    java LookupIndex movies.txt "/"
- *  Dependencies: ST.java Queue.java In.java StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/35applications/aminoI.csv
- *                http://algs4.cs.princeton.edu/35applications/movies.txt
- *
- *  % java LookupIndex aminoI.csv ","
- *  Serine
- *    TCT
- *    TCA
- *    TCG
- *    AGT
- *    AGC
- *  TCG
- *    Serine
- *
- *  % java LookupIndex movies.txt "/"
- *  Bacon, Kevin
- *    Animal House (1978)
- *    Apollo 13 (1995)
- *    Beauty Shop (2005)
- *    Diner (1982)
- *    Few Good Men, A (1992)
- *    Flatliners (1990)
- *    Footloose (1984)
- *    Friday the 13th (1980)
- *    ...
- *  Tin Men (1987)
- *    DeBoy, David
- *    Blumenfeld, Alan
- *    ...
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.col.Queue;
+import edu.princeton.cs.algs4.tree.ST;
+import edu.princeton.cs.algs4.utils.In;
 
 /**
  *  The {@code LookupIndex} class provides a data-driven client for reading in a
@@ -41,12 +10,6 @@ package edu.princeton.cs.algs4;
  *  keys found on standard input. Keys are strings; values are lists of strings.
  *  The separating delimiter is taken as a command-line argument. This client
  *  is sometimes known as an <em>inverted index</em>.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/35applications">Section 3.5</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class LookupIndex { 
 

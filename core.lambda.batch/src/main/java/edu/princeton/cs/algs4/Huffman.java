@@ -22,6 +22,10 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.tree.MinPQ;
+import edu.princeton.cs.algs4.utils.BinaryStdIn;
+import edu.princeton.cs.algs4.utils.BinaryStdOut;
+
 public class Huffman {
 
     // alphabet size of extended ASCII

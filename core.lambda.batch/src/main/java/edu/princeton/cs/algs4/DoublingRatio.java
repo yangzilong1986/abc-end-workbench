@@ -1,33 +1,8 @@
-/******************************************************************************
- *  Compilation:  javac DoublingRatio.java
- *  Execution:    java DoublingRatio
- *  Dependencies: ThreeSum.java Stopwatch.java StdRandom.java StdOut.java
- *
- *
- *  % java DoublingRatio
- *      250     0.0   2.7
- *      500     0.0   4.8
- *     1000     0.1   6.9
- *     2000     0.6   7.7
- *     4000     4.5   8.0
- *     8000    35.7   8.0
- *     4000     3.9   6.6
-
- *  ...
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
  *  The {@code DoublingRatio} class provides a client for measuring
  *  the running time of a method using a doubling ratio test.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/14analysis">Section 1.4</a>
- *  of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class DoublingRatio {
     private static final int MAXIMUM_INTEGER = 1000000;

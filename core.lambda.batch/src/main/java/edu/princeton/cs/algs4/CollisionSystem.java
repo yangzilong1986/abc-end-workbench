@@ -1,22 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac CollisionSystem.java
- *  Execution:    java CollisionSystem n               (n random particles)
- *                java CollisionSystem < input.txt     (from a file) 
- *  Dependencies: StdDraw.java Particle.java MinPQ.java
- *  Data files:   http://algs4.cs.princeton.edu/61event/diffusion.txt
- *                http://algs4.cs.princeton.edu/61event/diffusion2.txt
- *                http://algs4.cs.princeton.edu/61event/diffusion3.txt
- *                http://algs4.cs.princeton.edu/61event/brownian.txt
- *                http://algs4.cs.princeton.edu/61event/brownian2.txt
- *                http://algs4.cs.princeton.edu/61event/billiards5.txt
- *                http://algs4.cs.princeton.edu/61event/pendulum.txt
- *  
- *  Creates n random particles and simulates their motion according
- *  to the laws of elastic collisions.
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.tree.MinPQ;
 
 import java.awt.Color;
 
@@ -24,13 +8,6 @@ import java.awt.Color;
  *  The {@code CollisionSystem} class represents a collection of particles
  *  moving in the unit box, according to the laws of elastic collision.
  *  This event-based simulation relies on a priority queue.
- *  <p>
- *  For additional documentation, 
- *  see <a href="http://algs4.cs.princeton.edu/61event">Section 6.1</a> of 
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class CollisionSystem {
     private final static double HZ = 0.5;    // number of redraw events per clock tick

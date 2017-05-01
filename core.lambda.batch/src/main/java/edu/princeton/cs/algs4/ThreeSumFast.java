@@ -41,6 +41,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.In;
+
 import java.util.Arrays;
 
 /**
@@ -51,11 +53,6 @@ import java.util.Arrays;
  *  This implementation uses sorting and binary search and takes time 
  *  proportional to n^2 log n, where n is the number of integers.
  *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/14analysis">Section 1.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class ThreeSumFast {
 

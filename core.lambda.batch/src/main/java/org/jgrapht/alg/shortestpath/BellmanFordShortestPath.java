@@ -28,10 +28,8 @@ import org.jgrapht.graph.*;
  * 
  * The algorithm has worst-case complexity O(nm) when n is the number of vertices and m the number
  * of edges of the input graph.
- * 
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
+ * 单源最短路径，两个顶点间最短距离
+ *
  */
 public class BellmanFordShortestPath<V, E>
     extends BaseShortestPathAlgorithm<V, E>

@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.col.Queue;
+
 import java.util.NoSuchElementException;
 
 public class BinarySearchST<Key extends Comparable<Key>, Value> {
@@ -57,27 +59,11 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
 
-    /**
-     * Does this symbol table contain the given key?
-     *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key} and
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public boolean contains(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
 
-    /**
-     * Returns the value associated with the given key in this symbol table.
-     *
-     * @param  key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *         and {@code null} if the key is not in the symbol table
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public Value get(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to get() is null"); 
         if (isEmpty()) return null;
@@ -86,13 +72,6 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         return null;
     } 
 
-    /**
-     * Returns the number of keys in this symbol table strictly less than {@code key}.
-     *
-     * @param  key the key
-     * @return the number of keys in the symbol table strictly less than {@code key}
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public int rank(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to rank() is null"); 
 
@@ -309,7 +288,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (lo == null) throw new IllegalArgumentException("first argument to keys() is null"); 
         if (hi == null) throw new IllegalArgumentException("second argument to keys() is null"); 
 
-        Queue<Key> queue = new Queue<Key>(); 
+        Queue<Key> queue = new Queue<Key>();
         if (lo.compareTo(hi) > 0) return queue;
         for (int i = rank(lo); i < rank(hi); i++) 
             queue.enqueue(keys[i]);
@@ -358,27 +337,3 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
             StdOut.println(s + " " + st.get(s));
     }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

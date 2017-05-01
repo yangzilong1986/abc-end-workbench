@@ -1,45 +1,7 @@
-/******************************************************************************
- *  Compilation:  javac SeparateChainingHashST.java
- *  Execution:    java SeparateChainingHashST < input.txt
- *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/34hash/tinyST.txt
- *
- *  A symbol table implemented with a separate-chaining hash table.
- * 
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
-/**
- *  The {@code SeparateChainingHashST} class represents a symbol table of generic
- *  key-value pairs.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides a <em>keys</em> method for iterating over all of the keys.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  Unlike {@link java.util.Map}, this class uses the convention that
- *  values cannot be {@code null}—setting the
- *  value associated with a key to {@code null} is equivalent to deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a separate chaining hash table. It requires that
- *  the key type overrides the {@code equals()} and {@code hashCode()} methods.
- *  The expected time per <em>put</em>, <em>contains</em>, or <em>remove</em>
- *  operation is constant, subject to the uniform hashing assumption.
- *  The <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes constant time.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/34hash">Section 3.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  For other implementations, see {@link ST}, {@link BinarySearchST},
- *  {@link SequentialSearchST}, {@link BST}, {@link RedBlackBST}, and
- *  {@link LinearProbingHashST},
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
+import edu.princeton.cs.algs4.col.Queue;
+
 public class SeparateChainingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
@@ -204,27 +166,3 @@ public class SeparateChainingHashST<Key, Value> {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

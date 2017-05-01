@@ -46,13 +46,6 @@ package edu.princeton.cs.algs4;
  *  implementation that uses Gauss-Jordan elimination.
  *  For an industrial-strength numerical linear algebra library,
  *  see <a href = "http://math.nist.gov/javanumerics/jama/">JAMA</a>.
- *  <p>
- *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/99scientific">Section 9.9</a>
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class GaussianElimination {
     private static final double EPSILON = 1e-8;

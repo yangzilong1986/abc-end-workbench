@@ -34,26 +34,12 @@ public class DirectedGraphUnion<V, E>
 {
     private static final long serialVersionUID = -740199233080172450L;
 
-    /**
-     * Construct a new directed graph union.
-     * 
-     * @param g1 the first graph
-     * @param g2 the second graph
-     * @param operator the weight combiner (policy for edge weight calculation)
-     */
     public DirectedGraphUnion(
         DirectedGraph<V, E> g1, DirectedGraph<V, E> g2, WeightCombiner operator)
     {
         super(g1, g2, operator);
     }
 
-    /**
-     * Construct a new directed graph union. The union will use the {@link WeightCombiner#SUM}
-     * weight combiner.
-     * 
-     * @param g1 the first graph
-     * @param g2 the second graph
-     */
     public DirectedGraphUnion(DirectedGraph<V, E> g1, DirectedGraph<V, E> g2)
     {
         super(g1, g2);

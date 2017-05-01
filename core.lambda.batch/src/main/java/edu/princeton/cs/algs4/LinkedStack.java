@@ -1,21 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac LinkedStack.java
- *  Execution:    java LinkedStack < input.txt
- *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
- *
- *  A generic stack, implemented using a linked list. Each stack
- *  element is of type Item.
- *  
- *  % more tobe.txt 
- *  to be or not to - be - - that - - - is
- *
- *  % java LinkedStack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
+
+import edu.princeton.cs.algs4.col.Stack;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -32,13 +17,6 @@ import java.util.NoSuchElementException;
  *  linked-list nodes. See {@link Stack} for a version that uses a static nested class.
  *  The <em>push</em>, <em>pop</em>, <em>peek</em>, <em>size</em>, and <em>is-empty</em>
  *  operations all take constant time in the worst case.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class LinkedStack<Item> implements Iterable<Item> {
     private int n;          // size of the stack

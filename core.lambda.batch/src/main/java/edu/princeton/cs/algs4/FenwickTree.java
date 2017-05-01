@@ -25,7 +25,8 @@ public class FenwickTree {
         int sum = 0;
         while (ind > 0) {
             sum += array[ind];
-            //Extracting the portion up to the first significant one of the binary representation of 'ind' and decrementing ind by that number
+            //Extracting the portion up to the first significant
+            // one of the binary representation of 'ind' and decrementing ind by that number
             ind -= ind & (-ind);
         }
 

@@ -16,6 +16,10 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.BinaryDump;
+import edu.princeton.cs.algs4.utils.BinaryStdIn;
+import edu.princeton.cs.algs4.utils.HexDump;
+
 import java.awt.Color;
 
 

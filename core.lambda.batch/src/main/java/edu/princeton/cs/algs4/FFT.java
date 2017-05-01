@@ -1,64 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac FFT.java
- *  Execution:    java FFT n
- *  Dependencies: Complex.java
- *
- *  Compute the FFT and inverse FFT of a length n complex sequence.
- *  Bare bones implementation that runs in O(n log n) time. Our goal
- *  is to optimize the clarity of the code, rather than performance.
- *
- *  Limitations
- *  -----------
- *   -  assumes n is a power of 2
- *
- *   -  not the most memory efficient algorithm (because it uses
- *      an object type for representing complex numbers and because
- *      it re-allocates memory for the subarray, instead of doing
- *      in-place or reusing a single temporary array)
- *  
- *
- *  % java FFT 4
- *  x
- *  -------------------
- *  -0.03480425839330703
- *  0.07910192950176387
- *  0.7233322451735928
- *  0.1659819820667019
- *
- *  y = fft(x)
- *  -------------------
- *  0.9336118983487516
- *  -0.7581365035668999 + 0.08688005256493803i
- *  0.44344407521182005
- *  -0.7581365035668999 - 0.08688005256493803i
- *
- *  z = ifft(y)
- *  -------------------
- *  -0.03480425839330703
- *  0.07910192950176387 + 2.6599344570851287E-18i
- *  0.7233322451735928
- *  0.1659819820667019 - 2.6599344570851287E-18i
- *
- *  c = cconvolve(x, x)
- *  -------------------
- *  0.5506798633981853
- *  0.23461407150576394 - 4.033186818023279E-18i
- *  -0.016542951108772352
- *  0.10288019294318276 + 4.033186818023279E-18i
- *
- *  d = convolve(x, x)
- *  -------------------
- *  0.001211336402308083 - 3.122502256758253E-17i
- *  -0.005506167987577068 - 5.058885073636224E-17i
- *  -0.044092969479563274 + 2.1934338938072244E-18i
- *  0.10288019294318276 - 3.6147323062478115E-17i
- *  0.5494685269958772 + 3.122502256758253E-17i
- *  0.240120239493341 + 4.655566391833896E-17i
- *  0.02755001837079092 - 2.1934338938072244E-18i
- *  4.01805098805014E-17i
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
@@ -73,13 +12,6 @@ package edu.princeton.cs.algs4;
  *  It is not the most memory efficient implementation because it uses
  *  objects to represents complex numbers and it it re-allocates memory
  *  for the subarray, instead of doing in-place or reusing a single temporary array.
- *  
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/99scientific">Section 9.9</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class FFT {
 
@@ -274,27 +206,3 @@ public class FFT {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

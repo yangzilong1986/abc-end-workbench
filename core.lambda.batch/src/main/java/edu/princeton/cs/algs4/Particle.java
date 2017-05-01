@@ -18,13 +18,6 @@ import java.awt.Color;
  *  for moving the particle and for predicting and resolvling elastic
  *  collisions with vertical walls, horizontal walls, and other particles.
  *  This data type is mutable because the position and velocity change.
- *  <p>
- *  For additional documentation, 
- *  see <a href="http://algs4.cs.princeton.edu/61event">Section 6.1</a> of 
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class Particle {
     private static final double INFINITY = Double.POSITIVE_INFINITY;

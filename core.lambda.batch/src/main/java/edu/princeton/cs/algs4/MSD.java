@@ -1,42 +1,8 @@
-/******************************************************************************
- *  Compilation: javac MSD.java
- *  Execution:   java MSD < input.txt
- *  Dependencies: StdIn.java StdOut.java 
- *  Data files:   http://algs4.cs.princeton.edu/51radix/words3.txt
- *                http://algs4.cs.princeton.edu/51radix/shells.txt
- *
- *  Sort an array of strings or integers using MSD radix sort.
- *
- *  % java MSD < shells.txt 
- *  are
- *  by
- *  sea
- *  seashells
- *  seashells
- *  sells
- *  sells
- *  she
- *  she
- *  shells
- *  shore
- *  surely
- *  the
- *  the
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4;
 
 /**
  *  The {@code MSD} class provides static methods for sorting an
  *  array of extended ASCII strings or integers using MSD radix sort.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/51radix">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class MSD {
     private static final int BITS_PER_BYTE =   8;
@@ -223,27 +189,3 @@ public class MSD {
             StdOut.println(a[i]);
     }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/
