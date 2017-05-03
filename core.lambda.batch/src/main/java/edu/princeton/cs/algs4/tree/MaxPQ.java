@@ -13,9 +13,13 @@ import java.util.NoSuchElementException;
  *  位置k的父节点位置为k/2
  *  位于k的左子节点2k 2k+1
  *
+ * 删除最大元素和插入元素，性质形成的队列为优先队列
+ *
+ * 优先队列基于二叉堆结构的经典实现
  */
 
 public class MaxPQ<Key> implements Iterable<Key> {
+    //基于堆的完全二叉树
     private Key[] pq; // store items at indices 1 to n
     private int n;   // number of items on priority queue
     private Comparator<Key> comparator;  // optional Comparator
@@ -45,6 +49,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         for (int i = 0; i < n; i++) {
             pq[i + 1] = keys[i];
         }
+        //堆的下沉
         for (int k = n/2; k >= 1; k--) {
             sink(k);
         }
@@ -76,6 +81,10 @@ public class MaxPQ<Key> implements Iterable<Key> {
         pq = temp;
     }
 
+    /**
+     * 插入元素，使用swim
+     * @param x
+     */
     public void insert(Key x) {
 
         // double size of array if necessary
@@ -83,8 +92,9 @@ public class MaxPQ<Key> implements Iterable<Key> {
             resize(2 * pq.length);
         }
         // add x, and percolate it up to maintain heap invariant
+        //插入的元素放入到数组额最后
         pq[++n] = x;
-        swim(n);
+        swim(n);//最后一个元素迁移
         assert isMaxHeap();
     }
 
@@ -92,10 +102,12 @@ public class MaxPQ<Key> implements Iterable<Key> {
         if (isEmpty()) {
             throw new NoSuchElementException("Priority queue underflow");
         }
-        Key max = pq[1];
-        exch(1, n--);
+        Key max = pq[1];//从根节点获取最大元素
+        exch(1, n--);//把删除元素和最后一个元素换位置
+        //回复堆的有序性
         sink(1);
-        pq[n+1] = null;     // to avoid loiterig and help with garbage collection
+        //换位置后，原来数组中最后一个元素已经游离在堆部分外
+        pq[n+1] = null; // to avoid loiterig and help with garbage collection
         if ((n > 0) && (n == (pq.length - 1) / 4)) {
             resize(pq.length / 2);
         }
@@ -108,6 +120,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * @param k
      */
     private void swim(int k) {
+        //k/2为其父元素
         while (k > 1 && less(k/2, k)) {
             exch(k, k/2);
             k = k/2;
@@ -121,11 +134,15 @@ public class MaxPQ<Key> implements Iterable<Key> {
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
-            if (j < n && less(j, j+1))
+            if (j < n && less(j, j+1)) {//k的两个孩子节点。j小于j+1
                 j++;
-            if (!less(k, j))
+            }
+            if (!less(k, j)) {//父元素不小于两个子元素
                 break;
+            }
+            //子节点大于父节点，则交互这两个节点
             exch(k, j);
+            //移到下一个子节点，作为父节点
             k = j;
         }
     }

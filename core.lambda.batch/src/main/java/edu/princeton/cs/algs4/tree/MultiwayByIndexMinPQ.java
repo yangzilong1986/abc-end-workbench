@@ -29,25 +29,31 @@ import edu.princeton.cs.algs4.utils.In;
 
 /**
  *  优先队列的多路并归
+ *  将多个有序输入流并归成一个输出
  */
 
-public class Multiway {
+public class MultiwayByIndexMinPQ {
 
     // This class should not be instantiated.
-    private Multiway() {
+    private MultiwayByIndexMinPQ() {
     }
 
     // merge together the sorted input streams and write the sorted result to standard output
     private static void merge(In[] streams) {
         int n = streams.length;
         IndexMinPQ<String> pq = new IndexMinPQ<String>(n);
-        for (int i = 0; i < n; i++)
-            if (!streams[i].isEmpty())
+        //在每个流中读入一个数据，形成index/key
+        for (int i = 0; i < n; i++) {
+            if (!streams[i].isEmpty()) {
                 pq.insert(i, streams[i].readString());
-
+            }
+        }
+        StdOut.print("读数据 ");
         // Extract and print min and read next from its stream. 
         while (!pq.isEmpty()) {
+            //输出
             StdOut.print(pq.minKey() + " ");
+            //i为并归流的数量，索引
             int i = pq.delMin();
             if (!streams[i].isEmpty())
                 pq.insert(i, streams[i].readString());
@@ -57,10 +63,12 @@ public class Multiway {
 
 
     public static void main(String[] args) {
+        String PATH_NAME = In.PATH_NAME;
         int n = args.length;
-        In[] streams = new In[n];
-        for (int i = 0; i < n; i++)
-            streams[i] = new In(args[i]);
+        In[] streams = new In[3];
+        streams[0] = new In(PATH_NAME+"m1.txt");
+        streams[1] = new In(PATH_NAME+"m2.txt");
+        streams[2] = new In(PATH_NAME+"m3.txt");
         merge(streams);
     }
 }

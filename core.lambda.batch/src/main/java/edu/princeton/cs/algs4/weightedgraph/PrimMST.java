@@ -74,11 +74,6 @@ public class PrimMST {
         }
     }
 
-    /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
-     */
     public Iterable<Edge> edges() {
         Queue<Edge> mst = new Queue<Edge>();
         for (int v = 0; v < edgeTo.length; v++) {
@@ -90,10 +85,6 @@ public class PrimMST {
         return mst;
     }
 
-    /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
-     */
     public double weight() {
         double weight = 0.0;
         for (Edge e : edges())

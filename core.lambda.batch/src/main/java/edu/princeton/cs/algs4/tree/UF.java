@@ -1,24 +1,30 @@
 package edu.princeton.cs.algs4.tree;
 
 
+import edu.princeton.cs.algs4.utils.In;
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
 
+/**
+ * 动态连通性
+ * p和q是联通的
+ */
 public class UF {
     // parent[i] = parent of i
+    //分量ID，父连接数组，由触点索引
     private int[] parent;
     // rank[i] = rank of subtree rooted at i (never more than 31)
+    //各个根节点所对应的分量大小
     private byte[] rank;
     // number of components
     private int count;
 
-    /**
-     * Initializes an empty union–find data structure with {@code n} sites
-     * {@code 0} through {@code n-1}. Each site is initially in its own 
-     */
     public UF(int n) {
-        if (n < 0) throw new IllegalArgumentException();
+        if (n < 0) {
+            throw new IllegalArgumentException();
+        }
         count = n;
+        //初始化分量数组
         parent = new int[n];
         rank = new byte[n];
         for (int i = 0; i < n; i++) {
@@ -44,17 +50,26 @@ public class UF {
     public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
-  
+
     public void union(int p, int q) {
-        int rootP = find(p);
-        int rootQ = find(q);
-        if (rootP == rootQ) return;
+        int rootP = find(p);//
+        int rootQ = find(q);//查找
+        if (rootP == rootQ) {
+            return;
+        }
 
         // make root of smaller rank point to root of larger rank
-        if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
-        else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
-        else {
+        //将小树的根节点连接到大树的根节点
+        //rank[rootQ]
+        if (rank[rootP] < rank[rootQ]) {//如果P的根节点数量小于Q根节点数量，则把Q索引赋予P的索引
+            parent[rootP] = rootQ;
+        } else if (rank[rootP] > rank[rootQ]) {
             parent[rootQ] = rootP;
+        } else {
+            //两个元素索引相等时，则更新Q的索引为P的索引
+            parent[rootQ] = rootP;
+            //P、Q索引相同
+            //rank[rootP]第一个元素数量增加一个
             rank[rootP]++;
         }
         count--;
@@ -64,17 +79,21 @@ public class UF {
     private void validate(int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));  
+            throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n - 1));
         }
     }
 
     public static void main(String[] args) {
-        int n = StdIn.readInt();
+        String PATH_NAME = In.PATH_NAME;
+        In in = new In(PATH_NAME + "tinyUF.txt");
+        int n = in.readInt();
         UF uf = new UF(n);
-        while (!StdIn.isEmpty()) {
-            int p = StdIn.readInt();
-            int q = StdIn.readInt();
-            if (uf.connected(p, q)) continue;
+        while (!in.isEmpty()) {
+            int p = in.readInt();
+            int q = in.readInt();
+            if (uf.connected(p, q)) {
+                continue;
+            }
             uf.union(p, q);
             StdOut.println(p + " " + q);
         }

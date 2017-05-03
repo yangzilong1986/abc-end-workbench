@@ -49,7 +49,7 @@ public class WeightedQuickUnionUF {
             return;
 
         // make smaller root point to larger one
-        if (size[rootP] < size[rootQ]) {
+        if (size[rootP] < size[rootQ]) {//将小树加到大树
             parent[rootP] = rootQ;
             size[rootQ] += size[rootP];
         }

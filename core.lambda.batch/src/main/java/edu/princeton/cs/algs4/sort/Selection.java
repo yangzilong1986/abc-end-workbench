@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.sort;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
@@ -6,8 +6,7 @@ import edu.princeton.cs.algs4.utils.StdOut;
 import java.util.Comparator;
 
 /**
- *  The {@code Selection} class provides static methods for sorting an
- *  array using selection sort.
+ * 选择排序
  */
 public class Selection {
 

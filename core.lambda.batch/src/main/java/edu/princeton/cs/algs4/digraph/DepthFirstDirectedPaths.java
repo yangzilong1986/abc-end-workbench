@@ -12,12 +12,6 @@ public class DepthFirstDirectedPaths {
     private int[] edgeTo;      // edgeTo[v] = last edge on path from s to v
     private final int s;       // source vertex
 
-    /**
-     * Computes a directed path from {@code s} to every other vertex in digraph {@code G}.
-     * @param  G the digraph
-     * @param  s the source vertex
-     * @throws IllegalArgumentException unless {@code 0 <= s < V}
-     */
     public DepthFirstDirectedPaths(Digraph G, int s) {
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
@@ -36,13 +30,6 @@ public class DepthFirstDirectedPaths {
         }
     }
 
-    /**
-     * Is there a directed path from the source vertex {@code s} to vertex {@code v}?
-     * @param  v the vertex
-     * @return {@code true} if there is a directed path from the source
-     *         vertex {@code s} to vertex {@code v}, {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public boolean hasPathTo(int v) {
         validateVertex(v);
         return marked[v];
@@ -66,11 +53,6 @@ public class DepthFirstDirectedPaths {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-    /**
-     * Unit tests the {@code DepthFirstDirectedPaths} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         Digraph G =Digraph.buildDigraph();
         int s = 5;

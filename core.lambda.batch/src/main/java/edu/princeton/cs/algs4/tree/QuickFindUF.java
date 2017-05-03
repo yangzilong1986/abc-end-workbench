@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.tree;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
@@ -46,8 +46,11 @@ public class QuickFindUF {
         // p and q are already in the same component
         if (pID == qID) return;
 
-        for (int i = 0; i < id.length; i++)
-            if (id[i] == pID) id[i] = qID;
+        for (int i = 0; i < id.length; i++) {
+            if (id[i] == pID) {
+                id[i] = qID;
+            }
+        }
         count--;
     }
 
@@ -57,7 +60,9 @@ public class QuickFindUF {
         while (!StdIn.isEmpty()) {
             int p = StdIn.readInt();
             int q = StdIn.readInt();
-            if (uf.connected(p, q)) continue;
+            if (uf.connected(p, q)){
+                continue;
+            }
             uf.union(p, q);
             StdOut.println(p + " " + q);
         }

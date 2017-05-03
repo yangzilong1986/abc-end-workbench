@@ -1,5 +1,5 @@
 
-package edu.princeton.cs.algs4.alphabet;
+package edu.princeton.cs.algs4.sort;
 
 import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;

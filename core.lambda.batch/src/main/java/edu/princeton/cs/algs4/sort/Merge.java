@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.sort;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
@@ -26,14 +26,15 @@ public class Merge {
         // merge back to a[]
         int i = lo, j = mid+1;
         for (int k = lo; k <= hi; k++) {
-            if      (i > mid)
+            if (i > mid) {
                 a[k] = aux[j++];
-            else if (j > hi)
+            } else if (j > hi) {
                 a[k] = aux[i++];
-            else if (less(aux[j], aux[i]))
+            }else if (less(aux[j], aux[i])) {
                 a[k] = aux[j++];
-            else
+            }else {
                 a[k] = aux[i++];
+            }
         }
 
         // postcondition: a[lo .. hi] is sorted

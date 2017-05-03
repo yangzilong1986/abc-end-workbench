@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.tree;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
@@ -23,11 +23,6 @@ public class QuickUnionUF {
         }
     }
 
-    /**
-     * Returns the number of components.
-     *
-     * @return the number of components (between {@code 1} and {@code n})
-     */
     public int count() {
         return count;
     }
@@ -55,7 +50,9 @@ public class QuickUnionUF {
     public void union(int p, int q) {
         int rootP = find(p);
         int rootQ = find(q);
-        if (rootP == rootQ) return;
+        if (rootP == rootQ) {
+            return;
+        }
         parent[rootP] = rootQ; 
         count--;
     }

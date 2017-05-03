@@ -16,7 +16,7 @@ public class LazyPrimMST {
     private Queue<Edge> mst;     // edges in the MST
     //最小生成树的边
     private boolean[] marked;    // marked[v] = true if v on tree
-    //横切边，包括失效的边
+    //横切边，包括失效的边的MinPQ
     private MinPQ<Edge> pq;      // edges with one endpoint in tree
 
     /**
@@ -30,7 +30,6 @@ public class LazyPrimMST {
         // run Prim from all vertices to
         for (int v = 0; v < G.V(); v++)
             if (!marked[v]) {
-                // get a minimum spanning forest
                 prim(G, v);
             }
 
@@ -42,6 +41,7 @@ public class LazyPrimMST {
     private void prim(EdgeWeightedGraph G, int s) {
         scan(G, s);//假设是联通的
         // better to stop when mst has V-1 edges
+        //横切边，包括失效的边的MinPQ
         while (!pq.isEmpty()) {
             // smallest edge on pq
             //从pq中得到权重最小的边
@@ -60,6 +60,7 @@ public class LazyPrimMST {
             mst.enqueue(e);
             weight += e.weight();
             // v becomes part of tree
+            //横切边，包括失效的边的MinPQ
             if (!marked[v]) {
                 scan(G, v);
             }
@@ -77,6 +78,7 @@ public class LazyPrimMST {
         marked[v] = true;
         for (Edge e : G.adj(v)){
             if (!marked[e.other(v)]){
+                //横切边，包括失效的边的MinPQ
                 pq.insert(e);
             }
         }

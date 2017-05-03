@@ -49,7 +49,9 @@ public class DirectedEulerianPath {
 
         // digraph can't have an Eulerian path
         // (this condition is needed)
-        if (deficit > 1) return;
+        if (deficit > 1) {
+            return;
+        }
 
         // special case for digraph with zero edges (has a degenerate Eulerian path)
         if (s == -1) s = 0;
@@ -109,21 +111,6 @@ public class DirectedEulerianPath {
         return -1;
     }
 
-
-    /**************************************************************************
-     *
-     *  The code below is solely for testing correctness of the data type.
-     *
-     **************************************************************************/
-
-    // Determines whether a digraph has an Eulerian path using necessary
-    // and sufficient conditions (without computing the path itself):
-    //    - indegree(v) = outdegree(v) for every vertex,
-    //      except one vertex v may have outdegree(v) = indegree(v) + 1
-    //      (and one vertex v may have indegree(v) = outdegree(v) + 1)
-    //    - the graph is connected, when viewed as an undirected graph
-    //      (ignoring isolated vertices)
-    // This method is solely for unit testing.
     private static boolean hasEulerianPath(Digraph G) {
         if (G.E() == 0) return true;
 
