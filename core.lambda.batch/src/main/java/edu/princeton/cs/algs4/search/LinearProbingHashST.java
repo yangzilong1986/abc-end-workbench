@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4.tree;
+package edu.princeton.cs.algs4.search;
 
 import edu.princeton.cs.algs4.col.Queue;
 import edu.princeton.cs.algs4.utils.StdIn;

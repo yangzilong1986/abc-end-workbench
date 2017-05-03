@@ -1,18 +1,8 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.sort;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
 
-/**
- *  The {@code BinaryInsertion} class provides a static method for sorting an
- *  array using an optimized binary insertion sort with half exchanges.
- *  <p>
- *  This implementation makes ~ n lg n compares for any array of length n.
- *  However, in the worst case, the running time is quadratic because the
- *  number of array accesses can be proportional to n^2 (e.g, if the array
- *  is reverse sorted). As such, it is not suitable for sorting large
- *  arrays (unless the number of inversions is small).
- */
 public class BinaryInsertion {
 
     // This class should not be instantiated.
@@ -88,27 +78,3 @@ public class BinaryInsertion {
         show(a);
     }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

@@ -7,18 +7,7 @@ import edu.princeton.cs.algs4.col.Queue;
 import java.util.NoSuchElementException;
 
 /**
- *  The {@code AVLTreeST} class represents an ordered symbol table of
- *  generic key-value pairs. It supports the usual <em>put</em>, <em>get</em>,
- *  <em>contains</em>, <em>delete</em>, <em>size</em>, and <em>is-empty</em>
- *  methods. It also provides ordered methods for finding the <em>minimum</em>,
- *  <em>maximum</em>, <em>floor</em>, and <em>ceiling</em>. It also provides a
- *  <em>keys</em> method for iterating over all of the keys. A symbol table
- *  implements the <em>associative array</em> abstraction: when associating a
- *  value with a key that is already in the symbol table, the convention is to
- *  replace the old value with the new value. Unlike {@link java.util.Map}, this
- *  class uses the convention that values cannot be {@code null}
- *  —setting the value associated with a key to {@code null} is
- *  equivalent to deleting the key from the symbol table.
+ *
  */
 
 public class AVLTreeST<Key extends Comparable<Key>, Value> {

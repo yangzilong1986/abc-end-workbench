@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-public class BinomialMinPQ<Key> implements Iterable<Key> {
+public class MinPQBinomial<Key> implements Iterable<Key> {
 	private Node head;    				//head of the list of roots
 	private final Comparator<Key> comp;	//Comparator over the keys
 	
@@ -19,7 +19,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * Initializes an empty priority queue
 	 * Worst case is O(1)
 	 */
-	public BinomialMinPQ() {
+	public MinPQBinomial() {
 		comp = new MyComparator();
 	}
 	
@@ -28,7 +28,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * Worst case is O(1)
 	 * @param C a comparator over the keys
 	 */
-	public BinomialMinPQ(Comparator<Key> C) {
+	public MinPQBinomial(Comparator<Key> C) {
 		comp = C;
 	}
 	
@@ -37,7 +37,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * Worst case is O(n*log(n))
 	 * @param a an array of keys
 	 */
-	public BinomialMinPQ(Key[] a) {
+	public MinPQBinomial(Key[] a) {
 		comp = new MyComparator();
 		for (Key k : a) insert(k);
 	}
@@ -48,7 +48,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * @param C a comparator over the keys
 	 * @param a an array of keys
 	 */
-	public BinomialMinPQ(Comparator<Key> C, Key[] a) {
+	public MinPQBinomial(Comparator<Key> C, Key[] a) {
 		comp = C;
 		for (Key k : a) insert(k);
 	}
@@ -88,7 +88,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 		Node x = new Node();
 		x.key = key;
 		x.order = 0;
-		BinomialMinPQ<Key> H = new BinomialMinPQ<Key>(); //The Comparator oh the H heap is not used
+		MinPQBinomial<Key> H = new MinPQBinomial<Key>(); //The Comparator oh the H heap is not used
 		H.head = x;
 		this.head = this.union(H).head;
 	}
@@ -129,7 +129,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 				x = nextx;nextx = nextx.sibling;
 			}
 			x.sibling = prevx;
-			BinomialMinPQ<Key> H = new BinomialMinPQ<Key>();
+			MinPQBinomial<Key> H = new MinPQBinomial<Key>();
 			H.head = x;
 			head = union(H).head;
 		}
@@ -144,7 +144,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * @throws java.lang.IllegalArgumentException if the heap in parameter is null
 	 * @return the union of two heaps
 	 */
-	public BinomialMinPQ<Key> union(BinomialMinPQ<Key> heap) {
+	public MinPQBinomial<Key> union(MinPQBinomial<Key> heap) {
 		if (heap == null) throw new IllegalArgumentException("Cannot merge a Binomial Heap with null");
 		this.head = merge(new Node(), this.head, heap.head).sibling;
 		Node x = this.head;
@@ -233,12 +233,12 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	}
 	
 	private class MyIterator implements Iterator<Key> {
-		BinomialMinPQ<Key> data;
+		MinPQBinomial<Key> data;
 		
 		//Constructor clones recursively the elements in the queue
 		//It takes linear time
 		public MyIterator() {
-			data = new BinomialMinPQ<Key>(comp);
+			data = new MinPQBinomial<Key>(comp);
 			data.head = clone(head, false, false, null);
 		}
 		

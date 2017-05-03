@@ -22,7 +22,7 @@ import java.util.NoSuchElementException;
  *  The is-empty, min-index, min-key, and key-of operations take constant time.
  *  Construction takes time proportional to the specified capacity.
  */
-public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
+public class MinPQIndexedBinomial<Key> implements Iterable<Integer> {
 	private Node<Key> head;    			//Head of the list of roots
 	private Node<Key>[] nodes; 			//Array of indexed Nodes of the heap
 	private int n;			   		//Maximum size of the tree
@@ -43,7 +43,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
      * @param N number of keys in the priority queue, index from {@code 0} to {@code N-1}
      * @throws java.lang.IllegalArgumentException if {@code N < 0}
      */
-	public IndexBinomialMinPQ(int N) {
+	public MinPQIndexedBinomial(int N) {
 		if (N < 0) throw new IllegalArgumentException("Cannot create a priority queue of negative size");
 		comparator = new MyComparator();
 		nodes = (Node<Key>[]) new Node[N];
@@ -57,7 +57,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
      * @param comparator a Comparator over the keys
      * @throws java.lang.IllegalArgumentException if {@code N < 0}
      */
-	public IndexBinomialMinPQ(int N, Comparator<Key> comparator) {
+	public MinPQIndexedBinomial(int N, Comparator<Key> comparator) {
 		if (N < 0) throw new IllegalArgumentException("Cannot create a priority queue of negative size");
 		this.comparator = comparator;
 		nodes = (Node<Key>[]) new Node[N];
@@ -116,7 +116,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 		x.index = i;
 		x.order = 0;
 		nodes[i] = x;
-		IndexBinomialMinPQ<Key> H = new IndexBinomialMinPQ<Key>();
+		MinPQIndexedBinomial<Key> H = new MinPQIndexedBinomial<Key>();
 		H.head = x;
 		head = union(H).head;
 	}
@@ -179,7 +179,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 			}
 			x.parent = null;
 			x.sibling = prevx;
-			IndexBinomialMinPQ<Key> H = new IndexBinomialMinPQ<Key>();
+			MinPQIndexedBinomial<Key> H = new MinPQIndexedBinomial<Key>();
 			H.head = x;
 			head = union(H).head;
 		}
@@ -280,7 +280,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 			}
 			x.parent = null;
 			x.sibling = prevx;
-			IndexBinomialMinPQ<Key> H = new IndexBinomialMinPQ<Key>();
+			MinPQIndexedBinomial<Key> H = new MinPQIndexedBinomial<Key>();
 			H.head = x;
 			head = union(H).head;
 		}
@@ -393,7 +393,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 	//Merges two Binomial Heaps together and returns the resulting Binomial Heap
 	//It destroys the two Heaps in parameter, which should not be used any after.
 	//To guarantee logarithmic time, this function assumes the arrays are up-to-date
-	private IndexBinomialMinPQ<Key> union(IndexBinomialMinPQ<Key> heap) {
+	private MinPQIndexedBinomial<Key> union(MinPQIndexedBinomial<Key> heap) {
 		this.head = merge(new Node<Key>(), this.head, heap.head).sibling;
 		Node<Key> x = this.head;
 		Node<Key> prevx = null, nextx = x.sibling;
@@ -422,7 +422,7 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 	//Creates an empty heap
 	//The comparator is instanciated because it needs to,
 	//but won't be used by any heap created by this constructor
-	private IndexBinomialMinPQ() { comparator = null; }
+	private MinPQIndexedBinomial() { comparator = null; }
 	
 	/******************************************************************
 	 * Iterator
@@ -442,12 +442,12 @@ public class IndexBinomialMinPQ<Key> implements Iterable<Integer> {
 	}
 	
 	private class MyIterator implements Iterator<Integer> {
-		IndexBinomialMinPQ<Key> data;
+		MinPQIndexedBinomial<Key> data;
 		
 		//Constructor clones recursively the elements in the queue
 		//It takes linear time
 		public MyIterator() {
-			data = new IndexBinomialMinPQ<Key>(n, comparator);
+			data = new MinPQIndexedBinomial<Key>(n, comparator);
 			data.head = clone(head, false, false, null);
 		}
 		

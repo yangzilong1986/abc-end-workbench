@@ -2,7 +2,7 @@ package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
-import edu.princeton.cs.algs4.tree.ST;
+import edu.princeton.cs.algs4.search.ST;
 import edu.princeton.cs.algs4.utils.In;
 
 public class SymbolGraph {

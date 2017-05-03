@@ -6,13 +6,23 @@ import edu.princeton.cs.algs4.utils.StdOut;
 
 import java.util.NoSuchElementException;
 
+/**
+ * 二叉树查找,
+ * 存在树倾斜问题
+ * @param <Key>
+ * @param <Value>
+ */
 public class BST<Key extends Comparable<Key>, Value> {
+    //二叉树根接的
     private Node root;             // root of BST
-
+    //节点信息
     private class Node {
+        //键值
         private Key key;           // sorted by key
+        //Data
         private Value val;         // associated data
         private Node left, right;  // left and right subtrees
+        //子树结点
         private int size;          // number of nodes in subtree
 
         public Node(Key key, Value val, int size) {
@@ -38,12 +48,17 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // return number of key-value pairs in BST rooted at x
     private int size(Node x) {
-        if (x == null) return 0;
-        else return x.size;
+        if (x == null) {
+            return 0;
+        }else {
+            return x.size;
+        }
     }
 
     public boolean contains(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to contains() is null");
+        }
         return get(key) != null;
     }
 
@@ -52,16 +67,27 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private Value get(Node x, Key key) {
-        if (key == null) throw new IllegalArgumentException("called get() with a null key");
-        if (x == null) return null;
+        if (key == null) {
+            throw new IllegalArgumentException("called get() with a null key");
+        }
+        if (x == null) {
+            return null;
+        }
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) return get(x.left, key);
-        else if (cmp > 0) return get(x.right, key);
-        else              return x.val;
+        if  (cmp < 0) {
+            return get(x.left, key);
+        }
+        else if (cmp > 0) {
+            return get(x.right, key);
+        }else              {
+            return x.val;
+        }
     }
 
     public void put(Key key, Value val) {
-        if (key == null) throw new IllegalArgumentException("calledput() with a null key");
+        if (key == null) {
+            throw new IllegalArgumentException("calledput() with a null key");
+        }
         if (val == null) {
             delete(key);
             return;
@@ -70,62 +96,69 @@ public class BST<Key extends Comparable<Key>, Value> {
         assert check();
     }
 
+    /**
+     * 递归插入
+     * @param x
+     * @param key
+     * @param val
+     * @return
+     */
     private Node put(Node x, Key key, Value val) {
-        if (x == null) return new Node(key, val, 1);
+        if (x == null) {
+            return new Node(key, val, 1);
+        }
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) x.left  = put(x.left,  key, val);
-        else if (cmp > 0) x.right = put(x.right, key, val);
-        else              x.val   = val;
+        //
+        if(cmp < 0) {
+            x.left  = put(x.left,  key, val);
+        }else if (cmp > 0){
+            x.right = put(x.right, key, val);
+        }else {
+            x.val = val;
+        }
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
 
-
-    /**
-     * Removes the smallest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
     public void deleteMin() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Symbol table underflow");
+        }
         root = deleteMin(root);
         assert check();
     }
 
     private Node deleteMin(Node x) {
-        if (x.left == null) return x.right;
+        if (x.left == null) {
+            return x.right;
+        }
         x.left = deleteMin(x.left);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
 
-    /**
-     * Removes the largest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
     public void deleteMax() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Symbol table underflow");
+        }
         root = deleteMax(root);
         assert check();
     }
 
     private Node deleteMax(Node x) {
-        if (x.right == null) return x.left;
+        if (x.right == null) {
+            return x.left;
+        }
+
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
 
-    /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
-     *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("called delete() with a null key");
+        if (key == null) {
+            throw new IllegalArgumentException("called delete() with a null key");
+        }
         root = delete(root, key);
         assert check();
     }
@@ -134,15 +167,17 @@ public class BST<Key extends Comparable<Key>, Value> {
         if (x == null) return null;
 
         int cmp = key.compareTo(x.key);
-        if(cmp < 0)
-            x.left  = delete(x.left,  key);
-        else if (cmp > 0)
+        if(cmp < 0) {
+            x.left = delete(x.left, key);
+        }else if (cmp > 0) {
             x.right = delete(x.right, key);
-        else { 
-            if (x.right == null)
+        }else {
+            if (x.right == null) {
                 return x.left;
-            if (x.left  == null)
+            }
+            if (x.left  == null) {
                 return x.right;
+            }
             Node t = x;
             x = min(t.right);
             x.right = deleteMin(t.right);
@@ -154,76 +189,100 @@ public class BST<Key extends Comparable<Key>, Value> {
 
 
     public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("called min() with empty symbol table");
+        if (isEmpty()) {
+            throw new NoSuchElementException("called min() with empty symbol table");
+        }
         return min(root).key;
     } 
 
     private Node min(Node x) { 
-        if (x.left == null)
+        if (x.left == null) {
             return x;
-        else
+        }
+        else {
             return min(x.left);
+        }
     } 
 
     public Key max() {
-        if (isEmpty()) throw new NoSuchElementException("called max() with empty symbol table");
+        if (isEmpty()) {
+            throw new NoSuchElementException("called max() with empty symbol table");
+        }
         return max(root).key;
     } 
 
     private Node max(Node x) {
-        if (x.right == null)
+        if (x.right == null) {
             return x;
-        else
+        }else {
             return max(x.right);
+        }
     } 
 
     public Key floor(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-        if (isEmpty()) throw new NoSuchElementException("called floor() with empty symbol table");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to floor() is null");
+        }
+        if (isEmpty()) {
+            throw new NoSuchElementException("called floor() with empty symbol table");
+        }
         Node x = floor(root, key);
-        if (x == null) return null;
-        else return x.key;
+        if (x == null) {
+            return null;
+        }else {
+            return x.key;
+        }
     } 
 
     private Node floor(Node x, Key key) {
-        if (x == null)
+        if (x == null) {
             return null;
+        }
         int cmp = key.compareTo(x.key);
-        if (cmp == 0)
+        if (cmp == 0) {
             return x;
-        if (cmp <  0)
+        }
+        if (cmp <  0) {
             return floor(x.left, key);
+        }
         Node t = floor(x.right, key); 
-        if (t != null)
+        if (t != null) {
             return t;
-        else
+        }else {
             return x;
+        }
     } 
 
     public Key ceiling(Key key) {
-        if (key == null)
+        if (key == null) {
             throw new IllegalArgumentException("argument to ceiling() is null");
-        if (isEmpty())
+        }
+        if (isEmpty()) {
             throw new NoSuchElementException("called ceiling() with empty symbol table");
+        }
         Node x = ceiling(root, key);
-        if (x == null)
+        if (x == null) {
             return null;
-        else
+        }else {
             return x.key;
+        }
     }
 
     private Node ceiling(Node x, Key key) {
-        if (x == null)
+        if (x == null) {
             return null;
+        }
         int cmp = key.compareTo(x.key);
-        if (cmp == 0)
+        if (cmp == 0) {
             return x;
+        }
         if (cmp < 0) { 
             Node t = ceiling(x.left, key); 
-            if (t != null)
+            if (t != null) {
                 return t;
-            else
+            }else {
                 return x;
+            }
         } 
         return ceiling(x.right, key); 
     } 
@@ -239,34 +298,39 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // Return key of rank k. 
     private Node select(Node x, int k) {
-        if (x == null)
+        if (x == null) {
             return null;
+        }
         int t = size(x.left); 
-        if (t > k)
-            return select(x.left,  k);
-        else if (t < k)
-            return select(x.right, k-t-1);
-        else
+        if (t > k) {
+            return select(x.left, k);
+        }else if (t < k) {
+            return select(x.right, k - t - 1);
+        }else {
             return x;
+        }
     } 
 
     public int rank(Key key) {
-        if (key == null)
+        if (key == null) {
             throw new IllegalArgumentException("argument to rank() is null");
+        }
         return rank(key, root);
     } 
 
     // Number of keys in the subtree less than key.
     private int rank(Key key, Node x) {
-        if (x == null)
+        if (x == null) {
             return 0;
+        }
         int cmp = key.compareTo(x.key); 
-        if  (cmp < 0)
+        if  (cmp < 0) {
             return rank(key, x.left);
-        else if (cmp > 0)
+        }else if (cmp > 0) {
             return 1 + size(x.left) + rank(key, x.right);
-        else
+        }else {
             return size(x.left);
+        }
     } 
 
     public Iterable<Key> keys() {
@@ -275,10 +339,12 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     public Iterable<Key> keys(Key lo, Key hi) {
-        if (lo == null)
+        if (lo == null) {
             throw new IllegalArgumentException("first argument to keys() is null");
-        if (hi == null)
+        }
+        if (hi == null) {
             throw new IllegalArgumentException("second argument to keys() is null");
+        }
 
         Queue<Key> queue = new Queue<Key>();
         keys(root, queue, lo, hi);
@@ -286,29 +352,38 @@ public class BST<Key extends Comparable<Key>, Value> {
     } 
 
     private void keys(Node x, Queue<Key> queue, Key lo, Key hi) { 
-        if (x == null) return; 
+        if (x == null) {
+            return;
+        }
         int cmplo = lo.compareTo(x.key); 
         int cmphi = hi.compareTo(x.key); 
-        if (cmplo < 0)
+        if (cmplo < 0) {
             keys(x.left, queue, lo, hi);
-        if (cmplo <= 0 && cmphi >= 0)
+        }
+        if (cmplo <= 0 && cmphi >= 0) {
             queue.enqueue(x.key);
-        if (cmphi > 0)
+        }
+        if (cmphi > 0) {
             keys(x.right, queue, lo, hi);
+        }
     } 
 
     public int size(Key lo, Key hi) {
-        if (lo == null)
+        if (lo == null) {
             throw new IllegalArgumentException("first argument to size() is null");
-        if (hi == null)
+        }
+        if (hi == null) {
             throw new IllegalArgumentException("second argument to size() is null");
+        }
 
-        if (lo.compareTo(hi) > 0)
+        if (lo.compareTo(hi) > 0) {
             return 0;
-        if (contains(hi))
+        }
+        if (contains(hi)) {
             return rank(hi) - rank(lo) + 1;
-        else
+        }else {
             return rank(hi) - rank(lo);
+        }
     }
 
     public int height() {
@@ -316,7 +391,9 @@ public class BST<Key extends Comparable<Key>, Value> {
         return height(root);
     }
     private int height(Node x) {
-        if (x == null) return -1;
+        if (x == null) {
+            return -1;
+        }
         return 1 + Math.max(height(x.left), height(x.right));
     }
 
@@ -326,7 +403,9 @@ public class BST<Key extends Comparable<Key>, Value> {
         queue.enqueue(root);
         while (!queue.isEmpty()) {
             Node x = queue.dequeue();
-            if (x == null) continue;
+            if (x == null) {
+                continue;
+            }
             keys.enqueue(x.key);
             queue.enqueue(x.left);
             queue.enqueue(x.right);
@@ -355,12 +434,15 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private boolean isBST(Node x, Key min, Key max) {
-        if (x == null)
+        if (x == null) {
             return true;
-        if (min != null && x.key.compareTo(min) <= 0)
+        }
+        if (min != null && x.key.compareTo(min) <= 0) {
             return false;
-        if (max != null && x.key.compareTo(max) >= 0)
+        }
+        if (max != null && x.key.compareTo(max) >= 0) {
             return false;
+        }
         return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
     } 
 
@@ -370,19 +452,25 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private boolean isSizeConsistent(Node x) {
-        if (x == null)
+        if (x == null) {
             return true;
-        if (x.size != size(x.left) + size(x.right) + 1)
+        }
+        if (x.size != size(x.left) + size(x.right) + 1) {
             return false;
+        }
         return isSizeConsistent(x.left) && isSizeConsistent(x.right);
     } 
 
     // check that ranks are consistent
     private boolean isRankConsistent() {
         for (int i = 0; i < size(); i++)
-            if (i != rank(select(i))) return false;
+            if (i != rank(select(i))) {
+                return false;
+            }
         for (Key key : keys())
-            if (key.compareTo(select(rank(key))) != 0) return false;
+            if (key.compareTo(select(rank(key))) != 0) {
+                return false;
+            }
         return true;
     }
 

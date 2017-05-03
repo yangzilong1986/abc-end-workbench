@@ -15,8 +15,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 	
 	
 	public IndexMultiwayMinPQ(int N, int D) {
-		if (N < 0) throw new IllegalArgumentException("Maximum number of elements cannot be negative");
-		if (D < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (N < 0) {
+			throw new IllegalArgumentException("Maximum number of elements cannot be negative");
+		}
+		if (D < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = D;
 		nmax = N;
 		pq = new int[nmax+D];
@@ -27,8 +31,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 	}
 	
 	public IndexMultiwayMinPQ(int N, Comparator<Key> C, int D) {
-		if (N < 0) throw new IllegalArgumentException("Maximum number of elements cannot be negative");
-		if (D < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (N < 0) {
+			throw new IllegalArgumentException("Maximum number of elements cannot be negative");
+		}
+		if (D < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = D;
 		nmax = N;
 		pq = new int[nmax+D];
@@ -44,7 +52,9 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 
 
 	public boolean contains(int i) {
-		if (i < 0 ||i >= nmax) throw new IndexOutOfBoundsException();
+		if (i < 0 ||i >= nmax) {
+			throw new IndexOutOfBoundsException();
+		}
 		return qp[i+d] != -1;
 	}
 
@@ -54,8 +64,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 
 
 	public void insert(int i, Key key) {
-		if (i < 0 || i >= nmax) throw new IndexOutOfBoundsException();
-		if (contains(i)) throw new IllegalArgumentException("Index already there");
+		if (i < 0 || i >= nmax) {
+			throw new IndexOutOfBoundsException();
+		}
+		if (contains(i)) {
+			throw new IllegalArgumentException("Index already there");
+		}
 		keys[i+d] = key;
 		pq[n+d] = i;
 		qp[i+d] = n;
@@ -64,19 +78,25 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 
 
 	public int minIndex() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		return pq[d];
 	}
 
 
 	public Key minKey() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		return keys[pq[d]+d];
 	}
 
 
 	public int delMin() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		int min = pq[d];
 		exch(0, --n);
 		sink(0);
@@ -87,18 +107,29 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 	}
 
 	public Key keyOf(int i) {
-		if (i < 0 || i >= nmax) throw new IndexOutOfBoundsException();
-		if (! contains(i)) throw new NoSuchElementException("Specified index is not in the queue");
+		if (i < 0 || i >= nmax) {
+			throw new IndexOutOfBoundsException();
+		}
+		if (! contains(i)) {
+			throw new NoSuchElementException("Specified index is not in the queue");
+		}
 		return keys[i+d];
 	}
 
 	public void changeKey(int i, Key key) {
-		if (i < 0 || i >= nmax) throw new IndexOutOfBoundsException();
-		if (! contains(i)) throw new NoSuchElementException("Specified index is not in the queue");
+		if (i < 0 || i >= nmax) {
+			throw new IndexOutOfBoundsException();
+		}
+		if (! contains(i)) {
+			throw new NoSuchElementException("Specified index is not in the queue");
+		}
 		Key tmp = keys[i+d];
 		keys[i+d] = key;
-		if (comp.compare(key, tmp) <= 0) { swim(qp[i+d]);}
-		else 							 { sink(qp[i+d]);}
+		if (comp.compare(key, tmp) <= 0) {
+			swim(qp[i+d]);
+		}else{
+			sink(qp[i+d]);
+		}
 	}
 
 	public void decreaseKey(int i, Key key) {
@@ -183,7 +214,9 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		int loBound = d*i+1, hiBound = d*i+d;
 		int min = loBound;
 		for (int cur = loBound; cur <= hiBound; cur++) {
-			if (cur < n && greater(min, cur)) min = cur;
+			if (cur < n && greater(min, cur)) {
+				min = cur;
+			}
 		}
 		return min;
 	}
@@ -208,7 +241,9 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		}
 		
 		public Integer next() {
-                        if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+				throw new NoSuchElementException();
+			}
 			return clone.delMin();
 		}
 		

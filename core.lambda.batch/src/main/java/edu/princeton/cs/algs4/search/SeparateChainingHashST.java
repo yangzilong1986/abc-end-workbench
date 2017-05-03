@@ -1,9 +1,14 @@
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.search;
 
 import edu.princeton.cs.algs4.col.Queue;
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
 
+/**
+ * 基于拉链式的散列表
+ * @param <Key>
+ * @param <Value>
+ */
 public class SeparateChainingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 

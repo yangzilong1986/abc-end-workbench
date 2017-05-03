@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.col.Queue;
 
 import java.util.NoSuchElementException;
 
-public class RedBlackBST<Key extends Comparable<Key>, Value> {
+public class BSTRedBlack<Key extends Comparable<Key>, Value> {
 
     private static final boolean RED   = true;
     private static final boolean BLACK = false;
@@ -32,7 +32,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public RedBlackBST() {
+    public BSTRedBlack() {
     }
 
    /***************************************************************************
@@ -606,7 +606,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
     } 
 
     public static void main(String[] args) {
-        RedBlackBST<String, Integer> st = new RedBlackBST<String, Integer>();
+        BSTRedBlack<String, Integer> st = new BSTRedBlack<String, Integer>();
         for (int i = 0; !StdIn.isEmpty(); i++) {
             String key = StdIn.readString();
             st.put(key, i);
