@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code TwoPersonZeroSumGame} class represents a data type for
  *  computing optimal row and column strategies to two-person zero-sum games.

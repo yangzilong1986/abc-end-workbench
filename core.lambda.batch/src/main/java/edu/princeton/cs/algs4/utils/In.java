@@ -1,7 +1,5 @@
 package edu.princeton.cs.algs4.utils;
 
-import edu.princeton.cs.algs4.StdIn;
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -33,7 +31,7 @@ import java.util.regex.Pattern;
  *  by Robert Sedgewick and Kevin Wayne.
  */
 public final class In {
-    
+    public static final String PATH_NAME="D:\\DevN\\sample-data\\algs4-data\\algs4-data\\";
     ///// begin: section (1 of 2) of code duplicated from In to StdIn.
     
     // assume Unicode UTF-8 encoding

@@ -2,7 +2,7 @@ package edu.princeton.cs.algs4.graph;
 
 
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class Bipartite {

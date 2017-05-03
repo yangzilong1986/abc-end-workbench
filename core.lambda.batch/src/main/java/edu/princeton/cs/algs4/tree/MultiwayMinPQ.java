@@ -4,22 +4,6 @@ import java.util.Iterator;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-/**
- *  The MultiwayMinPQ class represents a priority queue of generic keys.
- *  It supports the usual insert and delete-the-minimum operations.
- *  It also supports methods for peeking at the minimum key,
- *  testing if the priority queue is empty, and iterating through
- *  the keys.
- *  It is possible to build the priority queue using a Comparator.
- *  If not, the natural order relation between the keys will be used.
- *  
- *  This implementation uses a multiway heap.
- *  For simplified notations, logarithm in base d will be referred as log-d
- *  The delete-the-minimum operation takes time proportional to d*log-d(n)
- *  The insert takes time proportional to log-d(n)
- *  The is-empty, min-key and size operations take constant time.
- *  Constructor takes time proportional to the specified capacity.
- */
 public class MultiwayMinPQ<Key> implements Iterable<Key> {
 	private final int d; 				//Dimension of the heap
 	private int n;						//Number of keys currently in the heap
@@ -27,48 +11,30 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 	private Key[] keys;					//Array of keys
 	private final Comparator<Key> comp;	//Comparator over the keys
 	
-	
-    /**
-     * Initializes an empty priority queue
-     * Worst case is O(d)
-     *
-     * @param  d dimension of the heap
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
-     */
 	public MultiwayMinPQ(int d) {
-		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (d < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = d;
 		order = 1;
 		keys = (Key[]) new Comparable[d << 1];
 		comp = new MyComparator();
 	}
 	
-    /**
-     * Initializes an empty priority queue
-     * Worst case is O(d)
-     *
-     * @param  d dimension of the heap
-     * @param  comparator a Comparator over the keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
-     */
 	public MultiwayMinPQ(Comparator<Key> comparator, int d) {
-		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (d < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = d;
 		order = 1;
 		keys = (Key[]) new Comparable[d << 1];
 		comp = comparator;
 	}
 	
-    /**
-     * Initializes a priority queue with given indexes
-     * Worst case is O(n*log-d(n))
-     *
-     * @param  d dimension of the heap
-     * @param  a an array of keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
-     */
 	public MultiwayMinPQ(Key[] a, int d) {
-		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (d < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = d;
 		order = 1;
 		keys = (Key[]) new Comparable[d << 1];
@@ -76,47 +42,27 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		for (Key key : a) insert(key);
 	}
 	
-    /**
-     * Initializes a priority queue with given indexes
-     * Worst case is O(a*log-d(n))
-     *
-     * @param  d dimension of the heap
-     * @param  comparator a Comparator over the keys
-     * @param  a an array of keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
-     */
 	public MultiwayMinPQ(Comparator<Key> comparator, Key[] a, int d) {
-		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
+		if (d < 2) {
+			throw new IllegalArgumentException("Dimension should be 2 or over");
+		}
 		this.d = d;
 		order = 1;
 		keys = (Key[]) new Comparable[d << 1];
 		comp = comparator;
-		for (Key key : a) insert(key);
+		for (Key key : a) {
+			insert(key);
+		}
 	}
 
-        /**
-	 * Whether the priority queue is empty
-	 * Worst case is O(1)
-	 * @return true if the priority queue is empty, false if not
-	 */
 	public boolean isEmpty() {
 		return n == 0;
 	}
 
-	/**
-	 * Number of elements currently on the priority queue
-	 * Worst case is O(1)
-	 * @return the number of elements on the priority queue
-	 */
 	public int size() {
 		return n;
 	}
 
-	/**
-	 * Puts a Key on the priority queue
-	 * Worst case is O(log-d(n))
-	 * @param key a Key
-	 */
 	public void insert(Key key) {
 		keys[n+d] = key;
 		swim(n++);
@@ -126,25 +72,17 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		}
 	}
 
-	/**
-	 * Gets the minimum key currently in the queue
-	 * Worst case is O(1)
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
-	 * @return the minimum key currently in the priority queue
-	 */
 	public Key minKey() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		return keys[d];
 	}
 
-	/**
-	 * Deletes the minimum key
-	 * Worst case is O(d*log-d(n))
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
-	 * @return the minimum key
-	 */
 	public Key delMin() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		exch(0, --n);
 		sink(0);
 		Key min = keys[n+d];
@@ -157,15 +95,14 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		return min;
 	}
 	
-	/***************************
-	 * General helper functions
-	 **************************/
-	
+
 	//Compares two keys
 	private boolean greater(int x, int y) {
 		int i = x+d, j = y+d;
-		if (keys[i] == null) return false;
-		if (keys[j] == null) return true;
+		if (keys[i] == null)
+			return false;
+		if (keys[j] == null)
+			return true;
 		return comp.compare(keys[i], keys[j]) > 0;
 	}
 	
@@ -206,27 +143,17 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		}
 	}
 	
-	/***************************
-	 * Deletes the minimum child
-	 **************************/
-	
-	//Return the minimum child of i
 	private int minChild(int i) {
 		int loBound = d*i+1, hiBound = d*i+d;
 		int min = loBound;
 		for (int cur = loBound; cur <= hiBound; cur++) {
-			if (cur < n && greater(min, cur)) min = cur;
+			if (cur < n && greater(min, cur)) {
+				min = cur;
+			}
 		}
 		return min;
 	}
 	
-	/***************************
-	 * Resize the priority queue
-	 **************************/
-	
-	//Resizes the array containing the keys
-	//If the heap is full, it adds one floor
-	//If the heap has two floors empty, it removes one
 	private void resize(int N) {
 		Key[] array = (Key[]) new Comparable[N];
 		for (int i = 0; i < Math.min(keys.length, array.length); i++) {
@@ -236,19 +163,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		keys = array;
 	}
 	
-	/***************************
-	 * Iterator
-	 **************************/
-	
-	/**
-	 * Gets an Iterator over the keys in the priority queue in ascending order
-	 * The Iterator does not implement the remove() method
-	 * iterator() : Worst case is O(n)
-	 * next() : 	Worst case is O(d*log-d(n))
-	 * hasNext() : 	Worst case is O(1)
-	 * @return an Iterator over the keys in the priority queue in ascending order
-	 */
-	
+
 	public Iterator<Key> iterator() {
 		return new MyIterator();
 	}
@@ -280,11 +195,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		}
 	}
 	
-	/***************************
-	 * Comparator
-	 **************************/
-	
-	//default Comparator
+//default Comparator
 	private class MyComparator implements Comparator<Key> {
 		@Override
 		public int compare(Key key1, Key key2) {

@@ -2,7 +2,9 @@ package edu.princeton.cs.algs4.digraph;
 
 import edu.princeton.cs.algs4.*;
 import edu.princeton.cs.algs4.col.Stack;
+import edu.princeton.cs.algs4.col.Bag;
 import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 public class EdgeWeightedDigraph {
     private static final String NEWLINE = System.getProperty("line.separator");

@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code GaussJordanElimination} data type provides methods
  *  to solve a linear system of equations <em>Ax</em> = <em>b</em>,

@@ -1,7 +1,7 @@
 package edu.princeton.cs.algs4.flow;
 
 import edu.princeton.cs.algs4.col.Queue;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code FordFulkerson} class represents a data type for computing a
@@ -17,6 +17,7 @@ import edu.princeton.cs.algs4.StdOut;
  *  run much faster.
  *  Afterwards, the {@code inCut()} and {@code value()} methods take
  *  constant time.
+ *  最短增广路径，最大流量算法
  */
 public class FordFulkerson {
     private static final double FLOATING_POINT_EPSILON = 1E-11;

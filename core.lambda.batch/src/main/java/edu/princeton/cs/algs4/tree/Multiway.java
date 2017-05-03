@@ -1,46 +1,41 @@
 /******************************************************************************
- *  Compilation:  javac Multiway.java
- *  Execution:    java Multiway input1.txt input2.txt input3.txt ...
- *  Dependencies: IndexMinPQ.java In.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/24pq/m1.txt
- *                http://algs4.cs.princeton.edu/24pq/m2.txt
- *                http://algs4.cs.princeton.edu/24pq/m3.txt
- * 
- *  Merges together the sorted input stream given as command-line arguments
- *  into a single sorted output stream on standard output.
- *
- *  % more m1.txt 
- *  A B C F G I I Z
- *
- *  % more m2.txt 
- *  B D H P Q Q
- * 
- *  % more m3.txt 
- *  A B E F J N
- *
- *  % java Multiway m1.txt m2.txt m3.txt 
- *  A A B B B C D E F F G H I I J N P Q Q Z 
- *
+ * Compilation:  javac Multiway.java
+ * Execution:    java Multiway input1.txt input2.txt input3.txt ...
+ * Dependencies: IndexMinPQ.java In.java StdOut.java
+ * Data files:   http://algs4.cs.princeton.edu/24pq/m1.txt
+ * http://algs4.cs.princeton.edu/24pq/m2.txt
+ * http://algs4.cs.princeton.edu/24pq/m3.txt
+ * <p>
+ * Merges together the sorted input stream given as command-line arguments
+ * into a single sorted output stream on standard output.
+ * <p>
+ * % more m1.txt
+ * A B C F G I I Z
+ * <p>
+ * % more m2.txt
+ * B D H P Q Q
+ * <p>
+ * % more m3.txt
+ * A B E F J N
+ * <p>
+ * % java Multiway m1.txt m2.txt m3.txt
+ * A A B B B C D E F F G H I I J N P Q Q Z
  ******************************************************************************/
 
 package edu.princeton.cs.algs4.tree;
 
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.tree.IndexMinPQ;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.utils.In;
 
 /**
- *  The {@code Multiway} class provides a client for reading in several
- *  sorted text files and merging them together into a single sorted
- *  text stream.
- *  This implementation uses a {@link IndexMinPQ} to perform the multiway
- *  merge. 
+ *  优先队列的多路并归
  */
 
-public class Multiway { 
+public class Multiway {
 
     // This class should not be instantiated.
-    private Multiway() { }
+    private Multiway() {
+    }
 
     // merge together the sorted input streams and write the sorted result to standard output
     private static void merge(In[] streams) {
@@ -61,14 +56,6 @@ public class Multiway {
     }
 
 
-    /**
-     *  Reads sorted text files specified as command-line arguments;
-     *  merges them together into a sorted output; and writes
-     *  the results to standard output.
-     *  Note: this client does not check that the input files are sorted.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         int n = args.length;
         In[] streams = new In[n];

@@ -1,11 +1,11 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.*;
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.dgraph.Topological;
+import edu.princeton.cs.algs4.digraph.Topological;
 import edu.princeton.cs.algs4.digraph.DirectedEdge;
 import edu.princeton.cs.algs4.digraph.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code AcyclicSP} class represents a data type for solving the

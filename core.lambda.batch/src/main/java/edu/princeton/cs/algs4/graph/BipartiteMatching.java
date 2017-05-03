@@ -1,7 +1,7 @@
 package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.col.Queue;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 public class BipartiteMatching {
     private static final int UNMATCHED = -1;

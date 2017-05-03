@@ -25,8 +25,8 @@
 package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.digraph.DirectedEdge;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.digraph.EdgeWeightedDigraph;
 
 /**

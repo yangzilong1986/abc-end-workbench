@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code Complex} class represents a complex number.
  *  Complex numbers are immutable: their values cannot be changed after they

@@ -1,34 +1,18 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
- *  The {@code DegreesOfSeparation} class provides a client for finding
- *  the degree of separation between one distinguished individual and
- *  every other individual in a social network.
- *  As an example, if the social network consists of actors in which
- *  two actors are connected by a link if they appeared in the same movie,
- *  and Kevin Bacon is the distinguished individual, then the client
- *  computes the Kevin Bacon number of every actor in the network.
-  */
+ * 间隔的度数
+ * 这段代码使用了SymbolGraph 和BreadthFirstPath 来查找图中的最短路径。
+ * 对于movies.txt，可以用它来玩Kevin Bacon 游戏。
+ */
 public class DegreesOfSeparation {
 
     // this class cannot be instantiated
     private DegreesOfSeparation() { }
 
-    /**
-     *  Reads in a social network from a file, and then repeatedly reads in
-     *  individuals from standard input and prints out their degrees of
-     *  separation.
-     *  Takes three command-line arguments: the name of a file,
-     *  a delimiter, and the name of the distinguished individual.
-     *  Each line in the file contains the name of a vertex, followed by a
-     *  list of the names of the vertices adjacent to that vertex,
-     *  separated by the delimiter.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         String filename  = args[0];
         String delimiter = args[1];

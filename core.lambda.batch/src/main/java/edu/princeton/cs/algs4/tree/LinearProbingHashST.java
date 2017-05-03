@@ -1,8 +1,8 @@
 package edu.princeton.cs.algs4.tree;
 
 import edu.princeton.cs.algs4.col.Queue;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code LinearProbingHashST} class represents a symbol table of generic

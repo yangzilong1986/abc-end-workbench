@@ -1,11 +1,13 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.*;
 import edu.princeton.cs.algs4.col.Queue;
-import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.StdOut;
+import edu.princeton.cs.algs4.weightedgraph.Edge;
+import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedGraph;
 
 /**
  * 图的联通性
+ * 深度优先搜索的一个应用就是找出一幅图的所有连通分量
  */
 public class CC {
     private boolean[] marked;   // marked[v] = has vertex v been marked?
@@ -13,11 +15,6 @@ public class CC {
     private int[] size;         // size[id] = number of vertices in given component
     private int count;          // number of connected components
 
-    /**
-     * Computes the connected components of the undirected graph {@code G}.
-     *
-     * @param G the undirected graph
-     */
     public CC(Graph G) {
         marked = new boolean[G.V()];
         id = new int[G.V()];
@@ -30,11 +27,6 @@ public class CC {
         }
     }
 
-    /**
-     * Computes the connected components of the edge-weighted graph {@code G}.
-     *
-     * @param G the edge-weighted graph
-     */
     public CC(EdgeWeightedGraph G) {
         marked = new boolean[G.V()];
         id = new int[G.V()];
@@ -72,6 +64,11 @@ public class CC {
         }
     }
 
+    /**
+     * v 所在的连通分量的标识符（0 ～ count()-1）
+     * @param v
+     * @return
+     */
     public int id(int v) {
         validateVertex(v);
         return id[v];
@@ -82,11 +79,20 @@ public class CC {
         return size[id[v]];
     }
 
+    /**
+     * 连通分量数
+     * @return
+     */
     public int count() {
         return count;
     }
 
-
+    /**
+     * v 和w 连通吗
+     * @param v
+     * @param w
+     * @return
+     */
     public boolean connected(int v, int w) {
         validateVertex(v);
         validateVertex(w);
@@ -114,8 +120,7 @@ public class CC {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        Graph G = new Graph(in);
+        Graph G =Graph.buildGraph();
         CC cc = new CC(G);
 
         // number of connected components

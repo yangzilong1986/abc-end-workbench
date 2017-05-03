@@ -1,10 +1,8 @@
 package edu.princeton.cs.algs4.digraph;
 
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.dgraph.TransitiveClosure;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.col.Queue;
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.dgraph.Digraph;
 import edu.princeton.cs.algs4.utils.In;
 
 /**
@@ -140,7 +138,8 @@ public class TarjanSCC {
      */
     public static void main(String[] args) {
         In in = new In(args[0]);
-        Digraph G = new Digraph(in);
+//        Digraph G = new Digraph(in);
+        Digraph G =null;// new Digraph(in);
         TarjanSCC scc = new TarjanSCC(G);
 
         // number of connected components

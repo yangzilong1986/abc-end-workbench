@@ -1,18 +1,18 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.col.Bag;
 import edu.princeton.cs.algs4.utils.In;
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 import java.util.NoSuchElementException;
 
 public class Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
-    private final int V;
-    private int E;
-    private Bag<Integer>[] adj;
+    private final int V;//顶点数
+    private int E;//边数
+    private Bag<Integer>[] adj;//邻接表
     
     public Graph(int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
@@ -24,35 +24,6 @@ public class Graph {
         }
     }
 
-    public Graph(In in) {
-        try {
-            this.V = in.readInt();
-            if (V < 0) throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
-            adj = (Bag<Integer>[]) new Bag[V];
-            for (int v = 0; v < V; v++) {
-                adj[v] = new Bag<Integer>();
-            }
-            int E = in.readInt();
-            if (E < 0) throw new IllegalArgumentException("number of edges in a Graph must be nonnegative");
-            for (int i = 0; i < E; i++) {
-                int v = in.readInt();
-                int w = in.readInt();
-                validateVertex(v);
-                validateVertex(w);
-                addEdge(v, w); 
-            }
-        }
-        catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Graph constructor", e);
-        }
-    }
-
-
-    /**
-     * Initializes a new graph that is a deep copy of {@code G}.
-     *
-     * @param  G the graph to copy
-     */
     public Graph(Graph G) {
         this(G.V());
         this.E = G.E();
@@ -68,25 +39,14 @@ public class Graph {
         }
     }
 
-    /**
-     * Returns the number of vertices in this graph.
-     *
-     * @return the number of vertices in this graph
-     */
     public int V() {
         return V;
     }
 
-    /**
-     * Returns the number of edges in this graph.
-     *
-     * @return the number of edges in this graph
-     */
     public int E() {
         return E;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
@@ -100,7 +60,7 @@ public class Graph {
         adj[w].add(v);
     }
 
-
+    //顶点
     public Iterable<Integer> adj(int v) {
         validateVertex(v);
         return adj[v];
@@ -131,9 +91,19 @@ public class Graph {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        Graph G = new Graph(in);
+        Graph G = buildGraph();
         StdOut.println(G);
     }
-
+    public static Graph buildGraph(){
+        Graph G = new Graph(6);
+        G.addEdge(0, 5);
+        G.addEdge(2, 4);
+        G.addEdge(2, 3);
+        G.addEdge(1, 2);
+        G.addEdge(0, 1);
+        G.addEdge(3, 4);
+        G.addEdge(3, 5);
+        G.addEdge(0, 2);
+        return G;
+    }
 }

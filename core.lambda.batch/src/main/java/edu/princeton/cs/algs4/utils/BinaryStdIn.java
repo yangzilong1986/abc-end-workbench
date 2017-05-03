@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4.utils;
 
+import edu.princeton.cs.algs4.zip.BinaryStdOut;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.NoSuchElementException;

@@ -28,6 +28,7 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code ThreeSum} class provides static methods for counting

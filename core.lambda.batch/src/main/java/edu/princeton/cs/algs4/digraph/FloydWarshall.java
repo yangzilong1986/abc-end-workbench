@@ -2,10 +2,9 @@ package edu.princeton.cs.algs4.digraph;
 
 
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.dgraph.AdjMatrixEdgeWeightedDigraph;
-import edu.princeton.cs.algs4.graph.EdgeWeightedDirectedCycle;
+import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedDirectedCycle;
 
 /**
  *  The {@code FloydWarshall} class represents a data type for solving the

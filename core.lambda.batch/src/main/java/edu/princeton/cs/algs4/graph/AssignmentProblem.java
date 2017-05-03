@@ -12,7 +12,7 @@ package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.digraph.DijkstraSP;
 import edu.princeton.cs.algs4.digraph.DirectedEdge;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.digraph.EdgeWeightedDigraph;
 

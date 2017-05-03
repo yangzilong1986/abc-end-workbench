@@ -9,6 +9,9 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.col.LinkedBag;
+import edu.princeton.cs.algs4.utils.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

@@ -25,6 +25,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdDraw;
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.FileDialog;

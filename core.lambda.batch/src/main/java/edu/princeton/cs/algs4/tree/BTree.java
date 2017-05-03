@@ -1,6 +1,6 @@
 package edu.princeton.cs.algs4.tree;
 
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 public class BTree<Key extends Comparable<Key>, Value>  {
     // max children per B-tree node = M-1
@@ -55,7 +55,8 @@ public class BTree<Key extends Comparable<Key>, Value>  {
     }
 
     public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        if (key == null)
+            throw new IllegalArgumentException("argument to get() is null");
         return search(root, key, height);
     }
 
@@ -65,7 +66,8 @@ public class BTree<Key extends Comparable<Key>, Value>  {
         // external node
         if (ht == 0) {
             for (int j = 0; j < x.m; j++) {
-                if (eq(key, children[j].key)) return (Value) children[j].val;
+                if (eq(key, children[j].key))
+                    return (Value) children[j].val;
             }
         }
 
@@ -123,8 +125,10 @@ public class BTree<Key extends Comparable<Key>, Value>  {
             h.children[i] = h.children[i-1];
         h.children[j] = t;
         h.m++;
-        if (h.m < M) return null;
-        else         return split(h);
+        if (h.m < M)
+            return null;
+        else
+            return split(h);
     }
 
     // split node in half

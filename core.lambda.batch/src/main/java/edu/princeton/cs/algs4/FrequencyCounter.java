@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.tree.ST;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 public class FrequencyCounter {
 

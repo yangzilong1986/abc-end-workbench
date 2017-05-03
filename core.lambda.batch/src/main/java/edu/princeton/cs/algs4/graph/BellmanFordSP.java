@@ -1,11 +1,12 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.*;
 import edu.princeton.cs.algs4.col.Queue;
 import edu.princeton.cs.algs4.col.Stack;
 import edu.princeton.cs.algs4.digraph.DirectedEdge;
 import edu.princeton.cs.algs4.digraph.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.utils.In;
+import edu.princeton.cs.algs4.utils.StdOut;
+import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedDirectedCycle;
 
 /**
  *  The {@code BellmanFordSP} class represents a data type for solving the

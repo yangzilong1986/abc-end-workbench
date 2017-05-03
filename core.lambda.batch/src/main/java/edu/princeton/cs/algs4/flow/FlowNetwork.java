@@ -1,9 +1,9 @@
 package edu.princeton.cs.algs4.flow;
 
 
-import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.col.Bag;
 import edu.princeton.cs.algs4.utils.In;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
@@ -15,12 +15,7 @@ import edu.princeton.cs.algs4.StdRandom;
  *  iterate over all of the edges incident to or from a vertex. It also provides
  *  methods for returning the number of vertices <em>V</em> and the number
  *  of edges <em>E</em>. Parallel edges and self-loops are permitted.
- *  <p>
- *  This implementation uses an adjacency-lists representation, which 
- *  is a vertex-indexed array of {@link Bag} objects.
- *  All operations take constant time (in the worst case) except
- *  iterating over the edges incident to a given vertex, which takes
- *  time proportional to the number of such edges.
+ *  流量网络
  */
 public class FlowNetwork {
     private static final String NEWLINE = System.getProperty("line.separator");

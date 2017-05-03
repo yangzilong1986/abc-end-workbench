@@ -1,6 +1,6 @@
 package edu.princeton.cs.algs4.sort;
 
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 import java.util.Arrays;
 import java.util.Comparator;

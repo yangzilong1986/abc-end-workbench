@@ -1,7 +1,7 @@
 package edu.princeton.cs.algs4.tree;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.col.Queue;
 
 import java.util.NoSuchElementException;
@@ -95,13 +95,6 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
         return null;
     }
 
-    /**
-     * Does this symbol table contain the given key?
-     * @param key the key
-     * @return {@code true} if this symbol table contains {@code key} and
-     *     {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public boolean contains(Key key) {
         return get(key) != null;
     }

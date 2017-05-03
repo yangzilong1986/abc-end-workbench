@@ -33,6 +33,10 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdArrayIO;
+import edu.princeton.cs.algs4.utils.StdDraw;
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code StdStats} class provides static methods for computing
  *  statistics such as min, max, mean, sample standard deviation, and

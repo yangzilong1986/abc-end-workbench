@@ -1,5 +1,8 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code QuickX} class provides static methods for sorting an
  *  array using an optimized version of quicksort (using Bentley-McIlroy

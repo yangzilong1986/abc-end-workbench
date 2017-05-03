@@ -1,9 +1,11 @@
 package edu.princeton.cs.algs4.graph;
 
-import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.col.Bag;
 import edu.princeton.cs.algs4.utils.In;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.UF;
+import edu.princeton.cs.algs4.utils.StdOut;
+import edu.princeton.cs.algs4.tree.UF;
+import edu.princeton.cs.algs4.weightedgraph.Edge;
+import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedGraph;
 
 /**
  *  The {@code BoruvkaMST} class represents a data type for computing a
@@ -153,7 +155,7 @@ public class BoruvkaMST {
      */
     public static void main(String[] args) {
         In in = new In(args[0]);
-        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
+        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
         BoruvkaMST mst = new BoruvkaMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);
@@ -162,27 +164,3 @@ public class BoruvkaMST {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

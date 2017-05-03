@@ -30,8 +30,8 @@
 
 package edu.princeton.cs.algs4.sort;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code Shell} class provides static methods for sorting an

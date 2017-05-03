@@ -1,39 +1,7 @@
-/******************************************************************************
- *  Compilation:  javac NonrecursiveDFS.java
- *  Execution:    java NonrecursiveDFS graph.txt s
- *  Dependencies: Graph.java Queue.java Stack.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/41graph/tinyCG.txt
- *                http://algs4.cs.princeton.edu/41graph/tinyG.txt
- *                http://algs4.cs.princeton.edu/41graph/mediumG.txt
- *
- *  Run nonrecurisve depth-first search on an undirected graph.
- *  Runs in O(E + V) time.
- *
- *  Explores the vertices in exactly the same order as DepthFirstSearch.java.
- *
- *  %  java Graph tinyCG.txt
- *  6 8
- *  0: 2 1 5 
- *  1: 0 2 
- *  2: 0 1 3 4 
- *  3: 5 4 2 
- *  4: 3 2 
- *  5: 3 0 
- *
- *  %  java NonrecursiveDFS tinyCG.txt 0
- *  0 to 0 (0):  0
- *  0 to 1 (1):  0-1
- *  0 to 2 (1):  0-2
- *  0 to 3 (2):  0-2-3
- *  0 to 4 (2):  0-2-4
- *  0 to 5 (1):  0-5
- *
- ******************************************************************************/
-
 package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.utils.In;
 
 import java.util.Iterator;
@@ -92,13 +60,6 @@ public class NonrecursiveDFS {
         }
     }
 
-    /**
-     * Is vertex {@code v} connected to the source vertex {@code s}?
-     * @param v the vertex
-     * @return {@code true} if vertex {@code v} is connected to the source vertex {@code s},
-     *    and {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public boolean marked(int v) {
         validateVertex(v);
         return marked[v];
@@ -111,14 +72,9 @@ public class NonrecursiveDFS {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-    /**
-     * Unit tests the {@code NonrecursiveDFS} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         In in = new In(args[0]);
-        Graph G = new Graph(in);
+        Graph G =Graph.buildGraph();
         int s = Integer.parseInt(args[1]);
         NonrecursiveDFS dfs = new NonrecursiveDFS(G, s);
         for (int v = 0; v < G.V(); v++)
@@ -129,27 +85,3 @@ public class NonrecursiveDFS {
 
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

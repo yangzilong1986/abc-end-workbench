@@ -1,11 +1,8 @@
 package edu.princeton.cs.algs4.digraph;
 
-import edu.princeton.cs.algs4.utils.In;
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.dgraph.Digraph;
-import edu.princeton.cs.algs4.dgraph.DigraphGenerator;
 import edu.princeton.cs.algs4.graph.BreadthFirstPaths;
 import edu.princeton.cs.algs4.graph.EulerianCycle;
 import edu.princeton.cs.algs4.graph.EulerianPath;
@@ -239,8 +236,8 @@ public class DirectedEulerianPath {
         unitTest(G7, "simple digraph");
 
         // 4-vertex digraph
-        Digraph G8 = new Digraph(new In("eulerianD.txt"));
-        unitTest(G8, "4-vertex Eulerian digraph");
+//        Digraph G8 = new Digraph(new In("eulerianD.txt"));
+//        unitTest(G8, "4-vertex Eulerian digraph");
     }
 
 }

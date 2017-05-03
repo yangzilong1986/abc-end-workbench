@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4.sort;
 
 import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.utils.StdDraw;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code Interval2D} class represents a closed two-dimensional interval,

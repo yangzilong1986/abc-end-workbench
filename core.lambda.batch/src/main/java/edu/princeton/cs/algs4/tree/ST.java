@@ -1,7 +1,7 @@
 package edu.princeton.cs.algs4.tree;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

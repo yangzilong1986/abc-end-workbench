@@ -4,9 +4,9 @@ package edu.princeton.cs.algs4.digraph;
 import edu.princeton.cs.algs4.utils.In;
 import edu.princeton.cs.algs4.tree.IndexMinPQ;
 import edu.princeton.cs.algs4.col.Stack;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.graph.Edge;
-import edu.princeton.cs.algs4.graph.EdgeWeightedGraph;
+import edu.princeton.cs.algs4.utils.StdOut;
+import edu.princeton.cs.algs4.weightedgraph.Edge;
+import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedGraph;
 
 /**
  *  The {@code DijkstraUndirectedSP} class represents a data type for solving
@@ -187,7 +187,7 @@ public class DijkstraUndirectedSP {
      */
     public static void main(String[] args) {
         In in = new In(args[0]);
-        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
+        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
         int s = Integer.parseInt(args[1]);
 
         // compute shortest paths

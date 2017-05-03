@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.tree.MinPQ;
+import edu.princeton.cs.algs4.utils.StdDraw;
+import edu.princeton.cs.algs4.utils.StdIn;
 
 import java.awt.Color;
 

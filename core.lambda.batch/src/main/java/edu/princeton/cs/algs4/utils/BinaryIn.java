@@ -1,5 +1,7 @@
 package edu.princeton.cs.algs4.utils;
 
+import edu.princeton.cs.algs4.zip.BinaryOut;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;

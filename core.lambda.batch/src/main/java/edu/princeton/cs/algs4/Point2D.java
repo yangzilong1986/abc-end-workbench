@@ -9,6 +9,8 @@
 
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdDraw;
+
 import java.util.Arrays;
 import java.util.Comparator;
 

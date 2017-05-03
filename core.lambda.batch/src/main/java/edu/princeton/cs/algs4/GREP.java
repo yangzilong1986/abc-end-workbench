@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.digraph.NFA;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code GREP} class provides a client for reading in a sequence of
@@ -24,7 +26,7 @@ public class GREP {
     public static void main(String[] args) { 
         String regexp = "(.*" + args[0] + ".*)";
         NFA nfa = new NFA(regexp);
-        while (StdIn.hasNextLine()) { 
+        while (StdIn.hasNextLine()) {
             String line = StdIn.readLine();
             if (nfa.recognizes(line)) {
                 StdOut.println(line);

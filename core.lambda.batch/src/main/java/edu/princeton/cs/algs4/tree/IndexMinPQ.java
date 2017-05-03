@@ -1,6 +1,6 @@
 package edu.princeton.cs.algs4.tree;
 
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -16,15 +16,6 @@ import java.util.NoSuchElementException;
  *  It also supports methods for peeking at the minimum key,
  *  testing if the priority queue is empty, and iterating through
  *  the keys.
- *  <p>
- *  This implementation uses a binary heap along with an array to associate
- *  keys with integers in the given range.
- *  The <em>insert</em>, <em>delete-the-minimum</em>, <em>delete</em>,
- *  <em>change-key</em>, <em>decrease-key</em>, and <em>increase-key</em>
- *  operations take logarithmic time.
- *  The <em>is-empty</em>, <em>size</em>, <em>min-index</em>, <em>min-key</em>,
- *  and <em>key-of</em> operations take constant time.
- *  Construction takes time proportional to the specified capacity.
  */
 public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     private int maxN;        // maximum number of elements on PQ
@@ -194,42 +185,43 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException no key is associated with index {@code i}
      */
     public void decreaseKey(int i, Key key) {
-        if (i < 0 || i >= maxN) throw new IndexOutOfBoundsException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
-        if (keys[i].compareTo(key) <= 0)
-            throw new IllegalArgumentException("Calling decreaseKey() with given argument would not strictly decrease the key");
+        if (i < 0 || i >= maxN) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (!contains(i)) {
+            throw new NoSuchElementException("index is not in the priority queue");
+        }
+        if (keys[i].compareTo(key) <= 0){
+            throw new IllegalArgumentException("Calling decreaseKey() " +
+                    "with given argument would not strictly decrease the key");
+        }
+
         keys[i] = key;
         swim(qp[i]);
     }
 
-    /**
-     * Increase the key associated with index {@code i} to the specified value.
-     *
-     * @param  i the index of the key to increase
-     * @param  key increase the key associated with index {@code i} to this key
-     * @throws IndexOutOfBoundsException unless {@code 0 <= i < maxN}
-     * @throws IllegalArgumentException if {@code key <= keyOf(i)}
-     * @throws NoSuchElementException no key is associated with index {@code i}
-     */
     public void increaseKey(int i, Key key) {
-        if (i < 0 || i >= maxN) throw new IndexOutOfBoundsException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
-        if (keys[i].compareTo(key) >= 0)
-            throw new IllegalArgumentException("Calling increaseKey() with given argument would not strictly increase the key");
+        if (i < 0 || i >= maxN) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (!contains(i)) {
+            throw new NoSuchElementException("index is not in the priority queue");
+        }
+        if (keys[i].compareTo(key) >= 0) {
+            throw new IllegalArgumentException("Calling increaseKey() " +
+                    "with given argument would not strictly increase the key");
+        }
         keys[i] = key;
         sink(qp[i]);
     }
 
-    /**
-     * Remove the key associated with index {@code i}.
-     *
-     * @param  i the index of the key to remove
-     * @throws IndexOutOfBoundsException unless {@code 0 <= i < maxN}
-     * @throws NoSuchElementException no key is associated with index {@code i}
-     */
     public void delete(int i) {
-        if (i < 0 || i >= maxN) throw new IndexOutOfBoundsException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
+        if (i < 0 || i >= maxN) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (!contains(i)) {
+            throw new NoSuchElementException("index is not in the priority queue");
+        }
         int index = qp[i];
         exch(index, n--);
         swim(index);
@@ -238,10 +230,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         qp[i] = -1;
     }
 
-
-   /***************************************************************************
-    * General helper functions.
-    ***************************************************************************/
     private boolean greater(int i, int j) {
         return keys[pq[i]].compareTo(keys[pq[j]]) > 0;
     }
@@ -275,19 +263,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         }
     }
 
-
-   /***************************************************************************
-    * Iterators.
-    ***************************************************************************/
-
-    /**
-     * Returns an iterator that iterates over the keys on the
-     * priority queue in ascending order.
-     * The iterator doesn't implement {@code remove()} since it's optional.
-     *
-     * @return an iterator that iterates over the keys in ascending order
-     */
-    public Iterator<Integer> iterator() { return new HeapIterator(); }
+    public Iterator<Integer> iterator() {
+        return new HeapIterator();
+    }
 
     private class HeapIterator implements Iterator<Integer> {
         // create a new pq
@@ -301,21 +279,22 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
                 copy.insert(pq[i], keys[pq[i]]);
         }
 
-        public boolean hasNext()  { return !copy.isEmpty();                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+        public boolean hasNext()  {
+            return !copy.isEmpty();
+        }
+
+        public void remove()      {
+            throw new UnsupportedOperationException();
+        }
 
         public Integer next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             return copy.delMin();
         }
     }
 
-
-    /**
-     * Unit tests the {@code IndexMinPQ} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         // insert a bunch of strings
         String[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };

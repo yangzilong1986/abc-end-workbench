@@ -1,10 +1,8 @@
 package edu.princeton.cs.algs4.digraph;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.digraph.DirectedEdge;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.graph.AcyclicLP;
-import edu.princeton.cs.algs4.digraph.EdgeWeightedDigraph;
 
 /**
  *  The {@code CPM} class provides a client that solves the

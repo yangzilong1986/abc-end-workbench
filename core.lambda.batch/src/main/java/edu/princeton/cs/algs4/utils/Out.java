@@ -10,6 +10,8 @@
 package edu.princeton.cs.algs4.utils;
 
 
+import edu.princeton.cs.algs4.zip.BinaryOut;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;

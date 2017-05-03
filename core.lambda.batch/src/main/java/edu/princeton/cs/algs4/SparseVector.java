@@ -12,6 +12,7 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.tree.ST;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code SparseVector} class represents a <em>d</em>-dimensional mathematical vector.

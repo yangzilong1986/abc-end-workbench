@@ -3,6 +3,7 @@ package edu.princeton.cs.algs4.graph;
 import edu.princeton.cs.algs4.*;
 import edu.princeton.cs.algs4.col.Queue;
 import edu.princeton.cs.algs4.col.Stack;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code EulerianCycle} class represents a data type

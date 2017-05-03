@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.tree.SET;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code DeDup} class provides a client for reading in a sequence of

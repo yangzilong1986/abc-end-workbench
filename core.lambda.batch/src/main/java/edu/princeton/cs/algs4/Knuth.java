@@ -1,5 +1,8 @@
 package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
+
 /**
  *  The {@code Knuth} class provides a client for reading in a 
  *  sequence of strings and <em>shuffling</em> them using the Knuth (or Fisher-Yates)

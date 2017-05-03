@@ -1,6 +1,6 @@
 package edu.princeton.cs.algs4.flow;
 
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
  *  The {@code FlowEdge} class represents a capacitated edge with a 
@@ -10,6 +10,8 @@ import edu.princeton.cs.algs4.StdOut;
  *  of the directed edge and the weight. It also provides methods for
  *  changing the amount of flow on the edge and determining the residual
  *  capacity of the edge.
+ *  流量网络边
+ *  流量网络边，剩余网络
  */
 public class FlowEdge {
     // to deal with floating-point roundoff errors

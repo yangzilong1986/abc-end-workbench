@@ -1,6 +1,8 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.col.Queue;
+import edu.princeton.cs.algs4.utils.StdIn;
+import edu.princeton.cs.algs4.utils.StdOut;
 
 public class SeparateChainingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
@@ -161,7 +163,7 @@ public class SeparateChainingHashST<Key, Value> {
 
         // print keys
         for (String s : st.keys()) 
-            StdOut.println(s + " " + st.get(s)); 
+            StdOut.println(s + " " + st.get(s));
 
     }
 
