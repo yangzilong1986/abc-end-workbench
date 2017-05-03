@@ -1,11 +1,33 @@
 package edu.princeton.cs.algs4.tree;
 
+import edu.princeton.cs.algs4.search.ST;
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.col.Queue;
 
 import java.util.NoSuchElementException;
 
+/**
+ * 红黑树
+ * 红连接将两个结点连接起来构成一个3-节点
+ * 黑连接是普通的2-3数的普通连接
+ *
+ * 等价定义
+ *      红连接均为左连接
+ *      没有任何一个节点同时和两条红节点相连
+ *      该树是完美黑色平衡的
+ *
+ *
+ * 性质
+ * 根节点为黑色BLACK
+ * 叶子节点(nil)为黑色
+ * 如果一个节点是红色的，那么它的两个子节点是黑色的
+ *
+ * 添加节点默认为红色
+ *
+ * @param <Key>
+ * @param <Value>
+ */
 public class BSTRedBlack<Key extends Comparable<Key>, Value> {
 
     private static final boolean RED   = true;
@@ -18,6 +40,7 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         private Key key;           // key
         private Value val;         // associated data
         private Node left, right;  // links to left and right subtrees
+        //有其父节点指定它的连接颜色
         private boolean color;     // color of parent link
         private int size;          // subtree count
 
@@ -40,21 +63,20 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     ***************************************************************************/
     // is node x red; false if x is null ?
     private boolean isRed(Node x) {
-        if (x == null) return false;
+        if (x == null) {//默认为黑色
+            return false;
+        }
         return x.color == RED;
     }
 
     // number of node in subtree rooted at x; 0 if x is null
     private int size(Node x) {
-        if (x == null) return 0;
+        if (x == null) {
+            return 0;
+        }
         return x.size;
     } 
 
-
-    /**
-     * Returns the number of key-value pairs in this symbol table.
-     * @return the number of key-value pairs in this symbol table
-     */
     public int size() {
         return size(root);
     }
@@ -71,16 +93,10 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
    /***************************************************************************
     *  Standard BST search.
     ***************************************************************************/
-
-    /**
-     * Returns the value associated with the given key.
-     * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to get() is null");
+        }
         return get(root, key);
     }
 
@@ -88,9 +104,13 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     private Value get(Node x, Key key) {
         while (x != null) {
             int cmp = key.compareTo(x.key);
-            if      (cmp < 0) x = x.left;
-            else if (cmp > 0) x = x.right;
-            else              return x.val;
+            if (cmp < 0) {
+                x = x.left;
+            }else if (cmp > 0) {
+                x = x.right;
+            }else              {
+                return x.val;
+            }
         }
         return null;
     }
@@ -103,147 +123,85 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     *  Red-black tree insertion.
     ***************************************************************************/
     public void put(Key key, Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("first argument to put() is null");
+        }
         if (val == null) {
             delete(key);
             return;
         }
-
         root = put(root, key, val);
+        //插入数据默认为黑色
         root.color = BLACK;
         // assert check();
     }
 
     // insert the key-value pair in the subtree rooted at h
     private Node put(Node h, Key key, Value val) { 
-        if (h == null) return new Node(key, val, RED, 1);
+        if (h == null) {//子结点b
+            //新建的连接为红色，即总是用红色结点连接到树中
+            return new Node(key, val, RED, 1);
+        }
 
+        //插入的key和原有节点node的key比较
         int cmp = key.compareTo(h.key);
-        if      (cmp < 0) h.left  = put(h.left,  key, val); 
-        else if (cmp > 0) h.right = put(h.right, key, val); 
-        else              h.val   = val;
+        //左右两个树下节点
+        if(cmp < 0) {//小于树中的节点
+            h.left  = put(h.left,  key, val);//left:b
+        } else if (cmp > 0) {//新键大于父节点
+            h.right = put(h.right, key, val);
+        }else {
+            h.val   = val;
+        }
 
         // fix-up any right-leaning links
-        if (isRed(h.right) && !isRed(h.left))      h = rotateLeft(h);
-        if (isRed(h.left)  &&  isRed(h.left.left)) h = rotateRight(h);
-        if (isRed(h.left)  &&  isRed(h.right))     flipColors(h);
+        //右孩子是红色，左孩子不是红色，则左旋转
+        //右边是红色新增的键是右边，即大于父节点的键，但是左边不是红色，即为空或者有值
+        //左孩子是红色，左孩子的左孩子是红色，则右旋转
+        //c-b树中插入a，如下图所示
+        //          c-回退到此时旋转              b
+        //      a     b       左旋转        a           c
+        //
+        //当插入完a后，当递归出栈，到c节点，即根节点时
+        if (isRed(h.right) && !isRed(h.left)) {//h.left a
+            h = rotateLeft(h);//左旋转
+        }
+        //左孩子是红色，左孩子的左孩子是红色，则右旋转
+        //c-b树中插入a，如下图所示
+        //              c-回退到此时旋转        b
+        //      b            右旋转        a           c
+        //  a-插入值
+        //当插入完a后，当递归出栈，到c节点，即根节点时
+        if (isRed(h.left)  &&  isRed(h.left.left)) {
+            h = rotateRight(h);
+        }
+        //左右均为红色
+        if (isRed(h.left)  &&  isRed(h.right))   {
+            flipColors(h);
+        }
         h.size = size(h.left) + size(h.right) + 1;
 
         return h;
     }
 
-   /***************************************************************************
-    *  Red-black tree deletion.
-    ***************************************************************************/
-
+    // flip the colors of a node and its two children
     /**
-     * Removes the smallest key and associated value from the symbol table.
-     * @throws NoSuchElementException if the symbol table is empty
+     * 颜色转换
+     * @param h
      */
-    public void deleteMin() {
-        if (isEmpty()) throw new NoSuchElementException("BST underflow");
-
-        // if both children of root are black, set root to red
-        if (!isRed(root.left) && !isRed(root.right))
-            root.color = RED;
-
-        root = deleteMin(root);
-        if (!isEmpty()) root.color = BLACK;
-        // assert check();
+    private void flipColors(Node h) {
+        //颜色取反
+        h.color = !h.color;
+        h.left.color = !h.left.color;
+        h.right.color = !h.right.color;
     }
-
-    // delete the key-value pair with the minimum key rooted at h
-    private Node deleteMin(Node h) { 
-        if (h.left == null)
-            return null;
-
-        if (!isRed(h.left) && !isRed(h.left.left))
-            h = moveRedLeft(h);
-
-        h.left = deleteMin(h.left);
-        return balance(h);
-    }
-
-
-    /**
-     * Removes the largest key and associated value from the symbol table.
-     * @throws NoSuchElementException if the symbol table is empty
-     */
-    public void deleteMax() {
-        if (isEmpty()) throw new NoSuchElementException("BST underflow");
-
-        // if both children of root are black, set root to red
-        if (!isRed(root.left) && !isRed(root.right))
-            root.color = RED;
-
-        root = deleteMax(root);
-        if (!isEmpty()) root.color = BLACK;
-        // assert check();
-    }
-
-    // delete the key-value pair with the maximum key rooted at h
-    private Node deleteMax(Node h) { 
-        if (isRed(h.left))
-            h = rotateRight(h);
-
-        if (h.right == null)
-            return null;
-
-        if (!isRed(h.right) && !isRed(h.right.left))
-            h = moveRedRight(h);
-
-        h.right = deleteMax(h.right);
-
-        return balance(h);
-    }
-
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-        if (!contains(key)) return;
-
-        // if both children of root are black, set root to red
-        if (!isRed(root.left) && !isRed(root.right))
-            root.color = RED;
-
-        root = delete(root, key);
-        if (!isEmpty()) root.color = BLACK;
-        // assert check();
-    }
-
-    // delete the key-value pair with the given key rooted at h
-    private Node delete(Node h, Key key) { 
-        // assert get(h, key) != null;
-
-        if (key.compareTo(h.key) < 0)  {
-            if (!isRed(h.left) && !isRed(h.left.left))
-                h = moveRedLeft(h);
-            h.left = delete(h.left, key);
-        }
-        else {
-            if (isRed(h.left))
-                h = rotateRight(h);
-            if (key.compareTo(h.key) == 0 && (h.right == null))
-                return null;
-            if (!isRed(h.right) && !isRed(h.right.left))
-                h = moveRedRight(h);
-            if (key.compareTo(h.key) == 0) {
-                Node x = min(h.right);
-                h.key = x.key;
-                h.val = x.val;
-                // h.val = get(h.right, min(h.right).key);
-                // h.key = min(h.right).key;
-                h.right = deleteMin(h.right);
-            }
-            else h.right = delete(h.right, key);
-        }
-        return balance(h);
-    }
-
-   /***************************************************************************
-    *  Red-black tree helper functions.
-    ***************************************************************************/
 
     // make a left-leaning link lean to the right
+    /**
+     * 旋转之后，返回结点为红色节点
+     * @param h
+     * @return
+     */
     private Node rotateRight(Node h) {
         // assert (h != null) && isRed(h.left);
         Node x = h.left;
@@ -257,6 +215,11 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     }
 
     // make a right-leaning link lean to the left
+    /**
+     * 旋转之后，返回结点为红色节点
+     * @param h
+     * @return
+     */
     private Node rotateLeft(Node h) {
         // assert (h != null) && isRed(h.right);
         Node x = h.right;
@@ -268,16 +231,41 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         h.size = size(h.left) + size(h.right) + 1;
         return x;
     }
+    /***************************************************************************
+    *  Red-black tree deletion.
+    ***************************************************************************/
+    public void deleteMin() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("BST underflow");
+        }
 
-    // flip the colors of a node and its two children
-    private void flipColors(Node h) {
-        // h must have opposite color of its two children
-        // assert (h != null) && (h.left != null) && (h.right != null);
-        // assert (!isRed(h) &&  isRed(h.left) &&  isRed(h.right))
-        //    || (isRed(h)  && !isRed(h.left) && !isRed(h.right));
-        h.color = !h.color;
-        h.left.color = !h.left.color;
-        h.right.color = !h.right.color;
+        // if both children of root are black, set root to red
+        //左右都不是红色
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = deleteMin(root);
+        if (!isEmpty()) {
+            root.color = BLACK;
+        }
+        // assert check();
+    }
+
+    // delete the key-value pair with the minimum key rooted at h
+    private Node deleteMin(Node h) {
+        //左边最小，没有左结点则返回，它是递归退出的条件
+        if (h.left == null) {
+            return null;
+        }
+        //左孩子和左孩子的左孩子都不是红色
+        //               c
+        //          b
+        //      a
+        if (!isRed(h.left) && !isRed(h.left.left)) {
+            h = moveRedLeft(h);
+        }
+        h.left = deleteMin(h.left);
+        return balance(h);
     }
 
     // Assuming that h is red and both h.left and h.left.left
@@ -285,14 +273,123 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     private Node moveRedLeft(Node h) {
         // assert (h != null);
         // assert isRed(h) && !isRed(h.left) && !isRed(h.left.left);
-
+        //          c
+        //              e
+        //          d
+        //上面树结构则，则执行下面操作
         flipColors(h);
-        if (isRed(h.right.left)) { 
+        if (isRed(h.right.left)) {
             h.right = rotateRight(h.right);
             h = rotateLeft(h);
             flipColors(h);
         }
         return h;
+    }
+    ////////////////////////////////////////////////////////////////
+
+    public void deleteMax() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("BST underflow");
+        }
+
+        // if both children of root are black, set root to red
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = deleteMax(root);
+        if (!isEmpty()) {
+            root.color = BLACK;
+        }
+        // assert check();
+    }
+
+    // delete the key-value pair with the maximum key rooted at h
+    private Node deleteMax(Node h) {
+        //删除最大值，最大值一直在右边
+        //          b
+        //      a
+        if (isRed(h.left)) {
+            h = rotateRight(h);
+        }
+        if (h.right == null) {
+            return null;
+        }
+        //          d
+        //              f
+        //          e
+        //删除最小值
+        //if (!isRed(h.left) && !isRed(h.left.left))
+        if (!isRed(h.right) && !isRed(h.right.left)) {
+            h = moveRedRight(h);
+        }
+        h.right = deleteMax(h.right);
+
+        return balance(h);
+    }
+    /////////////////////////////////////////////////
+    public void delete(Key key) {
+        if (key == null) {
+            throw new IllegalArgumentException("argument to delete() is null");
+        }
+        if (!contains(key)) {
+            return;
+        }
+
+        // if both children of root are black, set root to red
+        if (!isRed(root.left) && !isRed(root.right)) {
+            root.color = RED;
+        }
+        root = delete(root, key);
+        if (!isEmpty()) {
+            root.color = BLACK;
+        }
+        // assert check();
+    }
+
+    // delete the key-value pair with the given key rooted at h
+    private Node delete(Node h, Key key) { 
+        // assert get(h, key) != null;
+        //             d
+        //      b              f
+        //  a       c      e       g
+        //删除a时
+        if (key.compareTo(h.key) < 0)  {//删除值小于树结点左边
+            if (!isRed(h.left) && !isRed(h.left.left)) {
+                h = moveRedLeft(h);
+            }
+            h.left = delete(h.left, key);
+        }else {//删除e时
+            if (isRed(h.left)) {
+                h = rotateRight(h);
+            }
+            //             d
+            //      b              f
+            //  a       c      e       g
+            //删除e结点，右旋转根结点d
+            //            b
+            //      a               d
+            //                c              f
+            //                          e          g
+            if (key.compareTo(h.key) == 0 && (h.right == null)) {
+
+                return null;//如果是f结点，则返回
+            }
+            if (!isRed(h.right) && !isRed(h.right.left)) {
+                //h.left.left
+                h = moveRedRight(h);
+            }
+            if (key.compareTo(h.key) == 0) {
+                Node x = min(h.right);
+                h.key = x.key;
+                h.val = x.val;
+                // h.val = get(h.right, min(h.right).key);
+                // h.key = min(h.right).key;
+                h.right = deleteMin(h.right);
+            }else {
+                h.right = delete(h.right, key);
+            }
+        }
+        return balance(h);
     }
 
     // Assuming that h is red and both h.right and h.right.left
@@ -311,10 +408,18 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     // restore red-black tree invariant
     private Node balance(Node h) {
         // assert (h != null);
-
-        if (isRed(h.right))                      h = rotateLeft(h);
-        if (isRed(h.left) && isRed(h.left.left)) h = rotateRight(h);
-        if (isRed(h.left) && isRed(h.right))     flipColors(h);
+        //如果右边是红色，则左转
+        if (isRed(h.right)){
+            h = rotateLeft(h);
+        }
+        //如果左边，左结点的左结点都是红色，则右转
+        if (isRed(h.left) && isRed(h.left.left)) {
+            h = rotateRight(h);
+        }
+        //左右为红，
+        if (isRed(h.left) && isRed(h.right))     {
+            flipColors(h);
+        }
 
         h.size = size(h.left) + size(h.right) + 1;
         return h;
@@ -324,7 +429,6 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
    /***************************************************************************
     *  Utility functions.
     ***************************************************************************/
-
     /**
      * Returns the height of the BST (for debugging).
      * @return the height of the BST (a 1-node tree has height 0)
@@ -333,29 +437,35 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         return height(root);
     }
     private int height(Node x) {
-        if (x == null) return -1;
+        if (x == null) {
+            return -1;
+        }
         return 1 + Math.max(height(x.left), height(x.right));
     }
 
    /***************************************************************************
     *  Ordered symbol table methods.
     ***************************************************************************/
-
     /**
      * Returns the smallest key in the symbol table.
      * @return the smallest key in the symbol table
      * @throws NoSuchElementException if the symbol table is empty
      */
     public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("called min() with empty symbol table");
+        if (isEmpty()) {
+            throw new NoSuchElementException("called min() with empty symbol table");
+        }
         return min(root).key;
     } 
 
     // the smallest key in subtree rooted at x; null if no such key
     private Node min(Node x) { 
         // assert x != null;
-        if (x.left == null) return x; 
-        else                return min(x.left); 
+        if (x.left == null) {
+            return x;
+        }else {
+            return min(x.left);
+        }
     } 
 
     /**
@@ -364,57 +474,70 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
      * @throws NoSuchElementException if the symbol table is empty
      */
     public Key max() {
-        if (isEmpty()) throw new NoSuchElementException("called max() with empty symbol table");
+        if (isEmpty()) {
+            throw new NoSuchElementException("called max() with empty symbol table");
+        }
         return max(root).key;
     } 
 
     // the largest key in the subtree rooted at x; null if no such key
     private Node max(Node x) { 
         // assert x != null;
-        if (x.right == null) return x; 
-        else                 return max(x.right); 
+        if (x.right == null) {
+            return x;
+        } else{
+            return max(x.right);
+        }
     } 
 
-
-    /**
-     * Returns the largest key in the symbol table less than or equal to {@code key}.
-     * @param key the key
-     * @return the largest key in the symbol table less than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public Key floor(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-        if (isEmpty()) throw new NoSuchElementException("called floor() with empty symbol table");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to floor() is null");
+        }
+        if (isEmpty()) {
+            throw new NoSuchElementException("called floor() with empty symbol table");
+        }
         Node x = floor(root, key);
-        if (x == null) return null;
-        else           return x.key;
+        if (x == null) {
+            return null;
+        }else {
+            return x.key;
+        }
     }    
 
     // the largest key in the subtree rooted at x less than or equal to the given key
     private Node floor(Node x, Key key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         int cmp = key.compareTo(x.key);
-        if (cmp == 0) return x;
-        if (cmp < 0)  return floor(x.left, key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp < 0)  {
+            return floor(x.left, key);
+        }
         Node t = floor(x.right, key);
-        if (t != null) return t; 
-        else           return x;
+        if (t != null) {
+            return t;
+        } else  {
+            return x;
+        }
     }
 
-    /**
-     * Returns the smallest key in the symbol table greater than or equal to {@code key}.
-     * @param key the key
-     * @return the smallest key in the symbol table greater than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
     public Key ceiling(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-        if (isEmpty()) throw new NoSuchElementException("called ceiling() with empty symbol table");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to ceiling() is null");
+        }
+        if (isEmpty()) {
+            throw new NoSuchElementException("called ceiling() with empty symbol table");
+        }
         Node x = ceiling(root, key);
-        if (x == null) return null;
-        else           return x.key;  
+        if (x == null) {
+            return null;
+        }else {
+            return x.key;
+        }
     }
 
     // the smallest key in the subtree rooted at x greater than or equal to the given key
@@ -607,10 +730,38 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
 
     public static void main(String[] args) {
         BSTRedBlack<String, Integer> st = new BSTRedBlack<String, Integer>();
-        for (int i = 0; !StdIn.isEmpty(); i++) {
-            String key = StdIn.readString();
-            st.put(key, i);
-        }
+        String key="a";
+        int i=1;
+        st.put(key, i);
+
+        key="c";
+        i=2;
+        st.put(key, i);
+
+        key="d";
+        i=3;
+        st.put(key, i);
+
+        key="h";
+        i=5;
+        st.put(key, i);
+
+        key="f";
+        i=4;
+        st.put(key, i);
+
+        key="j";
+        i=6;
+        st.put(key, i);
+
+        key="m";
+        i=7;
+        st.put(key, i);
+
+        key="z";
+        i=9;
+        st.put(key, i);
+
         for (String s : st.keys())
             StdOut.println(s + " " + st.get(s));
         StdOut.println();

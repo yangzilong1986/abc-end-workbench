@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4.tree;
+package edu.princeton.cs.algs4.col;
 
 import edu.princeton.cs.algs4.utils.StdOut;
 

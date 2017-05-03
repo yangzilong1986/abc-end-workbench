@@ -1,7 +1,6 @@
 package edu.princeton.cs.algs4.digraph;
 
-import edu.princeton.cs.algs4.digraph.Digraph;
-import edu.princeton.cs.algs4.tree.SET;
+import edu.princeton.cs.algs4.col.SET;
 import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 

@@ -164,7 +164,9 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private Node delete(Node x, Key key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
 
         int cmp = key.compareTo(x.key);
         if(cmp < 0) {

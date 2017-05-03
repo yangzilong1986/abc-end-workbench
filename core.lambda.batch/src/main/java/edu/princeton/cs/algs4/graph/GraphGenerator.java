@@ -13,7 +13,7 @@
 package edu.princeton.cs.algs4.graph;
 
 import edu.princeton.cs.algs4.tree.MinPQ;
-import edu.princeton.cs.algs4.tree.SET;
+import edu.princeton.cs.algs4.col.SET;
 import edu.princeton.cs.algs4.utils.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 

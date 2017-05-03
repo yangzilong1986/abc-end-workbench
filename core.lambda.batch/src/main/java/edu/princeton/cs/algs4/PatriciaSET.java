@@ -79,13 +79,6 @@ import java.util.Iterator;
  *  the existence (or absence) of the key (per <em>add</em>, <em>contains</em>,
  *  or <em>delete</em> operation).
  *  <p>
- *  In practice, decent implementations of PATRICIA can often outperform
- *  balanced binary trees, and even hash tables. Although this particular
- *  implementation performs well, the source code was written with an emphasis
- *  on clarity, and not performance. PATRICIA performs admirably when its
- *  bit-testing loops are well tuned. Consider using the source code as a guide,
- *  should you need to produce an optimized implementation, for anther key type,
- *  or in another programming language.
  */
 public class PatriciaSET implements Iterable<String> {
     private Node head;

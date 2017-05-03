@@ -1,6 +1,6 @@
 package edu.princeton.cs.algs4;
 
-import edu.princeton.cs.algs4.tree.SET;
+import edu.princeton.cs.algs4.col.SET;
 import edu.princeton.cs.algs4.utils.In;
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
