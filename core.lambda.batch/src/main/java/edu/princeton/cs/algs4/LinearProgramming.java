@@ -2,21 +2,6 @@ package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.utils.StdOut;
 
-/**
- *  The {@code LinearProgramming} class represents a data type for solving a
- *  linear program of the form { max cx : Ax &le; b, x &ge; 0 }, where A is a m-by-n
- *  matrix, b is an m-length vector, and c is an n-length vector. For simplicity,
- *  we assume that A is of full rank and that b &ge; 0 so that x = 0 is a basic
- *  feasible soution.
- *  <p>
- *  The data type supplies methods for determining the optimal primal and
- *  dual solutions.
- *  <p>
- *  This is a bare-bones implementation of the <em>simplex algorithm</em>.
- *  It uses Bland's rule to determing the entering and leaving variables.
- *  It is not suitable for use on large inputs. It is also not robust
- *  in the presence of floating-point roundoff error.
- */
 public class LinearProgramming {
     private static final double EPSILON = 1.0E-10;
     private double[][] a;   // tableaux

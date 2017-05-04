@@ -1,6 +1,7 @@
 package edu.princeton.cs.algs4;
 
 import edu.princeton.cs.algs4.utils.StdOut;
+import edu.princeton.cs.algs4.utils.Stopwatch;
 
 /**
  *  The {@code DoublingTest} class provides a client for measuring

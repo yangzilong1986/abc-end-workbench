@@ -5,9 +5,6 @@ import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
 
 /**
- *  The {@code DeDup} class provides a client for reading in a sequence of
- *  words from standard input and printing each word, removing any duplicates.
- *  It is useful as a test client for various symbol table implementations.
  */
 public class DeDup {  
 
