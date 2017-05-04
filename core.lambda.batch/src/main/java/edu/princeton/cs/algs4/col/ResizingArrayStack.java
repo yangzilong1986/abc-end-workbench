@@ -1,20 +1,4 @@
-/******************************************************************************
- *  Compilation:  javac ResizingArrayStack.java
- *  Execution:    java ResizingArrayStack < input.txt
- *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
- *  
- *  Stack implementation with a resizing array.
- *
- *  % more tobe.txt 
- *  to be or not to - be - - that - - - is
- *
- *  % java ResizingArrayStack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- ******************************************************************************/
-
-package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4.col;
 
 import edu.princeton.cs.algs4.utils.StdIn;
 import edu.princeton.cs.algs4.utils.StdOut;
@@ -22,26 +6,6 @@ import edu.princeton.cs.algs4.utils.StdOut;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- *  The {@code ResizingArrayStack} class represents a last-in-first-out (LIFO) stack
- *  of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along with methods
- *  for peeking at the top item, testing if the stack is empty, and iterating through
- *  the items in LIFO order.
- *  <p>
- *  This implementation uses a resizing array, which double the underlying array
- *  when it is full and halves the underlying array when it is one-quarter full.
- *  The <em>push</em> and <em>pop</em> operations take constant amortized time.
- *  The <em>size</em>, <em>peek</em>, and <em>is-empty</em> operations takes
- *  constant time in the worst case. 
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
 public class ResizingArrayStack<Item> implements Iterable<Item> {
     private Item[] a;         // array of items
     private int n;            // number of elements on stack
@@ -162,6 +126,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
      */
     public static void main(String[] args) {
         ResizingArrayStack<String> stack = new ResizingArrayStack<String>();
+//        java ResizingArrayStack < tobe.txt
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
             if (!item.equals("-")) stack.push(item);
@@ -170,27 +135,3 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         StdOut.println("(" + stack.size() + " left on stack)");
     }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

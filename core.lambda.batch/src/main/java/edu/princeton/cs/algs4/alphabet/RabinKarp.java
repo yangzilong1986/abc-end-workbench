@@ -122,8 +122,8 @@ public class RabinKarp {
     }
 
     public static void main(String[] args) {
-        String pat = args[0];
-        String txt = args[1];
+        String pat = "MH";
+        String txt ="ADBCDDDDDDDDDDDMMMMDR";
 
         RabinKarp searcher = new RabinKarp(pat);
         int offset = searcher.search(txt);
@@ -134,7 +134,7 @@ public class RabinKarp {
         // from brute force search method 1
         StdOut.print("pattern: ");
         for (int i = 0; i < offset; i++)
-            StdOut.print(" ");
+            StdOut.print("-");
         StdOut.println(pat);
     }
 }

@@ -1,9 +1,8 @@
-package edu.princeton.cs.algs4.tree;
+package edu.princeton.cs.algs4.flow;
 
+import edu.princeton.cs.algs4.tree.IndexMaxPQ;
+import edu.princeton.cs.algs4.tree.UF;
 import edu.princeton.cs.algs4.utils.StdOut;
-import edu.princeton.cs.algs4.flow.FlowEdge;
-import edu.princeton.cs.algs4.flow.FlowNetwork;
-import edu.princeton.cs.algs4.flow.FordFulkerson;
 import edu.princeton.cs.algs4.weightedgraph.Edge;
 import edu.princeton.cs.algs4.weightedgraph.EdgeWeightedGraph;
 
