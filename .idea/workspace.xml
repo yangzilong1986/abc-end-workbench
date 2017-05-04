@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/GREP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArrayX.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayBag.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GREP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ResizingArrayBag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SuffixArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SuffixArrayX.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTreeNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/multitree/Tree123.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/GraphType.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/AbstractStrongConnectivityInspector.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/clique/BaseBronKerboschCliqueFinder.java" afterPath="" />
@@ -52,19 +47,202 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/graph/builder/GraphBuilder.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/traverse/DegeneracyOrderingIterator.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestCommonSubstring.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestCommonSubstring.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestRepeatedSubstring.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestRepeatedSubstring.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RandomSeq.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RandomSeq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/RabinKarp.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/RabinKarp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Bag.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Bag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Stack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Stack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/KWIK.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KWIK.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ResizingArrayQueue.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ResizingArrayStack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayStack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/NFA.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/NFA.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/GlobalMincut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/GlobalMincut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Accumulator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Accumulator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Average.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Average.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/BlackFilter.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/BlackFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Cat.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Cat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ClosestPair.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ClosestPair.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/CollisionSystem.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/CollisionSystem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Complex.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Complex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Counter.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Counter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Date.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Date.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DoublingRatio.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DoublingTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Draw.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Draw.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DrawListener.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DrawListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FFT.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FFT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FarthestPair.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FarthestPair.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FenwickTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FenwickTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GaussJordanElimination.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GaussJordanElimination.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GaussianElimination.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GaussianElimination.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GrahamScan.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GrahamScan.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Knuth.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Knuth.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LinearProgramming.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LinearProgramming.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LinearRegression.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LinearRegression.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestCommonSubstring.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LongestCommonSubstring.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LongestRepeatedSubstring.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LongestRepeatedSubstring.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Particle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Particle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/PatriciaSET.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/PatriciaSET.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/PatriciaST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/PatriciaST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Point2D.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Point2D.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RandomSeq.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/RandomSeq.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RectHV.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/RectHV.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RunLength.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/RunLength.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SegmentTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/SegmentTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SparseVector.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/SparseVector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/StaticSETofInts.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/StaticSETofInts.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/StdRandom.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/StdRandom.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ThreeSum.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ThreeSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ThreeSumFast.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ThreeSumFast.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Transaction.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Transaction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/TwoPersonZeroSumGame.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/TwoPersonZeroSumGame.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Vector.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Vector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/WhiteFilter.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/WhiteFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Whitelist.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Whitelist.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Alphabet.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Alphabet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/BoyerMoore.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/BoyerMoore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Count.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Count.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/GREP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/GREP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/KMP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KWIK.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/KWIK.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSD.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LSD.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSDForInt.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LSDForInt.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LZW.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LZW.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSD.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/MSD.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSDForInt.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/MSDForInt.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/NFA.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/NFA.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Quick3string.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Quick3string.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/RabinKarp.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/RabinKarp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArray.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/SuffixArray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArrayX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/SuffixArrayX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieSET.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TrieSET.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TrieST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Bag.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/DeDup.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/DeDup.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/LinkedBag.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedBag.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/LinkedQueue.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/LinkedStack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedStack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/LookupCSV.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LookupCSV.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Queue.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayBag.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayBag.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayQueue.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayStack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayStack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/SET.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Stack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Stack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/AdjMatrixEdgeWeightedDigraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AdjMatrixEdgeWeightedDigraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/BreadthFirstDirectedPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BreadthFirstDirectedPaths.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/CPM.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/CPM.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DepthFirstDirectedPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstDirectedPaths.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DepthFirstOrder.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstOrder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/Digraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Digraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DigraphGenerator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DigraphGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DijkstraAllPairsSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraAllPairsSP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DijkstraSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DijkstraUndirectedSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedCycleX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycleX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedDFS.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedDFS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedEdge.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEdge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedEulerianCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEulerianCycle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/DirectedEulerianPath.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEulerianPath.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/EdgeWeightedDigraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/FloydWarshall.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/FloydWarshall.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/GabowSCC.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/GabowSCC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/KosarajuSharirSCC.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/KosarajuSharirSCC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/NonrecursiveDirectedDFS.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/NonrecursiveDirectedDFS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/SymbolDigraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/SymbolDigraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/TarjanSCC.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TarjanSCC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/Topological.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/TopologicalX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TopologicalX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/digraph/TransitiveClosure.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TransitiveClosure.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/FlowEdge.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FlowEdge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/FlowNetwork.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FlowNetwork.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/FordFulkerson.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FordFulkerson.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/GlobalMincut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/AcyclicLP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/AcyclicLP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/AcyclicSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/AcyclicSP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/Arbitrage.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Arbitrage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/AssignmentProblem.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/AssignmentProblem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BellmanFordSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BellmanFordSP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/Bipartite.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BipartiteMatching.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteMatching.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BipartiteX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BoruvkaMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BoruvkaMST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BreadthFirstPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BreadthFirstPaths.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/BreadthFirstPathsCheck.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BreadthFirstPathsCheck.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/CC.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/CC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/Cycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/DegreesOfSeparation.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DegreesOfSeparation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/DepthFirstPaths.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DepthFirstPaths.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/DepthFirstSearch.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DepthFirstSearch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/EulerianCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianCycle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/EulerianPath.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianPath.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/Graph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Graph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/GraphGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/HopcroftKarp.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/HopcroftKarp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/NonrecursiveDFS.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/NonrecursiveDFS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/SymbolGraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/SymbolGraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/BinarySearch.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/BinarySearchST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearchST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/FileIndex.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/FileIndex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/FrequencyCounter.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/FrequencyCounter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/LinearProbingHashST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/LinearProbingHashST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/LookupIndex.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/LookupIndex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/ST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/ST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/SeparateChainingHashST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/SeparateChainingHashST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/SequentialSearchST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/SequentialSearchST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/BinaryInsertion.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Heap.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Insertion.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Insertion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/InsertionX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/InsertionX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Interval1D.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval1D.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Interval2D.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval2D.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Merge.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Merge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/MergeBU.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/MergeBU.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/MergeX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/MergeX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Quick.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Quick3way.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/QuickX.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/QuickX.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Selection.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/sort/Shell.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Shell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/AVLTreeST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BSTRedBlack.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BSTRedBlack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/FibonacciMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexFibonacciMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexFibonacciMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMaxPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMultiwayMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MaxPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MaxPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MinPQBinomial.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MinPQIndexedBinomial.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQIndexedBinomial.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MultiwayByIndexMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayByIndexMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/MultiwayMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/QuickFindUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/QuickUnionUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/SampleUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/SampleUF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/TopM.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/TopM.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/UF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/UF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/WeightedQuickUnionUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/WeightedQuickUnionUF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/BinaryIn.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryIn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/BinaryStdIn.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryStdIn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/In.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/Out.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdArrayIO.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdAudio.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdAudio.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdDraw.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdDraw.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdIn.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdIn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdOut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdOut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdStats.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdStats.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/Stopwatch.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Stopwatch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StopwatchCPU.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StopwatchCPU.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/Edge.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/Edge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/EdgeWeightedDirectedCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedDirectedCycle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/EdgeWeightedGraph.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedGraph.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/KruskalMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/LazyPrimMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/PrimMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/BinaryDump.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryDump.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/BinaryOut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryOut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/BinaryStdOut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryStdOut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/Genome.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Genome.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/HexDump.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/HexDump.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/Huffman.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Huffman.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/Picture.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Picture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/zip/PictureDump.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/PictureDump.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,110 +327,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="FibonacciMinPQ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/FibonacciMinPQ.java">
+      <file leaf-file-name="IntHeap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalMincut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/GlobalMincut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="173">
+              <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2339#2340#0" expanded="true" />
+                <element signature="e#2374#2375#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
+                <element signature="e#2472#2473#0" expanded="true" />
+                <element signature="e#2507#2508#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
+                <element signature="e#2741#2742#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Cat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClosestPair.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ClosestPair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Complex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Complex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Counter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Counter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoublingRatio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FenwickTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FenwickTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3230">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FarthestPair.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FarthestPair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrahamScan.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GrahamScan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2600">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -282,42 +371,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/SeparateChainingHashST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/LinearProbingHashST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/PatriciaSET.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/LookupCSV.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/LookupIndex.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/search/FileIndex.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BSTRedBlack.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BTree.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/AVLTreeST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/FibonacciMinPQ.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LinearProgramming.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Count.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Cat.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/DeDup.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/SET.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdStats.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/Stopwatch.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/StopwatchCPU.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StopwatchCPU.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ThreeSum.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LZW.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSDForInt.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSDForInt.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSD.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSD.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Quick3string.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieSET.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/BlackFilter.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/RabinKarp.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SuffixArray.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SuffixArrayX.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArray.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArrayX.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ResizingArrayBag.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ResizingArrayQueue.java" />
@@ -333,6 +386,42 @@
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/weightedgraph/GlobalMincut.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/GlobalMincut.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/base/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/MergeSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/HeapSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/QuickSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/CountingSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/RadixSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/BucketSort.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/SkipListNode.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/SkipList.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/DisjointSet.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/BubbleSorter.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/Heap.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/MergeSorterTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteX.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianCycle.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianPath.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval2D.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedGraph.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/HeapSorterTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/BubbleSorterTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/InsertionSorterTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeapTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/QuickSorterTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/SorterBenchmark.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/ArrayStackTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter13/IntRedBlackTree.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter18/BTreeTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeap.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeapTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeapTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/LinkedDisjointedSetTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/pom.xml" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeap.java" />
       </list>
     </option>
   </component>
@@ -384,6 +473,80 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="runtime.framework.server">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -508,7 +671,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thomas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,45 +705,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
+              <option name="myItemId" value="algoritms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="weightedgraph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemId" value="thomas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree" />
+              <option name="myItemId" value="chapter06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -606,96 +743,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
+              <option name="myItemId" value="algoritms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="flow" />
+              <option name="myItemId" value="thomas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="runtime.framework.server">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.other" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4898897" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/core.framework.dataming.pyscript/ch02/kNN.py" />
@@ -720,6 +817,13 @@
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.12 (C:\Python27\python.exe)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="edu.princeton.cs.algs4.flow" />
       <recent name="edu.princeton.cs.algs4.weightedgraph" />
@@ -728,18 +832,11 @@
       <recent name="edu.princeton.cs.algs4.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\main\java\com\abc\basic\algoritms\thomas" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch09" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch15" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch14" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch13" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch12" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SuffixArrayX">
@@ -1493,7 +1590,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276644" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25162336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25108224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1508,7 +1606,6 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="647" y="211" width="625" height="593" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14393939" sideWeight="0.5277311" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1922,55 +2019,55 @@
           <option name="timeStamp" value="1332" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
           <line>103</line>
           <properties />
           <option name="timeStamp" value="1363" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
           <line>111</line>
           <properties />
           <option name="timeStamp" value="1365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
           <line>113</line>
           <properties />
           <option name="timeStamp" value="1366" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
           <line>115</line>
           <properties />
           <option name="timeStamp" value="1367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
           <line>117</line>
           <properties />
           <option name="timeStamp" value="1368" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/IndexMultiwayMinPQ.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java</url>
           <line>224</line>
           <properties />
           <option name="timeStamp" value="1373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BSTRedBlack.java</url>
-          <line>764</line>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BSTRedBlack.java</url>
+          <line>762</line>
           <properties />
           <option name="timeStamp" value="1382" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSD.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/MSD.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="1401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java</url>
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/KMP.java</url>
           <line>92</line>
           <properties />
           <option name="timeStamp" value="1420" />
@@ -2015,410 +2112,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StopwatchCPU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LZW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSDForInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="643" column="16" selection-start-line="643" selection-start-column="16" selection-end-line="643" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSDForInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/LSD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/MSD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/utils/StdOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#3421#3422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3275">
-          <caret line="133" column="27" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="27" />
-          <folding>
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/BlackFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/Quick3string.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/RabinKarp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KMP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieSET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/TrieST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5600">
-          <caret line="244" column="51" selection-start-line="244" selection-start-column="42" selection-end-line="244" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2387#2395#0" expanded="true" />
-            <element signature="e#5513#5522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#737#738#0" expanded="false" />
-            <element signature="e#774#775#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#1381#1382#0" expanded="false" />
-            <element signature="e#1433#1434#0" expanded="false" />
-            <element signature="e#1466#1467#0" expanded="false" />
-            <element signature="e#1504#1505#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/SuffixArrayX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/PatriciaSET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/PatriciaST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/TwoPersonZeroSumGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/LinearProgramming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1475">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#1833#1834#0" expanded="false" />
-            <element signature="e#1869#1870#0" expanded="false" />
-            <element signature="e#1905#1906#0" expanded="false" />
-            <element signature="e#1970#1971#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/col/ResizingArrayStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SegmentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1400">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/SparseVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Particle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1250">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/RandomSeq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/StdRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3560">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/KWIK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/NFA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/alphabet/GREP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Knuth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FFT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/Bipartite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/graph/SymbolGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/BTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="192" column="26" selection-start-line="192" selection-start-column="26" selection-end-line="192" selection-end-column="26" />
-          <folding>
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/tree/FibonacciMinPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/flow/GlobalMincut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/ClosestPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Complex.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -2426,7 +2120,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/Counter.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -2434,39 +2128,428 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/DoublingRatio.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DoublingRatio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="1175">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FenwickTree.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FenwickTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3230">
+        <state relative-caret-position="125">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/FarthestPair.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FarthestPair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="750">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/edu/princeton/cs/algs4/GrahamScan.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GrahamScan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2600">
+        <state relative-caret-position="25">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/algorithms/base/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/CountingSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/RadixSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/BucketSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/SkipListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/SkipList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/tree/BTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6402">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/DisjointSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="127" column="54" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/BubbleSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/JohnsonGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="254" column="44" selection-start-line="254" selection-start-column="44" selection-end-line="254" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter26/EdmondsKarpGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3568">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/MergeSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/InsertionSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/BubbleSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-715">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/common/BaseTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/HeapSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/BubbleSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/InsertionSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/QuickSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/SorterBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#5541#5542#0" expanded="true" />
+            <element signature="e#5570#5571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntArrayQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/ArrayStackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter11/OpenAddressHashtableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter13/IntRedBlackTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter18/BTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/LinkedDisjointedSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="478" column="21" selection-start-line="478" selection-start-column="21" selection-end-line="478" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+          <folding>
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2472#2473#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2741#2742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2523,7 +2606,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>core.framework.datamining.pyscript</last-edited>
+          <last-edited>core.framework.datamining</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
