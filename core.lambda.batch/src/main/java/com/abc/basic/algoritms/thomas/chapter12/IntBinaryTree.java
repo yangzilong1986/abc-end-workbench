@@ -187,7 +187,8 @@ public class IntBinaryTree {
 		checkLeftRightParentPointer(root, set);
 		
 		if (set.size() != size) {
-			throw new IllegalStateException(String.format("actual size(%d) is not the expected size(%d)", set.size(), size));
+			throw new IllegalStateException(String.format("actual size(%d)" +
+					" is not the expected size(%d)", set.size(), size));
 		}
 	}
 	

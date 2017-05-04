@@ -4,11 +4,13 @@ import java.util.Arrays;
 import junit.framework.TestCase;
 
 
-public abstract class BaseTestCase extends TestCase {
+public abstract class BaseTestCase extends TestCase
+{
+
 	public void assertArrayEquals(Object[] expected, Object[] actual) {
 		if (!Arrays.equals(expected, actual)) {
 			assertEquals(Arrays.toString(expected), Arrays.toString(actual));
-			// 上面针对字符的比较有可能没有失败，所以。。。
+//			 上面针对字符的比较有可能没有失败，所以。。。
 			fail("array not equal");
 		}
 	}

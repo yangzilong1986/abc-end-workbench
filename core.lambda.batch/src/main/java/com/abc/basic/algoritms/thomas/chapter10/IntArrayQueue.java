@@ -87,16 +87,19 @@ public class IntArrayQueue {
 	private void checkInvariant() {
 		if (size == 0) {
 			if (head != tail) {
-				throw new RuntimeException("when size = 0, head(" + head + ") != tail(" + tail + ")");
+				throw new RuntimeException("when size = 0, " +
+						"head(" + head + ") != tail(" + tail + ")");
 			}
 		} else {
 			if (tail > head) {
 				if (size != (tail - head)) {
-					throw new RuntimeException("when tail > head, size(" + size + ") != tail(" + tail+") - head(" + head + ")");
+					throw new RuntimeException("when tail > head, " +
+							"size(" + size + ") != tail(" + tail+") - head(" + head + ")");
 				}
 			} else {
 				if (size != (tail - head + elementData.length)) {
-					throw new RuntimeException("when tail <= head, size != tail(" + tail + ") - head(" + head + ") + elementData.length(" + elementData.length + ")");
+					throw new RuntimeException("when tail <= head, size != tail(" + tail + ") " +
+							"- head(" + head + ") + elementData.length(" + elementData.length + ")");
 				}
 			}
 		}
