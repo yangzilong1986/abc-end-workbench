@@ -157,24 +157,27 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         //右边是红色新增的键是右边，即大于父节点的键，但是左边不是红色，即为空或者有值
         //左孩子是红色，左孩子的左孩子是红色，则右旋转
         //c-b树中插入a，如下图所示
-        //          c-回退到此时旋转              b
-        //      a     b       左旋转        a           c
+        //          c-h回退到此时旋转             b
+        //  黑色 |     \红色边
+        //     a      b       左旋转        a           c
         //
         //当插入完a后，当递归出栈，到c节点，即根节点时
-        if (isRed(h.right) && !isRed(h.left)) {//h.left a
+        if (isRed(h.right) && !isRed(h.left)) {//h.left a 右红左不红
             h = rotateLeft(h);//左旋转
         }
         //左孩子是红色，左孩子的左孩子是红色，则右旋转
         //c-b树中插入a，如下图所示
-        //              c-回退到此时旋转        b
-        //      b            右旋转        a           c
-        //  a-插入值
+        //        c-回退到此时旋转          b
+        //       |红色边
+        //      b            右旋转   a           c
+        //     | 红色边
+        //    a-插入值
         //当插入完a后，当递归出栈，到c节点，即根节点时
-        if (isRed(h.left)  &&  isRed(h.left.left)) {
+        if (isRed(h.left)  &&  isRed(h.left.left)) {//左红，左左红
             h = rotateRight(h);
         }
         //左右均为红色
-        if (isRed(h.left)  &&  isRed(h.right))   {
+        if (isRed(h.left)  &&  isRed(h.right))   {//左右红
             flipColors(h);
         }
         h.size = size(h.left) + size(h.right) + 1;
@@ -224,7 +227,7 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         h.right = x.left;
         x.left = h;
         x.color = x.left.color;
-        x.left.color = RED;
+        x.left.color = RED;//返回的节点
         x.size = h.size;
         h.size = size(h.left) + size(h.right) + 1;
         return x;
@@ -259,7 +262,7 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         //               c
         //          b
         //      a
-        if (!isRed(h.left) && !isRed(h.left.left)) {
+        if (!isRed(h.left) && !isRed(h.left.left)) {//左不红左左不红
             h = moveRedLeft(h);
         }
         h.left = deleteMin(h.left);
@@ -276,11 +279,36 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         //          d
         //上面树结构则，则执行下面操作
         flipColors(h);
-        if (isRed(h.right.left)) {
-            h.right = rotateRight(h.right);
-            h = rotateLeft(h);
+        if (isRed(h.right.left)) {//右左红
+            h.right = rotateRight(h.right);//左转
+            h = rotateLeft(h);//右转
             flipColors(h);
         }
+        return h;
+    }
+
+    // restore red-black tree invariant
+    private Node balance(Node h) {
+        // assert (h != null);
+        //如果右边是红色，则左转
+        //  b
+        //      c
+        if (isRed(h.right)){//右红
+            h = rotateLeft(h);
+        }
+        //如果左边，左结点的左结点都是红色，则右转
+        //             c
+        //        b
+        //  a
+        if (isRed(h.left) && isRed(h.left.left)) {
+            h = rotateRight(h);
+        }
+        //左右为红，
+        if (isRed(h.left) && isRed(h.right))     {
+            flipColors(h);
+        }
+
+        h.size = size(h.left) + size(h.right) + 1;
         return h;
     }
     ////////////////////////////////////////////////////////////////
@@ -291,7 +319,9 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         }
 
         // if both children of root are black, set root to red
-        if (!isRed(root.left) && !isRed(root.right)) {
+        //         root
+        //     a           f
+       if (!isRed(root.left) && !isRed(root.right)) {//左右都不红
             root.color = RED;
         }
         root = deleteMax(root);
@@ -312,9 +342,9 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         if (h.right == null) {
             return null;
         }
-        //          d
-        //              f
-        //          e
+        //    d
+        //         f
+        //      e
         //删除最小值
         //if (!isRed(h.left) && !isRed(h.left.left))
         if (!isRed(h.right) && !isRed(h.right.left)) {
@@ -323,6 +353,22 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         h.right = deleteMax(h.right);
 
         return balance(h);
+    }
+
+    // Assuming that h is red and both h.right and h.right.left
+    // are black, make h.right or one of its children red.
+    private Node moveRedRight(Node h) {
+        // assert (h != null);
+        // assert isRed(h) && !isRed(h.right) && !isRed(h.right.left);
+        //            a
+        //     c
+        //e
+        flipColors(h);
+        if (isRed(h.left.left)) {//左左红
+            h = rotateRight(h);
+            flipColors(h);
+        }
+        return h;
     }
     /////////////////////////////////////////////////
     public void delete(Key key) {
@@ -352,12 +398,16 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         //  a       c      e       g
         //删除a时
         if (key.compareTo(h.key) < 0)  {//删除值小于树结点左边
-            if (!isRed(h.left) && !isRed(h.left.left)) {
-                h = moveRedLeft(h);
-            }
+            //if (!isRed(h.left) && !isRed(h.left.left)) {
+            //          d-h
+            //      b
+            //  a
+            if (!isRed(h.left) && !isRed(h.left.left)) {//小于树中的key
+                h = moveRedLeft(h);//左转
+            }//
             h.left = delete(h.left, key);
-        }else {//删除e时
-            if (isRed(h.left)) {
+        }else {//删除e,删除的key大于树中键
+            if (isRed(h.left)) {//左红
                 h = rotateRight(h);
             }
             //             d
@@ -372,6 +422,10 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
 
                 return null;//如果是f结点，则返回
             }
+            //       h
+            //                b
+            //          c
+            //
             if (!isRed(h.right) && !isRed(h.right.left)) {
                 //h.left.left
                 h = moveRedRight(h);
@@ -389,40 +443,6 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         }
         return balance(h);
     }
-
-    // Assuming that h is red and both h.right and h.right.left
-    // are black, make h.right or one of its children red.
-    private Node moveRedRight(Node h) {
-        // assert (h != null);
-        // assert isRed(h) && !isRed(h.right) && !isRed(h.right.left);
-        flipColors(h);
-        if (isRed(h.left.left)) { 
-            h = rotateRight(h);
-            flipColors(h);
-        }
-        return h;
-    }
-
-    // restore red-black tree invariant
-    private Node balance(Node h) {
-        // assert (h != null);
-        //如果右边是红色，则左转
-        if (isRed(h.right)){
-            h = rotateLeft(h);
-        }
-        //如果左边，左结点的左结点都是红色，则右转
-        if (isRed(h.left) && isRed(h.left.left)) {
-            h = rotateRight(h);
-        }
-        //左右为红，
-        if (isRed(h.left) && isRed(h.right))     {
-            flipColors(h);
-        }
-
-        h.size = size(h.left) + size(h.right) + 1;
-        return h;
-    }
-
 
    /***************************************************************************
     *  Utility functions.
