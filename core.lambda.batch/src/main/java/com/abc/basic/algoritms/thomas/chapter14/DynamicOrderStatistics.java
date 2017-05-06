@@ -66,7 +66,8 @@ public class DynamicOrderStatistics<T> extends BaseRedBlackTree<T> {
 		Node<T> r = (Node<T>) n.getRight();
 		if (n != nullNode) {
 			if (n.size != l.size + r.size + 1) {
-				throw new IllegalStateException(String.format("for node(%s), n.size(%d) != l.size(%d) + r.size(%d) + 1", n, n.size, l.size, r.size));
+				throw new IllegalStateException(String.format("for node(%s), n.size(%d) != l.size(%d) + r.size(%d) + 1",
+						n, n.size, l.size, r.size));
 			}
 		}
 	}

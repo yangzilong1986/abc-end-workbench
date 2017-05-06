@@ -157,9 +157,9 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         //右边是红色新增的键是右边，即大于父节点的键，但是左边不是红色，即为空或者有值
         //左孩子是红色，左孩子的左孩子是红色，则右旋转
         //c-b树中插入a，如下图所示
-        //          c-h回退到此时旋转             b
-        //  黑色 |     \红色边
-        //     a      b       左旋转        a           c
+        //         c-h回退到此时旋转             b
+        //  黑色  /    \红色边
+        //      a      b       左旋转        a           c
         //
         //当插入完a后，当递归出栈，到c节点，即根节点时
         if (isRed(h.right) && !isRed(h.left)) {//h.left a 右红左不红
@@ -167,11 +167,11 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         }
         //左孩子是红色，左孩子的左孩子是红色，则右旋转
         //c-b树中插入a，如下图所示
-        //        c-回退到此时旋转          b
-        //       |红色边
-        //      b            右旋转   a           c
-        //     | 红色边
-        //    a-插入值
+        //          c-回退到此时旋转          b
+        //        /红色边
+        //       b            右旋转   a           c
+        //     / 红色边
+        //   a-插入值
         //当插入完a后，当递归出栈，到c节点，即根节点时
         if (isRed(h.left)  &&  isRed(h.left.left)) {//左红，左左红
             h = rotateRight(h);
@@ -205,13 +205,14 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
      */
     private Node rotateRight(Node h) {
         // assert (h != null) && isRed(h.left);
-        Node x = h.left;
-        h.left = x.right;
-        x.right = h;
-        x.color = x.right.color;
-        x.right.color = RED;
-        x.size = h.size;
-        h.size = size(h.left) + size(h.right) + 1;
+        Node x = h.left;        //           h                               l( x = h.left) 并取h的颜色
+        h.left = x.right;       //        /     \                         /   \(x.right = h)
+        x.right = h;            //       l        r                      a      h(设为红色)
+        x.color = x.right.color;//    /  \     /   \      (h.left = x.right) /   \
+        x.right.color = RED;    //  a     b   c      d                      b      r
+        x.size = h.size;        //                                                /  \
+                                //                                                c     d
+        h.size = size(h.left) + size(h.right) + 1;//
         return x;
     }
 
@@ -223,15 +224,17 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
      */
     private Node rotateLeft(Node h) {
         // assert (h != null) && isRed(h.right);
-        Node x = h.right;
-        h.right = x.left;
-        x.left = h;
-        x.color = x.left.color;
-        x.left.color = RED;//返回的节点
-        x.size = h.size;
+        Node x = h.right;             //         h                           r(x=h.right)并取h的颜色
+        h.right = x.left;            //      /    \            (x.left=h) /       \
+        x.left = h;                  //     l        r(x)    (设为红色)  h          d
+        x.color = x.left.color;     //  /   \      /  \               / \  (h.right = x.left)
+        x.left.color = RED;         //a       b   c     d           l    c
+        x.size = h.size;            //                             /  \
+                                    //                            a     b
         h.size = size(h.left) + size(h.right) + 1;
         return x;
     }
+
     /***************************************************************************
     *  Red-black tree deletion.
     ***************************************************************************/
@@ -241,7 +244,7 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         }
 
         // if both children of root are black, set root to red
-        //左右都不是红色
+        //左右都不是红色，满足一个节点为红，则其两个子节点为黑
         if (!isRed(root.left) && !isRed(root.right)) {
             root.color = RED;
         }
@@ -255,13 +258,13 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     // delete the key-value pair with the minimum key rooted at h
     private Node deleteMin(Node h) {
         //左边最小，没有左结点则返回，它是递归退出的条件
-        if (h.left == null) {
+        if (h.left == null) {//作为null，没有找到最小值，则返回
             return null;
         }
         //左孩子和左孩子的左孩子都不是红色
-        //               c
-        //          b
-        //      a
+        //               h
+        //          f
+        //      c
         if (!isRed(h.left) && !isRed(h.left.left)) {//左不红左左不红
             h = moveRedLeft(h);
         }
@@ -274,8 +277,8 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     private Node moveRedLeft(Node h) {
         // assert (h != null);
         // assert isRed(h) && !isRed(h.left) && !isRed(h.left.left);
-        //          c
-        //              e
+        //          h
+        //              x
         //          d
         //上面树结构则，则执行下面操作
         flipColors(h);
@@ -334,8 +337,8 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
     // delete the key-value pair with the maximum key rooted at h
     private Node deleteMax(Node h) {
         //删除最大值，最大值一直在右边
-        //          b
-        //      a
+        //          h
+        //      l       r
         if (isRed(h.left)) {
             h = rotateRight(h);
         }
@@ -464,11 +467,6 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
    /***************************************************************************
     *  Ordered symbol table methods.
     ***************************************************************************/
-    /**
-     * Returns the smallest key in the symbol table.
-     * @return the smallest key in the symbol table
-     * @throws NoSuchElementException if the symbol table is empty
-     */
     public Key min() {
         if (isEmpty()) {
             throw new NoSuchElementException("called min() with empty symbol table");
@@ -486,11 +484,6 @@ public class BSTRedBlack<Key extends Comparable<Key>, Value> {
         }
     } 
 
-    /**
-     * Returns the largest key in the symbol table.
-     * @return the largest key in the symbol table
-     * @throws NoSuchElementException if the symbol table is empty
-     */
     public Key max() {
         if (isEmpty()) {
             throw new NoSuchElementException("called max() with empty symbol table");

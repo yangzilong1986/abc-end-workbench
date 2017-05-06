@@ -78,6 +78,10 @@ public class BTree {
 		}
 		x.key[i] = y.key[degree - 1];
 		x.num++;
+		//磁盘读写
+		//disk-write(y)
+		//disk-write(z)
+		//disk-write(x)
 	}
 	
 	public void insert(int k) {
@@ -102,11 +106,13 @@ public class BTree {
 			}
 			x.key[i + 1] = k;
 			x.num++;
+			//disk-write(x)
 		} else {
 			while (i >= 0 && x.key[i] > k) {
 				i--;
 			}
 			i++;
+			//disk-read(x.children[i])
 			if (x.children[i].num == (degree<<1)-1) {
 				split(x, i);
 				if (k > x.key[i]) i++;

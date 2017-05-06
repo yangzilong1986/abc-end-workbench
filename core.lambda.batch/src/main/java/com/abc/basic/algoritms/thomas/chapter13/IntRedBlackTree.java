@@ -334,21 +334,35 @@ public class IntRedBlackTree {
     }
 
     private void delete(Node node) {
+        //          q
+        //          |
+        //          z
+        //        /  \
+        //     l      r
+        //           /
+        //          y
+        //           \
+        //            x
         assert node != NULL_NODE;
         Node d; // d为要删除的结点
+        //删除节点z，找到的后继节点为y
+
         if (node.left == NULL_NODE || node.right == NULL_NODE) {
             d = node;
         } else {
             d = successorNode(node);
         }
+        //后继节点的左不为空，取左结点，否则取右结点
         Node c = d.left != NULL_NODE ? d.left : d.right; // c为要链接到的子结点
+        //c替换为d的步骤1，设置c的父
         c.parent = d.parent; // 不需要检测c是否为NULL_NODE，deleteFixup方法依赖于这里设置的值
 
         if (d.parent == NULL_NODE) {
             root = c;
         } else {
-            if (d.parent.left == d) {
-                d.parent.left = c;
+            // c替换为d的步骤2，设置d的原父节点为的子节点为c，以替换d
+            if (d.parent.left == d) {//d为左节点
+                 d.parent.left = c;
             } else {
                 d.parent.right = c;
             }

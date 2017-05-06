@@ -50,7 +50,9 @@ public abstract class BaseRedBlackTree<T> {
 	}
 	
 	public T minimum() {
-		if (size == 0) throw new IllegalStateException("no data");
+		if (size == 0) {
+			throw new IllegalStateException("no data");
+		}
 		return minimumNode(root).getKey();
 	}
 	
@@ -63,7 +65,9 @@ public abstract class BaseRedBlackTree<T> {
 	}
 	
 	public T maximum() {
-		if (size == 0) throw new IllegalStateException("no data");
+		if (size == 0) {
+			throw new IllegalStateException("no data");
+		}
 		return maximumNode(root).getKey();
 	}
 	
