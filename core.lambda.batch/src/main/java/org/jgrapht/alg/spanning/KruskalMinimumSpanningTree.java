@@ -7,10 +7,6 @@ import org.jgrapht.alg.interfaces.*;
 import org.jgrapht.alg.util.*;
 
 /**
- * An implementation of <a href="http://en.wikipedia.org/wiki/Kruskal's_algorithm">Kruskal's minimum
- * spanning tree algorithm</a>. If the given graph is connected it computes the minimum spanning
- * tree, otherwise it computes the minimum spanning forest. The algorithm runs in time O(E log E).
- * This implementation uses the hashCode and equals method of the vertices.
  * 最小生成树
  * 并集计算方法，即从图，总是找找到最小的边，加入集合
  */

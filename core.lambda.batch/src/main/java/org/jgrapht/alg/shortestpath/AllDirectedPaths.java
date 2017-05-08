@@ -25,12 +25,6 @@ import org.jgrapht.graph.*;
 /**
  * A Dijkstra-like algorithm to find all paths between two sets of nodes in a directed graph, with
  * options to search only simple paths and to limit the path length.
- *
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Andrew Gainer-Dewar
- * @since Feb, 2016
  */
 public class AllDirectedPaths<V, E>
 {

@@ -6,11 +6,7 @@ import org.jgrapht.*;
 import org.jgrapht.alg.interfaces.*;
 
 /**
- * An implementation of <a href="http://en.wikipedia.org/wiki/Prim's_algorithm"> Prim's
- * algorithm</a> that finds a minimum spanning tree/forest subject to connectivity of the supplied
- * weighted undirected graph. The algorithm was developed by Czech mathematician V. Jarník and later
- * independently by computer scientist Robert C. Prim and rediscovered by E. Dijkstra.
- *
+ *  生成树
  */
 public class PrimMinimumSpanningTree<V, E>
     implements SpanningTreeAlgorithm<E>

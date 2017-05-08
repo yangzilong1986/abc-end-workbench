@@ -98,13 +98,7 @@ public class BinomialHeapTest extends TestCase {
 		public int size() { return heap.size(); }
 	}
 	
-	protected void setUp() throws Exception {
-		super.setUp();
-	}
 
-	protected void tearDown() throws Exception {
-		super.tearDown();
-	}
 
 	public void testMinimum() {
 		BinomialHeapHolder heap = new BinomialHeapHolder();

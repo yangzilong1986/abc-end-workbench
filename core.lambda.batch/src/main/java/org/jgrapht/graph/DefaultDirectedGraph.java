@@ -3,10 +3,6 @@ package org.jgrapht.graph;
 import org.jgrapht.*;
 import org.jgrapht.graph.builder.*;
 
-/**
- * A directed graph. A default directed graph is a non-simple directed graph in which multiple edges
- * between any two vertices are <i>not</i> permitted, but loops are.
- */
 public class DefaultDirectedGraph<V, E>
     extends AbstractBaseGraph<V, E>
     implements DirectedGraph<V, E>
@@ -14,7 +10,7 @@ public class DefaultDirectedGraph<V, E>
     private static final long serialVersionUID = 3544953246956466230L;
 
     public DefaultDirectedGraph(Class<? extends E> edgeClass)
-    {
+    {   //DefaultEdge
         this(new ClassBasedEdgeFactory<>(edgeClass));
     }
 
@@ -37,5 +33,3 @@ public class DefaultDirectedGraph<V, E>
         return new DirectedGraphBuilder<>(new DefaultDirectedGraph<>(ef));
     }
 }
-
-// End DefaultDirectedGraph.java

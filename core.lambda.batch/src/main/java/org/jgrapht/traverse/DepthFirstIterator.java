@@ -34,7 +34,6 @@ public class DepthFirstIterator<V, E>
 //    {
 //        return queue.isEmpty();
 //    }
-
     @Override
     protected boolean isConnectedComponentExhausted()
     {

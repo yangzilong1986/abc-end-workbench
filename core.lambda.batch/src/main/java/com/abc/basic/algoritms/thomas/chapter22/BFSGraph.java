@@ -66,8 +66,10 @@ public class BFSGraph {
 		s.vertex.color = Vertex.GRAY;
 		s.vertex.distance = 0;
 		LinkedList<VertexNode> queue = new LinkedList<VertexNode>();
+		//先进先出
 		queue.addLast(s);
 		while (!queue.isEmpty()) {
+			//第一个
 			Vertex u = queue.removeFirst().vertex;
 			for (EdgeNode vEdge = vertexNodes[u.id].firstEdge; vEdge != null; vEdge = vEdge.next) {
 				Vertex v = vEdge.vertexNode.vertex;
@@ -116,7 +118,9 @@ public class BFSGraph {
 		VertexNode vertexNode;
 		EdgeNode next;
 		
-		public EdgeNode(VertexNode v) { vertexNode = v; }
+		public EdgeNode(VertexNode v) {
+			vertexNode = v;
+		}
 		public String toString() { return String.valueOf(vertexNode); }
 	}
 	

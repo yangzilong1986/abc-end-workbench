@@ -77,9 +77,15 @@ public class KruskalSpanTree {
 		Vertex targetVertex;
 		int weight;
 		
-		public Edge(Vertex s, Vertex t, int w) { sourceVertex = s; targetVertex = t; weight = w; }
-		public int compareTo(Edge o) { return weight - o.weight; }
-		public String toString() { return sourceVertex+"->"+targetVertex+"("+weight+")"; }
+		public Edge(Vertex s, Vertex t, int w) {
+			sourceVertex = s; targetVertex = t; weight = w;
+		}
+		public int compareTo(Edge o) {
+			return weight - o.weight;
+		}
+		public String toString() {
+			return sourceVertex+"->"+targetVertex+"("+weight+")";
+		}
 	}
 	
 	private static class VertexNode {
@@ -95,17 +101,27 @@ public class KruskalSpanTree {
 		EdgeNode next;
 		int weight;
 		
-		public EdgeNode(VertexNode v, int w) { vertexNode = v; weight = w;}
-		public String toString() { return vertexNode.toString()+"("+weight+")"; }
-		public int compareTo(EdgeNode o) { return weight - o.weight; }
+		public EdgeNode(VertexNode v, int w) {
+			vertexNode = v; weight = w;
+		}
+		public String toString() {
+			return vertexNode.toString()+"("+weight+")";
+		}
+		public int compareTo(EdgeNode o) {
+			return weight - o.weight;
+		}
 	}
 	
 	public static class Vertex {
 		String data;		
 		SetNode setNode;
 		
-		public Vertex(String data) { this.data = data; }
-		public String toString() { return (data); }
+		public Vertex(String data) {
+			this.data = data;
+		}
+		public String toString() {
+			return (data);
+		}
 	}
 	
 	// 实现可合并的集合。见第21章。
@@ -114,7 +130,9 @@ public class KruskalSpanTree {
 		private int rank;
 		private Vertex vertex;
 
-		public SetNode(Vertex v) { this.vertex = v; }
+		public SetNode(Vertex v) {
+			this.vertex = v;
+		}
 
 		public static SetNode makeSet(Vertex v) {
 			SetNode x = new SetNode(v);

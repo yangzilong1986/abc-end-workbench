@@ -6,17 +6,47 @@ import java.util.Set;
 
 import com.abc.basic.algoritms.thomas.chapter12.IntIterator;
 
+/**
+ * 二项堆（Binomial Heap）是一种堆结构。与二叉堆（Binary Heap）相比，其优势是可以快速合并两个堆，
+ * 因此它属于可合并堆（Mergeable Heap）数据结构的一种。
+ */
 public class BinomialHeap {
+
+	/**
+	 * 二项堆的一个结点，非根结点是一棵二项树。
+	 */
+	static class Node {
+		Node parent;
+		Node child;
+		Node sibling;
+		int key;
+		int degree;
+
+		public Node(int k) {
+			key = k;
+		}
+		public String toString() {
+			return key+"@"+degree;
+		}
+	}
+
 	private Node head;
 	private int size;
 	
 	public BinomialHeap() {}
 	
-	public int size() { return size; }
-	public boolean isEmpty() { return size == 0; }
+	public int size() {
+		return size;
+	}
+
+	public boolean isEmpty() {
+		return size == 0;
+	}
 	
 	public int minimum() {
-		if (head == null) throw new IndexOutOfBoundsException("empty heap");
+		if (head == null) {
+			throw new IndexOutOfBoundsException("empty heap");
+		}
 		return minNode().key;
 	}
 	
@@ -26,7 +56,9 @@ public class BinomialHeap {
 		Node min = head;
 		Node n = head.sibling;
 		while (n != null) {
-			if (min.key > n.key) min = n;
+			if (min.key > n.key) {
+				min = n;
+			}
 			n = n.sibling;
 		}
 		return min;
@@ -91,7 +123,9 @@ public class BinomialHeap {
 		if (heap == this) {
 			throw new IllegalArgumentException("cannot union with itself");
 		}
-		if (heap.head == null) return;
+		if (heap.head == null) {
+			return;
+		}
 		if (this.head == null) {
 			this.head = heap.head;
 			this.size = heap.size;
@@ -104,7 +138,8 @@ public class BinomialHeap {
 		Node xnext = x.sibling;
 		
 		while (xnext != null) {
-			if (x.degree != xnext.degree || (xnext.sibling != null && xnext.sibling.degree == x.degree)) {
+			if (x.degree != xnext.degree ||
+					(xnext.sibling != null && xnext.sibling.degree == x.degree)) {
 				xprev = x;
 				x = xnext;
 			} else if (x.key <= xnext.key) {
@@ -140,7 +175,7 @@ public class BinomialHeap {
 	 */
 	private void merge(BinomialHeap heap) {
 		assert heap.head != null && this.head != null;
-		
+		//
 		Node n1 = this.head;
 		Node n2 = heap.head;
 		Node n;
@@ -164,8 +199,12 @@ public class BinomialHeap {
 				n2 = n2.sibling;
 			}
 		}
-		if (n1 != null) n.sibling = n1;
-		else n.sibling = n2;
+		if (n1 != null) {
+			n.sibling = n1;
+		}
+		else {
+			n.sibling = n2;
+		}
 		
 		this.size += heap.size;
 	}
@@ -261,21 +300,7 @@ public class BinomialHeap {
 		}
 		deleteRootNode(xprev, x);
 	}
-	
-	/** 
-	 * 二项堆的一个结点，非根结点是一棵二项树。
-	 */
-	static class Node {
-		Node parent;
-		Node child;
-		Node sibling;
-		int key;
-		int degree;
-		
-		public Node(int k) { key = k; }
-		public String toString() { return key+"@"+degree; }
-	}
-	
+
 	void checkConstraint() {
 		if ((size == 0) != (head == null)) {
 			throw new IllegalStateException("size == 0 <=> head == null");

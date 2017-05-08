@@ -78,9 +78,12 @@ public class TopologicalOrderIteratorTest
 
         Iterator<String> iter = new TopologicalOrderIterator<>(graph);
         int i = 0;
-
+        String actual = "";
         while (iter.hasNext()) {
-            assertEquals(v[i], iter.next());
+            String vi=iter.next();
+
+            actual += vi;
+            assertEquals(v[i], vi);
             ++i;
         }
 

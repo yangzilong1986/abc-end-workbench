@@ -78,7 +78,9 @@ public class FibonacciHeap {
 	}
 	
 	public int extractMin() {
-		if (size == 0) throw new IndexOutOfBoundsException("empty heap");
+		if (size == 0) {
+			throw new IndexOutOfBoundsException("empty heap");
+		}
 		Node z = head;
 		deleteRootNode(z);
 		return z.key;

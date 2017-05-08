@@ -46,35 +46,17 @@ public class DirectedSpecifics<V, E>
     protected Map<V, DirectedEdgeContainer<V, E>> vertexMapDirected;
     protected EdgeSetFactory<V, E> edgeSetFactory;
 
-    /**
-     * Construct a new directed specifics.
-     * 
-     * @param abstractBaseGraph the graph for which these specifics are for
-     */
     public DirectedSpecifics(AbstractBaseGraph<V, E> abstractBaseGraph)
     {
         this(abstractBaseGraph, new LinkedHashMap<>(), new ArrayUnenforcedSetEdgeSetFactory<>());
     }
 
-    /**
-     * Construct a new directed specifics.
-     * 
-     * @param abstractBaseGraph the graph for which these specifics are for
-     * @param vertexMap map for the storage of vertex edge sets
-     */
     public DirectedSpecifics(
         AbstractBaseGraph<V, E> abstractBaseGraph, Map<V, DirectedEdgeContainer<V, E>> vertexMap)
     {
         this(abstractBaseGraph, vertexMap, new ArrayUnenforcedSetEdgeSetFactory<>());
     }
 
-    /**
-     * Construct a new directed specifics.
-     * 
-     * @param abstractBaseGraph the graph for which these specifics are for
-     * @param vertexMap map for the storage of vertex edge sets
-     * @param edgeSetFactory factory for the creation of vertex edge sets
-     */
     public DirectedSpecifics(
         AbstractBaseGraph<V, E> abstractBaseGraph, Map<V, DirectedEdgeContainer<V, E>> vertexMap,
         EdgeSetFactory<V, E> edgeSetFactory)
@@ -84,9 +66,6 @@ public class DirectedSpecifics<V, E>
         this.edgeSetFactory = edgeSetFactory;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addVertex(V v)
     {
@@ -94,9 +73,6 @@ public class DirectedSpecifics<V, E>
         vertexMapDirected.put(v, null);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Set<V> getVertexSet()
     {

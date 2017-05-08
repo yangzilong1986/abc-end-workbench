@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.thomas.chapter21;
 
 /**
+ * 不相交森林
  * 可合并集合的一种实现，具有很高的效率。为了简单，这里使用了过程化的方式，与书上的一致。
  * <p>
  * 
@@ -22,7 +23,9 @@ public class DisjointSetForest {
 	}
 	
 	public static Node union(Node x, Node y) {
-		if (x == y) throw new IllegalArgumentException("Cannot union with itself");
+		if (x == y) {
+			throw new IllegalArgumentException("Cannot union with itself");
+		}
 		
 		return link(findSet(x), findSet(y));
 	}
@@ -64,7 +67,8 @@ public class DisjointSetForest {
 		Node set1 = makeSet(1);
 		Node set2 = makeSet(2);
 		Node set12 = union(set1, set2);
-		Node set3 = makeSet(3); Node set4 = makeSet(4);
+		Node set3 = makeSet(3);
+		Node set4 = makeSet(4);
 		Node set34 = union(set3, set4);
 		
 		Node set = union(set12, set34);

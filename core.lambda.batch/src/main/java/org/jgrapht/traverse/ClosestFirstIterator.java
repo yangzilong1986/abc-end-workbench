@@ -1,20 +1,3 @@
-/*
- * (C) Copyright 2003-2017, by John V Sichi and Contributors.
- *
- * JGraphT : a free Java graph-theory library
- *
- * This program and the accompanying materials are dual-licensed under
- * either
- *
- * (a) the terms of the GNU Lesser General Public License version 2.1
- * as published by the Free Software Foundation, or (at your option) any
- * later version.
- *
- * or (per the licensee's choosing)
- *
- * (b) the terms of the Eclipse Public License v1.0 as published by
- * the Eclipse Foundation.
- */
 package org.jgrapht.traverse;
 
 import org.jgrapht.*;
@@ -24,6 +7,7 @@ import org.jgrapht.util.*;
  * A closest-first iterator for a directed or undirected graph. For this iterator to work correctly
  * the graph must not be modified during iteration. Currently there are no means to ensure that, nor
  * to fail-fast. The results of such modifications are undefined.
+ * 最近优先
  */
 public class ClosestFirstIterator<V, E>
     extends CrossComponentIterator<V, E, FibonacciHeapNode<ClosestFirstIterator.QueueEntry<V, E>>>

@@ -2,10 +2,34 @@ package com.abc.basic.algoritms.thomas.chapter21;
 
 /**
  * 基于链表的可合并集合实现。
- * 
+ * 不相交集合
  * LinkedDisjointedSet的应用数据需要包含指向包含它的LinkedDisjointedSet的指针。
  */
 public class LinkedDisjointedSet {
+
+	private static class Node {
+		private AppData data;
+		private Node next;
+
+		public Node(AppData d) {
+			data = d;
+		}
+		public String toString() {
+			return data.toString();
+		}
+	}
+
+	public abstract static class AppData {
+		protected LinkedDisjointedSet set;
+
+		public void setSet(LinkedDisjointedSet s) {
+			set = s;
+		}
+		public LinkedDisjointedSet getSet() {
+			return set;
+		}
+	}
+
 	private int size;
 	private Node head;
 	private Node tail;
@@ -18,11 +42,17 @@ public class LinkedDisjointedSet {
 		head = tail = new Node(d);
 	}
 	
-	public int size() { return size; }
+	public int size() {
+		return size;
+	}
 	
 	public void union(LinkedDisjointedSet set) {
-		if (set == this) throw new IllegalArgumentException("Cannot union with itself");
-		if (set == null) return;
+		if (set == this) {
+			throw new IllegalArgumentException("Cannot union with itself");
+		}
+		if (set == null) {
+			return;
+		}
 		
 		tail.next = set.head;
 		tail = set.tail;
@@ -34,8 +64,12 @@ public class LinkedDisjointedSet {
 	}
 	
 	public static LinkedDisjointedSet union(LinkedDisjointedSet set1, LinkedDisjointedSet set2) {
-		if (set1 == null) return set2;
-		if (set2 == null) return set1;
+		if (set1 == null) {
+			return set2;
+		}
+		if (set2 == null) {
+			return set1;
+		}
 		if (set1.size < set2.size) {
 			set2.union(set1);
 			return set2;
@@ -52,22 +86,7 @@ public class LinkedDisjointedSet {
 	public AppData getRepresent() {
 		return head.data;
 	}
-	
-	private static class Node {
-		private AppData data;
-		private Node next;
-		
-		public Node(AppData d) { data = d; }
-		public String toString() { return data.toString(); }
-	}
-	
-	public abstract static class AppData {
-		protected LinkedDisjointedSet set;
-		
-		public void setSet(LinkedDisjointedSet s) { set = s; }
-		public LinkedDisjointedSet getSet() { return set; }
-	}
-	
+
 	void checkConstraint() {
 		if (size == 0 || head == null || tail == null)
 			throw new IllegalStateException("not allow empty set at present");
@@ -78,11 +97,13 @@ public class LinkedDisjointedSet {
 		for (Node n = head; n != null; n = n.next) {
 			actualSize++;
 			if (n.data.set != this) {
-				throw new IllegalStateException(String.format("for node(%s), its appdata's set it is not the set that contained it", n));
+				throw new IllegalStateException(String.format("for node(%s), its appdata's " +
+						"set it is not the set that contained it", n));
 			}
 		}
 		if (size != actualSize) {
-			throw new IllegalStateException(String.format("expected size is %d, but is %d", size, actualSize));
+			throw new IllegalStateException(String.format("expected size is %d, but is %d",
+					size, actualSize));
 		}
 	}
 }

@@ -33,7 +33,7 @@ public abstract class AbstractBaseGraph<V, E>
         edgeMap = new LinkedHashMap<>();
         edgeFactory = ef;
         allowingLoops = allowLoops;
-        allowingMultipleEdges = allowMultipleEdges;
+        allowingMultipleEdges = allowMultipleEdges;//FastLookupDirectedSpecifics
         specifics = Objects.requireNonNull(createSpecifics(), GRAPH_SPECIFICS_MUST_NOT_BE_NULL);
     }
 

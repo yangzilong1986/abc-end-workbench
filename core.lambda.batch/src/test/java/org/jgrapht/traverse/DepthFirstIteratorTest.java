@@ -60,7 +60,7 @@ public class DepthFirstIteratorTest
      */
     public void testBug1169182()
     {
-        DirectedGraph<String, DefaultEdge> dg = new DefaultDirectedGraph<>(DefaultEdge.class);
+        DirectedGraph<String, DefaultEdge> dg = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
 
         String a = "A";
         String b = "B";
@@ -113,6 +113,15 @@ public class DepthFirstIteratorTest
 
         String expected = "ABCGIFEHJKLD";
         assertEquals(expected, actual);
+
+        Iterator<String> iter = new TopologicalOrderIterator<>(dg);
+        actual = "";
+        while (iter.hasNext()) {
+            String v = iter.next();
+            actual += v;
+        }
+        System.out.println("TopologicalOrderIterator");
+        System.out.println(actual);
     }
 }
 
