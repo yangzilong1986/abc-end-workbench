@@ -117,13 +117,6 @@ public class BreadthFirstDirectedPaths {
         return distTo[v];
     }
 
-    /**
-     * Returns a shortest path from {@code s} (or sources) to {@code v}, or
-     * {@code null} if no such path.
-     * @param v the vertex
-     * @return the sequence of vertices on a shortest path, as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public Iterable<Integer> pathTo(int v) {
         validateVertex(v);
 

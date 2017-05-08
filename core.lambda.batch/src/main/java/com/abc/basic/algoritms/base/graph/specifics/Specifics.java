@@ -1,4 +1,4 @@
-package com.abc.basic.algoritms.base.graph;
+package com.abc.basic.algoritms.base.graph.specifics;
 
 import java.util.Set;
 

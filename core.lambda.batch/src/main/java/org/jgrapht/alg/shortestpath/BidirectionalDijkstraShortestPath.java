@@ -25,21 +25,6 @@ import org.jgrapht.util.*;
 
 /**
  * A bidirectional version of Dijkstra's algorithm.
- * 
- * <p>
- * See the Wikipedia article for details and references about
- * <a href="https://en.wikipedia.org/wiki/Bidirectional_search">bidirectional search</a>. This
- * technique does not change the worst-case behavior of the algorithm but reduces, in some cases,
- * the number of visited vertices in practice. This implementation alternatively constructs forward
- * and reverse paths from the source and target vertices respectively.
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @see DijkstraShortestPath
- *
- * @author Dimitrios Michail
- * @since July 2016
  */
 public final class BidirectionalDijkstraShortestPath<V, E>
     extends BaseShortestPathAlgorithm<V, E>

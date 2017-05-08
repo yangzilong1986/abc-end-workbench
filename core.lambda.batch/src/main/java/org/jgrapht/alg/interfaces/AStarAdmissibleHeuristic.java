@@ -19,7 +19,7 @@ package org.jgrapht.alg.interfaces;
 
 /**
  * Interface for an admissible heuristic used in A* search.
- *
+ * 星容许启发式
  * @param <V> vertex type
  *
  * @author Joris Kinable

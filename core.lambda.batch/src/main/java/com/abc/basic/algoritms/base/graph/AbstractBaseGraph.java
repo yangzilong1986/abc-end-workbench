@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.base.graph;
 
 import com.abc.basic.algoritms.base.graph.edgefactory.EdgeFactory;
+import com.abc.basic.algoritms.base.graph.specifics.Specifics;
 import com.abc.basic.algoritms.base.graph.util.TypeUtil;
 
 import java.io.Serializable;
@@ -315,12 +316,46 @@ public abstract class AbstractBaseGraph<V, E>
 
     protected Specifics<V, E> createSpecifics()
     {
-        return new FastLookupDirectedSpecifics<>(this);
+        if (this instanceof DirectedGraph<?, ?>) {
+            return createDirectedSpecifics();
+        } else if (this instanceof UndirectedGraph<?, ?>) {
+            return createUndirectedSpecifics();
+        } else {
+            throw new IllegalArgumentException(
+                    "must be instance of either DirectedGraph or UndirectedGraph");
+        }
     }
 
 
-    public  double getEdgeWeight(E e){
-        return 1.0;
+    @Deprecated
+    protected Specifics<V, E> createUndirectedSpecifics()
+    {
+        return new FastLookupUndirectedSpecifics<>(this);
+    }
+
+
+    @Deprecated
+    protected Specifics<V, E> createDirectedSpecifics()
+    {
+        return new FastLookupDirectedSpecifics<>(this);
+    }
+
+    @Override
+    public double getEdgeWeight(E e)
+    {
+        if (e instanceof DefaultWeightedEdge) {
+            return ((DefaultWeightedEdge) e).getWeight();
+        } else if (e == null) {
+            throw new NullPointerException();
+        } else {
+            return WeightedGraph.DEFAULT_EDGE_WEIGHT;
+        }
+    }
+
+    public void setEdgeWeight(E e, double weight)
+    {
+        assert (e instanceof DefaultWeightedEdge) : e.getClass();
+        ((DefaultWeightedEdge) e).weight = weight;
     }
 }
 

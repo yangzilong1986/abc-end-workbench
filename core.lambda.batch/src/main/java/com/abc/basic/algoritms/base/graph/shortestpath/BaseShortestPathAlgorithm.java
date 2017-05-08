@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-abstract class BaseShortestPathAlgorithm<V, E>
+public abstract class BaseShortestPathAlgorithm<V, E>
         implements ShortestPathAlgorithm<V, E>
 {
     protected final Graph<V, E> graph;

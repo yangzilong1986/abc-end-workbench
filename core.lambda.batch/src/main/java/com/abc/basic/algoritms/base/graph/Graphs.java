@@ -1,24 +1,27 @@
 package com.abc.basic.algoritms.base.graph;
 
+import com.abc.basic.algoritms.base.graph.edgefactory.EdgeFactory;
+
 import java.util.*;
 import java.util.function.*;
 
 public abstract class Graphs
 {
 
-//    public static <V, E> E addEdge(org.jgrapht.Graph<V, E> g, V sourceVertex, V targetVertex, double weight)
-//    {
-//        EdgeFactory<V, E> ef = g.getEdgeFactory();
-//        E e = ef.createEdge(sourceVertex, targetVertex);
-//
-//        // we first create the edge and set the weight to make sure that
-//        // listeners will see the correct weight upon addEdge.
-//
-//        assert (g instanceof WeightedGraph<?, ?>) : g.getClass();
-//        ((WeightedGraph<V, E>) g).setEdgeWeight(e, weight);
-//
-//        return g.addEdge(sourceVertex, targetVertex, e) ? e : null;
-//    }
+
+    public static <V, E> E addEdge(Graph<V, E> g, V sourceVertex, V targetVertex, double weight)
+    {
+        EdgeFactory<V, E> ef = g.getEdgeFactory();
+        E e = ef.createEdge(sourceVertex, targetVertex);
+
+        // we first create the edge and set the weight to make sure that
+        // listeners will see the correct weight upon addEdge.
+
+        assert (g instanceof WeightedGraph<?, ?>) : g.getClass();
+        ((WeightedGraph<V, E>) g).setEdgeWeight(e, weight);
+
+        return g.addEdge(sourceVertex, targetVertex, e) ? e : null;
+    }
 
 
     public static <V, E> E addEdgeWithVertices(org.jgrapht.Graph<V, E> g, V sourceVertex, V targetVertex)
