@@ -11,9 +11,9 @@ public abstract class AbstractPathElementList<V, E, T extends AbstractPathElemen
 {
     protected Graph<V, E> graph;
 
-    protected int maxSize;
+    public int maxSize;
 
-    protected ArrayList<T> pathElements = new ArrayList<>();
+    public ArrayList<T> pathElements = new ArrayList<>();
 
     /**
      * Target vertex of the paths.

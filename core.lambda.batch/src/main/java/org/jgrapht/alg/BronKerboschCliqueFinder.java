@@ -24,12 +24,10 @@ import org.jgrapht.*;
 /**
  * This class implements Bron-Kerbosch clique detection algorithm as it is described in [Samudrala
  * R.,Moult J.:A Graph-theoretic Algorithm for comparative Modeling of Protein Structure; J.Mol.
- * Biol. (1998); vol 279; pp. 287-302]
- * 
- * @param <V> the graph vertex type
- * @param <E> the graph edge type
- *
- * @author Ewgenij Proschak
+ * Bron-Kerbosch 算法计算图的最大全连通分量(团clique)
+ * 最大独立集： 顶点集V中取 K个顶点，其两两间无连接。
+ * 最大团：　顶点集V中取 K个顶点，其两两间有边连接。
+ * 最大团中顶点数量 = 补图的最大独立集中顶点数量
  */
 public class BronKerboschCliqueFinder<V, E>
 {

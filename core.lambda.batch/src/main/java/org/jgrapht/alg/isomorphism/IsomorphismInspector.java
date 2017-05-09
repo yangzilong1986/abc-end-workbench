@@ -23,7 +23,7 @@ import org.jgrapht.*;
 
 /**
  * General interface for graph and subgraph isomorphism.
- *
+ * 同形，类质同像; 同晶型; 同形性;
  * @param <V> the type of the vertices
  * @param <E> the type of the edges
  */
