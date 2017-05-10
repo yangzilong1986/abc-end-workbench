@@ -27,18 +27,7 @@ import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
- *  The {@code Cycle} class represents a data type for 
- *  determining whether an undirected graph has a cycle.
- *  The <em>hasCycle</em> operation determines whether the graph has
- *  a cycle and, if so, the <em>cycle</em> operation returns one.
- *  <p>
  *  This implementation uses depth-first search.
- *  The constructor takes time proportional to <em>V</em> + <em>E</em>
- *  (in the worst case),
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the <em>hasCycle</em> operation takes constant time;
- *  the <em>cycle</em> operation takes time proportional
- *  to the length of the cycle.
  *  检查环
  */
 public class Cycle {
@@ -47,13 +36,20 @@ public class Cycle {
     private Stack<Integer> cycle;
 
     public Cycle(Graph G) {
-        if (hasSelfLoop(G)) return;
-        if (hasParallelEdges(G)) return;
+        if (hasSelfLoop(G)) {
+            return;
+        }
+        if (hasParallelEdges(G)) {
+            return;
+        }
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v])
+//        dfs(G, -1, 0);
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v]) {
                 dfs(G, -1, v);
+            }
+        }
     }
 
 
@@ -109,18 +105,18 @@ public class Cycle {
         return cycle;
     }
 
-    private void dfs(Graph G, int u, int v) {
+    private void dfs(Graph G, int u, int v) {//u输入为-1，递归时：u:0,v:6
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : G.adj(v)) {//遍历一个边的另一个端点，0连接的另一个端点1,2,5,6
 
             // short circuit if cycle already found
-            if (cycle != null)
+            if (cycle != null) {
                 return;
-
-            if (!marked[w]) {
-                edgeTo[w] = v;
-                dfs(G, v, w);
-            }else if (w != u) {
+            }
+            if (!marked[w]) {//false
+                edgeTo[w] = v;//端点连接v为前一个顶点，w为后一个顶点
+                dfs(G, v, w);//访问,递归时，中断进入再次进入方法，v为前一个顶点，w为后一个顶点
+            }else if (w != u) {//u为前一个顶点，w当后一个顶点,u为递归参数传入的顶点，w为递归后往回返时
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -128,12 +124,12 @@ public class Cycle {
                 cycle.push(w);
                 cycle.push(v);
             }
+
         }
     }
 
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        Graph G =Graph.buildGraph();
+        Graph G =Graph.buildGraphCC();
         Cycle finder = new Cycle(G);
         if (finder.hasCycle()) {
             for (int v : finder.cycle()) {

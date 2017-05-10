@@ -1,14 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac HopcroftKarp.java
- *  Execution:    java HopcroftKarp V1 V2 E
- *  Dependencies: FordFulkerson.java FlowNetwork.java FlowEdge.java
- *                BipartiteX.java
- *
- *  Find a maximum cardinality matching (and minimum cardinality vertex cover)
- *  in a bipartite graph using Hopcroft-Karp algorithm.
- *
- ******************************************************************************/
-
 package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.col.Queue;
@@ -43,6 +32,16 @@ import java.util.Iterator;
  *  where <em>E</em> is the number of edges and <em>V</em> is the number
  *  of vertices in the graph. It uses extra space (not including the graph)
  *  proportional to <em>V</em>.
+ *
+ *  二分图
+ *
+ *   首先介绍一下题意：已知，有N个学生和P门课程，每个学生可以选0门，1门或者多门课程，
+ *   要求在N个学生中选出P个学生使得这P个学生与P门课程一一对应。
+ *   这个问题既可以利用最大流算法解决也可以用匈牙利算法解决。如果用最大流算法中的Edmonds-karp算法解决，
+ *   因为时间复杂度为O(n*m*m),n为点数，m为边数，会超时，利用匈牙利算法，时间复杂度为O(n*m)，时间复杂度小，不会超时。
+ *   其实匈牙利算法就是最大流算法，只不过它的使用范围仅限于二分图，所以可以称之为“二分图定制版的最大流算法”，
+ *   既然是定制的，那么他就会考虑到二分图的特殊性，优化原来的最大流算法，降低时间复杂度，
+ *   同时也变得有点复杂不容易理解了。既然匈牙利算法继承自最大流算法
  */
 public class HopcroftKarp {
     private static final int UNMATCHED = -1;
@@ -340,22 +339,15 @@ public class HopcroftKarp {
         return true;
     }
 
-    /** 
-     * Unit tests the {@code HopcroftKarp} data type.   
-     * Takes three command-line arguments {@code V1}, {@code V2}, and {@code E};
-     * creates a random bipartite graph with {@code V1} + {@code V2} vertices
-     * and {@code E} edges; computes a maximum matching and minimum vertex cover;
-     * and prints the results.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
 
-        int V1 = Integer.parseInt(args[0]);
-        int V2 = Integer.parseInt(args[1]);
-        int E  = Integer.parseInt(args[2]);
+        int V1 =6;
+        int V2 = 8;
+        int E  = 20;
         Graph G = GraphGenerator.bipartite(V1, V2, E);
-        if (G.V() < 1000) StdOut.println(G);
+        if (G.V() < 1000) {
+            StdOut.println(G);
+        }
 
         HopcroftKarp matching = new HopcroftKarp(G);
 
@@ -365,13 +357,15 @@ public class HopcroftKarp {
         StdOut.printf("Graph has a perfect matching           = %b\n", matching.isPerfect());
         StdOut.println();
 
-        if (G.V() >= 1000) return;
+        if (G.V() >= 1000) {
+            return;
+        }
 
         StdOut.print("Max matching: ");
         for (int v = 0; v < G.V(); v++) {
             int w = matching.mate(v);
             if (matching.isMatched(v) && v < w)  // print each edge only once
-                StdOut.print(v + "-" + w + " ");
+                StdOut.print(v + "+" + w + " ");
         }
         StdOut.println();
 
@@ -379,7 +373,7 @@ public class HopcroftKarp {
         StdOut.print("Min vertex cover: ");
         for (int v = 0; v < G.V(); v++)
             if (matching.inMinVertexCover(v))
-                StdOut.print(v + " ");
+                StdOut.print(v + "-");
         StdOut.println();
     }
 

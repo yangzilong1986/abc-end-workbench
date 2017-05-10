@@ -3,6 +3,9 @@ package com.abc.basic.algoritms.algs4.graph;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  */
 public class DepthFirstPaths {
@@ -20,6 +23,20 @@ public class DepthFirstPaths {
         marked = new boolean[G.V()];
         validateVertex(s);
         dfs(G, s);
+    }
+
+    // breadth-first search from a single source
+    private void dfs2(Graph G, int s) {
+        Deque<Integer> stack = new ArrayDeque<Integer>();
+        marked[s] = true;// 标记起点
+        stack.addLast(s);
+        while (!stack.isEmpty()) {
+            // 从队列中删去下一顶点
+            int v = stack.removeLast();
+            for (int w : G.adj(v)) {//属于边，连接表为Bag实现了Iterable接口
+
+            }//
+        }
     }
 
     // depth first search from v
@@ -47,23 +64,27 @@ public class DepthFirstPaths {
      */
     public Iterable<Integer> pathTo(int v) {
         validateVertex(v);
-        if (!hasPathTo(v))
+        if (!hasPathTo(v)) {
             return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
         //x初始化为终点
         //从edgeTo中获取它到达的边的另一个端点
         //
-        for (int x = v; x != s; x = edgeTo[x])
+        for (int x = v; x != s; x = edgeTo[x]) {
             //进桟
             path.push(x);
+        }
         path.push(s);
         return path;
     }
 
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " +
+                    v + " is not between 0 and " + (V - 1));
+        }
     }
 
     public static void searchPath( Graph G ,int s){
@@ -97,7 +118,7 @@ public class DepthFirstPaths {
             else
                 StdOut.print("-" + x);
         }
-
+        //0-2-3-5
     }
 
 }

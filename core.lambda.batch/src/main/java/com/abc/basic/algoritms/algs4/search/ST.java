@@ -7,6 +7,11 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.TreeMap;
 
+/**
+ * 符号表
+ * @param <Key>
+ * @param <Value>
+ */
 public class ST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
 
     private TreeMap<Key, Value> st;

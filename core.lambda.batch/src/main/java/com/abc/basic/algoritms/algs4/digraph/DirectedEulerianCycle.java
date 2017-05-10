@@ -4,8 +4,6 @@ import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.StdRandom;
 import com.abc.basic.algoritms.algs4.graph.BreadthFirstPaths;
-//import edu.princeton.cs.algs4.graph.EulerianCycle;
-//import edu.princeton.cs.algs4.graph.EulerianPath;
 import com.abc.basic.algoritms.algs4.graph.Graph;
 
 import java.util.Iterator;
@@ -23,7 +21,8 @@ import java.util.Iterator;
  *  All other methods take O(1) time.
  */
 public class DirectedEulerianCycle {
-    private Stack<Integer> cycle = null;  // Eulerian cycle; null if no such cylce
+    // Eulerian cycle; null if no such cylce
+    private Stack<Integer> cycle = null;
 
     /**
      * Computes an Eulerian cycle in the specified digraph, if one exists.
@@ -37,15 +36,16 @@ public class DirectedEulerianCycle {
 
         // necessary condition: indegree(v) = outdegree(v) for each vertex v
         // (without this check, DFS might return a path instead of a cycle)
-        for (int v = 0; v < G.V(); v++)
-            if (G.outdegree(v) != G.indegree(v))
+        for (int v = 0; v < G.V(); v++) {
+            if (G.outdegree(v) != G.indegree(v)) {
                 return;
-
+            }
+        }
         // create local view of adjacency lists, to iterate one vertex at a time
         Iterator<Integer>[] adj = (Iterator<Integer>[]) new Iterator[G.V()];
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.V(); v++) {
             adj[v] = G.adj(v).iterator();
-
+        }
         // initialize stack with any non-isolated vertex
         int s = nonIsolatedVertex(G);
         Stack<Integer> stack = new Stack<Integer>();
@@ -65,8 +65,9 @@ public class DirectedEulerianCycle {
 
         // check if all edges have been used
         // (in case there are two or more vertex-disjoint Eulerian cycles)
-        if (cycle.size() != G.E() + 1)
+        if (cycle.size() != G.E() + 1) {
             cycle = null;
+        }
 
         assert certifySolution(G);
     }
@@ -115,26 +116,31 @@ public class DirectedEulerianCycle {
     private static boolean hasEulerianCycle(Digraph G) {
 
         // Condition 0: at least 1 edge
-        if (G.E() == 0) return false;
+        if (G.E() == 0) {
+            return false;
+        }
 
         // Condition 1: indegree(v) == outdegree(v) for every vertex
-        for (int v = 0; v < G.V(); v++)
-            if (G.outdegree(v) != G.indegree(v))
+        for (int v = 0; v < G.V(); v++) {
+            if (G.outdegree(v) != G.indegree(v)) {
                 return false;
-
+            }
+        }
         // Condition 2: graph is connected, ignoring isolated vertices
         Graph H = new Graph(G.V());
-        for (int v = 0; v < G.V(); v++)
-            for (int w : G.adj(v))
+        for (int v = 0; v < G.V(); v++) {
+            for (int w : G.adj(v)) {
                 H.addEdge(v, w);
-        
+            }
+        }
         // check that all non-isolated vertices are conneted
         int s = nonIsolatedVertex(G);
         BreadthFirstPaths bfs = new BreadthFirstPaths(H, s);
-        for (int v = 0; v < G.V(); v++)
-            if (H.degree(v) > 0 && !bfs.hasPathTo(v))
+        for (int v = 0; v < G.V(); v++) {
+            if (H.degree(v) > 0 && !bfs.hasPathTo(v)) {
                 return false;
-
+            }
+        }
         return true;
     }
 
@@ -142,19 +148,24 @@ public class DirectedEulerianCycle {
     private boolean certifySolution(Digraph G) {
 
         // internal consistency check
-        if (hasEulerianCycle() == (cycle() == null)) return false;
+        if (hasEulerianCycle() == (cycle() == null)) {
+            return false;
+        }
 
         // hashEulerianCycle() returns correct value
-        if (hasEulerianCycle() != hasEulerianCycle(G)) return false;
+        if (hasEulerianCycle() != hasEulerianCycle(G)) {
+            return false;
+        }
 
         // nothing else to check if no Eulerian cycle
-        if (cycle == null) return true;
+        if (cycle == null) {
+            return true;
+        }
 
         // check that cycle() uses correct number of edges
-        if (cycle.size() != G.E() + 1) return false;
-
-        // check that cycle() is a directed cycle of G
-        // TODO
+        if (cycle.size() != G.E() + 1) {
+            return false;
+        }
 
         return true;
     }

@@ -47,7 +47,9 @@ public class TarjanSCC {
         id = new int[G.V()]; 
         low = new int[G.V()];
         for (int v = 0; v < G.V(); v++) {
-            if (!marked[v]) dfs(G, v);
+            if (!marked[v]) {
+                dfs(G, v);
+            }
         }
 
         // check that id[] gives strong components
@@ -60,8 +62,12 @@ public class TarjanSCC {
         int min = low[v];
         stack.push(v);
         for (int w : G.adj(v)) {
-            if (!marked[w]) dfs(G, w);
-            if (low[w] < min) min = low[w];
+            if (!marked[w]) {
+                dfs(G, w);
+            }
+            if (low[w] < min) {
+                min = low[w];
+            }
         }
         if (min < low[v]) {
             low[v] = min;
@@ -86,15 +92,6 @@ public class TarjanSCC {
     }
 
 
-    /**
-     * Are vertices {@code v} and {@code w} in the same strong component?
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @return {@code true} if vertices {@code v} and {@code w} are in the same
-     *         strong component, and {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
-     */
     public boolean stronglyConnected(int v, int w) {
         validateVertex(v);
         validateVertex(w);
@@ -137,9 +134,7 @@ public class TarjanSCC {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-//        Digraph G = new Digraph(in);
-        Digraph G =null;// new Digraph(in);
+        Digraph G =Digraph.buildDigraph();
         TarjanSCC scc = new TarjanSCC(G);
 
         // number of connected components
@@ -166,27 +161,3 @@ public class TarjanSCC {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

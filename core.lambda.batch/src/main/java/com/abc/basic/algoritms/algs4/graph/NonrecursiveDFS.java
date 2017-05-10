@@ -7,24 +7,11 @@ import com.abc.basic.algoritms.algs4.utils.In;
 import java.util.Iterator;
 
 /**
- *  The {@code NonrecursiveDFS} class represents a data type for finding
- *  the vertices connected to a source vertex <em>s</em> in the undirected
- *  graph.
- *  <p>
- *  This implementation uses a nonrecursive version of depth-first search
- *  with an explicit stack.
- *  The constructor takes time proportional to <em>V</em> + <em>E</em>,
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  It uses extra space (not including the graph) proportional to <em>V</em>.
+ * 非递归的深度优先遍历
  */
 public class NonrecursiveDFS {
     private boolean[] marked;  // marked[v] = is there an s-v path?
-    /**
-     * Computes the vertices connected to the source vertex {@code s} in the graph {@code G}.
-     * @param G the graph
-     * @param s the source vertex
-     * @throws IllegalArgumentException unless {@code 0 <= s < V}
-     */
+
     public NonrecursiveDFS(Graph G, int s) {
         marked = new boolean[G.V()];
 
@@ -44,17 +31,12 @@ public class NonrecursiveDFS {
             int v = stack.peek();
             if (adj[v].hasNext()) {
                 int w = adj[v].next();
-                // StdOut.printf("check %d\n", w);
                 if (!marked[w]) {
-                    // discovered vertex w for the first time
                     marked[w] = true;
-                    // edgeTo[w] = v;
                     stack.push(w);
-                    // StdOut.printf("dfs(%d)\n", w);
                 }
             }
             else {
-                // StdOut.printf("%d done\n", v);
                 stack.pop();
             }
         }

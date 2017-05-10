@@ -1,11 +1,9 @@
-package com.abc.basic.algoritms.algs4.graph;
+package com.abc.basic.algoritms.algs4.weightedgraph;
 
 import com.abc.basic.algoritms.algs4.col.Bag;
 import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.tree.UF;
-import com.abc.basic.algoritms.algs4.weightedgraph.Edge;
-import com.abc.basic.algoritms.algs4.weightedgraph.EdgeWeightedGraph;
 
 /**
  *  The {@code BoruvkaMST} class represents a data type for computing a

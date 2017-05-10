@@ -5,6 +5,10 @@ import com.abc.basic.algoritms.algs4.StdRandom;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
+/**
+ * Bipartite graph/network翻译过来就是：二分图。二分图是一类图(G,E)，其中G是顶点的集合，E为边的集合，
+ * 并且G可以分成两个不相交的集合U和V，E中的任意一条边的一个顶点属于集合U，另一顶点属于集合V.
+ */
 public class Bipartite {
     private boolean isBipartite;   // is the graph bipartite?
     private boolean[] color;       // color[v] gives vertices on one side of bipartition
@@ -12,12 +16,6 @@ public class Bipartite {
     private int[] edgeTo;          // edgeTo[v] = last edge on path to v
     private Stack<Integer> cycle;  // odd-length cycle
 
-    /**
-     * Determines whether an undirected graph is bipartite and finds either a
-     * bipartition or an odd-length cycle.
-     *
-     * @param  G the graph
-     */
     public Bipartite(Graph G) {
         isBipartite = true;
         color  = new boolean[G.V()];
@@ -37,7 +35,9 @@ public class Bipartite {
         for (int w : G.adj(v)) {
 
             // short circuit if odd-length cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found uncolored vertex, so recur
             if (!marked[w]) {
@@ -59,26 +59,10 @@ public class Bipartite {
         }
     }
 
-    /**
-     * Returns true if the graph is bipartite.
-     *
-     * @return {@code true} if the graph is bipartite; {@code false} otherwise
-     */
     public boolean isBipartite() {
         return isBipartite;
     }
  
-    /**
-     * Returns the side of the bipartite that vertex {@code v} is on.
-     *
-     * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
-     *         same color
-     * @throws IllegalArgumentException unless {@code 0 <= v < V} 
-     * @throws UnsupportedOperationException if this method is called when the graph
-     *         is not bipartite
-     */
     public boolean color(int v) {
         validateVertex(v);
         if (!isBipartite)
@@ -86,14 +70,7 @@ public class Bipartite {
         return color[v];
     }
 
-    /**
-     * Returns an odd-length cycle if the graph is not bipartite, and
-     * {@code null} otherwise.
-     *
-     * @return an odd-length cycle if the graph is not bipartite
-     *         (and hence has an odd-length cycle), and {@code null}
-     *         otherwise
-     */
+
     public Iterable<Integer> oddCycle() {
         return cycle; 
     }
@@ -104,7 +81,8 @@ public class Bipartite {
             for (int v = 0; v < G.V(); v++) {
                 for (int w : G.adj(v)) {
                     if (color[v] == color[w]) {
-                        System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
+                        System.err.printf("edge %d-%d with %d and %d " +
+                                "in same side of bipartition\n", v, w, v, w);
                         return false;
                     }
                 }
@@ -141,21 +119,22 @@ public class Bipartite {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int V1 = Integer.parseInt(args[0]);
-        int V2 = Integer.parseInt(args[1]);
-        int E  = Integer.parseInt(args[2]);
-        int F  = Integer.parseInt(args[3]);
+        int V1 = 6;
+        int V2 = 8;
+        int E  = 40;
+        int F  =6;
 
         // create random bipartite graph with V1 vertices on left side,
         // V2 vertices on right side, and E edges; then add F random edges
         Graph G = GraphGenerator.bipartite(V1, V2, E);
-        for (int i = 0; i < F; i++) {
-            int v = StdRandom.uniform(V1 + V2);
-            int w = StdRandom.uniform(V1 + V2);
-            G.addEdge(v, w);
-        }
+        G.addEdge(10,0);
+        G.addEdge(6,12);
+        G.addEdge(0,12);
+        G.addEdge(9,8);
+        G.addEdge(3,9);
+        G.addEdge(3,12);
 
-        StdOut.println(G);
+//        StdOut.println(G);
 
 
         Bipartite b = new Bipartite(G);

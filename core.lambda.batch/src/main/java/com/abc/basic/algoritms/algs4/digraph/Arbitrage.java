@@ -22,10 +22,8 @@
  *
  ******************************************************************************/
 
-package com.abc.basic.algoritms.algs4.graph;
+package com.abc.basic.algoritms.algs4.digraph;
 
-import com.abc.basic.algoritms.algs4.digraph.DirectedEdge;
-import com.abc.basic.algoritms.algs4.digraph.EdgeWeightedDigraph;
 import com.abc.basic.algoritms.algs4.utils.StdIn;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 

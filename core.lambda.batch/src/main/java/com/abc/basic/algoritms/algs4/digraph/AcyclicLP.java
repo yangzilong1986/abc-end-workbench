@@ -20,12 +20,9 @@
  *
  ******************************************************************************/
 
-package com.abc.basic.algoritms.algs4.graph;
+package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Stack;
-import com.abc.basic.algoritms.algs4.digraph.Topological;
-import com.abc.basic.algoritms.algs4.digraph.DirectedEdge;
-import com.abc.basic.algoritms.algs4.digraph.EdgeWeightedDigraph;
 import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
@@ -33,26 +30,11 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  The {@code AcyclicLP} class represents a data type for solving the
  *  single-source longest paths problem in edge-weighted directed
  *  acyclic graphs (DAGs). The edge weights can be positive, negative, or zero.
- *  <p>
- *  This implementation uses a topological-sort based algorithm.
- *  The constructor takes time proportional to <em>V</em> + <em>E</em>,
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the {@code distTo()} and {@code hasPathTo()} methods take
- *  constant time and the {@code pathTo()} method takes time proportional to the
- *  number of edges in the longest path returned.
  */
 public class AcyclicLP {
     private double[] distTo;          // distTo[v] = distance  of longest s->v path
     private DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on longest s->v path
 
-    /**
-     * Computes a longest paths tree from {@code s} to every other vertex in
-     * the directed acyclic graph {@code G}.
-     * @param G the acyclic digraph
-     * @param s the source vertex
-     * @throws IllegalArgumentException if the digraph is not acyclic
-     * @throws IllegalArgumentException unless {@code 0 <= s < V}
-     */
     public AcyclicLP(EdgeWeightedDigraph G, int s) {
         distTo = new double[G.V()];
         edgeTo = new DirectedEdge[G.V()];
@@ -156,27 +138,3 @@ public class AcyclicLP {
         }
     }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

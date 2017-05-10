@@ -4,7 +4,6 @@ import com.abc.basic.algoritms.algs4.StdRandom;
 import com.abc.basic.algoritms.algs4.col.Bag;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.In;
-//import edu.princeton.cs.algs4.*;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 public class EdgeWeightedDigraph {
@@ -22,13 +21,16 @@ public class EdgeWeightedDigraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedDigraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         this.indegree = new int[V];
         adj = (Bag<DirectedEdge>[]) new Bag[V];
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++) {
             adj[v] = new Bag<DirectedEdge>();
+        }
     }
 
     /**

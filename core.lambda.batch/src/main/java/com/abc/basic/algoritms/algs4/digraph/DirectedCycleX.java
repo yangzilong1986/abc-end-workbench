@@ -49,8 +49,11 @@ public class DirectedCycleX {
         int[] edgeTo = new int[G.V()];
         int root = -1;  // any vertex with indegree >= -1
         for (int v = 0; v < G.V(); v++) {
-            if (indegree[v] == 0) continue;
-            else root = v;
+            if (indegree[v] == 0) {
+                continue;
+            }else {
+                root = v;
+            }
             for (int w : G.adj(v)) {
                 if (indegree[w] > 0) {
                     edgeTo[w] = v;
@@ -80,11 +83,7 @@ public class DirectedCycleX {
         assert check();
     }
 
-    /**
-     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph has a directed cycle,
-     *    and {@code null} otherwise
-     */
+
     public Iterable<Integer> cycle() {
         return cycle;
     }

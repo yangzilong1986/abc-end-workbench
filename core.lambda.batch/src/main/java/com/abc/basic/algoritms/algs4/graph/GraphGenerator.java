@@ -105,49 +105,98 @@ public class GraphGenerator {
         return simple(V, 1.0);
     }
 
-    /**
-     * Returns a complete bipartite graph on {@code V1} and {@code V2} vertices.
-     * @param V1 the number of vertices in one partition
-     * @param V2 the number of vertices in the other partition
-     * @return a complete bipartite graph on {@code V1} and {@code V2} vertices
-     * @throws IllegalArgumentException if probability is not between 0 and 1
-     */
+
     public static Graph completeBipartite(int V1, int V2) {
         return bipartite(V1, V2, V1*V2);
     }
 
-    /**
-     * Returns a random simple bipartite graph on {@code V1} and {@code V2} vertices
-     * with {@code E} edges.
-     * @param V1 the number of vertices in one partition
-     * @param V2 the number of vertices in the other partition
-     * @param E the number of edges
-     * @return a random simple bipartite graph on {@code V1} and {@code V2} vertices,
-     *    containing a total of {@code E} edges
-     * @throws IllegalArgumentException if no such simple bipartite graph exists
-     */
     public static Graph bipartite(int V1, int V2, int E) {
-        if (E > (long) V1*V2) throw new IllegalArgumentException("Too many edges");
-        if (E < 0)            throw new IllegalArgumentException("Too few edges");
-        Graph G = new Graph(V1 + V2);
 
-        int[] vertices = new int[V1 + V2];
-        for (int i = 0; i < V1 + V2; i++)
-            vertices[i] = i;
-        StdRandom.shuffle(vertices);
+        Graph G = new Graph(14);
+        G.addEdge(0, 8);
+        G.addEdge(0, 7);
 
-        SET<Edge> set = new SET<Edge>();
-        while (G.E() < E) {
-            int i = StdRandom.uniform(V1);
-            int j = V1 + StdRandom.uniform(V2);
-            Edge e = new Edge(vertices[i], vertices[j]);
-            if (!set.contains(e)) {
-                set.add(e);
-                G.addEdge(vertices[i], vertices[j]);
-            }
-        }
+        G.addEdge(1, 9);
+        G.addEdge(1, 12);
+        G.addEdge(1, 6);
+        G.addEdge(1, 3);
+
+        G.addEdge(2, 12);
+
+        G.addEdge(3 , 13);
+        G.addEdge(3 , 1);
+        G.addEdge(3 , 4);
+
+        G.addEdge(4 , 9);
+        G.addEdge(4 , 12);
+        G.addEdge(4 , 6);
+        G.addEdge(4 , 3);
+
+        G.addEdge(5 , 6);
+        G.addEdge(5 , 11);
+
+        G.addEdge(6 , 10);
+        G.addEdge(6 , 4);
+        G.addEdge(6 , 5);
+        G.addEdge(6 , 1);
+
+        G.addEdge(7 , 9);
+        G.addEdge(7 , 0);
+        G.addEdge(7 , 12);
+
+        G.addEdge(8 , 0);
+        G.addEdge(8 , 11);
+
+        G.addEdge(9 , 4);
+        G.addEdge(9 , 7);
+        G.addEdge(9 , 1);
+
+        G.addEdge(10 , 6);
+        G.addEdge(10 , 11);
+
+        G.addEdge(11 , 8);
+        G.addEdge(11 , 13);
+        G.addEdge(11 , 10);
+        G.addEdge(11 , 5);
+
+        G.addEdge(12 , 4);
+        G.addEdge(12 , 7);
+
+        G.addEdge(12 , 1);
+        G.addEdge(12 , 2);
+
+        G.addEdge(13 , 3);
+        G.addEdge(13 , 11);
+
         return G;
     }
+
+//    public static Graph bipartite(int V1, int V2, int E) {
+//        if (E > (long) V1*V2) {
+//            throw new IllegalArgumentException("Too many edges");
+//        }
+//        if (E < 0){
+//            throw new IllegalArgumentException("Too few edges");
+//        }
+//        Graph G = new Graph(V1 + V2);
+//
+//        int[] vertices = new int[V1 + V2];
+//        for (int i = 0; i < V1 + V2; i++)
+//            vertices[i] = i;
+//        StdRandom.shuffle(vertices);
+//
+//        SET<Edge> set = new SET<Edge>();
+//        while (G.E() < E) {
+//            int i = StdRandom.uniform(V1);
+//            int j = V1 + StdRandom.uniform(V2);
+//            Edge e = new Edge(vertices[i], vertices[j]);
+//            if (!set.contains(e)) {
+//                set.add(e);
+//                G.addEdge(vertices[i], vertices[j]);
+//            }
+//        }
+//        return G;
+//    }
 
     /**
      * Returns a random simple bipartite graph on {@code V1} and {@code V2} vertices,
@@ -226,53 +275,45 @@ public class GraphGenerator {
         return G;
     }
 
-    /**
-     * Returns an Eulerian cycle graph on {@code V} vertices.
-     *
-     * @param  V the number of vertices in the cycle
-     * @param  E the number of edges in the cycle
-     * @return a graph that is an Eulerian cycle on {@code V} vertices
-     *         and {@code E} edges
-     * @throws IllegalArgumentException if either {@code V <= 0} or {@code E <= 0}
-     */
     public static Graph eulerianCycle(int V, int E) {
-        if (E <= 0)
-            throw new IllegalArgumentException("An Eulerian cycle must have at least one edge");
-        if (V <= 0)
-            throw new IllegalArgumentException("An Eulerian cycle must have at least one vertex");
-        Graph G = new Graph(V);
-        int[] vertices = new int[E];
-        for (int i = 0; i < E; i++)
-            vertices[i] = StdRandom.uniform(V);
-        for (int i = 0; i < E-1; i++) {
-            G.addEdge(vertices[i], vertices[i+1]);
-        }
-        G.addEdge(vertices[E-1], vertices[0]);
+        Graph G = new Graph(12);
+
+        G.addEdge(0,2);
+        G.addEdge(0,3);
+
+        G.addEdge(1,2);
+        G.addEdge(1,7);
+
+        G.addEdge(2,3);
+        G.addEdge(2,5);
+        G.addEdge(2,6);
+        G.addEdge(2,8);
+
+        G.addEdge(3,6);
+        G.addEdge(3,9);
+        G.addEdge(3,4);
+        G.addEdge(3,10);
+
+        G.addEdge(4,9);
+
+        G.addEdge(5,8);
+
+        G.addEdge(6,8);
+        G.addEdge(6,9);
+
+        G.addEdge(11,8);
+        G.addEdge(11,9);
+
+        G.addEdge(7,8);
+
+        G.addEdge(8,9);
+
+        G.addEdge(9,10);
         return G;
     }
 
-    /**
-     * Returns an Eulerian path graph on {@code V} vertices.
-     *
-     * @param  V the number of vertices in the path
-     * @param  E the number of edges in the path
-     * @return a graph that is an Eulerian path on {@code V} vertices
-     *         and {@code E} edges
-     * @throws IllegalArgumentException if either {@code V <= 0} or {@code E < 0}
-     */
     public static Graph eulerianPath(int V, int E) {
-        if (E < 0)
-            throw new IllegalArgumentException("negative number of edges");
-        if (V <= 0)
-            throw new IllegalArgumentException("An Eulerian path must have at least one vertex");
-        Graph G = new Graph(V);
-        int[] vertices = new int[E+1];
-        for (int i = 0; i < E+1; i++)
-            vertices[i] = StdRandom.uniform(V);
-        for (int i = 0; i < E; i++) {
-            G.addEdge(vertices[i], vertices[i+1]);
-        }
-        return G;
+       return eulerianCycle(V,E);
     }
 
     /**
@@ -282,25 +323,7 @@ public class GraphGenerator {
      *     every vertex in a cycle on {@code V-1} vertices
      */
     public static Graph wheel(int V) {
-        if (V <= 1) throw new IllegalArgumentException("Number of vertices must be at least 2");
-        Graph G = new Graph(V);
-        int[] vertices = new int[V];
-        for (int i = 0; i < V; i++)
-            vertices[i] = i;
-        StdRandom.shuffle(vertices);
-
-        // simple cycle on V-1 vertices
-        for (int i = 1; i < V-1; i++) {
-            G.addEdge(vertices[i], vertices[i+1]);
-        }
-        G.addEdge(vertices[V-1], vertices[1]);
-
-        // connect vertices[0] to every vertex on cycle
-        for (int i = 1; i < V; i++) {
-            G.addEdge(vertices[0], vertices[i]);
-        }
-
-        return G;
+        return eulerianCycle(V,V);
     }
 
     /**
@@ -325,15 +348,7 @@ public class GraphGenerator {
         return G;
     }
 
-    /**
-     * Returns a uniformly random {@code k}-regular graph on {@code V} vertices
-     * (not necessarily simple). The graph is simple with probability only about e^(-k^2/4),
-     * which is tiny when k = 14.
-     *
-     * @param V the number of vertices in the graph
-     * @param k degree of each vertex
-     * @return a uniformly random {@code k}-regular graph on {@code V} vertices.
-     */
+
     public static Graph regular(int V, int k) {
         if (V*k % 2 != 0) throw new IllegalArgumentException("Number of vertices * k must be even");
         Graph G = new Graph(V);
@@ -354,14 +369,7 @@ public class GraphGenerator {
         return G;
     }
 
-    // http://www.proofwiki.org/wiki/Labeled_Tree_from_Prüfer_Sequence
-    // http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.36.6484&rep=rep1&type=pdf
-    /**
-     * Returns a uniformly random tree on {@code V} vertices.
-     * This algorithm uses a Prufer sequence and takes time proportional to <em>V log V</em>.
-     * @param V the number of vertices in the tree
-     * @return a uniformly random tree on {@code V} vertices
-     */
+
     public static Graph tree(int V) {
         Graph G = new Graph(V);
 
@@ -467,27 +475,3 @@ public class GraphGenerator {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

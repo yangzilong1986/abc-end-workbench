@@ -19,14 +19,6 @@ import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
- *  The {@code BipartiteX} class represents a data type for 
- *  determining whether an undirected graph is bipartite or whether
- *  it has an odd-length cycle.
- *  The <em>isBipartite</em> operation determines whether the graph is
- *  bipartite. If so, the <em>color</em> operation determines a
- *  bipartition; if not, the <em>oddCycle</em> operation determines a
- *  cycle with an odd number of edges.
- *  <p>
  *  This implementation uses breadth-first search and is nonrecursive.
  *  The constructor takes time proportional to <em>V</em> + <em>E</em>
  *  (in the worst case),
@@ -41,12 +33,6 @@ public class BipartiteX {
     private int[] edgeTo;          // edgeTo[v] = last edge on path to v
     private Queue<Integer> cycle;  // odd-length cycle
 
-    /**
-     * Determines whether an undirected graph is bipartite and finds either a
-     * bipartition or an odd-length cycle.
-     *
-     * @param  G the graph
-     */
     public BipartiteX(Graph G) {
         isBipartite = true;
         color  = new boolean[G.V()];
@@ -111,17 +97,6 @@ public class BipartiteX {
         return isBipartite;
     }
  
-    /**
-     * Returns the side of the bipartite that vertex {@code v} is on.
-     *
-     * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
-     *         same color
-     * @throws IllegalArgumentException unless {@code 0 <= v < V} 
-     * @throws UnsupportedOperationException if this method is called when the graph
-     *         is not bipartite
-     */
     public boolean color(int v) {
         validateVertex(v);
         if (!isBipartite)
@@ -130,14 +105,6 @@ public class BipartiteX {
     }
 
 
-    /**
-     * Returns an odd-length cycle if the graph is not bipartite, and
-     * {@code null} otherwise.
-     *
-     * @return an odd-length cycle if the graph is not bipartite
-     *         (and hence has an odd-length cycle), and {@code null}
-     *         otherwise
-     */
     public Iterable<Integer> oddCycle() {
         return cycle; 
     }
@@ -184,19 +151,13 @@ public class BipartiteX {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int V1 = Integer.parseInt(args[0]);
-        int V2 = Integer.parseInt(args[1]);
-        int E  = Integer.parseInt(args[2]);
-        int F  = Integer.parseInt(args[3]);
-
+        int V1 = 6;
+        int V2 = 8;
+        int E  = 40;
+        int F  =6;
         // create random bipartite graph with V1 vertices on left side,
         // V2 vertices on right side, and E edges; then add F random edges
         Graph G = GraphGenerator.bipartite(V1, V2, E);
-        for (int i = 0; i < F; i++) {
-            int v = StdRandom.uniform(V1 + V2);
-            int w = StdRandom.uniform(V1 + V2);
-            G.addEdge(v, w);
-        }
 
         StdOut.println(G);
 
@@ -219,27 +180,3 @@ public class BipartiteX {
 
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

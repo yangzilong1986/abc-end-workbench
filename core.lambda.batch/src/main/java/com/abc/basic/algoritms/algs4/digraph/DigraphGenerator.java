@@ -6,6 +6,7 @@ import com.abc.basic.algoritms.algs4.StdRandom;
 
 
 public class DigraphGenerator {
+
     private static final class Edge implements Comparable<Edge> {
         private final int v;
         private final int w;
@@ -36,8 +37,12 @@ public class DigraphGenerator {
      * @throws IllegalArgumentException if no such simple digraph exists
      */
     public static Digraph simple(int V, int E) {
-        if (E > (long) V*(V-1)) throw new IllegalArgumentException("Too many edges");
-        if (E < 0)              throw new IllegalArgumentException("Too few edges");
+        if (E > (long) V*(V-1)) {
+            throw new IllegalArgumentException("Too many edges");
+        }
+        if (E < 0){
+            throw new IllegalArgumentException("Too few edges");
+        }
         Digraph G = new Digraph(V);
         SET<Edge> set = new SET<Edge>();
         while (G.E() < E) {
@@ -485,27 +490,3 @@ public class DigraphGenerator {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

@@ -27,18 +27,6 @@ public class CC {
         }
     }
 
-    public CC(EdgeWeightedGraph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
-            if (!marked[v]) {
-                dfs(G, v);
-                count++;
-            }
-        }
-    }
-
     // depth-first search for a Graph
     private void dfs(Graph G, int v) {
         marked[v] = true;
@@ -50,6 +38,24 @@ public class CC {
             }
         }
     }
+
+    /**
+     * 带权重图
+     * @param G
+     */
+    public CC(EdgeWeightedGraph G) {
+        marked = new boolean[G.V()];
+        id = new int[G.V()];
+        size = new int[G.V()];
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v]) {//每个顶点执行一遍，当没有遍历过的进行一次深度遍历
+                dfs(G, v);
+                count++;//连通计数
+            }
+        }
+    }
+
+
 
     // depth-first search for an EdgeWeightedGraph
     private void dfs(EdgeWeightedGraph G, int v) {
@@ -100,27 +106,16 @@ public class CC {
     }
 
 
-    @Deprecated
-    public boolean areConnected(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
-        return id(v) == id(w);
-    }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 
-    /**
-     * Unit tests the {@code CC} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
-        Graph G =Graph.buildGraph();
+        Graph G =Graph.buildGraphCC();
         CC cc = new CC(G);
 
         // number of connected components

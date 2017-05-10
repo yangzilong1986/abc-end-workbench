@@ -1,7 +1,5 @@
 package com.abc.basic.algoritms.algs4.digraph;
 
-import com.abc.basic.algoritms.algs4.utils.StdOut;
-
 public class DirectedEdge {
     private final int v;
     private final int w;
@@ -9,12 +7,15 @@ public class DirectedEdge {
 
 
     public DirectedEdge(int v, int w, double weight) {
-        if (v < 0)
+        if (v < 0) {
             throw new IllegalArgumentException("Vertex names must be nonnegative integers");
-        if (w < 0)
+        }
+        if (w < 0) {
             throw new IllegalArgumentException("Vertex names must be nonnegative integers");
-        if (Double.isNaN(weight))
+        }
+        if (Double.isNaN(weight)) {
             throw new IllegalArgumentException("Weight is NaN");
+        }
         this.v = v;
         this.w = w;
         this.weight = weight;
@@ -36,8 +37,4 @@ public class DirectedEdge {
         return v + "->" + w + " " + String.format("%5.2f", weight);
     }
 
-    public static void main(String[] args) {
-        DirectedEdge e = new DirectedEdge(12, 34, 5.67);
-        StdOut.println(e);
-    }
 }

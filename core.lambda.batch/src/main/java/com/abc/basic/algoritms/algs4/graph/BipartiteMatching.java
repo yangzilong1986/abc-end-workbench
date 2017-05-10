@@ -203,9 +203,9 @@ public class BipartiteMatching {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int V1 = Integer.parseInt(args[0]);
-        int V2 = Integer.parseInt(args[1]);
-        int E  = Integer.parseInt(args[2]);
+        int V1 =8;
+        int V2 = 8;
+        int E  = 5;
         Graph G = GraphGenerator.bipartite(V1, V2, E);
 
         if (G.V() < 1000) StdOut.println(G);

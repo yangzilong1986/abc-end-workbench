@@ -1,22 +1,12 @@
 package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.StdRandom;
-//import edu.princeton.cs.algs4.*;
 import com.abc.basic.algoritms.algs4.col.Queue;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
- *  The {@code EulerianCycle} class represents a data type
- *  for finding an Eulerian cycle or path in a graph.
- *  An <em>Eulerian cycle</em> is a cycle (not necessarily simple) that
- *  uses every edge in the graph exactly once.
- *  <p>
- *  This implementation uses a nonrecursive depth-first search.
- *  The constructor runs in O(<Em>E</em> + <em>V</em>) time,
- *  and uses O(<em>E</em> + <em>V</em>) extra space, where <em>E</em> is the
- *  number of edges and <em>V</em> the number of vertices
- *  All other methods take O(1) time.
+ * 欧拉回路
  */
 public class EulerianCycle {
     private Stack<Integer> cycle = new Stack<Integer>();  // Eulerian cycle; null if no such cycle
@@ -35,9 +25,15 @@ public class EulerianCycle {
 
         // returns the other vertex of the edge
         public int other(int vertex) {
-            if      (vertex == v) return w;
-            else if (vertex == w) return v;
-            else throw new IllegalArgumentException("Illegal endpoint");
+            if(vertex == v) {
+                return w;
+            }
+            else if (vertex == w) {
+                return v;
+            }
+            else {
+                throw new IllegalArgumentException("Illegal endpoint");
+            }
         }
     }
 
@@ -49,19 +45,23 @@ public class EulerianCycle {
     public EulerianCycle(Graph G) {
 
         // must have at least one edge
-        if (G.E() == 0) return;
+        if (G.E() == 0) {
+            return;
+        }
 
         // necessary condition: all vertices have even degree
         // (this test is needed or it might find an Eulerian path instead of cycle)
-        for (int v = 0; v < G.V(); v++) 
-            if (G.degree(v) % 2 != 0)
+        for (int v = 0; v < G.V(); v++) {
+            if (G.degree(v) % 2 != 0) {//度数不为偶数
                 return;
-
+            }
+        }
         // create local view of adjacency lists, to iterate one vertex at a time
         // the helper Edge data type is used to avoid exploring both copies of an edge v-w
         Queue<Edge>[] adj = (Queue<Edge>[]) new Queue[G.V()];
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.V(); v++) {
             adj[v] = new Queue<Edge>();
+        }
 
         for (int v = 0; v < G.V(); v++) {
             int selfLoops = 0;
@@ -94,7 +94,9 @@ public class EulerianCycle {
             int v = stack.pop();
             while (!adj[v].isEmpty()) {
                 Edge edge = adj[v].dequeue();
-                if (edge.isUsed) continue;
+                if (edge.isUsed) {
+                    continue;
+                }
                 edge.isUsed = true;
                 stack.push(v);
                 v = edge.other(v);
@@ -104,28 +106,17 @@ public class EulerianCycle {
         }
 
         // check if all edges are used
-        if (cycle.size() != G.E() + 1)
+        if (cycle.size() != G.E() + 1) {
             cycle = null;
+        }
 
         assert certifySolution(G);
     }
 
-    /**
-     * Returns the sequence of vertices on an Eulerian cycle.
-     * 
-     * @return the sequence of vertices on an Eulerian cycle;
-     *         {@code null} if no such cycle
-     */
     public Iterable<Integer> cycle() {
         return cycle;
     }
 
-    /**
-     * Returns true if the graph has an Eulerian cycle.
-     * 
-     * @return {@code true} if the graph has an Eulerian cycle;
-     *         {@code false} otherwise
-     */
     public boolean hasEulerianCycle() {
         return cycle != null;
     }
@@ -138,17 +129,6 @@ public class EulerianCycle {
         return -1;
     }
 
-    /**************************************************************************
-     *
-     *  The code below is solely for testing correctness of the data type.
-     *
-     **************************************************************************/
-
-    // Determines whether a graph has an Eulerian cycle using necessary
-    // and sufficient conditions (without computing the cycle itself):
-    //    - at least one edge
-    //    - degree(v) is even for every vertex v
-    //    - the graph is connected (ignoring isolated vertices)
     private static boolean hasEulerianCycle(Graph G) {
 
         // Condition 0: at least 1 edge
@@ -190,10 +170,14 @@ public class EulerianCycle {
         // check that first and last vertices in cycle() are the same
         int first = -1, last = -1;
         for (int v : cycle()) {
-            if (first == -1) first = v;
+            if (first == -1) {
+                first = v;
+            }
             last = v;
         }
-        if (first != last) return false;
+        if (first != last) {
+            return false;
+        }
 
         return true;
     }
@@ -225,8 +209,8 @@ public class EulerianCycle {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int V = Integer.parseInt(args[0]);
-        int E = Integer.parseInt(args[1]);
+        int V =6;
+        int E =6;
 
         // Eulerian cycle
         Graph G1 = GraphGenerator.eulerianCycle(V, E);

@@ -28,8 +28,9 @@ public class BreadthFirstPaths {
     // breadth-first search from a single source
     private void bfs(Graph G, int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.V(); v++) {
             distTo[v] = INFINITY;
+        }
         distTo[s] = 0;
         marked[s] = true;// 标记起点
         q.enqueue(s);// 将它加入队列
@@ -37,10 +38,11 @@ public class BreadthFirstPaths {
         while (!q.isEmpty()) {
             // 从队列中删去下一顶点
             int v = q.dequeue();//出队
-            for (int w : G.adj(v)) {//属于边
+            for (int w : G.adj(v)) {//属于边，连接表为Bag实现了Iterable接口
                 if (!marked[w]) {//对于每个未被标记的相邻顶点
-                    edgeTo[w] = v;//保存最短路径的最后一条边
-                    distTo[w] = distTo[v] + 1;
+                    //表明w的前前一个顶点为v
+                    edgeTo[w] = v;//保存最短路径的最后一条边，v取端点0值，w取另一个端点2
+                    distTo[w] = distTo[v] + 1;//顶点
                     marked[w] = true;//标记它，因为最短路径已知
                     q.enqueue(w);//并将它添加到队列中
                 }
@@ -61,20 +63,24 @@ public class BreadthFirstPaths {
 
     public Iterable<Integer> pathTo(int v) {
         validateVertex(v);
-        if (!hasPathTo(v))
+        if (!hasPathTo(v)){
             return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
         int x;
-        for (x = v; distTo[x] != 0; x = edgeTo[x])
+        for (x = v; distTo[x] != 0; x = edgeTo[x]) {
             path.push(x);
+        }
         path.push(x);
         return path;
     }
 
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " +
+                    v + " is not between 0 and " + (V - 1));
+        }
     }
 
     private void validateVertices(Iterable<Integer> vertices) {
@@ -94,7 +100,7 @@ public class BreadthFirstPaths {
         Graph G =Graph.buildGraph();
         int s =0;
         BreadthFirstPaths bfs = new BreadthFirstPaths(G, s);
-        int vv=5;
+        int vv=4;
         for (int x : bfs.pathTo(vv)) {
             if (x == s) StdOut.print(x);
             else        StdOut.print("-" + x);

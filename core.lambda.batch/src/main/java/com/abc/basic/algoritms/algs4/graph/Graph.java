@@ -16,6 +16,7 @@ public class Graph {
         this.V = V;
         this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
+        //将所有链表初始化为空
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
         }
@@ -45,15 +46,17 @@ public class Graph {
     }
 
     private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " + v
+                    + " is not between 0 and " + (V - 1));
+        }
     }
 
     public void addEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
         E++;
-        adj[v].add(w);
+        adj[v].add(w);//两个边加入连接表
         adj[w].add(v);
     }
 
@@ -91,6 +94,7 @@ public class Graph {
         Graph G = buildGraph();
         StdOut.println(G);
     }
+
     public static Graph buildGraph(){
         Graph G = new Graph(6);
         G.addEdge(0, 5);
@@ -101,6 +105,27 @@ public class Graph {
         G.addEdge(3, 4);
         G.addEdge(3, 5);
         G.addEdge(0, 2);
+        return G;
+    }
+
+    public static Graph buildGraphCC(){
+        Graph G = new Graph(13);
+        G.addEdge(0, 5);
+        G.addEdge(4, 3);
+        G.addEdge(0, 1);
+        G.addEdge(9,12);
+        G.addEdge(6, 4);
+        G.addEdge(5, 4);
+        G.addEdge(0, 2);
+        G.addEdge(11, 12);
+        G.addEdge(9, 10);
+        G.addEdge(0, 6);
+        G.addEdge (7, 8);
+        G.addEdge (9 ,11);
+//        G.addEdge(5, 3);
+        //
+        G.addEdge(5, 7);
+        G.addEdge(8, 3);
         return G;
     }
 }
