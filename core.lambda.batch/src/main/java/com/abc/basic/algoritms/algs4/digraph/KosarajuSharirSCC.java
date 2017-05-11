@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Queue;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 public class KosarajuSharirSCC {
@@ -13,10 +14,12 @@ public class KosarajuSharirSCC {
 
     public KosarajuSharirSCC(Digraph G) {
 
+        //G的逆后序
         DepthFirstOrder dfs = new DepthFirstOrder(G.reverse());
 
         marked = new boolean[G.V()];
         id = new int[G.V()];
+        //for (int v = 0; v < G.V(); v++) {
         for (int v : dfs.reversePost()) {
             if (!marked[v]) {
                 dfs(G, v);
@@ -31,7 +34,9 @@ public class KosarajuSharirSCC {
         marked[v] = true;
         id[v] = count;
         for (int w : G.adj(v)) {
-            if (!marked[w]) dfs(G, w);
+            if (!marked[w]) {
+                dfs(G, w);
+            }
         }
     }
 
@@ -55,8 +60,9 @@ public class KosarajuSharirSCC {
         TransitiveClosure tc = new TransitiveClosure(G);
         for (int v = 0; v < G.V(); v++) {
             for (int w = 0; w < G.V(); w++) {
-                if (stronglyConnected(v, w) != (tc.reachable(v, w) && tc.reachable(w, v)))
+                if (stronglyConnected(v, w) != (tc.reachable(v, w) && tc.reachable(w, v))) {
                     return false;
+                }
             }
         }
         return true;
@@ -65,14 +71,24 @@ public class KosarajuSharirSCC {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " +
+                    v + " is not between 0 and " + (V - 1));
+        }
     }
 
     public static void main(String[] args) {
         Digraph G =Digraph.buildDigraph();
+//        Digraph G =new Digraph(new In(In.PATH_NAME+"tinyDG.txt"));
         KosarajuSharirSCC scc = new KosarajuSharirSCC(G);
-
+        /**
+         *  5 strong components
+         *  1
+         *  0 2 3 4 5
+         *  9 10 11 12
+         *  6 8
+         *  7
+         **/
         // number of connected components
         int m = scc.count();
         StdOut.println(m + " strong components");

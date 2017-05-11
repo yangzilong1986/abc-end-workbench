@@ -37,10 +37,6 @@ public class TarjanSCC {
     private Stack<Integer> stack;
 
 
-    /**
-     * Computes the strong components of the digraph {@code G}.
-     * @param G the digraph
-     */
     public TarjanSCC(Digraph G) {
         marked = new boolean[G.V()];
         stack = new Stack<Integer>();
@@ -82,11 +78,6 @@ public class TarjanSCC {
         count++;
     }
 
-
-    /**
-     * Returns the number of strong components.
-     * @return the number of strong components
-     */
     public int count() {
         return count;
     }
@@ -98,12 +89,6 @@ public class TarjanSCC {
         return id[v] == id[w];
     }
 
-    /**
-     * Returns the component id of the strong component containing vertex {@code v}.
-     * @param  v the vertex
-     * @return the component id of the strong component containing vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public int id(int v) {
         validateVertex(v);
         return id[v];
@@ -114,8 +99,9 @@ public class TarjanSCC {
         TransitiveClosure tc = new TransitiveClosure(G);
         for (int v = 0; v < G.V(); v++) {
             for (int w = 0; w < G.V(); w++) {
-                if (stronglyConnected(v, w) != (tc.reachable(v, w) && tc.reachable(w, v)))
+                if (stronglyConnected(v, w) != (tc.reachable(v, w) && tc.reachable(w, v))) {
                     return false;
+                }
             }
         }
         return true;
@@ -124,8 +110,10 @@ public class TarjanSCC {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " +
+                    v + " is not between 0 and " + (V - 1));
+        }
     }
 
     /**
@@ -134,7 +122,8 @@ public class TarjanSCC {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        Digraph G =Digraph.buildDigraph();
+//        Digraph G =Digraph.buildDigraph();
+        Digraph G =new Digraph(new In(In.PATH_NAME+"tinyDG.txt"));
         TarjanSCC scc = new TarjanSCC(G);
 
         // number of connected components

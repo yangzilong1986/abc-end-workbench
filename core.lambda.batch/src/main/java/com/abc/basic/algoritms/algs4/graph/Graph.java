@@ -2,7 +2,10 @@ package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.col.Bag;
 import com.abc.basic.algoritms.algs4.col.Stack;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
+
+import java.util.NoSuchElementException;
 
 public class Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
@@ -22,6 +25,32 @@ public class Graph {
         }
     }
 
+    public Graph(In in) {
+        try {
+            this.V = in.readInt();
+            if (V < 0) {
+                throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
+            }
+            adj = (Bag<Integer>[]) new Bag[V];
+            for (int v = 0; v < V; v++) {
+                adj[v] = new Bag<Integer>();
+            }
+            int E = in.readInt();
+            if (E < 0) {
+                throw new IllegalArgumentException("number of edges in a Graph must be nonnegative");
+            }
+            for (int i = 0; i < E; i++) {
+                int v = in.readInt();
+                int w = in.readInt();
+                validateVertex(v);
+                validateVertex(w);
+                addEdge(v, w);
+            }
+        }
+        catch (NoSuchElementException e) {
+            throw new IllegalArgumentException("invalid input format in Graph constructor", e);
+        }
+    }
     public Graph(Graph G) {
         this(G.V());
         this.E = G.E();
@@ -126,6 +155,16 @@ public class Graph {
         //
         G.addEdge(5, 7);
         G.addEdge(8, 3);
+        return G;
+    }
+
+    public static Graph buildCC(){
+        Graph G = new Graph(5);
+        G.addEdge(0, 1);
+        G.addEdge(1, 3);
+        G.addEdge(1, 2);
+        G.addEdge(2, 4);
+        G.addEdge(4, 1);
         return G;
     }
 }

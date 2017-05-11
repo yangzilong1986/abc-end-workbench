@@ -89,6 +89,7 @@ public class EulerianCycle {
         stack.push(s);
 
         // greedily search through edges in iterative DFS style
+        //深度优先遍历
         cycle = new Stack<Integer>();
         while (!stack.isEmpty()) {
             int v = stack.pop();
@@ -153,21 +154,26 @@ public class EulerianCycle {
     private boolean certifySolution(Graph G) {
 
         // internal consistency check
-        if (hasEulerianCycle() == (cycle() == null)) return false;
+        if (hasEulerianCycle() == (cycle() == null)) {
+            return false;
+        }
 
         // hashEulerianCycle() returns correct value
-        if (hasEulerianCycle() != hasEulerianCycle(G)) return false;
+        if (hasEulerianCycle() != hasEulerianCycle(G)) {
+            return false;
+        }
 
         // nothing else to check if no Eulerian cycle
-        if (cycle == null) return true;
+        if (cycle == null) {
+            return true;
+        }
 
         // check that cycle() uses correct number of edges
-        if (cycle.size() != G.E() + 1) return false;
+        if (cycle.size() != G.E() + 1) {
+            return false;
+        }
 
-        // check that cycle() is a cycle of G
-        // TODO
-
-        // check that first and last vertices in cycle() are the same
+         // check that first and last vertices in cycle() are the same
         int first = -1, last = -1;
         for (int v : cycle()) {
             if (first == -1) {

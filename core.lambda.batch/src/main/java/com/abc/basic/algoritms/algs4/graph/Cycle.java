@@ -44,12 +44,12 @@ public class Cycle {
         }
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
-//        dfs(G, -1, 0);
-        for (int v = 0; v < G.V(); v++) {
-            if (!marked[v]) {
-                dfs(G, -1, v);
-            }
-        }
+        dfs(G, -1, 0);
+//        for (int v = 0; v < G.V(); v++) {
+//            if (!marked[v]) {
+//                dfs(G, -1, v);
+//            }
+//        }
     }
 
 
@@ -75,7 +75,6 @@ public class Cycle {
         marked = new boolean[G.V()];
 
         for (int v = 0; v < G.V(); v++) {
-
             // check for parallel edges incident to v
             for (int w : G.adj(v)) {
                 if (marked[w]) {
@@ -113,23 +112,27 @@ public class Cycle {
             if (cycle != null) {
                 return;
             }
-            if (!marked[w]) {//false
+            if (!marked[w]) {//false时表示没有遍历过
                 edgeTo[w] = v;//端点连接v为前一个顶点，w为后一个顶点
-                dfs(G, v, w);//访问,递归时，中断进入再次进入方法，v为前一个顶点，w为后一个顶点
-            }else if (w != u) {//u为前一个顶点，w当后一个顶点,u为递归参数传入的顶点，w为递归后往回返时
+                dfs(G, v, w);//访问,递归时，中断进入再次进入方法，v为前一个顶点，w为后一个顶点，一个边的两个顶点
+                //递归之后返回继续执行
+            }else if (w != u) {//a-b-c: u递归方法传入的参数为a，v是b。w是本次访问的顶点b连接的顶点为c。
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
                 cycle.push(w);
                 cycle.push(v);
+            }else{
+
             }
 
         }
     }
 
     public static void main(String[] args) {
-        Graph G =Graph.buildGraphCC();
+//        Graph G =Graph.buildCC();
+        Graph G =new Graph(new In(In.PATH_NAME+"tinyG.txt"));
         Cycle finder = new Cycle(G);
         if (finder.hasCycle()) {
             for (int v : finder.cycle()) {

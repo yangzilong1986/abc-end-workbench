@@ -1,20 +1,21 @@
-package com.abc.basic.algoritms.algs4.graph;
+package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Stack;
-import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.utils.In;
+import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 import java.util.Iterator;
 
-/**
- * 非递归的深度优先遍历
- */
-public class NonrecursiveDFS {
-    private boolean[] marked;  // marked[v] = is there an s-v path?
-
-    public NonrecursiveDFS(Graph G, int s) {
+public class DirectedDFSByStack {
+    private boolean[] marked;  // marked[v] = is there an s->v path?
+    /**
+     * Computes the vertices reachable from the source vertex {@code s} in the digraph {@code G}.
+     * @param  G the digraph
+     * @param  s the source vertex
+     * @throws IllegalArgumentException unless {@code 0 <= s < V}
+     */
+    public DirectedDFSByStack(Digraph G, int s) {
         marked = new boolean[G.V()];
-
         validateVertex(s);
 
         // to be able to iterate over each adjacency list, keeping track of which
@@ -31,17 +32,29 @@ public class NonrecursiveDFS {
             int v = stack.peek();
             if (adj[v].hasNext()) {
                 int w = adj[v].next();
+                // StdOut.printf("check %d\n", w);
                 if (!marked[w]) {
+                    // discovered vertex w for the first time
                     marked[w] = true;
+                    // edgeTo[w] = v;
                     stack.push(w);
+                    // StdOut.printf("dfs(%d)\n", w);
                 }
             }
             else {
+                // StdOut.printf("%d done\n", v);
                 stack.pop();
             }
         }
     }
 
+    /**
+     * Is vertex {@code v} reachable from the source vertex {@code s}?
+     * @param  v the vertex
+     * @return {@code true} if vertex {@code v} is reachable from the source vertex {@code s},
+     *         and {@code false} otherwise
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     */
     public boolean marked(int v) {
         validateVertex(v);
         return marked[v];
@@ -54,16 +67,21 @@ public class NonrecursiveDFS {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
+    /**
+     * Unit tests the {@code NonrecursiveDirectedDFS} data type.
+     *
+     * @param args the command-line arguments
+     */
     public static void main(String[] args) {
         In in = new In(args[0]);
-        Graph G =Graph.buildGraph();
+//        Digraph G = new Digraph(in);
+        Digraph G =null;// new Digraph(in);
         int s = Integer.parseInt(args[1]);
-        NonrecursiveDFS dfs = new NonrecursiveDFS(G, s);
+        DirectedDFSByStack dfs = new DirectedDFSByStack(G, s);
         for (int v = 0; v < G.V(); v++)
             if (dfs.marked(v))
                 StdOut.print(v + " ");
         StdOut.println();
     }
-
 
 }

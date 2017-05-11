@@ -2,7 +2,10 @@ package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Bag;
 import com.abc.basic.algoritms.algs4.col.Stack;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
+
+import java.util.NoSuchElementException;
 
 /**
  * 有向图
@@ -46,6 +49,27 @@ public class Digraph {
         }
     }
 
+    public Digraph(In in) {
+        try {
+            this.V = in.readInt();
+            if (V < 0) throw new IllegalArgumentException("number of vertices in a Digraph must be nonnegative");
+            indegree = new int[V];
+            adj = (Bag<Integer>[]) new Bag[V];
+            for (int v = 0; v < V; v++) {
+                adj[v] = new Bag<Integer>();
+            }
+            int E = in.readInt();
+            if (E < 0) throw new IllegalArgumentException("number of edges in a Digraph must be nonnegative");
+            for (int i = 0; i < E; i++) {
+                int v = in.readInt();
+                int w = in.readInt();
+                addEdge(v, w);
+            }
+        }
+        catch (NoSuchElementException e) {
+            throw new IllegalArgumentException("invalid input format in Digraph constructor", e);
+        }
+    }
 
     public int V() {
         return V;
@@ -126,26 +150,31 @@ public class Digraph {
     }
 
     public static Digraph buildDigraph() {
+        //% java DepthFirstOrder tinyDAG.txt
+
         Digraph G = new Digraph(13);
+        G.addEdge(0, 1);
+        G.addEdge(0, 5);
+
         G.addEdge(4, 2);
         G.addEdge(2, 3);
         G.addEdge(3, 2);
         G.addEdge(6, 0);
-        G.addEdge(0, 1);
+
         G.addEdge(2, 0);
         G.addEdge(11, 12);
         G.addEdge(12, 9);
         G.addEdge(9, 10);
         G.addEdge(9, 11);
-        G.addEdge(8, 9);
+        G.addEdge(7, 9);
         G.addEdge(10, 12);
         G.addEdge(11, 4);
         G.addEdge(4, 3);
-        G.addEdge(5, 3);
-        G.addEdge(7, 8);
-        G.addEdge(8, 7);
+        G.addEdge(3, 5);
+        G.addEdge(6, 8);
+        G.addEdge(8, 6);
         G.addEdge(5, 4);
-        G.addEdge(0, 5);
+
         G.addEdge(6, 4);
         G.addEdge(6, 9);
         G.addEdge(7, 6);
@@ -153,7 +182,7 @@ public class Digraph {
     }
 
     public static void main(String[] args) {
-        Digraph G =buildDigraph();
+        Digraph G = buildDigraph();
         StdOut.println(G);
     }
 

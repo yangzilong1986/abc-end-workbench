@@ -1,5 +1,6 @@
 package com.abc.basic.algoritms.algs4.graph;
 
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
@@ -43,7 +44,8 @@ public class DepthFirstSearch {
     }
 
     public static void main(String[] args) {
-        Graph G = Graph.buildGraph();
+//        Graph G = Graph.buildGraph();
+        Graph G =new Graph(new In(In.PATH_NAME+"tinyG.txt"));
         int s =0;
         DepthFirstSearch search = new DepthFirstSearch(G, s);
         for (int v = 0; v < G.V(); v++) {

@@ -3,6 +3,7 @@ package com.abc.basic.algoritms.algs4.weightedgraph;
 import com.abc.basic.algoritms.algs4.col.Queue;
 import com.abc.basic.algoritms.algs4.tree.UF;
 import com.abc.basic.algoritms.algs4.tree.MinPQ;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 public class KruskalMST {
@@ -106,6 +107,7 @@ public class KruskalMST {
 
     public static void main(String[] args) {
         EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
+
         KruskalMST mst = new KruskalMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);

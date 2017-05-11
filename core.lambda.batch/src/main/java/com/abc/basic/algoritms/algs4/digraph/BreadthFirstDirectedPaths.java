@@ -36,14 +36,6 @@ public class BreadthFirstDirectedPaths {
         bfs(G, s);
     }
 
-    /**
-     * Computes the shortest path from any one of the source vertices in {@code sources}
-     * to every other vertex in graph {@code G}.
-     * @param G the digraph
-     * @param sources the source vertices
-     * @throws IllegalArgumentException unless each vertex {@code v} in
-     *         {@code sources} satisfies {@code 0 <= v < V}
-     */
     public BreadthFirstDirectedPaths(Digraph G, Iterable<Integer> sources) {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
@@ -65,7 +57,7 @@ public class BreadthFirstDirectedPaths {
             for (int w : G.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
-                    distTo[w] = distTo[v] + 1;
+                    distTo[w] = distTo[v] + 1;//最短路径的长度
                     marked[w] = true;
                     q.enqueue(w);
                 }

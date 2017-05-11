@@ -52,19 +52,18 @@ public class BipartiteX {
         color[s] = WHITE;
         marked[s] = true;
         q.enqueue(s);
-
+        //广度优先生成二分图
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
-                if (!marked[w]) {
+            for (int w : G.adj(v)) {//每个顶点
+                if (!marked[w]) {//每个顶点没有遍历过
                     marked[w] = true;
                     edgeTo[w] = v;
                     color[w] = !color[v];
                     q.enqueue(w);
                 }
-                else if (color[w] == color[v]) {
+                else if (color[w] == color[v]) {//遍历过的顶点
                     isBipartite = false;
-
                     // to form odd cycle, consider s-v path and s-w path
                     // and let x be closest node to v and w common to two paths
                     // then (w-x path) + (x-v path) + (edge v-w) is an odd-length cycle
@@ -73,14 +72,15 @@ public class BipartiteX {
                     Stack<Integer> stack = new Stack<Integer>();
                     int x = v, y = w;
                     while (x != y) {
-                        stack.push(x);
+                        stack.push(x);//
                         cycle.enqueue(y);
                         x = edgeTo[x];
                         y = edgeTo[y];
                     }
                     stack.push(x);
-                    while (!stack.isEmpty())
-                        cycle.enqueue(stack.pop());
+                    while (!stack.isEmpty()) {//栈中有数据
+                        cycle.enqueue(stack.pop());//出栈，
+                    }
                     cycle.enqueue(w);
                     return;
                 }
@@ -88,19 +88,15 @@ public class BipartiteX {
         }
     }
 
-    /**
-     * Returns true if the graph is bipartite.
-     *
-     * @return {@code true} if the graph is bipartite; {@code false} otherwise
-     */
     public boolean isBipartite() {
         return isBipartite;
     }
  
     public boolean color(int v) {
         validateVertex(v);
-        if (!isBipartite)
+        if (!isBipartite) {
             throw new UnsupportedOperationException("Graph is not bipartite");
+        }
         return color[v];
     }
 
@@ -115,7 +111,8 @@ public class BipartiteX {
             for (int v = 0; v < G.V(); v++) {
                 for (int w : G.adj(v)) {
                     if (color[v] == color[w]) {
-                        System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
+                        System.err.printf("edge %d-%d with %d and %d in same " +
+                                "side of bipartition\n", v, w, v, w);
                         return false;
                     }
                 }
@@ -141,8 +138,10 @@ public class BipartiteX {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " + v
+                    + " is not between 0 and " + (V - 1));
+        }
     }
 
     /**

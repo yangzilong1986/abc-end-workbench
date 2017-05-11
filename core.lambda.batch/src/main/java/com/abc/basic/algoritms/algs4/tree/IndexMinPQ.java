@@ -139,6 +139,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         inverseQP[heapBasedIndexing[j]] = j;
     }
 
+    //上浮
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
@@ -146,6 +147,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         }
     }
 
+    //下浮
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;

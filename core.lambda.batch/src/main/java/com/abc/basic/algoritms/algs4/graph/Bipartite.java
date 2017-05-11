@@ -3,11 +3,13 @@ package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.StdRandom;
 import com.abc.basic.algoritms.algs4.col.Stack;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
  * Bipartite graph/network翻译过来就是：二分图。二分图是一类图(G,E)，其中G是顶点的集合，E为边的集合，
  * 并且G可以分成两个不相交的集合U和V，E中的任意一条边的一个顶点属于集合U，另一顶点属于集合V.
+ * 与欧拉路径少了自我成环和平并连接的检查
  */
 public class Bipartite {
     private boolean isBipartite;   // is the graph bipartite?
@@ -30,6 +32,7 @@ public class Bipartite {
         assert check(G);
     }
 
+    //深度优先获取二分图
     private void dfs(Graph G, int v) { 
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -42,13 +45,15 @@ public class Bipartite {
             // found uncolored vertex, so recur
             if (!marked[w]) {
                 edgeTo[w] = v;
+                //连接点的颜色不同
                 color[w] = !color[v];
                 dfs(G, w);
             } 
 
             // if v-w create an odd-length cycle, find it
-            else if (color[w] == color[v]) {
-                isBipartite = false;
+            else if (color[w] == color[v]) {//v是递归栈的变量
+                //有环不是二分图
+                isBipartite = false;//有环是不是二分图
                 cycle = new Stack<Integer>();
                 cycle.push(w);  // don't need this unless you want to include start vertex twice
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -119,24 +124,10 @@ public class Bipartite {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int V1 = 6;
-        int V2 = 8;
-        int E  = 40;
-        int F  =6;
 
         // create random bipartite graph with V1 vertices on left side,
         // V2 vertices on right side, and E edges; then add F random edges
-        Graph G = GraphGenerator.bipartite(V1, V2, E);
-        G.addEdge(10,0);
-        G.addEdge(6,12);
-        G.addEdge(0,12);
-        G.addEdge(9,8);
-        G.addEdge(3,9);
-        G.addEdge(3,12);
-
-//        StdOut.println(G);
-
-
+        Graph G =new Graph(new In(In.PATH_NAME+"tinyG.txt"));
         Bipartite b = new Bipartite(G);
         if (b.isBipartite()) {
             StdOut.println("Graph is bipartite");

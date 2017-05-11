@@ -39,8 +39,9 @@ public class DepthFirstDirectedPaths {
         validateVertex(v);
         if (!hasPathTo(v)) return null;
         Stack<Integer> path = new Stack<Integer>();
-        for (int x = v; x != s; x = edgeTo[x])
+        for (int x = v; x != s; x = edgeTo[x]) {
             path.push(x);
+        }
         path.push(s);
         return path;
     }
@@ -55,7 +56,7 @@ public class DepthFirstDirectedPaths {
     public static void main(String[] args) {
         Digraph G =Digraph.buildDigraph();
         int s = 5;
-        DepthFirstDirectedPaths dfs = new DepthFirstDirectedPaths(G, s);
+        DepthFirstDirectedPaths dfs = new DepthFirstDirectedPaths(G, 0);
 
         for (int v = 0; v < G.V(); v++) {
             if (dfs.hasPathTo(v)) {

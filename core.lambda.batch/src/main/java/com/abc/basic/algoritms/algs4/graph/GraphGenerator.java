@@ -198,16 +198,6 @@ public class GraphGenerator {
 //        return G;
 //    }
 
-    /**
-     * Returns a random simple bipartite graph on {@code V1} and {@code V2} vertices,
-     * containing each possible edge with probability {@code p}.
-     * @param V1 the number of vertices in one partition
-     * @param V2 the number of vertices in the other partition
-     * @param p the probability that the graph contains an edge with one endpoint in either side
-     * @return a random simple bipartite graph on {@code V1} and {@code V2} vertices,
-     *    containing each possible edge with probability {@code p}
-     * @throws IllegalArgumentException if probability is not between 0 and 1
-     */
     public static Graph bipartite(int V1, int V2, double p) {
         if (p < 0.0 || p > 1.0)
             throw new IllegalArgumentException("Probability must be between 0 and 1");

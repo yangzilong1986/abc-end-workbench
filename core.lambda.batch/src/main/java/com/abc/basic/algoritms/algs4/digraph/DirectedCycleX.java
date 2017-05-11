@@ -2,6 +2,7 @@ package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Queue;
 import com.abc.basic.algoritms.algs4.col.Stack;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.StdRandom;
 
@@ -119,21 +120,9 @@ public class DirectedCycleX {
 
     public static void main(String[] args) {
 
-        // create random DAG with V vertices and E edges; then add F random edges
-        int V = Integer.parseInt(args[0]);
-        int E = Integer.parseInt(args[1]);
-        int F = Integer.parseInt(args[2]);
-        Digraph G = DigraphGenerator.dag(V, E);
-
-        // add F extra edges
-        for (int i = 0; i < F; i++) {
-            int v = StdRandom.uniform(V);
-            int w = StdRandom.uniform(V);
-            G.addEdge(v, w);
-        }
+        Digraph G =new Digraph(new In(In.PATH_NAME+"tinyDG.txt"));
 
         StdOut.println(G);
-
 
         DirectedCycleX finder = new DirectedCycleX(G);
         if (finder.hasCycle()) {
@@ -151,27 +140,3 @@ public class DirectedCycleX {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

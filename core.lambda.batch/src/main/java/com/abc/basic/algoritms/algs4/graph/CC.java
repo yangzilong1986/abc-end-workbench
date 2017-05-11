@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.col.Queue;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.weightedgraph.Edge;
 import com.abc.basic.algoritms.algs4.weightedgraph.EdgeWeightedGraph;
@@ -50,7 +51,7 @@ public class CC {
         for (int v = 0; v < G.V(); v++) {
             if (!marked[v]) {//每个顶点执行一遍，当没有遍历过的进行一次深度遍历
                 dfs(G, v);
-                count++;//连通计数
+                count++;//连通计数，分类方式
             }
         }
     }
@@ -60,7 +61,7 @@ public class CC {
     // depth-first search for an EdgeWeightedGraph
     private void dfs(EdgeWeightedGraph G, int v) {
         marked[v] = true;
-        id[v] = count;
+        id[v] = count;//分类方式
         size[count]++;
         for (Edge e : G.adj(v)) {
             int w = e.other(v);
@@ -115,7 +116,8 @@ public class CC {
     }
 
     public static void main(String[] args) {
-        Graph G =Graph.buildGraphCC();
+//        Graph G =Graph.buildGraphCC();
+        Graph G =new Graph(new In(In.PATH_NAME+"tinyG.txt"));
         CC cc = new CC(G);
 
         // number of connected components

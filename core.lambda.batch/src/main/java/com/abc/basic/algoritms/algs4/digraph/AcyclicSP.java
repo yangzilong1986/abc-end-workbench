@@ -8,6 +8,7 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  The {@code AcyclicSP} class represents a data type for solving the
  *  single-source shortest paths problem in edge-weighted directed acyclic
  *  graphs (DAGs). The edge weights can be positive, negative, or zero.
+ *  无环加权有向图的最短路径，边的权重可以为正负或者零
  */
 public class AcyclicSP {
     private double[] distTo;         // distTo[v] = distance  of shortest s->v path

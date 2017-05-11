@@ -30,7 +30,9 @@ public class AdjMatrixEdgeWeightedDigraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public AdjMatrixEdgeWeightedDigraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("number of vertices must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException("number of vertices must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         this.adj = new DirectedEdge[V][V];

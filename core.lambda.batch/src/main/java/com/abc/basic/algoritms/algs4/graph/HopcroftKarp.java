@@ -10,6 +10,7 @@ import java.util.Iterator;
  *  The {@code HopcroftKarp} class represents a data type for computing a
  *  <em>maximum (cardinality) matching</em> and a
  *  <em>minimum (cardinality) vertex cover</em> in a bipartite graph.
+ *
  *  A <em>bipartite graph</em> in a graph whose vertices can be partitioned
  *  into two disjoint sets such that every edge has one endpoint in either set.
  *  A <em>matching</em> in a graph is a subset of its edges with no common

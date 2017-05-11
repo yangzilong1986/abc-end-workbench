@@ -6,19 +6,30 @@ import com.abc.basic.algoritms.algs4.tree.UF;
 import com.abc.basic.algoritms.algs4.tree.IndexMinPQ;
 import com.abc.basic.algoritms.algs4.utils.In;
 
+/**
+ * Prim最小生成树，每一步为树添加一条边
+ */
 public class PrimMST {
     private static final double FLOATING_POINT_EPSILON = 1E-12;
     //如果顶点v不在树中但是至少包含一条边和树相连，那么edgeTo是将v和树连接的最短边
     //distTo是这边边的权重
+
     // edgeTo[v] = shortest edge from tree vertex to non-tree vertex
-    private Edge[] edgeTo;
-    //
-    // distTo[v] = weight of shortest such edge
-    private double[] distTo;
+    //edgeTo[v]中的v是将v连接到树中的对象
+    //edgeTo[w] = e;//w连接到的另一个顶点e
+    private Edge[] edgeTo;//距离最近的边
+
+    //distTo[w] = e.weight();
+    //distTo[v] = weight of shortest such edge
+    private double[] distTo;//权重
+
     // marked[v] = true if v on tree, false otherwise
+    //节点是否访问过，即在树中的节点时，则为true，否则为false
     private boolean[] marked;
-    //索引优先队列
+
+    //索引优先队列，横切边
     //所有这类的顶点都保存在一条索引优先队列中，索引v关联的值是edgeTo[v]的边的权重
+    //队列保存最小生成树中边
     private IndexMinPQ<Double> pq;
 
     /**
@@ -48,7 +59,7 @@ public class PrimMST {
         distTo[s] = 0.0;
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
-            int v = pq.delMin();
+            int v = pq.delMin();//获取最小的
             scan(G, v);
         }
     }
@@ -60,12 +71,13 @@ public class PrimMST {
             int w = e.other(v);
             if (marked[w]) {
                 // v-w is obsolete edge
+                //已经遍历过了
                 continue;
             }
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
-                edgeTo[w] = e;
-                if (pq.contains(w)) {
+                edgeTo[w] = e;//w连接到的另一个顶点e
+                if (pq.contains(w)) {//包含则，增加
                     pq.decreaseKey(w, distTo[w]);
                 }else {
                     pq.insert(w, distTo[w]);
@@ -158,8 +170,10 @@ public class PrimMST {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
+        //java PrimMST tinyEWG.txt
+        In in = new In(In.PATH_NAME + "tinyEWG.txt");
+//        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
+        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
         PrimMST mst = new PrimMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);

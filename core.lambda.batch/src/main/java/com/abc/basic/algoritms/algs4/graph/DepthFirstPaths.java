@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.algs4.graph;
 
 import com.abc.basic.algoritms.algs4.col.Stack;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 import java.util.ArrayDeque;
@@ -25,23 +26,8 @@ public class DepthFirstPaths {
         dfs(G, s);
     }
 
-    // breadth-first search from a single source
-    private void dfs2(Graph G, int s) {
-        Deque<Integer> stack = new ArrayDeque<Integer>();
-        marked[s] = true;// 标记起点
-        stack.addLast(s);
-        while (!stack.isEmpty()) {
-            // 从队列中删去下一顶点
-            int v = stack.removeLast();
-            for (int w : G.adj(v)) {//属于边，连接表为Bag实现了Iterable接口
-
-            }//
-        }
-    }
-
     // depth first search from v
     private void dfs(Graph G, int v) {
-        //LIFO，后进先出，即栈
         marked[v] = true;
         for (int w : G.adj(v)) {
             if (!marked[w]) {
@@ -108,7 +94,8 @@ public class DepthFirstPaths {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        Graph G = Graph.buildGraph();
+//        Graph G = Graph.buildGraph();
+        Graph G =new Graph(new In(In.PATH_NAME+"tinyCG.txt"));
         int s =0;
         DepthFirstPaths dfs = new DepthFirstPaths(G, s);
         int vv=5;
