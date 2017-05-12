@@ -37,13 +37,6 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  negative cycle in the complete digraph.
  *  The running time is proportional to <em>V</em><sup>3</sup> in the
  *  worst case, where <em>V</em> is the number of currencies.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/44sp">Section 4.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class Arbitrage {
 

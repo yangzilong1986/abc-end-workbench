@@ -211,31 +211,11 @@ public class HopcroftKarp {
         return hasAugmentingPath;
     }
 
-    /**
-     * Returns the vertex to which the specified vertex is matched in
-     * the maximum matching computed by the algorithm.
-     *
-     * @param  v the vertex
-     * @return the vertex to which vertex {@code v} is matched in the
-     *         maximum matching; {@code -1} if the vertex is not matched
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     *
-     */
     public int mate(int v) {
         validate(v);
         return mate[v];
     }
 
-    /**
-     * Returns true if the specified vertex is matched in the maximum matching
-     * computed by the algorithm.
-     *
-     * @param  v the vertex
-     * @return {@code true} if vertex {@code v} is matched in maximum matching;
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     *
-     */
     public boolean isMatched(int v) {
         validate(v);
         return mate[v] != UNMATCHED;
@@ -250,14 +230,7 @@ public class HopcroftKarp {
         return cardinality;
     }
 
-    /**
-     * Returns true if the graph contains a perfect matching.
-     * That is, the number of edges in a maximum matching is equal to one half
-     * of the number of vertices in the graph (so that every vertex is matched).
-     *
-     * @return {@code true} if the graph contains a perfect matching;
-     *         {@code false} otherwise
-     */
+
     public boolean isPerfect() {
         return cardinality * 2 == V;
     }

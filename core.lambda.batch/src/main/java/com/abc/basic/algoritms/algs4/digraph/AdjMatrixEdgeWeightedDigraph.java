@@ -6,17 +6,6 @@ import com.abc.basic.algoritms.algs4.StdRandom;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- *  The {@code AdjMatrixEdgeWeightedDigraph} class represents a edge-weighted
- *  digraph of vertices named 0 through <em>V</em> - 1, where each
- *  directed edge is of type {@link DirectedEdge} and has a real-valued weight.
- *  It supports the following two primary operations: add a directed edge
- *  to the digraph and iterate over all of edges incident from a given vertex.
- *  It also provides
- *  methods for returning the number of vertices <em>V</em> and the number
- *  of edges <em>E</em>. Parallel edges are disallowed; self-loops are permitted.
- */
-
 public class AdjMatrixEdgeWeightedDigraph {
     private static final String NEWLINE = System.getProperty("line.separator");
 

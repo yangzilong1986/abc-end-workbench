@@ -21,17 +21,20 @@ public class AcyclicSP {
 
         validateVertex(s);
 
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.V(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
 
         // visit vertices in toplogical order
         Topological topological = new Topological(G);
-        if (!topological.hasOrder())
+        if (!topological.hasOrder()) {
             throw new IllegalArgumentException("Digraph is not acyclic.");
+        }
         for (int v : topological.order()) {
-            for (DirectedEdge e : G.adj(v))
+            for (DirectedEdge e : G.adj(v)) {
                 relax(e);
+            }
         }
     }
 
@@ -54,13 +57,6 @@ public class AcyclicSP {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
 
-    /**
-     * Returns a shortest path from the source vertex {@code s} to vertex {@code v}.
-     * @param  v the destination vertex
-     * @return a shortest path from the source vertex {@code s} to vertex {@code v}
-     *         as an iterable of edges, and {@code null} if no such path
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public Iterable<DirectedEdge> pathTo(int v) {
         validateVertex(v);
         if (!hasPathTo(v)) return null;

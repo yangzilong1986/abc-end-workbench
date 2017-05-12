@@ -64,13 +64,6 @@ public class AcyclicLP {
         }       
     }
 
-    /**
-     * Returns the length of a longest path from the source vertex {@code s} to vertex {@code v}.
-     * @param  v the destination vertex
-     * @return the length of a longest path from the source vertex {@code s} to vertex {@code v};
-     *         {@code Double.NEGATIVE_INFINITY} if no such path
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public double distTo(int v) {
         validateVertex(v);
         return distTo[v];

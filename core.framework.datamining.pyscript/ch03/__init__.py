@@ -14,9 +14,9 @@ def createDataSet():
     #change to discrete values
     return dataSet, labels
 
-dataSet, labels=createDataSet()
-fishMyTree=trees.createTree(dataSet,labels)
-treePlotter.createPlot(trees)
+# dataSet, labels=createDataSet()
+# fishMyTree=trees.createTree(dataSet,labels)
+# treePlotter.createPlot(trees)
 #print(fishMyTree)
 # labels = ['no surfacing','flippers']
 #fishClass=trees.classify(fishMyTree,labels,[0,2])
@@ -32,6 +32,7 @@ treePlotter.createPlot(trees)
 '''
 决策树应用
 '''
+#读入数据
 fr=open('lenses.txt')
 lenses=[inst.strip().split('\t') for inst in fr.readlines()]
 lensesLabels=['age' , 'presscript' , 'astigmatic', 'tearRate']
@@ -51,6 +52,8 @@ labels=['age' , 'presscript' , 'astigmatic', 'tearRate']
 # }}}}}
 
 lensesTree=trees.createTree(lenses,labels)
+lensesTreeFileName='lensesTreeClassed.txt'
+trees.storeTree(lensesTree,lensesTreeFileName)
 print(lensesTree)
 #young	hyper	no	normal	soft
 # young	hyper	yes	reduced	no lenses
