@@ -34,16 +34,16 @@ import org.apache.mahout.math.Vector;
  * Encodes user and item interaction variables.
  */
 class UserItemEncoder {
-  CategoryInteractionEncoder ageGenderBrand = new CategoryInteractionEncoder(6,
-    new CategoryFeatureEncoder("gender"),
-    new CategoryFeatureEncoder("age"),
-    new CategoryFeatureEncoder("brand"));
+    CategoryInteractionEncoder ageGenderBrand = new CategoryInteractionEncoder(6,
+            new CategoryFeatureEncoder("gender"),
+            new CategoryFeatureEncoder("age"),
+            new CategoryFeatureEncoder("brand"));
 
-  public void addToVector(User u, Item x, Vector data) {
-    ageGenderBrand.addToVector(new int[]{u.gender, u.ageGroup, x.brandId}, 1, data);
-  }
+    public void addToVector(User u, Item x, Vector data) {
+        ageGenderBrand.addToVector(new int[]{u.gender, u.ageGroup, x.brandId}, 1, data);
+    }
 
-  public long hash(User u, Item x) {
-    return ageGenderBrand.hashForProbe(new int[]{u.gender, u.ageGroup, x.brandId}, 0);
-  }
+    public long hash(User u, Item x) {
+        return ageGenderBrand.hashForProbe(new int[]{u.gender, u.ageGroup, x.brandId}, 0);
+    }
 }

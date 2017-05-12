@@ -2,7 +2,7 @@ package com.abc.basic.algoritms.base.graph.traverse;
 
 
 import com.abc.basic.algoritms.base.graph.DirectedGraph;
-import org.jgrapht.util.ModifiableInteger;
+import com.abc.basic.algoritms.base.graph.util.ModifiableInteger;
 
 import java.util.HashMap;
 import java.util.LinkedList;

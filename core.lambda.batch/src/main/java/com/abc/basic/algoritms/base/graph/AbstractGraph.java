@@ -1,5 +1,7 @@
 package com.abc.basic.algoritms.base.graph;
-import org.jgrapht.util.TypeUtil;
+//import org.jgrapht.util.TypeUtil;
+
+import com.abc.basic.algoritms.base.graph.util.TypeUtil;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -10,7 +10,7 @@ import com.abc.basic.algoritms.base.graph.spanning.KruskalMinimumSpanningTree;
 import com.abc.basic.algoritms.base.graph.spanning.PrimMinimumSpanningTree;
 import com.abc.basic.algoritms.base.graph.spanning.SpanningTreeAlgorithm;
 import junit.framework.*;
-import org.jgrapht.generate.GnpRandomGraphGenerator;
+//import org.jgrapht.generate.GnpRandomGraphGenerator;
 
 import java.util.Arrays;
 import java.util.Collection;

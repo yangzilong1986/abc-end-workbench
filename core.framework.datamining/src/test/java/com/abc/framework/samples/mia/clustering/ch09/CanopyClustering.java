@@ -16,28 +16,29 @@ import org.apache.mahout.math.Vector;
 import org.apache.mahout.math.VectorWritable;
 
 public class CanopyClustering {
-  public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
-  public static void main(String args[]) throws Exception {
-    
-    String inputDir =OUT_DIR+ "reuters21578/";
-    Configuration conf = new Configuration();
-    FileSystem fs = FileSystem.get(conf);
-    String vectorsFolder = inputDir + "tfidf-vectors";
-    SequenceFile.Reader reader = new SequenceFile.Reader(fs, new Path(vectorsFolder + "/part-r-00000"), conf);
-    List<Vector> points = new ArrayList<Vector>();
-    Text key = new Text();
-    VectorWritable value = new VectorWritable();
-    
-    while (reader.next(key, value)) {
-      points.add(value.get());
+    public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
+
+    public static void main(String args[]) throws Exception {
+
+        String inputDir = OUT_DIR + "reuters21578/";
+        Configuration conf = new Configuration();
+        FileSystem fs = FileSystem.get(conf);
+        String vectorsFolder = inputDir + "tfidf-vectors";
+        SequenceFile.Reader reader = new SequenceFile.Reader(fs, new Path(vectorsFolder + "/part-r-00000"), conf);
+        List<Vector> points = new ArrayList<Vector>();
+        Text key = new Text();
+        VectorWritable value = new VectorWritable();
+
+        while (reader.next(key, value)) {
+            points.add(value.get());
+        }
+        System.out.println(points.size());
+        reader.close();
+        List<Canopy> canopies = CanopyClusterer.createCanopies(points, new CosineDistanceMeasure(), 0.8, 0.7);
+        List<Cluster> clusters = new ArrayList<Cluster>();
+        System.out.println(canopies.size());
+        for (Canopy canopy : canopies) {
+            clusters.add(new Cluster(canopy.getCenter(), canopy.getId(), new CosineDistanceMeasure()));
+        }
     }
-    System.out.println(points.size());
-    reader.close();
-    List<Canopy> canopies = CanopyClusterer.createCanopies(points, new CosineDistanceMeasure(), 0.8, 0.7);
-    List<Cluster> clusters = new ArrayList<Cluster>();
-    System.out.println(canopies.size());
-    for (Canopy canopy : canopies) {
-      clusters.add(new Cluster(canopy.getCenter(), canopy.getId(), new CosineDistanceMeasure()));
-    }
-  }
 }

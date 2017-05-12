@@ -15,7 +15,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mahut.version>0.5</mahut.version>
+        <mahut.version>0.6</mahut.version>
     </properties>
     <dependencies>
         <dependency>
@@ -43,9 +43,9 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>org.apache.mahout</groupId>-->
-            <!--<artifactId>mahout-integration</artifactId>-->
-            <!--<version>${mahut.version}</version>-->
+        <!--<groupId>org.apache.mahout</groupId>-->
+        <!--<artifactId>mahout-integration</artifactId>-->
+        <!--<version>${mahut.version}</version>-->
         <!--</dependency>-->
 
         <dependency>

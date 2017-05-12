@@ -32,8 +32,8 @@ package com.abc.framework.samples.mia.classifier.ch16;
  * Simplified user model.
  */
 public class User {
-  int id;
-  int ageGroup;
-  int gender;
-  int brandPreferenceClusterId;
+    int id;
+    int ageGroup;
+    int gender;
+    int brandPreferenceClusterId;
 }

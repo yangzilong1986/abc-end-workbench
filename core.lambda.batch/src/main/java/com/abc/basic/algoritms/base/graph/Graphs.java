@@ -24,7 +24,7 @@ public abstract class Graphs
     }
 
 
-    public static <V, E> E addEdgeWithVertices(org.jgrapht.Graph<V, E> g, V sourceVertex, V targetVertex)
+    public static <V, E> E addEdgeWithVertices(Graph<V, E> g, V sourceVertex, V targetVertex)
     {
         g.addVertex(sourceVertex);
         g.addVertex(targetVertex);
@@ -261,7 +261,7 @@ public abstract class Graphs
     }
 
 
-    public static <V, E> boolean vertexHasSuccessors(org.jgrapht.DirectedGraph<V, E> graph, V vertex)
+    public static <V, E> boolean vertexHasSuccessors(DirectedGraph<V, E> graph, V vertex)
     {
         return !graph.outgoingEdgesOf(vertex).isEmpty();
     }

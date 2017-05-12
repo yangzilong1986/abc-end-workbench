@@ -101,209 +101,209 @@ import java.util.Set;
  * </table>
  */
 public final class TrainNewsGroups {
-  private static final int FEATURES = 10000;
+    private static final int FEATURES = 10000;
 
-  // 1997-01-15 00:01:00 GMT
-  private static final long DATE_REFERENCE = 853286460;
-  private static final long MONTH = 30 * 24 * 3600;
-  private static final long WEEK = 7 * 24 * 3600;
+    // 1997-01-15 00:01:00 GMT
+    private static final long DATE_REFERENCE = 853286460;
+    private static final long MONTH = 30 * 24 * 3600;
+    private static final long WEEK = 7 * 24 * 3600;
 
-  private static final Random rand = RandomUtils.getRandom();
+    private static final Random rand = RandomUtils.getRandom();
 
-  private static final String[] LEAK_LABELS = {"none", "month-year", "day-month-year"};
-  private static final SimpleDateFormat[] DATE_FORMATS = {
-    new SimpleDateFormat("", Locale.ENGLISH),
-    new SimpleDateFormat("MMM-yyyy", Locale.ENGLISH),
-    new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss", Locale.ENGLISH)
-  };
+    private static final String[] LEAK_LABELS = {"none", "month-year", "day-month-year"};
+    private static final SimpleDateFormat[] DATE_FORMATS = {
+            new SimpleDateFormat("", Locale.ENGLISH),
+            new SimpleDateFormat("MMM-yyyy", Locale.ENGLISH),
+            new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss", Locale.ENGLISH)
+    };
 
-  private static final Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
-  private static final TextValueEncoder encoder = new TextValueEncoder("body");
-  private static final FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
+    private static final Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
+    private static final TextValueEncoder encoder = new TextValueEncoder("body");
+    private static final FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
 
-  private TrainNewsGroups() {
-  }
-
-  public static void main(String[] args) throws IOException {
-    File base = new File(args[0]);
-
-    int leakType = 0;
-    if (args.length > 1) {
-      leakType = Integer.parseInt(args[1]);
+    private TrainNewsGroups() {
     }
 
-    Dictionary newsGroups = new Dictionary();
+    public static void main(String[] args) throws IOException {
+        File base = new File(args[0]);
 
-    encoder.setProbes(2);
-    AdaptiveLogisticRegression learningAlgorithm = new AdaptiveLogisticRegression(20, FEATURES, new L1());
-    learningAlgorithm.setInterval(800);
-    learningAlgorithm.setAveragingWindow(500);
-
-    List<File> files = Lists.newArrayList();
-    File[] directories = base.listFiles();
-    Arrays.sort(directories, Ordering.usingToString());
-    for (File newsgroup : directories) {
-      if (newsgroup.isDirectory()) {
-        newsGroups.intern(newsgroup.getName());
-        files.addAll(Arrays.asList(newsgroup.listFiles()));
-      }
-    }
-    Collections.shuffle(files);
-    System.out.printf("%d training files\n", files.size());
-    System.out.printf("%s\n", Arrays.asList(directories));
-
-    double averageLL = 0;
-    double averageCorrect = 0;
-
-    int k = 0;
-    double step = 0;
-    int[] bumps = {1, 2, 5};
-    for (File file : files) {
-      String ng = file.getParentFile().getName();
-      int actual = newsGroups.intern(ng);
-
-      Vector v = encodeFeatureVector(file);
-      learningAlgorithm.train(actual, v);
-
-      k++;
-
-      int bump = bumps[(int) Math.floor(step) % bumps.length];
-      int scale = (int) Math.pow(10, Math.floor(step / bumps.length));
-      State<AdaptiveLogisticRegression.Wrapper, CrossFoldLearner> best = learningAlgorithm.getBest();
-      double maxBeta;
-      double nonZeros;
-      double positive;
-      double norm;
-
-      double lambda = 0;
-      double mu = 0;
-
-      if (best != null) {
-        CrossFoldLearner state = best.getPayload().getLearner();
-        averageCorrect = state.percentCorrect();
-        averageLL = state.logLikelihood();
-
-        OnlineLogisticRegression model = state.getModels().get(0);
-        // finish off pending regularization
-        model.close();
-        
-        Matrix beta = model.getBeta();
-        maxBeta = beta.aggregate(Functions.MAX, Functions.ABS);
-        nonZeros = beta.aggregate(Functions.PLUS, new DoubleFunction() {
-          @Override
-          public double apply(double v) {
-            return Math.abs(v) > 1.0e-6 ? 1 : 0;
-          }
-        });
-        positive = beta.aggregate(Functions.PLUS, new DoubleFunction() {
-          @Override
-          public double apply(double v) {
-            return v > 0 ? 1 : 0;
-          }
-        });
-        norm = beta.aggregate(Functions.PLUS, Functions.ABS);
-
-        lambda = learningAlgorithm.getBest().getMappedParams()[0];
-        mu = learningAlgorithm.getBest().getMappedParams()[1];
-      } else {
-        maxBeta = 0;
-        nonZeros = 0;
-        positive = 0;
-        norm = 0;
-      }
-      if (k % (bump * scale) == 0) {
-        if (learningAlgorithm.getBest() != null) {
-          ModelSerializer.writeBinary("/tmp/news-group-" + k + ".model",
-            learningAlgorithm.getBest().getPayload().getLearner().getModels().get(0));
+        int leakType = 0;
+        if (args.length > 1) {
+            leakType = Integer.parseInt(args[1]);
         }
 
-        step += 0.25;
-        System.out.printf("%.2f\t%.2f\t%.2f\t%.2f\t%.8g\t%.8g\t", maxBeta, nonZeros, positive, norm, lambda, mu);
-        System.out.printf("%d\t%.3f\t%.2f\t%s\n",
-          k, averageLL, averageCorrect * 100, LEAK_LABELS[leakType % 3]);
-      }
+        Dictionary newsGroups = new Dictionary();
+
+        encoder.setProbes(2);
+        AdaptiveLogisticRegression learningAlgorithm = new AdaptiveLogisticRegression(20, FEATURES, new L1());
+        learningAlgorithm.setInterval(800);
+        learningAlgorithm.setAveragingWindow(500);
+
+        List<File> files = Lists.newArrayList();
+        File[] directories = base.listFiles();
+        Arrays.sort(directories, Ordering.usingToString());
+        for (File newsgroup : directories) {
+            if (newsgroup.isDirectory()) {
+                newsGroups.intern(newsgroup.getName());
+                files.addAll(Arrays.asList(newsgroup.listFiles()));
+            }
+        }
+        Collections.shuffle(files);
+        System.out.printf("%d training files\n", files.size());
+        System.out.printf("%s\n", Arrays.asList(directories));
+
+        double averageLL = 0;
+        double averageCorrect = 0;
+
+        int k = 0;
+        double step = 0;
+        int[] bumps = {1, 2, 5};
+        for (File file : files) {
+            String ng = file.getParentFile().getName();
+            int actual = newsGroups.intern(ng);
+
+            Vector v = encodeFeatureVector(file);
+            learningAlgorithm.train(actual, v);
+
+            k++;
+
+            int bump = bumps[(int) Math.floor(step) % bumps.length];
+            int scale = (int) Math.pow(10, Math.floor(step / bumps.length));
+            State<AdaptiveLogisticRegression.Wrapper, CrossFoldLearner> best = learningAlgorithm.getBest();
+            double maxBeta;
+            double nonZeros;
+            double positive;
+            double norm;
+
+            double lambda = 0;
+            double mu = 0;
+
+            if (best != null) {
+                CrossFoldLearner state = best.getPayload().getLearner();
+                averageCorrect = state.percentCorrect();
+                averageLL = state.logLikelihood();
+
+                OnlineLogisticRegression model = state.getModels().get(0);
+                // finish off pending regularization
+                model.close();
+
+                Matrix beta = model.getBeta();
+                maxBeta = beta.aggregate(Functions.MAX, Functions.ABS);
+                nonZeros = beta.aggregate(Functions.PLUS, new DoubleFunction() {
+                    @Override
+                    public double apply(double v) {
+                        return Math.abs(v) > 1.0e-6 ? 1 : 0;
+                    }
+                });
+                positive = beta.aggregate(Functions.PLUS, new DoubleFunction() {
+                    @Override
+                    public double apply(double v) {
+                        return v > 0 ? 1 : 0;
+                    }
+                });
+                norm = beta.aggregate(Functions.PLUS, Functions.ABS);
+
+                lambda = learningAlgorithm.getBest().getMappedParams()[0];
+                mu = learningAlgorithm.getBest().getMappedParams()[1];
+            } else {
+                maxBeta = 0;
+                nonZeros = 0;
+                positive = 0;
+                norm = 0;
+            }
+            if (k % (bump * scale) == 0) {
+                if (learningAlgorithm.getBest() != null) {
+                    ModelSerializer.writeBinary("/tmp/news-group-" + k + ".model",
+                            learningAlgorithm.getBest().getPayload().getLearner().getModels().get(0));
+                }
+
+                step += 0.25;
+                System.out.printf("%.2f\t%.2f\t%.2f\t%.2f\t%.8g\t%.8g\t", maxBeta, nonZeros, positive, norm, lambda, mu);
+                System.out.printf("%d\t%.3f\t%.2f\t%s\n",
+                        k, averageLL, averageCorrect * 100, LEAK_LABELS[leakType % 3]);
+            }
+        }
+        learningAlgorithm.close();
+        dissect(newsGroups, learningAlgorithm, files);
+        System.out.println("exiting main");
+
+        ModelSerializer.writeBinary("/tmp/news-group.model",
+                learningAlgorithm.getBest().getPayload().getLearner().getModels().get(0));
     }
-    learningAlgorithm.close();
-    dissect(newsGroups, learningAlgorithm, files);
-    System.out.println("exiting main");
 
-    ModelSerializer.writeBinary("/tmp/news-group.model",
-                                learningAlgorithm.getBest().getPayload().getLearner().getModels().get(0));
-  }
+    private static void dissect(Dictionary newsGroups,
+                                AdaptiveLogisticRegression learningAlgorithm,
+                                Iterable<File> files) throws IOException {
+        CrossFoldLearner model = learningAlgorithm.getBest().getPayload().getLearner();
+        model.close();
 
-  private static void dissect(Dictionary newsGroups,
-                              AdaptiveLogisticRegression learningAlgorithm,
-                              Iterable<File> files) throws IOException {
-    CrossFoldLearner model = learningAlgorithm.getBest().getPayload().getLearner();
-    model.close();
+        Map<String, Set<Integer>> traceDictionary = Maps.newTreeMap();
+        ModelDissector md = new ModelDissector();
 
-    Map<String, Set<Integer>> traceDictionary = Maps.newTreeMap();
-    ModelDissector md = new ModelDissector();
+        encoder.setTraceDictionary(traceDictionary);
+        bias.setTraceDictionary(traceDictionary);
 
-    encoder.setTraceDictionary(traceDictionary);
-    bias.setTraceDictionary(traceDictionary);
+        for (File file : permute(files, rand).subList(0, 500)) {
+            traceDictionary.clear();
+            Vector v = encodeFeatureVector(file);
+            md.update(v, traceDictionary, model);
+        }
 
-    for (File file : permute(files, rand).subList(0, 500)) {
-      traceDictionary.clear();
-      Vector v = encodeFeatureVector(file);
-      md.update(v, traceDictionary, model);
+        List<String> ngNames = Lists.newArrayList(newsGroups.values());
+        List<ModelDissector.Weight> weights = md.summary(100);
+        for (ModelDissector.Weight w : weights) {
+            System.out.printf("%s\t%.1f\t%s\t%.1f\t%s\t%.1f\t%s\n",
+                    w.getFeature(), w.getWeight(), ngNames.get(w.getMaxImpact() + 1),
+                    w.getCategory(1), w.getWeight(1), w.getCategory(2), w.getWeight(2));
+        }
     }
 
-    List<String> ngNames = Lists.newArrayList(newsGroups.values());
-    List<ModelDissector.Weight> weights = md.summary(100);
-    for (ModelDissector.Weight w : weights) {
-      System.out.printf("%s\t%.1f\t%s\t%.1f\t%s\t%.1f\t%s\n",
-                        w.getFeature(), w.getWeight(), ngNames.get(w.getMaxImpact() + 1),
-                        w.getCategory(1), w.getWeight(1), w.getCategory(2), w.getWeight(2));
-    }
-  }
+    private static Vector encodeFeatureVector(File file) throws IOException {
+        BufferedReader reader = Files.newReader(file, Charsets.UTF_8);
+        try {
+            String line = reader.readLine();
+            while (line != null && line.length() > 0) {
+                boolean countHeader = (
+                        line.startsWith("From:") || line.startsWith("Subject:") ||
+                                line.startsWith("Keywords:") || line.startsWith("Summary:"));
+                do {
+                    if (countHeader) {
+                        line = line.replaceAll(".*:", "");
+                        encoder.addText(line.toLowerCase());
+                    }
+                    line = reader.readLine();
+                } while (line != null && line.startsWith(" "));
+            }
 
-  private static Vector encodeFeatureVector(File file) throws IOException {
-    BufferedReader reader = Files.newReader(file, Charsets.UTF_8);
-    try {
-      String line = reader.readLine();
-      while (line != null && line.length() > 0) {
-        boolean countHeader = (
-          line.startsWith("From:") || line.startsWith("Subject:") ||
-            line.startsWith("Keywords:") || line.startsWith("Summary:")) ;
-        do {
-          if (countHeader) {
-            line = line.replaceAll(".*:", "");
-            encoder.addText(line.toLowerCase());
-          }
-          line = reader.readLine();
-        } while (line != null && line.startsWith(" "));
-      }
+            if (line != null) {
+                line = reader.readLine();
+            }
 
-      if (line != null) {
-        line = reader.readLine();
-      }
+            while (line != null) {
+                encoder.addText(line.toLowerCase());
+                line = reader.readLine();
+            }
+        } finally {
+            reader.close();
+        }
 
-      while (line != null) {
-        encoder.addText(line.toLowerCase());
-        line = reader.readLine();
-      }
-    } finally {
-      reader.close();
+        Vector v = new RandomAccessSparseVector(FEATURES);
+        bias.addToVector((byte[]) null, 1, v);
+        encoder.flush(1, v);
+        return v;
     }
 
-    Vector v = new RandomAccessSparseVector(FEATURES);
-    bias.addToVector((byte[]) null, 1, v);
-    encoder.flush(1, v);
-    return v;
-  }
-
-  private static List<File> permute(Iterable<File> files, Random rand) {
-    List<File> r = Lists.newArrayList();
-    for (File file : files) {
-      int i = rand.nextInt(r.size() + 1);
-      if (i == r.size()) {
-        r.add(file);
-      } else {
-        r.add(r.get(i));
-        r.set(i, file);
-      }
+    private static List<File> permute(Iterable<File> files, Random rand) {
+        List<File> r = Lists.newArrayList();
+        for (File file : files) {
+            int i = rand.nextInt(r.size() + 1);
+            if (i == r.size()) {
+                r.add(file);
+            } else {
+                r.add(r.get(i));
+                r.set(i, file);
+            }
+        }
+        return r;
     }
-    return r;
-  }
 }

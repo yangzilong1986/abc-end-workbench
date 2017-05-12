@@ -32,8 +32,8 @@ package com.abc.framework.samples.mia.classifier.ch16;
  * Simplified item for sale.
  */
 public class Item {
-  int id;
-  int brandId;
-  int vendorId;
-  String description;
+    int id;
+    int brandId;
+    int vendorId;
+    String description;
 }

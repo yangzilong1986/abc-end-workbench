@@ -27,59 +27,59 @@ import org.apache.mahout.math.VectorWritable;
 import org.apache.mahout.math.map.OpenIntLongHashMap;
 
 public class AggregateAndRecommendReducer
-		extends
-		Reducer<VarLongWritable, VectorWritable, VarLongWritable, RecommendedItemsWritable> {
+        extends
+        Reducer<VarLongWritable, VectorWritable, VarLongWritable, RecommendedItemsWritable> {
 
-	private int recommendationsPerUser = 10;
-	private OpenIntLongHashMap indexItemIDMap;
-	static final String ITEMID_INDEX_PATH = "itemIDIndexPath";
-	static final String NUM_RECOMMENDATIONS = "numRecommendations";
-	static final int DEFAULT_NUM_RECOMMENDATIONS = 10;
+    private int recommendationsPerUser = 10;
+    private OpenIntLongHashMap indexItemIDMap;
+    static final String ITEMID_INDEX_PATH = "itemIDIndexPath";
+    static final String NUM_RECOMMENDATIONS = "numRecommendations";
+    static final int DEFAULT_NUM_RECOMMENDATIONS = 10;
 
-	protected void setup(Context context) throws IOException {
-		Configuration jobConf = context.getConfiguration();
-		recommendationsPerUser = jobConf.getInt(NUM_RECOMMENDATIONS,
-				DEFAULT_NUM_RECOMMENDATIONS);
+    protected void setup(Context context) throws IOException {
+        Configuration jobConf = context.getConfiguration();
+        recommendationsPerUser = jobConf.getInt(NUM_RECOMMENDATIONS,
+                DEFAULT_NUM_RECOMMENDATIONS);
 //		indexItemIDMap = TasteHadoopUtils.readItemIDIndexMap(
 //				jobConf.get(ITEMID_INDEX_PATH), jobConf);
-	}
+    }
 
-	public void reduce(VarLongWritable key, Iterable<VectorWritable> values,
-			Context context) throws IOException, InterruptedException {
+    public void reduce(VarLongWritable key, Iterable<VectorWritable> values,
+                       Context context) throws IOException, InterruptedException {
 
-		Vector recommendationVector = null;
-		for (VectorWritable vectorWritable : values) {
-			recommendationVector = recommendationVector == null ? vectorWritable
-					.get() : recommendationVector.plus(vectorWritable.get());
-		}
+        Vector recommendationVector = null;
+        for (VectorWritable vectorWritable : values) {
+            recommendationVector = recommendationVector == null ? vectorWritable
+                    .get() : recommendationVector.plus(vectorWritable.get());
+        }
 
-		Queue<RecommendedItem> topItems = new PriorityQueue<RecommendedItem>(
-				recommendationsPerUser + 1,
-				Collections.reverseOrder(ByValueRecommendedItemComparator
-						.getInstance()));
+        Queue<RecommendedItem> topItems = new PriorityQueue<RecommendedItem>(
+                recommendationsPerUser + 1,
+                Collections.reverseOrder(ByValueRecommendedItemComparator
+                        .getInstance()));
 
 //		Iterator<Vector.Element> recommendationVectorIterator = recommendationVector
 //				.iterateNonZero();
-		Iterator<Vector.Element> recommendationVectorIterator =null;
-		while (recommendationVectorIterator.hasNext()) {
-			Vector.Element element = recommendationVectorIterator.next();
-			int index = element.index();
-			float value = (float) element.get();
-			if (topItems.size() < recommendationsPerUser) {
-				topItems.add(new GenericRecommendedItem(indexItemIDMap
-						.get(index), value));
-			} else if (value > topItems.peek().getValue()) {
-				topItems.add(new GenericRecommendedItem(indexItemIDMap
-						.get(index), value));
-				topItems.poll();
-			}
-		}
+        Iterator<Vector.Element> recommendationVectorIterator = null;
+        while (recommendationVectorIterator.hasNext()) {
+            Vector.Element element = recommendationVectorIterator.next();
+            int index = element.index();
+            float value = (float) element.get();
+            if (topItems.size() < recommendationsPerUser) {
+                topItems.add(new GenericRecommendedItem(indexItemIDMap
+                        .get(index), value));
+            } else if (value > topItems.peek().getValue()) {
+                topItems.add(new GenericRecommendedItem(indexItemIDMap
+                        .get(index), value));
+                topItems.poll();
+            }
+        }
 
-		List<RecommendedItem> recommendations = new ArrayList<RecommendedItem>(
-				topItems.size());
-		recommendations.addAll(topItems);
-		Collections.sort(recommendations,
-				ByValueRecommendedItemComparator.getInstance());
-		context.write(key, new RecommendedItemsWritable(recommendations));
-	}
+        List<RecommendedItem> recommendations = new ArrayList<RecommendedItem>(
+                topItems.size());
+        recommendations.addAll(topItems);
+        Collections.sort(recommendations,
+                ByValueRecommendedItemComparator.getInstance());
+        context.write(key, new RecommendedItemsWritable(recommendations));
+    }
 }

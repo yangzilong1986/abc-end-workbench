@@ -29,6 +29,7 @@
 package com.abc.framework.samples.mia.classifier.ch16.client;
 
 //import mia.classifier.ch16.generated.Classifier;
+
 import com.abc.framework.samples.mia.classifier.ch16.generated.Classifier;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -43,26 +44,26 @@ import java.util.List;
  * The client end of a connection to a classification server.
  */
 public class Connection implements Classifier.Iface {
-  private Classifier.Client client;
-  private TTransport transport;
-  private static final int SECONDS = 1000;
+    private Classifier.Client client;
+    private TTransport transport;
+    private static final int SECONDS = 1000;
 
-  public Connection(String host, int port) throws TTransportException {
-    TSocket socket = new TSocket(host, port);
-    socket.setTimeout(10 * SECONDS);
-    TProtocol protocol = new TBinaryProtocol(socket);
+    public Connection(String host, int port) throws TTransportException {
+        TSocket socket = new TSocket(host, port);
+        socket.setTimeout(10 * SECONDS);
+        TProtocol protocol = new TBinaryProtocol(socket);
 
-    client = new Classifier.Client(protocol);
-    this.transport = socket;
-    this.transport.open();
-  }
+        client = new Classifier.Client(protocol);
+        this.transport = socket;
+        this.transport.open();
+    }
 
-  public void close() {
-    transport.close();
-  }
+    public void close() {
+        transport.close();
+    }
 
-  @Override
-  public List<Double> classify(String text) throws TException {
-    return client.classify(text);
-  }
+    @Override
+    public List<Double> classify(String text) throws TException {
+        return client.classify(text);
+    }
 }

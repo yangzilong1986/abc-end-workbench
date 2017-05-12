@@ -20,22 +20,22 @@ import org.apache.mahout.vectorizer.encoders.StaticWordValueEncoder;
 
 public class TokenizingAndVectorizingText {
 
-	public static void main(String[] args) throws IOException {
-		FeatureVectorEncoder encoder = new StaticWordValueEncoder("text");
-		Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_31);     
+    public static void main(String[] args) throws IOException {
+        FeatureVectorEncoder encoder = new StaticWordValueEncoder("text");
+        Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_31);
 
-		StringReader in = new StringReader("text to magically vectorize");
-		TokenStream ts = analyzer.tokenStream("body", in);
-		TermAttribute termAtt = ts.addAttribute(TermAttribute.class);
+        StringReader in = new StringReader("text to magically vectorize");
+        TokenStream ts = analyzer.tokenStream("body", in);
+        TermAttribute termAtt = ts.addAttribute(TermAttribute.class);
 
-		Vector v1 = new RandomAccessSparseVector(100);
-		while (ts.incrementToken()) {
-		  char[] termBuffer = termAtt.termBuffer();
-		  int termLen = termAtt.termLength();
-		  String w = new String(termBuffer, 0, termLen);
-		  encoder.addToVector(w, 1, v1);
-		}
-		System.out.printf("%s\n", new SequentialAccessSparseVector(v1));
-	}
+        Vector v1 = new RandomAccessSparseVector(100);
+        while (ts.incrementToken()) {
+            char[] termBuffer = termAtt.termBuffer();
+            int termLen = termAtt.termLength();
+            String w = new String(termBuffer, 0, termLen);
+            encoder.addToVector(w, 1, v1);
+        }
+        System.out.printf("%s\n", new SequentialAccessSparseVector(v1));
+    }
 
 }

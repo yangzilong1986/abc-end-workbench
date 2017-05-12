@@ -22,14 +22,15 @@ import java.io.File;
 
 final class GroupLensItemsEvalIntro {
     public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
+
     public static void main(String[] args) throws Exception {
-        File file=new File(OUT_DIR+"ml-latest-small/ratings.csv");
+        File file = new File(OUT_DIR + "ml-latest-small/ratings.csv");
 //    DataModel model = new GroupLensDataModel(file);
-        DataModel model =new FileDataModel(file);
+        DataModel model = new FileDataModel(file);
         RecommenderEvaluator evaluator =
                 new AverageAbsoluteDifferenceRecommenderEvaluator();
         RecommenderBuilder recommenderBuilder
-           = new RecommenderBuilder() {
+                = new RecommenderBuilder() {
             @Override
             public Recommender buildRecommender(DataModel model) throws TasteException {
                 //皮尔逊相关系数
@@ -49,7 +50,7 @@ final class GroupLensItemsEvalIntro {
 //            }
 //        };
 
-        recommenderBuilder=new RecommenderBuilder() {
+        recommenderBuilder = new RecommenderBuilder() {
             @Override
             public Recommender buildRecommender(DataModel model) throws TasteException {
                 return KnnBasedRecommender.buildRecommender(model);

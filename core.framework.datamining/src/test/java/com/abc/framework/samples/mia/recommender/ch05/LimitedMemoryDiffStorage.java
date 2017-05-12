@@ -14,11 +14,11 @@ import org.apache.mahout.cf.taste.recommender.slopeone.DiffStorage;
 
 class LimitedMemoryDiffStorage {
 
-  Recommender buildRecommender(DataModel model) throws TasteException {
-    DiffStorage diffStorage = new MemoryDiffStorage(
-        model, Weighting.WEIGHTED, 10000000L);
-    return new SlopeOneRecommender(
-        model, Weighting.WEIGHTED, Weighting.WEIGHTED, diffStorage);
-  }
+    Recommender buildRecommender(DataModel model) throws TasteException {
+        DiffStorage diffStorage = new MemoryDiffStorage(
+                model, Weighting.WEIGHTED, 10000000L);
+        return new SlopeOneRecommender(
+                model, Weighting.WEIGHTED, Weighting.WEIGHTED, diffStorage);
+    }
 
 }

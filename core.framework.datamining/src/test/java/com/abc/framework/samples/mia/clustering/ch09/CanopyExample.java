@@ -14,19 +14,19 @@ import org.apache.mahout.math.Vector;
 
 public class CanopyExample {
 
-	public static void main(String[] args) {
-		List<Vector> sampleData = new ArrayList<Vector>();
+    public static void main(String[] args) {
+        List<Vector> sampleData = new ArrayList<Vector>();
 
-		RandomPointsUtil.generateSamples(sampleData, 400, 1, 1, 2);
-		RandomPointsUtil.generateSamples(sampleData, 300, 1, 0, 0.5);
-		RandomPointsUtil.generateSamples(sampleData, 300, 0, 2, 0.1);
+        RandomPointsUtil.generateSamples(sampleData, 400, 1, 1, 2);
+        RandomPointsUtil.generateSamples(sampleData, 300, 1, 0, 0.5);
+        RandomPointsUtil.generateSamples(sampleData, 300, 0, 2, 0.1);
 
-		List<Canopy> canopies = CanopyClusterer.createCanopies(sampleData,
-				new EuclideanDistanceMeasure(), 3.0, 1.5);
+        List<Canopy> canopies = CanopyClusterer.createCanopies(sampleData,
+                new EuclideanDistanceMeasure(), 3.0, 1.5);
 
-		for (Canopy canopy : canopies) {
-			System.out.println("Canopy id: " + canopy.getId() + " center: "
-					+ canopy.getCenter().asFormatString());
-		}
-	}
+        for (Canopy canopy : canopies) {
+            System.out.println("Canopy id: " + canopy.getId() + " center: "
+                    + canopy.getCenter().asFormatString());
+        }
+    }
 }

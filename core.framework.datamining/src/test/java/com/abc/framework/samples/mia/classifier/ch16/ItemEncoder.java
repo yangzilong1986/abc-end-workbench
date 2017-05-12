@@ -35,13 +35,13 @@ import org.apache.mahout.vectorizer.encoders.TextValueEncoder;
  * Encodes an item in a feature vector.
  */
 class ItemEncoder {
-  CategoryFeatureEncoder brand = new CategoryFeatureEncoder("brand");
-  CategoryFeatureEncoder vendor = new CategoryFeatureEncoder("vendor");
-  TextValueEncoder description = new TextValueEncoder("description");
+    CategoryFeatureEncoder brand = new CategoryFeatureEncoder("brand");
+    CategoryFeatureEncoder vendor = new CategoryFeatureEncoder("vendor");
+    TextValueEncoder description = new TextValueEncoder("description");
 
-  public void addToVector(Item x, Vector data) {
-    brand.addToVector(x.brandId, data);
-    vendor.addToVector(x.vendorId, data);
-    description.addToVector(x.description, data);
-  }
+    public void addToVector(Item x, Vector data) {
+        brand.addToVector(x.brandId, data);
+        vendor.addToVector(x.vendorId, data);
+        description.addToVector(x.description, data);
+    }
 }

@@ -12,31 +12,32 @@ import java.io.File;
 import java.io.IOException;
 
 class LibimsetiEvalRunner {
-  public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
-  private LibimsetiEvalRunner() {
-  }
+    public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
 
-  public static void main(String[] args) throws Exception {
+    private LibimsetiEvalRunner() {
+    }
+
+    public static void main(String[] args) throws Exception {
 //    DataModel model = new FileDataModel(new File("ratings.dat"));
-    File file=new File(OUT_DIR+"/libimseti/ratings.dat");
+        File file = new File(OUT_DIR + "/libimseti/ratings.dat");
 //    DataModel model = new GroupLensDataModel(file);
-    DataModel model =new FileDataModel(file);
-    RecommenderEvaluator evaluator =
-      new AverageAbsoluteDifferenceRecommenderEvaluator();
+        DataModel model = new FileDataModel(file);
+        RecommenderEvaluator evaluator =
+                new AverageAbsoluteDifferenceRecommenderEvaluator();
 
-    RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
-      @Override
-      public Recommender buildRecommender(DataModel model) throws TasteException {
-        try {
-          return new LibimsetiRecommender(model);
-        } catch (IOException ioe) {
-          throw new TasteException(ioe);
-        }
+        RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
+            @Override
+            public Recommender buildRecommender(DataModel model) throws TasteException {
+                try {
+                    return new LibimsetiRecommender(model);
+                } catch (IOException ioe) {
+                    throw new TasteException(ioe);
+                }
 
-      }
-    };
-    double score = evaluator.evaluate(recommenderBuilder, null, model, 0.95, 0.1);
-    System.out.println(score);
-  }
+            }
+        };
+        double score = evaluator.evaluate(recommenderBuilder, null, model, 0.95, 0.1);
+        System.out.println(score);
+    }
 
 }

@@ -20,37 +20,38 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import java.io.File;
 
 class IREvaluatorBooleanPrefIntro1 {
-  public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
-  private IREvaluatorBooleanPrefIntro1() {
-  }
+    public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
 
-  public static void main(String[] args) throws Exception {
-    File file=new File(OUT_DIR+"ml-100k/ua.base");
-    DataModel model = new GenericBooleanPrefDataModel(
-        GenericBooleanPrefDataModel.toDataMap(
-          new FileDataModel(file)));
+    private IREvaluatorBooleanPrefIntro1() {
+    }
 
-    RecommenderEvaluator evaluator =
-      new AverageAbsoluteDifferenceRecommenderEvaluator();
-    RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
-      @Override
-      public Recommender buildRecommender(DataModel model) throws TasteException {
-        UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
-        UserNeighborhood neighborhood =
-          new NearestNUserNeighborhood(10, similarity, model);
-        return new GenericUserBasedRecommender(model, neighborhood, similarity);
-      }
-    };
-    DataModelBuilder modelBuilder = new DataModelBuilder() {
-      @Override
-      public DataModel buildDataModel(FastByIDMap<PreferenceArray> trainingData) {
-        return new GenericBooleanPrefDataModel(
-          GenericBooleanPrefDataModel.toDataMap(trainingData));
-      }
-    };
-    double score = evaluator.evaluate(
-        recommenderBuilder, modelBuilder, model, 0.9, 1.0);
-    System.out.println(score);
-  }
+    public static void main(String[] args) throws Exception {
+        File file = new File(OUT_DIR + "ml-100k/ua.base");
+        DataModel model = new GenericBooleanPrefDataModel(
+                GenericBooleanPrefDataModel.toDataMap(
+                        new FileDataModel(file)));
+
+        RecommenderEvaluator evaluator =
+                new AverageAbsoluteDifferenceRecommenderEvaluator();
+        RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
+            @Override
+            public Recommender buildRecommender(DataModel model) throws TasteException {
+                UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
+                UserNeighborhood neighborhood =
+                        new NearestNUserNeighborhood(10, similarity, model);
+                return new GenericUserBasedRecommender(model, neighborhood, similarity);
+            }
+        };
+        DataModelBuilder modelBuilder = new DataModelBuilder() {
+            @Override
+            public DataModel buildDataModel(FastByIDMap<PreferenceArray> trainingData) {
+                return new GenericBooleanPrefDataModel(
+                        GenericBooleanPrefDataModel.toDataMap(trainingData));
+            }
+        };
+        double score = evaluator.evaluate(
+                recommenderBuilder, modelBuilder, model, 0.9, 1.0);
+        System.out.println(score);
+    }
 
 }

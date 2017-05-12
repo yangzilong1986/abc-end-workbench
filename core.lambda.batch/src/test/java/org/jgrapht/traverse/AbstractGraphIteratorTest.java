@@ -74,8 +74,9 @@ public abstract class AbstractGraphIteratorTest
 
     DirectedGraph<String, DefaultEdge> createDirectedGraph()
     {
-        DirectedGraph<String, DefaultEdge> graph =null;
-
+//        DirectedGraph<String, DefaultEdge> graph =null;
+        DirectedGraph<String, DefaultEdge> graph =
+                new DefaultDirectedWeightedGraph<>(DefaultWeightedEdge.class);
         //
         String v1 = "1";
         String v2 = "2";

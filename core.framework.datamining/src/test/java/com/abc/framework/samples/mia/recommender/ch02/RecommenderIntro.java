@@ -8,17 +8,19 @@ import org.apache.mahout.cf.taste.model.*;
 import org.apache.mahout.cf.taste.neighborhood.*;
 import org.apache.mahout.cf.taste.recommender.*;
 import org.apache.mahout.cf.taste.similarity.*;
+
 import java.io.*;
 import java.util.*;
 
 class RecommenderIntro {
     public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
+
     private RecommenderIntro() {
     }
 
     public static void main(String[] args) throws Exception {
 
-        DataModel model = new FileDataModel(new File(OUT_DIR+"intro.csv"));
+        DataModel model = new FileDataModel(new File(OUT_DIR + "intro.csv"));
 
         UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
         //相似用户

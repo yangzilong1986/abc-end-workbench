@@ -17,16 +17,16 @@ import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.util.Version;
 
 public class MyAnalyzer extends Analyzer {
-  
-  @SuppressWarnings("deprecation")
-  @Override
-  public TokenStream tokenStream(String fieldName, Reader reader) {
-    TokenStream result = new StandardTokenizer(
-        Version.LUCENE_CURRENT, reader);
-    result = new LowerCaseFilter(result);
-    result = new LengthFilter(result, 3, 50);
-    result = new StopFilter(true, result, StandardAnalyzer.STOP_WORDS_SET);
-    result = new PorterStemFilter(result);
-    return result;
-  }
+
+    @SuppressWarnings("deprecation")
+    @Override
+    public TokenStream tokenStream(String fieldName, Reader reader) {
+        TokenStream result = new StandardTokenizer(
+                Version.LUCENE_CURRENT, reader);
+        result = new LowerCaseFilter(result);
+        result = new LengthFilter(result, 3, 50);
+        result = new StopFilter(true, result, StandardAnalyzer.STOP_WORDS_SET);
+        result = new PorterStemFilter(result);
+        return result;
+    }
 }

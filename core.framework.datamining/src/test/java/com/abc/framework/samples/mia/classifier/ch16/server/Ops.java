@@ -50,31 +50,31 @@ import java.util.List;
  * server.
  */
 public class Ops implements Classifier.Iface {
-  private static final int FEATURES = 10000;
-  private static final TextValueEncoder enc = new TextValueEncoder("body");
-  private static final FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
-  private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private static final int FEATURES = 10000;
+    private static final TextValueEncoder enc = new TextValueEncoder("body");
+    private static final FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-  volatile AbstractVectorClassifier model;
+    volatile AbstractVectorClassifier model;
 
-  public Ops() {
-  }
-
-  @Override
-  public List<Double> classify(String text) throws TException {
-    Vector features = new RandomAccessSparseVector(FEATURES);
-    enc.addText(text.toLowerCase());
-    enc.flush(1, features);
-    bias.addToVector((byte[]) null, 1, features);
-    Vector r = model.classifyFull(features);
-    List<Double> rx = Lists.newArrayList();
-    for (int i = 0; i < r.size(); i++) {
-      rx.add(r.get(i));
+    public Ops() {
     }
-    return rx;
-  }
 
-  public void setModel(AbstractVectorClassifier model) {
-    this.model = model;
-  }
+    @Override
+    public List<Double> classify(String text) throws TException {
+        Vector features = new RandomAccessSparseVector(FEATURES);
+        enc.addText(text.toLowerCase());
+        enc.flush(1, features);
+        bias.addToVector((byte[]) null, 1, features);
+        Vector r = model.classifyFull(features);
+        List<Double> rx = Lists.newArrayList();
+        for (int i = 0; i < r.size(); i++) {
+            rx.add(r.get(i));
+        }
+        return rx;
+    }
+
+    public void setModel(AbstractVectorClassifier model) {
+        this.model = model;
+    }
 }

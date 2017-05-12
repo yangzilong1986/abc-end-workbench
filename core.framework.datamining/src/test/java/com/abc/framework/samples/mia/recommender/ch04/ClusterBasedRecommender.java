@@ -11,11 +11,11 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
 class ClusterBasedRecommender {
 
-  Recommender buildRecommender(DataModel model) throws TasteException {
-    UserSimilarity similarity = new LogLikelihoodSimilarity(model);
-    ClusterSimilarity clusterSimilarity =
-        new FarthestNeighborClusterSimilarity(similarity);
-    return new TreeClusteringRecommender(model, clusterSimilarity, 10);
-  }
+    Recommender buildRecommender(DataModel model) throws TasteException {
+        UserSimilarity similarity = new LogLikelihoodSimilarity(model);
+        ClusterSimilarity clusterSimilarity =
+                new FarthestNeighborClusterSimilarity(similarity);
+        return new TreeClusteringRecommender(model, clusterSimilarity, 10);
+    }
 
 }

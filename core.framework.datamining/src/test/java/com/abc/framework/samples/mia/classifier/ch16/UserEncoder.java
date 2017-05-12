@@ -34,13 +34,13 @@ import org.apache.mahout.math.Vector;
  * Encodes a user into a feature vector.
  */
 class UserEncoder {
-  CategoryFeatureEncoder gender = new CategoryFeatureEncoder("gender");
-  CategoryFeatureEncoder age = new CategoryFeatureEncoder("age");
-  CategoryFeatureEncoder brandPreference = new CategoryFeatureEncoder("brand-cluster");
+    CategoryFeatureEncoder gender = new CategoryFeatureEncoder("gender");
+    CategoryFeatureEncoder age = new CategoryFeatureEncoder("age");
+    CategoryFeatureEncoder brandPreference = new CategoryFeatureEncoder("brand-cluster");
 
-  public void addToVector(User u, Vector data) {
-    gender.addToVector(u.gender, data);
-    age.addToVector(u.ageGroup, data);
-    brandPreference.addToVector(u.brandPreferenceClusterId, data);
-  }
+    public void addToVector(User u, Vector data) {
+        gender.addToVector(u.gender, data);
+        age.addToVector(u.ageGroup, data);
+        brandPreference.addToVector(u.brandPreferenceClusterId, data);
+    }
 }

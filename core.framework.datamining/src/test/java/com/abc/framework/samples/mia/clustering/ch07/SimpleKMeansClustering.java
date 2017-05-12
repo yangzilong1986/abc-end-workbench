@@ -1,4 +1,5 @@
 package com.abc.framework.samples.mia.clustering.ch07;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,93 +21,94 @@ import org.apache.mahout.math.Vector;
 import org.apache.mahout.math.VectorWritable;
 
 public class SimpleKMeansClustering {
-  public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
-  public static final double[][] points = { {1, 1}, {2, 1}, {1, 2},
-          {2, 2}, {3, 3}, {8, 8},
-          {9, 8}, {8, 9}, {9, 9}};
+    public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
+    public static final double[][] points = {{1, 1}, {2, 1}, {1, 2},
+            {2, 2}, {3, 3}, {8, 8},
+            {9, 8}, {8, 9}, {9, 9}};
 
-  /**
-   * 保存点到文件
-   * @param points
-   * @param fileName
-   * @param fs
-   * @param conf
-   * @throws IOException
+    /**
+     * 保存点到文件
+     *
+     * @param points
+     * @param fileName
+     * @param fs
+     * @param conf
+     * @throws IOException
      */
-  public static void writePointsToFile(List<Vector> points,
-                                       String fileName,
-                                       FileSystem fs,
-                                       Configuration conf) throws IOException {
-    Path path = new Path(fileName);
-    SequenceFile.Writer writer = new SequenceFile.Writer(fs, conf,
-            path, LongWritable.class, VectorWritable.class);
-    long recNum = 0;
-    VectorWritable vec = new VectorWritable();
-    for (Vector point : points) {
-      vec.set(point);
-      writer.append(new LongWritable(recNum++), vec);
-    }
-    writer.close();
-  }
-
-  public static List<Vector> getPoints(double[][] raw) {
-    List<Vector> points = new ArrayList<Vector>();
-    for (int i = 0; i < raw.length; i++) {
-      double[] fr = raw[i];
-      Vector vec = new RandomAccessSparseVector(fr.length);
-      vec.assign(fr);
-      points.add(vec);
-    }
-    return points;
-  }
-
-  public static void main(String args[]) throws Exception {
-
-    int k = 2;
-
-    List<Vector> vectors = getPoints(points);
-
-    File testData = new File(OUT_DIR+"testdata");
-    if (!testData.exists()) {
-      testData.mkdir();
-    }
-    testData = new File(OUT_DIR+"testdata/points");
-    if (!testData.exists()) {
-      testData.mkdir();
+    public static void writePointsToFile(List<Vector> points,
+                                         String fileName,
+                                         FileSystem fs,
+                                         Configuration conf) throws IOException {
+        Path path = new Path(fileName);
+        SequenceFile.Writer writer = new SequenceFile.Writer(fs, conf,
+                path, LongWritable.class, VectorWritable.class);
+        long recNum = 0;
+        VectorWritable vec = new VectorWritable();
+        for (Vector point : points) {
+            vec.set(point);
+            writer.append(new LongWritable(recNum++), vec);
+        }
+        writer.close();
     }
 
-    Configuration conf = new Configuration();
-    FileSystem fs = FileSystem.get(conf);
-    //
-    writePointsToFile(vectors, "core.framework.datamining\\target\\test-classes\\testdata/points/file1", fs, conf);
-
-    Path path = new Path("core.framework.datamining\\target\\test-classes\\testdata/clusters/part-00000");
-    SequenceFile.Writer writer = new SequenceFile.Writer(fs, conf,
-            path, Text.class, Cluster.class);
-    //簇写入文件
-    for (int i = 0; i < k; i++) {
-      Vector vec = vectors.get(i);
-      Cluster cluster = new Cluster(vec, i, new EuclideanDistanceMeasure());
-      writer.append(new Text(cluster.getIdentifier()), cluster);
+    public static List<Vector> getPoints(double[][] raw) {
+        List<Vector> points = new ArrayList<Vector>();
+        for (int i = 0; i < raw.length; i++) {
+            double[] fr = raw[i];
+            Vector vec = new RandomAccessSparseVector(fr.length);
+            vec.assign(fr);
+            points.add(vec);
+        }
+        return points;
     }
-    writer.close();
-    //根据文件计算
-    KMeansDriver.run(conf, new Path("core.framework.datamining\\target\\test-classes\\testdata/points"), new Path("testdata/clusters"),
-            new Path("output"), new EuclideanDistanceMeasure(), 0.001, 10,
-            true, false);
 
-    SequenceFile.Reader reader = new SequenceFile.Reader(fs,
-            new Path("output/" + Cluster.CLUSTERED_POINTS_DIR
-                    + "/part-m-00000"), conf);
+    public static void main(String args[]) throws Exception {
 
-    IntWritable key = new IntWritable();
-    WeightedVectorWritable value = new WeightedVectorWritable();
-    while (reader.next(key, value)) {
-      System.out.println(value.toString() + " belongs to cluster "
-              + key.toString());
+        int k = 2;
+
+        List<Vector> vectors = getPoints(points);
+
+        File testData = new File(OUT_DIR + "testdata");
+        if (!testData.exists()) {
+            testData.mkdir();
+        }
+        testData = new File(OUT_DIR + "testdata/points");
+        if (!testData.exists()) {
+            testData.mkdir();
+        }
+
+        Configuration conf = new Configuration();
+        FileSystem fs = FileSystem.get(conf);
+        //
+        writePointsToFile(vectors, "core.framework.datamining\\target\\test-classes\\testdata/points/file1", fs, conf);
+
+        Path path = new Path("core.framework.datamining\\target\\test-classes\\testdata/clusters/part-00000");
+        SequenceFile.Writer writer = new SequenceFile.Writer(fs, conf,
+                path, Text.class, Cluster.class);
+        //簇写入文件
+        for (int i = 0; i < k; i++) {
+            Vector vec = vectors.get(i);
+            Cluster cluster = new Cluster(vec, i, new EuclideanDistanceMeasure());
+            writer.append(new Text(cluster.getIdentifier()), cluster);
+        }
+        writer.close();
+        //根据文件计算
+        KMeansDriver.run(conf, new Path("core.framework.datamining\\target\\test-classes\\testdata/points"), new Path("testdata/clusters"),
+                new Path("output"), new EuclideanDistanceMeasure(), 0.001, 10,
+                true, false);
+
+        SequenceFile.Reader reader = new SequenceFile.Reader(fs,
+                new Path("output/" + Cluster.CLUSTERED_POINTS_DIR
+                        + "/part-m-00000"), conf);
+
+        IntWritable key = new IntWritable();
+        WeightedVectorWritable value = new WeightedVectorWritable();
+        while (reader.next(key, value)) {
+            System.out.println(value.toString() + " belongs to cluster "
+                    + key.toString());
+        }
+        reader.close();
     }
-    reader.close();
-  }
 
 }
 

@@ -51,7 +51,7 @@ public class ClosestFirstIteratorTest
                 result.append(',');
             }
         }
-
+//        1,2,3,5,6,7
         assertEquals("1,2,3,5,6,7", result.toString());
     }
 

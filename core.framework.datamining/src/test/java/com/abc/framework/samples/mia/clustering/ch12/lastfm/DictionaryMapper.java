@@ -9,25 +9,25 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 public class DictionaryMapper extends
-    Mapper<LongWritable,Text,Text,IntWritable> {
-  private Pattern splitter;
-  
-  @Override
-  protected void map(LongWritable key, Text line, Context context) throws IOException,
-                                                                  InterruptedException {
-    String[] fields = splitter.split(line.toString());
-    if (fields.length < 4) {
-      context.getCounter("Map", "LinesWithErrors").increment(1);
-      return;
+        Mapper<LongWritable, Text, Text, IntWritable> {
+    private Pattern splitter;
+
+    @Override
+    protected void map(LongWritable key, Text line, Context context) throws IOException,
+            InterruptedException {
+        String[] fields = splitter.split(line.toString());
+        if (fields.length < 4) {
+            context.getCounter("Map", "LinesWithErrors").increment(1);
+            return;
+        }
+        String artist = fields[1];
+        context.write(new Text(artist), new IntWritable(0));
     }
-    String artist = fields[1];
-    context.write(new Text(artist), new IntWritable(0));
-  }
-  
-  @Override
-  protected void setup(Context context) throws IOException,
-                                       InterruptedException {
-    super.setup(context);
-    splitter = Pattern.compile("<sep>");
-  }
+
+    @Override
+    protected void setup(Context context) throws IOException,
+            InterruptedException {
+        super.setup(context);
+        splitter = Pattern.compile("<sep>");
+    }
 }

@@ -33,47 +33,47 @@ import org.apache.mahout.math.Vector;
 import java.util.Random;
 
 /**
-* Encodes a categorical feature.
-*/
+ * Encodes a categorical feature.
+ */
 public class CategoryFeatureEncoder {
-  private static Random seedGenerator = new Random();
+    private static Random seedGenerator = new Random();
 
-  private int probes = 2;
-  private long seed;
+    private int probes = 2;
+    private long seed;
 
-  public CategoryFeatureEncoder(String name) {
-    seed = seedGenerator.nextLong() + name.hashCode();
-  }
-
-  public void addToVector(int category, double weight, Vector data) {
-    Random hash = new Random(seed + category);
-    int n = data.size();
-    for (int i = 0; i < probes; i++) {
-      int j = hash.nextInt(n);
-      data.setQuick(j, data.getQuick(j) + weight);
+    public CategoryFeatureEncoder(String name) {
+        seed = seedGenerator.nextLong() + name.hashCode();
     }
-  }
 
-  /**
-   * Provides the unique hash for a particular probe.  For all encoders except text, this is all
-   * that is needed and the default implementation of hashesForProbe will do the right thing.  For
-   * text and similar values, hashesForProbe should be over-ridden and this method should not be
-   * used.
-   *
-   * @param category original category
-   * @param probe    which probe
-   * @return The hashes for the given probe
-   */
-  public long hashForProbe(int category, int probe) {
-    Random hash = new Random(seed + category);
-    long r = hash.nextLong();
-    for (int i = 0; i < probe; i++) {
-      r = hash.nextLong();
+    public void addToVector(int category, double weight, Vector data) {
+        Random hash = new Random(seed + category);
+        int n = data.size();
+        for (int i = 0; i < probes; i++) {
+            int j = hash.nextInt(n);
+            data.setQuick(j, data.getQuick(j) + weight);
+        }
     }
-    return r;
-  }
 
-  public void addToVector(int category, Vector data) {
-    addToVector(category, 1, data);
-  }
+    /**
+     * Provides the unique hash for a particular probe.  For all encoders except text, this is all
+     * that is needed and the default implementation of hashesForProbe will do the right thing.  For
+     * text and similar values, hashesForProbe should be over-ridden and this method should not be
+     * used.
+     *
+     * @param category original category
+     * @param probe    which probe
+     * @return The hashes for the given probe
+     */
+    public long hashForProbe(int category, int probe) {
+        Random hash = new Random(seed + category);
+        long r = hash.nextLong();
+        for (int i = 0; i < probe; i++) {
+            r = hash.nextLong();
+        }
+        return r;
+    }
+
+    public void addToVector(int category, Vector data) {
+        addToVector(category, 1, data);
+    }
 }

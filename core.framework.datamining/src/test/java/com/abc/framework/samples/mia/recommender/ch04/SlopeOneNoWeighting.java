@@ -10,14 +10,14 @@ import org.apache.mahout.cf.taste.recommender.slopeone.DiffStorage;
 
 class SlopeOneNoWeighting {
 
-  static Recommender buildRecommender(DataModel model) throws TasteException {
-    DiffStorage diffStorage = new MemoryDiffStorage(
-        model, Weighting.UNWEIGHTED, Long.MAX_VALUE);
-    return new SlopeOneRecommender(
-      model,
-      Weighting.UNWEIGHTED,
-      Weighting.UNWEIGHTED,
-      diffStorage);
-  }
+    static Recommender buildRecommender(DataModel model) throws TasteException {
+        DiffStorage diffStorage = new MemoryDiffStorage(
+                model, Weighting.UNWEIGHTED, Long.MAX_VALUE);
+        return new SlopeOneRecommender(
+                model,
+                Weighting.UNWEIGHTED,
+                Weighting.UNWEIGHTED,
+                diffStorage);
+    }
 
 }

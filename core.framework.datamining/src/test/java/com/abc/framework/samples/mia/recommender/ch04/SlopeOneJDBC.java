@@ -11,11 +11,11 @@ import org.apache.mahout.cf.taste.recommender.slopeone.DiffStorage;
 
 class SlopeOneJDBC {
 
-  Recommender buildRecommender() throws TasteException {
-    AbstractJDBCDataModel model = new MySQLJDBCDataModel();
-    DiffStorage diffStorage = new MySQLJDBCDiffStorage(model);
-    return new SlopeOneRecommender(
-        model, Weighting.WEIGHTED, Weighting.WEIGHTED, diffStorage);
-  }
+    Recommender buildRecommender() throws TasteException {
+        AbstractJDBCDataModel model = new MySQLJDBCDataModel();
+        DiffStorage diffStorage = new MySQLJDBCDiffStorage(model);
+        return new SlopeOneRecommender(
+                model, Weighting.WEIGHTED, Weighting.WEIGHTED, diffStorage);
+    }
 
 }

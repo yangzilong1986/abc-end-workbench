@@ -4,7 +4,7 @@ import com.abc.basic.algoritms.base.graph.*;
 import com.abc.basic.algoritms.base.graph.shortestpath.BaseShortestPathAlgorithm;
 import com.abc.basic.algoritms.base.graph.util.FibonacciHeap;
 import com.abc.basic.algoritms.base.graph.util.FibonacciHeapNode;
-import org.jgrapht.alg.util.ToleranceDoubleComparator;
+import com.abc.basic.algoritms.base.graph.util.ToleranceDoubleComparator;
 
 import java.util.*;
 

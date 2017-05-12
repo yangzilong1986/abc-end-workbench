@@ -26,11 +26,6 @@ import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
-/**
- *  The {@code AcyclicLP} class represents a data type for solving the
- *  single-source longest paths problem in edge-weighted directed
- *  acyclic graphs (DAGs). The edge weights can be positive, negative, or zero.
- */
 public class AcyclicLP {
     private double[] distTo;          // distTo[v] = distance  of longest s->v path
     private DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on longest s->v path
@@ -69,25 +64,11 @@ public class AcyclicLP {
         return distTo[v];
     }
 
-    /**
-     * Is there a path from the source vertex {@code s} to vertex {@code v}?
-     * @param  v the destination vertex
-     * @return {@code true} if there is a path from the source vertex
-     *         {@code s} to vertex {@code v}, and {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public boolean hasPathTo(int v) {
         validateVertex(v);
         return distTo[v] > Double.NEGATIVE_INFINITY;
     }
 
-    /**
-     * Returns a longest path from the source vertex {@code s} to vertex {@code v}.
-     * @param  v the destination vertex
-     * @return a longest path from the source vertex {@code s} to vertex {@code v}
-     *         as an iterable of edges, and {@code null} if no such path
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
     public Iterable<DirectedEdge> pathTo(int v) {
         validateVertex(v);
         if (!hasPathTo(v)) return null;
@@ -105,11 +86,6 @@ public class AcyclicLP {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-    /**
-     * Unit tests the {@code AcyclicLP} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         In in = new In(args[0]);
         int s = Integer.parseInt(args[1]);

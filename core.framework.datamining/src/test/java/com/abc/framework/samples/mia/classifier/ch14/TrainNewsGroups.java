@@ -36,50 +36,50 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Multiset;
 
 public class TrainNewsGroups {
-	private static final int FEATURES = 10000;
-	private static Multiset<String> overallCounts;
-	
-	public static void main(String[] args) {
-		File base = new File(args[0]);
-		overallCounts = HashMultiset.create();
-		//建立向量编码
-		Map<String, Set<Integer>> traceDictionary = new TreeMap<String, Set<Integer>>();
-		FeatureVectorEncoder encoder = new StaticWordValueEncoder("body");
-		encoder.setProbes(2);
-		encoder.setTraceDictionary(traceDictionary);
-		FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
-		bias.setTraceDictionary(traceDictionary);
-		FeatureVectorEncoder lines = new ConstantValueEncoder("Lines");
-		lines.setTraceDictionary(traceDictionary);
-		Dictionary newsGroups = new Dictionary();
-		//配置学习算法
-		OnlineLogisticRegression learningAlgorithm = 
-		    new OnlineLogisticRegression(
-		          20, FEATURES, new L1())
-		        .alpha(1).stepOffset(1000)
-		        .decayExponent(0.9) 
-		        .lambda(3.0e-5)
-		        .learningRate(20);
-		//访问数据文件
-		List<File> files = new ArrayList<File>();
-		for (File newsgroup : base.listFiles()) {
-		  newsGroups.intern(newsgroup.getName());
-		  files.addAll(Arrays.asList(newsgroup.listFiles()));
-		}
+    private static final int FEATURES = 10000;
+    private static Multiset<String> overallCounts;
 
-		Collections.shuffle(files);
-		System.out.printf("%d training files\n", files.size());
-		//数据词条化前的准备工作
-		double averageLL = 0.0;
-		double averageCorrect = 0.0;
-		double averageLineCount = 0.0;
-		int k = 0;
-		double step = 0.0;
-		int[] bumps = new int[]{1, 2, 5};
-		double lineCount = 0;
-		
-		Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_31);
-		
+    public static void main(String[] args) {
+        File base = new File(args[0]);
+        overallCounts = HashMultiset.create();
+        //建立向量编码
+        Map<String, Set<Integer>> traceDictionary = new TreeMap<String, Set<Integer>>();
+        FeatureVectorEncoder encoder = new StaticWordValueEncoder("body");
+        encoder.setProbes(2);
+        encoder.setTraceDictionary(traceDictionary);
+        FeatureVectorEncoder bias = new ConstantValueEncoder("Intercept");
+        bias.setTraceDictionary(traceDictionary);
+        FeatureVectorEncoder lines = new ConstantValueEncoder("Lines");
+        lines.setTraceDictionary(traceDictionary);
+        Dictionary newsGroups = new Dictionary();
+        //配置学习算法
+        OnlineLogisticRegression learningAlgorithm =
+                new OnlineLogisticRegression(
+                        20, FEATURES, new L1())
+                        .alpha(1).stepOffset(1000)
+                        .decayExponent(0.9)
+                        .lambda(3.0e-5)
+                        .learningRate(20);
+        //访问数据文件
+        List<File> files = new ArrayList<File>();
+        for (File newsgroup : base.listFiles()) {
+            newsGroups.intern(newsgroup.getName());
+            files.addAll(Arrays.asList(newsgroup.listFiles()));
+        }
+
+        Collections.shuffle(files);
+        System.out.printf("%d training files\n", files.size());
+        //数据词条化前的准备工作
+        double averageLL = 0.0;
+        double averageCorrect = 0.0;
+        double averageLineCount = 0.0;
+        int k = 0;
+        double step = 0.0;
+        int[] bumps = new int[]{1, 2, 5};
+        double lineCount = 0;
+
+        Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_31);
+
 /*		for (File file : files) {
 			  BufferedReader reader = new BufferedReader(new FileReader(file));
 			  String ng = file.getParentFile().getName();     
@@ -144,16 +144,16 @@ public class TrainNewsGroups {
 		       newsGroups.values().get(estimated));
 		}
 		learningAlgorithm.close();*/
-		
-	}
 
-	private static void countWords(Analyzer analyzer, Collection<String> words, Reader in) throws IOException {
-	    TokenStream ts = analyzer.tokenStream("text", in);
-	    ts.addAttribute(CharTermAttribute.class);
-	    while (ts.incrementToken()) {
-	      String s = ts.getAttribute(CharTermAttribute.class).toString();
-	      words.add(s);
-	    }
+    }
+
+    private static void countWords(Analyzer analyzer, Collection<String> words, Reader in) throws IOException {
+        TokenStream ts = analyzer.tokenStream("text", in);
+        ts.addAttribute(CharTermAttribute.class);
+        while (ts.incrementToken()) {
+            String s = ts.getAttribute(CharTermAttribute.class).toString();
+            words.add(s);
+        }
 	    /*overallCounts.addAll(words);*/
-	  }
+    }
 }

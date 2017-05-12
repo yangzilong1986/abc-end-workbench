@@ -6,7 +6,7 @@ import com.abc.basic.algoritms.base.graph.Graph;
 import com.abc.basic.algoritms.base.graph.UndirectedGraph;
 import com.abc.basic.algoritms.base.graph.shortestpath.ShortestPathAlgorithm;
 import com.abc.basic.algoritms.base.graph.shortestpath.dijkstra.DijkstraShortestPath;
-import org.jgrapht.alg.util.ToleranceDoubleComparator;
+import com.abc.basic.algoritms.base.graph.util.ToleranceDoubleComparator;
 
 import java.util.*;
 

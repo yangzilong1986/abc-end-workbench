@@ -34,31 +34,31 @@ import org.apache.mahout.math.Vector;
  * Utility class that collects encoder functions together.
  */
 public class FeatureEncoder {
-  UserEncoder user = new UserEncoder();
-  ItemEncoder item = new ItemEncoder();
-  UserItemEncoder userByItem = new UserItemEncoder();
+    UserEncoder user = new UserEncoder();
+    ItemEncoder item = new ItemEncoder();
+    UserItemEncoder userByItem = new UserItemEncoder();
 
-  public void addUserFeatures(User u, Vector data) {
-    user.addToVector(u, data);
-  }
+    public void addUserFeatures(User u, Vector data) {
+        user.addToVector(u, data);
+    }
 
-  public void addItemFeatures(Item x, Vector data) {
-    item.addToVector(x, data);
-  }
+    public void addItemFeatures(Item x, Vector data) {
+        item.addToVector(x, data);
+    }
 
-  public void addInteractions(User u, Item x, Vector data) {
-    userByItem.addToVector(u, x, data);
-  }
+    public void addInteractions(User u, Item x, Vector data) {
+        userByItem.addToVector(u, x, data);
+    }
 
-  public void addToVector(User u, Item x, Vector data) {
-    addUserFeatures(u, data);
-    addItemFeatures(x, data);
-    addInteractions(u, x, data);
-  }
+    public void addToVector(User u, Item x, Vector data) {
+        addUserFeatures(u, data);
+        addItemFeatures(x, data);
+        addInteractions(u, x, data);
+    }
 
-  public long interactionHash(User u, Item x) {
-    return userByItem.hash(u, x);
-  }
+    public long interactionHash(User u, Item x) {
+        return userByItem.hash(u, x);
+    }
 
 }
 

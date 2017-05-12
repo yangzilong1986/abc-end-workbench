@@ -10,10 +10,10 @@ import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
 
 class KnnBasedRecommender {
 
-  static  Recommender buildRecommender(DataModel model) {
-    ItemSimilarity similarity = new LogLikelihoodSimilarity(model);
-    Optimizer optimizer = new ConjugateGradientOptimizer();
-    return new KnnItemBasedRecommender(model, similarity, optimizer, 10);
-  }
+    static Recommender buildRecommender(DataModel model) {
+        ItemSimilarity similarity = new LogLikelihoodSimilarity(model);
+        Optimizer optimizer = new ConjugateGradientOptimizer();
+        return new KnnItemBasedRecommender(model, similarity, optimizer, 10);
+    }
 
 }

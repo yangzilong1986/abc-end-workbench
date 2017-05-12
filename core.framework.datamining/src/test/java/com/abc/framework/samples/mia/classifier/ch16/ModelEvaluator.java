@@ -42,62 +42,62 @@ import java.util.PriorityQueue;
  * Returns the top n items from a classification model.
  */
 public class ModelEvaluator {
-  private List<Item> items = Lists.newArrayList();
-  private OnlineLogisticRegression model;
-  private Map<Item, Double> itemCache = Maps.newHashMap();
-  private Map<Long, Double> interactionCache = Maps.newHashMap();
+    private List<Item> items = Lists.newArrayList();
+    private OnlineLogisticRegression model;
+    private Map<Item, Double> itemCache = Maps.newHashMap();
+    private Map<Long, Double> interactionCache = Maps.newHashMap();
 
-  private FeatureEncoder encoder = new FeatureEncoder();
+    private FeatureEncoder encoder = new FeatureEncoder();
 
-  public List<ScoredItem> topItems(User u, int limit) {
-    Vector userVector = new RandomAccessSparseVector(model.numFeatures());
-    encoder.addUserFeatures(u, userVector);
-    double userScore = model.classifyScalarNoLink(userVector);
+    public List<ScoredItem> topItems(User u, int limit) {
+        Vector userVector = new RandomAccessSparseVector(model.numFeatures());
+        encoder.addUserFeatures(u, userVector);
+        double userScore = model.classifyScalarNoLink(userVector);
 
-    PriorityQueue<ScoredItem> r = new PriorityQueue<ScoredItem>();
-    for (Item item : items) {
-      Double itemScore = itemCache.get(item);
-      if (itemScore == null) {
-        Vector v = new RandomAccessSparseVector(model.numFeatures());
-        encoder.addItemFeatures(item, v);
-        itemScore = model.classifyScalarNoLink(v);
-        itemCache.put(item, itemScore);
-      }
+        PriorityQueue<ScoredItem> r = new PriorityQueue<ScoredItem>();
+        for (Item item : items) {
+            Double itemScore = itemCache.get(item);
+            if (itemScore == null) {
+                Vector v = new RandomAccessSparseVector(model.numFeatures());
+                encoder.addItemFeatures(item, v);
+                itemScore = model.classifyScalarNoLink(v);
+                itemCache.put(item, itemScore);
+            }
 
-      long code = encoder.interactionHash(u, item);
-      Double interactionScore = interactionCache.get(code);
-      if (interactionScore == null) {
-        Vector v = new RandomAccessSparseVector(model.numFeatures());
-        encoder.addInteractions(u, item, v);
-        interactionScore = model.classifyScalarNoLink(v);
-        interactionCache.put(code, interactionScore);
-      }
-      double score = userScore + itemScore + interactionScore;
-      r.add(new ScoredItem(score, item));
-      while (r.size() > limit) {
-        r.poll();
-      }
-    }
-    return Lists.newArrayList(r);
-  }
-
-  public static class ScoredItem implements Comparable<ScoredItem> {
-    double score;
-    Item item;
-
-    public ScoredItem(double score, Item item) {
-      this.score = score;
-      this.item = item;
+            long code = encoder.interactionHash(u, item);
+            Double interactionScore = interactionCache.get(code);
+            if (interactionScore == null) {
+                Vector v = new RandomAccessSparseVector(model.numFeatures());
+                encoder.addInteractions(u, item, v);
+                interactionScore = model.classifyScalarNoLink(v);
+                interactionCache.put(code, interactionScore);
+            }
+            double score = userScore + itemScore + interactionScore;
+            r.add(new ScoredItem(score, item));
+            while (r.size() > limit) {
+                r.poll();
+            }
+        }
+        return Lists.newArrayList(r);
     }
 
-    @Override
-    public int compareTo(ScoredItem other) {
-      int r = Double.compare(score, other.score);
-      if (r != 0) {
-        return r;
-      }
-      return item.id - other.item.id;
+    public static class ScoredItem implements Comparable<ScoredItem> {
+        double score;
+        Item item;
+
+        public ScoredItem(double score, Item item) {
+            this.score = score;
+            this.item = item;
+        }
+
+        @Override
+        public int compareTo(ScoredItem other) {
+            int r = Double.compare(score, other.score);
+            if (r != 0) {
+                return r;
+            }
+            return item.id - other.item.id;
+        }
     }
-  }
 }
 

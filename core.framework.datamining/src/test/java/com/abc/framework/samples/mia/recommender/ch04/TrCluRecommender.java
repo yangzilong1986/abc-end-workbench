@@ -24,8 +24,9 @@ public class TrCluRecommender {
         ClusterSimilarity clusterSimilarity = new FarthestNeighborClusterSimilarity(similarity);
         try {
             return new TreeClusteringRecommender(model, clusterSimilarity, 10);
-        }catch ( TasteException e ){
-            e.printStackTrace();;
+        } catch (TasteException e) {
+            e.printStackTrace();
+            ;
             return null;
         }
     }

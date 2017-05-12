@@ -48,55 +48,55 @@ import java.util.Random;
  * Sample client that classifies some text.
  */
 public class Client {
-  private static final List<String> newsgroupNames = Arrays.asList(
-    "alt.atheism",
-    "comp.graphics",
-    "comp.os.ms-windows.misc",
-    "comp.sys.ibm.pc.hardware",
-    "comp.sys.mac.hardware",
-    "comp.windows.x",
-    "misc.forsale",
-    "rec.autos",
-    "rec.motorcycles",
-    "rec.sport.baseball",
-    "rec.sport.hockey",
-    "sci.crypt",
-    "sci.electronics",
-    "sci.med",
-    "sci.space",
-    "soc.religion.christian",
-    "talk.politics.guns",
-    "talk.politics.mideast",
-    "talk.politics.misc",
-    "talk.religion.misc");
+    private static final List<String> newsgroupNames = Arrays.asList(
+            "alt.atheism",
+            "comp.graphics",
+            "comp.os.ms-windows.misc",
+            "comp.sys.ibm.pc.hardware",
+            "comp.sys.mac.hardware",
+            "comp.windows.x",
+            "misc.forsale",
+            "rec.autos",
+            "rec.motorcycles",
+            "rec.sport.baseball",
+            "rec.sport.hockey",
+            "sci.crypt",
+            "sci.electronics",
+            "sci.med",
+            "sci.space",
+            "soc.religion.christian",
+            "talk.politics.guns",
+            "talk.politics.mideast",
+            "talk.politics.misc",
+            "talk.religion.misc");
 
-  public static void main(String[] args) throws TException, IOException, InterruptedException, KeeperException {
-    ZooKeeper zk = new ZooKeeper("localhost", 2181, new Watcher() {
-      @Override
-      public void process(WatchedEvent watchedEvent) {
-        // ignore
-      }
-    });
-    List<String> servers = zk.getChildren(Server.ZK_CURRENT_SERVERS, false, null);
-    if (servers.size() == 0) {
-      throw new IllegalStateException("No servers to query");
+    public static void main(String[] args) throws TException, IOException, InterruptedException, KeeperException {
+        ZooKeeper zk = new ZooKeeper("localhost", 2181, new Watcher() {
+            @Override
+            public void process(WatchedEvent watchedEvent) {
+                // ignore
+            }
+        });
+        List<String> servers = zk.getChildren(Server.ZK_CURRENT_SERVERS, false, null);
+        if (servers.size() == 0) {
+            throw new IllegalStateException("No servers to query");
+        }
+        String hostname = servers.get(new Random().nextInt(servers.size()));
+        System.out.printf("host = %s\n", hostname);
+        Connection c = new Connection(hostname, 7908);
+
+        List<Double> result1 = c.classify("this is some text to classify");
+        System.out.printf("%s\n", result1);
+        List<Double> result2 = c.classify("Given that the escrow keys are generated 200 at a time on floppy disks, why\\\\n\\\" +\\n\" +\n" +
+                "      \"      \\\"not keep them there rather than creating one huge database that will have to\\\\n\\\" +\\n\" +\n" +
+                "      \"      \\\"be guarded better than Fort Knox. ");
+        System.out.printf("%s\n", result2);
+
+        List<Double> x = Lists.newArrayList(result2);
+        Collections.sort(x, Ordering.<Double>natural().<Double>reverse());
+        int best = result2.indexOf(x.get(0));
+        System.out.printf("Highest score at index %d which corresponds to %s\n", best, newsgroupNames.get(best));
+
+        c.close();
     }
-    String hostname = servers.get(new Random().nextInt(servers.size()));
-    System.out.printf("host = %s\n", hostname);
-    Connection c = new Connection(hostname, 7908);
-
-    List<Double> result1 = c.classify("this is some text to classify");
-    System.out.printf("%s\n", result1);
-    List<Double> result2 = c.classify("Given that the escrow keys are generated 200 at a time on floppy disks, why\\\\n\\\" +\\n\" +\n" +
-      "      \"      \\\"not keep them there rather than creating one huge database that will have to\\\\n\\\" +\\n\" +\n" +
-      "      \"      \\\"be guarded better than Fort Knox. ");
-    System.out.printf("%s\n", result2);
-
-    List<Double> x = Lists.newArrayList(result2);
-    Collections.sort(x, Ordering.<Double>natural().<Double>reverse());
-    int best = result2.indexOf(x.get(0));
-    System.out.printf("Highest score at index %d which corresponds to %s\n", best, newsgroupNames.get(best));
-
-    c.close();
-  }
 }

@@ -33,42 +33,42 @@ import org.apache.mahout.math.Vector;
 import java.util.Random;
 
 /**
-   * Encodes pairs of categories.
-   */
-  public class CategoryInteractionEncoder {
+ * Encodes pairs of categories.
+ */
+public class CategoryInteractionEncoder {
     private int[] seeds;
     private CategoryFeatureEncoder[] encoders;
     private int probes = 2;
 
     CategoryInteractionEncoder(int seed, CategoryFeatureEncoder... encoders) {
-      Random r = new Random(seed);
-      seeds = new int[probes];
-      for (int i = 0; i < probes; i++) {
-        seeds[i] = r.nextInt();
-      }
-      this.encoders = encoders;
+        Random r = new Random(seed);
+        seeds = new int[probes];
+        for (int i = 0; i < probes; i++) {
+            seeds[i] = r.nextInt();
+        }
+        this.encoders = encoders;
     }
 
     public void addToVector(int[] categories, double weight, Vector data) {
-      int[] hashes = new int[categories.length];
-      for (int i = 0; i < categories.length; i++) {
-        hashes[i] += seeds[i] * encoders[i].hashForProbe(categories[i], i);
-      }
-      int n = data.size();
-      for (int j : hashes) {
-        j = j % n;
-        if (j < 0) {
-          j += n;
+        int[] hashes = new int[categories.length];
+        for (int i = 0; i < categories.length; i++) {
+            hashes[i] += seeds[i] * encoders[i].hashForProbe(categories[i], i);
         }
-        data.setQuick(j, data.getQuick(j) + weight);
-      }
+        int n = data.size();
+        for (int j : hashes) {
+            j = j % n;
+            if (j < 0) {
+                j += n;
+            }
+            data.setQuick(j, data.getQuick(j) + weight);
+        }
     }
 
     public long hashForProbe(int categories[], int probe) {
-      long r = 0;
-      for (int i = 0; i < encoders.length; i++) {
-        r += seeds[i] * encoders[i].hashForProbe(categories[i], probe);
-      }
-      return r;
+        long r = 0;
+        for (int i = 0; i < encoders.length; i++) {
+            r += seeds[i] * encoders[i].hashForProbe(categories[i], probe);
+        }
+        return r;
     }
-  }
+}

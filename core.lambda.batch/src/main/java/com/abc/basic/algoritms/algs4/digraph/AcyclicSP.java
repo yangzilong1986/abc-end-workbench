@@ -80,8 +80,9 @@ public class AcyclicSP {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        int s = Integer.parseInt(args[1]);
+//        % java AcyclicSP tinyEWDAG.txt 5
+        In in = new In(In.PATH_NAME+"tinyEWDAG.txt");
+        int s = 5;
         EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
 
         // find shortest path from s to each other vertex in DAG

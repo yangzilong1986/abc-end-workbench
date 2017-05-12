@@ -1,8 +1,8 @@
 package com.abc.basic.algoritms.base.graph.spanning;
 
 import com.abc.basic.algoritms.base.graph.Graph;
+import com.abc.basic.algoritms.base.graph.util.ToleranceDoubleComparator;
 import com.abc.basic.algoritms.base.graph.util.UnionFind;
-import org.jgrapht.alg.util.ToleranceDoubleComparator;
 
 import java.util.*;
 

@@ -18,27 +18,28 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import java.io.File;
 
 class LibimsetiIREvalRunner {
-  public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
-  private LibimsetiIREvalRunner() {
-  }
+    public static final String OUT_DIR = "D:/DevN/sample-data/dadamining/";
 
-  public static void main(String[] args) throws Exception {
-    File file=new File(OUT_DIR+"libimseti/ratings.dat");
+    private LibimsetiIREvalRunner() {
+    }
+
+    public static void main(String[] args) throws Exception {
+        File file = new File(OUT_DIR + "libimseti/ratings.dat");
 //    DataModel model = new GroupLensDataModel(file);
-    DataModel model =new FileDataModel(file);
-    model = new GenericBooleanPrefDataModel(GenericBooleanPrefDataModel.toDataMap(model));
-      RecommenderIRStatsEvaluator evaluator =
-        new GenericRecommenderIRStatsEvaluator();
-      RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
-        @Override
-        public Recommender buildRecommender(DataModel model) throws TasteException {
-          UserSimilarity similarity = new TanimotoCoefficientSimilarity(model);
-          UserNeighborhood neighborhood = new NearestNUserNeighborhood(2, similarity, model);
-          return new GenericBooleanPrefUserBasedRecommender(model, neighborhood, similarity);
-        }
-      };
-      IRStatistics stats = evaluator.evaluate(recommenderBuilder, null, model, null, 10, Double.NaN, 0.1);
-      System.out.println(stats);
-  }
+        DataModel model = new FileDataModel(file);
+        model = new GenericBooleanPrefDataModel(GenericBooleanPrefDataModel.toDataMap(model));
+        RecommenderIRStatsEvaluator evaluator =
+                new GenericRecommenderIRStatsEvaluator();
+        RecommenderBuilder recommenderBuilder = new RecommenderBuilder() {
+            @Override
+            public Recommender buildRecommender(DataModel model) throws TasteException {
+                UserSimilarity similarity = new TanimotoCoefficientSimilarity(model);
+                UserNeighborhood neighborhood = new NearestNUserNeighborhood(2, similarity, model);
+                return new GenericBooleanPrefUserBasedRecommender(model, neighborhood, similarity);
+            }
+        };
+        IRStatistics stats = evaluator.evaluate(recommenderBuilder, null, model, null, 10, Double.NaN, 0.1);
+        System.out.println(stats);
+    }
 
 }
