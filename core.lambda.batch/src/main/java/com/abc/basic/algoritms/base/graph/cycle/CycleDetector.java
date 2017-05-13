@@ -1,8 +1,8 @@
 package com.abc.basic.algoritms.base.graph.cycle;
 
 import com.abc.basic.algoritms.base.graph.DirectedGraph;
-import com.abc.basic.algoritms.base.graph.strongconnectivity.KosarajuStrongConnectivityInspector;
-import com.abc.basic.algoritms.base.graph.strongconnectivity.StrongConnectivityAlgorithm;
+import com.abc.basic.algoritms.base.graph.scc.KosarajuStrongConnectivityInspector;
+import com.abc.basic.algoritms.base.graph.scc.StrongConnectivityAlgorithm;
 import com.abc.basic.algoritms.base.graph.traverse.DepthFirstIterator;
 
 import java.util.ArrayList;

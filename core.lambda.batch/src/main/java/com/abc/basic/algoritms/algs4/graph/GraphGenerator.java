@@ -39,10 +39,18 @@ public class GraphGenerator {
         }
 
         public int compareTo(Edge that) {
-            if (this.v < that.v) return -1;
-            if (this.v > that.v) return +1;
-            if (this.w < that.w) return -1;
-            if (this.w > that.w) return +1;
+            if (this.v < that.v) {
+                return -1;
+            }
+            if (this.v > that.v) {
+                return +1;
+            }
+            if (this.w < that.w) {
+                return -1;
+            }
+            if (this.w > that.w) {
+                return +1;
+            }
             return 0;
         }
     }
@@ -50,17 +58,13 @@ public class GraphGenerator {
     // this class cannot be instantiated
     private GraphGenerator() { }
 
-    /**
-     * Returns a random simple graph containing {@code V} vertices and {@code E} edges.
-     * @param V the number of vertices
-     * @param E the number of vertices
-     * @return a random simple graph on {@code V} vertices, containing a total
-     *     of {@code E} edges
-     * @throws IllegalArgumentException if no such simple graph exists
-     */
     public static Graph simple(int V, int E) {
-        if (E > (long) V*(V-1)/2) throw new IllegalArgumentException("Too many edges");
-        if (E < 0)                throw new IllegalArgumentException("Too few edges");
+        if (E > (long) V*(V-1)/2) {
+            throw new IllegalArgumentException("Too many edges");
+        }
+        if (E < 0){
+            throw new IllegalArgumentException("Too few edges");
+        }
         Graph G = new Graph(V);
         SET<Edge> set = new SET<Edge>();
         while (G.E() < E) {
@@ -75,24 +79,18 @@ public class GraphGenerator {
         return G;
     }
 
-    /**
-     * Returns a random simple graph on {@code V} vertices, with an 
-     * edge between any two vertices with probability {@code p}. This is sometimes
-     * referred to as the Erdos-Renyi random graph model.
-     * @param V the number of vertices
-     * @param p the probability of choosing an edge
-     * @return a random simple graph on {@code V} vertices, with an edge between
-     *     any two vertices with probability {@code p}
-     * @throws IllegalArgumentException if probability is not between 0 and 1
-     */
     public static Graph simple(int V, double p) {
-        if (p < 0.0 || p > 1.0)
+        if (p < 0.0 || p > 1.0) {
             throw new IllegalArgumentException("Probability must be between 0 and 1");
+        }
         Graph G = new Graph(V);
-        for (int v = 0; v < V; v++)
-            for (int w = v+1; w < V; w++)
-                if (StdRandom.bernoulli(p))
+        for (int v = 0; v < V; v++) {
+            for (int w = v + 1; w < V; w++) {
+                if (StdRandom.bernoulli(p)) {
                     G.addEdge(v, w);
+                }
+            }
+        }
         return G;
     }
 

@@ -7,13 +7,31 @@ import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
- *  Dijkstra权重有向图最短路径算法，类似于Prim方法
+ *  The {@code DijkstraSP} class represents a data type for solving the
+ *  single-source shortest paths problem in edge-weighted digraphs
+ *  where the edge weights are nonnegative.
+ *  <p>
+ *  This implementation uses Dijkstra's algorithm with a binary heap.
+ *  基于堆的实现
+ *
+ *  Dijkstra权重有向图最短路径算法，非负值
+ *  类似于Prim方法
  */
 public class DijkstraSP {
+    //从s到v已知的最短距离
+    //不可到达的顶点的距离为POSITIVE_INFINITY
     private double[] distTo;          // distTo[v] = distance  of shortest s->v path
+    //最短路径树中的边
+    //edgeTo[w] = e;//边e为w为终点v->顶点w
     private DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on shortest s->v path
-    private IndexMinPQ<Double> pq;    // priority queue of vertices
 
+    private IndexMinPQ<Double> pqCut;    // priority queue of vertices
+
+    /**
+     * 有向权重图
+     * @param G
+     * @param s
+     */
     public DijkstraSP(EdgeWeightedDigraph G, int s) {
         for (DirectedEdge e : G.edges()) {
             if (e.weight() < 0) {
@@ -32,16 +50,14 @@ public class DijkstraSP {
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
-        pq = new IndexMinPQ<Double>(G.V());
-        pq.insert(s, distTo[s]);
-        while (!pq.isEmpty()) {
-            int v = pq.delMin();
-            for (DirectedEdge e : G.adj(v)) {
+        pqCut = new IndexMinPQ<Double>(G.V());
+        pqCut.insert(s, distTo[s]);
+        while (!pqCut.isEmpty()) {
+            int v = pqCut.delMin();//队列中的顶点
+            for (DirectedEdge e : G.adj(v)) {//访问每个边
                 relax(e);
             }
         }
-
-        // check optimality conditions
         assert check(G, s);
     }
 
@@ -49,12 +65,14 @@ public class DijkstraSP {
     private void relax(DirectedEdge e) {
         int v = e.from(), w = e.to();
         if (distTo[w] > distTo[v] + e.weight()) {
-            distTo[w] = distTo[v] + e.weight();
-            edgeTo[w] = e;
-            if (pq.contains(w)) {
-                pq.decreaseKey(w, distTo[w]);
+            distTo[w] = distTo[v] + e.weight();//边
+            //边w为终端，e为起点，以w为起点
+            edgeTo[w] = e;//边e为w为终点v->w顶点
+
+            if (pqCut.contains(w)) {//需要降低优先级，是它先被发现
+                pqCut.decreaseKey(w, distTo[w]);
             }else{
-                pq.insert(w, distTo[w]);
+                pqCut.insert(w, distTo[w]);
             }
         }
     }
@@ -143,20 +161,14 @@ public class DijkstraSP {
         }
     }
 
-    /**
-     * Unit tests the {@code DijkstraSP} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
-        In in = new In(args[0]);
+//        % java DijkstraSP tinyEWD.txt 0
+        In in = new In(In.PATH_NAME+"tinyEWD.txt");
         EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
-        int s = Integer.parseInt(args[1]);
+        int s =0;
 
         // compute shortest paths
         DijkstraSP sp = new DijkstraSP(G, s);
-
-
         // print shortest path
         for (int t = 0; t < G.V(); t++) {
             if (sp.hasPathTo(t)) {

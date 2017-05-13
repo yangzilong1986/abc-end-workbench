@@ -12,15 +12,13 @@ public class DirectedCycle {
     //有向环中的所有顶点
     private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
     //递归调用的栈上的所有顶点
+    //一幅有向图是有向无环图的判断
+    //运行时递归调用栈表示的是：当前正在遍历的有向路径，一旦我们找到了一条有向边v->w并且w
+    //已经存在于栈中，就找到了一个环，因为栈表示的是一条由w到v的有向路径，而v->w正好补齐了这个环
     private boolean[] onStack;       // onStack[v] = is vertex on the stack?
     //有向环中的顶点
     private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
 
-    /**
-     * Determines whether the digraph {@code G} has a directed cycle and, if so,
-     * finds such a cycle.
-     * @param G the digraph
-     */
     public DirectedCycle(Digraph G) {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
@@ -33,6 +31,11 @@ public class DirectedCycle {
     }
 
     // check that algorithm computes either the topological order or finds a directed cycle
+    /**
+     *
+     * @param G
+     * @param v
+     */
     private void dfs(Digraph G, int v) {
         onStack[v] = true;
         marked[v] = true;

@@ -2,9 +2,8 @@ package com.abc.basic.algoritms.base.graph.cycle;
 
 import com.abc.basic.algoritms.base.graph.*;
 import com.abc.basic.algoritms.base.graph.events.ConnectivityInspector;
-import com.abc.basic.algoritms.base.graph.strongconnectivity.KosarajuStrongConnectivityInspector;
+import com.abc.basic.algoritms.base.graph.scc.KosarajuStrongConnectivityInspector;
 import com.abc.basic.algoritms.base.graph.util.TypeUtil;
-import org.jgrapht.GraphTests;
 
 import java.util.*;
 

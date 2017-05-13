@@ -30,7 +30,7 @@ public class PrimMST {
     //索引优先队列，横切边
     //所有这类的顶点都保存在一条索引优先队列中，索引v关联的值是edgeTo[v]的边的权重
     //队列保存最小生成树中边
-    private IndexMinPQ<Double> pq;
+    private IndexMinPQ<Double> pqCut;
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
@@ -40,13 +40,13 @@ public class PrimMST {
         edgeTo = new Edge[G.V()];
         distTo = new double[G.V()];
         marked = new boolean[G.V()];
-        pq = new IndexMinPQ<Double>(G.V());
+        pqCut = new IndexMinPQ<Double>(G.V());
         for (int v = 0; v < G.V(); v++){
             distTo[v] = Double.POSITIVE_INFINITY;
         }
         // run from each vertex to find
         for (int v = 0; v < G.V(); v++) {
-            if (!marked[v]) {
+            if (!marked[v]) {//没有访问的顶点
                 prim(G, v); // minimum spanning forest
             }
         }
@@ -57,9 +57,9 @@ public class PrimMST {
     // run Prim's algorithm in graph G, starting from vertex s
     private void prim(EdgeWeightedGraph G, int s) {
         distTo[s] = 0.0;
-        pq.insert(s, distTo[s]);
-        while (!pq.isEmpty()) {
-            int v = pq.delMin();//获取最小的
+        pqCut.insert(s, distTo[s]);
+        while (!pqCut.isEmpty()) {
+            int v = pqCut.delMin();//获取最小的
             scan(G, v);
         }
     }
@@ -75,12 +75,13 @@ public class PrimMST {
                 continue;
             }
             if (e.weight() < distTo[w]) {
+                //连接w和树的最佳边Edge变为e
                 distTo[w] = e.weight();
                 edgeTo[w] = e;//w连接到的另一个顶点e
-                if (pq.contains(w)) {//包含则，增加
-                    pq.decreaseKey(w, distTo[w]);
+                if (pqCut.contains(w)) {//包含则，更新
+                    pqCut.decreaseKey(w, distTo[w]);
                 }else {
-                    pq.insert(w, distTo[w]);
+                    pqCut.insert(w, distTo[w]);
                 }
             }
         }
@@ -99,8 +100,9 @@ public class PrimMST {
 
     public double weight() {
         double weight = 0.0;
-        for (Edge e : edges())
+        for (Edge e : edges()) {
             weight += e.weight();
+        }
         return weight;
     }
 
@@ -114,7 +116,8 @@ public class PrimMST {
             totalWeight += e.weight();
         }
         if (Math.abs(totalWeight - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", totalWeight, weight());
+            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+                    totalWeight, weight());
             return false;
         }
 
@@ -164,11 +167,6 @@ public class PrimMST {
         return true;
     }
 
-    /**
-     * Unit tests the {@code PrimMST} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         //java PrimMST tinyEWG.txt
         In in = new In(In.PATH_NAME + "tinyEWG.txt");

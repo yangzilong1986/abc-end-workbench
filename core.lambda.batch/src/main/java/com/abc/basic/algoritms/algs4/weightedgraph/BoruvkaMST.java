@@ -152,8 +152,9 @@ public class BoruvkaMST {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
+//        % java BoruvkaMST tinyEWG.txt
+        In in = new In(In.PATH_NAME+"tinyEWG.txt");
+        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
         BoruvkaMST mst = new BoruvkaMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);

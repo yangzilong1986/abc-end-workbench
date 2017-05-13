@@ -47,9 +47,6 @@ public class DijkstraClosestFirstIterator<V, E>
         updateDistance(source, null, 0d);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean hasNext()
     {

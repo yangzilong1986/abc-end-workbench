@@ -10,27 +10,32 @@ public class KruskalMST {
     private static final double FLOATING_POINT_EPSILON = 1E-12;
 
     private double weight;  // weight of MST
-    private Queue<Edge> mst = new Queue<Edge>();// edges in MST
+    //最小生成树
+    private Queue<Edge> mstTree = new Queue<Edge>();// edges in MST
 
     public KruskalMST(EdgeWeightedGraph G) {
         // more efficient to build heap by passing array of edges
-        MinPQ<Edge> pq = new MinPQ<Edge>();
+        //边存放在最小堆中
+        MinPQ<Edge> pqCut = new MinPQ<Edge>();
         for (Edge e : G.edges()) {
-            pq.insert(e);
+            pqCut.insert(e);
         }
 
-        // run greedy algorithm
+        //贪婪算法
         UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
-            Edge e = pq.delMin();
+        while (!pqCut.isEmpty() && mstTree.size() < G.V() - 1) {
+            //从pq获得权重最小的边和它的顶点
+            Edge e = pqCut.delMin();
             int v = e.either();
             int w = e.other(v);
             // v-w does not create a cycle
             if (!uf.connected(v, w)) {
                 // merge v and w components
+                //合并分量
                 uf.union(v, w);
                 // add edge e to mst
-                mst.enqueue(e);
+                //得到添加到最小生成树树中
+                mstTree.enqueue(e);
                 weight += e.weight();
             }
         }
@@ -39,7 +44,7 @@ public class KruskalMST {
     }
 
     public Iterable<Edge> edges() {
-        return mst;
+        return mstTree;
     }
 
     public double weight() {
@@ -84,7 +89,7 @@ public class KruskalMST {
 
             // all edges in MST except e
             uf = new UF(G.V());
-            for (Edge f : mst) {
+            for (Edge f : mstTree) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }

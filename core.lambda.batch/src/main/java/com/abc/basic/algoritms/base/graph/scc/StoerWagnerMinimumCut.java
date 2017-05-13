@@ -1,4 +1,4 @@
-package com.abc.basic.algoritms.base.graph.strongconnectivity;
+package com.abc.basic.algoritms.base.graph.scc;
 
 import com.abc.basic.algoritms.base.graph.*;
 

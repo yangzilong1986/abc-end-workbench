@@ -3,6 +3,7 @@ package com.abc.basic.algoritms.algs4.weightedgraph;
 import com.abc.basic.algoritms.algs4.col.Queue;
 import com.abc.basic.algoritms.algs4.tree.MinPQ;
 import com.abc.basic.algoritms.algs4.tree.UF;
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 /**
@@ -13,26 +14,26 @@ public class LazyPrimMST {
     //总权重
     private double weight;       // total weight of MST
     //最小生成树的边
-    private Queue<Edge> mst;     // edges in the MST
+    private Queue<Edge> mstTree;     // edges in the MST
     //最小生成树的边
     private boolean[] marked;    // marked[v] = true if v on tree
     //横切边，包括失效的边的MinPQ
-    private MinPQ<Edge> pq;      // edges with one endpoint in tree
+    private MinPQ<Edge> pqCut;      // edges with one endpoint in tree
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
     public LazyPrimMST(EdgeWeightedGraph G) {
-        mst = new Queue<Edge>();
-        pq = new MinPQ<Edge>();
+        mstTree = new Queue<Edge>();
+        pqCut = new MinPQ<Edge>();
         marked = new boolean[G.V()];
         // run Prim from all vertices to
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.V(); v++) {
             if (!marked[v]) {
                 prim(G, v);
             }
-
+        }
         // check optimality conditions
         assert check(G);
     }
@@ -42,10 +43,10 @@ public class LazyPrimMST {
         scan(G, s);//假设是联通的
         // better to stop when mst has V-1 edges
         //横切边，包括失效的边的MinPQ
-        while (!pq.isEmpty()) {
+        while (!pqCut.isEmpty()) {
             // smallest edge on pq
             //从pq中得到权重最小的边
-            Edge e = pq.delMin();
+            Edge e = pqCut.delMin();
             // two endpoints
             int v = e.either(), w = e.other(v);
 
@@ -57,7 +58,7 @@ public class LazyPrimMST {
             }
             // add e to MST
             //将边加入到树中
-            mst.enqueue(e);
+            mstTree.enqueue(e);
             weight += e.weight();
             // v becomes part of tree
             //横切边，包括失效的边的MinPQ
@@ -79,14 +80,14 @@ public class LazyPrimMST {
         for (Edge e : G.adj(v)){
             if (!marked[e.other(v)]){
                 //横切边，包括失效的边的MinPQ
-                pq.insert(e);
+                pqCut.insert(e);
             }
         }
 
     }
-        
+
     public Iterable<Edge> edges() {
-        return mst;
+        return mstTree;
     }
 
     public double weight() {
@@ -130,7 +131,7 @@ public class LazyPrimMST {
         for (Edge e : edges()) {
             // all edges in MST except e
             uf = new UF(G.V());
-            for (Edge f : mst) {
+            for (Edge f : mstTree) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) {
                     uf.union(x, y);
@@ -153,7 +154,9 @@ public class LazyPrimMST {
     }
 
     public static void main(String[] args) {
-        EdgeWeightedGraph G = EdgeWeightedGraph.buildEdgeWeightedGraph();
+        //
+        In in = new In(In.PATH_NAME + "tinyEWG.txt");
+        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
         LazyPrimMST mst = new LazyPrimMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);

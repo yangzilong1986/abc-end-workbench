@@ -1,10 +1,8 @@
-package com.abc.basic.algoritms.algs4.weightedgraph;
+package com.abc.basic.algoritms.algs4.digraph;
 
-import com.abc.basic.algoritms.algs4.digraph.DirectedEdge;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.algs4.StdRandom;
-import com.abc.basic.algoritms.algs4.digraph.EdgeWeightedDigraph;
 
 public class EdgeWeightedDirectedCycle {
     private boolean[] marked;             // marked[v] = has vertex v been marked?
@@ -21,9 +19,11 @@ public class EdgeWeightedDirectedCycle {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new DirectedEdge[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v]) dfs(G, v);
-
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v]) {
+                dfs(G, v);
+            }
+        }
         // check that digraph has a cycle
         assert check();
     }
@@ -36,7 +36,9 @@ public class EdgeWeightedDirectedCycle {
             int w = e.to();
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {

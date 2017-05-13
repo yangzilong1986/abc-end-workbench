@@ -76,6 +76,7 @@ public class MinPQ<Key> implements Iterable<Key> {
         if (n == pq.length - 1) {
             resize(2 * pq.length);
         }
+        pq[++n] = x;
         swim(n);
         assert isMinHeap();
     }

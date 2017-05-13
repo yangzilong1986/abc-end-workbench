@@ -17,7 +17,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     //保存heapBasedIndexing的逆序，
     // qp[i]的i值在heapBasedIndexing中的位置，即索引j，heapBasedIndexing[j]=i
     //它的值和keys的值一致
-    private int[] inverseQP;//inverse of heapBasedIndexing - inverseQP[heapBasedIndexing[i]] = heapBasedIndexing[inverseQP[i]] = i
+    private int[] inversePQ;//inverse of heapBasedIndexing - inversePQ[heapBasedIndexing[i]] = heapBasedIndexing[inversePQ[i]] = i
     //示例
     //        heapBasedIndexing = {int[4]@606}
     //        0 = 0
@@ -30,7 +30,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     //        1 = "B"
     //        2 = "A"
 
-    //        inverseQP = {int[4]@608}
+    //        inversePQ = {int[4]@608}
     //        0 = 1
     //        1 = 2
     //        2 = 3
@@ -42,9 +42,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         n = 0;
         keys = (Key[]) new Comparable[maxN + 1]; // make this of length maxN??
         heapBasedIndexing   = new int[maxN + 1];
-        inverseQP   = new int[maxN + 1]; // make this of length maxN??
+        inversePQ   = new int[maxN + 1]; // make this of length maxN??
         for (int i = 0; i <= maxN; i++) {
-            inverseQP[i] = -1;
+            inversePQ[i] = -1;
         }
     }
 
@@ -56,7 +56,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         if (i < 0 || i >= maxN) {
             throw new IndexOutOfBoundsException();
         }
-        return inverseQP[i] != -1;
+        return inversePQ[i] != -1;
     }
 
     public int size() {
@@ -79,7 +79,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 //        1 = "B"
 //        2 = "A"
 
-//        inverseQP = {int[4]@608}
+//        inversePQ = {int[4]@608}
 //        0 = 1
 //        1 = 2
 //        2 = 3
@@ -89,7 +89,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         exch(1, n--);//把第一个元素和最后一个交换位置，交换之后修改元素大小n
         sink(1);//删除之后的元素再排序
         assert min == heapBasedIndexing[n+1];
-        inverseQP[min] = -1; //初始化时为-1 delete
+        inversePQ[min] = -1; //初始化时为-1 delete
         keys[min] = null; // to help with garbage collection
         heapBasedIndexing[n+1] = -1; // not needed
         return min;
@@ -109,7 +109,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         }
         n++;
         //inverseQP为元素索引，同key的索引一致,它保存当前元素索引即n
-        inverseQP[i] = n;//索引的索引
+        inversePQ[i] = n;//索引的索引
         //key
         keys[i] = key;
         //堆，它的值为key的索引
@@ -135,8 +135,8 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         int swap = heapBasedIndexing[i];//heapBasedIndexing中存储key的索引
         heapBasedIndexing[i] = heapBasedIndexing[j];
         heapBasedIndexing[j] = swap;
-        inverseQP[heapBasedIndexing[i]] = i;//索引的索引
-        inverseQP[heapBasedIndexing[j]] = j;
+        inversePQ[heapBasedIndexing[i]] = i;//索引的索引
+        inversePQ[heapBasedIndexing[j]] = j;
     }
 
     //上浮
@@ -188,8 +188,8 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             throw new NoSuchElementException("index is not in the priority queue");
         }
         keys[i] = key;
-        swim(inverseQP[i]);
-        sink(inverseQP[i]);
+        swim(inversePQ[i]);
+        sink(inversePQ[i]);
     }
 
     @Deprecated
@@ -210,7 +210,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         }
 
         keys[i] = key;
-        swim(inverseQP[i]);
+        swim(inversePQ[i]);
     }
 
     public void increaseKey(int i, Key key) {
@@ -225,7 +225,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
                     "with given argument would not strictly increase the key");
         }
         keys[i] = key;
-        sink(inverseQP[i]);
+        sink(inversePQ[i]);
     }
 
     public void delete(int i) {
@@ -235,12 +235,12 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         if (!contains(i)) {
             throw new NoSuchElementException("index is not in the priority queue");
         }
-        int index = inverseQP[i];
+        int index = inversePQ[i];
         exch(index, n--);
         swim(index);
         sink(index);
         keys[i] = null;
-        inverseQP[i] = -1;
+        inversePQ[i] = -1;
     }
 
 

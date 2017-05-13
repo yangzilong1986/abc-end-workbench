@@ -53,7 +53,7 @@ public class Bipartite {
             // if v-w create an odd-length cycle, find it
             else if (color[w] == color[v]) {//v是递归栈的变量
                 //有环不是二分图
-                isBipartite = false;//有环是不是二分图
+                isBipartite = false;//有环，不是二分图
                 cycle = new Stack<Integer>();
                 cycle.push(w);  // don't need this unless you want to include start vertex twice
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -118,11 +118,6 @@ public class Bipartite {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-    /**
-     * Unit tests the {@code Bipartite} data type.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
 
         // create random bipartite graph with V1 vertices on left side,

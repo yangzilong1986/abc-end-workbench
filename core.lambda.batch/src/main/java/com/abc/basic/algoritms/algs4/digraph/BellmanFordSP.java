@@ -2,7 +2,6 @@ package com.abc.basic.algoritms.algs4.digraph;
 
 import com.abc.basic.algoritms.algs4.col.Queue;
 import com.abc.basic.algoritms.algs4.utils.In;
-import com.abc.basic.algoritms.algs4.weightedgraph.EdgeWeightedDirectedCycle;
 import com.abc.basic.algoritms.algs4.col.Stack;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
@@ -21,10 +20,15 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  单源最短路径
  */
 public class BellmanFordSP {
+    //从起点到某个顶点的路径长度
     private double[] distTo;               // distTo[v] = distance  of shortest s->v path
+    //从起点到某个顶点的最后一条边
     private DirectedEdge[] edgeTo;         // edgeTo[v] = last edge on shortest s->v path
+    //顶点索引的数组，用来指示顶点是否已经存在队列中，防止将顶点重复插入队列中
     private boolean[] onQueue;             // onQueue[v] = is v currently on the queue?
+    //保存即将被放松的顶点的队列
     private Queue<Integer> queue;          // queue of vertices to relax
+    //松弛的次数
     private int cost;                      // number of calls to relax()
     private Iterable<DirectedEdge> cycle;  // negative cycle (or null if no such cycle)
 
@@ -42,14 +46,14 @@ public class BellmanFordSP {
         for (int v = 0; v < G.V(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
         }
+        //
         distTo[s] = 0.0;
-
         // Bellman-Ford algorithm
         queue = new Queue<Integer>();
         queue.enqueue(s);
         onQueue[s] = true;
         while (!queue.isEmpty() && !hasNegativeCycle()) {//Cycle为空时返回真
-            int v = queue.dequeue();
+            int v = queue.dequeue();//出列
             onQueue[v] = false;
             relax(G, v);
         }
@@ -64,19 +68,22 @@ public class BellmanFordSP {
             if (distTo[w] > distTo[v] + e.weight()) {
                 distTo[w] = distTo[v] + e.weight();
                 edgeTo[w] = e;
-                if (!onQueue[w]) {
-                    queue.enqueue(w);
+                if (!onQueue[w]) {//没有访问过的加入队列
+                    queue.enqueue(w);//To顶点入列
                     onQueue[w] = true;
                 }
             }
             if (cost++ % G.V() == 0) {//V:8
                 findNegativeCycle();
-                if (hasNegativeCycle()) return;  // found a negative cycle
+                if (hasNegativeCycle()) {
+                    return;  // found a negative cycle
+                }
             }
         }
     }
 
     /**
+     * 负环检查
      * 无环为真
      * @return
      */
