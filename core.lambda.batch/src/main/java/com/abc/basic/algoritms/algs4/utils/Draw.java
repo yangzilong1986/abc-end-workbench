@@ -23,9 +23,7 @@
  *
  ******************************************************************************/
 
-package com.abc.basic.algoritms.algs4;
-
-import com.abc.basic.algoritms.algs4.utils.StdDraw;
+package com.abc.basic.algoritms.algs4.utils;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

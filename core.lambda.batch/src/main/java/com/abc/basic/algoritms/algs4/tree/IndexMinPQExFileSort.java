@@ -32,10 +32,10 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  将多个有序输入流并归成一个输出
  */
 
-public class MultiwayByIndexMinPQ {
+public class IndexMinPQExFileSort {
 
     // This class should not be instantiated.
-    private MultiwayByIndexMinPQ() {
+    private IndexMinPQExFileSort() {
     }
 
     // merge together the sorted input streams and write the sorted result to standard output

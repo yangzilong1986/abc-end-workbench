@@ -1,5 +1,7 @@
 package com.abc.basic.algoritms.algs4.tree;
 
+import com.abc.basic.algoritms.algs4.utils.StdOut;
+
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -262,4 +264,34 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		}
 	}
 
+	public static void main(String[] args) {
+		// insert a bunch of strings
+		String[] strings = {"it", "was", "the", "best", "of"};
+
+		IndexMultiwayMinPQ<String> heapBasedIndexing = new IndexMultiwayMinPQ<String>(strings.length,4);
+		for (int i = 0; i < strings.length; i++) {
+			heapBasedIndexing.insert(i, strings[i]);
+		}
+
+		// delete and print each key
+		while (!heapBasedIndexing.isEmpty()) {
+			int i = heapBasedIndexing.delMin();
+			StdOut.println(i + " " + strings[i]);
+		}
+		StdOut.println();
+
+		// reinsert the same strings
+		for (int i = 0; i < strings.length; i++) {
+			heapBasedIndexing.insert(i, strings[i]);
+		}
+
+		// print each key using the iterator
+		for (int i : heapBasedIndexing) {
+			StdOut.println(i + " " + strings[i]);
+		}
+		while (!heapBasedIndexing.isEmpty()) {
+			heapBasedIndexing.delMin();
+		}
+
+	}
 }

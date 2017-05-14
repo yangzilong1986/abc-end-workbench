@@ -1,5 +1,7 @@
 package com.abc.basic.algoritms.algs4.tree;
 
+import com.abc.basic.algoritms.algs4.utils.StdOut;
+
 import java.util.Iterator;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
@@ -203,6 +205,20 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		public int compare(Key key1, Key key2) {
 			return ((Comparable<Key>) key1).compareTo(key2);
 		}
+	}
+
+	public static void main(String[] args){
+		MultiwayMinPQ<String> mmPQ=new MultiwayMinPQ<String>(4);
+		mmPQ.insert("a");
+		mmPQ.insert("w");
+		mmPQ.insert("c");
+		mmPQ.insert("a");
+		mmPQ.insert("m");
+		mmPQ.insert("z");
+		for(String a:mmPQ){
+			StdOut.print(" "+a);
+		}
+		StdOut.print("\n");
 	}
 	
 }

@@ -1,7 +1,7 @@
 package com.abc.basic.algoritms.algs4.sort;
 
 import com.abc.basic.algoritms.algs4.Counter;
-import com.abc.basic.algoritms.algs4.Point2D;
+import com.abc.basic.algoritms.algs4.point2d.Point2D;
 import com.abc.basic.algoritms.algs4.StdRandom;
 //import edu.princeton.cs.algs4.*;
 import com.abc.basic.algoritms.algs4.utils.StdDraw;

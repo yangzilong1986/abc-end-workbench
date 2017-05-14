@@ -4,6 +4,10 @@ import java.util.Iterator;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
+/**
+ * 二项堆（Binomial Heap）是一种堆结构。与二叉堆（Binary Heap）相比，其优势是可以快速合并两个堆，
+ * 因此它属于可合并堆（Mergeable Heap）数据结构的一种。
+ */
 public class MinPQBinomial<Key> implements Iterable<Key> {
     private Node head;                    //head of the list of roots
     private final Comparator<Key> comp;    //Comparator over the keys

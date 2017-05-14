@@ -7,8 +7,9 @@
  *
  ******************************************************************************/
 
-package com.abc.basic.algoritms.algs4;
+package com.abc.basic.algoritms.algs4.point2d;
 
+import com.abc.basic.algoritms.algs4.StdRandom;
 import com.abc.basic.algoritms.algs4.utils.StdDraw;
 
 import java.util.Arrays;

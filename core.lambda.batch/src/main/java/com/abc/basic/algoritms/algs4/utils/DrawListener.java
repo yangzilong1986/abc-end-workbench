@@ -6,7 +6,7 @@
  *  Interface that accompanies Draw.java.
  ******************************************************************************/
 
-package com.abc.basic.algoritms.algs4;
+package com.abc.basic.algoritms.algs4.utils;
 
 public interface DrawListener {
 

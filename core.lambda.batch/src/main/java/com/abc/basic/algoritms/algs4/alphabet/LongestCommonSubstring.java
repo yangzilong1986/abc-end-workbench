@@ -1,4 +1,4 @@
-package com.abc.basic.algoritms.algs4;
+package com.abc.basic.algoritms.algs4.alphabet;
 
 import com.abc.basic.algoritms.algs4.alphabet.SuffixArray;
 import com.abc.basic.algoritms.algs4.utils.In;

@@ -182,7 +182,7 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	//Inserts a Node in a circular list containing head, returns a new head
 	private Node insert(Node x, Node head) {
 		if (head == null) {
-			x.prev = x;
+			x.prev = x;//
 			x.next = x;
 		} else {
 			head.prev.next = x;

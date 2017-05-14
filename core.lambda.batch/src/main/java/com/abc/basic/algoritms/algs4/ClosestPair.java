@@ -1,5 +1,6 @@
 package com.abc.basic.algoritms.algs4;
 
+import com.abc.basic.algoritms.algs4.point2d.Point2D;
 import com.abc.basic.algoritms.algs4.utils.StdIn;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 

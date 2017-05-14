@@ -27,7 +27,7 @@ public class FibonacciHeap {
 			x.right = head;
 			head.left = x;
 			
-			if (head.key > k) {
+			if (head.key >=k) {
 				head = x;
 			}
 		}
