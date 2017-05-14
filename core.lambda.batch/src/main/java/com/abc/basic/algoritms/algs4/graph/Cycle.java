@@ -44,12 +44,12 @@ public class Cycle {
         }
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
-        dfs(G, -1, 0);
-//        for (int v = 0; v < G.V(); v++) {
-//            if (!marked[v]) {
-//                dfs(G, -1, v);
-//            }
-//        }
+//        dfs(G, -1, 0);
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v]) {
+                dfs(G, -1, v);
+            }
+        }
     }
 
 

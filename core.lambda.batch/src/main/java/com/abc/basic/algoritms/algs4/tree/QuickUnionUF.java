@@ -29,8 +29,9 @@ public class QuickUnionUF {
   
     public int find(int p) {
         validate(p);
-        while (p != parent[p])
+        while (p != parent[p]) {
             p = parent[p];
+        }
         return p;
     }
 

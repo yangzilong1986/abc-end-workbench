@@ -16,10 +16,16 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *
  *  Dijkstra权重有向图最短路径算法，非负值
  *  类似于Prim方法
+ *  加权无向图的最小生成树算法，构造最小生成树的每一步都向这颗树中添加一条新边。
+ *
+ *  Dijkstra算法采用类似的算法，distTo[s]初始化为0，其它的distTo初始化为正无穷。然后
+ *  将distTo[]最小的非树顶点放松并加入到树中。如此这般，直到所有的顶点都在树中或者所
+ *  有非树顶点的distTo[]值均为无穷大值。
  */
 public class DijkstraSP {
     //从s到v已知的最短距离
     //不可到达的顶点的距离为POSITIVE_INFINITY
+    //distTo[v]是从s到v的长度
     private double[] distTo;          // distTo[v] = distance  of shortest s->v path
     //最短路径树中的边
     //edgeTo[w] = e;//边e为w为终点v->顶点w
@@ -54,7 +60,8 @@ public class DijkstraSP {
         pqCut.insert(s, distTo[s]);
         while (!pqCut.isEmpty()) {
             int v = pqCut.delMin();//队列中的顶点
-            for (DirectedEdge e : G.adj(v)) {//访问每个边
+            //访问每个边
+            for (DirectedEdge e : G.adj(v)) {
                 relax(e);
             }
         }
@@ -63,7 +70,8 @@ public class DijkstraSP {
 
     // relax edge e and update pq if changed
     private void relax(DirectedEdge e) {
-        int v = e.from(), w = e.to();
+        int v = e.from(),
+                w = e.to();
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();//边
             //边w为终端，e为起点，以w为起点

@@ -353,10 +353,12 @@ public class FibonacciHeap {
 			Node c = n.child;
 			do {
 				if (c.left.right != c || c.right.left != c) {
-					throw new IllegalStateException(String.format("for node(%s), c.left.right != c || c.right.left != c", c));
+					throw new IllegalStateException(String.format("for node(%s), " +
+							"c.left.right != c || c.right.left != c", c));
 				}
 				if (c.parent != n) {
-					throw new IllegalStateException(String.format("node(%s).parent should be node(%s), but is node(%s)", c, n, c.parent));
+					throw new IllegalStateException(String.format("node(%s)." +
+							"parent should be node(%s), but is node(%s)", c, n, c.parent));
 				}
 				degree++;
 				checkNode(c, nodes);
@@ -365,7 +367,8 @@ public class FibonacciHeap {
 			} while (c != n.child);
 			
 			if (degree != n.degree) {
-				throw new IllegalStateException(String.format("for Node(%s), expected degree is %d, but is %d", n, n.degree, degree));
+				throw new IllegalStateException(String.format("for Node(%s), " +
+						"expected degree is %d, but is %d", n, n.degree, degree));
 			}
 		}
 	}
@@ -386,15 +389,24 @@ public class FibonacciHeap {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(Math.log(2)/Math.log((1+Math.sqrt(5))/2));
-		for (int i = 1; i < 10000; i++) {
-			int a = (int)(Math.log(i) / Math.log((1+Math.sqrt(5))/2)); // 理论上的最大值
-			int b = maxDegree(i); // 近似值
-//			int c = 2 * ((int)(Math.log(i)/Math.log(2)));
-			System.out.println(a + ", " + b);
-			if (a > b) {
-				throw new RuntimeException();
-			}
+//		System.out.println(Math.log(2)/Math.log((1+Math.sqrt(5))/2));
+//		for (int i = 1; i < 10000; i++) {
+//			int a = (int)(Math.log(i) / Math.log((1+Math.sqrt(5))/2)); // 理论上的最大值
+//			int b = maxDegree(i); // 近似值
+////			int c = 2 * ((int)(Math.log(i)/Math.log(2)));
+//			System.out.println(a + ", " + b);
+//			if (a > b) {
+//				throw new RuntimeException();
+//			}
+//		}
+		FibonacciHeap hh=new FibonacciHeap();
+		hh.insert(8);
+		hh.insert(7);
+		hh.insert(4);
+		hh.insert(4);
+		IntIterator ii=hh.iterator();
+		while(ii.hasNext()){
+			System.out.println("ii->"+ii.next());
 		}
 	}
 }

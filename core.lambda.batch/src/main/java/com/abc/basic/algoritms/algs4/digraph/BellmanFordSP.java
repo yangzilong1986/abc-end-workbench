@@ -18,6 +18,7 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
  *  in the worst case, where <em>V</em> is the number of vertices and <em>E</em>
  *  is the number of edges.
  *  单源最短路径
+ *  以任意顺序放松有向图的所有边，重复V轮
  */
 public class BellmanFordSP {
     //从起点到某个顶点的路径长度

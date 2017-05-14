@@ -52,7 +52,7 @@ public class DisjointSetForest {
 	
 	public static class Node {
 		public Node parent;
-		public int rank;
+		public int rank;//等级; 次序，顺序; 行列
 		public int key;
 		
 		public Node(int key) {

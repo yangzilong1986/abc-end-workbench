@@ -25,7 +25,9 @@ public class Quick {
 
     // quicksort the subarray from a[lo] to a[hi]
     private static void sort(Comparable[] a, int lo, int hi) { 
-        if (hi <= lo) return;
+        if (hi <= lo) {
+            return;
+        }
         int j = partition(a, lo, hi);
         sort(a, lo, j-1);
         sort(a, j+1, hi);
@@ -39,20 +41,25 @@ public class Quick {
         int j = hi + 1;
         Comparable v = a[lo];
         while (true) { 
-
             // find item on lo to swap
-            while (less(a[++i], v))
-                if (i == hi) break;
-
+            while (less(a[++i], v)) {//i++向右找
+                if (i == hi) {
+                    break;
+                }
+            }
             // find item on hi to swap
-            while (less(v, a[--j]))
-                if (j == lo) break;      // redundant since a[lo] acts as sentinel
-
+            while (less(v, a[--j])) {//向左找
+                if (j == lo) {//最小时
+                    break;      // redundant since a[lo] acts as sentinel
+                }
+            }
             // check if pointers cross
-            if (i >= j) break;
+            if (i >= j) {
+                break;
+            }
 
             exch(a, i, j);
-        }
+        }//
 
         // put partitioning item v at a[j]
         exch(a, lo, j);
@@ -61,15 +68,6 @@ public class Quick {
         return j;
     }
 
-    /**
-     * Rearranges the array so that {@code a[k]} contains the kth smallest key;
-     * {@code a[0]} through {@code a[k-1]} are less than (or equal to) {@code a[k]}; and
-     * {@code a[k+1]} through {@code a[n-1]} are greater than (or equal to) {@code a[k]}.
-     *
-     * @param  a the array
-     * @param  k the rank of the key
-     * @return the key of rank {@code k}
-     */
     public static Comparable select(Comparable[] a, int k) {
         if (k < 0 || k >= a.length) {
             throw new IndexOutOfBoundsException("Selected element out of bounds");

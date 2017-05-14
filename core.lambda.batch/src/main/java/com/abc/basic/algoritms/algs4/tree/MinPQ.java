@@ -1,5 +1,6 @@
 package com.abc.basic.algoritms.algs4.tree;
 
+import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.algs4.utils.StdIn;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
@@ -96,6 +97,11 @@ public class MinPQ<Key> implements Iterable<Key> {
         return min;
     }
 
+    /**
+     * 上升
+     * 新人入职，从底层向上上升
+     * @param k
+     */
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
@@ -103,11 +109,21 @@ public class MinPQ<Key> implements Iterable<Key> {
         }
     }
 
+    /**
+     * 下沉算法
+     * @param k
+     */
     private void sink(int k) {
+        //k
         while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
-            if (!greater(k, j)) break;
+            int j = 2*k;//j是k的父节点
+            if (j < n && greater(j, j+1)) {
+                j++;
+            }
+            if (!greater(k, j)) {
+                break;
+            }
+            //父节点k和子节点交换
             exch(k, j);
             k = j;
         }
@@ -178,10 +194,15 @@ public class MinPQ<Key> implements Iterable<Key> {
      */
     public static void main(String[] args) {
         MinPQ<String> pq = new MinPQ<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-")) pq.insert(item);
-            else if (!pq.isEmpty()) StdOut.print(pq.delMin() + " ");
+        In in = new In(In.PATH_NAME + "tinyPQ.txt");
+        while (!in.isEmpty()) {
+            String item = in.readString();
+            if (!item.equals("-")) {
+                pq.insert(item);
+            }
+            else if (!pq.isEmpty()) {
+                StdOut.print(pq.delMin() + " ");
+            }
         }
         StdOut.println("(" + pq.size() + " left on pq)");
     }

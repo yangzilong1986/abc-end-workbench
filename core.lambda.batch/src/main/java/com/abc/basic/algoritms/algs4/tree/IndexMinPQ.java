@@ -9,42 +9,64 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     //创建一个最大容量为maxN的优先队列，索引范围为0~maxN-1
     private int maxN;        // maximum number of elements on PQ
     private int n;           // number of elements on PQ
+
     //基于索引的二叉堆。它用于保存索引
     //heapBasedIndexing中的索引也就是Key的索引,起始index为1
-    private int[] heapBasedIndexing;        // binary heap using 1-based indexing
-    //
+    //索引二叉堆，索引由1开始
+    // binary heap using 1-based indexing
+    //数据索引的真实位置
+    //heapBasedIndexing[1]表示第一个元素的索引
+    //比较时比较Key值，变化时不改变keys的数组，
+    // 而是改变heapBasedIndexing数组的内容
+    private int[] heapBasedIndexing;
+    //元素的值keys[heapBasedIndexing[1]];
     private Key[] keys;      // keys[i] = priority of i
+
     //保存heapBasedIndexing的逆序，
     // qp[i]的i值在heapBasedIndexing中的位置，即索引j，heapBasedIndexing[j]=i
     //它的值和keys的值一致
-    private int[] inversePQ;//inverse of heapBasedIndexing - inversePQ[heapBasedIndexing[i]] = heapBasedIndexing[inversePQ[i]] = i
-    //示例
-    //        heapBasedIndexing = {int[4]@606}
-    //        0 = 0
-    //        1 = 0
-    //        2 = 1
-    //        3 = 2
+    //inverse of heapBasedIndexing -
+    //indexedForIndexKey[heapBasedIndexing[i]] = heapBasedIndexing[indexedForIndexKey[i]] = i
+    //用于修改队列中元素的api
+    /**
+     * public void decreaseKey(int i, Key key) {
+     * keys[i] = key;
+     * swim(indexedForIndexKey[i]);
+     * }
+     **/
+    private int[] indexedForIndexKey;
 
-    //        keys = {Comparable[4]@607}
-    //        0 = "A"
-    //        1 = "B"
-    //        2 = "A"
-
-    //        inversePQ = {int[4]@608}
-    //        0 = 1
-    //        1 = 2
-    //        2 = 3
-    //        3 = -1
-
+    /**
+     * 算法描述
+     * String[] strings = { "it", "was", "the", "best", "of" };
+     * heapBasedIndexing = {IndexMinPQ@467}
+     * maxN = 5
+     * n = 5
+     * heapBasedIndexing   indexedForIndexKey
+     * 0 = 0                 0 = 2
+     * 1 = 3                 1 = 4
+     * 2 = 0                 2 = 3
+     * 3 = 2                 3 = 1
+     * 4 = 1                 4 = 5
+     * 5 = 4                 5 = -1
+     * keys = {Comparable[6]@474}
+     * 0 = "it"                 取值：keys[heapBasedIndexing[1]]
+     * 1 = "was"                heapBasedIndexing[1];//3 即;
+     * 2 = "the"
+     * 3 = "best"                keys[3]
+     * 4 = "of"
+     */
     public IndexMinPQ(int maxN) {
         if (maxN < 0) throw new IllegalArgumentException();
         this.maxN = maxN;
         n = 0;
         keys = (Key[]) new Comparable[maxN + 1]; // make this of length maxN??
-        heapBasedIndexing   = new int[maxN + 1];
-        inversePQ   = new int[maxN + 1]; // make this of length maxN??
+
+        indexedForIndexKey = new int[maxN + 1]; // make this of length maxN??
+
+        heapBasedIndexing = new int[maxN + 1];
         for (int i = 0; i <= maxN; i++) {
-            inversePQ[i] = -1;
+            indexedForIndexKey[i] = -1;
         }
     }
 
@@ -56,7 +78,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         if (i < 0 || i >= maxN) {
             throw new IndexOutOfBoundsException();
         }
-        return inversePQ[i] != -1;
+        return indexedForIndexKey[i] != -1;
     }
 
     public int size() {
@@ -68,35 +90,22 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             throw new NoSuchElementException("Priority queue underflow");
         }
 
-//        heapBasedIndexing = {int[4]@606}
-//        0 = 0
-//        1 = 0
-//        2 = 1
-//        3 = 2
-
-//        keys = {Comparable[4]@607}
-//        0 = "A"
-//        1 = "B"
-//        2 = "A"
-
-//        inversePQ = {int[4]@608}
-//        0 = 1
-//        1 = 2
-//        2 = 3
-//        3 = -1
-
-        int min = heapBasedIndexing[1];
+        int min = heapBasedIndexing[1];//3
         exch(1, n--);//把第一个元素和最后一个交换位置，交换之后修改元素大小n
         sink(1);//删除之后的元素再排序
-        assert min == heapBasedIndexing[n+1];
-        inversePQ[min] = -1; //初始化时为-1 delete
+        assert min == heapBasedIndexing[n + 1];
+
+        //值的位置，堆操作把1处的值删除
+        indexedForIndexKey[min] = -1; //初始化时为-1 delete
         keys[min] = null; // to help with garbage collection
-        heapBasedIndexing[n+1] = -1; // not needed
+
+        heapBasedIndexing[n + 1] = -1; // not needed
         return min;
     }
 
     /**
      * 插入元素，并把位置与key关联
+     *
      * @param i
      * @param key
      */
@@ -108,14 +117,46 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             throw new IllegalArgumentException("index is already in the priority queue");
         }
         n++;
-        //inverseQP为元素索引，同key的索引一致,它保存当前元素索引即n
-        inversePQ[i] = n;//索引的索引
-        //key
+
+        //元素key的位置
         keys[i] = key;
-        //堆，它的值为key的索引
+
+        //索引和值的位置
+        //inverseQP为元素索引，同key的索引一致,它保存当前元素索引即n
+        //i为数据的位置
+        indexedForIndexKey[i] = n;//索引
+        //在堆中的位置，它的值为key的索引
+        //元素的索引位置n存储i
+        //元素的索引在堆中的位置
         heapBasedIndexing[n] = i;
-        //n为堆的目前的大小
+
+
+        //n最后一个的元素的位置
         swim(n);
+    }
+
+    private void exch(int i, int j) {
+        int swap = heapBasedIndexing[i];//heapBasedIndexing中存储key的索引//swap:3
+        heapBasedIndexing[i] = heapBasedIndexing[j];
+        heapBasedIndexing[j] = swap;
+        indexedForIndexKey[heapBasedIndexing[i]] = i;//索引的索引
+        indexedForIndexKey[heapBasedIndexing[j]] = j;
+    }
+
+    public void decreaseKey(int i, Key key) {
+        if (i < 0 || i >= maxN) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (!contains(i)) {
+            throw new NoSuchElementException("index is not in the priority queue");
+        }
+        if (keys[i].compareTo(key) <= 0) {
+            throw new IllegalArgumentException("Calling decreaseKey() " +
+                    "with given argument would not strictly decrease the key");
+        }
+
+        keys[i] = key;
+        swim(indexedForIndexKey[i]);
     }
 
     public Key minKey() {
@@ -131,30 +172,22 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         return keys[heapBasedIndexing[i]].compareTo(keys[heapBasedIndexing[j]]) > 0;
     }
 
-    private void exch(int i, int j) {
-        int swap = heapBasedIndexing[i];//heapBasedIndexing中存储key的索引
-        heapBasedIndexing[i] = heapBasedIndexing[j];
-        heapBasedIndexing[j] = swap;
-        inversePQ[heapBasedIndexing[i]] = i;//索引的索引
-        inversePQ[heapBasedIndexing[j]] = j;
-    }
-
     //上浮
     private void swim(int k) {
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
 
     //下浮
     private void sink(int k) {
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)){
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j + 1)) {
                 j++;
             }
-            if (!greater(k, j)){
+            if (!greater(k, j)) {
                 break;
             }
             exch(k, j);
@@ -188,8 +221,8 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             throw new NoSuchElementException("index is not in the priority queue");
         }
         keys[i] = key;
-        swim(inversePQ[i]);
-        sink(inversePQ[i]);
+        swim(indexedForIndexKey[i]);
+        sink(indexedForIndexKey[i]);
     }
 
     @Deprecated
@@ -197,21 +230,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         changeKey(i, key);
     }
 
-    public void decreaseKey(int i, Key key) {
-        if (i < 0 || i >= maxN) {
-            throw new IndexOutOfBoundsException();
-        }
-        if (!contains(i)) {
-            throw new NoSuchElementException("index is not in the priority queue");
-        }
-        if (keys[i].compareTo(key) <= 0){
-            throw new IllegalArgumentException("Calling decreaseKey() " +
-                    "with given argument would not strictly decrease the key");
-        }
-
-        keys[i] = key;
-        swim(inversePQ[i]);
-    }
 
     public void increaseKey(int i, Key key) {
         if (i < 0 || i >= maxN) {
@@ -225,7 +243,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
                     "with given argument would not strictly increase the key");
         }
         keys[i] = key;
-        sink(inversePQ[i]);
+        sink(indexedForIndexKey[i]);
     }
 
     public void delete(int i) {
@@ -235,14 +253,13 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         if (!contains(i)) {
             throw new NoSuchElementException("index is not in the priority queue");
         }
-        int index = inversePQ[i];
+        int index = indexedForIndexKey[i];
         exch(index, n--);
         swim(index);
         sink(index);
         keys[i] = null;
-        inversePQ[i] = -1;
+        indexedForIndexKey[i] = -1;
     }
-
 
 
     public Iterator<Integer> iterator() {
@@ -261,11 +278,11 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
                 copy.insert(heapBasedIndexing[i], keys[heapBasedIndexing[i]]);
         }
 
-        public boolean hasNext()  {
+        public boolean hasNext() {
             return !copy.isEmpty();
         }
 
-        public void remove()      {
+        public void remove() {
             throw new UnsupportedOperationException();
         }
 
@@ -279,7 +296,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 
     public static void main(String[] args) {
         // insert a bunch of strings
-        String[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };
+        String[] strings = {"it", "was", "the", "best", "of"};
 
         IndexMinPQ<String> heapBasedIndexing = new IndexMinPQ<String>(strings.length);
         for (int i = 0; i < strings.length; i++) {

@@ -5,11 +5,13 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
-	private final int d;				//Dimension of the heap
+	private final int dDimension;				//Dimension of the heap
 	private int n;						//Number of keys currently in the queue
 	private int nmax;					//Maximum number of items in the queue
-	private int[] pq;					//Multiway heap
-	private int[] qp;					//Inverse of pq : qp[pq[i]] = pq[qp[i]] = i
+	private int[] pqMultiwayBasedIndexing;					//Multiway heap
+	//Inverse of pqMultiwayBasedIndexing :
+	// qpIndexedForIndexKey[pqMultiwayBasedIndexing[i]] = pqMultiwayBasedIndexing[qpIndexedForIndexKey[i]] = i
+	private int[] qpIndexedForIndexKey;
 	private Key[] keys;					//keys[i] = priority of i
 	private final Comparator<Key> comp; //Comparator over the keys
 	
@@ -21,12 +23,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (D < 2) {
 			throw new IllegalArgumentException("Dimension should be 2 or over");
 		}
-		this.d = D;
+		this.dDimension = D;
 		nmax = N;
-		pq = new int[nmax+D];
-		qp = new int[nmax+D];
+		pqMultiwayBasedIndexing = new int[nmax+D];
+		qpIndexedForIndexKey = new int[nmax+D];
 		keys = (Key[]) new Comparable[nmax+D];
-		for (int i = 0; i < nmax+D; qp[i++] = -1);
+		for (int i = 0; i < nmax+D; qpIndexedForIndexKey[i++] = -1);
 		comp = new MyComparator();
 	}
 	
@@ -37,12 +39,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (D < 2) {
 			throw new IllegalArgumentException("Dimension should be 2 or over");
 		}
-		this.d = D;
+		this.dDimension = D;
 		nmax = N;
-		pq = new int[nmax+D];
-		qp = new int[nmax+D];
+		pqMultiwayBasedIndexing = new int[nmax+D];
+		qpIndexedForIndexKey = new int[nmax+D];
 		keys = (Key[]) new Comparable[nmax+D];
-		for (int i = 0; i < nmax+D; qp[i++] = -1);
+		for (int i = 0; i < nmax+D; qpIndexedForIndexKey[i++] = -1);
 		comp = C;
 	}
 
@@ -55,7 +57,7 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (i < 0 ||i >= nmax) {
 			throw new IndexOutOfBoundsException();
 		}
-		return qp[i+d] != -1;
+		return qpIndexedForIndexKey[i+dDimension] != -1;
 	}
 
 	public int size() {
@@ -70,9 +72,9 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (contains(i)) {
 			throw new IllegalArgumentException("Index already there");
 		}
-		keys[i+d] = key;
-		pq[n+d] = i;
-		qp[i+d] = n;
+		keys[i+dDimension] = key;
+		pqMultiwayBasedIndexing[n+dDimension] = i;
+		qpIndexedForIndexKey[i+dDimension] = n;
 		swim(n++);
 	}
 
@@ -81,7 +83,7 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Priority queue is empty");
 		}
-		return pq[d];
+		return pqMultiwayBasedIndexing[dDimension];
 	}
 
 
@@ -89,7 +91,7 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Priority queue is empty");
 		}
-		return keys[pq[d]+d];
+		return keys[pqMultiwayBasedIndexing[dDimension]+dDimension];
 	}
 
 
@@ -97,12 +99,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Priority queue is empty");
 		}
-		int min = pq[d];
+		int min = pqMultiwayBasedIndexing[dDimension];
 		exch(0, --n);
 		sink(0);
-		qp[min+d] = -1;
-		keys[pq[n+d]+d] = null;
-		pq[n+d] = -1;
+		qpIndexedForIndexKey[min+dDimension] = -1;
+		keys[pqMultiwayBasedIndexing[n+dDimension]+dDimension] = null;
+		pqMultiwayBasedIndexing[n+dDimension] = -1;
 		return min;
 	}
 
@@ -113,7 +115,7 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (! contains(i)) {
 			throw new NoSuchElementException("Specified index is not in the queue");
 		}
-		return keys[i+d];
+		return keys[i+dDimension];
 	}
 
 	public void changeKey(int i, Key key) {
@@ -123,12 +125,12 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (! contains(i)) {
 			throw new NoSuchElementException("Specified index is not in the queue");
 		}
-		Key tmp = keys[i+d];
-		keys[i+d] = key;
+		Key tmp = keys[i+dDimension];
+		keys[i+dDimension] = key;
 		if (comp.compare(key, tmp) <= 0) {
-			swim(qp[i+d]);
+			swim(qpIndexedForIndexKey[i+dDimension]);
 		}else{
-			sink(qp[i+d]);
+			sink(qpIndexedForIndexKey[i+dDimension]);
 		}
 	}
 
@@ -139,11 +141,11 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (! contains(i)) {
 			throw new NoSuchElementException("Specified index is not in the queue");
 		}
-		if (comp.compare(keys[i+d], key) <= 0) {
+		if (comp.compare(keys[i+dDimension], key) <= 0) {
 			throw new IllegalArgumentException("Calling with this argument would not decrease the Key");
 		}
-		keys[i+d] = key;
-		swim(qp[i+d]);
+		keys[i+dDimension] = key;
+		swim(qpIndexedForIndexKey[i+dDimension]);
 	}
 
 
@@ -154,11 +156,11 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (! contains(i)) {
 			throw new NoSuchElementException("Specified index is not in the queue");
 		}
-		if (comp.compare(keys[i+d], key) >= 0) {
+		if (comp.compare(keys[i+dDimension], key) >= 0) {
 			throw new IllegalArgumentException("Calling with this argument would not increase the Key");
 		}
-		keys[i+d] = key;
-		sink(qp[i+d]);
+		keys[i+dDimension] = key;
+		sink(qpIndexedForIndexKey[i+dDimension]);
 	}
 
 	public void delete(int i) {
@@ -168,39 +170,39 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		if (! contains(i)) {
 			throw new NoSuchElementException("Specified index is not in the queue");
 		}
-		int idx = qp[i+d];
+		int idx = qpIndexedForIndexKey[i+dDimension];
 		exch(idx, --n);
 		swim(idx);
 		sink(idx);
-		keys[i+d] = null;
-		qp[i+d] = -1;
+		keys[i+dDimension] = null;
+		qpIndexedForIndexKey[i+dDimension] = -1;
 	}
 	//Compares two keys
 	private boolean greater(int i, int j) {
-		return comp.compare(keys[pq[i+d]+d], keys[pq[j+d]+d]) > 0;
+		return comp.compare(keys[pqMultiwayBasedIndexing[i+dDimension]+dDimension], keys[pqMultiwayBasedIndexing[j+dDimension]+dDimension]) > 0;
 	}
 	
 	//Exchanges two keys
 	private void exch(int x, int y) {
-		int i = x+d, j = y+d;
-		int swap = pq[i];
-		pq[i] = pq[j];
-		pq[j] = swap;
-		qp[pq[i]+d] = x;
-		qp[pq[j]+d] = y;
+		int i = x+dDimension, j = y+dDimension;
+		int swap = pqMultiwayBasedIndexing[i];
+		pqMultiwayBasedIndexing[i] = pqMultiwayBasedIndexing[j];
+		pqMultiwayBasedIndexing[j] = swap;
+		qpIndexedForIndexKey[pqMultiwayBasedIndexing[i]+dDimension] = x;
+		qpIndexedForIndexKey[pqMultiwayBasedIndexing[j]+dDimension] = y;
 	}
 	
 	//Moves upward
 	private void swim(int i) {
-		if (i > 0 && greater((i-1)/d, i)) {
-			exch(i, (i-1)/d);
-			swim((i-1)/d);
+		if (i > 0 && greater((i-1)/dDimension, i)) {
+			exch(i, (i-1)/dDimension);
+			swim((i-1)/dDimension);
 		}
 	}
 	
 	//Moves downward
 	private void sink(int i) {
-		if (d*i+1 >= n) return;
+		if (dDimension*i+1 >= n) return;
 		int min = minChild(i);
 		while (min < n && greater(i, min)) {
 			exch(i, min);
@@ -211,7 +213,7 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 	
 	//Return the minimum child of i
 	private int minChild(int i) {
-		int loBound = d*i+1, hiBound = d*i+d;
+		int loBound = dDimension*i+1, hiBound = dDimension*i+dDimension;
 		int min = loBound;
 		for (int cur = loBound; cur <= hiBound; cur++) {
 			if (cur < n && greater(min, cur)) {
@@ -230,9 +232,9 @@ public class IndexMultiwayMinPQ<Key> implements Iterable<Integer> {
 		IndexMultiwayMinPQ<Key> clone;
 		
 		public MyIterator() {
-			clone = new IndexMultiwayMinPQ<Key>(nmax, comp, d);
+			clone = new IndexMultiwayMinPQ<Key>(nmax, comp, dDimension);
 			for (int i = 0; i < n; i++) {
-				clone.insert(pq[i+d], keys[pq[i+d]+d]);
+				clone.insert(pqMultiwayBasedIndexing[i+dDimension], keys[pqMultiwayBasedIndexing[i+dDimension]+dDimension]);
 			}
 		}
 

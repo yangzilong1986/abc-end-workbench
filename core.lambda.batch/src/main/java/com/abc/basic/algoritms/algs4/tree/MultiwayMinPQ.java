@@ -39,7 +39,9 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		order = 1;
 		keys = (Key[]) new Comparable[d << 1];
 		comp = new MyComparator();
-		for (Key key : a) insert(key);
+		for (Key key : a){
+			insert(key);
+		}
 	}
 	
 	public MultiwayMinPQ(Comparator<Key> comparator, Key[] a, int d) {
@@ -195,7 +197,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 		}
 	}
 	
-//default Comparator
+	//default Comparator
 	private class MyComparator implements Comparator<Key> {
 		@Override
 		public int compare(Key key1, Key key2) {

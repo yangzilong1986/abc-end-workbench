@@ -55,7 +55,9 @@ public class FloydWarshall {
         for (int i = 0; i < V; i++) {
             // compute shortest paths using only 0, 1, ..., i as intermediate vertices
             for (int v = 0; v < V; v++) {
-                if (edgeTo[v][i] == null) continue;  // optimization
+                if (edgeTo[v][i] == null) {
+                    continue;  // optimization
+                }
                 for (int w = 0; w < V; w++) {
                     if (distTo[v][w] > distTo[v][i] + distTo[i][w]) {
                         distTo[v][w] = distTo[v][i] + distTo[i][w];

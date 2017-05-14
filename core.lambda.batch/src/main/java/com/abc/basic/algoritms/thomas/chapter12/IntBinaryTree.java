@@ -100,10 +100,10 @@ public class IntBinaryTree {
     }
 
     /**
-     * 后续遍历，上升   \
-     *                  |
-     *                 |
-     *                |
+     * 后续遍历，上升    \
+     *                   /
+     *                 /
+     *               /
      * @param node
      * @return
      */

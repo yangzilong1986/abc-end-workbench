@@ -22,7 +22,9 @@ public class Selection {
         for (int i = 0; i < n; i++) {
             int min = i;
             for (int j = i+1; j < n; j++) {
-                if (less(a[j], a[min])) min = j;
+                if (less(a[j], a[min])) {
+                    min = j;
+                }
             }
             exch(a, i, min);
             assert isSorted(a, 0, i);
@@ -40,7 +42,9 @@ public class Selection {
         for (int i = 0; i < n; i++) {
             int min = i;
             for (int j = i+1; j < n; j++) {
-                if (less(comparator, a[j], a[min])) min = j;
+                if (less(comparator, a[j], a[min])) {
+                    min = j;
+                }
             }
             exch(a, i, min);
             assert isSorted(a, comparator, 0, i);

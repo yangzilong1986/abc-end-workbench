@@ -1,5 +1,8 @@
 package com.abc.basic.algoritms.algs4.tree;
 
+import com.abc.basic.algoritms.algs4.utils.In;
+import com.abc.basic.algoritms.algs4.utils.StdOut;
+
 import java.util.Iterator;
 import java.util.HashMap;
 import java.util.NoSuchElementException;
@@ -10,14 +13,20 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	private Node min;					//Minimum Node of the root list
 	private int size;					//Number of keys in the heap
 	private final Comparator<Key> comp;	//Comparator over the keys
-	private HashMap<Integer, Node> table = new HashMap<Integer, Node>(); //Used for the consolidate operation
+	//Used for the consolidate operation
+	//合并; 统一
+	//保存各个度对应的节点,如度为1的节点对应的节点
+	private HashMap<Integer, Node> table = new HashMap<Integer, Node>();
 	
 	//Represents a Node of a tree
 	private class Node {
-		Key key;						//Key of this Node
-		int order;						//Order of the tree rooted by this Node
-		Node prev, next;				//Siblings of this Node
-		Node child;						//Child of this Node
+		Key key;//Key of this Node
+		int order;	//Order of the tree rooted by this Node
+		//兄弟，姐妹
+//		Node left;
+//		Node right;
+		Node prev, next;//Siblings of this Node
+		Node child;	//Child of this Node
 	}
 	
 	/**
@@ -37,78 +46,51 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 		comp = new MyComparator();
 	}
 	
-	/**
-	 * Initializes a priority queue with given keys
-	 * Worst case is O(n)
-	 * @param a an array of keys
-	 */
 	public FibonacciMinPQ(Key[] a) {
 		comp = new MyComparator();
-		for (Key k : a) insert(k);
+		for (Key k : a) {
+			insert(k);
+		}
 	}
 	
-	/**
-	 * Initializes a priority queue with given keys
-	 * Worst case is O(n)
-	 * @param C a comparator over the keys
-	 * @param a an array of keys
-	 */
 	public FibonacciMinPQ(Comparator<Key> C, Key[] a) {
 		comp = C;
-		for (Key k : a) insert(k);
+		for (Key k : a) {
+			insert(k);
+		}
 	}
 
-	/**
-	 * Whether the priority queue is empty
-	 * Worst case is O(1)
-	 * @return true if the priority queue is empty, false if not
-	 */
 	public boolean isEmpty() {
 		return size == 0;
 	}
 
-	/**
-	 * Number of elements currently on the priority queue
-	 * Worst case is O(1)
-	 * @return the number of elements on the priority queue
-	 */
 	public int size() {
 		return size;
 	}
 
-	/**
-	 * Insert a key in the queue
-	 * Worst case is O(1)
-	 * @param key a Key
-	 */
 	public void insert(Key key) {
 		Node x = new Node();
 		x.key = key;
 		size++;
 		head = insert(x, head);
-		if (min == null) min = head;
-		else 			 min = (greater(min.key, key)) ? head : min;
+		if (min == null) {
+			min = head;
+		}else  {
+			min = (greater(min.key, key)) ? head : min;
+		}
 	}
 
-	/**
-	 * Gets the minimum key currently in the queue
-	 * Worst case is O(1)
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
-	 * @return the minimum key currently in the priority queue
-	 */
 	public Key minKey() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		return min.key;
 	}
 
-	/**
-	 * Deletes the minimum key
-	 * Worst case is O(log(n)) (amortized)
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
-	 * @return the minimum key
-	 */
 	public Key delMin() {
-		if (isEmpty()) throw new NoSuchElementException("Priority queue is empty");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Priority queue is empty");
+		}
 		head = cut(min, head);
 		Node x = min.child;
 		Key key = min.key;
@@ -118,18 +100,15 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 			min.child = null;
 		}
 		size--;
-		if (!isEmpty()) consolidate();
-		else 			min = null;
+		if (!isEmpty()) {
+			consolidate();
+		}else {
+			min = null;
+		}
 		return key;
 	}
 	
-	/**
-	 * Merges two heaps together
-	 * This operation is destructive
-	 * Worst case is O(1)
-	 * @param that a Fibonacci heap
-	 * @return the union of the two heaps
-	 */
+
 	public FibonacciMinPQ<Key> union(FibonacciMinPQ<Key> that) {
 		this.head = meld(head, that.head);
 		this.min = (greater(this.min.key, that.min.key)) ? that.min : this.min;
@@ -143,9 +122,13 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	
 	//Compares two keys
 	private boolean greater(Key n, Key m) {
-		if (n == null) return false;
-		if (m == null) return true;
-		return comp.compare(n,m) > 0;
+		if (n == null) {
+			return false;
+		}
+		if (m == null) {
+			return true;
+		}
+		return comp.compare(n,m) >= 0;
 	}
 	
 	//Assuming root1 holds a greater key than root2, root2 becomes the new root
@@ -157,7 +140,9 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	/*************************************
 	 * Function for consolidating all trees in the root list
 	 ************************************/
-	
+	/**
+	 * 合并
+	 */
 	//Coalesce the roots, thus reshapes the tree
 	private void consolidate() {
 		table.clear();
@@ -180,7 +165,9 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 				z = table.get(y.order);
 			}
 			table.put(y.order, y);
-			if (y.order > maxOrder) maxOrder = y.order;
+			if (y.order > maxOrder) {
+				maxOrder = y.order;
+			}
 		} while (x != head);
 		head = null;
 		for (Node n : table.values()) {
@@ -191,10 +178,7 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 		}
 	}
 	
-	/*************************************
-	 * General helper functions for manipulating circular lists
-	 ************************************/
-	
+
 	//Inserts a Node in a circular list containing head, returns a new head
 	private Node insert(Node x, Node head) {
 		if (head == null) {
@@ -227,9 +211,14 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	}
 	
 	//Merges two root lists together
+	// 混合，合并; 根List合并
 	private Node meld(Node x, Node y) {
-		if (x == null) return y;
-		if (y == null) return x;
+		if (x == null) {
+			return y;
+		}
+		if (y == null) {
+			return x;
+		}
 		x.prev.next = y.next;
 		y.next.prev = x.prev;
 		x.prev = y;
@@ -291,5 +280,26 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 			return ((Comparable<Key>) key1).compareTo(key2);
 		}
 	}
-	
+	public static void main(String[] args) {
+		FibonacciMinPQ<String> pq = new FibonacciMinPQ<String>();
+//		In in = new In(In.PATH_NAME + "m2.txt");
+//		while (!in.isEmpty()) {
+//			String item = in.readString();
+//			if (!item.equals("-")) {
+//				pq.insert(item);
+//			}
+//
+//		}
+		pq.insert("a");
+		pq.insert("c");
+		pq.insert("v");
+		pq.insert("c");
+		StdOut.println("(" + pq.size() + " left on pq)");
+//		while (!pq.isEmpty()) {
+//			StdOut.print(pq.delMin() + " ");
+//		}
+		for(String a:pq){
+			StdOut.print(a + " ");
+		}
+	}
 }

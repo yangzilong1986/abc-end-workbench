@@ -181,7 +181,9 @@ public class GlobalMincut {
             cp.t = v;
             for (Edge e : G.adj(v)) {
                 int w = e.other(v);
-                if (pq.contains(w)) pq.increaseKey(w, pq.keyOf(w) + e.weight());
+                if (pq.contains(w)) {
+                    pq.increaseKey(w, pq.keyOf(w) + e.weight());
+                }
             }
         }
         cp.weight = 0.0;

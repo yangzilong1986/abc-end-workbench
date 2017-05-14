@@ -16,6 +16,7 @@ public class KruskalMST {
     public KruskalMST(EdgeWeightedGraph G) {
         // more efficient to build heap by passing array of edges
         //边存放在最小堆中
+        //插入时已经排好序
         MinPQ<Edge> pqCut = new MinPQ<Edge>();
         for (Edge e : G.edges()) {
             pqCut.insert(e);
@@ -25,6 +26,7 @@ public class KruskalMST {
         UF uf = new UF(G.V());
         while (!pqCut.isEmpty() && mstTree.size() < G.V() - 1) {
             //从pq获得权重最小的边和它的顶点
+            //边最小堆中删除
             Edge e = pqCut.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -35,6 +37,7 @@ public class KruskalMST {
                 uf.union(v, w);
                 // add edge e to mst
                 //得到添加到最小生成树树中
+                //合并之后加入队列中
                 mstTree.enqueue(e);
                 weight += e.weight();
             }

@@ -1,12 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac IndexMaxPQ.java
- *  Execution:    java IndexMaxPQ
- *  Dependencies: StdOut.java
- *
- *  Maximum-oriented indexed PQ implementation using a binary heap.
- *
- ******************************************************************************/
-
 package com.abc.basic.algoritms.algs4.tree;
 
 import com.abc.basic.algoritms.algs4.utils.StdOut;

@@ -5,56 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ecyrd_speed4j_speed4j_0_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_eaio_uuid_uuid_3_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jamm_0_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__me_prettyprint_hector_core_0_8_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_all_0_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_thrift_0_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_deps_avro_1_4_0_cassandra_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_benchmark_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_xercesImpl_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mahout_mahout_examples_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mahout_mahout_integration_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mahout_mahout_math_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mahout_mahout_utils_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_commons_csv_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_uncommons_maths_uncommons_maths_1_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/AbstractBooleanPrefJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/AbstractJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/ConnectionPoolDataSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/GenericJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/MySQLBooleanPrefJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/MySQLJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/PostgreSQLBooleanPrefJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/PostgreSQLJDBCDataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/ReloadFromJDBCDataModel.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/CommonInitializer.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/CommonInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/SpringServletContainerInitializer.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/SpringServletContainerInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/WebConfig.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication$1.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication$2.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/com/abc/core/integraion/setup/WebApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/core.framework.integration-sources.jar" afterPath="$PROJECT_DIR$/core.framework.integration/target/core.framework.integration-sources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/core.framework.integration.jar" afterPath="$PROJECT_DIR$/core.framework.integration/target/core.framework.integration.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/matching/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/package-info.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/comstomer/config/DubboDemoActionConfig.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/comstomer/config/DubboDemoActionConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/comstomer/config/DubboDemoConsumerConfig.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/comstomer/config/DubboDemoConsumerConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/demo/CustomerSetupApp.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/demo/CustomerSetupApp.class" />
@@ -88,37 +41,33 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/provider/demo/user/facade/AnotherUserRestServiceImpl.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/provider/demo/user/facade/AnotherUserRestServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/provider/demo/user/facade/UserRestServiceImpl.class" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/com/abc/dubbo/provider/demo/user/facade/UserRestServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" afterPath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/pom.xml" afterPath="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/core.framework.integration/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/FloydWarshall.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/FloydWarshall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/GraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/BoruvkaMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/BoruvkaMST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/CycleDetector.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/CycleDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/HierholzerEulerianCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/HierholzerEulerianCycle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/SzwarcfiterLauerSimpleCycles.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/SzwarcfiterLauerSimpleCycles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraClosestFirstIterator.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraClosestFirstIterator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedDirectedCycle.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDirectedCycle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/CliqueMinimalSeparatorDecomposition.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/CliqueMinimalSeparatorDecomposition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/GabowStrongConnectivityInspector.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/GabowStrongConnectivityInspector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/KosarajuStrongConnectivityInspector.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/KosarajuStrongConnectivityInspector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/StoerWagnerMinimumCut.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/StoerWagnerMinimumCut.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/StrongConnectivityAlgorithm.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/StrongConnectivityAlgorithm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/TarjanLowestCommonAncestor.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/TarjanLowestCommonAncestor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/strongconnectivity/TransitiveClosure.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/TransitiveClosure.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntBinaryTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntBinaryTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/AllTests.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/AllTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -206,77 +155,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BellmanFordSP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java">
+      <file leaf-file-name="IndexFibonacciMinPQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexFibonacciMinPQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3223">
-              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-              <folding>
-                <element signature="e#3300#3301#0" expanded="true" />
-                <element signature="e#3336#3337#0" expanded="true" />
-                <element signature="method#check#0;class#BellmanFordSP#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EdgeWeightedDigraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-              <folding>
-                <element signature="e#2703#2704#0" expanded="true" />
-                <element signature="e#2727#2728#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DijkstraSP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2720#2734#0" expanded="true" />
-                <element signature="method#check#0;class#DijkstraSP#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcyclicSP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="-350">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Topological.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java">
+      <file leaf-file-name="FibonacciHeap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-652">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="273">
+              <caret line="377" column="4" selection-start-line="377" selection-start-column="4" selection-end-line="379" selection-end-column="19" />
               <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AcyclicLP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java">
+      <file leaf-file-name="Pair.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            <state relative-caret-position="190">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnionFind.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/UnionFind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="94" column="27" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FibonacciMinPQ.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
               <folding>
-                <element signature="e#2753#2767#0" expanded="true" />
+                <element signature="e#682#697#0" expanded="true" />
+                <element signature="e#5958#5966#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -307,29 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstOrder.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TarjanSCC.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Digraph.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/KosarajuSharirSCC.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AdjMatrixEdgeWeightedDigraph.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Arbitrage.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/HopcroftKarp.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNNApp.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNNDatingClass.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/__init__.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/hNNImgVector.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses_i.txt" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/AbstractGraph.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/MinimumSpanningTreeTest.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ToleranceDoubleComparator.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ModifiableInteger.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/TopologicalOrderIterator.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/Graphs.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/BoruvkaMinimumSpanningTree.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/astar/ALTAdmissibleHeuristic.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/astar/AStarShortestPath.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/clustering/ch09/NewsKMeansClustering.java" />
@@ -343,21 +248,44 @@
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/BoruvkaMST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/RecursionPrimMST.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraClosestFirstIterator.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDirectedCycle.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/classifier/TrainLogisticCli.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/FloydWarshall.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntBinaryTree.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.txt" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/FibonacciHeapTest.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/AllTests.java" />
+        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" />
       </list>
     </option>
   </component>
@@ -409,6 +337,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -458,6 +390,130 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jgrapht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jgrapht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jgrapht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -512,6 +568,116 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,52 +712,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="algs4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algoritms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digraph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Production">
@@ -715,15 +839,15 @@
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BellmanFordSP">
-    <configuration default="false" name="DijkstraSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.FibonacciMinPQ">
+    <configuration default="false" name="MinPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.digraph.*" />
+          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.digraph.DijkstraSP" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.tree.MinPQ" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -736,14 +860,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="DijkstraUndirectedSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FibonacciMinPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.digraph.*" />
+          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.digraph.DijkstraUndirectedSP" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.tree.FibonacciMinPQ" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -756,54 +880,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TrainLogisticCli" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MultiwayByIndexMinPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.abc.framework.samples.mia.classifier.*" />
+          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.mia.classifier.TrainLogisticCli" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core.framework.datamining" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="PrepareTwentyNewsgroupsCli" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.framework.samples.mia.classifier.ch14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.mia.classifier.ch14.PrepareTwentyNewsgroupsCli" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core.framework.datamining" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="BellmanFordSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.basic.algoritms.algs4.digraph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.digraph.BellmanFordSP" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.algs4.tree.MultiwayByIndexMinPQ" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -814,6 +898,52 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="core.lambda.batch" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FibonacciHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.abc.basic.algoritms.thomas.chapter20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.thomas.chapter20.FibonacciHeap" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="core.lambda.batch" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AllUtilTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.jgrapht.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="core.lambda.batch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.jgrapht.util" />
+      <option name="MAIN_CLASS_NAME" value="org.jgrapht.util.AllUtilTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1367,19 +1497,19 @@
       <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
       <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
       <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DijkstraSP" />
-      <item index="5" class="java.lang.String" itemvalue="Application.DijkstraUndirectedSP" />
-      <item index="6" class="java.lang.String" itemvalue="Application.TrainLogisticCli" />
-      <item index="7" class="java.lang.String" itemvalue="Application.PrepareTwentyNewsgroupsCli" />
-      <item index="8" class="java.lang.String" itemvalue="Application.BellmanFordSP" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MinPQ" />
+      <item index="5" class="java.lang.String" itemvalue="Application.FibonacciMinPQ" />
+      <item index="6" class="java.lang.String" itemvalue="Application.MultiwayByIndexMinPQ" />
+      <item index="7" class="java.lang.String" itemvalue="Application.FibonacciHeap" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.AllUtilTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.BellmanFordSP" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DijkstraSP" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PrepareTwentyNewsgroupsCli" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TrainLogisticCli" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DijkstraUndirectedSP" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FibonacciMinPQ" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AllUtilTests" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FibonacciHeap" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MultiwayByIndexMinPQ" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MinPQ" />
       </list>
     </recent_temporary>
   </component>
@@ -1461,13 +1591,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873562" sideWeight="0.50189906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18073593" sideWeight="0.4722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3148358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="242" width="1886" height="513" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276644" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1482,6 +1611,7 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="647" y="211" width="625" height="593" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14393939" sideWeight="0.5277311" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1997,12 +2127,6 @@
           <option name="timeStamp" value="1492" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeap.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="1496" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/DepthFirstIteratorTest.java</url>
           <line>62</line>
           <properties />
@@ -2106,15 +2230,51 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java</url>
-          <line>217</line>
+          <line>218</line>
           <properties />
           <option name="timeStamp" value="1846" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java</url>
-          <line>214</line>
+          <line>215</line>
           <properties />
           <option name="timeStamp" value="1854" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="1866" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="1870" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="1876" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="1877" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="1878" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayByIndexMinPQ.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="1901" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
@@ -2162,7 +2322,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1863" />
+      <option name="time" value="1904" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2171,146 +2331,165 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/KosarajuSharirSCC.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/FloydWarshallGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="-2100">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/CC.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/JohnsonGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter26/EdmondsKarpGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/BFSGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/DFSGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/PrimSpanTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#643#649#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
+            <element signature="e#1867#1868#0" expanded="false" />
+            <element signature="e#2672#2673#0" expanded="false" />
+            <element signature="e#2706#2707#0" expanded="false" />
+            <element signature="e#3563#3564#0" expanded="false" />
+            <element signature="e#3603#3604#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <element signature="method#check#0;class#BellmanFordSP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Digraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/UndirectedCycleBase.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="1375">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/CycleDetector.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/SampleUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2825">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="-402">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/JohnsonSimpleCycles.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-875">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-977">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/Edge.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#780#781#0" expanded="false" />
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#1170#1171#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-          <folding>
-            <element signature="e#702#703#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#1310#1311#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
-            <element signature="e#1364#1365#0" expanded="false" />
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#4796#4804#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/hadoop/als/ParallelALSFactorizationJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4239">
-          <caret line="45" column="61" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/classifier/AbstractVectorClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/vectorizer/common/PartialVectorMergeReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="275">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/math/hadoop/DistributedRowMatrix.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearchST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="-300">
+          <caret line="196" column="19" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/math/MatrixWritable.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2525">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="298">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/UF.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Shell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/QuickX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -2318,337 +2497,273 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="-175">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/MergeX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Merge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="101" column="41" selection-start-line="100" selection-start-column="7" selection-end-line="101" selection-end-column="41" />
           <folding>
-            <element signature="e#487#493#0" expanded="false" />
-            <element signature="e#680#686#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1520#1521#0" expanded="false" />
-            <element signature="e#1549#1550#0" expanded="false" />
-            <element signature="method#check#0;class#KruskalMST#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#2431#2432#0" expanded="false" />
+            <element signature="e#2484#2485#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/BoruvkaMinimumSpanningTree.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="106" column="25" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="28" />
+        <state relative-caret-position="-2710">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/UnionFind.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="-5760">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Quick3string.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2235">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="205" column="9" selection-start-line="205" selection-start-column="9" selection-end-line="205" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#5059#5067#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycleX.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MaxPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="25">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-935">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/UF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/TopM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4979">
+          <caret line="303" column="26" selection-start-line="303" selection-start-column="19" selection-end-line="303" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQIndexedBinomial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1853">
+          <caret line="395" column="43" selection-start-line="395" selection-start-column="38" selection-end-line="395" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayByIndexMinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="17" />
           <folding>
-            <element signature="method#check#0;class#DirectedCycleX#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3599">
-          <caret line="148" column="31" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4125#4126#0" expanded="false" />
-            <element signature="e#4166#4167#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/BoruvkaMST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#993#999#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/RecursionPrimMST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraClosestFirstIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2202">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraShortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#521#522#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#check#0;class#PrimMST#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="method#check#0;class#DijkstraUndirectedSP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraAllPairsSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AssignmentProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/CPM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BreadthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstDirectedPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1025">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2900">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/model/jdbc/ConnectionPoolDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/examples/src/main/java/org/apache/mahout/classifier/sgd/LogisticModelParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/classifier/ch14/PrepareTwentyNewsgroupsCli.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/classifier/TrainLogisticCli.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="54" column="48" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDirectedCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1825">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#1259#1260#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2000">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#2703#2704#0" expanded="true" />
-            <element signature="e#2727#2728#0" expanded="true" />
+            <element signature="e#1352#1360#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="212" column="12" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="12" />
+        <state relative-caret-position="-2754">
+          <caret line="175" column="17" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEdge.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/FibonacciHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#745#746#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-325">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexFibonacciMinPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        <state relative-caret-position="-350">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/FibonacciHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2720#2734#0" expanded="true" />
-            <element signature="method#check#0;class#DijkstraSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3223">
-          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding>
-            <element signature="e#3300#3301#0" expanded="true" />
-            <element signature="e#3336#3337#0" expanded="true" />
-            <element signature="method#check#0;class#BellmanFordSP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
-          <folding>
-            <element signature="e#2753#2767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="250">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java">
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/FibonacciHeapNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-652">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="-225">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/UnionFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="94" column="27" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/AlwaysEqualComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="377" column="4" selection-start-line="377" selection-start-column="4" selection-end-line="379" selection-end-column="19" />
           <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+          <folding>
+            <element signature="e#682#697#0" expanded="true" />
+            <element signature="e#5958#5966#0" expanded="true" />
           </folding>
         </state>
       </provider>

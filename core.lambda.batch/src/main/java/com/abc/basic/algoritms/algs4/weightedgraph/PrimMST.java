@@ -68,7 +68,7 @@ public class PrimMST {
     private void scan(EdgeWeightedGraph G, int v) {
         marked[v] = true;
         for (Edge e : G.adj(v)) {
-            int w = e.other(v);
+            int w = e.other(v);//边的另一个顶点
             if (marked[w]) {
                 // v-w is obsolete edge
                 //已经遍历过了
