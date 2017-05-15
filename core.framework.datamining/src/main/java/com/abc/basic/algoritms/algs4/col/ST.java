@@ -20,6 +20,9 @@ public class ST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
         st = new TreeMap<Key, Value>();
     }
 
+    public TreeMap<Key, Value> getST(){
+        return st;
+    }
     public Value get(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("called get() with null key");

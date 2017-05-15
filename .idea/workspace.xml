@@ -5,739 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/CholeskyDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/EigenvalueDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/LUDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/Matrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/QRDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/SingularValueDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/Jama/util/Maths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Accumulator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Average.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/BlackFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Cat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ClosestPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/CollisionSystem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Counter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Date.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DoublingRatio.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/DoublingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FFT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/FenwickTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GaussJordanElimination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/GaussianElimination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Knuth.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LinearProgramming.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/LinearRegression.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Particle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/PatriciaSET.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/PatriciaST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/RandomSeq.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/RunLength.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/SegmentTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/StaticSETofInts.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/StdRandom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ThreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/ThreeSumFast.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Transaction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/TwoPersonZeroSumGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/WhiteFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Whitelist.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Alphabet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/BoyerMoore.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Count.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/GREP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/KMP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/KWIK.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LSD.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LSDForInt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LZW.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LongestCommonSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LongestRepeatedSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/MSD.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/MSDForInt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/NFA.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Quick3string.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/RabinKarp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/SuffixArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/SuffixArrayX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TrieSET.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/TrieST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/DeDup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedBag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/LookupCSV.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayBag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/col/Stack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicLP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AcyclicSP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AdjMatrixEdgeWeightedDigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Arbitrage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/AssignmentProblem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BellmanFordSP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/BreadthFirstDirectedPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/CPM.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstDirectedPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DepthFirstOrder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Digraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DigraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraAllPairsSP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraSP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DijkstraUndirectedSP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedCycleX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedDFS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedDFSByStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEulerianCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/DirectedEulerianPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDirectedCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/FloydWarshall.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/GabowSCC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/KosarajuSharirSCC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/SymbolDigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TarjanSCC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/Topological.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TopologicalX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/digraph/TransitiveClosure.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FlowEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FlowNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/FordFulkerson.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Bipartite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BipartiteX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BreadthFirstPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/BreadthFirstPathsCheck.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/CC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Cycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DegreesOfSeparation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DepthFirstPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DepthFirstSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/DepthFirstSearchByStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/EulerianPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/GraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/HopcroftKarp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/graph/SymbolGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/FarthestPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/GrahamScan.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearchST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/FileIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/FrequencyCounter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/LinearProbingHashST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/LookupIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/SeparateChainingHashST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/SequentialSearchST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/BinaryInsertion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Insertion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/InsertionX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval1D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Interval2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Merge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/MergeBU.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/MergeX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Quick3way.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/QuickX.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Shell.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BSTRedBlack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/BTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexFibonacciMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQExFileSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMultiwayMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MaxPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQBinomial.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQIndexedBinomial.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/MultiwayMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/SampleUF.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/StableMinPQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/TopM.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/UF.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/WeightedQuickUnionUF.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryIn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryStdIn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Draw.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/DrawListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdAudio.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdDraw.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdIn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdOut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StdStats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Stopwatch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/StopwatchCPU.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/BoruvkaMST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/Edge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/EdgeWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/LazyPrimMST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/PrimMST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/RecursionPrimMST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryDump.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryOut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/BinaryStdOut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Genome.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/HexDump.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Huffman.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/Picture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/zip/PictureDump.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/AbstractBaseGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/AbstractGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DefaultDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DefaultEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DefaultWeightedEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DirectedEdgeContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DirectedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DirectedSpecifics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/DirectedWeightedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/EdgeReversedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/FastLookupDirectedSpecifics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/FastLookupUndirectedSpecifics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/GraphDelegator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/GraphPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/GraphWalk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/Graphs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/IntrusiveEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/Pair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/Pseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/SimpleDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/SimpleDirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/SimpleGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/SimpleWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/UndirectedEdgeContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/UndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/UndirectedSpecifics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/UnorderedPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/WeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/WeightedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/CycleDetector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/DirectedSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/EulerianCycleAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/HawickJamesSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/HierholzerEulerianCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/JohnsonSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/PatonCycleBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/SzwarcfiterLauerSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/TarjanSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/TiernanSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/cycle/UndirectedCycleBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/edgefactory/ClassBasedEdgeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/edgefactory/EdgeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/edgefactory/EdgeSetFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/ConnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/EventListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/EventObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/GraphChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/GraphEdgeChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/GraphListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/GraphVertexChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/ListenableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/events/VertexSetListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/AsUndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/DefaultDirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/DirectedAcyclicGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/DirectedMaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/DirectedSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/EdgeReversedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/MaskEdgeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/MaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/MaskVertexSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/Subgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/graph/UndirectedMaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/KShortestPathAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/KShortestPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/KShortestPathsIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/PathValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/RankingPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/kshortestpath/RankingPathElementList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/CliqueMinimalSeparatorDecomposition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/GabowStrongConnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/KosarajuStrongConnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/StoerWagnerMinimumCut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/StrongConnectivityAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/TarjanLowestCommonAncestor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/scc/TransitiveClosure.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/AbstractPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/AbstractPathElementList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/AllDirectedPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/BaseShortestPathAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/ListSingleSourcePathsImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/ShortestPathAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/astar/ALTAdmissibleHeuristic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/astar/AStarAdmissibleHeuristic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/astar/AStarShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/bellmanford/BellmanFordIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/bellmanford/BellmanFordPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/bellmanford/BellmanFordShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/BidirectionalDijkstraShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraClosestFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/DijkstraShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/dijkstra/TreeSingleSourcePathsImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/shortestpath/floydwarshall/FloydWarshallShortestPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/BoruvkaMinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/KruskalMinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/PrimMinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/SpannerAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/spanning/SpanningTreeAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/specifics/Specifics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/BellmanFordShortestPathTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/BiconnectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/ClosestFirstIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/CycleDetectorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/DijkstraClosestFirstIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/DijkstraShortestPathTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/DirectedGraphMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/DirectedSimpleCyclesTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/KShortestPathCompleteGraph4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/KShortestPathCostTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/MinimumSpanningTreeTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/test/ShortestPathTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/AbstractGraphIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/BreadthFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/ClosestFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/CrossComponentIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/DepthFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/GraphIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/traverse/TopologicalOrderIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ArrayUnenforcedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ArrayUnenforcedSetEdgeSetFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/FibonacciHeap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/FibonacciHeapNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ModifiableInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/ToleranceDoubleComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/TypeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/base/graph/util/UnionFind.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTreeBadKeyValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTreeBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTreeException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTreeKeyMissing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BplusTreeLong.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BufferFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/BufferFileException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/IByteTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/IStringTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/ITreeIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/LinkedFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/LinkedFileException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/bplusTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/encodingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/hBplusTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/hBplusTreeBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/xBplusTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/bplustree/xBplusTreeBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/BubbleSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/BubbleSorterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/InsertionSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/InsertionSorterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/MergeSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter02/MergeSorterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/Heap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/HeapSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/HeapSorterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter06/IntHeapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/QuickSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/QuickSorterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter07/SorterBenchmark.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter08/LinearTimeSorter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter09/OrderStatistics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter09/OrderStatisticsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/ArrayStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/ArrayStackTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/BinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntArrayQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntArrayQueueTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntArrayStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntArrayStackTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntLinkedQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntLinkedQueueTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntLinkedStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/IntLinkedStackTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter10/UnboundedBranchingTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter11/ChainingHashtable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter11/OpenAddressHashtable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter11/OpenAddressHashtableTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter13/IntRedBlackTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/BaseNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/BaseRedBlackTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/Color.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/DynamicOrderStatistics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/Interval.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/IntervalTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter14/RedBlackTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter15/AssemblyLineScheduler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter15/CoinChange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter15/LCS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter15/MatrixChainMultiplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter15/OptimalBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter16/ActivitySelection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter16/HuffmanCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter17/Stack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter18/BTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter18/BTreeTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter19/BinomialHeapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/LinkedDisjointedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/LinkedDisjointedSetTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/BFSGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/DFSGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/StronglyConnectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/represent/AdjacencyListRepresentation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter22/represent/AdjacencyMatrixRepresentation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/PrimSpanTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter24/BellmanFordGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter24/DagGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter24/DijkstraGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/FloydWarshallGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/JohnsonGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter25/MatrixMultiplyGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter26/EdmondsKarpGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/common/BaseTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/common/SorterTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/HDFSUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/IdentityUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/ShowUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/distance/CosineDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/distance/EuclideanDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/distance/IDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/distance/ManhattanDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/Document.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/DocumentHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/DocumentLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/DocumentSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/DocumentSimilarity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/document/DocumentUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/enums/SimpleDateFormatEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/function/DoubleDoubleFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/function/DoubleFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/function/Functions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/iterator/AbstractIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/matrix/AbstractMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/matrix/DoubleMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/matrix/Matrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/preconditions/Preconditions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/vector/AbstractVector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/vector/DoubleVector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/common/vector/Vector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/remote/Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/remote/RemoteActor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/remote/RemoteServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/Bootstrap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/Master.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/Operation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/OperationResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/OperationSymbol.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/Pi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/akka/simple/Worker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/emotion/Emotion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/emotion/SemanticOrientationPointMutualInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/AbstractFeatureSelect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/FSChiSquare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/FSExpectedCrossEntropy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/FSGenericAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/FSInformationGain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/FSMutualInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/IFeatureSelect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/SVDRecommend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/distance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/doc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/featureselect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/mainclass.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/pca.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/secom.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/stopwords.dic" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/svdRec.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/testSet.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/featureselect/py/word.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/genetic/builder/DocBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/genetic/builder/SimpleBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/genetic/py/genericalgorithm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lcs/LCS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/builder/LDABuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/builder/LdaGibbsSampler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/ComUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/ConstantConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/Documents.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/FileUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/LdaGibbsSampling.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/LdaModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/MatrixUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/PathConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/Sorting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/Stopwords.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/lda/sample/wordFreq.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/BasedItemRecommend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/BasedUserRecommend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/data/DataLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/data/Movie.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/data/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/algorithm/recommend/data/UserMovie.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/Association.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/builder/AbstractBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/builder/AprioriBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/builder/Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/builder/FPGrowthBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/builder/FPTreeBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/data/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/data/DataHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/data/DataLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/data/Instance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/data/ItemSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/mr/AprioriJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/mr/CalculateSupportMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/mr/FPGrowthJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/mr/FPGrowthMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/mr/Frequency1ItemSetMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/node/AssociationRule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/node/AssociationRuleHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/node/FPTreeNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/node/FPTreeNodeHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/py/apriori.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/apriori/py/fpGrowth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/similar/Similar.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/similar/data/NewsGroups.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/association/similar/data/NewsGroupsLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/AdaboostBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/AdaboostClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/AdaboostDTBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/AdaboostLRBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/LRClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/builder/WeakClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/data/DataResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/data/DataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/data/TrainResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/data/TrainResultSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/adaboost/py/adaboost.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/Example001.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/Example002.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/Example003.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/Example004.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/builder/AbstractBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/builder/BernoulliBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/builder/Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/builder/MultinomialBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/data/DataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/bayes/py/bayes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/DecisionTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/DecisionTreeUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/RandomForest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/BuilderAbstractImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/DecisionTreeAbstractBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/DecisionTreeC45Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/DecisionTreeID3Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/DecisionTreeSliqBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/DecisionTreeSprintBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/ForestBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/TreeBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/TreeC45Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/builder/TreeID3Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/Attribute.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/AttributeDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/BestAttribute.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataError.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataSplit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/DataSplitItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/data/Instance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/AbstractJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/AttributeStatisticsMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/CalculateC45GainRatioMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/CalculateGiniMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/CalculateSprintGiniMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DataFileSplitMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeBuilderMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeBuilderSMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeC45Job.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeClassifyMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeSprintBJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeSprintJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/dt/DecisionTreeSprintSJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/rf/RandomForestBuilderMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/rf/RandomForestC45Job.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/rf/RandomForestClassifyMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/rf/RandomForestSprintJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/writable/AttributeGainWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/writable/AttributeGiniWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/writable/AttributeKVWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/writable/AttributeWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/mr/writable/TreeNodeWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/BinaryTreeNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/BranchNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/DefaultTreeNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/ForestNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/LeafNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/Node.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/TreeNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/node/TreeNodeHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/pruning/Pruning.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/pruning/PruningCC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/pruning/PruningME.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/pruning/PruningPE.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/pruning/PruningRE.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/py/DataHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/py/treePlotter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/decisiontree/py/trees.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/knn/KNN.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/knn/data/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/knn/mr/KNNClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/knn/mr/writable/PointWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/knn/py/kNN.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/Regression.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/builder/AbstractBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/builder/AloneGradientAscentBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/builder/GradientAscentBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/builder/LeastSquaresBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/builder/RandomGradientAscentBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/data/DataResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/data/DataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/data/DataSetHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/data/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/regression/py/logRegres.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/SVM.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/libsvm/svm_predict.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/libsvm/svm_scale.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/libsvm/svm_toy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/libsvm/svm_train.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/classifier/svm/py/svmMLiA.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/canopy/Canopy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/canopy/CanopyBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/canopy/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/DBSCAN.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/builder/BDocDBScanBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/builder/DBScanBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/builder/DocDBScanBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/builder/DocDBScanOptBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/builder/HtmlDBScanBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/data/DataPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/dbscan/data/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/AbstractCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/BDocKMediodsCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/BinaryKMeansCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/DocKMediodsCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/DocKMediodsOptCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/KMeansCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/KMeansOptCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/builder/KMediodsCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/data/DataPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/data/DataPointCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/data/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/data/PointCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/kmeans/py/kMeans.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/SpectralClustering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/build/BSpectralClusteringBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/build/SpectralClusteringBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/data/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/data/DataPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/data/DataPointCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/input/CInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/input/CombineSmallFileInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/input/CustomInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/input/NewInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/input/SplitBigFileInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/output/COutputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/output/CusOutputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/format/output/CustomOutputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/AbstractJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/JobHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/JobParams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/JobRunner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/annotation/CmdLineParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/annotation/RunFrequency.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/strategy/DefaultStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/strategy/JobStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/job/strategy/StrategyFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/CombineSmallFileMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/JobMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/MatrixMatrixMultiplyMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/MatrixMultiplyMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/MatrixVectorMultiplyMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/TopNJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/WordCountMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/DateTableStatisticsMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/PartitionerTestMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/PretreatmentDriver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/TableJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/TestMR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/mapreduce/a/writable/DateTableWritable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hadoop/writable/TextPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/format/input/CustomInputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/format/output/CustomOutputFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/serde/SampleSerDe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/serde/TestSerDe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/serde/WebSerDe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/udf/AddFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/udf/AvgFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/hive/udf/ExplodeMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/DateUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/DictionaryUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/DistanceUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/HDFSUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/JSONUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/MathUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/PropertiesUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/RandomUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/ReflectUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/SegUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/ShowUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/Stemmer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/TextUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/WordUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/http/HttpClientUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/http/HttpCommonsUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/http/HttpUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/jdbc/ConnectionPool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/jdbc/JDBCUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/jdbc/ResultSetHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/utils/jdbc/WrapperConnection.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Complex.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Complex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/SparseVector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/Vector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/search/ST.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -825,11 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="kNN.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kNN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="120" column="89" selection-start-line="120" selection-start-column="85" selection-end-line="120" selection-end-column="89" />
+            <state relative-caret-position="215">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="131" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -838,23 +111,13 @@
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="1034" column="74" selection-start-line="1034" selection-start-column="45" selection-end-line="1034" selection-end-column="74" />
+            <state relative-caret-position="4240">
+              <caret line="918" column="46" selection-start-line="918" selection-start-column="46" selection-end-line="918" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#21097#21098#0" expanded="true" />
                 <element signature="e#21137#21138#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Complex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Complex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -872,8 +135,8 @@
       <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="119" selection-end-column="36" />
+            <state relative-caret-position="345">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#1029#1030#0" expanded="true" />
                 <element signature="e#1053#1054#0" expanded="true" />
@@ -889,18 +152,52 @@
       <file leaf-file-name="DefaultVector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#1563#1564#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#2558#2559#0" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2634#2635#0" expanded="true" />
-                <element signature="e#2682#2683#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
+                <element signature="e#1969#1970#0" expanded="true" />
+                <element signature="e#2930#2931#0" expanded="true" />
+                <element signature="e#2978#2979#0" expanded="true" />
+                <element signature="e#3006#3007#0" expanded="true" />
+                <element signature="e#3054#3055#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexMinPQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
+              <folding>
+                <element signature="e#8602#8610#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinPQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="195" column="47" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="47" />
+              <folding>
+                <element signature="e#5059#5067#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -909,52 +206,34 @@
       <file leaf-file-name="ST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="371">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
                 <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SET.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1975">
-              <caret line="103" column="25" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="450" column="0" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+            <state relative-caret-position="-310">
+              <caret line="428" column="75" selection-start-line="428" selection-start-column="75" selection-end-line="428" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2332#2333#0" expanded="true" />
-                <element signature="e#2372#2373#0" expanded="true" />
-                <element signature="e#5180#5181#0" expanded="true" />
-                <element signature="e#5234#5235#0" expanded="true" />
-                <element signature="e#8123#8124#0" expanded="true" />
-                <element signature="e#8159#8160#0" expanded="true" />
+                <element signature="e#2359#2360#0" expanded="true" />
+                <element signature="e#2399#2400#0" expanded="true" />
+                <element signature="e#5207#5208#0" expanded="true" />
+                <element signature="e#5261#5262#0" expanded="true" />
+                <element signature="e#8150#8151#0" expanded="true" />
+                <element signature="e#8186#8187#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1030,12 +309,12 @@
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/SparseVector.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
       </list>
     </option>
   </component>
@@ -1438,6 +717,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="matrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algs4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2221,7 +1538,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1920" height="1039" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2244,7 +1561,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2967,30 +2284,6 @@
           <properties />
           <option name="timeStamp" value="1957" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java</url>
-          <line>436</line>
-          <properties />
-          <option name="timeStamp" value="1987" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java</url>
-          <line>438</line>
-          <properties />
-          <option name="timeStamp" value="1988" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java</url>
-          <line>273</line>
-          <properties />
-          <option name="timeStamp" value="1989" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java</url>
-          <line>434</line>
-          <properties />
-          <option name="timeStamp" value="1990" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
           <line>51</line>
@@ -3032,7 +2325,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1991" />
+      <option name="time" value="1993" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3041,27 +2334,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch10/Portland.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch11/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch10/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch10/kMeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2400">
@@ -3402,10 +2674,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1034" column="74" selection-start-line="1034" selection-start-column="45" selection-end-line="1034" selection-end-column="74" />
+        <state relative-caret-position="4240">
+          <caret line="918" column="46" selection-start-line="918" selection-start-column="46" selection-end-line="918" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#21097#21098#0" expanded="true" />
@@ -3414,24 +2694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="119" selection-end-column="36" />
+        <state relative-caret-position="345">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#1029#1030#0" expanded="true" />
             <element signature="e#1053#1054#0" expanded="true" />
@@ -3443,53 +2709,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="72" />
+        <state relative-caret-position="215">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="131" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
+          <folding>
+            <element signature="e#8602#8610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="195" column="47" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="47" />
+          <folding>
+            <element signature="e#5059#5067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2634#2635#0" expanded="true" />
-            <element signature="e#2682#2683#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
+            <element signature="e#2978#2979#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3054#3055#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="450" column="0" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+        <state relative-caret-position="-310">
+          <caret line="428" column="75" selection-start-line="428" selection-start-column="75" selection-end-line="428" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-            <element signature="e#5180#5181#0" expanded="true" />
-            <element signature="e#5234#5235#0" expanded="true" />
-            <element signature="e#8123#8124#0" expanded="true" />
-            <element signature="e#8159#8160#0" expanded="true" />
+            <element signature="e#2359#2360#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#5207#5208#0" expanded="true" />
+            <element signature="e#5261#5262#0" expanded="true" />
+            <element signature="e#8150#8151#0" expanded="true" />
+            <element signature="e#8186#8187#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="120" column="89" selection-start-line="120" selection-start-column="85" selection-end-line="120" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>

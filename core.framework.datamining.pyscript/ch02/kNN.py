@@ -126,7 +126,10 @@ def classify0(inX, dataSet, labels, k):
     #按照值，返回排序索引,即 对距离大小进行排序
     sortedDistIndicies = distances.argsort()
     #sortedDistIndicies <type 'list'>: [2, 3, 1, 0]
-
+    # 0 = {TreeMap$Entry@519} "0" -> "1.4866068747318506"
+    # 1 = {TreeMap$Entry@520} "1" -> "1.4142135623730951"
+    # 2 = {TreeMap$Entry@521} "2" -> "0.0"
+    # 3 = {TreeMap$Entry@522} "3" -> "0.1"
     # 注：tuple（元祖） 用小括号，
     # Dictionary (字典) : 用{}来定义，
     # list（列表） 用方括号[]

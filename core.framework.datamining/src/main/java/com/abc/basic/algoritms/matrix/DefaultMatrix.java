@@ -3,6 +3,8 @@ package com.abc.basic.algoritms.matrix;
 import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
+import java.util.TreeMap;
+
 public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.io.Serializable{
 
     protected DefaultMatrix matrixT;
@@ -383,6 +385,14 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
             throw new IllegalArgumentException("矩阵的维度必须一致(Matrix dimensions must agree.)");
         }
     }
+
+    /**
+     * sortVectorByKey
+     */
+    public TreeMap sortVectorByKey(int row){
+        DefaultVector vector=this.matrix.get(row);
+        return vector.sortMin();
+    }
     /**
      * 返回形状，即多少列多少行
      */
@@ -437,6 +447,10 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         DefaultMatrix sqrtMatrix =plusMatrix.sqrt();
 
         StdOut.println("sqrtMatrix = " + sqrtMatrix);
+
+        TreeMap mapSort=sqrtMatrix.sortVectorByKey(0);
+        StdOut.println("map = " + mapSort);
+
         /**
         *a = np.array([
         *     [1,2,3],
@@ -448,6 +462,10 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         * print(a.sum(axis=0)) # 对行方向求和
                 * 结果 [5 7 9]
         **/
+
+    }
+
+    public static void testComputer(){
         double[][] sumData = {{ 1,2,3},{4,5,6}};
         DefaultMatrix sumMatrix=new DefaultMatrix(sumData);
         StdOut.println("sumMatrix = " + sumMatrix);
@@ -461,7 +479,6 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         DefaultMatrix sumResultDefaultl=sumMatrix.plus();
         StdOut.println("\nsumResultDefaultl = " + sumResultDefaultl);
     }
-
     public static void testDefaultMatrix() {
         DefaultMatrix a = new DefaultMatrix(2);
         double[] d = {1, 2};

@@ -2,6 +2,9 @@ package com.abc.basic.algoritms.matrix;
 
 import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
+import com.thoughtworks.xstream.converters.collections.TreeMapConverter;
+
+import java.util.TreeMap;
 
 public class DefaultVector implements Cloneable, java.io.Serializable{
     private int d;                   // dimension
@@ -38,6 +41,15 @@ public class DefaultVector implements Cloneable, java.io.Serializable{
         }
     }
 
+    public TreeMap<Double, Integer> sortMin(){
+        DefaultVector defaultVector= (DefaultVector) this.clone();
+        ST<Double, Integer> sort=new ST<>();
+        for(int i:defaultVector.st.keys()){
+            sort.put(st.get(i),i);
+        }
+        return sort.getST();
+    }
+
     public double[] toArray(){
         double[] array=new double[d];
         for (int j=0;j<d;j++){
@@ -54,7 +66,7 @@ public class DefaultVector implements Cloneable, java.io.Serializable{
         for(int j=0;j<c.length;j++){
             defaultVector.put(j,c[j]);
         }
-        return new DefaultVector(this.d);
+        return defaultVector;
     }
 
     public Object clone () {
