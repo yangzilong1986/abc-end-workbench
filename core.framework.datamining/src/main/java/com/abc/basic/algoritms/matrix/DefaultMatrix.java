@@ -386,6 +386,9 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         }
     }
 
+    public Shape getShape(){
+        return new Shape(this.row,this.col);
+    }
     /**
      * sortVectorByKey
      */
@@ -406,8 +409,8 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
     }
 
     public static class Shape{
-        final int row;
-        final int col;
+        public final int row;
+        public final int col;
 
         public Shape(int row,int col){
             this.row=row;
@@ -449,23 +452,26 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         StdOut.println("sqrtMatrix = " + sqrtMatrix);
 
         TreeMap mapSort=sqrtMatrix.sortVectorByKey(0);
+
+
         StdOut.println("map = " + mapSort);
 
-        /**
-        *a = np.array([
-        *     [1,2,3],
-        *     [4,5,6]
-        * ])
-        * print(a.sum())           # 对整个矩阵求和
-                *  结果 21
-                *
-        * print(a.sum(axis=0)) # 对行方向求和
-                * 结果 [5 7 9]
-        **/
+
 
     }
 
     public static void testComputer(){
+        /**
+         *a = np.array([
+         *     [1,2,3],
+         *     [4,5,6]
+         * ])
+         * print(a.sum())           # 对整个矩阵求和
+         *  结果 21
+         *
+         * print(a.sum(axis=0)) # 对行方向求和
+         * 结果 [5 7 9]
+         **/
         double[][] sumData = {{ 1,2,3},{4,5,6}};
         DefaultMatrix sumMatrix=new DefaultMatrix(sumData);
         StdOut.println("sumMatrix = " + sumMatrix);
