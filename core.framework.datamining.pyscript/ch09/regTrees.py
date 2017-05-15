@@ -7,16 +7,15 @@ def loadDataSet(fileName):      #general function to parse tab -delimited floats
     fr = open(fileName)
     for line in fr.readlines():
         curLine = line.strip().split('\t')
+        #将每行映射为浮点数
         fltLine = map(float,curLine) #map all elements to float()
         dataMat.append(fltLine)
     return dataMat
 
 #数据集合，待切分的特征，特征值，将数据集合切分得到两个子集
 def binSplitDataSet(dataSet, feature, value):
-    dataGt = dataSet[nonzero(dataSet[:,feature] >= value)[0],:]
-    mat0 = dataGt[0]
-    # mat0 = dataSet[nonzero(dataSet[:,feature] > value)[0],:][0]
-    mat1 = dataSet[nonzero(dataSet[:,feature] <= value)[0],:][0]
+    mat0 = dataSet[nonzero(dataSet[:,feature] >value)[0],:]
+    mat1 = dataSet[nonzero(dataSet[:,feature] <= value)[0],:]
     return mat0,mat1
 
 #返回叶节点,回归树中的目标变量的均值
@@ -61,6 +60,7 @@ def chooseBestSplit(dataSet, leafType=regLeaf, errType=regErr, ops=(1,4)):
     #对所有特征进行遍历
     for featIndex in range(n-1):
         #遍历某个特征的所有特征值
+        split=set(dataSet[:,featIndex].T.A.tolist()[0])
         for splitVal in set((dataSet[:,featIndex].T.A.tolist())[0]):
         # for splitVal in set(dataSet[:,featIndex]):
             #按照某个特征的某个值将数据切分成两个数据子集
@@ -90,6 +90,7 @@ def chooseBestSplit(dataSet, leafType=regLeaf, errType=regErr, ops=(1,4)):
 def createTree(dataSet, leafType=regLeaf, errType=regErr, ops=(1,4)):
     #将数据集进行切分
     feat, val = chooseBestSplit(dataSet, leafType, errType, ops)#choose the best split
+    #满足停止条件时返回叶结点
     if feat == None: return val #if the splitting hit a stop condition return val
     retTree = {}
     retTree['spInd'] = feat
