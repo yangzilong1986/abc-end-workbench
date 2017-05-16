@@ -130,7 +130,7 @@ def classify0(inX, dataSet, labels, k):
     # 1 = {TreeMap$Entry@520} "1" -> "1.4142135623730951"
     # 2 = {TreeMap$Entry@521} "2" -> "0.0"
     # 3 = {TreeMap$Entry@522} "3" -> "0.1"
-    # 注：tuple（元祖） 用小括号，
+    # 注：tuple（元祖） 用小括号()，
     # Dictionary (字典) : 用{}来定义，
     # list（列表） 用方括号[]
     ###############################################

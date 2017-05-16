@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/jgrapht/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/package-info.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/KNN.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,97 +104,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CommandLineUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/common/CommandLineUtil.java">
+      <file leaf-file-name="AbcTreeClassifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="965">
+              <caret line="366" column="41" selection-start-line="366" selection-start-column="41" selection-end-line="366" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2941#2957#0" expanded="true" />
+                <element signature="e#3292#3308#0" expanded="true" />
+                <element signature="e#3997#4005#0" expanded="true" />
+                <element signature="e#5137#5145#0" expanded="true" />
+                <element signature="e#5889#5897#0" expanded="true" />
+                <element signature="e#8612#8620#0" expanded="true" />
+                <element signature="e#10354#10355#0" expanded="true" />
+                <element signature="e#10391#10392#0" expanded="true" />
+                <element signature="e#11526#11541#0" expanded="true" />
+                <element signature="e#11633#11648#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IOUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/common/IOUtils.java">
+      <file leaf-file-name="trees.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KNN.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-735">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="246">
+              <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbcKNN.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java">
+      <file leaf-file-name="treePlotter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/treePlotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1762#1779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultVector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="-1035">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractCollection.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractCollection.java">
+      <file leaf-file-name="AVLTreeST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+            <state relative-caret-position="1715">
+              <caret line="615" column="27" selection-start-line="615" selection-start-column="27" selection-end-line="615" selection-end-column="27" />
+              <folding>
+                <element signature="e#16416#16433#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/TreeMap.java">
+      <file leaf-file-name="AbcKNNClassifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="882" column="29" selection-start-line="882" selection-start-column="14" selection-end-line="882" selection-end-column="29" />
+            <state relative-caret-position="175">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="20" />
               <folding>
-                <element signature="e#28935#28936#0" expanded="true" />
-                <element signature="e#28975#28976#0" expanded="true" />
+                <element signature="e#954#971#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lenses.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AbstractDataMining.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="-385">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,26 +205,9 @@
       <file leaf-file-name="ST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="29" />
-              <folding>
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#1535#1536#0" expanded="true" />
-                <element signature="e#1569#1570#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -244,15 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/flow/GlobalMincut.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/weightedgraph/KruskalMST.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter23/KruskalSpanTree.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter12/IntBinaryTree.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter21/DisjointSetForest.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.txt" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickUnionUF.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/QuickFindUF.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Selection.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java" />
@@ -289,12 +273,21 @@
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/SparseVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classif/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/classif/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/KNN.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
       </list>
     </option>
   </component>
@@ -346,10 +339,418 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout-mahout-0.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout-mahout-0.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout-mahout-0.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout-mahout-0.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout-mahout-0.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.lambda.batch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algs4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algs4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -420,292 +821,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.lambda.batch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jama" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algoritms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algoritms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -736,12 +851,19 @@
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.12 (C:\Python27\python.exe)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.abc.basic.datamining.classify" />
       <recent name="com.abc.basic.algoritms.algs4.col" />
       <recent name="com.abc.basic.algoritms.matrix" />
       <recent name="com.abc.basic.datamining.classify.knn" />
       <recent name="com.abc.basic.algoritms.algs4.alphabet" />
-      <recent name="com.abc.basic.algoritms.algs4.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\main\java\org" />
@@ -750,69 +872,8 @@
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\main\java\com\abc\basic\algoritms\bplustree" />
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\main\java\com\abc\basic\algoritms\thomas" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.AbcKNN">
-    <configuration default="false" name="ch9" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="treeExplore" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09/treeExplore.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="KNN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.basic.algoritms.matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.datamining.classify.knn.KNN" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core.framework.datamining" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.AbcTreeClassifier">
     <configuration default="false" name="DefaultMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -821,9 +882,9 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.abc.basic.algoritms.matrix.DefaultMatrix" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -833,17 +894,17 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="AbcKNN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AbcTreeClassifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.abc.basic.datamining.classify.knn.*" />
+          <option name="PATTERN" value="com.abc.basic.datamining.classify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.datamining.classify.knn.AbcKNN" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.basic.datamining.classify.AbcTreeClassifier" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -851,6 +912,40 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="core.framework.datamining" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trees" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1399,24 +1494,22 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="9">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Application-client" />
       <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
       <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
-      <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ch9" />
-      <item index="5" class="java.lang.String" itemvalue="Python.treeExplore" />
-      <item index="6" class="java.lang.String" itemvalue="Application.KNN" />
-      <item index="7" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
-      <item index="8" class="java.lang.String" itemvalue="Application.AbcKNN" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
+      <item index="4" class="java.lang.String" itemvalue="Application.AbcTreeClassifier" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
+      <item index="6" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="7" class="java.lang.String" itemvalue="Python.trees" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AbcKNN" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
-        <item index="2" class="java.lang.String" itemvalue="Application.KNN" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ch9" />
-        <item index="4" class="java.lang.String" itemvalue="Python.treeExplore" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.AbcTreeClassifier" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="2" class="java.lang.String" itemvalue="Python.trees" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -1504,12 +1597,13 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1612,6 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="647" y="211" width="625" height="593" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14393939" sideWeight="0.5277311" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2216,10 +2309,22 @@
           <option name="timeStamp" value="1905" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java</url>
+          <line>112</line>
           <properties />
-          <option name="timeStamp" value="2011" />
+          <option name="timeStamp" value="2047" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="2150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java</url>
+          <line>363</line>
+          <properties />
+          <option name="timeStamp" value="2152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
@@ -2232,24 +2337,9 @@
           <option name="timeStamp" value="1156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/treePlotter.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="1809" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="1831" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py</url>
-          <line>177</line>
-          <option name="timeStamp" value="1832" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py</url>
-          <line>172</line>
-          <option name="timeStamp" value="1833" />
+          <line>38</line>
+          <option name="timeStamp" value="2151" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -2262,7 +2352,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2012" />
+      <option name="time" value="2153" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2271,275 +2361,245 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/org/jgrapht/perf/flow/MaximumFlowAlgorithmPerformanceTest.java" />
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/FileUtils.java" />
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/modules/clustering/spectral/build/BSpectralClusteringBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/core.lambda.batch/src/test/java/com/abc/datamining/adaboost/utils/IdentityUtils.java" />
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/classifier/TrainLogisticCli.java">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/TransferForJSManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/hNNImgVector.py">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/TransferForIOSManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNNDatingClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="53" column="38" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/util/Maths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/datingTestSet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Stack.java">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/TransferForAndroidManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/BTree.java">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/MethodManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-10175">
+          <caret line="237" column="21" selection-start-line="237" selection-start-column="15" selection-end-line="237" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MaxPQ.java">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/AtomOrRepositoryPackage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="-1135">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Math.java">
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/DaoManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39625">
-          <caret line="1671" column="31" selection-start-line="1671" selection-start-column="26" selection-end-line="1671" selection-end-column="31" />
+        <state relative-caret-position="100">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/APIProductManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/AtomServiceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="243" column="24" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/MethodBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5935">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/MethodBodyFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1510">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/MethodDescripter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2110">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/ProductBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/ServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3079">
+          <caret line="195" column="43" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/define/TableBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
-            <element signature="e#64310#64311#0" expanded="false" />
-            <element signature="e#64355#64356#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/freemarker/template/ServiceTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/freemarker/template/AtomOrRepositorTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/process/APIModelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/jgrapht/Graphs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6360">
+          <caret line="260" column="28" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/FarthestPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1629">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4925">
-          <caret line="220" column="1" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/GrahamScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/DeDup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1975">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="487" column="38" selection-start-line="487" selection-start-column="38" selection-end-line="487" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Complex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="-6354">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21900">
-          <caret line="918" column="46" selection-start-line="918" selection-start-column="46" selection-end-line="918" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#21097#21098#0" expanded="true" />
-            <element signature="e#21137#21138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3150">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="131" selection-end-column="42" />
+        <state relative-caret-position="-16579">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/sort/Heap.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2431#2432#0" expanded="false" />
-            <element signature="e#2484#2485#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7175">
-          <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2352#2353#0" expanded="false" />
-            <element signature="e#2381#2382#0" expanded="false" />
-            <element signature="e#2589#2590#0" expanded="false" />
-            <element signature="e#2613#2614#0" expanded="false" />
-            <element signature="e#6458#6459#0" expanded="false" />
-            <element signature="e#6491#6492#0" expanded="false" />
-            <element signature="e#7500#7501#0" expanded="false" />
-            <element signature="e#7541#7542#0" expanded="false" />
-            <element signature="e#8070#8071#0" expanded="false" />
-            <element signature="e#8116#8117#0" expanded="false" />
-            <element signature="e#8148#8149#0" expanded="false" />
-            <element signature="e#8213#8214#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4475">
-          <caret line="195" column="47" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#996#997#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1357#1358#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1411#1412#0" expanded="false" />
-            <element signature="e#1435#1436#0" expanded="false" />
-            <element signature="e#3546#3547#0" expanded="false" />
-            <element signature="e#3581#3582#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="-3135">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/common/NoSuchItemException.java">
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/MatrixView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/AbstractMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029">
+          <caret line="579" column="23" selection-start-line="579" selection-start-column="15" selection-end-line="579" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/SparseMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/Mult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/SquareRootFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
@@ -2547,82 +2607,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/neighborhood/UserNeighborhood.java">
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/TimesFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/neighborhood/CachingUserNeighborhood.java">
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/ssvd/EigenSolverWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/recommender/slopeone/DiffStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="21">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/clustering/AbstractCluster.java">
+    <entry file="file://$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/VectorFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4800">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/clustering/KMeansClusteringPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/clustering/RunningSumsGaussianAccumulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1010">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/common/CommandLineUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/common/IOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2630,75 +2634,175 @@
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="882" column="29" selection-start-line="882" selection-start-column="14" selection-end-line="882" selection-end-column="29" />
+          <caret line="948" column="20" selection-start-line="948" selection-start-column="11" selection-end-line="948" selection-end-column="20" />
           <folding>
-            <element signature="e#28935#28936#0" expanded="true" />
-            <element signature="e#28975#28976#0" expanded="true" />
+            <element signature="e#34417#34418#0" expanded="false" />
+            <element signature="e#34475#34476#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/CollectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19129">
+          <caret line="1037" column="32" selection-start-line="1037" selection-start-column="26" selection-end-line="1037" selection-end-column="32" />
+          <folding>
+            <element signature="e#39701#39702#0" expanded="false" />
+            <element signature="e#39754#39755#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="420" column="31" selection-start-line="420" selection-start-column="31" selection-end-line="420" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22-sources.jar!/org/slf4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-854">
+          <caret line="380" column="31" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses_i.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4096">
+          <caret line="302" column="38" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#954#971#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="29" />
-          <folding>
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-735">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="-385">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lensesTreeClassed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/BSTRedBlack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="742" column="8" selection-start-line="742" selection-start-column="8" selection-end-line="742" selection-end-column="77" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#22986#23003#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="1715">
+          <caret line="615" column="27" selection-start-line="615" selection-start-column="27" selection-end-line="615" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#16416#16433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="171">
+          <caret line="494" column="0" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
+          <folding>
+            <element signature="e#15414#15415#0" expanded="true" />
+            <element signature="e#15459#15460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/treePlotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="965">
+          <caret line="366" column="41" selection-start-line="366" selection-start-column="41" selection-end-line="366" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1762#1779#0" expanded="true" />
+            <element signature="e#2941#2957#0" expanded="true" />
+            <element signature="e#3292#3308#0" expanded="true" />
+            <element signature="e#3997#4005#0" expanded="true" />
+            <element signature="e#5137#5145#0" expanded="true" />
+            <element signature="e#5889#5897#0" expanded="true" />
+            <element signature="e#8612#8620#0" expanded="true" />
+            <element signature="e#10354#10355#0" expanded="true" />
+            <element signature="e#10391#10392#0" expanded="true" />
+            <element signature="e#11526#11541#0" expanded="true" />
+            <element signature="e#11633#11648#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

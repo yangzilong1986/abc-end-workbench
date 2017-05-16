@@ -20,6 +20,9 @@ def calcShannonEnt(dataSet):
     #样本增量，numEntries:5
     numEntries = len(dataSet)
     #{'yes': 2, 'no': 3}
+    # 注：tuple（元祖） 用小括号()，
+    # Dictionary (字典) : 用{}来定义，
+    # list（列表） 用方括号[]
     labelCounts = {}
     #the the number of unique elements and their occurance
     for featVec in dataSet:
@@ -195,11 +198,20 @@ def createTree(dataSet,labels):
         #copy all of labels, so trees don't mess up existing labels
         subLabels = labels[:]
         retDataSet=splitDataSet(dataSet, bestFeat, value)
-        myTree[bestFeatLabel][value] = createTree(retDataSet,subLabels)
+        treeNode=createTree(retDataSet,subLabels)
+        myTree[bestFeatLabel][value] =treeNode
     return myTree                            
 
 '''
 使用决策树的分类函数
+                young	    myope	        no	            reduced	    no  lenses
+                young	    myope	        no  	         normal	    soft
+                young   	myope	        yes	         reduced	    no lenses
+                young   	myope	        yes	         normal	    hard
+                young	    hyper	        no	             reduced	    no  lenses
+                young     hyper	        no              	normal	    soft
+    lensesLabels=['age' , 'presscript' , 'astigmatic', 'tearRate']
+lensesClass=trees.classify(lensesTree,lensesLabels,['pre','myope','no','reduced'])
 '''
 def classify(inputTree,featLabels,testVec):
     firstStr = inputTree.keys()[0]
@@ -209,7 +221,8 @@ def classify(inputTree,featLabels,testVec):
     valueOfFeat = secondDict[key]
     if isinstance(valueOfFeat, dict): 
         classLabel = classify(valueOfFeat, featLabels, testVec)
-    else: classLabel = valueOfFeat
+    else:
+        classLabel = valueOfFeat
     return classLabel
 
 def storeTree(inputTree,filename):

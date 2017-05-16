@@ -416,6 +416,10 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
             this.row=row;
             this.col=col;
         }
+        public String toString() {
+
+            return "[row][col]:["+row+","+col+"]";
+        }
     }
 
     public String toString() {

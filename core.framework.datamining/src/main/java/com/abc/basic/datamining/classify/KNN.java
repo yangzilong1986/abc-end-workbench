@@ -1,4 +1,4 @@
-package com.abc.basic.datamining.classify.knn;
+package com.abc.basic.datamining.classify;
 
 import Jama.Matrix;
 

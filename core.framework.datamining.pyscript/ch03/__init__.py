@@ -28,7 +28,10 @@ def createDataSet():
 #id3tree=trees.createTree(dataSet,labels)
 
 #print(id3tree)
-
+bestFeatLabel="test"
+myTree = {bestFeatLabel:{}}
+myTree[bestFeatLabel]["testkey"] ="testvalue"
+# {'test': {'testkey': 'testvalue'}}
 '''
 决策树应用
 '''
