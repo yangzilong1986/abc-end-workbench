@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/jgrapht/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mahout-mahout-0.5/math/src/main/java/org/apache/mahout/math/function/package-info.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbcKNN.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/knn/KNN.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/KNN.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,23 +95,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AbcTreeClassifier.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbcTreeClassifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="965">
-              <caret line="366" column="41" selection-start-line="366" selection-start-column="41" selection-end-line="366" selection-end-column="41" />
+            <state relative-caret-position="275">
+              <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2941#2957#0" expanded="true" />
-                <element signature="e#3292#3308#0" expanded="true" />
-                <element signature="e#3997#4005#0" expanded="true" />
-                <element signature="e#5137#5145#0" expanded="true" />
-                <element signature="e#5889#5897#0" expanded="true" />
-                <element signature="e#8612#8620#0" expanded="true" />
-                <element signature="e#10354#10355#0" expanded="true" />
-                <element signature="e#10391#10392#0" expanded="true" />
-                <element signature="e#11526#11541#0" expanded="true" />
-                <element signature="e#11633#11648#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,31 +110,9 @@
       <file leaf-file-name="trees.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="81" />
+            <state relative-caret-position="2400">
+              <caret line="220" column="15" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="treePlotter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/treePlotter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1035">
-              <caret line="24" column="55" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1715">
-              <caret line="615" column="27" selection-start-line="615" selection-start-column="27" selection-end-line="615" selection-end-column="27" />
-              <folding>
-                <element signature="e#16416#16433#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,8 +120,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="246">
+              <caret line="49" column="62" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -171,33 +130,9 @@
       <file leaf-file-name="AbcKNNClassifier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="400">
               <caret line="32" column="20" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="20" />
-              <folding>
-                <element signature="e#954#971#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lenses.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractDataMining.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-385">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -205,8 +140,8 @@
       <file leaf-file-name="ST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="1296">
+              <caret line="104" column="18" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -286,8 +221,8 @@
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
       </list>
     </option>
   </component>
@@ -340,6 +275,76 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="runtime.framework.server">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -750,76 +755,6 @@
       </pane>
       <pane id="PackagesPane">
         <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="runtime.framework.server">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core.lambda.speed">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
     </panes>
   </component>
@@ -1498,9 +1433,9 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Application-client" />
       <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
       <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AbcTreeClassifier" />
-      <item index="5" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DefaultMatrix" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AbcTreeClassifier" />
       <item index="6" class="java.lang.String" itemvalue="Python.__init__" />
       <item index="7" class="java.lang.String" itemvalue="Python.trees" />
     </list>
@@ -1597,7 +1532,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1612,6 +1546,7 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="647" y="211" width="625" height="593" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14393939" sideWeight="0.5277311" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2314,18 +2249,6 @@
           <properties />
           <option name="timeStamp" value="2047" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="2150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java</url>
-          <line>363</line>
-          <properties />
-          <option name="timeStamp" value="2152" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
           <line>51</line>
@@ -2352,7 +2275,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2153" />
+      <option name="time" value="2158" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2365,7 +2288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2373,7 +2295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2381,7 +2302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2389,7 +2309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10175">
           <caret line="237" column="21" selection-start-line="237" selection-start-column="15" selection-end-line="237" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2397,7 +2316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1135">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2405,7 +2323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="79" column="26" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2413,7 +2330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2421,7 +2337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="243" column="24" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2429,7 +2344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5935">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2437,7 +2351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1510">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2445,7 +2358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2110">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2453,7 +2365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2461,7 +2372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3079">
           <caret line="195" column="43" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2469,9 +2379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2479,7 +2386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2487,7 +2393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2495,7 +2400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2503,9 +2407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6360">
           <caret line="260" column="28" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2521,9 +2422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="36" column="42" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2539,7 +2437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6354">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2547,7 +2444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16579">
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2555,7 +2451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3135">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2563,7 +2458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2571,7 +2465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2579,7 +2472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1029">
           <caret line="579" column="23" selection-start-line="579" selection-start-column="15" selection-end-line="579" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2587,7 +2479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="24" column="39" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2595,7 +2486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2603,7 +2493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2611,7 +2500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2619,7 +2507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2627,7 +2514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2675,7 +2561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2687,39 +2572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="e#954#971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lensesTreeClassed.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="27" column="3" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2733,76 +2589,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="615" column="27" selection-start-line="615" selection-start-column="27" selection-end-line="615" selection-end-column="27" />
-          <folding>
-            <element signature="e#16416#16433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="494" column="0" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
           <folding>
-            <element signature="e#15414#15415#0" expanded="true" />
-            <element signature="e#15459#15460#0" expanded="true" />
+            <element signature="e#15414#15415#0" expanded="false" />
+            <element signature="e#15459#15460#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/AVLTreeST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="615" column="27" selection-start-line="615" selection-start-column="27" selection-end-line="615" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/treePlotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
+        <state relative-caret-position="-275">
           <caret line="24" column="55" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="965">
-          <caret line="366" column="41" selection-start-line="366" selection-start-column="41" selection-end-line="366" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2941#2957#0" expanded="true" />
-            <element signature="e#3292#3308#0" expanded="true" />
-            <element signature="e#3997#4005#0" expanded="true" />
-            <element signature="e#5137#5145#0" expanded="true" />
-            <element signature="e#5889#5897#0" expanded="true" />
-            <element signature="e#8612#8620#0" expanded="true" />
-            <element signature="e#10354#10355#0" expanded="true" />
-            <element signature="e#10391#10392#0" expanded="true" />
-            <element signature="e#11526#11541#0" expanded="true" />
-            <element signature="e#11633#11648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/lenses.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="540">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="220" column="15" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="49" column="62" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="104" column="18" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

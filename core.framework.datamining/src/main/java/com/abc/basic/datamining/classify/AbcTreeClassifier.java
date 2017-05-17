@@ -21,7 +21,6 @@ import java.util.*;
 public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMining
 {
     private static final Logger log = LoggerFactory.getLogger(AbcTreeClassifier.class);
-    ST decisionTree=new ST();
     List<String> classLabels=null;
 
     public ST<K,V> train(double[] inX, int k){
@@ -33,46 +32,49 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         for(String label:this.labels){
             classLabels.add(label);
         }
-        createTree(dataSet,classLabels);
+        TreeMap<String,Object> d=createTree(dataSet,classLabels);
         return st;
     }
 
-    public void createTree(List dataSet,List<String> gainLabels){
+    public TreeMap<String,Object> createTree(List dataSet,List<String> gainLabels){
         List<String> classList=obtainFectList(dataSet,-1);
         int count=countInList(classList,classList.get(0));
-        String cl;
         if(count==classList.size()){
-            cl= classList.get(0);
-            TreeMap<String,Object> subTree=new TreeMap<>();
-            decisionTree.put(cl,subTree);
-            return;
+            String cl= classList.get(0);
+            TreeMap<String,Object> leafTree=new TreeMap<>();
+            leafTree.put(cl,"leaf"+cl);
+            return leafTree;
         }
         List<String> firstVector= (List<String>) dataSet.get(0);
         if(firstVector.size()==1){
+            String cl= classList.get(0);
+            TreeMap<String,Object> leafTree=new TreeMap<>();
             cl= majorityCnt(classList );
-            return;
+            leafTree.put(cl,"leaf"+cl);
+            return leafTree;
         }
 
         int bestFeat=chooseBestFeatureToSplit(dataSet);
         if(bestFeat==-1){
-            return ;
+            return null;
         }
 
         String bestFeatLabel=gainLabels.remove(bestFeat);
-        TreeMap<String,Object> subTree=new TreeMap<>();
-        decisionTree.put(bestFeatLabel,subTree);
+        TreeMap<String,Object> rootTree=new TreeMap<>();
+        TreeMap<String,Object> curruentTree=new TreeMap<>();
+        rootTree.put(bestFeatLabel,curruentTree);
         //获取分类值
         Set<String> feactValues=obtainFectSet(dataSet,bestFeat);
-        for(String value:feactValues){
+        for(String value:feactValues){//
             List<String> subLabels=new ArrayList<>();
             subLabels.addAll(gainLabels);
             List retDataSet=splitDataSet(dataSet,bestFeat,value);
-            subTree.put(bestFeatLabel,value);
-            createTree(retDataSet,subLabels);
 
+            TreeMap<String,Object> subTree=createTree(retDataSet,subLabels);
+            curruentTree.put(value,subTree);
             log.info("训练样本为空,c:");
         }
-
+        return rootTree;
     }
 
     int countInList(List<String> list,String value){
