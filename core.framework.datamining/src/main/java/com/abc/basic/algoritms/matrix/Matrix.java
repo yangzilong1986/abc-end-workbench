@@ -1,20 +1,55 @@
 package com.abc.basic.algoritms.matrix;
 
+
 import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 
+import java.math.BigDecimal;
 import java.util.TreeMap;
 
-public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.io.Serializable{
-
-    protected DefaultMatrix matrixT;
+public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable {
+    protected Matrix matrixT;
     protected ST<Integer, V> matrix;
     protected int row;
     protected int col;
 
+
     ////////////////////构造方法//////////////////////////
-    public DefaultMatrix(double[] data, int row, int col) {
+    public Matrix(Integer[] data, int row, int col){
         this(col);
+        initMatrix(data, row, col);
+    }
+    public Matrix(Double[] data, int row, int col){
+        this(col);
+        initMatrix(data, row, col);
+    }
+    public Matrix(Float[] data, int row, int col){
+        this(col);
+        initMatrix(data, row, col);
+    }
+    public Matrix(Long[] data, int row, int col){
+        this(col);
+        initMatrix(data, row, col);
+    }
+
+    public Matrix (Double vals[], int m){
+        initMatrix (vals, m);
+    }
+
+    public Matrix (Float vals[], int m){
+        initMatrix (vals, m);
+    }
+
+    public Matrix (Long vals[], int m){
+        initMatrix (vals, m);
+    }
+
+    public Matrix (Integer vals[], int m){
+        initMatrix (vals, m);
+    }
+
+    public void initMatrix(Number[] data, int row, int col) {
+
         if (data==null||data.length==0||col==0||row==0) {
             throw new IllegalArgumentException("列长度不能为0");
         }
@@ -24,24 +59,24 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         addVector(data);
     }
 
-    public DefaultMatrix (double vals[], int m) {// row,//m 行
+    public void initMatrix (Number vals[], int m) {// row,//m 行
         this.col = (m != 0 ? vals.length/m : 0);
         if (m*col != vals.length) {
             throw new IllegalArgumentException("Array length must be a multiple of m.");
         }
-        double[][] A = new double[m][this.col];
+        Number[][] A = new Number[m][this.col];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < this.col; j++) {
                 A[i][j] = vals[i+j*m];
             }
         }
-        createDefaultMatrix(A,new Shape(1,1));
+        createDefaultMatrix(A,new Matrix.Shape(1,1));
     }
     /**
      * 初始化矩阵为N列
      * @param col
      */
-    public DefaultMatrix(int col) {
+    public Matrix(int col) {
         if (col==0) {
             throw new IllegalArgumentException("列长度不能为0");
         }
@@ -49,16 +84,31 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         matrix = new ST<Integer, V>();
     }
 
-
+    public Matrix(int row,int col,Long data){
+        this(col);
+        initMatrix(row,col, data);
+    }
+    public Matrix(int row,int col,Integer data){
+        this(col);
+        initMatrix(row,col, data);
+    }
+    public Matrix(int row,int col,Float data){
+        this(col);
+        initMatrix(row,col, data);
+    }
+    public Matrix(int row,int col,Double data){
+        this(col);
+        initMatrix(row,col, data);
+    }
     /**
      * 矩阵初始化为每个值都是data
      * @param row
      * @param col
      * @param data
      */
-    public DefaultMatrix(int row,int col,double data) {
-        this(col);
-        double[][] d=new double[row][col];
+    public void initMatrix(int row,int col,Number data) {
+
+        Number[][] d=new Number[row][col];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 d[i][j] = data;
@@ -67,33 +117,74 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         addVector(d);
     }
 
-    public DefaultMatrix (double[][] vals){
-       this(vals,new Shape(1,1));
-
+    public Matrix (Double[][] vals){
+        this(vals,new Matrix.Shape(1,1));
     }
+
+    public Matrix (Integer[][] vals){
+        this(vals,new Matrix.Shape(1,1));
+    }
+    public Matrix (Float[][] vals){
+        this(vals,new Matrix.Shape(1,1));
+    }
+
+    public Matrix (Long[][] vals){
+        this(vals,new Matrix.Shape(1,1));
+    }
+
     /**
      * 行列上按照shape把数组扩充，这里的数组为一维数组
      * @param vals
      * @param shape
      */
-    public DefaultMatrix (double[] vals, Shape shape){
-        this (vals, Axis.col, 1);
-        double[] tmp=this.getVectorToArray(row-1);
+    public Matrix (Double[] vals, Matrix.Shape shape){
+        this (vals, Matrix.Axis.col, 1);
+        Number[] tmp=this.getVectorToArray(row-1);
         for(int i=0;i<shape.row;i++){
             this.addSingleVector(tmp);
         }
     }
 
-    public DefaultMatrix (double[] vals){
-        this (vals, Axis.col, 1);
+    public Matrix (Integer[] vals, Matrix.Shape shape){
+        this (vals, Matrix.Axis.col, 1);
+        Number[] tmp=this.getVectorToArray(row-1);
+        for(int i=0;i<shape.row;i++){
+            this.addSingleVector(tmp);
+        }
     }
 
-    public DefaultMatrix (double[][] vals, Shape shape){
+    public Matrix (Long[] vals){
+        this (vals, Matrix.Axis.col, 1);
+    }
+
+    public Matrix (Double[] vals){
+        this (vals, Matrix.Axis.col, 1);
+    }
+
+    public Matrix (Integer[] vals){
+        this (vals, Matrix.Axis.col, 1);
+    }
+    public Matrix (Float[] vals){
+        this (vals, Matrix.Axis.col, 1);
+    }
+
+    public Matrix (Long[][] vals, Matrix.Shape shape){
         createDefaultMatrix(vals,shape);
-
     }
+    public Matrix (Integer[][] vals, Matrix.Shape shape){
+        createDefaultMatrix(vals,shape);
+    }
+    public Matrix (Float[][] vals, Matrix.Shape shape){
+        createDefaultMatrix(vals,shape);
+    }
+    public Matrix (Double[][] vals, Matrix.Shape shape){
+        createDefaultMatrix(vals,shape);
+    }
+//    public Matrix (Number[][] vals, Matrix.Shape shape){
+//        createDefaultMatrix(vals,shape);
+//    }
 
-    private void createDefaultMatrix (double[][] vals, Shape shape){
+    private void createDefaultMatrix (Number[][] vals, Matrix.Shape shape){
         if (vals==null||vals.length==0||vals[0]==null||vals[0].length==0||shape==null) {
             throw new IllegalArgumentException("数组必须是二维数组，形状必须定义");
         }
@@ -105,7 +196,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
 
         for(int i=0;i<row;i++) {
             V vector=this.createDefaultVector(this.col);
-            double[] datas=new double[this.col];
+            Number[] datas=new Number[this.col];
             for (int j = 0; j < col; j++) {
                 datas[j] = vals[i/shape.row][j/shape.col];
             }
@@ -119,7 +210,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
      * @param axis 行或者列方向
      * @param s 扩充倍数
      */
-    public DefaultMatrix (double[] vals, Axis axis, int s) {
+    public Matrix (Number[] vals, Matrix.Axis axis, int s) {
         if (vals == null) {
             throw new IllegalArgumentException("矩阵数据不能为空");
         }
@@ -134,7 +225,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
             case col:
             default:
                 this.col =vals.length*s;
-                double[] datas=new double[col];
+                Number[] datas=new Number[col];
                 for (int i=0;i<col;i++){
                     datas[i]=vals[i/vals.length];
                 }
@@ -151,7 +242,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         ;
     }
 
-    public void addVector(double[][] data) {
+    public void addVector(Number[][] data) {
         if (data == null || data[0].length != this.col) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
@@ -161,7 +252,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
     }
 
 
-    public void addVector(V vector,double[] data) {
+    public void addVector(V vector,Number[] data) {
         if (data == null || data.length != this.col) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
@@ -173,7 +264,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         ;
     }
 
-    public void addSingleVector(double[] data) {
+    public void addSingleVector(Number[] data) {
         if (data == null || data.length != this.col) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
@@ -182,26 +273,26 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
     }
 
     public V createDefaultVector(int dimension){
-        return (V)new DefaultVector(dimension);
+        return (V)new Vector(dimension);
     }
 
-    public void addVector(double... a) {
+    public void addVector(Number... a) {
         int d = a.length;
-        double[] data = a;
+        Number[] data = a;
         if (data == null || data.length % this.col != 0) {
             throw new IllegalArgumentException("数组长度不是列的长度");
         }
         for (int i = 0; i < data.length/this.col; i++) {
-            double[] single=new double[this.col];
+            Number[] single=new Number[this.col];
             System.arraycopy(data,i*col,single,0,this.col);
             addSingleVector(single);
         }
     }
 
-    public DefaultMatrix copy () {
+    public Matrix copy () {
 
-        double[][] c =toArray();
-        return new DefaultMatrix<V>(c);
+        Double[][] c = (Double[][]) toArray();
+        return new Matrix<V>(c);
     }
 
     public Object clone () {
@@ -216,16 +307,16 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
     public V getVector(int row){
         return this.matrix.get(row);
     }
-    public double[] getVectorToArray(int row){
+    public Number[] getVectorToArray(int row){
         return this.matrix.get(row).toArray();
     }
     ////////////////////矩阵转换为数组//////////////////////////
-    public double[][] toArray(){
-        double[][] array=new double[row][col];
+    public Number[][] toArray(){
+        Number[][] array=new Number[row][col];
         for(int i=0;i<row;i++){
-            DefaultVector vector=matrix.get(i);
+            Vector vector=matrix.get(i);
             for (int j=0;j<col;j++){
-                Double d=vector.get(j);
+                Number d= (Number) vector.get(j);
                 array[i][j]=d;
             }
         }
@@ -236,7 +327,7 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
      * 逆矩阵缓存
      * @return
      */
-    public DefaultMatrix transposeC() {
+    public Matrix transposeC() {
         if(matrixT==null || matrixT.col!=this.row||matrixT.row!=this.col){
             transpose();
         }
@@ -247,10 +338,10 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
      * 直接求逆矩阵
      * @return
      */
-    public DefaultMatrix transpose() {
-        matrixT = new DefaultMatrix(row);
-        double[][] C = toArray();
-        double[][] array=new double[col][row];
+    public Matrix transpose() {
+        matrixT = new Matrix(row);
+        Number[][] C = toArray();
+        Number[][] array=new Number[col][row];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 array[j][i] = C[i][j];
@@ -260,38 +351,52 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         return matrixT;
     }
 
-    public DefaultMatrix times (double alpha) {
-        DefaultMatrix tmpMatrix = new DefaultMatrix(this.col);
+    public Matrix times (Number alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
-            DefaultVector vector = matrix.get(i);
-            DefaultVector temp=vector.scale(alpha);
+            Vector vector = matrix.get(i);
+            Vector temp=vector.scale((Double) alpha);
             tmpMatrix.addVector(temp);
         }
         return tmpMatrix;
     }
 
-    public DefaultMatrix sqrt () {
-        DefaultMatrix tmpMatrix = new DefaultMatrix(this.col);
+    public Matrix sqrt () {
+        Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
-            DefaultVector vector = matrix.get(i);
-            DefaultVector temp=vector.sqrt();
+            Vector vector = matrix.get(i);
+            Vector temp=vector.sqrt();
             tmpMatrix.addVector(temp);
         }
         return tmpMatrix;
     }
 
-    public DefaultMatrix pow (double alpha) {
-        DefaultMatrix tmpMatrix = new DefaultMatrix(this.col);
+    public Matrix pow (Double alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
-            DefaultVector vector = matrix.get(i);
-            DefaultVector temp=vector.pow(alpha);
+            Vector vector = matrix.get(i);
+            Vector temp=vector.pow((Double) alpha);
             tmpMatrix.addVector(temp);
         }
         return tmpMatrix;
     }
 
-    public DefaultMatrix divid (double alpha) {
-       return times(1/alpha);
+    public Matrix pow (Long alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.pow((Long) alpha);
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
+
+    public Matrix divid (Double alpha) {
+        return times(1/alpha);
+    }
+
+    public Matrix divid (Integer alpha) {
+        return times(1/alpha);
     }
 
     /**
@@ -299,25 +404,25 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
      * @param that 减数
      * @return
      */
-    public DefaultMatrix minus (DefaultMatrix that) {
+    public Matrix minus (Matrix that) {
         checkMatrixDimensions(that);
-        DefaultMatrix tmpMatrix = new DefaultMatrix(this.col);
+        Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
-            DefaultVector vector = matrix.get(i);
-            DefaultVector temp=vector.minus(that.getVector(i));
+            Vector vector = matrix.get(i);
+            Vector temp=vector.minus(that.getVector(i));
             tmpMatrix.addVector(temp);
         }
         return tmpMatrix;
     }
 
-    public DefaultMatrix minus () {
-        DefaultMatrix tmpMatrix = new DefaultMatrix(this.col);
-        DefaultVector vector = (DefaultVector) matrix.get(0).clone();
+    public Matrix minus () {
+        Matrix tmpMatrix = new Matrix(this.col);
+        Vector vector = (Vector) matrix.get(0).clone();
         for (int i : matrix.keys()) {
-           if(i<=1){
-               continue;
-           }
-            DefaultVector next = (DefaultVector) matrix.get(i).clone();
+            if(i<=1){
+                continue;
+            }
+            Vector next = (Vector) matrix.get(i).clone();
             vector=vector.minus(next);
         }
         return tmpMatrix;
@@ -340,68 +445,70 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
      * @param axis
      * @return
      */
-    public DefaultMatrix plus (Axis axis) {
+    public Matrix plus (Matrix.Axis axis) {
 
         switch (axis){
             case row:
                 return plus (this);
             case col:
             default:
-                DefaultMatrix tmpMatrix=this.transposeC();
+                Matrix tmpMatrix=this.transposeC();
                 return plus(tmpMatrix);
         }
     }
 
-    public DefaultMatrix plus (DefaultMatrix defaultMatrix) {
-        DefaultMatrix tmpMatrix = new DefaultMatrix(defaultMatrix.col);
-        DefaultVector vector = (DefaultVector) defaultMatrix.matrix.get(0);
+    public Matrix plus (Matrix defaultMatrix) {
+        Matrix tmpMatrix = new Matrix(defaultMatrix.col);
+        Vector vector = (Vector) defaultMatrix.matrix.get(0);
         for (Object i : defaultMatrix.matrix.keys()) {
             if((Integer)i <1){
                 continue;
             }
-            DefaultVector next = (DefaultVector) defaultMatrix.matrix.get((Integer)i);
+            Vector next = (Vector) defaultMatrix.matrix.get((Integer)i);
             vector=vector.plus(next);
         }
         tmpMatrix.addVector(vector);
         return tmpMatrix;
     }
 
-    public DefaultMatrix plus () {
-        DefaultMatrix temp=new DefaultMatrix(1);
-        DefaultMatrix row=plus(this);
-        DefaultVector defaultVector=row.getVector(0);
-        double sum=0.0;
+    public Matrix plus () {
+        Matrix temp=new Matrix(1);
+        Matrix row=plus(this);
+        Vector defaultVector=row.getVector(0);
+        BigDecimal sum=new BigDecimal(0);
         for (int i = 0; i < defaultVector.getDimension(); i++) {
-            sum+=defaultVector.get(i);
+            BigDecimal d = defaultVector.convertNumberToBigDecimal(defaultVector.get(i));
+            sum = sum.add(d);
+//            sum+=defaultVector.get(i);
         }
-        V tempVector= (V) new  DefaultVector(1);
+        V tempVector= (V) new Vector(1);
         tempVector.put(0,sum);
         temp.addVector(tempVector);
         return temp;
     }
 
 
-    private void checkMatrixDimensions (DefaultMatrix B) {
+    private void checkMatrixDimensions (Matrix B) {
         if (B.row!= this.row || B.col != this.col) {
             throw new IllegalArgumentException("矩阵的维度必须一致(Matrix dimensions must agree.)");
         }
     }
 
-    public Shape getShape(){
-        return new Shape(this.row,this.col);
+    public Matrix.Shape getShape(){
+        return new Matrix.Shape(this.row,this.col);
     }
     /**
      * sortVectorByKey
      */
     public TreeMap sortVectorByKey(int row){
-        DefaultVector vector=this.matrix.get(row);
+        Vector vector=this.matrix.get(row);
         return vector.sortMin();
     }
     /**
      * 返回形状，即多少列多少行
      */
-    public Shape shape(){
-        return new Shape(row,col);
+    public Matrix.Shape shape(){
+        return new Matrix.Shape(row,col);
     }
 
     public static enum Axis{
@@ -430,29 +537,28 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
         }
         return s.toString();
     }
-
     public static void main(String[] args) {
 
-        double[] inX = {0, 0};
+        Double[] inX = new Double[]{0.0, 0.0};
 //        double[][] vals = {{1.1, 1.2}, {2.1, 2.2}, {0., 0.}, {3.1, 3.2}};
-        double[][] vals = {{ 1., 1.1},{1. ,  1.},{0. ,  0. },{0.,  0.1}};
-        DefaultMatrix dataMatrix=new DefaultMatrix(vals);
+        Double[][] vals = {{ 1., 1.1},{1. ,  1.},{0. ,  0. },{0.,  0.1}};
+        Matrix dataMatrix=new Matrix(vals);
 
         StdOut.println("dataMatrix = " + dataMatrix);
 
-        DefaultMatrix inXMatrix = new DefaultMatrix(inX,Axis.row,vals.length);//两列
+        Matrix inXMatrix = new Matrix(inX, Matrix.Axis.row,vals.length);//两列
 
         StdOut.println("inXMatrix = " + inXMatrix);
-        DefaultMatrix minusMatrix=inXMatrix.minus(dataMatrix);
+        Matrix minusMatrix=inXMatrix.minus(dataMatrix);
         StdOut.println("minusMatrix = " + minusMatrix);
 
-        DefaultMatrix posMatrix=minusMatrix.pow(2);
+        Matrix posMatrix=minusMatrix.pow(2L);
         StdOut.println("posMatrix = " + posMatrix);
 
-        DefaultMatrix plusMatrix=posMatrix.plus(Axis.col);
+        Matrix plusMatrix=posMatrix.plus(Matrix.Axis.col);
         StdOut.println("plusMatrix = " + plusMatrix);
 
-        DefaultMatrix sqrtMatrix =plusMatrix.sqrt();
+        Matrix sqrtMatrix =plusMatrix.sqrt();
 
         StdOut.println("sqrtMatrix = " + sqrtMatrix);
 
@@ -460,11 +566,13 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
 
 
         StdOut.println("map = " + mapSort);
-
-
+//        testComputer();
+//        testDefaultMatrix();
 
     }
 
+
+//
     public static void testComputer(){
         /**
          *a = np.array([
@@ -477,38 +585,38 @@ public class DefaultMatrix<V extends DefaultVector> implements Cloneable, java.i
          * print(a.sum(axis=0)) # 对行方向求和
          * 结果 [5 7 9]
          **/
-        double[][] sumData = {{ 1,2,3},{4,5,6}};
-        DefaultMatrix sumMatrix=new DefaultMatrix(sumData);
+        Integer[][] sumData ={{ 1,2,3},{4,5,6}};
+        Matrix sumMatrix=new Matrix(sumData);
         StdOut.println("sumMatrix = " + sumMatrix);
 
-        DefaultMatrix sumResult=sumMatrix.plus(Axis.row);
+        Matrix sumResult=sumMatrix.plus(Matrix.Axis.row);
         StdOut.println("\nsumResult = " + sumResult);
 
-        DefaultMatrix sumResultCol=sumMatrix.plus(Axis.col);
+        Matrix sumResultCol=sumMatrix.plus(Matrix.Axis.col);
         StdOut.println("\nsumResultCol = " + sumResultCol);
 
-        DefaultMatrix sumResultDefaultl=sumMatrix.plus();
+        Matrix sumResultDefaultl=sumMatrix.plus();
         StdOut.println("\nsumResultDefaultl = " + sumResultDefaultl);
     }
     public static void testDefaultMatrix() {
-        DefaultMatrix a = new DefaultMatrix(2);
-        double[] d = {1, 2};
+        Matrix a = new Matrix(2);
+        Integer[] d = {1, 2};
         a.addVector(d);
-        double[][] vals = {{1., 1.1}, {1., 1.}, {0., 0.}, {0., 0.1}};
+        Double[][] vals = {{1., 1.1}, {1., 1.}, {0., 0.}, {0., 0.1}};
         a.addVector(vals);
         StdOut.println("a = " + a);
-        double[] val = {1., 1.1, 1., 1., 0., 0., 0., 0.1};
+        Double[] val = {1., 1.1, 1., 1., 0., 0., 0., 0.1};
         a.addVector(val);
         a.addVector(1,3,4,5);
-        double[][] array=a.toArray();
+        Number[][] array= (Number[][]) a.toArray();
 
-        DefaultMatrix aT=a.transposeC();
+        Matrix aT=a.transposeC();
 
-        double[] inX={3,0};
-        DefaultMatrix dd=new DefaultMatrix(inX,Axis.row,6);
+        Integer[] inX={3,0};
+        Matrix dd=new Matrix(inX, Matrix.Axis.row,6);
         StdOut.println("dd = " + dd);
 
-        DefaultMatrix mShape=new DefaultMatrix(vals,new Shape(2,2));
+        Matrix mShape=new Matrix(vals,new Matrix.Shape(2,2));
         StdOut.println("mShape = " + mShape);
     }
 }

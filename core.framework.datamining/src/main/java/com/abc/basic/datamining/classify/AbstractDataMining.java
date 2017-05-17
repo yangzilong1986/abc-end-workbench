@@ -17,7 +17,7 @@ import java.util.*;
  * 装载数据
  * 执行训练方法
  */
-abstract public class AbstractDataMining<K extends Comparable<K>,V> {
+abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
     private static final Logger log = LoggerFactory.getLogger(AbstractDataMining.class);
 
     public static final String PATH_NAME="D:\\DevN\\sample-data\\pydatamining\\";
@@ -26,8 +26,10 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
 
     protected String[] labels;
 
-    protected Object st;//训练结果集
+    protected TainResult st;//训练结果集
 
+    //训练数据
+    protected List dataSet=null;
     //训练数据文件名称
     protected String trainDataFileName;
     //训练结果文件名称
@@ -69,7 +71,7 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
         //装载数据
         createDataSet();
         //训练数据模型
-        TreeMap<String,Object> d=nativeTrain();
+        TainResult d=nativeTrain();
         //存储训练结果
         if(d!=null) {
             storeTrainResult(d);
@@ -95,6 +97,7 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
             log.error("train result desicTree= " + e.getMessage());
         }
     }
+
 
     protected void loadTrainResult(){
         ObjectMapper mapper = new ObjectMapper();
@@ -131,7 +134,7 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
 
     abstract public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException;
 
-    abstract public  TreeMap nativeTrain();
+    abstract public  TainResult nativeTrain();
 
     abstract public void createDataSet();
 

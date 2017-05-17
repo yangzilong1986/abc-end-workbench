@@ -6,21 +6,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.TreeSet;
 
-/**
- * This implementation uses a balanced binary search tree. It requires that
- * the key type implements the {@code Comparable} interface and calls the
- * {@code compareTo()} and method to compare two keys. It does not call either
- * {@code equals()} or {@code hashCode()}.
- * The <em>add</em>, <em>contains</em>, <em>delete</em>, <em>minimum</em>,
- * <em>maximum</em>, <em>ceiling</em>, and <em>floor</em> methods take
- * logarithmic time in the worst case.
- * The <em>size</em>, and <em>is-empty</em> operations take constant time.
- * Construction takes constant time.
- * <p>
- * This implementation uses a balanced binary search tree. It requires that
- * For additional documentation, see
- */
-
 public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
     private TreeSet<Key> set;
 

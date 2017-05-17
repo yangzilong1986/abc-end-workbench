@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections.CollectionUtils;
 
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +25,7 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
 {
     private static final Logger log = LoggerFactory.getLogger(AbcTreeClassifier.class);
     protected  List<String> classLabels=null;
-    protected List dataSet=null;
+
 
     protected List<String> testData=null;
 
@@ -72,15 +73,6 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         return  -1;
     }
 
-    public void createDataSet(){
-        labels=createLabels();
-        classLabels=new ArrayList<>();
-        for(String label:this.labels){
-            classLabels.add(label);
-        }
-        dataSet=loadDataFormFile("\t");
-    }
-
 
     public  TreeMap<String,Object> nativeTrain(){
         TreeMap<String,Object> d=createTree(dataSet,classLabels);
@@ -88,13 +80,11 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
     }
 
     public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException{
-//        Map<String,User> result = mapper.readValue(src, new TypeReference<Map<String,User>>() { });
         TypeReference typeReference=new TypeReference<TreeMap<String,TreeMap<String,TreeMap>>>(){
             public Type getType() {
                 return this._type;
             }
         };
-//        TreeMap desicTree = mapper.readValue(json, TreeMap.class);
         TreeMap desicTree = mapper.readValue(json, typeReference);
         st=desicTree;
     }
@@ -196,6 +186,7 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
                 //分裂数据
                 List subDataList=splitDataSet(dataSet,i,value);
                 double prob=(double)subDataList.size()/(double)dataSet.size();
+                //计算香农熵
                 newEntropy+=prob*calcShannonEnt(subDataList);
 
             }
@@ -333,6 +324,15 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         double[][] dataMatrix=new double[row][col];
 
         return dataMatrix;
+    }
+
+    public void createDataSet(){
+        labels=createLabels();
+        classLabels=new ArrayList<>();
+        for(String label:this.labels){
+            classLabels.add(label);
+        }
+        dataSet=loadDataFormFile("\t");
     }
 
     @Override

@@ -4,11 +4,12 @@ import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.thoughtworks.xstream.converters.collections.TreeMapConverter;
 
+import java.util.Objects;
 import java.util.TreeMap;
 
 public class DefaultVector implements Cloneable, java.io.Serializable{
-    private int d;                   // dimension
-    private ST<Integer, Double> st;  // the vector, represented by index-value pairs
+    private int d;
+    private ST<Integer, Double> st;
 
    /**
      * Initializes a d-dimensional zero vector.
@@ -19,6 +20,14 @@ public class DefaultVector implements Cloneable, java.io.Serializable{
         this.st = new ST<Integer, Double>();
     }
 
+    public DefaultVector(double[] data) {
+        Objects.requireNonNull(data);
+        this.d  = data.length;
+        this.st = new ST<Integer, Double>();
+        for(int i=0;i<data.length;i++){
+            st.put(i,data[i]);
+        }
+    }
     public int getDimension(){
         return d;
     }
