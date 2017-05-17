@@ -63,7 +63,7 @@ print(lensesTree)
 # young	hyper	yes	normal	hard
 # pre	myope	no	reduced	no lenses
 # pre	myope	no	normal	soft
-lensesClass=trees.classify(lensesTree,lensesLabels,['pre','myope','no','reduced'])
+lensesClass=trees.classify(lensesTree,lensesLabels,['young','myope','yes','normal'])
 print(lensesClass)
 
 treePlotter.createPlot(lensesTree)

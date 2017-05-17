@@ -2,38 +2,116 @@ package com.abc.basic.datamining.classify;
 
 
 import com.abc.basic.algoritms.algs4.col.Bag;
-import com.abc.basic.algoritms.algs4.col.SET;
 import com.abc.basic.algoritms.algs4.col.ST;
-import com.abc.basic.algoritms.algs4.tree.IndexMinPQ;
+import com.abc.basic.algoritms.algs4.search.BinarySearch;
 import com.abc.basic.algoritms.algs4.utils.In;
-import com.abc.basic.algoritms.algs4.utils.StdOut;
 import com.abc.basic.algoritms.matrix.DefaultMatrix;
-import com.abc.basic.algoritms.matrix.DefaultVector;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections.CollectionUtils;
 
 
-import org.apache.commons.collections.set.MapBackedSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.*;
 
 public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMining
 {
     private static final Logger log = LoggerFactory.getLogger(AbcTreeClassifier.class);
-    List<String> classLabels=null;
+    protected  List<String> classLabels=null;
+    protected List dataSet=null;
 
-    public ST<K,V> train(double[] inX, int k){
-        createDataSet();
-        List dataSet=loadDataFormFile("lenses.txt","\t");
+    protected List<String> testData=null;
 
-        ST st=new ST();
+    public void setTestData(List testData){
+        this.testData=testData;
+    }
+    public Map natvieClassify(){
+        List test=testData;
+        return (Map) classify((TreeMap<String, Object>) st);
+    }
+    public Map classify(Map<String,Object> inputTree){
+        for(String firstStr:inputTree.keySet()){
+            Map<String,Object> secondDict = (Map<String, Object>) inputTree.get(firstStr);
+            int featIndex = indexClassLabels(firstStr);
+            String key = testData.get(featIndex);
+            Map valueOfFeat = (Map) secondDict.get(key);
+            if(log.isInfoEnabled()){
+                log.info("关键字为:"+firstStr+" 在分类结果的索引为:"+featIndex+" 在测试数据中:"+key+
+                        " 检查结果为"+valueOfFeat);
+            }
+            valueOfFeat.entrySet();
+            Collection values= (Collection) valueOfFeat.values();
+            Object[] valueOfFeatArray=values.toArray(new Object[0]);
+            if(values!=null&&!values.isEmpty()){
+                for(int i=0;i<values.size();i++){
+                    Object value=valueOfFeatArray[i];
+                    if(value instanceof String){
+                        return valueOfFeat;
+                    }
+                }
+            }
+            if(valueOfFeat instanceof Map){
+                return classify((Map<String,Object>)valueOfFeat);
+            }
+        }
+        return null;
+    }
+
+    protected int indexClassLabels(String label){
+        for(int i=0;i<labels.length;i++){
+            if(label.equals(labels[i])){
+                return i;
+            }
+        }
+        return  -1;
+    }
+
+    public void createDataSet(){
+        labels=createLabels();
         classLabels=new ArrayList<>();
         for(String label:this.labels){
             classLabels.add(label);
         }
+        dataSet=loadDataFormFile("\t");
+    }
+
+
+    public  TreeMap<String,Object> nativeTrain(){
         TreeMap<String,Object> d=createTree(dataSet,classLabels);
-        return st;
+        return d;
+    }
+    /**
+     * 训练数据文件名称
+     * @return
+     */
+    protected String setStoreTrainData(){
+        return PATH_NAME+"lenses.txt";
+    }
+
+    /**
+     * 训练结果数据存储
+     * @return
+     */
+    protected String setStoreTrainResultName(){
+        return PATH_NAME+"lenses-desc-tree.txt";
+    }
+
+    public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException{
+//        Map<String,User> result = mapper.readValue(src, new TypeReference<Map<String,User>>() { });
+        TypeReference typeReference=new TypeReference<TreeMap<String,TreeMap<String,TreeMap>>>(){
+            public Type getType() {
+                return this._type;
+            }
+        };
+//        TreeMap desicTree = mapper.readValue(json, TreeMap.class);
+        TreeMap desicTree = mapper.readValue(json, typeReference);
+        st=desicTree;
     }
 
     public TreeMap<String,Object> createTree(List dataSet,List<String> gainLabels){
@@ -72,7 +150,9 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
 
             TreeMap<String,Object> subTree=createTree(retDataSet,subLabels);
             curruentTree.put(value,subTree);
-            log.info("训练样本为空,c:");
+            if(log.isInfoEnabled()) {
+                log.info("分类决策树为," + subTree);
+            }
         }
         return rootTree;
     }
@@ -115,7 +195,6 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         int bastFeature=-1;
         double bestInfoGain=0.0;
         Objects.requireNonNull(dataSet);
-
         List<String> firstVector= (List<String>) dataSet.get(0);
         Objects.requireNonNull(firstVector);
         int numFeatures=firstVector.size()-1;
@@ -125,7 +204,9 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
             //获取数据
             Set<String> featList=obtainFectSet(dataSet,i);
             double newEntropy=0.0;
-//            log.info("本次样本数据为:"+featList);
+            if(log.isDebugEnabled()) {
+                log.info("本次样本数据为:" + featList);
+            }
             for(String value:featList ){
                 //分裂数据
                 List subDataList=splitDataSet(dataSet,i,value);
@@ -134,75 +215,22 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
 
             }
             double infoGain=bestEntropy-newEntropy;
-            log.info("本次训练数据的信息增量为:"+infoGain);
+            if(log.isDebugEnabled()) {
+                log.debug("训练数据分类为:" + dataSet);
+                log.debug("本次训练数据的信息增量为:" + infoGain);
+            }
             if(infoGain>bestInfoGain){
                 bestInfoGain=infoGain;
                 bastFeature=i;
             }
         }
-        log.info("最优划分数据为:"+bastFeature);
+        if(log.isDebugEnabled()) {
+            log.debug("最优划分数据为:" + bastFeature);
+        }
         return bastFeature;
     }
 
-    /**
-     * 在List的结构中获取Set
-     * @param dataSet
-     * @param axis
-     * @return
-     */
-    public Set<String> obtainFectSet(List dataSet,int axis){
-        Objects.requireNonNull(dataSet);
-        if(CollectionUtils.isEmpty(dataSet)){
-            log.info("训练样本为空,axis:"+axis);
-        }
-        Set<String> setVector=new TreeSet<String>();
-        for(int i=0;i<dataSet.size();i++){
-            //获取数据
-            List<String> fectVector= (List<String>)dataSet.get(i);
-            String vector=null;
-            try {
-                vector = fectVector.get(axis);
-                setVector.add(vector);
-            }catch (NullPointerException e){
-                log.info("dataSet"+dataSet);
-                log.info("axis:"+axis);
-            }
-        }
-        return setVector;
-    }
 
-    /**
-     * 在List的结构中获取Set
-     * @param dataSet
-     * @param axis
-     * @return
-     */
-    public List<String> obtainFectList(List dataSet,int axis){
-        Objects.requireNonNull(dataSet);
-        CollectionUtils.isNotEmpty(dataSet);
-        List<String> setVector=new LinkedList<String>();
-        for(int i=0;i<dataSet.size();i++){
-            //获取数据
-            List<String> fectVector= (List<String>)dataSet.get(i);
-            if(axis==-1) {
-                String vector = fectVector.get(fectVector.size()-1);
-                setVector.add(vector);
-            }else{
-                String vector = fectVector.get(axis);
-                setVector.add(vector);
-            }
-        }
-        return setVector;
-    }
-
-    boolean isNotEqVector(List<String> first,List<String> sec){
-        Objects.requireNonNull(first);
-        Objects.requireNonNull(sec);
-        if(first.size()==sec.size()){
-            return false;
-        }
-        return true;
-    }
     /**
      * 计算给定数据集的香农熵
      * @param dataSet
@@ -220,7 +248,7 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         for(int i=0;i<dataSet.size();i++){
             List<String> featVec=(List<String>) dataSet.get(i);
             if(isNotEqVector(firstVector,featVec)){
-                log.info("本样本数据和前一条数据长度不一致");
+                log.warn("本样本数据和前一条数据长度不一致");
                 continue;
             }
             String currentLabel=featVec.get(featVec.size()-1);
@@ -237,7 +265,10 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
             // log((double)N)/log((double)2)
             shannonEnt-=prob*Math.log(prob)/Math.log((double)2);
         }
-        log.info("计算的香农熵值为:"+shannonEnt);
+        if(log.isInfoEnabled()) {
+            log.info("训练数据:" + dataSet);
+            log.info("计算的香农熵值为:" + shannonEnt);
+        }
         return shannonEnt;
     }
 
@@ -253,7 +284,7 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
             List<String> featVec=(List<String>) dataSet.get(i);
 
             if(isNotEqVector(firstVector,featVec)){
-                log.info("本样本数据和前一条数据长度不一致");
+                log.warn("本样本数据和前一条数据长度不一致");
                 continue;
             }
             if(featVec.get(axis).equals(value)){
@@ -263,21 +294,18 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
                 currentVec.addAll(subLeft);
                 currentVec.addAll(subRight);
                 currentDataSet.add(currentVec);
-                log.info("分裂后的一列数据为"+currentVec+" 分裂值为："+value);
             }
         }
 
         return currentDataSet;
     }
     /**
-     *
-     * @param fileName
      * @param regex
      * @return
      */
-    public List loadDataFormFile(String fileName,String regex ){
-        log.info("装载文件名称为:"+fileName);
-        In streams=new In(PATH_NAME+fileName);
+    public List loadDataFormFile(String regex ){
+
+        In streams=new In(this.setStoreTrainData());
         //在每个流中读入一个数据，形成index/key
         String[] lines=streams.readAllLines();
         Objects.requireNonNull(lines);
@@ -290,15 +318,9 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
                 col=data.length;
             }
             if(col!=data.length){//忽略长度不一致的值
-                log.info("本样本数据和前一条数据长度不一致");
+                log.warn("本样本数据和前一条数据长度不一致");
                 continue;
             }
-//            TreeMap<Integer,String> item=new TreeMap<>();
-//
-//            for(int i=0;i<data.length;i++) {
-//                item.put(i,data[i]);
-//            }
-//            dataSet.add(item);
            List<String> item=new ArrayList<>();
 
             for(int i=0;i<data.length;i++) {
@@ -309,19 +331,13 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         }
         DefaultMatrix.Shape shape=new DefaultMatrix.Shape(dataSet.size(),col);
         streams.close();
-        log.info("装载数据大小为:"+shape);
+        if(log.isInfoEnabled()) {
+            log.info("装载数据大小为:" + shape);
+        }
         return dataSet;
     }
 
-    public void createDataSet(){
-        labels=createLabels();
-    }
 
-    @Override
-    public double[][] loadDataSet() {
-        List dataSet=loadDataFormFile("lenses.txt","\t");
-        return new double[0][];
-    }
 
     public  double[][] autoNorm(List data){
         Objects.requireNonNull(data);
@@ -336,36 +352,24 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
 
     @Override
     public String[] createLabels() {
-        //labels=['age' , 'presscript' , 'astigmatic', 'tearRate']
-        return new String[]{"age","presscript","astigmatic","tearRate"};
+        if(labels==null) {
+            labels =new String[]{"age", "presscript", "astigmatic", "tearRate"};
+        }
+        return labels;
     }
 
-    @Override
-    public ST classify(double[] inX, int k) {
-        return null;
-    }
+    public static void main(String[] args) {
+        AbcTreeClassifier<String, String> dTree = new AbcTreeClassifier();
+        // ['pre','myope','no','reduced']
+        //['young','myope','yes','normal'])
+        List list=new LinkedList();
+        list.add("young");
+        list.add("myope");
+        list.add("yes");
+        list.add("normal");
+        dTree.setTestData(list);
+        Map map=dTree.classify();
+        log.info("result:"+map);
 
-    @Override
-    public void buildClassifyMatrix(double[] inX) {
-
-    }
-
-    public static void main(String[] args){
-        /**
-        bestFeatLabel="test"
-        myTree = {bestFeatLabel:{}}
-        myTree[bestFeatLabel]["testkey"] ="testvalue"
-        {'test': {'testkey': 'testvalue'}}
-         **/
-        TreeMap<String,Object> sub=new TreeMap<String,Object>();
-        sub.put("testkey","testvalue");
-
-        TreeMap<String,Object> root=new TreeMap<String,Object>();
-        root.put("test",sub);
-
-        AbcTreeClassifier<String,String> kNN=new AbcTreeClassifier();
-        double[] inX={0.5,0.5};
-        ST st=kNN.train(inX,1);
-        log.info("train result = " + st);
     }
 }

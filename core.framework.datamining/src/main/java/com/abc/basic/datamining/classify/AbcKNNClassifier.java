@@ -2,17 +2,32 @@ package com.abc.basic.datamining.classify;
 
 import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.matrix.DefaultMatrix;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.Collection;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 public class AbcKNNClassifier extends AbstractDataMining {
+
     private static final Logger log = LoggerFactory.getLogger(AbcKNNClassifier.class);
 
+    protected TreeMap<Double, Integer> mapSort;
 
-    @Override
+    double[] inX;
+    int k;
+
+    public void createDataSet(){
+        double[][] vals =loadDataSet();
+        labels=createLabels();
+        dataMatrix=new DefaultMatrix(vals);
+    }
+
     public  double[][] loadDataSet(){
         double[][] vals = {
                 { 1., 1.1},
@@ -24,14 +39,17 @@ public class AbcKNNClassifier extends AbstractDataMining {
 
     @Override
     public String[] createLabels(){
-        return new String[]{"A","A","B","B"};
+        if(labels==null) {
+            labels = new String[]{"A", "A", "B", "B"};
+        }
+        return labels;
     }
 
-    @Override
-    public ST classify(double[] inX, int k) {
+
+    public TreeMap classify(double[] inX, int k) {
         Collection<Integer> mapSortCount= (Collection) mapSort.values();
         Integer[] gg= (Integer[]) mapSortCount.toArray(new Integer[0]);
-        ST<String, Integer> classCount=new ST<String, Integer>();
+        TreeMap<String, Integer> classCount=new TreeMap<String, Integer>();
         for(int i=0;i<k;i++){
             int count=0;
             String label=getLabels(gg[i]);
@@ -46,7 +64,7 @@ public class AbcKNNClassifier extends AbstractDataMining {
         return classCount;
     }
 
-    public void  buildClassifyMatrix(double[] inX){
+    public void  buildClassifyMatrix(){
         log.info("dataMatrix = " + dataMatrix);
         DefaultMatrix inXMatrix = new DefaultMatrix(inX, DefaultMatrix.Axis.row,getShape().row);//两列
 
@@ -66,10 +84,38 @@ public class AbcKNNClassifier extends AbstractDataMining {
 
         mapSort=sqrtMatrix.sortVectorByKey(0);
     }
+
+    @Override
+    public void readObject(ObjectMapper mapper, String json) throws JsonProcessingException, IOException {
+        TreeMap desicTree = mapper.readValue(json, TreeMap.class);
+        mapSort=desicTree;
+    }
+
+    @Override
+    protected String setStoreTrainData() {
+        return null;
+    }
+
+    @Override
+    protected String setStoreTrainResultName() {
+        return PATH_NAME+"kNN-tree.txt";
+    }
+    public TreeMap<String,Object> nativeTrain(){
+        createDataSet();
+        buildClassifyMatrix();
+        TreeMap st=mapSort;
+         return st;
+    }
+    public TreeMap natvieClassify(){
+
+        return classify(inX, k);
+    }
     public static void main(String[] args){
-        AbstractDataMining kNN=new AbcKNNClassifier();
+        AbcKNNClassifier kNN=new AbcKNNClassifier();
         double[] inX={0.5,0.5};
-        ST st=kNN.train(inX,1);
-        log.info("train result = " + st);
+        kNN.inX=inX;
+        kNN.k=1;
+        Map k=kNN.classify();
+        log.info("训练结果为:"+k);
     }
 }

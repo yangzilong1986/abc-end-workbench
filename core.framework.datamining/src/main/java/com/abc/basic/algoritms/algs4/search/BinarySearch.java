@@ -6,23 +6,24 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
 
 import java.util.Arrays;
 
-public class BinarySearch {
+public class BinarySearch<Key extends Comparable> {
 
     /**
      * This class should not be instantiated.
      */
-    private BinarySearch() { }
+    public BinarySearch() { }
 
-    public static int indexOf(int[] a, int key) {
+    public int indexOf(Key[] a, Key key) {
         int lo = 0;
         int hi = a.length - 1;
         while (lo <= hi) {
             // Key is in a[lo..hi] or not present.
             int mid = lo + (hi - lo) / 2;
-            if (key < a[mid]) {
+            int cmp=key.compareTo(a[mid]);
+            if (cmp<0) {
                 hi = mid - 1;
             }
-            else if (key > a[mid]) {
+            else if (cmp>0) {
                 lo = mid + 1;
             }
             else {
@@ -33,25 +34,14 @@ public class BinarySearch {
     }
 
     @Deprecated
-    public static int rank(int key, int[] a) {
+    public int rank(Key key, Key[] a) {
         return indexOf(a, key);
     }
 
     public static void main(String[] args) {
-
-        // read the integers from a file
-        In in = new In(args[0]);
-        int[] whitelist = in.readAllInts();
-
-        // sort the array
-        Arrays.sort(whitelist);
-
-        // read integer key from standard input; print if not in whitelist
-        while (!StdIn.isEmpty()) {
-            int key = StdIn.readInt();
-            if (BinarySearch.indexOf(whitelist, key) == -1)
-                StdOut.println(key);
-        }
+        String[] labels =new String[]{"age", "presscript", "astigmatic", "tearRate"};
+        BinarySearch bs=new BinarySearch<String>();
+        bs.indexOf(labels,"astigmatic");
     }
 }
 
