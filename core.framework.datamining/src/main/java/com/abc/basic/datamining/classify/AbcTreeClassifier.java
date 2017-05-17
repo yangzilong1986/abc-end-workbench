@@ -86,21 +86,6 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         TreeMap<String,Object> d=createTree(dataSet,classLabels);
         return d;
     }
-    /**
-     * 训练数据文件名称
-     * @return
-     */
-    protected String setStoreTrainData(){
-        return PATH_NAME+"lenses.txt";
-    }
-
-    /**
-     * 训练结果数据存储
-     * @return
-     */
-    protected String setStoreTrainResultName(){
-        return PATH_NAME+"lenses-desc-tree.txt";
-    }
 
     public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException{
 //        Map<String,User> result = mapper.readValue(src, new TypeReference<Map<String,User>>() { });
@@ -358,18 +343,20 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
         return labels;
     }
 
-    public static void main(String[] args) {
-        AbcTreeClassifier<String, String> dTree = new AbcTreeClassifier();
-        // ['pre','myope','no','reduced']
-        //['young','myope','yes','normal'])
-        List list=new LinkedList();
-        list.add("young");
-        list.add("myope");
-        list.add("yes");
-        list.add("normal");
-        dTree.setTestData(list);
-        Map map=dTree.classify();
-        log.info("result:"+map);
+    /**
+     * 训练数据文件名称
+     * @return
+     */
+    @Override
+    protected String setStoreTrainData(){
+        return PATH_NAME+"lenses.txt";
+    }
 
+    /**
+     * 训练结果数据存储
+     * @return
+     */
+    protected String setStoreTrainResultName(){
+        return PATH_NAME+"lenses-desc-tree.txt";
     }
 }

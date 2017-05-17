@@ -23,8 +23,35 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
     public static final String PATH_NAME="D:\\DevN\\sample-data\\pydatamining\\";
 
     protected DefaultMatrix dataMatrix;
+
     protected String[] labels;
+
     protected Object st;//训练结果集
+
+    //训练数据文件名称
+    protected String trainDataFileName;
+    //训练结果文件名称
+    protected String trainResultFileName;
+
+    public  void setClassifyLabels(String[] classLabels){
+        this.labels=classLabels;
+    }
+
+    /**
+     * 训练数据文件名称
+     * @return
+     */
+    public void setTrainDataFileName(String trainDataFileName){
+        this.trainDataFileName=trainDataFileName;
+    }
+
+    /**
+     * 训练结果数据存储文件名称
+     * @return
+     */
+    public void setTrainResultFileName(String fileName){
+        this.trainResultFileName=fileName;
+    }
 
     public String getLabels(int row){
         return labels[row];
@@ -82,15 +109,29 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
         }
     }
 
+    /**
+     * 训练数据文件名称
+     * @return
+     */
+    protected String setStoreTrainData(){
+        return PATH_NAME+trainDataFileName;
+    }
+
+    /**
+     * 训练结果数据存储
+     * @return
+     */
+    protected String setStoreTrainResultName(){
+        return PATH_NAME+trainResultFileName;
+    }
+
+    public String[] createLabels() {
+        return labels;
+    }
+
     abstract public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException;
 
-    abstract protected String setStoreTrainData();
-
-    abstract protected String setStoreTrainResultName();
-
     abstract public  TreeMap nativeTrain();
-
-    abstract public String[] createLabels();
 
     abstract public void createDataSet();
 
@@ -158,4 +199,5 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V> {
         }
         return true;
     }
+
 }
