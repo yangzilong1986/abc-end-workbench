@@ -35,6 +35,9 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
     //训练结果文件名称
     protected String trainResultFileName;
 
+    //数据文件每行不能宽时，是否忽略
+    protected boolean isSameWidth=true;
+
     public  void setClassifyLabels(String[] classLabels){
         this.labels=classLabels;
     }
@@ -68,6 +71,8 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
      * @return
      */
     final public void train(){
+        //装载分类信息
+        createLabels();
         //装载数据
         createDataSet();
         //训练数据模型
@@ -136,7 +141,51 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
 
     abstract public  TainResult nativeTrain();
 
-    abstract public void createDataSet();
+    public void createDataSet(){
+        if(CollectionUtils.isEmpty(dataSet)) {
+            dataSet = loadDataFormFile("\t");
+        }else{
+            dataSet.addAll(loadDataFormFile("\t"));
+        }
+    }
+
+    /**
+     * @param regex
+     * @return
+     */
+    public List loadDataFormFile(String regex ){
+
+        In streams=new In(this.setStoreTrainData());
+        //在每个流中读入一个数据，形成index/key
+        String[] lines=streams.readAllLines();
+        Objects.requireNonNull(lines);
+        ST<String,String> rawDataSet=new ST<>();
+        List dataSet=new ArrayList<>();
+        int col=-1;
+        for(String line:lines){
+            String[] data=line.split(regex);
+            if(col==-1){
+                col=data.length;
+            }
+            if(isSameWidth&&col!=data.length){//忽略长度不一致的值
+                log.warn("本样本数据和前一条数据长度不一致");
+                continue;
+            }
+            List<String> item=new ArrayList<>();
+
+            for(int i=0;i<data.length;i++) {
+                item.add(data[i]);
+            }
+            dataSet.add(item);
+
+        }
+        DefaultMatrix.Shape shape=new DefaultMatrix.Shape(dataSet.size(),col);
+        streams.close();
+        if(log.isInfoEnabled()) {
+            log.info("装载数据大小为:" + shape);
+        }
+        return dataSet;
+    }
 
     abstract public Map natvieClassify();
 

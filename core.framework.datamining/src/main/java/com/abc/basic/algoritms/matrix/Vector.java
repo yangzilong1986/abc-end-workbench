@@ -1,6 +1,7 @@
 package com.abc.basic.algoritms.matrix;
 
 import com.abc.basic.algoritms.algs4.utils.StdOut;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -10,47 +11,65 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.TreeMap;
 
-public class Vector implements Cloneable, java.io.Serializable {
-    public TreeMap<Integer, Number> getSt() {
+public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, java.io.Serializable {
+
+    public V getSt() {
         return st;
     }
 
-    public void setSt(TreeMap<Integer, Number> st) {
+    public void setSt(V st) {
         this.st = st;
     }
 
-    private int d;
-    private TreeMap<Integer, Number> st;
+    private int dimension;
+
+    private V st;
     private static final int scale=5;
+    public Vector() {
+//        this.d = d;
+//        this.st = new TreeMap<Integer, Number>();
+    }
+
+    public int getDimension() {
+        return dimension;
+    }
+    public int setDimension() {
+        return dimension;
+    }
+
     /**
      * Initializes a d-dimensional zero vector.
      *
      * @param d the dimension of the vector
      */
     public Vector(int d) {
-        this.d = d;
-        this.st = new TreeMap<Integer, Number>();
+        this.dimension = d;
+//        this.st = new TreeMap<Integer, Number>();
+        this.st = (V) new TreeMap<Integer, Number>();
     }
     public Vector(int d, double data) {
         Objects.requireNonNull(data);
-        this.d = d;
-        this.st = new TreeMap<Integer, Number>();
+        this.dimension = d;
+//        this.st = new TreeMap<Integer, Number>();
+        this.st = (V) new TreeMap<Integer, Number>();
         for (int i = 0; i < d; i++) {
             st.put(i, data);
         }
     }
     public Vector(int d, int data) {
         Objects.requireNonNull(data);
-        this.d = d;
-        this.st = new TreeMap<Integer, Number>();
-        for (int i = 0; i < d; i++) {
+        this.dimension = d;
+//        this.st = new TreeMap<Integer, Number>();
+        this.st = (V) new TreeMap<Integer, Number>();
+        for (int i = 0; i < dimension; i++) {
             st.put(i, data);
         }
     }
     public Vector(int[] data) {
         Objects.requireNonNull(data);
-        this.d = data.length;
-        this.st = new TreeMap<Integer, Number>();
+        this.dimension = data.length;
+//        this.st = new TreeMap<Integer, Number>();
+        this.st = (V) new TreeMap<Integer, Number>();
         for (int i = 0; i < data.length; i++) {
             st.put(i, data[i]);
         }
@@ -58,8 +77,9 @@ public class Vector implements Cloneable, java.io.Serializable {
 
     public Vector(Number[] data) {
         Objects.requireNonNull(data);
-        this.d = data.length;
-        this.st = new TreeMap<Integer, Number>();
+        this.dimension = data.length;
+//        this.st = new TreeMap<Integer, Number>();
+        this.st = (V) new TreeMap<Integer, Number>();
         for (int i = 0; i < data.length; i++) {
             st.put(i, data[i]);
         }
@@ -80,19 +100,17 @@ public class Vector implements Cloneable, java.io.Serializable {
         format.setGroupingUsed(false);
     }
 
-    public int getDimension() {
-        return d;
-    }
+
 
     public void put(int i, Number value) {
-        if (i < 0 || i >= d) {
+        if (i < 0 || i >= dimension) {
             throw new IndexOutOfBoundsException("Illegal index");
         }
         st.put(i, value);
     }
 
     public Number get(int i) {
-        if (i < 0 || i >= d) {
+        if (i < 0 || i >= dimension) {
             throw new IndexOutOfBoundsException("Illegal index");
         }
         if (st.containsKey(i)) {
@@ -105,16 +123,16 @@ public class Vector implements Cloneable, java.io.Serializable {
     public TreeMap<Number, Integer> sortMin() {
         Vector defaultVector = (Vector) this.clone();
         TreeMap<Number, Integer> sort = new TreeMap<>();
-        for (int i : defaultVector.st.keySet()) {
-            sort.put(st.get(i), i);
+        for (Object i : defaultVector.st.keySet()) {
+            sort.put(st.get((Integer)i), (Integer)i);
         }
         return sort;
     }
 
 
     public Number[] toArray() {
-        Number[] array = new Number[d];
-        for (int j = 0; j < d; j++) {
+        Number[] array = new Number[dimension];
+        for (int j = 0; j < dimension; j++) {
             Number d = st.get(j);
             array[j] = d;
         }
@@ -124,7 +142,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     public Vector copy() {
 
         Number[] c = toArray();
-        Vector defaultVector = new Vector(this.d);
+        Vector defaultVector = new Vector(this.dimension);
         for (int j = 0; j < c.length; j++) {
             defaultVector.put(j, c[j]);
         }
@@ -139,9 +157,7 @@ public class Vector implements Cloneable, java.io.Serializable {
         return st.size();
     }
 
-    public int dimension() {
-        return d;
-    }
+
 
     /**
      * 点乘
@@ -150,7 +166,7 @@ public class Vector implements Cloneable, java.io.Serializable {
      * @return
      */
     public Number dot(Vector that) {
-        if (this.d != that.d) {
+        if (this.dimension != that.dimension) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
         BigDecimal sum = new BigDecimal(0);
@@ -165,9 +181,9 @@ public class Vector implements Cloneable, java.io.Serializable {
                 }
             }
         } else {
-            for (int i : that.st.keySet()) {
+            for (Object i : that.st.keySet()) {
                 if (this.st.containsKey(i)) {
-                    BigDecimal d = convertNumberToBigDecimal(this.get(i)).multiply(convertNumberToBigDecimal(that.get(i)));
+                    BigDecimal d = convertNumberToBigDecimal(this.get((Integer)i)).multiply(convertNumberToBigDecimal(that.get((Integer)i)));
                     sum = sum.add(d);
 //                    sum += this.get(i) * that.get(i);
                 }
@@ -197,7 +213,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector scale(Double alpha) {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             BigDecimal decimal = convertNumberToBigDecimal(this.get(i));
             c.put(i, decimal.multiply(convertNumberToBigDecimal(alpha)));
@@ -207,7 +223,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector pow(Double alpha) {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             c.put(i, Math.pow(this.get(i).doubleValue(), alpha));
         }
@@ -216,7 +232,7 @@ public class Vector implements Cloneable, java.io.Serializable {
 
 
     public Vector pow(Long alpha) {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             Object l=this.get(i);
             c.put(i, Math.pow(this.get(i).doubleValue(), alpha));
@@ -225,7 +241,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector divide(Double alpha) {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             BigDecimal d = convertNumberToBigDecimal(this.get(i));
             //除法的小数点数
@@ -236,7 +252,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector log() {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             c.put(i, Math.log(this.get(i).doubleValue()));
         }
@@ -244,7 +260,7 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector sqrt() {
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             c.put(i, Math.sqrt(this.get(i).doubleValue()));
         }
@@ -252,15 +268,15 @@ public class Vector implements Cloneable, java.io.Serializable {
     }
 
     public Vector plus(Vector that) {
-        if (this.d != that.d) {
+        if (this.dimension != that.dimension) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             c.put(i, this.get(i));                // c = this
         }
-        for (int i : that.st.keySet()) {
-            c.put(i, convertNumberToBigDecimal(c.get(i)).add(convertNumberToBigDecimal(that.get(i))));
+        for (Object i : that.st.keySet()) {
+            c.put((Integer)i, convertNumberToBigDecimal(c.get((Integer)i)).add(convertNumberToBigDecimal(that.get((Integer)i))));
 //            c.put(i, that.get(i) + c.get(i));     // c = c + that
         }
         return c;
@@ -276,15 +292,15 @@ public class Vector implements Cloneable, java.io.Serializable {
         return sum;
     }
     public Vector minus(Vector that) {
-        if (this.d != that.d) {
+        if (this.dimension != that.dimension) {
             throw new IllegalArgumentException("Vector lengths disagree");
         }
-        Vector c = new Vector(d);
+        Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             c.put(i, this.get(i));                // c = this
         }
-        for (int i : that.st.keySet()) {
-            c.put(i, convertNumberToBigDecimal(c.get(i)).subtract(convertNumberToBigDecimal(that.get(i))));
+        for (Object i : that.st.keySet()) {
+            c.put((Integer)i, convertNumberToBigDecimal(c.get((Integer)i)).subtract(convertNumberToBigDecimal(that.get((Integer)i))));
 //            c.put(i,  c.get(i)- that.get(i));
         }
         return c;

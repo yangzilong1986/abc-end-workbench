@@ -1,8 +1,11 @@
 package com.abc.basic.datamining.classify;
 
+import com.abc.basic.algoritms.algs4.utils.In;
+import com.abc.basic.algoritms.algs4.utils.Out;
 import com.abc.basic.algoritms.matrix.*;
 import com.abc.basic.algoritms.matrix.Vector;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -12,6 +15,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.lang.reflect.Type;
 import java.util.*;
 
 
@@ -20,20 +24,38 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
     protected int[] classVec;
     //总数据集
     protected TreeSet<String> vocabList;
+    //单词的分隔符
+    protected String delimiter="\t";
+    private  String vocabFileName="vocab-bayes.txt";
+
+    //测试数据
+    private  List<String> testTrain;
+
     public static void main(String[] args){
         AbcBayesClassifier bayesClassifier=new AbcBayesClassifier();
-        bayesClassifier.train();
+//        bayesClassifier.train();
+        //'love', 'my', 'dalmation'
+        List<String> testTrain=new ArrayList<>();
+        testTrain.add("love");
+        testTrain.add("my");
+        testTrain.add("dalmation");
+        bayesClassifier.setTestTrain(testTrain);
+        bayesClassifier.classify();
     }
 
     public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException{
+        TypeReference typeReference=new TypeReference<TrainResult<Vector<TreeMap<Integer, Number>>>>(){//
 
-        TrainResult desicTree = mapper.readValue(json, TrainResult.class);
+        };
+        TrainResult desicTree = mapper.readValue(json, typeReference);
+//        TrainResult desicTree = mapper.readValue(json, TrainResult.class);
         st=desicTree;
     }
 
-    class TrainResult implements Serializable{
+    public static class TrainResult<TrainResult> implements Serializable{
         double pAbusive;
-
+        Vector p1Vect;
+        Vector p0Vect;
         public Vector getP1Vect() {
             return p1Vect;
         }
@@ -42,8 +64,7 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
             this.p1Vect = p1Vect;
         }
 
-        Vector p1Vect;
-        Vector p0Vect;
+
 
         public Vector getP0Vect() {
             return p0Vect;
@@ -72,9 +93,8 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
     }
     @Override
     public TrainResult nativeTrain() {
-        //装载分类信息
-        createLabels();
         vocabList=createVocabList(dataSet);
+        writeVocab(vocabList);
         //创建向量
         Matrix matrix= buildTrainMatrix(vocabList);
         TrainResult trainResult=trainBayes(matrix);
@@ -146,6 +166,42 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         return vocabList;
     }
 
+    protected void writeVocab(TreeSet<String> vocabList){
+        if(CollectionUtils.isEmpty(vocabList)){
+            throw new IllegalStateException("全量字符集不能为空");
+        }
+        Out out=new Out(getVocabFileName());
+        int linenumber=0;
+        for(String vocab:vocabList){
+            out.print(vocab);
+            out.print(this.delimiter);
+            if(++linenumber%32==0){
+                out.println();
+            }
+        }
+    }
+
+    protected boolean isNotExistVocabFile(){
+        try {
+            In streams = new In(getVocabFileName());
+            return false;
+        }catch (IllegalArgumentException e){
+            log.error("词源文件不存在");
+            return true;
+        }
+    }
+    protected void readVocab(){
+        In streams=new In(getVocabFileName());
+        vocabList=new TreeSet<String>();
+
+        while(streams.hasNextLine()){
+            String[] vocabs =streams.readLine().split(this.delimiter);
+            for(String voc:vocabs){
+                vocabList.add(voc);
+            }
+        }
+        streams.close();
+    }
     /**
      *
      * @param vocabList 全量字符集
@@ -161,7 +217,6 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         Matrix matrix=new Matrix(1,vocabList.size(),0);
         Vector vector=matrix.getVector(0);
         String[] vocabArray = (String[]) vocabList.toArray(new String[0]);
-
         for(String word:inputSet){
             if(vocabList.contains(word)){
                 int index=indexof(vocabArray,word);
@@ -187,6 +242,7 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         }
         return  -1;
     }
+
     @Override
     public void createDataSet() {
         String[][] postingList=new String[][]{{"my",    "dog",       "has",  "flea",    "problems",    "help",  "please"},//0-0
@@ -205,7 +261,6 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
             }
             dataSet.add(data);
         }
-
     }
 
     /**
@@ -225,11 +280,44 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         return PATH_NAME+"bayes-train-result.txt";
     }
 
+    public String getVocabFileName(){
+        return PATH_NAME+this.vocabFileName;
+    }
+    public void setVocabFileName(String vocabFileName){
+        this.vocabFileName=vocabFileName;
+    }
     @Override
     public Map natvieClassify() {
-        return null;
+        if(CollectionUtils.isEmpty(vocabList)){
+            //如果没有训练字符集则生成
+            if(isNotExistVocabFile()){
+                createDataSet();
+                vocabList=createVocabList(dataSet);
+                writeVocab(vocabList);
+            }else {
+                readVocab();
+            }
+        }
+        //thisDoc = array(setOfWords2Vec(myVocabList, testEntry))
+        Vector testVector=setOfWords2Vec(vocabList,this.testTrain);
+        int result=classifyBayes(testVector);
+        Map<String,Integer> map=new TreeMap<>();
+        map.put("OK",result);
+        return map;
     }
 
+    public int classifyBayes(Vector testVector){
+        TrainResult trainResult= (TrainResult) st;
+        //条件概率
+        double p1=testVector.dot(trainResult.getP1Vect()).doubleValue()+Math.log(trainResult.pAbusive);
+        double p0=testVector.dot(trainResult.getP0Vect()).doubleValue()+Math.log(1.0-trainResult.pAbusive);;
+
+        return 0;
+
+    }
+    public void setTestTrain(List<String> testTrain){
+        this.testTrain=testTrain;
+    }
     @Override
     public String[] createLabels() {
         classVec=new int[]{0,1,0,1,0,1};

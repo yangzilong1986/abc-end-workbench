@@ -1,12 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac Out.java
- *  Execution:    java Out
- *  Dependencies: none
- *
- *  Writes data of various types to: stdout, file, or socket.
- *
- ******************************************************************************/
-
 package com.abc.basic.algoritms.algs4.utils;
 
 
@@ -20,11 +11,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Locale;
 
-/**
- *  This class provides methods for writing strings and numbers to
- *  various output streams, including standard output, file, and sockets.
- *  <p>
- */
 public class Out {
 
     // force Unicode UTF-8 encoding; otherwise it's system dependent
@@ -226,77 +212,36 @@ public class Out {
         out.flush();
     }
 
-   /**
-     * Prints a float to this output stream and flushes this output stream.
-     * 
-     * @param x the float to print
-     */
     public void print(float x) {
         out.print(x);
         out.flush();
     }
 
-   /**
-     * Prints an integer to this output stream and flushes this output stream.
-     * 
-     * @param x the integer to print
-     */
     public void print(int x) {
         out.print(x);
         out.flush();
     }
 
-   /**
-     * Prints a long integer to this output stream and flushes this output stream.
-     * 
-     * @param x the long integer to print
-     */
     public void print(long x) {
         out.print(x);
         out.flush();
     }
 
-   /**
-     * Prints a byte to this output stream and flushes this output stream.
-     * 
-     * @param x the byte to print
-     */
     public void print(byte x) {
         out.print(x);
         out.flush();
     }
 
-   /**
-     * Prints a formatted string to this output stream, using the specified format
-     * string and arguments, and then flushes this output stream.
-     *
-     * @param format the format string
-     * @param args   the arguments accompanying the format string
-     */
     public void printf(String format, Object... args) {
         out.printf(LOCALE, format, args);
         out.flush();
     }
 
-   /**
-     * Prints a formatted string to this output stream, using the specified
-     * locale, format string, and arguments, and then flushes this output stream.
-     *
-     * @param locale the locale
-     * @param format the format string
-     * @param args   the arguments accompanying the format string
-     */
     public void printf(Locale locale, String format, Object... args) {
         out.printf(locale, format, args);
         out.flush();
     }
 
-
-   /**
-     * A test client.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args) {
         Out out;
 
@@ -312,27 +257,3 @@ public class Out {
     }
 
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

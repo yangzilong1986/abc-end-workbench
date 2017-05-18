@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/classifier/bayes/package-info.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" afterPath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/pom.xml" afterPath="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
     </list>
@@ -106,60 +106,8 @@
       <file leaf-file-name="AbcTreeClassifier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="360" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#6264#6272#0" expanded="true" />
-                <element signature="e#11742#11743#0" expanded="true" />
-                <element signature="e#11787#11788#0" expanded="true" />
-                <element signature="e#11883#11884#0" expanded="true" />
-                <element signature="e#11938#11939#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractDataMining.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-              <folding>
-                <element signature="e#3227#3228#0" expanded="true" />
-                <element signature="e#3279#3280#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectMapper.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2021">
-              <caret line="1049" column="45" selection-start-line="1049" selection-start-column="34" selection-end-line="1049" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbcKNNClassifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Out.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="87" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -168,37 +116,69 @@
       <file leaf-file-name="AbcBayesClassifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="471">
+              <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1244#1245#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1336#1337#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1815#1816#0" expanded="true" />
-                <element signature="e#1854#1855#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
-                <element signature="e#1954#1955#0" expanded="true" />
-                <element signature="e#4262#4270#0" expanded="true" />
-                <element signature="e#6641#6649#0" expanded="true" />
-                <element signature="e#6916#6917#0" expanded="true" />
-                <element signature="e#6960#6961#0" expanded="true" />
-                <element signature="e#7056#7057#0" expanded="true" />
-                <element signature="e#7113#7114#0" expanded="true" />
+                <element signature="e#5071#5079#0" expanded="true" />
+                <element signature="e#8928#8929#0" expanded="true" />
+                <element signature="e#8985#8986#0" expanded="true" />
+                <element signature="e#9024#9025#0" expanded="true" />
+                <element signature="e#9075#9076#0" expanded="true" />
+                <element signature="e#9131#9132#0" expanded="true" />
+                <element signature="e#9179#9180#0" expanded="true" />
+                <element signature="e#10232#10233#0" expanded="true" />
+                <element signature="e#10272#10273#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecisionTreeTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/DecisionTreeTest.java">
+      <file leaf-file-name="ObjectMapper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="246">
+              <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bayes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="In.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractDataMining.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -207,25 +187,23 @@
       <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1550">
-              <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="331" selection-end-column="5" />
+            <state relative-caret-position="250">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#4198#4199#0" expanded="true" />
+                <element signature="e#4232#4233#0" expanded="true" />
+                <element signature="e#4256#4257#0" expanded="true" />
+                <element signature="e#4288#4289#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="508" column="37" selection-start-line="508" selection-start-column="37" selection-end-line="508" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -233,11 +211,20 @@
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="393" column="23" selection-start-line="393" selection-start-column="18" selection-end-line="393" selection-end-column="23" />
+            <state relative-caret-position="10161">
+              <caret line="478" column="54" selection-start-line="478" selection-start-column="42" selection-end-line="478" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultVector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
               <folding>
-                <element signature="e#10679#10680#0" expanded="true" />
-                <element signature="e#10716#10717#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -268,8 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/tree/FibonacciMinPQ.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/thomas/chapter20/FibonacciHeap.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/GrahamScan.java" />
@@ -298,7 +283,6 @@
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/KNN.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
         <option value="$PROJECT_DIR$/core.framework.data/pom.xml" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java" />
@@ -314,10 +298,13 @@
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/NumberVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/AbcVector.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" />
       </list>
     </option>
@@ -370,6 +357,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -594,36 +582,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Jama" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="basic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -734,6 +692,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -803,10 +764,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -1530,10 +1487,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.AbcBayesClassifier" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AbcKNNClassifier" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testTrain" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testClassify" />
-        <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AbcKNNClassifier" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testClassify" />
       </list>
     </recent_temporary>
   </component>
@@ -1562,9 +1519,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.17 at 19h 23m 58s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DecisionTreeTest_testClassify - 2017.05.17 at 21h 02m 47s.xml">
       <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
     </history-entry>
@@ -1592,6 +1546,9 @@
     <history-entry file="DecisionTreeTest_testTrain - 2017.05.18 at 03h 30m 00s.xml">
       <configuration name="DecisionTreeTest.testTrain" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DecisionTreeTest_testTrain - 2017.05.18 at 16h 38m 17s.xml">
+      <configuration name="DecisionTreeTest.testTrain" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1604,7 +1561,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1920" height="1039" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1627,7 +1584,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2389,6 +2346,11 @@
           <line>88</line>
           <option name="timeStamp" value="2225" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="2249" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -2400,7 +2362,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2242" />
+      <option name="time" value="2265" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2409,121 +2371,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/classifier/bayes/mapreduce/bayes/BayesClassifierReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/classifier/bayes/mapreduce/bayes/BayesThetaNormalizerDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/classifier/bayes/mapreduce/bayes/BayesThetaNormalizerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/IllegalStateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="false" />
-            <element signature="e#1097#1098#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/CollectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="977" column="26" selection-start-line="977" selection-start-column="26" selection-end-line="977" selection-end-column="26" />
-          <folding>
-            <element signature="e#39321#39322#0" expanded="false" />
-            <element signature="e#39376#39377#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/abc.workbrench.main/src/main/java/com/abc/framework/workbrench/util/ProductParseTemplateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="2110" column="29" selection-start-line="2110" selection-start-column="29" selection-end-line="2110" selection-end-column="29" />
-          <folding>
-            <element signature="e#86062#86063#0" expanded="true" />
-            <element signature="e#86109#86110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2075">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ResizingArrayBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-935">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2531,7 +2382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1375">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2539,7 +2389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2400">
           <caret line="20" column="18" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2547,7 +2396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2325">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2555,7 +2403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
           <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2563,7 +2410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2979">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2571,7 +2417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5325">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2579,7 +2424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="42" column="22" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2587,7 +2431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
           <caret line="126" column="26" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2595,7 +2438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2607,19 +2449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2651,7 +2484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2659,7 +2491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2667,7 +2498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2204">
           <caret line="58" column="25" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2716,14 +2546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="87" column="22" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/IntVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675">
@@ -2736,9 +2558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#2675#2676#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2747,19 +2566,114 @@
         <state relative-caret-position="2421">
           <caret line="1589" column="58" selection-start-line="1589" selection-start-column="53" selection-end-line="1589" selection-end-column="58" />
           <folding>
-            <element signature="e#67889#67890#0" expanded="true" />
-            <element signature="e#67953#67954#0" expanded="true" />
+            <element signature="e#67889#67890#0" expanded="false" />
+            <element signature="e#67953#67954#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="348">
+          <caret line="244" column="0" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1088#1089#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2950">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="118" column="22" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/BinaryStdIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/base/graph/SimpleWeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#869#870#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/base/graph/FastLookupDirectedSpecifics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1427">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/digraph/KosarajuSharirSCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1550">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/digraph/TarjanSCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="125" column="26" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/digraph/EdgeWeightedDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/digraph/Digraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/digraph/SymbolDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2771,114 +2685,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="360" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#6264#6272#0" expanded="true" />
-            <element signature="e#11742#11743#0" expanded="true" />
-            <element signature="e#11787#11788#0" expanded="true" />
-            <element signature="e#11883#11884#0" expanded="true" />
-            <element signature="e#11938#11939#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="365">
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2021">
-          <caret line="1049" column="45" selection-start-line="1049" selection-start-column="34" selection-end-line="1049" selection-end-column="45" />
+        <state relative-caret-position="246">
+          <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-          <folding>
-            <element signature="e#3227#3228#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="331" selection-end-column="5" />
+        <state relative-caret-position="275">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="87" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="508" column="37" selection-start-line="508" selection-start-column="37" selection-end-line="508" selection-end-column="37" />
+        <state relative-caret-position="100">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="393" column="23" selection-start-line="393" selection-start-column="18" selection-end-line="393" selection-end-column="23" />
+        <state relative-caret-position="10161">
+          <caret line="478" column="54" selection-start-line="478" selection-start-column="42" selection-end-line="478" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <element signature="e#10679#10680#0" expanded="true" />
-            <element signature="e#10716#10717#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#4198#4199#0" expanded="true" />
+            <element signature="e#4232#4233#0" expanded="true" />
+            <element signature="e#4256#4257#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="471">
+          <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1954#1955#0" expanded="true" />
-            <element signature="e#4262#4270#0" expanded="true" />
-            <element signature="e#6641#6649#0" expanded="true" />
-            <element signature="e#6916#6917#0" expanded="true" />
-            <element signature="e#6960#6961#0" expanded="true" />
-            <element signature="e#7056#7057#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
+            <element signature="e#5071#5079#0" expanded="true" />
+            <element signature="e#8928#8929#0" expanded="true" />
+            <element signature="e#8985#8986#0" expanded="true" />
+            <element signature="e#9024#9025#0" expanded="true" />
+            <element signature="e#9075#9076#0" expanded="true" />
+            <element signature="e#9131#9132#0" expanded="true" />
+            <element signature="e#9179#9180#0" expanded="true" />
+            <element signature="e#10232#10233#0" expanded="true" />
+            <element signature="e#10272#10273#0" expanded="true" />
           </folding>
         </state>
       </provider>
