@@ -13,8 +13,8 @@ testingNB()
 # spamTest()
 #导入RSS数据源
 # import operator
-# ny=feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
-# sf=feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
-# getTopWords(ny,sf)
+ny=feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
+sf=feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
+getTopWords(ny,sf)
 # vocabList,p0V,p1V=localWords(ny,sf)
 # print(vocabList)

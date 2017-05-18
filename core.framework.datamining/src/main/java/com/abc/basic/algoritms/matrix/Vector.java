@@ -4,6 +4,7 @@ import com.abc.basic.algoritms.algs4.utils.StdOut;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -24,10 +25,16 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
     private int dimension;
 
     private V st;
-    private static final int scale=5;
+
+    private static final int scale=8;
+
+    private static final MathContext mathContext;
+    static {
+        mathContext=new MathContext(scale, RoundingMode.HALF_UP);
+    }
+    //MathContext(int setPrecision, RoundingMode setRoundingMode)
+
     public Vector() {
-//        this.d = d;
-//        this.st = new TreeMap<Integer, Number>();
     }
 
     public int getDimension() {
@@ -175,7 +182,7 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         if (this.st.size() <= that.st.size()) {
             for (int i : this.st.keySet()) {
                 if (that.st.containsKey(i)) {
-                    BigDecimal d = convertNumberToBigDecimal(this.get(i)).multiply(convertNumberToBigDecimal(that.get(i)));
+                    BigDecimal d = convertNumberToBigDecimal(this.get(i)).multiply(convertNumberToBigDecimal(that.get(i)),mathContext);
                     sum = sum.add(d);
 //                    sum += this.get(i) * that.get(i);
                 }
@@ -183,7 +190,7 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         } else {
             for (Object i : that.st.keySet()) {
                 if (this.st.containsKey(i)) {
-                    BigDecimal d = convertNumberToBigDecimal(this.get((Integer)i)).multiply(convertNumberToBigDecimal(that.get((Integer)i)));
+                    BigDecimal d = convertNumberToBigDecimal(this.get((Integer)i)).multiply(convertNumberToBigDecimal(that.get((Integer)i)),mathContext);
                     sum = sum.add(d);
 //                    sum += this.get(i) * that.get(i);
                 }
@@ -197,7 +204,7 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
 //        Number sum = 0.0;
         BigDecimal sum = new BigDecimal(0.0);
         for (int i : st.keySet()) {
-            BigDecimal d = convertNumberToBigDecimal(that[i]).multiply(convertNumberToBigDecimal(this.get(i)));
+            BigDecimal d = convertNumberToBigDecimal(that[i]).multiply(convertNumberToBigDecimal(this.get(i)),mathContext);
             sum = sum.add(d);
 //            sum += that[i] * this.get(i);
         }
@@ -212,11 +219,16 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         return Math.sqrt((Double) this.dot(this));
     }
 
+    /**
+     * 乘法
+     * @param alpha
+     * @return
+     */
     public Vector scale(Double alpha) {
         Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             BigDecimal decimal = convertNumberToBigDecimal(this.get(i));
-            c.put(i, decimal.multiply(convertNumberToBigDecimal(alpha)));
+            c.put(i, decimal.multiply(convertNumberToBigDecimal(alpha),mathContext));
 //            c.put(i, alpha * this.get(i));
         }
         return c;
@@ -240,12 +252,72 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         return c;
     }
 
+    public Vector exp() {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            Object l=this.get(i);
+            c.put(i, Math.exp(this.get(i).doubleValue()));
+        }
+        return c;
+    }
+
+    public Vector negate() {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            Object l=this.get(i);
+            BigDecimal bigDecimal=convertNumberToBigDecimal(this.get(i));
+            c.put(i, bigDecimal.negate());
+        }
+        return c;
+    }
+
+
     public Vector divide(Double alpha) {
         Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             BigDecimal d = convertNumberToBigDecimal(this.get(i));
             //除法的小数点数
             BigDecimal dd=d.divide(convertNumberToBigDecimal(alpha),scale,RoundingMode.CEILING);
+            c.put(i,dd);
+        }
+        return c;
+    }
+
+
+    /**
+     * 向量在分母
+     * @param alpha
+     * @return
+     */
+    public Vector divideThis(Double alpha) {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            BigDecimal d = convertNumberToBigDecimal(this.get(i));
+            BigDecimal alphaB= convertNumberToBigDecimal(alpha);
+            //除法的小数点数
+            BigDecimal dd=alphaB.divide(d,scale,RoundingMode.CEILING);
+            c.put(i,dd);
+        }
+        return c;
+    }
+
+    public Vector add(Double alpha) {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            BigDecimal d = convertNumberToBigDecimal(this.get(i));
+            //除法的小数点数
+            BigDecimal dd=d.add(convertNumberToBigDecimal(alpha));
+            c.put(i,dd);
+        }
+        return c;
+    }
+
+    public Vector add(Long alpha) {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            BigDecimal d = convertNumberToBigDecimal(this.get(i));
+            //除法的小数点数
+            BigDecimal dd=d.add(convertNumberToBigDecimal(alpha));
             c.put(i,dd);
         }
         return c;
@@ -276,7 +348,7 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
             c.put(i, this.get(i));                // c = this
         }
         for (Object i : that.st.keySet()) {
-            c.put((Integer)i, convertNumberToBigDecimal(c.get((Integer)i)).add(convertNumberToBigDecimal(that.get((Integer)i))));
+            c.put((Integer)i, convertNumberToBigDecimal(c.get((Integer)i)).add(convertNumberToBigDecimal(that.get((Integer)i)),mathContext));
 //            c.put(i, that.get(i) + c.get(i));     // c = c + that
         }
         return c;
@@ -291,6 +363,12 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         }
         return sum;
     }
+
+    /**
+     * 减法，this-that
+     * @param that
+     * @return
+     */
     public Vector minus(Vector that) {
         if (this.dimension != that.dimension) {
             throw new IllegalArgumentException("Vector lengths disagree");
@@ -307,16 +385,16 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
     }
 
     Object convertNumber(Number number) {
-
+        //BigDecimal(BigInteger unscaledVal, int scale, MathContext mc)
         Object decimal = null;
         if (number instanceof Integer) {
-            decimal = new BigDecimal((Integer) number);
+            decimal = new BigDecimal((Integer) number,mathContext);
         } else if (number instanceof Long) {
-            decimal = new BigDecimal((Long) number);
+            decimal = new BigDecimal((Long) number,mathContext);
         } else if (number instanceof Float) {
-            decimal = new BigDecimal((Float) number);
+            decimal = new BigDecimal((Float) number,mathContext);
         } else {
-            decimal = new BigDecimal((Double) number);
+            decimal = new BigDecimal((Double) number,mathContext);
         }
         return decimal;
     }
@@ -325,13 +403,17 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
 
         BigDecimal decimal = null;
         if (number instanceof Integer) {
-            decimal = new BigDecimal((Integer) number);
+            decimal = new BigDecimal((Integer) number,mathContext);
         } else if (number instanceof Long) {
-            decimal = new BigDecimal((Long) number);
+            decimal = new BigDecimal((Long) number,mathContext);
         } else if (number instanceof Float) {
-            decimal = new BigDecimal((Float) number);
+            decimal = new BigDecimal((Float) number,mathContext);
         } else  if (number instanceof Double){
-            decimal = new BigDecimal((Double) number);
+            try {
+                decimal = new BigDecimal((Double) number,mathContext);
+            }catch (NumberFormatException e){
+                decimal = new BigDecimal(0.0,mathContext);
+            }
         }
         if(decimal==null){
             return (BigDecimal) number;

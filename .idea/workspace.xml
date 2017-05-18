@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcLogisticRegresClassifer.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/testSet.txt" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/testSet.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,82 +104,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AbcTreeClassifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
+      <file leaf-file-name="AbcLogisticRegresClassifer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcLogisticRegresClassifer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="87" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbcBayesClassifier.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+            <state relative-caret-position="397">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5071#5079#0" expanded="true" />
-                <element signature="e#8928#8929#0" expanded="true" />
-                <element signature="e#8985#8986#0" expanded="true" />
-                <element signature="e#9024#9025#0" expanded="true" />
-                <element signature="e#9075#9076#0" expanded="true" />
-                <element signature="e#9131#9132#0" expanded="true" />
-                <element signature="e#9179#9180#0" expanded="true" />
-                <element signature="e#10282#10283#0" expanded="true" />
-                <element signature="e#10322#10323#0" expanded="true" />
+                <element signature="e#3231#3232#0" expanded="true" />
+                <element signature="e#3258#3259#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3623#3624#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObjectMapper.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="In.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractDataMining.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -178,23 +133,24 @@
       <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="371">
+              <caret line="352" column="9" selection-start-line="352" selection-start-column="9" selection-end-line="352" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#811#812#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#4198#4199#0" expanded="true" />
-                <element signature="e#4232#4233#0" expanded="true" />
-                <element signature="e#4256#4257#0" expanded="true" />
-                <element signature="e#4288#4289#0" expanded="true" />
+                <element signature="e#4416#4417#0" expanded="true" />
+                <element signature="e#4448#4449#0" expanded="true" />
+                <element signature="e#6039#6040#0" expanded="true" />
+                <element signature="e#6096#6097#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbcLogisticRegresClassiferTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/AbcLogisticRegresClassiferTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,21 +158,38 @@
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10161">
-              <caret line="478" column="54" selection-start-line="478" selection-start-column="42" selection-end-line="478" selection-end-column="54" />
+            <state relative-caret-position="296">
+              <caret line="415" column="38" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="39" />
+              <folding>
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#13661#13662#0" expanded="true" />
+                <element signature="e#13698#13699#0" expanded="true" />
+                <element signature="e#13741#13742#0" expanded="true" />
+                <element signature="e#13778#13779#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultVector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
+      <file leaf-file-name="logRegres.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/logRegres.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -246,13 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/GrahamScan.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/point2d/FarthestPair.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/DrawListener.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/utils/Draw.java" />
-        <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LongestCommonSubstring.java" />
         <option value="$PROJECT_DIR$/core.lambda.batch/src/main/java/com/abc/basic/algoritms/algs4/alphabet/LongestRepeatedSubstring.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09/regTrees.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch09/__init__.py" />
@@ -275,28 +241,35 @@
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/trees.py" />
         <option value="$PROJECT_DIR$/core.framework.data/pom.xml" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch03/__init__.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/search/BinarySearch.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/DecisionTreeTest.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/Test.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/Test.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/Test.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/DecisionTreeTest.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultMatrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/IntVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/NumberVector.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/AbcVector.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/AbcBayesClassifierTest.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/DecisionTreeTest.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/testSet.txt" />
         <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/AbcLogisticRegresClassiferTest.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/logRegres.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcLogisticRegresClassifer.java" />
+        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
       </list>
     </option>
   </component>
@@ -413,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ch04" />
+              <option name="myItemId" value="ch05" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,6 +490,82 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AbcLogisticRegresClassiferTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AbcBayesClassifierTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -544,6 +593,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jama" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,6 +733,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="matrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algs4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algoritms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algs4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -808,53 +971,7 @@
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AbcBayesClassifier">
-    <configuration default="false" name="DecisionTreeTest.testClassify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.framework.samples.dataming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="core.framework.datamining" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.abc.framework.samples.dataming" />
-      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.dataming.DecisionTreeTest" />
-      <option name="METHOD_NAME" value="testClassify" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AbcBayesClassifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.basic.datamining.classify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.datamining.classify.AbcBayesClassifier" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core.framework.datamining" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.AbcLogisticRegresClassiferTest.tainLogisticRegres">
     <configuration default="false" name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -872,7 +989,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="DecisionTreeTest.testTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AbcBayesClassifierTest.trainBayesClassifier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.abc.framework.samples.dataming.*" />
@@ -883,8 +1000,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.abc.framework.samples.dataming" />
-      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.dataming.DecisionTreeTest" />
-      <option name="METHOD_NAME" value="testTrain" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.dataming.AbcBayesClassifierTest" />
+      <option name="METHOD_NAME" value="trainBayesClassifier" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -898,24 +1015,73 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="AbcKNNClassifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AbcLogisticRegresClassiferTest.tainLogisticRegres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.abc.basic.datamining.classify.*" />
+          <option name="PATTERN" value="com.abc.framework.samples.dataming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.basic.datamining.classify.AbcKNNClassifier" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="core.framework.datamining" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.abc.framework.samples.dataming" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.dataming.AbcLogisticRegresClassiferTest" />
+      <option name="METHOD_NAME" value="tainLogisticRegres" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core.framework.datamining" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AbcLogisticRegresClassiferTest.classifyLogisticRegres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.abc.framework.samples.dataming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="core.framework.datamining" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.abc.framework.samples.dataming" />
+      <option name="MAIN_CLASS_NAME" value="com.abc.framework.samples.dataming.AbcLogisticRegresClassiferTest" />
+      <option name="METHOD_NAME" value="classifyLogisticRegres" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1469,19 +1635,19 @@
       <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
       <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
       <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testClassify" />
-      <item index="5" class="java.lang.String" itemvalue="Application.AbcBayesClassifier" />
-      <item index="6" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testTrain" />
-      <item index="8" class="java.lang.String" itemvalue="Application.AbcKNNClassifier" />
+      <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AbcBayesClassifierTest.trainBayesClassifier" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.AbcLogisticRegresClassiferTest.tainLogisticRegres" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.AbcLogisticRegresClassiferTest.classifyLogisticRegres" />
+      <item index="8" class="java.lang.String" itemvalue="Python.__init__ (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AbcBayesClassifier" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testTrain" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AbcKNNClassifier" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DecisionTreeTest.testClassify" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AbcLogisticRegresClassiferTest.tainLogisticRegres" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AbcBayesClassifierTest.trainBayesClassifier" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AbcLogisticRegresClassiferTest.classifyLogisticRegres" />
+        <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -1510,35 +1676,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.17 at 21h 02m 47s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 13m 18s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.17 at 21h 03m 52s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 27m 45s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.17 at 21h 08m 19s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 30m 38s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.18 at 03h 23m 38s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 35m 12s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.18 at 03h 24m 16s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 38m 02s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.18 at 03h 29m 27s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 41m 19s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testClassify - 2017.05.18 at 03h 29m 52s.xml">
-      <configuration name="DecisionTreeTest.testClassify" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 45m 57s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testTrain - 2017.05.18 at 03h 24m 00s.xml">
-      <configuration name="DecisionTreeTest.testTrain" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 49m 03s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testTrain - 2017.05.18 at 03h 30m 00s.xml">
-      <configuration name="DecisionTreeTest.testTrain" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 49m 25s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionTreeTest_testTrain - 2017.05.18 at 16h 38m 17s.xml">
-      <configuration name="DecisionTreeTest.testTrain" configurationId="JUnit" />
+    <history-entry file="AbcLogisticRegresClassiferTest_tainLogisticRegres - 2017.05.19 at 03h 51m 21s.xml">
+      <configuration name="AbcLogisticRegresClassiferTest.tainLogisticRegres" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1575,7 +1741,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2324,11 +2490,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
-          <line>143</line>
-          <option name="timeStamp" value="2204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
           <line>64</line>
           <option name="timeStamp" value="2223" />
         </line-breakpoint>
@@ -2342,6 +2503,21 @@
           <line>105</line>
           <option name="timeStamp" value="2249" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="2265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="2267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/logRegres.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="2298" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -2353,7 +2529,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2265" />
+      <option name="time" value="2317" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2362,204 +2538,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-935">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1375">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MaxPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2400">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/MinPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2325">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/IndexMaxPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/tree/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2979">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Alphabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5325">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/alphabet/Quick3string.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/alphabet/SuffixArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="126" column="26" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/alphabet/RabinKarp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/ArrayUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="1903" column="47" selection-start-line="1903" selection-start-column="47" selection-end-line="1903" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Complex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/PatriciaSET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1329">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/Point2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/point2d/RectHV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/CholeskyDecomposition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2204">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="917" column="0" selection-start-line="917" selection-start-column="0" selection-end-line="922" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/text/DecimalFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="380" column="47" selection-start-line="380" selection-start-column="35" selection-end-line="380" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/NumberVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1510#1511#0" expanded="false" />
-            <element signature="e#4522#4523#0" expanded="false" />
-            <element signature="e#4579#4580#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/IntVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-jcl/1.6.0/slf4j-jcl-1.6.0.jar!/org/slf4j/impl/JCLLoggerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2421">
-          <caret line="1589" column="58" selection-start-line="1589" selection-start-column="53" selection-end-line="1589" selection-end-column="58" />
-          <folding>
-            <element signature="e#67889#67890#0" expanded="false" />
-            <element signature="e#67953#67954#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2668,69 +2651,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/DecisionTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="103" column="21" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="87" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2742,59 +2667,328 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/DecisionTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10161">
-          <caret line="478" column="54" selection-start-line="478" selection-start-column="42" selection-end-line="478" selection-end-column="54" />
+        <state relative-caret-position="46">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="171">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/email/spam/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/email/ham/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-jcl/1.6.0/slf4j-jcl-1.6.0.jar!/org/slf4j/impl/JCLLoggerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#4198#4199#0" expanded="true" />
-            <element signature="e#4232#4233#0" expanded="true" />
-            <element signature="e#4256#4257#0" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#2628#2629#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state relative-caret-position="246">
+          <caret line="2408" column="20" selection-start-line="2408" selection-start-column="20" selection-end-line="2408" selection-end-column="20" />
+          <folding>
+            <element signature="e#94262#94263#0" expanded="true" />
+            <element signature="e#94300#94301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/jgrapht/Graphs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/base/graph/AbstractBaseGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7010">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="e#10577#10578#0" expanded="false" />
+            <element signature="e#10622#10623#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/testSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcKNNClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="21" column="88" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#4673#4681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3700">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/LinkedBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1418">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1968">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/SET.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/base/graph/AbstractGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/DefaultVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/AbcBayesClassifierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="79" column="78" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/math/MathContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254">
+          <caret line="337" column="25" selection-start-line="337" selection-start-column="25" selection-end-line="337" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="1508" column="61" selection-start-line="1508" selection-start-column="56" selection-end-line="1508" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/horseColicTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/Jama/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="780" column="32" selection-start-line="780" selection-start-column="32" selection-end-line="780" selection-end-column="32" />
+          <folding>
+            <element signature="e#19917#19918#0" expanded="false" />
+            <element signature="e#19968#19969#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/col/ST.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
-          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/logRegres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/dataming/AbcLogisticRegresClassiferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="415" column="38" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="39" />
+          <folding>
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#13661#13662#0" expanded="true" />
+            <element signature="e#13698#13699#0" expanded="true" />
+            <element signature="e#13741#13742#0" expanded="true" />
+            <element signature="e#13778#13779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="352" column="9" selection-start-line="352" selection-start-column="9" selection-end-line="352" selection-end-column="9" />
+          <folding>
+            <element signature="e#4416#4417#0" expanded="true" />
+            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="e#6039#6040#0" expanded="true" />
+            <element signature="e#6096#6097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcLogisticRegresClassifer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5071#5079#0" expanded="true" />
-            <element signature="e#8928#8929#0" expanded="true" />
-            <element signature="e#8985#8986#0" expanded="true" />
-            <element signature="e#9024#9025#0" expanded="true" />
-            <element signature="e#9075#9076#0" expanded="true" />
-            <element signature="e#9131#9132#0" expanded="true" />
-            <element signature="e#9179#9180#0" expanded="true" />
-            <element signature="e#10282#10283#0" expanded="true" />
-            <element signature="e#10322#10323#0" expanded="true" />
+            <element signature="e#3231#3232#0" expanded="true" />
+            <element signature="e#3258#3259#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
           </folding>
         </state>
       </provider>

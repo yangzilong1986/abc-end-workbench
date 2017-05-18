@@ -3,16 +3,26 @@ package com.abc.basic.algoritms.matrix;
 
 import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.algs4.utils.StdOut;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 import java.util.TreeMap;
 
 public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable {
+    private static final Logger log = LoggerFactory.getLogger(Matrix.class);
     protected Matrix matrixT;
     protected ST<Integer, V> matrix;
     protected int row;
     protected int col;
 
+    public ST<Integer, V> getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(ST<Integer, V> matrix) {
+        this.matrix = matrix;
+    }
 
     ////////////////////构造方法//////////////////////////
     public Matrix(Integer[] data, int row, int col){
@@ -361,6 +371,55 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return tmpMatrix;
     }
 
+    /**
+     * 矩阵乘法，this*that
+     * @param that
+     * @return
+     */
+    public Matrix times (Matrix that) {
+        if(this.col!=that.row){
+            throw new IllegalArgumentException("Matrix Cji Ajm*Bmi ");
+        }
+        //
+        //结果矩阵
+        //结果矩阵的列数和that矩阵一致
+        Matrix tmpMatrix = new Matrix(that.col);
+        //
+        Matrix thatT=that.transposeC();
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            Vector cVector=new Vector(that.col);
+            for (Object i : thatT.matrix.keys()) {//that
+                Vector bVector = (Vector) thatT.matrix.get((Integer)i);
+                Number number=aVector.dot(bVector);
+                if(log.isDebugEnabled()){
+                    log.debug("行 j:"+j);
+                    log.debug("列 i:"+i);
+                    log.debug("结果:"+number);
+                }
+                cVector.put((Integer)i,number);
+            }
+            tmpMatrix.addVector(cVector);
+        }
+        return tmpMatrix;
+    }
+
+
+    public Matrix plusThat (Matrix that) {
+        if(this.col!=that.col){
+            throw new IllegalArgumentException("Matrix Cji Ajm*Bmi ");
+        }
+        Matrix tmpMatrix = new Matrix(that.col);
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            Vector bVector = (Vector) that.matrix.get((Integer)j);
+            Vector cVector=aVector.plus(bVector);
+
+            tmpMatrix.addVector(cVector);
+        }
+        return tmpMatrix;
+    }
+
     public Matrix sqrt () {
         Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
@@ -391,6 +450,46 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return tmpMatrix;
     }
 
+    public Matrix add (Long alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.add((Long) alpha);
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
+
+    public Matrix add (Double alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.add((Double) alpha);
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
+
+    public Matrix exp (){
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.exp();
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
+
+    public Matrix negate (){
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.negate();
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
+
     public Matrix divid (Double alpha) {
         return times(1/alpha);
     }
@@ -399,8 +498,17 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return times(1/alpha);
     }
 
+    public Matrix divideThis (Double alpha) {
+        Matrix tmpMatrix = new Matrix(this.col);
+        for (int i : matrix.keys()) {
+            Vector vector = matrix.get(i);
+            Vector temp=vector.divideThis((Double) alpha);
+            tmpMatrix.addVector(temp);
+        }
+        return tmpMatrix;
+    }
     /**
-     * this为被减数
+     * this为被减数， this-that
      * @param that 减数
      * @return
      */

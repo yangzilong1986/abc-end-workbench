@@ -192,8 +192,8 @@ def spamTest():
         trainMat.append(bagOfWords2VecMN(vocabList, docList[docIndex]))
         trainClasses.append(classList[docIndex])
     p0V,p1V,pSpam = trainNB0(array(trainMat),array(trainClasses))
-    errorCount = 0
 
+    errorCount = 0
     #测试并计算错误率
     for docIndex in testSet:        #classify the remaining items
         wordVector = bagOfWords2VecMN(vocabList, docList[docIndex])

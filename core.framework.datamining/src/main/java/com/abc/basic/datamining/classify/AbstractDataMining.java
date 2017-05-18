@@ -17,14 +17,14 @@ import java.util.*;
  * 装载数据
  * 执行训练方法
  */
-abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
+abstract public class AbstractDataMining<TainLabel,TainResult> {
     private static final Logger log = LoggerFactory.getLogger(AbstractDataMining.class);
 
     public static final String PATH_NAME="D:\\DevN\\sample-data\\pydatamining\\";
 
     protected DefaultMatrix dataMatrix;
 
-    protected String[] labels;
+    protected TainLabel[] labels;
 
     protected TainResult st;//训练结果集
 
@@ -32,13 +32,22 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
     protected List dataSet=null;
     //训练数据文件名称
     protected String trainDataFileName;
+
     //训练结果文件名称
     protected String trainResultFileName;
+
+    public boolean isSameWidth() {
+        return isSameWidth;
+    }
+
+    public void setSameWidth(boolean sameWidth) {
+        isSameWidth = sameWidth;
+    }
 
     //数据文件每行不能宽时，是否忽略
     protected boolean isSameWidth=true;
 
-    public  void setClassifyLabels(String[] classLabels){
+    public  void setClassifyLabels(TainLabel[] classLabels){
         this.labels=classLabels;
     }
 
@@ -46,7 +55,7 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
      * 训练数据文件名称
      * @return
      */
-    public void setTrainDataFileName(String trainDataFileName){
+    public void initTrainDataFileName(String trainDataFileName){
         this.trainDataFileName=trainDataFileName;
     }
 
@@ -54,11 +63,11 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
      * 训练结果数据存储文件名称
      * @return
      */
-    public void setTrainResultFileName(String fileName){
+    public void initTrainResultFileName(String fileName){
         this.trainResultFileName=fileName;
     }
 
-    public String getLabels(int row){
+    public TainLabel getLabels(int row){
         return labels[row];
     }
 
@@ -66,11 +75,20 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
         return dataMatrix.getShape();
     }
 
+    public void buildDataSet(List dataSet){
+        this.dataSet=dataSet;
+    }
+
     /**
      * 训练数据模型
      * @return
      */
     final public void train(){
+        //兼容开发设置
+        if(trainDataFileName==null||trainResultFileName==null) {
+            trainDataFileName=doingTrainDataFileName();
+            trainResultFileName=doingTrainResultFileName();
+        }
         //装载分类信息
         createLabels();
         //装载数据
@@ -84,6 +102,11 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
     }
 
     final public Map classify(){
+        //兼容开发设置
+        if(trainDataFileName==null||trainResultFileName==null) {
+            trainDataFileName=doingTrainDataFileName();
+            trainResultFileName=doingTrainResultFileName();
+        }
         createLabels();
         loadTrainResult();
         return natvieClassify();
@@ -106,6 +129,10 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
 
     protected void loadTrainResult(){
         ObjectMapper mapper = new ObjectMapper();
+        if(isNotExistFile(this.setStoreTrainData())){
+            log.warn("训练结果不存在");
+            return ;
+        }
         try {
             In streams=new In(setStoreTrainResultName());
             String json =streams.readLine();
@@ -121,7 +148,7 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
      * 训练数据文件名称
      * @return
      */
-    protected String setStoreTrainData(){
+    final String setStoreTrainData(){
         return PATH_NAME+trainDataFileName;
     }
 
@@ -129,17 +156,11 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
      * 训练结果数据存储
      * @return
      */
-    protected String setStoreTrainResultName(){
+    final String setStoreTrainResultName(){
         return PATH_NAME+trainResultFileName;
     }
 
-    public String[] createLabels() {
-        return labels;
-    }
 
-    abstract public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException;
-
-    abstract public  TainResult nativeTrain();
 
     public void createDataSet(){
         if(CollectionUtils.isEmpty(dataSet)) {
@@ -149,12 +170,24 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
         }
     }
 
+    public boolean isNotExistFile(String fileName){
+        try {
+            In streams = new In(fileName);
+            return false;
+        }catch (IllegalArgumentException e){
+            log.error("词源文件不存在");
+            return true;
+        }
+    }
     /**
      * @param regex
      * @return
      */
     public List loadDataFormFile(String regex ){
-
+        if(isNotExistFile(this.setStoreTrainData())){
+            log.warn("训练数据不存在");
+            return null;
+        }
         In streams=new In(this.setStoreTrainData());
         //在每个流中读入一个数据，形成index/key
         String[] lines=streams.readAllLines();
@@ -186,8 +219,6 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
         }
         return dataSet;
     }
-
-    abstract public Map natvieClassify();
 
     ///////////////////////////////////////////////////////////////
     /**
@@ -252,4 +283,15 @@ abstract public class AbstractDataMining<K extends Comparable<K>,V,TainResult> {
         return true;
     }
 
+    abstract public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException;
+
+    abstract public  TainResult nativeTrain();
+
+    abstract public Map natvieClassify();
+
+    abstract public TainLabel[] createLabels();
+
+    abstract  protected String doingTrainDataFileName();
+
+    abstract  protected String doingTrainResultFileName();
 }

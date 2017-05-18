@@ -2,9 +2,6 @@ package com.abc.basic.datamining.classify;
 
 
 import com.abc.basic.algoritms.algs4.col.Bag;
-import com.abc.basic.algoritms.algs4.col.ST;
-import com.abc.basic.algoritms.algs4.search.BinarySearch;
-import com.abc.basic.algoritms.algs4.utils.In;
 import com.abc.basic.algoritms.matrix.DefaultMatrix;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -12,16 +9,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections.CollectionUtils;
 
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.*;
 
-public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMining
+public class AbcTreeClassifier <TainLabel,TainResult>extends AbstractDataMining
 {
     private static final Logger log = LoggerFactory.getLogger(AbcTreeClassifier.class);
     protected  List<String> classLabels=null;
@@ -290,14 +285,14 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
     public void createDataSet(){
         labels=createLabels();
         classLabels=new ArrayList<>();
-        for(String label:this.labels){
+        for(String label:(String[]) this.labels){
             classLabels.add(label);
         }
         dataSet=loadDataFormFile("\t");
     }
 
     @Override
-    public String[] createLabels() {
+    public Object[] createLabels() {
         if(labels==null) {
             labels =new String[]{"age", "presscript", "astigmatic", "tearRate"};
         }
@@ -309,15 +304,16 @@ public class AbcTreeClassifier<K extends Comparable<K>,V> extends AbstractDataMi
      * @return
      */
     @Override
-    protected String setStoreTrainData(){
-        return PATH_NAME+"lenses.txt";
+    protected String doingTrainDataFileName(){
+        return "lenses.txt";
     }
 
     /**
      * 训练结果数据存储
      * @return
      */
-    protected String setStoreTrainResultName(){
-        return PATH_NAME+"lenses-desc-tree.txt";
+    protected String doingTrainResultFileName(){
+        return "lenses-desc-tree.txt";
     }
+
 }

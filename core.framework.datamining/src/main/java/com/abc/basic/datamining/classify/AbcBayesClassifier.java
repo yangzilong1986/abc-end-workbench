@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.lang.reflect.Type;
 import java.util.*;
 
 
@@ -27,21 +26,10 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
     //单词的分隔符
     protected String delimiter="\t";
     private  String vocabFileName="vocab-bayes.txt";
-
+    //是否是词袋模型
+    private boolean bagOfWords2Vec=false;
     //测试数据
     private  List<String> testTrain;
-
-    public static void main(String[] args){
-        AbcBayesClassifier bayesClassifier=new AbcBayesClassifier();
-//        bayesClassifier.train();
-        //'love', 'my', 'dalmation'
-        List<String> testTrain=new ArrayList<>();
-        testTrain.add("love");
-        testTrain.add("my");
-        testTrain.add("dalmation");
-        bayesClassifier.setTestTrain(testTrain);
-        bayesClassifier.classify();
-    }
 
     public  void readObject(ObjectMapper mapper,String json)throws JsonProcessingException,IOException{
         TypeReference typeReference=new TypeReference<TrainResult<Vector<TreeMap<Integer, Number>>>>(){//
@@ -182,13 +170,7 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
     }
 
     protected boolean isNotExistVocabFile(){
-        try {
-            In streams = new In(getVocabFileName());
-            return false;
-        }catch (IllegalArgumentException e){
-            log.error("词源文件不存在");
-            return true;
-        }
+        return super.isNotExistFile(getVocabFileName());
     }
     protected void readVocab(){
         In streams=new In(getVocabFileName());
@@ -202,12 +184,13 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         }
         streams.close();
     }
+
     /**
-     *
+     * 贝叶斯词集模型
      * @param vocabList 全量字符集
      * @param inputSet 输入向量，每行数据
      */
-    public Vector setOfWords2Vec(TreeSet<String> vocabList, List<String> inputSet){
+    protected Vector setOfWords2Vec(TreeSet<String> vocabList, List<String> inputSet){
         if(CollectionUtils.isEmpty(vocabList)||CollectionUtils.isEmpty(inputSet)){
             throw new IllegalStateException("全量字符集为空或者输入向量为空");
         }
@@ -220,8 +203,10 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         for(String word:inputSet){
             if(vocabList.contains(word)){
                 int index=indexof(vocabArray,word);
-                if(index >-1){
-                    vector.put(index,1);
+                if(bagOfWords2Vec){
+                    bagOfWords2Vec(vector,index);
+                }else{
+                    toWords2Vec(vector,index);
                 }
             }
         }
@@ -229,6 +214,19 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
             log.debug("创建向量为:"+vector);
         }
         return vector;
+    }
+
+    private void toWords2Vec(Vector vector,int index){
+        if(index >-1){
+            vector.put(index,1);
+        }
+    }
+
+    protected void bagOfWords2Vec(Vector vector,int index){
+        int freq=vector.get(index).intValue()+1;
+        if(index >-1){
+            vector.put(index,1);
+        }
     }
 
     protected int indexof(String[] vocabArray,String label){
@@ -268,16 +266,16 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
      * @return
      */
     @Override
-    protected String setStoreTrainData(){
-        return PATH_NAME+"bayes.txt";
+    protected String doingTrainDataFileName(){
+        return  "bayes.txt";
     }
 
     /**
      * 训练结果数据存储
      * @return
      */
-    protected String setStoreTrainResultName(){
-        return PATH_NAME+"bayes-train-result.txt";
+    protected String doingTrainResultFileName(){
+        return "bayes-train-result.txt";
     }
 
     public String getVocabFileName(){
@@ -321,7 +319,7 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         this.testTrain=testTrain;
     }
     @Override
-    public String[] createLabels() {
+    public Object[] createLabels() {
         classVec=new int[]{0,1,0,1,0,1};
         return labels;
     }

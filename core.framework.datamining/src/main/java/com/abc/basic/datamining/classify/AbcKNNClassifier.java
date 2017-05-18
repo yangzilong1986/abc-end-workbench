@@ -1,6 +1,5 @@
 package com.abc.basic.datamining.classify;
 
-import com.abc.basic.algoritms.algs4.col.ST;
 import com.abc.basic.algoritms.matrix.DefaultMatrix;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -38,7 +37,7 @@ public class AbcKNNClassifier extends AbstractDataMining {
     }
 
     @Override
-    public String[] createLabels(){
+    public Object[] createLabels(){
         if(labels==null) {
             labels = new String[]{"A", "A", "B", "B"};
         }
@@ -52,7 +51,7 @@ public class AbcKNNClassifier extends AbstractDataMining {
         TreeMap<String, Integer> classCount=new TreeMap<String, Integer>();
         for(int i=0;i<k;i++){
             int count=0;
-            String label=getLabels(gg[i]);
+            String label= (String) getLabels(gg[i]);
             Integer current=classCount.get(label);
             if(current==null){
                 count=1;
@@ -91,15 +90,24 @@ public class AbcKNNClassifier extends AbstractDataMining {
         mapSort=desicTree;
     }
 
-    @Override
-    protected String setStoreTrainData() {
-        return null;
-    }
 
     @Override
-    protected String setStoreTrainResultName() {
-        return PATH_NAME+"kNN-tree.txt";
+    /**
+     * 训练结果数据存储
+     * @return
+     */
+    protected String doingTrainResultFileName() {
+        return "kNN-tree.txt";
     }
+    /**
+     * 训练数据文件名称
+     * @return
+     */
+    @Override
+    protected String doingTrainDataFileName(){
+        return "logistic.txt";
+    }
+
     public TreeMap<String,Object> nativeTrain(){
         createDataSet();
         buildClassifyMatrix();
