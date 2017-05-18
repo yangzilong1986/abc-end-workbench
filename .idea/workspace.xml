@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" afterPath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/pom.xml" afterPath="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/Out.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/StdArrayIO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcTreeClassifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbstractDataMining.java" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +107,8 @@
       <file leaf-file-name="AbcBayesClassifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
+            <state relative-caret-position="371">
+              <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5071#5079#0" expanded="true" />
@@ -127,8 +118,8 @@
                 <element signature="e#9075#9076#0" expanded="true" />
                 <element signature="e#9131#9132#0" expanded="true" />
                 <element signature="e#9179#9180#0" expanded="true" />
-                <element signature="e#10232#10233#0" expanded="true" />
-                <element signature="e#10272#10273#0" expanded="true" />
+                <element signature="e#10282#10283#0" expanded="true" />
+                <element signature="e#10322#10323#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2791,8 +2782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/datamining/classify/AbcBayesClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
+        <state relative-caret-position="371">
+          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5071#5079#0" expanded="true" />
@@ -2802,8 +2793,8 @@
             <element signature="e#9075#9076#0" expanded="true" />
             <element signature="e#9131#9132#0" expanded="true" />
             <element signature="e#9179#9180#0" expanded="true" />
-            <element signature="e#10232#10233#0" expanded="true" />
-            <element signature="e#10272#10273#0" expanded="true" />
+            <element signature="e#10282#10283#0" expanded="true" />
+            <element signature="e#10322#10323#0" expanded="true" />
           </folding>
         </state>
       </provider>

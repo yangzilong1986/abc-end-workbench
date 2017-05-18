@@ -311,7 +311,9 @@ public class AbcBayesClassifier <K extends Comparable<K>,V> extends AbstractData
         //条件概率
         double p1=testVector.dot(trainResult.getP1Vect()).doubleValue()+Math.log(trainResult.pAbusive);
         double p0=testVector.dot(trainResult.getP0Vect()).doubleValue()+Math.log(1.0-trainResult.pAbusive);;
-
+        if(p1>p0){
+            return 1;
+        }
         return 0;
 
     }
