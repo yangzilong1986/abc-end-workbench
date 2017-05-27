@@ -41,7 +41,7 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
         alphaPairsChanged = 0
         for i in range(m):
             #alphas[100,1]  labelMat[100,1]
-            alphasLableMat=multiply(alphas,labelMat)#100,1,矩阵元素乘
+            alphasLableMat=multiply(alphas,labelMat)#100,1,向量积
             alphasLableMat_T=alphasLableMat.T
             #dataMatrix[i,:]取行，dataMatrix[:,i]取列
             dataMartix_Col=dataMatrix[i,:]

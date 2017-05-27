@@ -164,11 +164,10 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         return st.size();
     }
 
-
-
     /**
      * 点乘
-     *
+     * 标量积，在数学中，数量积（dot product; scalar product，也称为点积）是接受在实数R上的两个向量
+     * 并返回一个实数值标量的二元运算。它是欧几里得空间的标准内积。
      * @param that
      * @return
      */
@@ -228,6 +227,21 @@ public class Vector <V extends TreeMap<Integer, Number>> implements Cloneable, j
         Vector c = new Vector(dimension);
         for (int i : this.st.keySet()) {
             BigDecimal decimal = convertNumberToBigDecimal(this.get(i));
+            c.put(i, decimal.multiply(convertNumberToBigDecimal(alpha),mathContext));
+        }
+        return c;
+    }
+
+    /**
+     * 数乘法
+     * @param that
+     * @return
+     */
+    public Vector scale(Vector that) {
+        Vector c = new Vector(dimension);
+        for (int i : this.st.keySet()) {
+            BigDecimal decimal = convertNumberToBigDecimal(this.get(i));
+            BigDecimal alpha= convertNumberToBigDecimal(that.get(i));
             c.put(i, decimal.multiply(convertNumberToBigDecimal(alpha),mathContext));
 //            c.put(i, alpha * this.get(i));
         }

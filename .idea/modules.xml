@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abc-end-workbench.iml" filepath="$PROJECT_DIR$/abc-end-workbench.iml" />
       <module fileurl="file://$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" filepath="$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" filepath="$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.base.parent/core.base.parent.iml" filepath="$PROJECT_DIR$/core.base.parent/core.base.parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" filepath="$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.data/core.framework.data.iml" filepath="$PROJECT_DIR$/core.framework.data/core.framework.data.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" filepath="$PROJECT_DIR$/core.framework.datamining/core.framework.datamining.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" filepath="$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.framework.datamining.spark/core.framework.datamining.spark.iml" filepath="$PROJECT_DIR$/core.framework.datamining.spark/core.framework.datamining.spark.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" filepath="$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.media/core.framework.media.iml" filepath="$PROJECT_DIR$/core.framework.media/core.framework.media.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" filepath="$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" />

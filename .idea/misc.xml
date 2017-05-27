@@ -71,6 +71,7 @@
         <option value="$PROJECT_DIR$/core.framework.media/pom.xml" />
         <option value="$PROJECT_DIR$/core.framework.datamining/pom.xml" />
         <option value="$PROJECT_DIR$/mahout-mahout-0.5/pom.xml" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.scala/pom.xml" />
       </list>
     </option>
   </component>

@@ -361,6 +361,11 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return matrixT;
     }
 
+    /**
+     * 矩阵乘一个标量
+     * @param alpha
+     * @return
+     */
     public Matrix times (Number alpha) {
         Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
@@ -369,6 +374,103 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
             tmpMatrix.addVector(temp);
         }
         return tmpMatrix;
+    }
+
+    /**
+     *
+     */
+    /**
+     * 矩阵内的数据做普通乘法
+     * [1,2,3]   [1,2,3]   [1 4  9]
+     * [4,5,6]   [4,5,6]   [16,25,36]
+     * [7,8,9]   [7,8,9]   [49,64,81]
+     * @param that
+     * @return
+     */
+    public Matrix timesMultiply (Matrix that) {
+        if(this.col!=that.col||this.row!=that.row){
+            throw new IllegalArgumentException("Matrix Cmn mn*Bmn ");
+        }
+
+        Matrix tmpMatrix = new Matrix(that.col);
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            Vector bVector = (Vector) that.matrix.get((Integer)j);
+            Vector cVector=aVector.scale(bVector);
+
+            tmpMatrix.addVector(cVector);
+        }
+        return tmpMatrix;
+    }
+    /**
+     * 矩阵内的数据做普通乘法
+     * [1,2,3]   [1,2,3]   [1 4  9]
+     * [4,5,6]             [4,10,18]
+     * [7,8,9]             [7,16,27]
+     * @param bVector
+     * @return
+     */
+    public Matrix timesMultiply (Vector bVector) {
+        if(this.col!=bVector.getDimension()){
+            throw new IllegalArgumentException("Matrix Cmn mn*Bn ");
+        }
+
+        Matrix tmpMatrix = new Matrix(this.col);
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            Vector cVector=aVector.scale(bVector);
+
+            tmpMatrix.addVector(cVector);
+        }
+        return tmpMatrix;
+    }
+    /**
+     * 矩阵内的数据以列为基准做点积
+     * [1,2,3]   [1,2,3]   [14]
+     * [4,5,6]   [4,5,6]   [67]
+     * [7,8,9]   [7,8,9]   [194]
+     * @param that
+     * @return
+     */
+    public Vector timesDot (Matrix that) {
+        if(this.col!=that.col||this.row!=that.row){
+            throw new IllegalArgumentException("Matrix Cmn mn*Bmn ");
+        }
+
+//        Matrix tmpMatrix = new Matrix(that.col);
+        Vector cVector=new Vector(this.col);
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            Vector bVector = (Vector) that.matrix.get((Integer)j);
+            cVector.put(j,aVector.dot(bVector));
+
+        }
+//        tmpMatrix.addVector(cVector);
+        return cVector;
+    }
+
+    /**
+     * 矩阵内的数据以列为基准做点积
+     * [1,2,3]   [1,2,3]   [14]
+     * [4,5,6]             [32]
+     * [7,8,9]             [50]
+     * @param bVector
+     * @return
+     */
+    public Vector timesDot ( Vector bVector) {
+        if(this.col!=bVector.getDimension()){
+            throw new IllegalArgumentException("Matrix Cmn mn*Bn ");
+        }
+
+//        Matrix tmpMatrix = new Matrix(this.col);
+        Vector cVector=new Vector(this.col);
+        for(int j=0;j<row;j++) {//生成矩阵的行，this
+            Vector aVector = matrix.get(j);
+            cVector.put(j,aVector.dot(bVector));
+
+        }
+//        tmpMatrix.addVector(cVector);
+        return cVector;
     }
 
     /**
@@ -405,6 +507,11 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
     }
 
 
+    /**
+     * 矩阵加
+     * @param that
+     * @return
+     */
     public Matrix plusThat (Matrix that) {
         if(this.col!=that.col){
             throw new IllegalArgumentException("Matrix Cji Ajm*Bmi ");
@@ -420,6 +527,10 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return tmpMatrix;
     }
 
+    /**
+     * 向量sqrt
+     * @return
+     */
     public Matrix sqrt () {
         Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
@@ -498,6 +609,11 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         return times(1/alpha);
     }
 
+    /**
+     * 向量在分母
+     * @param alpha
+     * @return
+     */
     public Matrix divideThis (Double alpha) {
         Matrix tmpMatrix = new Matrix(this.col);
         for (int i : matrix.keys()) {
@@ -565,6 +681,11 @@ public class Matrix<V extends Vector> implements Cloneable, java.io.Serializable
         }
     }
 
+    /**
+     *
+     * @param defaultMatrix
+     * @return
+     */
     public Matrix plus (Matrix defaultMatrix) {
         Matrix tmpMatrix = new Matrix(defaultMatrix.col);
         Vector vector = (Vector) defaultMatrix.matrix.get(0);

@@ -149,6 +149,9 @@ def classify0(inX, dataSet, labels, k):
 
     # 按照类别的数量多少进行排序
     #确定前k个点在所有列表出现的频率
+    #要找出支持度最高的规则，首先对支持度字典进行排序。字典中的元素（一个键值对）默认为没有前后顺序；
+    # 字典的items()函数返回包含字典所有元素的列表。我们使用itemgetter()类作为键，这样就可以对嵌套列表进行排序。
+    # itemgetter(1)表示以字典各元素的值（这里为支持度）作为排序依据，reverse=True表示降序排列。
     sortedClassCount = sorted(classCount.iteritems(),
                               key=operator.itemgetter(1),
                               reverse=True)
