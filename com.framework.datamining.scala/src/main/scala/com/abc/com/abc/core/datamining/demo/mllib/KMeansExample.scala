@@ -15,7 +15,7 @@ object KMeansExample {
 
     // $example on$
     // Load and parse the data
-    val data = sc.textFile("D:\\DevN\\i-b-hadoop\\spark-2.1.0\\data\\mllib\\kmeans_data.txt")
+    val data = sc.textFile("D:\\DevN\\sample-data\\spark-data\\mllib\\kmeans_data.txt")
     val parsedData = data.map(s => Vectors.dense(s.split(' ').map(_.toDouble))).cache()
 
     // Cluster the data into two classes using KMeans

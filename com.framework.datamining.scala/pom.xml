@@ -24,7 +24,8 @@
         <scala.binary.version>2.10</scala.binary.version>
 
         <spark.version>2.1.0</spark.version>
-
+        <!---->
+        <!--<janino.version>3.0.0</janino.version>-->
     </properties>
 
     <dependencyManagement>
@@ -55,19 +56,6 @@
             <version>${scala.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>org.scala-lang.modules</groupId>-->
-            <!--<artifactId>scala-xml_${scala.binary.version}</artifactId>-->
-            <!--<version>1.0.2</version>-->
-        <!--</dependency>-->
-
-       <!--<dependency>-->
-            <!--<groupId>org.apache.spark</groupId>-->
-            <!--<artifactId>spark-core_${scala.binary.version}</artifactId>-->
-            <!--<version>${spark.version}</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
         <dependency>
@@ -153,12 +141,23 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-jaxb-annotations</artifactId>
             <!--<version>${fasterxml.jackson.version}</version>-->
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.janino</groupId>
+            <artifactId>janino</artifactId>
+            <version>${janino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.janino</groupId>
+            <artifactId>commons-compiler</artifactId>
+            <version>${janino.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>

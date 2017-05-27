@@ -128,7 +128,7 @@
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sketch_2.10:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-catalyst_2.10:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.janino:janino:2.7.8" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.janino:commons-compiler:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.janino:commons-compiler:2.7.8" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-column:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-common:1.8.1" level="project" />
