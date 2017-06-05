@@ -482,7 +482,7 @@ public class KMeansDriver extends AbstractJob {
     job.setMapperClass(KMeansClusterMapper.class);
     job.setNumReduceTasks(0);
     job.setJarByClass(KMeansDriver.class);
-
+    //
     if (!job.waitForCompletion(true)) {
       throw new InterruptedException("K-Means Clustering failed processing " + clustersIn);
     }
