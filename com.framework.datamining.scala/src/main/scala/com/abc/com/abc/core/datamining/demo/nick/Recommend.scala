@@ -98,7 +98,6 @@ object Recommend {
     val rawData = sc.textFile(argFile)
 
     //val sigleData=rawData.first()
-
     //println(sigleData)
 
     val rawRatings=rawData.map(_.split("\t").take(3))//.first()
@@ -111,16 +110,40 @@ object Recommend {
 
     val model=ALS.train(ratings,50,10,0.01)
 
+    //model.productFeatures.collect()
     model.userFeatures.count()
 
-    val predictedRating=model.predict(789,123)
+    val userId=789
+    val predictedRating=model.predict(userId,123)
     println(predictedRating)
 
-    val userId=789
+
     val K=10
 
     val topKRecs=model.recommendProducts(userId,10)
     println(topKRecs.mkString("\n"))
+
+
+    //检查推荐内容
+    val itemDataFile= "D:\\DevN\\sample-data\\dadamining\\ml-100k\\u.item"
+    val movies = sc.textFile(itemDataFile)
+    val titles=movies.map(line=>line.split("\\|").take(2)).map(array=>(array(0).toInt,array(1))).collectAsMap()
+
+    println("检查内容")
+    println(titles(123))
+
+    //针对用户，找出他接触过的电影
+    val moviesForUser=ratings.keyBy(_.user).lookup(789)
+    println("针对用户，找出他接触过的电影")
+    println(moviesForUser.size)
+    //打印输出
+    //moviesForUser.foreach(println)
+    //获取评价级高的十部电影
+    moviesForUser.sortBy(-_.rating).take(10).map(rating=>(titles(rating.product),rating.rating)).foreach(println)
+    println("针对用户，推荐的影片")
+    topKRecs.map(rating=>(titles(rating.product),rating.rating)).foreach(println)
+
+
     sc.stop()
 
   }
