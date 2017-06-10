@@ -8,6 +8,7 @@ import scopt.OptionParser
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
 import org.apache.spark.rdd.RDD
+import org.jblas.DoubleMatrix
 
 /**
   * An example app for ALS on MovieLens data (http://grouplens.org/datasets/movielens/).
@@ -87,6 +88,77 @@ object Recommend {
     }
     val sc = new SparkContext(conf)
 
+    //向用户推荐问题
+    recommendProducts(sc,params)
+    //物品推荐，给定一个物品推荐哪些物品和它相似
+    //recommendItem(sc,params)
+  }
+
+  def recommendItem(sc :SparkContext,params: Params): Unit = {
+    Logger.getRootLogger.setLevel(Level.WARN)
+
+    val implicitPrefs = params.implicitPrefs
+
+    //训练数据文件路径
+    val trainDataFile= "D:\\DevN\\sample-data\\dadamining\\ml-100k\\u.data"
+
+    val argFile=if(params.input=="") params.input else trainDataFile
+    val rawData = sc.textFile(argFile)
+
+    val rawRatings=rawData.map(_.split("\t").take(3))//.first()
+    val ratings=rawRatings.map{
+        case Array(user,movie,rating)=>Rating(user.toInt,movie.toInt,rating.toDouble)
+      }
+
+    //训练结果
+    val model=ALS.train(ratings,50,10,0.01)
+
+    val itemId=567
+    //计算相似度
+    val itemFactor=model.productFeatures.lookup(itemId).head
+     val itemVector=new DoubleMatrix(itemFactor)
+    val s=cosineSimilarity(itemVector,itemVector)
+    println("余弦相似度")
+    println(s)
+    //计算各物品的余弦相似度
+    val sims=model.productFeatures.map{
+      case (id,factor)=>
+        val factorVector=new DoubleMatrix(factor)
+        val sim=cosineSimilarity(factorVector,itemVector)
+      (id,sim)
+    }
+    //对物品按照相似度排序然后取出与物品567最相似的前10个物品
+    val sortedSims=sims.top(10)(Ordering.by[(Int,Double),Double]{
+      case(id,similarity)=>similarity
+    })
+    println(sortedSims.take(10).mkString("\n"))
+
+    //检查推荐内容
+    val itemDataFile= "D:\\DevN\\sample-data\\dadamining\\ml-100k\\u.item"
+    val movies = sc.textFile(itemDataFile)
+    val titles=movies.map(line=>line.split("\\|").take(2)).map(array=>(array(0).toInt,array(1))).collectAsMap()
+
+    val sortedSims2=sims.top(10+1)(Ordering.by[(Int,Double),Double]{
+      case(id,similarity)=>similarity
+    })
+
+    val items=sortedSims2.slice(1,11).map{
+      case (id,sim)=>(titles(id),sim)
+    }.mkString("\n")
+    println(items)
+    sc.stop()
+  }
+
+  /**
+    * 余弦相似度计算
+    * @param vec1
+    * @param vec2
+    */
+  def cosineSimilarity(vec1:DoubleMatrix,vec2:DoubleMatrix): Double ={
+    vec1.dot(vec2)/(vec1.norm2()*vec2.norm2())
+  }
+
+  def recommendProducts(sc :SparkContext,params: Params): Unit = {
     Logger.getRootLogger.setLevel(Level.WARN)
 
     val implicitPrefs = params.implicitPrefs
@@ -143,9 +215,17 @@ object Recommend {
     println("针对用户，推荐的影片")
     topKRecs.map(rating=>(titles(rating.product),rating.rating)).foreach(println)
 
+    //推荐模型效果的评估
+    //均方差Mean Squared Error MSE,显示评分方法
+    //MSE定义为各平方误差的和与总数目的商。其中，平方误差是指预测到的评级与真实评级的差值的平方
+    val actualRading=moviesForUser.take(1)(0)//Rating(789,1012,4.0)
+    val predictedRatingProduct=model.predict(789,actualRading.product)
+    //实际评分与预计评级的平方误差
+    val squaredError=math.pow(predictedRatingProduct-actualRading.rating,2.0)
+
+
 
     sc.stop()
-
   }
 
 }

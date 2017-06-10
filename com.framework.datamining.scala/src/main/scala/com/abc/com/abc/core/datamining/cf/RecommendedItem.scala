@@ -3,9 +3,6 @@ package com.abc.com.abc.core.datamining.cf
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 
-/**
-  * Created by admin on 2017/6/7.
-  */
 class RecommendedItem {
   /**
     *
