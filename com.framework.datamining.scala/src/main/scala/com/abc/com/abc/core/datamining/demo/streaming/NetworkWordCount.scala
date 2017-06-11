@@ -26,6 +26,9 @@ object NetworkWordCount {
     StreamingExamples.setStreamingLogLevels()
 
     // Create the context with a 1 second batch size
+//    val ssc=new StreamingContext("local[2]","Stream App",Seconds(10))
+//    val stream=ssc.socketTextStream("localhost",9999)
+
     val sparkConf = new SparkConf().setAppName("NetworkWordCount")
     val ssc = new StreamingContext(sparkConf, Seconds(10))
 
@@ -34,11 +37,12 @@ object NetworkWordCount {
     // Note that no duplication in storage level only for running locally.
     // Replication necessary in distributed scenario for fault tolerance.
     val lines = ssc.socketTextStream("localhost", 9999, StorageLevel.MEMORY_AND_DISK_SER)
-    val words = lines.flatMap(_.split(" "))
+    val words = lines.flatMap(_.split("\t"))
     println(words)
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
     wordCounts.count()
     wordCounts.print()
+//    stream.print()
     ssc.start()
     ssc.awaitTermination()
   }

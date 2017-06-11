@@ -29,7 +29,8 @@ object StreamingExamples  {
       "Samsung Galaxy Cover"->8.95,
       "iPad Cover"->7.49
     )
-    //
+
+    //每秒处理活动最大数的模拟
     def generateProductEvents(n:Int)={
       (1 to n).map{
         i=>
