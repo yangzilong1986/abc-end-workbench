@@ -3,34 +3,18 @@ package com.abc.com.abc.core.datamining.demo.streaming
 import java.util.HashMap
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
-
-import org.apache.spark.SparkConf
+import org.apache.spark.{SparkConf, TaskContext}
 import org.apache.spark.streaming._
-import org.apache.spark.streaming.kafka._
+import org.apache.spark.streaming.kafka.KafkaUtils
 
-/**
-  * Consumes messages from one or more topics in Kafka and does wordcount.
-  * Usage: KafkaWordCount <zkQuorum> <group> <topics> <numThreads>
-  *   <zkQuorum> is a list of one or more zookeeper servers that make quorum
-  *   <group> is the name of kafka consumer group
-  *   <topics> is a list of one or more kafka topics to consume from
-  *   <numThreads> is the number of threads the kafka consumer should use
-  *
-  * Example:
-  *    `$ bin/run-example \
-  *      org.apache.spark.examples.streaming.KafkaWordCount zoo01,zoo02,zoo03 \
-  *      my-consumer-group topic1,topic2 1`
-  */
 object KafkaWordCount {
+
   def main(args: Array[String]) {
-    if (args.length < 4) {
-      System.err.println("Usage: KafkaWordCount <zkQuorum> <group> <topics> <numThreads>")
-      System.exit(1)
-    }
-
     StreamingExamples.setStreamingLogLevels()
+    val arg: Array[String] = Array("localhost:2181", "group1", "test", "2")
+    //    val Array(zkQuorum, group, topics, numThreads) = arg
 
-    val Array(zkQuorum, group, topics, numThreads) = args
+    val Array(zkQuorum, group, topics, numThreads) = arg
     val sparkConf = new SparkConf().setAppName("KafkaWordCount")
     val ssc = new StreamingContext(sparkConf, Seconds(2))
     ssc.checkpoint("checkpoint")
@@ -47,17 +31,79 @@ object KafkaWordCount {
   }
 }
 
+
+//object KafkaWordCount10 {
+//  import org.apache.kafka.clients.consumer.ConsumerRecord
+//  import org.apache.kafka.common.serialization.StringDeserializer
+//  import org.apache.spark.streaming.kafka010._
+//  import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+//  import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
+//  def main(args: Array[String]) {
+//
+//    StreamingExamples.setStreamingLogLevels()
+//    val arg: Array[String]= Array("localhost:2181","group1","test","2")
+////    val Array(zkQuorum, group, topics, numThreads) = arg
+//
+//    val sparkConf = new SparkConf().setAppName("KafkaWordCount")
+//    val ssc = new StreamingContext(sparkConf, Seconds(2))
+//    ssc.checkpoint("checkpoint")
+//
+////    val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
+////    val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap).map(_._2)
+//
+//    val kafkaParams = Map[String, Object](
+//      "bootstrap.servers" -> "localhost:2181",
+//      "key.deserializer" -> classOf[StringDeserializer],
+//      "value.deserializer" -> classOf[StringDeserializer]//,
+////      "group.id" -> "001",
+////      "auto.offset.reset" -> "latest",
+////      "enable.auto.commit" -> (true: java.lang.Boolean)
+//    )
+//
+//
+//    val topics = Array("test")
+//    val stream = KafkaUtils.createDirectStream(
+//      ssc,
+//      PreferConsistent,
+//      Subscribe[String, String](topics, kafkaParams)
+//    )
+////    KafkaUtils.createRDD(  ssc,
+////      PreferConsistent,
+////      Subscribe[String, String](topics, kafkaParams))
+//
+//    stream.foreachRDD { rdd =>
+//      val offsetRanges = rdd.asInstanceOf[HasOffsetRanges].offsetRanges
+//
+//      // some time later, after outputs have completed
+//      stream.asInstanceOf[CanCommitOffsets].commitAsync(offsetRanges)
+//    }
+//
+//    stream.foreachRDD { rdd =>
+//      val offsetRanges = rdd.asInstanceOf[HasOffsetRanges].offsetRanges
+//      rdd.foreachPartition { iter =>
+//        val o: OffsetRange = offsetRanges(TaskContext.get.partitionId)
+//        println(s"${o.topic} ${o.partition} ${o.fromOffset} ${o.untilOffset}")
+//        rdd.foreach(println)
+//      }
+//    }
+//
+//    ssc.start()
+////    ssc.awaitTermination()
+//
+//  }
+//}
+
 // Produces some random words between 1 and 100.
 object KafkaWordCountProducer {
 
   def main(args: Array[String]) {
-    if (args.length < 4) {
-      System.err.println("Usage: KafkaWordCountProducer <metadataBrokerList> <topic> " +
-        "<messagesPerSec> <wordsPerMessage>")
-      System.exit(1)
-    }
-
-    val Array(brokers, topic, messagesPerSec, wordsPerMessage) = args
+//    if (args.length < 4) {
+//      System.err.println("Usage: KafkaWordCountProducer <metadataBrokerList> <topic> " +
+//        "<messagesPerSec> <wordsPerMessage>")
+//      System.exit(1)
+//    }
+    val arg: Array[String]= Array("localhost:9092","test","100","10")
+    val Array(brokers, topic, messagesPerSec, wordsPerMessage) = arg
 
     // Zookeeper connection properties
     val props = new HashMap[String, Object]()
@@ -74,7 +120,7 @@ object KafkaWordCountProducer {
       (1 to messagesPerSec.toInt).foreach { messageNum =>
         val str = (1 to wordsPerMessage.toInt).map(x => scala.util.Random.nextInt(10).toString)
           .mkString(" ")
-
+        println(str)
         val message = new ProducerRecord[String, String](topic, null, str)
         producer.send(message)
       }
