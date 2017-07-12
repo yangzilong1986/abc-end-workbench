@@ -31,17 +31,57 @@ object AggregateSample {
 //    mainAggregateTuple(sc)
 //    mainAggregateByKeyTuple(sc)
 //    mainAggregateByKey(sc)
-    mainAggregateByKey_2(sc)
+//    mainAggregateByKey_2(sc)
+//    mainAggregate(sc)
+    //mainAggregateTuple(sc)
+    mainTreeAggregate(sc)
   }
 
+  //RDD0
+//  Seq-Key-u:	0 : 0.0	Seq-Value-t:	1 : 11.0
+//  Seq-Key-u:	1 : 11.0	Seq-Value-t:	1 : 2.0
+//  Seq-Key-u:	2 : 13.0	Seq-Value-t:	1 : 3.0
+//  Seq-Key-u:	3 : 16.0	Seq-Value-t:	2 : 3.0
+  //RDD1
+//  Seq-Key-u:	0 : 0.0	Seq-Value-t:	2 : 2.0
+//  Seq-Key-u:	2 : 2.0	Seq-Value-t:	3 : 1.0
+//  Seq-Key-u:	5 : 3.0	Seq-Value-t:	3 : 2.0
+//  Seq-Key-u:	8 : 5.0	Seq-Value-t:	4 : 1.0
+//  Seq-Key-u:	12 : 6.0	Seq-Value-t:	4 : 4.0
+
+//  Comb-U-1:	5 : 19.0
+//  Comb:U-2:	16 : 10.0
+//  (21,29.0)
+
+  def seqOpUion(u:(Int,Double),t:(Int,Double)):(Int,Double)={
+    //描述如何将v合并到u，此方法依次遍历每个key，在遍历中key按照逻辑返回
+    //u和v均是k-v中的v，逐一遍历RDD，当遍历的key相同时，默认为同一分组，此时下一个u,v的u为本次的返回结果
+    // 分组后，不是key时，按照u为zeroValue，v为遍历的k-v中的v。
+    println("Seq-Key-u:\t"+u._1+ " : " +u._2+"\tSeq-Value-t:\t"+t._1+ " : " +t._2)
+//    (u._1+t._1,u._2+t._2)
+//    (u._1,u._2+t._2)
+    (t._1,u._2+t._2)
+  }
+
+  def combOpUion(u1:(Int,Double),u2:(Int,Double)):(Int,Double)={
+    println("Comb-U-1:\t"+u1._1+ " : " +u1._2)
+    println("Comb:U-2:\t"+u2._1+ " : " +u2._2)
+    (u1._1+u2._1,u1._2+u2._2)
+  }
   def mainTreeAggregate(sc :SparkContext): Unit = {
     //-Dspark.master=local
     //加减是对(K,V)中的V运算
-    val z = sc.parallelize(List((1, 11.0), (1, 2.0), (1, 3.0), (2, 3.0), (2, 2.0), (3, 1.0), (3, 2.0), (4, 1.0), (4, 4.0)), 2)
+    val z = sc.parallelize(List(
+      (1, 11.0), (1, 2.0), (1, 3.0), (2, 3.0), //一组
+      (2, 2.0),
+      (3, 1.0), (3, 2.0),
+      (4, 1.0), (4, 4.0)), 2)
     //    val z=sc.parallelize(List((1,3),(1,2),(1,4),(2,3)))
     val agg = z.treeAggregate((0,0.0))(
-      seqOp = ((u,t)=>(u._1+t._1,u._2+t._2)),//Key相加，对Key进行操作
-      combOp = (u1,u2)=>(u1._1+u2._1,u1._2+u2._2),//Value操作
+      seqOpUion,
+      combOpUion,
+      //seqOp = ((u,t)=>(u._1+t._1,u._2+t._2)),//Key相加，对Key进行操作
+      // combOp = (u1,u2)=>(u1._1+u2._1,u1._2+u2._2),//Value操作
       depth = 2
     )
     println(agg)
@@ -53,11 +93,11 @@ object AggregateSample {
   }
 
   def mainAggregateTuple(sc :SparkContext): Unit = {
-    val z = sc.parallelize(List((1, 11.0), (1, 2.0), (1, 3.0), (2, 3.0), (2, 2.0), (3, 1.0), (3, 2.0), (4, 1.0), (4, 4.0)), 2)
+    val z = sc.parallelize(List((1, 11.0), (1, 2.0), (1, 3.0), (2, 3.0), (2, 2.0), (3, 1.0), (3, 2.0), (4, 1.0), (4, 4.0)), 3)
     //    val z=sc.parallelize(List((1,3),(1,2),(1,4),(2,3)))
     val agg = z.aggregate((0,0.0))(
-      seqOp = ((u,t)=>(u._1+t._1,u._2+t._2)),//Key相加，对Key进行操作
-      combOp = (u1,u2)=>(u1._1+u2._1,u1._2+u2._2)//Value操作
+      seqOp = ((u,t)=>(u._1+t._1,u._2+t._2)),//
+      combOp = (u1,u2)=>(u1._1+u2._1,u1._2+u2._2)//
       //depth = 2
     )//(21,29.0)
     println(agg)
@@ -142,35 +182,7 @@ object AggregateSample {
 
   }
 
-  ///////////////////////////////////////
-  //分区一相同key的数据进行合并
 
-  //1  Seq:100 : 11  111  (1,11),
-  //1  Seq:111 : 12  23  (1,12), 合并key-value:1,133
-  //5  Seq:100 : 53  153  (5,53), 合并key-value:5,153
-  //2  Seq:100 : 23  123  (2,23), 合并key-value:2,123
-  //
-  //2  Seq:100 : 29  129          合并key-value:2,129
-  //5  Seq:100 : 58  158          合并key-value:5,158
-  //3  Seq:100 : 31  131  (3,31),(3,39),
-  //3  Seq:131 : 39  170          合并key-value:3,170
-  //
-  //4  Seq:100 : 41  141    (4,41),(4,47),
-  //4  Seq:141 : 47  188          合并key-value:3,329
-  //53 Seq:100 : 10  110 (53,10), 合并key-value:5,110
-  //1  Seq:100 : 10  110  (1,10)  合并key-value:1,110
-
-  //  val z=sc.parallelize(
-  // List((1,11),(1,12),
-  // (5,53),
-  // (2,23),(2,29),
-  // (5,58),
-  //(3,31),(3,39),
-  // (4,41),(4,47),
-  // (53,10),
-  // (2,10),
-  // (1,10)),
-  // 3)
   def seqOp(u:Int,v:Int):Int={
     //描述如何将v合并到u，此方法依次遍历每个key，在遍历中key按照逻辑返回
     //u和v均是k-v中的v，逐一遍历RDD，当遍历的key相同时，默认为同一分组，此时下一个u,v的u为本次的返回结果

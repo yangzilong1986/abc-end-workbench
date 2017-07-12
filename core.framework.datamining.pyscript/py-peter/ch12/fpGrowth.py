@@ -22,55 +22,62 @@ def createTree(dataSet, minSup=1):
     headerTable = {}
     #go over dataSet twice\
     #first pass counts frequency of occurance
-    for trans in dataSet:
-        for item in trans:
+    for trans in dataSet:#trans:frozenset(['e', 'm', 'q', 's', 't', 'y', 'x', 'z'])
+        for item in trans:#item:'e'
             headerTable[item] = headerTable.get(item, 0) + dataSet[trans]
-
-    #remove items not meeting minSup
+    #headerTable:{'e': 1, 'h': 1, 'j': 1, 'm': 1, 'o': 1, 'n': 1, 'q': 2, 'p': 2, 's': 3, 'r': 3, 'u': 1, 't': 3, 'w': 1, 'v': 1, 'y': 3, 'x': 4, 'z': 5}
+    #remove items not meeting minSup,
     for k in headerTable.keys():
         if headerTable[k] < minSup: 
             del(headerTable[k])
-    freqItemSet = set(headerTable.keys())
-    #print 'freqItemSet: ',freqItemSet
+    freqItemSet = set(headerTable.keys())#删除之后的headerTable为{'s': 3, 'r': 3, 't': 3, 'y': 3, 'x': 4, 'z': 5}
+    #print 'freqItemSet: ',freqItemSet，freqItemSet值为set(['s', 'r', 't', 'y', 'x', 'z'])
     #if no items meet min support -->get out
     if len(freqItemSet) == 0:
         return None, None
     for k in headerTable:
         #reformat headerTable to use Node link
-        headerTable[k] = [headerTable[k], None]
+        headerTable[k] = [headerTable[k], None]#[]为list，seq
 
-    #print 'headerTable: ',headerTable
-    #create tree
+    #headerTable：{'s': [3, None], 'r': [3, None], 't': [3, None], 'y': [3, None], 'x': [4, None], 'z': [5, None]}
+    #create tree，
     retTree = treeNode('Null Set', 1, None)
 
     #go through dataset 2nd time
-    for tranSet, count in dataSet.items():
-        localD = {}
-        for item in tranSet:  #put transaction items in order
-            if item in freqItemSet:
+    # dataSet.items()值为
+    # 0 = {tuple} <type 'tuple'>: (frozenset(['e', 'm', 'q', 's', 't', 'y', 'x', 'z']), 1)
+    # 1 = {tuple} <type 'tuple'>: (frozenset(['x', 's', 'r', 'o', 'n']), 1)
+    # 2 = {tuple} <type 'tuple'>: (frozenset(['s', 'u', 't', 'w', 'v', 'y', 'x', 'z']), 1)
+    # 3 = {tuple} <type 'tuple'>: (frozenset(['q', 'p', 'r', 't', 'y', 'x', 'z']), 1)
+    # 4 = {tuple} <type 'tuple'>: (frozenset(['h', 'r', 'z', 'p', 'j']), 1)
+    # 5 = {tuple} <type 'tuple'>: (frozenset(['z']), 1)
+    for tranSet, count in dataSet.items():#tranSet：frozenset(['e', 'm', 'q', 's', 't', 'y', 'x', 'z'])
+        localD = {}#localD：{'y': 3, 'x': 4, 's': 3, 'z': 5, 't': 3}
+        for item in tranSet:  #put transaction items in order，item值为：e
+            if item in freqItemSet:#freqItemSet：set(['s', 'r', 't', 'y', 'x', 'z'])
                 localD[item] = headerTable[item][0]
         if len(localD) > 0:
-            orderedItems = [v[0] for v in sorted(localD.items(),
+            orderedItems = [v[0] for v in sorted(localD.items(),#localD
                                                  key=lambda p: p[1],
                                                  reverse=True)]
-            #populate tree with ordered freq itemset
+            #populate tree with ordered freq itemset，<type 'list'>: ['z', 'x', 'y', 's', 't']
             updateTree(orderedItems, retTree, headerTable, count)
     return retTree, headerTable #return tree and header table
 
 def updateTree(items, inTree, headerTable, count):
-    #check if orderedItems[0] in retTree.children
+    #check if orderedItems[0] in retTree.children，items值为：<type 'list'>: ['z', 'x', 'y', 's', 't']
     if items[0] in inTree.children:
-        #incrament count
-        inTree.children[items[0]].inc(count)
+        #incrament count inTree.children 'x' 'z' >，树节点计数增加
+        inTree.children[items[0]].inc(count)#items值为<type 'list'>: ['x', 'y', 'r', 't'],items[0]:'x'
     else:   #add items[0] to inTree.children
         inTree.children[items[0]] = treeNode(items[0], count, inTree)
-        #update header table
+        #update header table #headerTable值为{'s': [3, None], 'r': [3, None], 't': [3, None], 'y': [3, None], 'x': [4, None], 'z': [5, None]}
         if headerTable[items[0]][1] == None:
             headerTable[items[0]][1] = inTree.children[items[0]]
         else:
             updateHeader(headerTable[items[0]][1], inTree.children[items[0]])
     #call updateTree() with remaining ordered items
-    if len(items) > 1:
+    if len(items) > 1:#items[1::]为删除第一个节点：<type 'list'>: ['x', 'y', 's', 't']
         updateTree(items[1::], inTree.children[items[0]], headerTable, count)
 
 #this version does not use recursion

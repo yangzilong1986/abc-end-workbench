@@ -118,7 +118,7 @@ def adaBoostTrainDS(dataArr,classLabels,numIt=40):
         # expon = multiply(-1*alpha*mat(classLabels).T,classEst)
         expon = multiply(-1*alpha*classLabelsT,classEst)
         #Calc New D for next iteration
-        #为下一次迭代计算D
+        #为下一次迭代计算D，数乘
         D = multiply(D,exp(expon))
         D = D/D.sum()
         #calc training error of all classifiers,

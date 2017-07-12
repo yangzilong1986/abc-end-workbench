@@ -56,7 +56,7 @@ def getActionIds():
             actions = getBillApi(billNum) #api call
             for action in actions:
                     actionId = int(action)
-                    print 'bill: %d has actionId: %d' % (billNum, actionId)
+                    # print 'bill: %d has actionId: %d' % (billNum, actionId)
                     actionIdList.append(actionId)
                     billTitleList.append(line.strip().split('\t')[1])
         except:
@@ -67,8 +67,8 @@ def getActionIds():
 class Vote:
     def __str__(self):
         return ': '.join((self.officeParties, self.action))
-    def __init__(self,office,act):
-       self.candidateName=office
+    def __init__(self,office,act,cname="Hello"):
+       self.candidateName=cname
        self.officeParties=office
        self.action=act
 
@@ -79,24 +79,24 @@ def  getBillActionVotes(actionId):
     # 14, 11, 12, 16, 11, 12, 15, 11, 12, 18, 11, 12, 19]
     vote=Vote("","Yea")
     votes={}
-    votes[1]=[Vote("Democratic",""),Vote("Republican",""),Vote("","Nay"),Vote("","Yea")]
-    votes[2]=[Vote("Democratic","")]
-    votes[3]=[Vote("Republican","")]
-    votes[4]=[Vote("","Nay")]
+    votes[1]=[Vote("Democratic","","Dolye"),Vote("Republican","","Mike"),Vote("Republican","Nay","Micket"),Vote("Republican","Yea","Bytee")]
+    votes[2]=[Vote("Democratic","","Dolye"),Vote("Democratic","Nay","Mike"),Vote("Democratic","Yea","Micket")]
+    votes[3]=[Vote("Republican","","")]
+    votes[4]=[Vote("","Nay","")]
 
-    votes[5]=[Vote("Democratic",""),Vote("Republican",""),Vote("","Nay"),Vote("","Yea")]
-    votes[6]=[Vote("Democratic","")]
-    votes[7]=[Vote("Republican","")]
-    votes[8]=[Vote("","Nay")]
-    votes[9]=[Vote("Democratic","")]
-    votes[7]=[Vote("Republican","")]
+    votes[5]=[Vote("Democratic","",""),Vote("Republican","",""),Vote("","Nay",""),Vote("","Yea,""")]
+    votes[6]=[Vote("Democratic","","")]
+    votes[7]=[Vote("Republican","","")]
+    votes[8]=[Vote("","Nay","")]
+    votes[9]=[Vote("Democratic","","")]
+    votes[7]=[Vote("Republican","","")]
 
-    votes[11]=[Vote("Democratic",""),Vote("Republican",""),Vote("","Nay"),Vote("","Yea")]
-    votes[12]=[Vote("Democratic","")]
-    votes[13]=[Vote("Republican","")]
+    votes[11]=[Vote("Democratic","",""),Vote("Republican","",""),Vote("","Nay",""),Vote("","Yea","")]
+    votes[12]=[Vote("Democratic","","")]
+    votes[13]=[Vote("Republican","","")]
     votes[14]=[Vote("","Nay")]
 
-    votes[15]=[Vote("Democratic",""),Vote("Republican",""),Vote("","Nay"),Vote("","Yea")]
+    votes[15]=[Vote("Democratic","",""),Vote("Republican","",""),Vote("","Nay",""),Vote("","Yea","")]
     votes[16]=[Vote("Democratic","")]
     votes[17]=[Vote("Republican","")]
     votes[18]=[Vote("","Nay")]
@@ -136,7 +136,7 @@ def getTransList(actionIdList, billTitleList): #this will return a list of lists
     voteCount = 2
     for actionId in actionIdList:
 
-        print 'getting votes for actionId: %d' % actionId
+        # print 'getting votes for actionId: %d' % actionId
         try:
             voteList = getBillActionVotes(actionId)
             for vote in voteList:

@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/hello.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/mouse-event.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/roi.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497236208000.crc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497236210000.crc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497236212000.crc" afterPath="" />
@@ -779,10 +783,20 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/ch15/wc.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/KafkaWordCount.scala" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/KafkaWordCount.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/pom.xml" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/AggregateSample.scala" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/AggregateSample.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch05/logRegres.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch05/logRegres.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch07/adaboost.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch07/adaboost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/kMeans.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/kMeans.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/apriori.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/apriori.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recentAprioriTest.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recentAprioriTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/fpGrowth.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/fpGrowth.py" />
     </list>
     <ignored path="abc-end-workbench.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -874,98 +888,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py">
+      <file leaf-file-name="image-added.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="171">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-warp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-warp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="59" />
               <folding>
-                <element signature="e#14#28#0" expanded="true" />
+                <element signature="e#431#441#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apriori.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/apriori.py">
+      <file leaf-file-name="bit-operation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bit-operation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5798">
-              <caret line="264" column="30" selection-start-line="264" selection-start-column="30" selection-end-line="264" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fpGrowth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/fpGrowth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3425">
-              <caret line="137" column="20" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="20" />
+            <state relative-caret-position="300">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
-                <element signature="e#4901#4923#0" expanded="true" />
+                <element signature="e#14#24#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agaricus-lepiota.data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/agaricus-lepiota.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="8124" column="0" selection-start-line="8124" selection-start-column="0" selection-end-line="8124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recentAprioriTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recentAprioriTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="votesmart.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/votesmart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="185" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recent20bills.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recent20bills.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recent100bills.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recent100bills.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -977,12 +929,13 @@
       <list>
         <option value="Class" />
         <option value="Scala Worksheet" />
-        <option value="Python Script" />
         <option value="Singleton" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -997,43 +950,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch05/logRegres.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch06/svmMLiA.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Vector.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/matrix/Matrix.java" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch1/ch1_affinity.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch1/affinity.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/ch02/kNN.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch1/oneR.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/linear.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.spark/pom.xml" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.spark/src/main/scala/com/spark/demo1/App.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/DenseKMeans.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/MyRouteMain.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/SimpleApp.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/Word.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/GroupByTest.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/App.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/KMeansExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/ml/TfIdfExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/ml/LinearRegressionExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/ml/DecisionTreeExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/AbstractParams.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/LinearRegression.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/AggregateSample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/SVMWithSGDExample.scala" />
-        <option value="$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/clustering/kmeans/KMeansDriver.java" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/MovieLensALS.scala" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scala-script/SparkTest.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scala-script/spark-test.py" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/cf/ItemSimilarity.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/cf/RecommendedItem.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/cf/ItemCF.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/nick/Recommend.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/HdfsWordCount.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingKMeansExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLinearRegressionExample.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLogisticRegression.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingExamplesClient.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/FPGrowthExample.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingExamples.scala" />
@@ -1041,13 +957,50 @@
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingAnalyticsClient.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/NetworkWordCount.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelClient.scala" />
-        <option value="$PROJECT_DIR$/com.framework.datamining.scala/pom.xml" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/DirectKafkaWordCount.scala" />
         <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/KafkaWordCount.scala" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/agaricus-lepiota.data" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recentAprioriTest.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/apriori.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/fpGrowth.py" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/AggregateSample.scala" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch05/logRegres.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch07/adaboost.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/tensorflow/tensorflow.test.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/kMeans.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch11/imageclassed.py" />
+        <option value="$USER_HOME$/AppData/Local/Theano/compiledir_Windows-8.1-6.3.9600-Intel64_Family_6_Model_60_Stepping_3_GenuineIntel-2.7.12-64/lazylinker_ext/mod.cpp" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/caffe/caffedemo.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/logisticdemo.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cudademo.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cnndemo.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/testMult.txt" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/__init__.py" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/LogisticRegressionWithLBFGSExample.scala" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.scala/pom.xml" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/BreezeAPI.scala" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/put_chinese_text.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/imageadded.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/readwrite.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/matplotlibdemo.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/roi.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/drawing-functions.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/MouseEvent.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/mouse-event.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/mouse-drop.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/hello.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/img-attrubete.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bord-op.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/arithmetic-operation.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/plotshow.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/object-tracking.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-warp.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bit-operation.py" />
       </list>
     </option>
   </component>
@@ -1182,9 +1135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -1262,6 +1213,10 @@
               <option name="myItemId" value="abc-end-workbench" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1284,28 +1239,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scikit-learn-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1323,210 +1256,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scikit-learn-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.framework.datamining.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.framework.datamining.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.framework.datamining.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="openvc2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4898897" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../i-b-hadoop/scala-2.12.1/lib" />
+    <property name="last_opened_file_path" value="D:/Anaconda2/python.exe" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo" />
     <property name="dynamic.classpath" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="175" />
@@ -1548,13 +1295,6 @@
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.12 (C:\Python27\python.exe)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
-      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.abc.com.abc.core.datamining.demo.cf" />
       <recent name="com.abc.com.abc.core.datamining" />
@@ -1569,101 +1309,96 @@
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\main\java\com\abc\basic\algoritms\external" />
       <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\main\java\com\abc\basic\algoritms\bplustree" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\ch04" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\pyscript" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining\src\test\java\com\abc\framework\samples\mia\recommender\ch02" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\algorithms\base\graph" />
+      <recent name="D:\DevN\abc-end-workbench\core.lambda.batch\src\test\java\com\abc\datamining\adaboost\utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.__init__">
-    <configuration default="false" name="KafkaWordCountProducer" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.com.abc.core.datamining.demo.streaming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.com.abc.core.datamining.demo.streaming.KafkaWordCountProducer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="com.framework.datamining.scala" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="KafkaWordCount" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.com.abc.core.datamining.demo.streaming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.com.abc.core.datamining.demo.streaming.KafkaWordCount" />
-      <option name="VM_PARAMETERS" value="-Dspark.master=local" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="com.framework.datamining.scala" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ItemCF" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.com.abc.core.datamining.demo.cf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.com.abc.core.datamining.demo.cf.ItemCF" />
-      <option name="VM_PARAMETERS" value="-Dspark.master=local" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="com.framework.datamining.scala" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DirectKafkaWordCount" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abc.com.abc.core.datamining.demo.streaming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.abc.com.abc.core.datamining.demo.streaming.DirectKafkaWordCount" />
-      <option name="VM_PARAMETERS" value="-Dspark.master=local" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="com.framework.datamining.scala" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bit-operation">
+    <configuration default="false" name="arithmetic-operation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/arithmetic-operation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="bit-operation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bit-operation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="image-warp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-warp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="drawing-functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/drawing-functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="image-added" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="core.framework.datamining.pyscript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -2219,19 +1954,19 @@
       <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
       <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
       <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KafkaWordCountProducer" />
-      <item index="5" class="java.lang.String" itemvalue="Application.KafkaWordCount" />
-      <item index="6" class="java.lang.String" itemvalue="Application.ItemCF" />
-      <item index="7" class="java.lang.String" itemvalue="Application.DirectKafkaWordCount" />
-      <item index="8" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="4" class="java.lang.String" itemvalue="Python.arithmetic-operation" />
+      <item index="5" class="java.lang.String" itemvalue="Python.bit-operation" />
+      <item index="6" class="java.lang.String" itemvalue="Python.image-warp" />
+      <item index="7" class="java.lang.String" itemvalue="Python.drawing-functions" />
+      <item index="8" class="java.lang.String" itemvalue="Python.image-added" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="1" class="java.lang.String" itemvalue="Application.KafkaWordCount" />
-        <item index="2" class="java.lang.String" itemvalue="Application.KafkaWordCountProducer" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DirectKafkaWordCount" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ItemCF" />
+        <item index="0" class="java.lang.String" itemvalue="Python.bit-operation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.image-warp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.image-added" />
+        <item index="3" class="java.lang.String" itemvalue="Python.drawing-functions" />
+        <item index="4" class="java.lang.String" itemvalue="Python.arithmetic-operation" />
       </list>
     </recent_temporary>
   </component>
@@ -2302,7 +2037,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1919" height="1039" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2317,13 +2052,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26421225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26421225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3657984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37825593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2333,7 +2069,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32616082" sideWeight="0.49810094" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1434759" sideWeight="0.5277311" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3040,6 +2775,18 @@
           <properties />
           <option name="timeStamp" value="2228" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar!/com/github/fommil/netlib/BLAS.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="2596" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar!/com/github/fommil/netlib/BLAS.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="2597" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/ch04/bayes.py</url>
           <line>64</line>
@@ -3105,6 +2852,11 @@
           <line>210</line>
           <option name="timeStamp" value="2395" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="2615" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -3116,7 +2868,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2518" />
+      <option name="time" value="2617" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3125,374 +2877,397 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/ml/recommendation/ALS.scala">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch14/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15950">
-          <caret line="682" column="8" selection-start-line="682" selection-start-column="8" selection-end-line="682" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/nick/Recommend.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5450">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingKMeansExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_45/src.zip!/java/io/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar!/scala/io/BufferedSource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/com/abc/basic/algoritms/algs4/utils/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2050">
-          <caret line="96" column="13" selection-start-line="88" selection-start-column="10" selection-end-line="96" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/MovieLensALS.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3518">
-          <caret line="17" column="93" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/KMeansExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingAnalyticsClient.java" />
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/FPGrowthExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/linalg/Vectors.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3785">
-          <caret line="719" column="7" selection-start-line="719" selection-start-column="7" selection-end-line="719" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/regression/StreamingLinearAlgorithm.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="130" column="6" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLinearRegressionExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="42" column="46" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLogisticRegression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingAnalyticsClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/optimization/GradientDescent.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5825">
-          <caret line="255" column="12" selection-start-line="255" selection-start-column="12" selection-end-line="255" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka_2.11/1.6.3/spark-streaming-kafka_2.11-1.6.3.jar!/org/apache/spark/streaming/kafka/KafkaUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-10_2.10/2.1.0/spark-streaming-kafka-0-10_2.10-2.1.0.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.10/2.1.0/spark-streaming_2.10-2.1.0.jar!/org/apache/spark/streaming/DStreamGraph.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.10/2.1.0/spark-streaming_2.10-2.1.0-sources.jar!/org/apache/spark/streaming/DStreamGraph.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="162" column="24" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.10/2.1.0/spark-streaming_2.10-2.1.0-sources.jar!/org/apache/spark/streaming/StreamingContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="571" column="0" selection-start-line="571" selection-start-column="0" selection-end-line="571" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingExamples.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingExamplesClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="26" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-10_2.10/2.1.0/spark-streaming-kafka-0-10_2.10-2.1.0-sources.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="149" column="24" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka_2.10/1.6.3/spark-streaming-kafka_2.10-1.6.3.jar!/org/apache/spark/streaming/kafka/KafkaUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-10_2.10/2.1.0/spark-streaming-kafka-0-10_2.10-2.1.0-sources.jar!/org/apache/spark/streaming/kafka010/DirectKafkaInputDStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/NetworkWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/cf/ItemCF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka_2.11/1.6.3/spark-streaming-kafka_2.11-1.6.3-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/HdfsWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka_2.10/1.6.3/spark-streaming-kafka_2.10-1.6.3-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="90" column="54" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="83" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-8_2.10/2.1.0/spark-streaming-kafka-0-8_2.10-2.1.0.jar!/org/apache/spark/streaming/kafka/KafkaUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-8_2.10/2.1.0/spark-streaming-kafka-0-8_2.10-2.1.0-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10875">
-          <caret line="472" column="6" selection-start-line="472" selection-start-column="6" selection-end-line="472" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/DirectKafkaWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/KafkaWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/meaning20.txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Theano/compiledir_Windows-8.1-6.3.9600-Intel64_Family_6_Model_60_Stepping_3_GenuineIntel-2.7.12-64/lazylinker_ext/mod.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/lawAssnRules.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/bills20DataSet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164152">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recent100bills.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recent20bills.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/votesmart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="185" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/fpGrowth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3425">
-          <caret line="137" column="20" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="20" />
-          <folding>
-            <element signature="e#4901#4923#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/recentAprioriTest.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch12/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/agaricus-lepiota.data">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/caffe/caffedemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="8124" column="0" selection-start-line="8124" selection-start-column="0" selection-end-line="8124" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/theano/gof/cmodule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="2315" column="0" selection-start-line="2315" selection-start-column="0" selection-end-line="2315" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc-end-workbench.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cnndemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="37" column="30" selection-start-line="31" selection-start-column="3" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/testSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/testMult.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cudademo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/theano/logisticdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/MovieLensALS.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/FPGrowthExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/ml/DecisionTreeExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2144">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/SVMWithSGDExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalanlp/breeze_2.10/0.12/breeze_2.10-0.12.jar!/breeze/linalg/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalanlp/breeze_2.10/0.12/breeze_2.10-0.12-sources.jar!/breeze/linalg/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/ml/LinearRegressionExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/LinearRegression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1825">
+          <caret line="79" column="33" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/AbstractParams.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="71" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/mllib/LogisticRegressionWithLBFGSExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/classification/LogisticRegression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4750">
+          <caret line="218" column="34" selection-start-line="218" selection-start-column="29" selection-end-line="218" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/optimization/Gradient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar!/com/github/fommil/netlib/BLAS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.IdeaIC2016/system/python_stubs/-762174762/__builtin__.py">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.10/2.1.0/spark-mllib_2.10-2.1.0-sources.jar!/org/apache/spark/mllib/linalg/BLAS.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="3345" column="8" selection-start-line="3345" selection-start-column="8" selection-end-line="3345" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="1225">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/__init__.py">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar!/org/netlib/blas/Daxpy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="100">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar!/com/github/fommil/netlib/F2jBLAS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar!/com/github/fommil/netlib/BLAS.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/base/BreezeAPI.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar!/com/github/fommil/netlib/NativeRefBLAS.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="89" column="27" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/put_chinese_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="22" />
           <folding>
-            <element signature="e#14#28#0" expanded="true" />
+            <element signature="e#14#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch11/apriori.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/mouse-event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5798">
-          <caret line="264" column="30" selection-start-line="264" selection-start-column="30" selection-end-line="264" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/mouse-drop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="e#167#177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/roi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/img-attrubete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#15#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2016/system/python_stubs/2129268673/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="2077" column="10" selection-start-line="2077" selection-start-column="4" selection-end-line="2077" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/plotshow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/object-tracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="73" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/arithmetic-operation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bord-op.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/drawing-functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-added.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-warp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="59" />
+          <folding>
+            <element signature="e#431#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/bit-operation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3549,7 +3324,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>com.framework.datamining.scala</last-edited>
+          <last-edited>core.framework.datamining.pyscript</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

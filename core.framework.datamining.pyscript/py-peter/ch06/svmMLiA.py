@@ -161,20 +161,35 @@ class optStruct:
             self.K[:,i] = kernelTrans(self.X, self.X[i,:], kTup)
 
 #分类与alphas算法
+#计算实际值与预测值的差，即计算（wx+b）
 def calcEk(oS, k):
     #oS.alphas[100,1]与分类矩阵oS.labelMat[100,l],矩阵中对应元素相乘
     #ufunc通用函数是对数组中的数据执行元素级运算的函数。
     #abs,fabs,sqrt,square,exp,log,sign,ceil,floor,rint,modf,isnan,isfinite,isinf,cos,cosh,sin,sinh,tan,tanh，
     #add,subtract,multiply,power,mod,equal,等等
-    #alphas与分类的元素乘积
+    #alphas与分类的元素乘积，oS.alphas：100*1  oS.labelMat：100*1
     alphasLabelMult=multiply(oS.alphas,oS.labelMat)
     alphasLabelMultT=alphasLabelMult.T
-    #获取第k列的数据，即osK[100,1]
+    #=oS.K为100*100结构，oS.K[:,k]为获取第k列的数据，即osK[100,1]
+    #[[ 16.45930283  15.74944568  23.62676274 ...,   9.91600422   7.29970318
+
+    # 11.56662842]
+    # [ 15.74944568  15.64899582  18.75800936 ...,   8.27407967   6.73405627
+    # 11.22769107]
+    # [ 23.62676274  18.75800936  59.52179808 ...,  22.31065169  12.14680994
+    # 15.53988285]
+    # ...,
+    # [  9.91600422   8.27407967  22.31065169 ...,   8.52140371   4.92396323
+    # 6.63290673]
+    # [  7.29970318   6.73405627  12.14680994 ...,   4.92396323   3.34611685
+    # 5.06050356]
+    # [ 11.56662842  11.22769107  15.53988285 ...,   6.63290673   5.06050356
+    # 8.17252447]]
     osK=oS.K[:,k]#osK[100*1]
     #alphasLabelMultT[1,100]和训练数据第k列的数据
     aK=alphasLabelMultT*osK
     # fXk = float(multiply(oS.alphas,oS.labelMat).T*oS.K[:,k] + oS.b)
-    fXk = float(aK + oS.b)
+    fXk = float(aK + oS.b)#计算值wx+b
     labelK=oS.labelMat[k]
     Ek = fXk - float(labelK)
     return Ek
@@ -211,6 +226,7 @@ def updateEk(oS, k):
 
 #SMO序列最小优化,i第几行
 def innerL(i, oS):
+    #第一个变量alphaIold的选择g(x)=Σa*y*K(xi,xj)
     Ei = calcEk(oS, i)#Ei为一个数值
     labelEi=oS.labelMat[i]*Ei
     if ((labelEi < -oS.tol) and (oS.alphas[i] < oS.C)) \
@@ -222,6 +238,7 @@ def innerL(i, oS):
         alphaJold = oS.alphas[j].copy();
 
         #保证alpha在0与C之间
+        #L和H是alphas2-new所在对角线段端点的界限，当训练数据标类y1<>y2
         if (oS.labelMat[i] != oS.labelMat[j]):
             L = max(0, oS.alphas[j] - oS.alphas[i])
             H = min(oS.C, oS.C + oS.alphas[j] - oS.alphas[i])
@@ -233,6 +250,17 @@ def innerL(i, oS):
             print "L==H";
             return 0
 
+        #g(x)=Σalphas*y*K(xi,xj)+b,
+        #Ej为计算值与实际值的差值，即为g(x)-y,1中g(x)为计算分类，而labelMat为实际训练样本分类值
+        # fXj = float(multiply(alphas,labelMat).T*(dataMatrix*dataMatrix[j,:].T)) + b
+        #Ej = fXj - float(labelMat[j])
+
+        #计算新的alphas-j-2时公式如下：
+        #oS.alphas-j = oS.alphas-j-old * y2(E1-E2)/eta
+        #eta为输入空间到特征向量空间的映射，即||f(训练数据1)^2-f(训练数据2)^2||。计算为
+        # eta = 2.0 * dataMatrix[i,:]*dataMatrix[j,:].T \
+        #       - dataMatrix[i,:]*dataMatrix[i,:].T \
+        #       - dataMatrix[j,:]*dataMatrix[j,:].T
         eta = 2.0 * oS.K[i,j] - oS.K[i,i] - oS.K[j,j] #changed for kernel
         if eta >= 0:
             print "eta>=0";
@@ -248,6 +276,7 @@ def innerL(i, oS):
             return 0
 
         #update i by the same amount as j
+        #新的alphas-i，即alphas-i=alphas-i-old + y1*y2（训练样本1和训练样本2）*(alphas-j-new - alphas-j-old)
         oS.alphas[i] += oS.labelMat[j]*oS.labelMat[i]*(alphaJold - oS.alphas[j])
 
         #added this for the Ecache
@@ -258,6 +287,11 @@ def innerL(i, oS):
         alpJsub=oS.alphas[j]-alphaJold
 
         #i和j为不同的行，并且i是第一次遍历行，j是后一次遍历值
+        #Σa*y*K+b=y1
+        #b1=b-old - Ei- y1*K11*(alphaIold-i-new - alphaIold-i-old)-
+        #               y2*K21*(alphaIold-j-new -alphaIold-j-new)
+        #b2=b-old - Ej-y2*K12(alphaIold-i-new - alphaIold-i-old) -
+        #               y2*K22*(alphaIold-j-new -alphaIold-j-new)
         b1 = oS.b - Ei- \
              oS.labelMat[i]*(alpIsub)*oS.K[i,i] - \
              oS.labelMat[j]*(alpJsub)*oS.K[i,j]
@@ -265,12 +299,12 @@ def innerL(i, oS):
         b2 = oS.b - Ej- \
              oS.labelMat[j]*(alpJsub)*oS.K[j,j]- \
              oS.labelMat[i]*(alpIsub)*oS.K[i,j]
-
+        #如果alphas-i和alphas-j均满足在0~C，则b1=b2
         if (0 < oS.alphas[i]) and (oS.C > oS.alphas[i]):
             oS.b = b1
         elif (0 < oS.alphas[j]) and (oS.C > oS.alphas[j]):
             oS.b = b2
-        else:
+        else:#否则取均值
             oS.b = (b1 + b2)/2.0
 
         return 1

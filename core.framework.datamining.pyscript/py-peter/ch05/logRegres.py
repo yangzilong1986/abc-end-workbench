@@ -52,6 +52,9 @@ def gradAscent(dataMatIn, classLabels):
     for k in range(maxCycles):  #heavy on matrix operations
         #dataMatrix为100 3的矩阵
         #dataMatrix[100*3] weights[3*1]
+        # [[  1.00000000e+00  -1.76120000e-02   1.40530640e+01]
+        #。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+        # [  1.00000000e+00   3.17029000e-01   1.47390250e+01]]100*3
         #sigmoidParam[100*1]
         #分量求和
         # weights值
@@ -59,6 +62,9 @@ def gradAscent(dataMatIn, classLabels):
         #  [ 1.]
         #  [ 1.]]
         sigmoidParam=dataMatrix*weights#矩阵积
+        # [[ 15.035452]
+        # 。。。。。。。。。
+        #  [ 16.056054]]100*1
         #h为100 1的矩阵 h[100*1]
         h = sigmoid(sigmoidParam)     #matrix mult，矩阵乘法
 
