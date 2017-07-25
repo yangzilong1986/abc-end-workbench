@@ -23,7 +23,7 @@ img1 = cv2.imread('D:\\DevN\\sample-data\\images\\size-100\\calib3d_icon.jpg')
 img2 = cv2.imread('D:\\DevN\\sample-data\\images\\size-100\\featureicon.jpg')
 
 dst=cv2.addWeighted(img1,0.7,img2,0.3,0)
-
+dst = cv2.resize(dst,(480,360),interpolation=cv2.INTER_CUBIC)
 cv2.imshow('dst',dst)
 cv2.waitKey(0)
 # cv2.destroyAllWindow()

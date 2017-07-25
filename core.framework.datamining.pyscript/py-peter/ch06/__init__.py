@@ -8,30 +8,28 @@ from numpy import *
 # b,alphas=svmMLiA.smoSimple(dataAtrr,labelArr,0.6,0.001,4)
 # svmMLiA.testRbf()
 
-dataAtrr,labelArr=svmMLiA.loadDataSet('testMult.txt')
-dataMatrix = mat(dataAtrr);
-labelMat = mat(labelArr).transpose()
-label=mat(labelArr)
-m,n = shape(dataMatrix)
-#alphas估值矩阵[100,1]
-alphas = mat([2,-1,1,1,1,1]).transpose()
-result=multiply(alphas,labelMat)#100,1,向量积
-print result
-#<type 'list'>: [matrix([[ 1.]]), matrix([[ 1.]]), matrix([[ 1.]]), matrix([[ 1.]]), matrix([[ 1.]]), matrix([[ 1.]])]
-#<type 'tuple'>: (6L, 1L)
-# [[ 1.]
-#  [ 1.]
-#  [ 1.]
-#  [ 1.]
-#  [ 1.]
-#  [ 1.]]
+al=array([[1,2,3],[4,5,6]])
+a2=array([[0.3,0.2,0.3],[0.4,0.5,0.6]])
 
-# [[-1.]
-#  [ 2.]
-#  [ 1.]
-#  [ 1.]
-#  [-1.]
-#  [-1.]]
-# <type 'tuple'>: (6L, 1L)
-result2=alphas*label#100,1,向量积
-print result2
+mm=mat(al)
+ss=mat(a2)
+
+mul1=multiply(mm,ss)
+print ('##########mm,ss##############')
+print (mul1)
+
+mul1=multiply(ss.T,mm.T)
+print ('###########ss.T,mm.T#############')
+print (mul1)
+
+# mul1=multiply(ss,mm.T)
+# print ('###########ss.T,mmt#############')
+# print (mul1)
+
+mat1=ss.T*mm
+print ('############ss.T*mm############')
+print (mat1)
+
+mat2=mm*ss.T
+print ('############mm*ss.T############')
+print (mat2)

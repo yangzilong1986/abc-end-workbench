@@ -1,6 +1,7 @@
 
 import numpy as np
 import cv2
+
 from matplotlib import pyplot as plt
 img = cv2.imread('D:\\DevN\\sample-data\\images\\football\\messi5.jpg',0)
 

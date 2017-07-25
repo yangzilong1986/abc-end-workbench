@@ -4,7 +4,7 @@ import numpy as np
 
 imgs1 = cv2.imread('D:\\DevN\\sample-data\\images\\football\\messi5.jpg')
 imgs2 = cv2.imread('D:\\DevN\\sample-data\\images\\openvc.png')
-
+#修改为统一的大小之后，可以合并
 img1 = cv2.resize(imgs1,(480,360),interpolation=cv2.INTER_CUBIC)
 img2 = cv2.resize(imgs2,(480,360),interpolation=cv2.INTER_CUBIC)
 
