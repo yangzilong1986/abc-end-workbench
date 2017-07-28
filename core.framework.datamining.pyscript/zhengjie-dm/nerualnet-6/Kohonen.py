@@ -81,10 +81,21 @@ class Kohonen(object):
 
 			# 计算最优节点：返回最小距离的索引值
 			minIndx= (distM(mySample,self.w)).argmin()
+			#ceil:返回大于或者等于指定表达式的最小整数
+			#floor(x),其功能是“向下取整”
+			#mod函数是一个求余函数
 			d1 = ceil(minIndx/self.M)   # 计算最近距离在第二层矩阵中的位置
 			d2 = mod(minIndx,self.M)
 			distMat = distM(mat([d1,d2]),grid.T)
 			#clusterData=nonzero(clusterAssment[:,0].A==cent) #.A转为Array，List
+			#distMat值为：<type 'list'>: [array([ 1.41421356,  1.        ,  1.        ,  0.        ])]
+			#r：4.998875 (distMat<r) 值为<type 'list'>: [array([ True,  True,  True,  True], dtype=bool)]
+			#值为：(distMat<r).nonzero()：
+			# 0 = {ndarray} [0 0 0 0]
+			# 1 = {ndarray} [0 1 2 3]
+			data1=distMat<r
+			data2=data1.nonzero();
+			nodelindx1 = (distMat<r).nonzero()
 			nodelindx = (distMat<r).nonzero()[1] # 根据学习距离获取邻域内左右节点
 			# 更新权重列。2*4
 			for j in range(shape(self.w)[1]):

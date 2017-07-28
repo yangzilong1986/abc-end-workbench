@@ -15,6 +15,7 @@ def loadDataSet(fileName):      #general function to parse tab -delimited floats
         labelMat.append(float(curLine[-1]))
     return dataMat,labelMat
 
+#标准回归(X.T*X)-1*X.T
 def standRegres(xArr,yArr):
     xMat = mat(xArr);
     yMat = mat(yArr).T
@@ -24,6 +25,16 @@ def standRegres(xArr,yArr):
         print "This matrix is singular, cannot do inverse"
         return
     ws = xTx.I * (xMat.T*yMat)
+    return ws
+
+#岭回归(X.T+aI)-1*X.T
+def ridgeRegres(xMat,yMat,lam=0.2):
+    xTx = xMat.T*xMat
+    denom = xTx + eye(shape(xMat)[1])*lam
+    if linalg.det(denom) == 0.0:
+        print "This matrix is singular, cannot do inverse"
+        return
+    ws = denom.I * (xMat.T*yMat)
     return ws
 
 #局部加权线性回归行数
@@ -65,15 +76,7 @@ def lwlrTestPlot(xArr,yArr,k=1.0):
 def rssError(yArr,yHatArr):
     return ((yArr-yHatArr)**2).sum()
 
-#岭回归
-def ridgeRegres(xMat,yMat,lam=0.2):
-    xTx = xMat.T*xMat
-    denom = xTx + eye(shape(xMat)[1])*lam
-    if linalg.det(denom) == 0.0:
-        print "This matrix is singular, cannot do inverse"
-        return
-    ws = denom.I * (xMat.T*yMat)
-    return ws
+
     
 def ridgeTest(xArr,yArr):
     xMat = mat(xArr); yMat=mat(yArr).T
