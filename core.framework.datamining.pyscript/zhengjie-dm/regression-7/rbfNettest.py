@@ -25,8 +25,8 @@ def plotscatter(Xmat,Ymat,yHat,plt):
 
 # 数据矩阵,分类标签
 xArr,yArr = loadDataSet("D:/DevN/sample-data/zhengjie-data/chapter07/nolinear.txt")
+#主函数为最小二乘的正规方程组
 # 局部加权线性回归算法：回归线矩阵
-
 # RBF函数的平滑系数
 miu= 0.02
 k = 0.03
@@ -36,6 +36,7 @@ xMat = mat(xArr);
 yMat = mat(yArr).T
 testArr = xArr # 测试数组
 m,n = shape(xArr) # xArr的行数
+
 yHat = zeros(m) # yHat是y的预测值,yHat的数据是y的回归线矩阵
 for i in range(m):
     weights = mat(eye(m))
@@ -53,8 +54,9 @@ for i in range(m):
        print "This matrix is singular, cannot do inverse"
        sys.exit(0)  # 退出程序
 
-plotscatter(xMat[:,1].A,yArr,yHat,plt) # 绘制图形
-
 # 计算相关系数:
 print corrcoef(yHat,yMat.T)
+plotscatter(xMat[:,1].A,yArr,yHat,plt) # 绘制图形
+
+
 

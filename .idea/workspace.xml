@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4953b74b-562d-49d5-bbfd-231078d46241" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/evaluation/linear_regression/line_regression.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/gradient_hardlim.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_hplane.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_intercept.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_raw.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239168000.crc" afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239168000.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239169000.crc" afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239169000.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239170000.crc" afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1497239170000.crc" />
@@ -141,6 +146,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/abc-end-workbench.iml" afterPath="$PROJECT_DIR$/abc-end-workbench.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" afterPath="$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/.classpath" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/.classpath" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/.gitignore" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/.project" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/.project" />
@@ -184,6 +191,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLogisticRegression.scala" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingLogisticRegression.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelClient.scala" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelClient.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelProducer.scala" afterPath="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo/streaming/StreamingModelProducer.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.base.parent/core.base.parent.iml" afterPath="$PROJECT_DIR$/core.base.parent/core.base.parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" afterPath="$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.data/core.framework.data.iml" afterPath="$PROJECT_DIR$/core.framework.data/core.framework.data.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.data/pom.xml" afterPath="$PROJECT_DIR$/core.framework.data/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/caffe/caffedemo.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/caffe/caffedemo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/core.framework.datamining.pyscript.iml" />
@@ -224,6 +234,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/plotshow.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/plotshow.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/put_chinese_text.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/put_chinese_text.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/roi.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/roi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch03/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch03/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch03/trees.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch03/trees.py" />
@@ -235,6 +246,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/svmMLiA.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/testMult.txt" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/testMult.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch07/adaboost.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch07/adaboost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/Old_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/Old_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch09/__init__.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch09/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch09/regTrees.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch09/regTrees.py" />
@@ -260,6 +273,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_iris_logistic.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_iris_logistic.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_multioutput_face_completion.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_multioutput_face_completion.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_ols.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_ols.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/decompostion.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/decompostion.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gaussianprocess.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gaussianprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/sgd.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/sgd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_custom_kernel.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_custom_kernel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_iris.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_iris.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_oneclass.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_oneclass.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_rbf_parameters.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_rbf_parameters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_separating_hyperplane.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_separating_hyperplane.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_separating_hyperplane_unbalanced.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_separating_hyperplane_unbalanced.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_anova.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_anova.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_kernels.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_kernels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_margin.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_margin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_nonlinear.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_nonlinear.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_regression.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_scale_c.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_scale_c.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_weighted_samples.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_weighted_samples.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/tensorflow/tensorflow.test.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/tensorflow/tensorflow.test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cnndemo.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cnndemo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cudademo.py" afterPath="$PROJECT_DIR$/core.framework.datamining.pyscript/theano/cudademo.py" />
@@ -1734,6 +1771,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaItemIDIndexMapper.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaItemIDIndexMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaToItemPrefsMapper.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaToItemPrefsMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaToUserVectorReducer.java" afterPath="$PROJECT_DIR$/core.framework.datamining/src/test/java/com/abc/framework/samples/mia/recommender/ch06/WikipediaToUserVectorReducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" afterPath="$PROJECT_DIR$/core.framework.integration/core.framework.integration.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/abc.properties" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/abc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/application.properties" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/classes/logback-spring.xml" afterPath="$PROJECT_DIR$/core.framework.integration/target/classes/logback-spring.xml" />
@@ -1741,6 +1779,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-action.xml" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-action.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-consumer.xml" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-consumer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-provider.xml" afterPath="$PROJECT_DIR$/core.framework.integration/target/test-classes/META-INF/spring/dubbo-demo-provider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.framework.media/core.framework.media.iml" afterPath="$PROJECT_DIR$/core.framework.media/core.framework.media.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" afterPath="$PROJECT_DIR$/core.lambda.batch/core.lambda.batch.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/package-info.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/cycle/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/package-info.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/interfaces/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/isomorphism/package-info.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/main/java/org/jgrapht/alg/isomorphism/package-info.java" />
@@ -1765,6 +1805,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/AbstractGraphIteratorTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/AbstractGraphIteratorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/ClosestFirstIteratorTest.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/traverse/ClosestFirstIteratorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java" afterPath="$PROJECT_DIR$/core.lambda.batch/src/test/java/org/jgrapht/util/AllUtilTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.messmage/core.lambda.messmage.iml" afterPath="$PROJECT_DIR$/core.lambda.messmage/core.lambda.messmage.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.speed/core.lambda.speed.iml" afterPath="$PROJECT_DIR$/core.lambda.speed/core.lambda.speed.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleBolt.java" afterPath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleBolt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleSpout.java" afterPath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleSpout.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleTopology.java" afterPath="$PROJECT_DIR$/core.lambda.speed/src/test/java/com/abc/lambda/speed/sample/storm/simple/SimpleTopology.java" />
@@ -1781,10 +1823,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490324082/1027/worker.yaml" afterPath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490324082/1027/worker.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490324907/1027/worker.yaml" afterPath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490324907/1027/worker.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490325963/1024/worker.yaml" afterPath="$PROJECT_DIR$/logs/workers-artifacts/test-1-1490325963/1024/worker.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime.framework.server/runtime.framework.server.iml" afterPath="$PROJECT_DIR$/runtime.framework.server/runtime.framework.server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime.framework.util/runtime.framework.util.iml" afterPath="$PROJECT_DIR$/runtime.framework.util/runtime.framework.util.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.client/sample.framework.cloud.client.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.client/sample.framework.cloud.client.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.a/sample.framework.cloud.cluster.provider.a.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.a/sample.framework.cloud.cluster.provider.a.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.hello/sample.framework.cloud.cluster.provider.hello.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.cluster.provider.hello/sample.framework.cloud.cluster.provider.hello.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.cluster.register/sample.framework.cloud.cluster.register.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.cluster.register/sample.framework.cloud.cluster.register.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.cluster/sample.framework.cloud.cluster.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.cluster/sample.framework.cloud.cluster.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.gateway/sample.framework.cloud.gateway.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.gateway/sample.framework.cloud.gateway.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.order/sample.framework.cloud.provider.bs.order.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.order/sample.framework.cloud.provider.bs.order.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.product/sample.framework.cloud.provider.bs.product.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.provider.bs.product/sample.framework.cloud.provider.bs.product.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.a/sample.framework.cloud.server.replicas.a.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.a/sample.framework.cloud.server.replicas.a.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.b/sample.framework.cloud.server.replicas.b.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.server.replicas.b/sample.framework.cloud.server.replicas.b.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.framework.cloud.server/sample.framework.cloud.server.iml" afterPath="$PROJECT_DIR$/sample.framework.cloud.server/sample.framework.cloud.server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.lambda.openstdb/sample.lambda.openstdb.iml" afterPath="$PROJECT_DIR$/sample.lambda.openstdb/sample.lambda.openstdb.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple.framework.cloud.customer/simple.framework.cloud.customer.iml" afterPath="$PROJECT_DIR$/simple.framework.cloud.customer/simple.framework.cloud.customer.iml" />
     </list>
     <ignored path="abc-end-workbench.iws" />
@@ -1828,6 +1880,7 @@
     <ignored path="$PROJECT_DIR$/mahout-mahout-0.5/examples/target/" />
     <ignored path="$PROJECT_DIR$/mahout-mahout-0.5/eclipse/target/" />
     <ignored path="$PROJECT_DIR$/com.framework.datamining.scala/target/" />
+    <ignored path="$PROJECT_DIR$/com.framework.datamining.R/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1877,98 +1930,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="cluster-kMeans.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py">
+      <file leaf-file-name="logistic_k.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_k.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1361">
-              <caret line="62" column="20" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logistic_map.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_map.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="21" />
               <folding>
-                <element signature="e#16#44#0" expanded="true" />
+                <element signature="e#26#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linear_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression.py">
+      <file leaf-file-name="rbfNettest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbfNettest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cbook.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/cbook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45625">
+              <caret line="1849" column="0" selection-start-line="1849" selection-start-column="0" selection-end-line="1849" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37350">
+              <caret line="1529" column="0" selection-start-line="1529" selection-start-column="0" selection-end-line="1529" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testKohonen.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testKohonen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Untils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Untils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logistic_classify.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py">
+      <file leaf-file-name="leastSquare.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/leastSquare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="525">
+              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ridge_bayesian_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py">
+      <file leaf-file-name="BPTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BPTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="440">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py">
+      <file leaf-file-name="BMNet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BMNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ridge_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="96" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linear_regression_coefs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1525">
-              <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gbr_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="113" column="51" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2001,57 +2060,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-thresholding-adaptive.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/smoothing-kernel.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/iamge-smoothing-kernel.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-thresholding-otsu.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-smooth-blur.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-erode.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-gradients.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-canny.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-pyramids.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-outline.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-mask.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-histogram.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-transform.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-extraction.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/feature-harris.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/feature-Shi-Tomasi.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/dl-kNN.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-cut.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/feature-orb.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/openvc2/image-match.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch06/__init__.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/common_libs.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testKohonen.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BPTest.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/bpNet.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BMNet.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testBoltzmann.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Untils.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/recommand-4/svdRec.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/recommand-4/testRecommand.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/recommand-4/Recommand_Lib.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/recommand-4/testRecomm01.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbm.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_decision_tree.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_random_forest.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_random_forest_mdf.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_svm.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_onevsrest.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_svm_nonlinear.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/plot_decision_regions.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/iris_logistic_regression.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/linear_model/plot_ols.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/document_classification_20newsgroups.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/linear_model/plot_lasso_model_selection.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/linear_model/plot_sgd_iris.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/classifiyed_ris_logistic.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/linear_model/plot_iris_logistic.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/estimator_iris.svm.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/classification/plot_digits_classification.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/Old_regression.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/readdata.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/lego_regression.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_train_error_vs_test_error.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_multi_metric_evaluation.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_nested_cross_validation_iris.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_validation_curve.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_underfitting_overfitting.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_learning_curve.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/leastSquare.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/normalequation.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/__init__.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/evaluation/linear_regression/line_regression.py" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.R/pom.xml" />
+        <option value="$PROJECT_DIR$/com.framework.datamining.R/no-linear-islr/boston-multlinear.R" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/gradient_test.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/common_libs.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight2.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/logistic_test.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight3.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_raw.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight4.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_alpha.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_weight.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_weight2.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_test.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testBoltzmann.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BPTest.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbm.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbfNettest.py" />
         <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/ridgeReg.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/svm/plot_custom_kernel.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Kohonen.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/decompostion.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gaussianprocess.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/sgd.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_regression.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py" />
-        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py" />
+        <option value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_map.py" />
       </list>
     </option>
   </component>
@@ -2186,145 +2245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sklearn-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sklearn-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cookbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch05" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abc-end-workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.framework.datamining.pyscript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py-peter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Production">
@@ -2396,15 +2316,330 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhengjie-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regression-7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhengjie-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommand-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhengjie-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nerualnet-6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhengjie-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch09" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch08" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch07" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abc-end-workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core.framework.datamining.pyscript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-peter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="RSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4898897" />
-    <property name="last_opened_file_path" value="D:/Anaconda2/python.exe" />
+    <property name="last_opened_file_path" value="G:/win_tool_prog/R-3.4.1/bin/x64/R.exe" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.framework.datamining.scala/src/main/scala/com/abc/com/abc/core/datamining/demo" />
     <property name="dynamic.classpath" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="175" />
@@ -2441,95 +2676,95 @@
       <recent name="com.abc.basic.datamining.classify" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\sklearn-examples" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\zhengjie-dm\regression-7" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\zhengjie-dm\gradient-5" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\evaluation\linear_regression" />
+      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\sklearn-examples" />
       <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\zhengjie-dm\recommand-4" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\zhengjie-dm\nerualnet-6" />
-      <recent name="D:\DevN\abc-end-workbench\core.framework.datamining.pyscript\scikit-learn-sample\ch1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cluster-kMeans">
-    <configuration default="false" name="logistic_classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.rbfNettest">
+    <configuration default="false" name="rbm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="cluster-kMeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="rbfNettest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbfNettest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="linear_regression_coefs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ridgeReg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/ridgeReg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ridge_bayesian_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="logistic_k" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_k.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="gbr_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="logistic_map" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="core.framework.datamining.pyscript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_map.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -2761,6 +2996,14 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core.framework.dataming.pyscript/ch02/kNN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RRunConfigurationType" factoryName="R">
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_ARGS" value="" />
+      <option name="WORKING_DIRECTORY_PATH" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -2996,6 +3239,14 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="boston-multlinear" type="RRunConfigurationType" factoryName="R">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/com.framework.datamining.R/no-linear-islr/boston-multlinear.R" />
+      <option name="SCRIPT_ARGS" value="" />
+      <option name="WORKING_DIRECTORY_PATH" value="D:\DevN\abc-end-workbench\com.framework.datamining.R\no-linear-islr" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="Application-client" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -3080,24 +3331,25 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Application.Application-client" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AddDataExample" />
-      <item index="3" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
-      <item index="4" class="java.lang.String" itemvalue="Python.logistic_classify" />
-      <item index="5" class="java.lang.String" itemvalue="Python.cluster-kMeans" />
-      <item index="6" class="java.lang.String" itemvalue="Python.linear_regression_coefs" />
-      <item index="7" class="java.lang.String" itemvalue="Python.ridge_bayesian_regression" />
-      <item index="8" class="java.lang.String" itemvalue="Python.gbr_regression" />
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="R.boston-multlinear" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Application-client" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CustomerSetupApp" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AddDataExample" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.cloud-eureka-server" />
+      <item index="5" class="java.lang.String" itemvalue="Python.rbm" />
+      <item index="6" class="java.lang.String" itemvalue="Python.rbfNettest" />
+      <item index="7" class="java.lang.String" itemvalue="Python.ridgeReg" />
+      <item index="8" class="java.lang.String" itemvalue="Python.logistic_k" />
+      <item index="9" class="java.lang.String" itemvalue="Python.logistic_map" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cluster-kMeans" />
-        <item index="1" class="java.lang.String" itemvalue="Python.gbr_regression" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ridge_bayesian_regression" />
-        <item index="3" class="java.lang.String" itemvalue="Python.logistic_classify" />
-        <item index="4" class="java.lang.String" itemvalue="Python.linear_regression_coefs" />
+        <item index="0" class="java.lang.String" itemvalue="Python.rbfNettest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.logistic_map" />
+        <item index="2" class="java.lang.String" itemvalue="Python.logistic_k" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ridgeReg" />
+        <item index="4" class="java.lang.String" itemvalue="Python.rbm" />
       </list>
     </recent_temporary>
   </component>
@@ -3179,18 +3431,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873562" sideWeight="0.50189906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12939903" sideWeight="0.4722689" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34428087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="242" width="1886" height="513" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34314835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="242" width="1886" height="513" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26421225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14718615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37825593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37712345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3990,11 +4244,6 @@
           <option name="timeStamp" value="2620" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Kohonen.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="2672" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/kMeans.py</url>
           <line>141</line>
           <option name="timeStamp" value="2678" />
@@ -4018,16 +4267,6 @@
           <url>file://D:/Anaconda2/Lib/site-packages/sklearn/decomposition/kernel_pca.py</url>
           <line>216</line>
           <option name="timeStamp" value="2691" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="2692" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="2693" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://D:/Anaconda2/Lib/site-packages/sklearn/decomposition/kernel_pca.py</url>
@@ -4079,6 +4318,51 @@
           <line>1388</line>
           <option name="timeStamp" value="2704" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_random_forest.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="2733" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/classified_random_forest.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="2735" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="2736" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="2737" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch02/kNN.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="2738" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/__init__.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="2779" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/evaluation/linear_regression/line_regression.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="2780" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/evaluation/linear_regression/line_regression.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="2781" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_raw.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="2789" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -4090,7 +4374,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2716" />
+      <option name="time" value="2795" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -4099,400 +4383,388 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/datasets/svmlight_format.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/linear/plot_iris_logistic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BMNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testBoltzmann.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/portlandClubs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1336">
+        <state relative-caret-position="-727">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/testSet.txt">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/linear_model/plot_ard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-2102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/testSet2.txt">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/plot_decision_regions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/Portland.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/places.txt">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/iris_logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/numpy/matrixlib/defmatrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch10/kMeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="133" column="85" selection-start-line="133" selection-start-column="85" selection-end-line="133" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testKohonen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining/src/main/java/org/apache/mahout/cf/taste/impl/similarity/AbstractSimilarity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="340" column="15" selection-start-line="340" selection-start-column="15" selection-end-line="340" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/bpNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1656">
-          <caret line="80" column="14" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch1/oneR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/scikit-learn-sample/ch1/affinity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Kohonen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch14/svdRec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="59" column="11" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch13/pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IdeaIC2016/system/python_stubs/2129268673/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="309" column="4" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IdeaIC2016/system/python_stubs/2129268673/sklearn/metrics/pairwise_fast.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/metrics/pairwise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="1398" column="0" selection-start-line="1398" selection-start-column="0" selection-end-line="1398" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/decomposition/kernel_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding>
-            <element signature="e#118#136#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/utils/deprecation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="1055" column="4" selection-start-line="1055" selection-start-column="4" selection-end-line="1055" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IdeaIC2016/system/python_stubs/2129268673/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="228" column="4" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/sgd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gaussianprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/scipy/stats/morestats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="472" column="4" selection-start-line="472" selection-start-column="4" selection-end-line="472" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="4004" column="14" selection-start-line="4004" selection-start-column="4" selection-end-line="4004" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/linear_model/ridge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="615" column="32" selection-start-line="615" selection-start-column="23" selection-end-line="615" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/datasets/samples_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="449" column="4" selection-start-line="449" selection-start-column="4" selection-end-line="449" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/decompostion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/recommand-4/Recommand_Lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/bokeh/plotting/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="597" column="8" selection-start-line="597" selection-start-column="8" selection-end-line="597" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/sklearn/cluster/k_means_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8819">
-          <caret line="834" column="8" selection-start-line="834" selection-start-column="8" selection-end-line="834" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-275">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/logistic_classify.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/bicluster/plot_bicluster_newsgroups.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-225">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_bayesian_regression.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/model_selection/plot_learning_curve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="269">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/preprocessing.py">
+    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="381">
+          <caret line="1052" column="12" selection-start-line="1052" selection-start-column="11" selection-end-line="1052" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/ridge_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="96" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/linear_regression_coefs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/gbr_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/axes/_base.py">
+    <entry file="file://D:/Anaconda2/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
-          <caret line="3023" column="8" selection-start-line="3023" selection-start-column="8" selection-end-line="3023" selection-end-column="8" />
-          <folding />
+          <caret line="2195" column="0" selection-start-line="2195" selection-start-column="0" selection-end-line="2195" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch04/bayes.py">
+    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2625">
+        <state relative-caret-position="31">
+          <caret line="1896" column="0" selection-start-line="1896" selection-start-column="0" selection-end-line="1896" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/ex1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch05/logRegres.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/ex0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2250">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch03/trees.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/abalone.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3450">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda2/Lib/site-packages/numpy/core/fromnumeric.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="825" column="11" selection-start-line="825" selection-start-column="4" selection-end-line="825" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="371">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/sklearn-examples/cookbook/cluster-kMeans.py">
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/evaluation/linear_regression/line_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1361">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="20" />
+        <state relative-caret-position="1325">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding>
-            <element signature="e#16#44#0" expanded="true" />
+            <element signature="e#140#159#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.R/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/py-peter/ch08/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.framework.datamining.R/no-linear-islr/boston-multlinear.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/common_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="90" column="15" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/plotGD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_raw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight_intercept.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/gradient_hardlim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/iterate_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_weight4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/logistic_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/logistic_test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/log_evalue_hplane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_weight2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_alpha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/gradient-5/stoc_evalue_weight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/normalequation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/ridgeReg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="4000" column="0" selection-start-line="4000" selection-start-column="0" selection-end-line="4000" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/bpNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1544">
+          <caret line="154" column="29" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/common_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Kohonen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testBoltzmann.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/testKohonen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/Untils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/matplotlib/cbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45625">
+          <caret line="1849" column="0" selection-start-line="1849" selection-start-column="0" selection-end-line="1849" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37350">
+          <caret line="1529" column="0" selection-start-line="1529" selection-start-column="0" selection-end-line="1529" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_k.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/leastSquare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BPTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/nerualnet-6/BMNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="113" column="51" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/rbfNettest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.framework.datamining.pyscript/zhengjie-dm/regression-7/logistic_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#26#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -4550,7 +4822,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>core.framework.datamining.pyscript</last-edited>
+          <last-edited>com.framework.datamining.R</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

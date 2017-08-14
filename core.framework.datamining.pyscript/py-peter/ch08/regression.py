@@ -39,7 +39,12 @@ def ridgeRegres(xMat,yMat,lam=0.2):
 
 #局部加权线性回归行数
 def lwlr(testPoint,xArr,yArr,k=1.0):
-    xMat = mat(xArr); yMat = mat(yArr).T
+    ws=lwlrWeight(testPoint, xArr, yArr, k)
+    return testPoint * ws
+
+def lwlrWeight(testPoint, xArr, yArr, k=1.0):
+    xMat = mat(xArr);
+    yMat = mat(yArr).T
     m = shape(xMat)[0]
     #创建对角矩阵
     weights = mat(eye((m)))
@@ -53,7 +58,7 @@ def lwlr(testPoint,xArr,yArr,k=1.0):
         print "This matrix is singular, cannot do inverse"
         return
     ws = xTx.I * (xMat.T * (weights * yMat))
-    return testPoint * ws
+    return  ws
 
 #loops over all the data points and applies lwlr to each one
 def lwlrTest(testArr,xArr,yArr,k=1.0):
@@ -78,11 +83,14 @@ def rssError(yArr,yHatArr):
 
 
     
-def ridgeTest(xArr,yArr):
-    xMat = mat(xArr); yMat=mat(yArr).T
+def ridge(xArr, yArr):
+    xMat = mat(xArr);
+    yMat=mat(yArr).T
+    #数据标准化
     yMean = mean(yMat,0)
     #to eliminate X0 take mean off of Y
     yMat = yMat - yMean
+
     #regularize X's
     #calc mean then subtract it off
     xMeans = mean(xMat,0)
@@ -114,13 +122,13 @@ def stageWise(xArr,yArr,eps=0.01,numIt=100):
     yMat = yMat - yMean
     xMat = regularize(xMat)
     m,n=shape(xMat)
-    #returnMat = zeros((numIt,n)) #testing code remove
+    returnMat = zeros((numIt,n)) #testing code remove
     ws = zeros((n,1));
     wsTest = ws.copy();
     wsMax = ws.copy()
 
     for i in range(numIt):
-        print ws.T
+        #print ws.T
         lowestError = inf; 
         for j in range(n):
             for sign in [-1,1]:
@@ -132,71 +140,10 @@ def stageWise(xArr,yArr,eps=0.01,numIt=100):
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
-        #returnMat[i,:]=ws.T
-    #return returnMat
+        returnMat[i,:]=ws.T
+    return returnMat
 
-#def scrapePage(inFile,outFile,yr,numPce,origPrc):
-#    from BeautifulSoup import BeautifulSoup
-#    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
-#    soup = BeautifulSoup(fr.read())
-#    i=1
-#    currentRow = soup.findAll('table', r="%d" % i)
-#    while(len(currentRow)!=0):
-#        title = currentRow[0].findAll('a')[1].text
-#        lwrTitle = title.lower()
-#        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
-#            newFlag = 1.0
-#        else:
-#            newFlag = 0.0
-#        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
-#        if len(soldUnicde)==0:
-#            print "item #%d did not sell" % i
-#        else:
-#            soldPrice = currentRow[0].findAll('td')[4]
-#            priceStr = soldPrice.text
-#            priceStr = priceStr.replace('$','') #strips out $
-#            priceStr = priceStr.replace(',','') #strips out ,
-#            if len(soldPrice)>1:
-#                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
-#            print "%s\t%d\t%s" % (priceStr,newFlag,title)
-#            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
-#        i += 1
-#        currentRow = soup.findAll('table', r="%d" % i)
-#    fw.close()
-    
-from time import sleep
-import json
-import urllib2
-def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
-    sleep(10)
-    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
-    searchURL = 'https://www.googleapis.com/shopping/search/v1/' \
-                'public/products?' \
-                'key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
-    pg = urllib2.urlopen(searchURL)
-    retDict = json.loads(pg.read())
-    for i in range(len(retDict['items'])):
-        try:
-            currItem = retDict['items'][i]
-            if currItem['product']['condition'] == 'new':
-                newFlag = 1
-            else: newFlag = 0
-            listOfInv = currItem['product']['inventories']
-            for item in listOfInv:
-                sellingPrice = item['price']
-                if  sellingPrice > origPrc * 0.5:
-                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
-                    retX.append([yr, numPce, newFlag, origPrc])
-                    retY.append(sellingPrice)
-        except: print 'problem with item %d' % i
-    
-def setDataCollect(retX, retY):
-    searchForSet(retX, retY, 8288, 2006, 800, 49.99)
-    searchForSet(retX, retY, 10030, 2002, 3096, 269.99)
-    searchForSet(retX, retY, 10179, 2007, 5195, 499.99)
-    searchForSet(retX, retY, 10181, 2007, 3428, 199.99)
-    searchForSet(retX, retY, 10189, 2008, 5922, 299.99)
-    searchForSet(retX, retY, 10196, 2009, 3263, 249.99)
+
 
 #交叉验证岭回归
 def crossValidation(xArr,yArr,numVal=10):
@@ -205,6 +152,7 @@ def crossValidation(xArr,yArr,numVal=10):
     #create error mat 30columns numVal rows
     errorMat = zeros((numVal,30))
     for i in range(numVal):
+        #训练集和测试集
         trainX=[]; trainY=[]
         testX = []; testY = []
         random.shuffle(indexList)
@@ -217,16 +165,20 @@ def crossValidation(xArr,yArr,numVal=10):
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
         #get 30 weight vectors from ridge
-        wMat = ridgeTest(trainX,trainY)
+        #从岭回归中获取
+        wMat = ridge(trainX, trainY)
         #loop over all of the ridge estimates
         for k in range(30):
+            #用训练时的参数将测试数据格式化
             matTestX = mat(testX); matTrainX=mat(trainX)
             meanTrain = mean(matTrainX,0)
             varTrain = var(matTrainX,0)
             #regularize test with training params
             matTestX = (matTestX-meanTrain)/varTrain
             #test ridge results and store
+            #测试集测试结果
             yEst = matTestX * mat(wMat[k,:]).T + mean(trainY)
+            #测试样本的偏差
             errorMat[i,k]=rssError(yEst.T.A,array(testY))
             #print errorMat[i,k]
 
@@ -237,8 +189,11 @@ def crossValidation(xArr,yArr,numVal=10):
     #can unregularize to get model
     #when we regularized we wrote Xreg = (x-meanX)/var(x)
     #we can now write in terms of x not Xreg:  x*w/var(x) - meanX/var(x) +meanY
-    xMat = mat(xArr); yMat=mat(yArr).T
-    meanX = mean(xMat,0); varX = var(xMat,0)
+    #数据还原
+    xMat = mat(xArr);
+    yMat=mat(yArr).T
+    meanX = mean(xMat,0);
+    varX = var(xMat,0)
     unReg = bestWeights/varX
     print "the best model from Ridge Regression is:\n",unReg
     print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)

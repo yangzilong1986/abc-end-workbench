@@ -19,15 +19,19 @@ def plotscatter(Xmat,Ymat,a,b,plt):
 	fig = plt.figure()
 	ax = fig.add_subplot(111)  # 绘制图形位置
 	ax.scatter(Xmat,Ymat,c='blue',marker='o')	# 绘制散点图
-	Xmat.sort() # 对Xmat各元素进行排序	
-	yhat = [a*float(xi)+b for xi in Xmat] # 计算预测值	
-	plt.plot(Xmat,yhat,'r') # 绘制回归线		
+	Xmat.sort() # 对Xmat各元素进行排序
+	yhat = [a*float(xi)+b for xi in Xmat] # 计算预测值
+	plt.plot(Xmat,yhat,'r') # 绘制回归线
 	plt.show()
-	
+
+def cal(Xmat,Ymat):
+	print Xmat
 # 数据文件名
 Xmat, Ymat= loadDataSet("D:/DevN/sample-data/zhengjie-data/chapter07/regdataset.txt")
+
 meanX = mean(Xmat) # 原始数据集的均值
 meanY = mean(Ymat)
+
 dX = Xmat-meanX  # 各元素与均值的差
 dY = Ymat-meanY
 # 手工计算：

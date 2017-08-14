@@ -27,6 +27,7 @@ def normData(xArr,yArr):
 	xVar = var(xMat,0)
 	xnorm = (xMat - xMeans)/xVar
 	return xnorm,ynorm
+
 def scatterplot(wMat,k):# 绘制图形
 	fig = plt.figure()
 	ax = fig.add_subplot(111) 

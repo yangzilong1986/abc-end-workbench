@@ -143,15 +143,8 @@ def scrapePage(inFile,outFile,yr,numPce,origPrc):
         i += 1
         currentRow = soup.findAll('table', r="%d" % i)
     fw.close()
-    
-def setDataCollect():
-    scrapePage('setHtml/lego8288.html','out.txt', 2006, 800, 49.99)
-    scrapePage('setHtml/lego10030.html','out.txt', 2002, 3096, 269.99)
-    scrapePage('setHtml/lego10179.html','out.txt', 2007, 5195, 499.99)
-    scrapePage('setHtml/lego10181.html','out.txt', 2007, 3428, 199.99)
-    scrapePage('setHtml/lego10189.html','out.txt', 2008, 5922, 299.99)
-    scrapePage('setHtml/lego10196.html','out.txt', 2009, 3263, 249.99)
-    
+
+
 def crossValidation(xArr,yArr,numVal=10):
     m = len(yArr)                           
     indexList = range(m)

@@ -70,10 +70,10 @@ class RBM():
         return self 
         
     def learning_curve(self):
-        plt.ion()
-        #plt.figure()
+        # plt.ion()
+        plt.figure()
         E = numpy.array(self.Errors)
-        plt.plot(pandas.rolling_mean(E, 50)[50:])  
+        plt.plot(pandas.rolling_mean(E, 50)[50:])
         plt.show()
      
     def activate(self, X):

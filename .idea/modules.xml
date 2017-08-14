@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abc-end-workbench.iml" filepath="$PROJECT_DIR$/abc-end-workbench.iml" />
       <module fileurl="file://$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" filepath="$PROJECT_DIR$/abc.workbrench.main/abc.workbrench.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.framework.datamining.R/com.framework.datamining.R.iml" filepath="$PROJECT_DIR$/com.framework.datamining.R/com.framework.datamining.R.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" filepath="$PROJECT_DIR$/com.framework.datamining.scala/com.framework.datamining.scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.base.parent/core.base.parent.iml" filepath="$PROJECT_DIR$/core.base.parent/core.base.parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" filepath="$PROJECT_DIR$/core.framework.crypto/core.framework.crypto.iml" />

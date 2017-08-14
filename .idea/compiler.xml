@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="abc.workbrench.main" />
         <module name="com.abc.framework.integration" />
+        <module name="com.framework.datamining.R" />
         <module name="com.framework.datamining.scala" />
         <module name="core.framework.crypto" />
         <module name="core.framework.data" />
@@ -60,6 +61,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="abc-end-workbench" target="1.8" />
       <module name="abc.workbrench.main" target="1.8" />
+      <module name="com.framework.datamining.R" target="1.5" />
       <module name="com.framework.datamining.scala" target="1.8" />
       <module name="core.base.parent" target="1.5" />
       <module name="core.framework.crypto" target="1.8" />

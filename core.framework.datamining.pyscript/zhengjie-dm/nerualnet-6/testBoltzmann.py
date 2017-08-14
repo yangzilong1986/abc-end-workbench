@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import operator
 import copy
 import Untils
@@ -5,7 +6,8 @@ from BMNet import *
 from numpy import *
 import matplotlib.pyplot as plt
 bmNet = BoltzmannNet()
-bmNet.loadDataSet("dataSet25.txt")
+bmNet.loadDataSet("D:/DevN/sample-data/zhengjie-data/chapter06/Boltzmann/dataSet25.txt")
+
 bmNet.train()
 print "循环迭代",bmNet.iteration,"次"
 print "最优解:",bmNet.bestdist
