@@ -1,36 +1,75 @@
+library(lattice)
+library(ggplot2)
 library(caret)
 library(AppliedPredictiveModeling)
+library(e1071)
+library(car)
+library(corrplot)
+
 data(segmentationOriginal)
 
 segData <- subset(segmentationOriginal, Case == "Train")
 cellID <- segData$Cell
 class <- segData$Class
 case <- segData$Case
+
 segData <- segData[, -(1:3)]
+#找到包括Status的列
 statusColNum <- grep("Status", names(segData))
-statusColNum
+#删除状态列
 segData <- segData[, -statusColNum]
 
 # Transformations
-library(e1071)
-skewness(segData$AngleCh1)
+#对于预测变量计算偏离度
 skewValues <- apply(segData, 2, skewness)
 head(skewValues)
 
+#转换数据
 Ch1AreaTrans <- BoxCoxTrans(segData$AreaCh1)
 Ch1AreaTrans
-head(segData$AreaCh1)
 
-predict(Ch1AreaTrans, head(segData$AreaCh1))
+head(segData)
 
-pcaObject <- prcomp(segData,
-                    center = TRUE, scale. = TRUE)
+#散列图
+segDatanames=names(segData)
+states <- as.data.frame(segData[,c(segDatanames[1:10])])
+scatterplotMatrix(states, spread=FALSE, smoother.args=list(lty=2),
+                  main="Scatter")
 
-library(car)
+
+
+segData[,c("AngleCh1","AvgIntenCh4")]
+
+
 scatterplotMatrix(~segData$AngleCh1+segData$AvgIntenCh4 , data=segData,
                   spread=FALSE, smoother.args=list(lty=2),
                   main="Scatter Plot Matrix via car Package")
 
+
+#相关性
+correlations <- cor(segData)
+
+dim(correlations)
+correlations
+
+corrplot(correlations)
+
+highCorr <- findCorrelation(correlations, cutoff = .90)
+length(highCorr)
+head(highCorr)
+
+############
+filteredSegData <- segData[, ~highCorr]
+filtersegDatanames=names(filteredSegData)
+filteredSegData <- as.data.frame(filteredSegData[,c(filtersegDatanames[1:10])])
+
+scatterplotMatrix(filteredSegData, spread=FALSE, smoother.args=list(lty=2),
+                  main="Main")
+
+
+#PCA
+pcaObject <- prcomp(segData,
+                    center = TRUE, scale. = TRUE)
 
 plot(pcaObject)
 
@@ -43,20 +82,28 @@ plot(pcaObject$x[,1], pcaObject$x[,2],
 percentVariance <- pcaObject$sd^2/sum(pcaObject$sd^2)*100
 
 percentVariance[1:3]
-head(pcaObject$x[, 1:5])
 
 plot(percentVariance,type="b",xlab = "Component",ylab = "Percent Total Variance")
 
 
-scatterplotMatrix(~pcaObject$x[,c(1:5)], data=pcaObject$x,
+scatterplotMatrix(~pcaObject$x[,c(1:15)], data=pcaObject$x,
                   spread=FALSE, smoother.args=list(lty=2),
                   main="Scatter Plot Matrix via car Package")
 
-plot(pcaObject$x)
+pcaObject15<-pcaObject$x[,c(1:15)]
+pcaObject15
 
+dotchart(pcaObject15, labels=row.names(pcaObject15), cex=.7,
+         main="PCA-15",
+         xlab="Component-15")
+
+# dotchart(pcaObject$x, labels=row.names(pcaObject$x), cex=.7,
+#          main="PCA",
+#          xlab="Component")
 
 head(pcaObject$rotation[1:3])
 
+#####################
 trans <- preProcess(segData,
                    method = c("BoxCox", "center", "scale", "pca"))
 trans
@@ -66,18 +113,6 @@ head(transformed[, 1:5])
 
 # Filtering
 nearZeroVar(segData)
-
-correlations <- cor(segData)
-
-dim(correlations)
-correlations[1:4, 1:4]
-library(corrplot)
-corrplot(correlations, order = "hclust")
-
-highCorr <- findCorrelation(correlations, cutoff = .75)
-length(highCorr)
-head(highCorr)
-filteredSegData <- segData[, -highCorr]
 
 
 # Data Splitting
@@ -91,6 +126,7 @@ set.seed(1)
 trainingRows <- createDataPartition(classes,
                        p = .80, list= FALSE)
 head(trainingRows)
+
 trainPredictors <- predictors[trainingRows, ]
 trainClasses <- classes[trainingRows]
 testPredictors <- predictors[-trainingRows, ]
@@ -109,6 +145,7 @@ knnFit
 
 testPredictions <- predict(knnFit, newdata = testPredictors,
                    type = "class")
+
 head(testPredictions)
 str(testPredictions)
 

@@ -8,8 +8,8 @@
 *.csv
 *.dat
 *.base
-
-   
+*.test
+.RData   
 # Packages #   
 ############   
 # it's better to unpack these files and commit the raw source   
@@ -33,3 +33,4 @@
 # OS generated files #   
 ######################   
 .DS_Store    
+.Rproj.user

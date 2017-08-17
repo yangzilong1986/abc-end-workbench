@@ -39,3 +39,16 @@ plot(plsTune$results$ncomp,plsTune$results$RMSE,
      #xlim=c(0, 20), ylim=c(0, 2),
      col="red",type="b",lty=1)
 legend("topright", inset=.05, c("pls"), lty=c(1),col=c("red"))
+
+
+set.seed(100)
+pcr.fit=pcr(Solubility~., data=trainingData,scale=TRUE,validation="CV")
+summary(pcr.fit)
+validationplot(pcr.fit,val.type="MSEP")
+
+set.seed(100)
+pls.fit=plsr(Solubility~., data=trainingData,scale=TRUE, validation="CV")
+
+validationplot(pls.fit,val.type="MSEP")
+
+summary(pls.fit)
